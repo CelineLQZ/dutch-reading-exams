@@ -752,12 +752,20 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Onze openingstijden",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "De praktijk is elke dag geopend van 8.30 tot 17.00 uur.",
         "en": "Key words: is = is; van = of/from; tot = until."
       },
       {
         "nl": "Op vrijdag en in het weekend zijn wij gesloten.",
         "en": "Key words: op = on/at; in = in; zijn = are; wij = we."
+      },
+      {
+        "nl": "Afspraak maken",
+        "en": "Key words: afspraak = appointment."
       },
       {
         "nl": "U kunt onze receptie bellen van maandag tot en met donderdag van 9.00 tot 12.00 uur.",
@@ -770,6 +778,10 @@
       {
         "nl": "Ons telefoonnummer is 070 - 3609916.",
         "en": "Key words: is = is."
+      },
+      {
+        "nl": "Spoedbehandeling tijdens openingstijden",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
         "nl": "Heeft u zoveel pijn dat u direct geholpen moet worden?",
@@ -788,6 +800,10 @@
         "en": "Key words: op = on/at; kan = can; niet = not; in = in."
       },
       {
+        "nl": "Spoedbehandeling op vrijdag en in het weekend",
+        "en": "Key words: op = on/at; in = in."
+      },
+      {
         "nl": "Op vrijdag en in het weekend is de praktijk gesloten.",
         "en": "Key words: op = on/at; in = in; is = is."
       },
@@ -802,6 +818,14 @@
       {
         "nl": "Het is woensdag.",
         "en": "Key words: is = is."
+      },
+      {
+        "nl": "Sergio heeft kiespijn en wil zo snel mogelijk naar de tandarts.",
+        "en": "Key words: heeft = has; wil = want; naar = to."
+      },
+      {
+        "nl": "Wat moet hij doen?",
+        "en": "Key words: wat = what; moet = must."
       }
     ]
   },
@@ -818,6 +842,10 @@
       {
         "nl": "In uw cv staat wie u bent en wat u kunt.",
         "en": "Key words: in = in; u = you (formal); wat = what; kunt = can."
+      },
+      {
+        "nl": "Hoe maakt u een cv?",
+        "en": "Key words: hoe = how; u = you (formal)."
       },
       {
         "nl": "Een cv bestaat uit de volgende punten:",
@@ -870,6 +898,18 @@
       {
         "nl": "* rijbewijs",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Waarom maakt Anna een cv?",
+        "en": "Key words: waarom = why."
+      },
+      {
+        "nl": "Anna heeft in een buurthuis vrijwillig klusjes gedaan.",
+        "en": "Key words: heeft = has; in = in."
+      },
+      {
+        "nl": "Waar moet ze dat op haar cv zetten?",
+        "en": "Key words: waar = where; moet = must; op = on/at."
       }
     ]
   },
@@ -900,8 +940,20 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Op vakantie?",
+        "en": "Key words: op = on/at."
+      },
+      {
+        "nl": "Gaat u buiten de vakantieperiode om op vakantie?",
+        "en": "Key words: u = you (formal); om = at/in order to; op = on/at."
+      },
+      {
         "nl": "Vertel dit dan aan uw docent.",
         "en": "Key words: dan = then; aan = to/at."
+      },
+      {
+        "nl": "Dit moet u uiterlijk 2 weken vóór uw vakantie schriftelijk doen",
+        "en": "Key words: moet = must; u = you (formal)."
       },
       {
         "nl": "Bent u ziek en kunt u niet naar de les komen, bel dan met de administratie van de talenschool.",
@@ -910,6 +962,10 @@
       {
         "nl": "U moet dit zo snel mogelijk doen, uiterlijk een uur voordat de les begint.",
         "en": "Key words: u = you (formal); moet = must; les = lesson."
+      },
+      {
+        "nl": "Open dagen",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
         "nl": "Belangstellenden en nieuwe cursisten zijn welkom op:",
@@ -958,6 +1014,34 @@
       {
         "nl": "Zeg dit dan tegen uw docent of tegen de administratie.",
         "en": "Key words: dan = then."
+      },
+      {
+        "nl": "Joy gaat in juni een week naar het buitenland.",
+        "en": "Key words: in = in; naar = to."
+      },
+      {
+        "nl": "Wat moet zij doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Samad heeft elke donderdag Nederlandse les.",
+        "en": "Key words: heeft = has; les = lesson."
+      },
+      {
+        "nl": "Wat kan hij donderdag 26 januari op de talenschool doen?",
+        "en": "Key words: wat = what; kan = can; op = on/at."
+      },
+      {
+        "nl": "Yolande wil graag naar een open dag van talenschool Het Palet.",
+        "en": "Key words: wil = want; naar = to; van = of/from."
+      },
+      {
+        "nl": "Zij werkt van dinsdag tot en met zaterdag van 16:00 tot 22.00 uur.",
+        "en": "Key words: van = of/from; tot = until; met = with."
+      },
+      {
+        "nl": "Wanneer kan zij naar een open dag?",
+        "en": "Key words: wanneer = when; kan = can; naar = to."
       }
     ]
   },
@@ -974,6 +1058,10 @@
       {
         "nl": "U hoeft niet te vertellen waar u last van heeft.",
         "en": "Key words: u = you (formal); niet = not; waar = where; van = of/from; heeft = has."
+      },
+      {
+        "nl": "Wel moet u zeggen hoe lang u denkt ziek te zijn.",
+        "en": "Key words: moet = must; u = you (formal); hoe = how; ziek = sick; zijn = are."
       },
       {
         "nl": "Uw leidinggevende is Chantal Miedema.",
@@ -996,8 +1084,16 @@
         "en": "Key words: als = if/when; u = you (formal); niet = not; kunt = can; dan = then; bellen = call; met = with; van = of/from."
       },
       {
+        "nl": "Hij werkt bij het secretariaat.",
+        "en": "Key words: bij = at/with."
+      },
+      {
         "nl": "Het secretariaat is bereikbaar tussen 8:00 en 12:00 uur op 030-5452343.",
         "en": "Key words: is = is; op = on/at."
+      },
+      {
+        "nl": "De bedrijfsarts",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
         "nl": "U kunt altijd een afspraak maken met de bedrijfsarts.",
@@ -1014,6 +1110,26 @@
       {
         "nl": "Zijn naam is Cees Zwaan.",
         "en": "Key words: zijn = are; is = is."
+      },
+      {
+        "nl": "Hij gaat samen met u kijken hoe u weer beter kunt worden.",
+        "en": "Key words: met = with; u = you (formal); hoe = how; weer = again; kunt = can."
+      },
+      {
+        "nl": "Anya moet zich ziek melden bij Jaap van Bommel.",
+        "en": "Key words: moet = must; ziek = sick; bij = at/with; van = of/from."
+      },
+      {
+        "nl": "Hoe laat kan ze bellen?",
+        "en": "Key words: hoe = how; kan = can; bellen = call."
+      },
+      {
+        "nl": "Antonio wil een afspraak maken met de bedrijfsarts.",
+        "en": "Key words: wil = want; afspraak = appointment; met = with."
+      },
+      {
+        "nl": "Wanneer kan dat?",
+        "en": "Key words: wanneer = when; kan = can."
       }
     ]
   },
@@ -1072,6 +1188,10 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Themagroepen",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "U kunt meepraten over de volgende thema's:",
         "en": "Key words: u = you (formal); kunt = can."
       },
@@ -1110,6 +1230,26 @@
       {
         "nl": "Buurtcomité Oranjebuurt",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Allan wil meer sportlessen voor kinderen.",
+        "en": "Key words: wil = want; voor = for/before."
+      },
+      {
+        "nl": "Hij wil graag naar de buurtbijeenkomst komen, maar hij heeft weinig tijd.",
+        "en": "Key words: wil = want; naar = to; heeft = has."
+      },
+      {
+        "nl": "Hoe laat kan hij het beste komen om over de sportlessen te praten?",
+        "en": "Key words: hoe = how; kan = can; om = at/in order to."
+      },
+      {
+        "nl": "Mirja wil naar de buurtbijeenkomst komen.",
+        "en": "Key words: wil = want; naar = to."
+      },
+      {
+        "nl": "Wanneer moet ze zich opgeven?",
+        "en": "Key words: wanneer = when; moet = must."
       }
     ]
   },
@@ -1174,6 +1314,26 @@
       {
         "nl": "Weekend € 10,- per maand vanaf vrijdagmiddag 17.00 uur",
         "en": "Key words: vanaf = from."
+      },
+      {
+        "nl": "Mohammed heeft een basisabonnement.",
+        "en": "Key words: heeft = has."
+      },
+      {
+        "nl": "Tot hoe laat kan hij op dinsdag sporten?",
+        "en": "Key words: tot = until; hoe = how; kan = can; op = on/at."
+      },
+      {
+        "nl": "Ali heeft een weekendabonnement.",
+        "en": "Key words: heeft = has."
+      },
+      {
+        "nl": "Hij krijgt een baan in het weekend, dan moet hij van 9 tot 5 uur werken.",
+        "en": "Key words: in = in; dan = then; moet = must; van = of/from; tot = until; werken = work."
+      },
+      {
+        "nl": "Wanneer kan Ali nog sporten?",
+        "en": "Key words: wanneer = when; kan = can."
       }
     ]
   },
@@ -1186,6 +1346,34 @@
       {
         "nl": "Dag Yvonne,",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Ik wil je graag bedanken voor de geweldige taalcursus.",
+        "en": "Key words: wil = want; je = you; voor = for/before."
+      },
+      {
+        "nl": "Ik heb geleerd om de Nederlandse taal echt te gebruiken.",
+        "en": "Key words: om = at/in order to."
+      },
+      {
+        "nl": "Ik durf nu meer in het Nederlands te praten en te schrijven.",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "En ik kan het nu ook veel beter.",
+        "en": "Key words: kan = can; ook = also."
+      },
+      {
+        "nl": "Ik praatte eigenlijk nooit met Nederlanders.",
+        "en": "Key words: met = with."
+      },
+      {
+        "nl": "Ik vind het nog steeds moeilijk en maak nog steeds fouten, maar ik doe het nu wel.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Mijn man heeft me wel geholpen bij deze brief.",
+        "en": "Key words: heeft = has; bij = at/with; brief = letter."
       },
       {
         "nl": "Het is belangrijk dat ik blijf oefenen.",
@@ -1232,12 +1420,20 @@
         "en": "Key words: jij = you."
       },
       {
+        "nl": "Wat heeft Samira van Yvonne geleerd?",
+        "en": "Key words: wat = what; heeft = has; van = of/from."
+      },
+      {
         "nl": "Samira is blij met de cursus van Yvonne.",
         "en": "Key words: is = is; met = with; cursus = course; van = of/from."
       },
       {
         "nl": "Toch vindt ze niet alles goed.",
         "en": "Key words: niet = not."
+      },
+      {
+        "nl": "Wat vindt ze niet zo goed?",
+        "en": "Key words: wat = what; niet = not."
       }
     ]
   },
@@ -1248,8 +1444,16 @@
     "title": "Informatie huisarts",
     "sentences": [
       {
+        "nl": "Openingstijden",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Wij zijn open van maandag tot en met donderdag van 08:00 tot 17:00 uur en op vrijdag van 08:00 tot 12:30 uur.",
         "en": "Key words: wij = we; zijn = are; van = of/from; tot = until; met = with; op = on/at."
+      },
+      {
+        "nl": "'s Avonds, in het weekend en tijdens de vakantie",
+        "en": "Key words: in = in."
       },
       {
         "nl": "Op avonden, in het weekend en op vrijdagmiddag kunt u de centrale huisartsenpost bellen (0900 2233333).",
@@ -1272,8 +1476,16 @@
         "en": "Key words: kunt = can; u = you (formal); ook = also."
       },
       {
+        "nl": "Noodgevallen",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Als u bij een noodgeval niemand direct kunt bereiken, belt u dan het alarmnummer (112).",
         "en": "Key words: als = if/when; u = you (formal); bij = at/with; kunt = can; dan = then."
+      },
+      {
+        "nl": "Afspraak maken",
+        "en": "Key words: afspraak = appointment."
       },
       {
         "nl": "Een afspraak voor het spreekuur van de huisarts kunt u maken bij de assistente.",
@@ -1288,8 +1500,16 @@
         "en": "Key words: u = you (formal)."
       },
       {
+        "nl": "Telefonisch spreekuur",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Voor kort overleg en uitslagen (bijvoorbeeld na bloed prikken) kunt u de assistente bellen.",
         "en": "Key words: voor = for/before; kunt = can; u = you (formal); bellen = call."
+      },
+      {
+        "nl": "Dat kan van maandag tot en met donderdag van 13:30 tot 14:30 uur.",
+        "en": "Key words: kan = can; van = of/from; tot = until; met = with."
       },
       {
         "nl": "Ons adres en ons telefoonnummer kunt u ook vinden in het weekblad.",
@@ -1300,8 +1520,24 @@
         "en": "Key words: is = is."
       },
       {
+        "nl": "Mouna wil een afspraak met haar huisarts.",
+        "en": "Key words: wil = want; afspraak = appointment; met = with."
+      },
+      {
+        "nl": "Wat is de beste tijd om de huisarts te bellen?",
+        "en": "Key words: wat = what; is = is; om = at/in order to; bellen = call."
+      },
+      {
+        "nl": "Mouna heeft een huisarts nodig.",
+        "en": "Key words: heeft = has."
+      },
+      {
         "nl": "Haar eigen huisarts heeft vakantie.",
         "en": "Key words: heeft = has."
+      },
+      {
+        "nl": "Wat moet Mouna doen?",
+        "en": "Key words: wat = what; moet = must."
       }
     ]
   },
@@ -1311,6 +1547,14 @@
     "exam": 2,
     "title": "Woorden leren",
     "sentences": [
+      {
+        "nl": "De kaartjesmethode",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Kent u nog bijna geen woorden in de taal die u wilt leren?",
+        "en": "Key words: u = you (formal); geen = no/not any; in = in; wilt = want; leren = learn."
+      },
       {
         "nl": "Dan is dit een goede manier.",
         "en": "Key words: dan = then; is = is."
@@ -1336,8 +1580,16 @@
         "en": "Key words: u = you (formal); bij = at/with; wat = what."
       },
       {
+        "nl": "Weet u het?",
+        "en": "Key words: u = you (formal)."
+      },
+      {
         "nl": "Dan legt u het kaartje op de stapel 'goed'.",
         "en": "Key words: dan = then; u = you (formal); op = on/at."
+      },
+      {
+        "nl": "Weet u het niet?",
+        "en": "Key words: u = you (formal); niet = not."
       },
       {
         "nl": "Dan legt u het kaartje op de stapel 'fout'.",
@@ -1358,6 +1610,10 @@
       {
         "nl": "U doet stap 2 en stap 3 net zo lang tot de stapel 'fout' weg is.",
         "en": "Key words: u = you (formal); tot = until; is = is."
+      },
+      {
+        "nl": "De schuifmethode",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
         "nl": "Heeft u het altijd druk?",
@@ -1404,6 +1660,18 @@
         "en": "Key words: u = you (formal)."
       },
       {
+        "nl": "Het woordnet",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Kent u al veel woorden?",
+        "en": "Key words: u = you (formal)."
+      },
+      {
+        "nl": "Maar vergeet u altijd een paar moeilijke woorden?",
+        "en": "Key words: u = you (formal)."
+      },
+      {
         "nl": "Maak dan een 'woordnet' voor elk moeilijk woord.",
         "en": "Key words: dan = then; voor = for/before."
       },
@@ -1422,6 +1690,34 @@
       {
         "nl": "Zo onthoudt u het moeilijke woord beter.",
         "en": "Key words: u = you (formal)."
+      },
+      {
+        "nl": "Karima gebruikt de schuifmethode om woorden te leren.",
+        "en": "Key words: om = at/in order to; leren = learn."
+      },
+      {
+        "nl": "In welke volgorde moet zij de woorden leren",
+        "en": "Key words: in = in; welke = which; moet = must; leren = learn."
+      },
+      {
+        "nl": "Noa leert al een paar maanden Nederlandse woorden.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Ze kent de meeste woorden al goed.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Ze heeft moeite met sommige woorden.",
+        "en": "Key words: heeft = has; met = with."
+      },
+      {
+        "nl": "Ze wil die ook graag leren.",
+        "en": "Key words: wil = want; ook = also; leren = learn."
+      },
+      {
+        "nl": "Welke manier is dan het beste?",
+        "en": "Key words: welke = which; is = is; dan = then."
       }
     ]
   },
@@ -1456,6 +1752,10 @@
         "en": "Key words: wil = want; je = you; met = with."
       },
       {
+        "nl": "Dan moet je dat zelf regelen.",
+        "en": "Key words: dan = then; moet = must; je = you."
+      },
+      {
         "nl": "Kijk eerst op het rooster wie van je collega's kan.",
         "en": "Key words: op = on/at; van = of/from; je = you; kan = can."
       },
@@ -1470,6 +1770,22 @@
       {
         "nl": "* Je mag per weekend maximaal twee nachtdiensten draaien.",
         "en": "Key words: je = you."
+      },
+      {
+        "nl": "Hoe lang moet Xavier vrijdag werken?",
+        "en": "Key words: hoe = how; moet = must; werken = work."
+      },
+      {
+        "nl": "Xavier moet op zaterdagmiddag werken.",
+        "en": "Key words: moet = must; op = on/at; werken = work."
+      },
+      {
+        "nl": "Hij wil dan graag vrij.",
+        "en": "Key words: wil = want; dan = then."
+      },
+      {
+        "nl": "Met wie kan Xavier ruilen?",
+        "en": "Key words: met = with; kan = can."
       }
     ]
   },
@@ -1496,6 +1812,10 @@
         "en": "Key words: we = we; werk = work; in = in; winkel = store."
       },
       {
+        "nl": "Iedereen moet zich aan deze afspraken houden.",
+        "en": "Key words: moet = must; aan = to/at."
+      },
+      {
         "nl": "De afspraken staan hieronder:",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
@@ -1504,8 +1824,16 @@
         "en": "Key words: winkel = store; is = is; vanaf = from; van = of/from."
       },
       {
+        "nl": "Jantine werkt dan altijd.",
+        "en": "Key words: dan = then."
+      },
+      {
         "nl": "Elke eerste zondag helpt Ricardo haar.",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Nadia werkt op elke derde zondag van de maand met Jantine.",
+        "en": "Key words: op = on/at; van = of/from; met = with."
       },
       {
         "nl": "Op de andere zondagen is de winkel dicht.",
@@ -1548,6 +1876,10 @@
         "en": "Key words: we = we; tot = until; is = is."
       },
       {
+        "nl": "Is het druk geweest in de winkel?",
+        "en": "Key words: is = is; in = in; winkel = store."
+      },
+      {
         "nl": "Dan dweilen we nog een derde keer.",
         "en": "Key words: dan = then; we = we."
       },
@@ -1562,6 +1894,18 @@
       {
         "nl": "Laat het me even weten.",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Wie werken op de eerste zondag van april?",
+        "en": "Key words: werken = work; op = on/at; van = of/from."
+      },
+      {
+        "nl": "Hoeveel kost de nieuwe klantenkaart?",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Hoe vaak moeten Omar en zijn collega's dweilen?",
+        "en": "Key words: hoe = how; moeten = must; zijn = are."
       }
     ]
   },
@@ -1600,12 +1944,80 @@
         "en": "Key words: lessen = lessons."
       },
       {
+        "nl": "Harry heeft bijna dertig jaar gewerkt bij ons cursuscentrum.",
+        "en": "Key words: heeft = has; bij = at/with."
+      },
+      {
+        "nl": "Dat is heel bijzonder.",
+        "en": "Key words: is = is."
+      },
+      {
+        "nl": "Daarom geven we een groot feest voor hem.",
+        "en": "Key words: daarom = therefore; we = we; voor = for/before."
+      },
+      {
+        "nl": "Het feest is op vrijdag 20 april in de kantine.",
+        "en": "Key words: is = is; op = on/at; in = in."
+      },
+      {
+        "nl": "Het begint om 20.00 uur.",
+        "en": "Key words: om = at/in order to."
+      },
+      {
+        "nl": "Harry krijgt een mooi cadeau van ons allemaal.",
+        "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "We hebben met de docenten een mooi geldbedrag bij elkaar gelegd.",
+        "en": "Key words: we = we; met = with; bij = at/with."
+      },
+      {
+        "nl": "Daarvan hebben we een bijzonder boek voor Harry gekocht.",
+        "en": "Key words: we = we; voor = for/before."
+      },
+      {
+        "nl": "Willen jullie ook iets doen?",
+        "en": "Key words: willen = want; ook = also."
+      },
+      {
+        "nl": "Schrijf dan iets voor Harry.",
+        "en": "Key words: dan = then; voor = for/before."
+      },
+      {
+        "nl": "Geef je tekst aan Leo Coppens.",
+        "en": "Key words: je = you; aan = to/at."
+      },
+      {
+        "nl": "Hij maakt er een boek van.",
+        "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "Kom je ook afscheid nemen van Harry?",
+        "en": "Key words: je = you; ook = also; van = of/from."
+      },
+      {
         "nl": "We hopen dat het een gezellig feest wordt!",
         "en": "Key words: we = we."
       },
       {
         "nl": "Pascal van Dijk",
         "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "Wanneer is de laatste les Nederlands van Harry de Bont?",
+        "en": "Key words: wanneer = when; is = is; les = lesson; van = of/from."
+      },
+      {
+        "nl": "Van wie krijgt Irena straks Nederlandse les?",
+        "en": "Key words: van = of/from; les = lesson."
+      },
+      {
+        "nl": "Carmen woont in Maastricht.",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "Ze leest een artikel op de website van de gemeente.",
+        "en": "Key words: op = on/at; van = of/from."
       }
     ]
   },
@@ -1615,6 +2027,10 @@
     "exam": 3,
     "title": "Gratis stadsbus",
     "sentences": [
+      {
+        "nl": "Waarom wordt de stadsbus gratis?",
+        "en": "Key words: waarom = why; gratis = free."
+      },
       {
         "nl": "Het centrum van Maastricht wordt drukker en drukker.",
         "en": "Key words: van = of/from."
@@ -1636,8 +2052,16 @@
         "en": "Key words: we = we; willen = want; van = of/from."
       },
       {
+        "nl": "Wanneer is de stadsbus gratis?",
+        "en": "Key words: wanneer = when; is = is; gratis = free."
+      },
+      {
         "nl": "De stadsbus gaat gratis rijden vanaf 1 september.",
         "en": "Key words: gratis = free; vanaf = from."
+      },
+      {
+        "nl": "Het gaat om deze dagen en tijden:",
+        "en": "Key words: om = at/in order to."
       },
       {
         "nl": "dag gratis busdienst",
@@ -1660,6 +2084,10 @@
         "en": "Key words: tot = until; met = with; u = you (formal); voor = for/before."
       },
       {
+        "nl": "Wanneer rijdt de stadsbus?",
+        "en": "Key words: wanneer = when."
+      },
+      {
         "nl": "De stadsbus rijdt van 08.00 tot 22.00 uur.",
         "en": "Key words: van = of/from; tot = until."
       },
@@ -1678,6 +2106,30 @@
       {
         "nl": "Op zondag rijdt de bus elke dertig minuten.",
         "en": "Key words: op = on/at."
+      },
+      {
+        "nl": "Waarom maakt de gemeente de stadsbus gratis?",
+        "en": "Key words: waarom = why; gratis = free."
+      },
+      {
+        "nl": "Carmen wil op maandag de stadsbus nemen.",
+        "en": "Key words: wil = want; op = on/at."
+      },
+      {
+        "nl": "Hoe vaak gaat de bus die dag?",
+        "en": "Key words: hoe = how."
+      },
+      {
+        "nl": "Carmen wil op vrijdag gratis met de stadsbus.",
+        "en": "Key words: wil = want; op = on/at; gratis = free; met = with."
+      },
+      {
+        "nl": "Wanneer kan dat?",
+        "en": "Key words: wanneer = when; kan = can."
+      },
+      {
+        "nl": "Lisa krijgt een brief van een buurman.",
+        "en": "Key words: brief = letter; van = of/from."
       }
     ]
   },
@@ -1704,8 +2156,16 @@
         "en": "Key words: is = is; op = on/at."
       },
       {
+        "nl": "Heb jij een goed idee voor een activiteit?",
+        "en": "Key words: jij = you; voor = for/before."
+      },
+      {
         "nl": "Stuur het dan op!",
         "en": "Key words: dan = then; op = on/at."
+      },
+      {
+        "nl": "Wat moet je doen?",
+        "en": "Key words: wat = what; moet = must; je = you."
       },
       {
         "nl": "Beschrijf jouw idee voor een activiteit.",
@@ -1714,6 +2174,10 @@
       {
         "nl": "De activiteit moet leuk zijn voor buurtbewoners van alle leeftijden.",
         "en": "Key words: moet = must; zijn = are; voor = for/before; van = of/from."
+      },
+      {
+        "nl": "Schrijf op wanneer jouw activiteit is: is het overdag, 's avonds of de hele dag?",
+        "en": "Key words: op = on/at; wanneer = when; is = is."
       },
       {
         "nl": "Reken uit hoeveel de activiteit kost.",
@@ -1756,8 +2220,28 @@
         "en": "Key words: we = we."
       },
       {
+        "nl": "Wat is het belangrijkst aan de activiteit?",
+        "en": "Key words: wat = what; is = is; aan = to/at."
+      },
+      {
         "nl": "Lisa weet een leuke activiteit.",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Voor wanneer moet ze haar idee opsturen?",
+        "en": "Key words: voor = for/before; wanneer = when; moet = must."
+      },
+      {
+        "nl": "Lisa heeft een idee voor een activiteit: spelletjes doen en pannenkoeken eten in het buurthuis.",
+        "en": "Key words: heeft = has; voor = for/before; in = in."
+      },
+      {
+        "nl": "Hoe duur mag die activiteit maximaal zijn?",
+        "en": "Key words: hoe = how; zijn = are."
+      },
+      {
+        "nl": "Aziza wil graag in een winkel werken.",
+        "en": "Key words: wil = want; in = in; winkel = store; werken = work."
       },
       {
         "nl": "Ze bekijkt een vacature op internet.",
@@ -1792,6 +2276,10 @@
         "en": "Key words: zijn = are; voor = for/before; winkel = store; in = in."
       },
       {
+        "nl": "Wat moet je doen?",
+        "en": "Key words: wat = what; moet = must; je = you."
+      },
+      {
         "nl": "Je helpt alle klanten vriendelijk en je zorgt dat iedereen tevreden naar huis gaat.",
         "en": "Key words: je = you; naar = to."
       },
@@ -1800,8 +2288,16 @@
         "en": "Key words: we = we; tot = until; werken = work."
       },
       {
+        "nl": "Je werkt minimaal op twee doordeweekse dagen (maandag - vrijdag).",
+        "en": "Key words: je = you; op = on/at."
+      },
+      {
         "nl": "Je bent ook op zaterdag beschikbaar.",
         "en": "Key words: je = you; ook = also; op = on/at."
+      },
+      {
+        "nl": "Wie zoeken wij?",
+        "en": "Key words: wij = we."
       },
       {
         "nl": "Wij zoeken iemand die flexibel is en hard wil werken.",
@@ -1820,12 +2316,40 @@
         "en": "Key words: is = is; je = you; met = with; kunt = can."
       },
       {
+        "nl": "Past dit bij jou?",
+        "en": "Key words: bij = at/with."
+      },
+      {
         "nl": "Dan ben jij de verkoper die we zoeken!",
         "en": "Key words: dan = then; jij = you; we = we."
       },
       {
+        "nl": "Interesse?",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Solliciteer direct via het online formulier op onze website!",
         "en": "Key words: op = on/at."
+      },
+      {
+        "nl": "Voor welke winkel zoekt Nino's nog mensen?",
+        "en": "Key words: voor = for/before; welke = which; winkel = store."
+      },
+      {
+        "nl": "Voor wanneer zoekt Nino's nog mensen?",
+        "en": "Key words: voor = for/before; wanneer = when."
+      },
+      {
+        "nl": "Wat is het belangrijkste als Aziza bij Nino's wil werken?",
+        "en": "Key words: wat = what; is = is; als = if/when; bij = at/with; wil = want; werken = work."
+      },
+      {
+        "nl": "Chang doet een taalcursus.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Hij leest een e-mail van een medecursist.",
+        "en": "Key words: van = of/from."
       }
     ]
   },
@@ -1852,12 +2376,28 @@
         "en": "Key words: van = of/from."
       },
       {
+        "nl": "Welke stad kiezen wij?",
+        "en": "Key words: welke = which; wij = we."
+      },
+      {
+        "nl": "Zullen wij iets over Groningen vertellen?",
+        "en": "Key words: wij = we."
+      },
+      {
         "nl": "Ik heb daar een jaar gewoond, het is echt een leuke stad.",
         "en": "Key words: is = is."
       },
       {
         "nl": "Ik heb al een paar foto's van mooie plekken gevonden.",
         "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "Kun jij dan iets zoeken over de geschiedenis van de stad?",
+        "en": "Key words: jij = you; dan = then; van = of/from."
+      },
+      {
+        "nl": "Dat vind jij niet erg, toch?",
+        "en": "Key words: jij = you; niet = not."
       },
       {
         "nl": "We moeten ook iets vertellen over de winkels en restaurants.",
@@ -1868,8 +2408,20 @@
         "en": "Key words: we = we; dan = then; informatie = information."
       },
       {
+        "nl": "Zullen we nog een keer afspreken?",
+        "en": "Key words: we = we."
+      },
+      {
         "nl": "Dan kunnen we de presentatie oefenen.",
         "en": "Key words: dan = then; we = we."
+      },
+      {
+        "nl": "Ik kan woensdag wel, bij mij thuis.",
+        "en": "Key words: kan = can; bij = at/with."
+      },
+      {
+        "nl": "Donderdag kan het niet bij mij.",
+        "en": "Key words: kan = can; niet = not; bij = at/with."
       },
       {
         "nl": "Mijn man heeft dan bezoek.",
@@ -1878,6 +2430,34 @@
       {
         "nl": "We kunnen wel na de les in de mediatheek zitten.",
         "en": "Key words: we = we; les = lesson; in = in."
+      },
+      {
+        "nl": "Vrijdag moet ik werken, dus dan kan ik helemaal niet.",
+        "en": "Key words: moet = must; werken = work; dan = then; kan = can; niet = not."
+      },
+      {
+        "nl": "Laat je me weten wanneer jij kunt?",
+        "en": "Key words: je = you; wanneer = when; jij = you; kunt = can."
+      },
+      {
+        "nl": "Over welke stad wil Sasha de presentatie geven?",
+        "en": "Key words: welke = which; wil = want."
+      },
+      {
+        "nl": "Waarover wil Sasha samen met Chang informatie zoeken?",
+        "en": "Key words: wil = want; met = with; informatie = information."
+      },
+      {
+        "nl": "Wanneer kan Chang bij Sasha thuis oefenen voor de presentatie?",
+        "en": "Key words: wanneer = when; kan = can; bij = at/with; voor = for/before."
+      },
+      {
+        "nl": "Selina werkt bij een schoonmaakbedrijf.",
+        "en": "Key words: bij = at/with."
+      },
+      {
+        "nl": "Ze krijgt een e-mail van haar manager, Coen.",
+        "en": "Key words: van = of/from."
       }
     ]
   },
@@ -1892,6 +2472,50 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Ik wil je graag iets vragen.",
+        "en": "Key words: wil = want; je = you; vragen = questions/ask."
+      },
+      {
+        "nl": "Ik heb een probleem met het werkrooster.",
+        "en": "Key words: met = with."
+      },
+      {
+        "nl": "Farouk belde net: hij heeft zijn arm gebroken.",
+        "en": "Key words: heeft = has; zijn = are."
+      },
+      {
+        "nl": "Hij moet volgende week twee dagen werken, maar dat gaat nu niet.",
+        "en": "Key words: moet = must; werken = work; niet = not."
+      },
+      {
+        "nl": "Dus ik zoek mensen die extra dagen kunnen werken.",
+        "en": "Key words: werken = work."
+      },
+      {
+        "nl": "Ik heb Rachel al gevraagd, maar zij moet drie dagen naar school.",
+        "en": "Key words: moet = must; naar = to."
+      },
+      {
+        "nl": "Zij kan daarom maar één dag extra werken: op woensdag.",
+        "en": "Key words: kan = can; daarom = therefore; werken = work; op = on/at."
+      },
+      {
+        "nl": "En Kiki werkt volgende week al vijf dagen.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Dus wil jij volgende week misschien een extra dag werken, op dinsdag?",
+        "en": "Key words: wil = want; jij = you; werken = work; op = on/at."
+      },
+      {
+        "nl": "Het zou fijn zijn als je kunt.",
+        "en": "Key words: zijn = are; als = if/when; je = you; kunt = can."
+      },
+      {
+        "nl": "Laat je me dat vóór vrijdag even weten?",
+        "en": "Key words: je = you."
+      },
+      {
         "nl": "Hartelijke groet,",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
@@ -1902,6 +2526,30 @@
       {
         "nl": "Coen vraagt of Selina extra kan werken.",
         "en": "Key words: kan = can; werken = work."
+      },
+      {
+        "nl": "Voor wie moet Selina werken?",
+        "en": "Key words: voor = for/before; moet = must; werken = work."
+      },
+      {
+        "nl": "Selina kan volgende week extra werken.",
+        "en": "Key words: kan = can; werken = work."
+      },
+      {
+        "nl": "Hoeveel dagen moet ze dan extra werken?",
+        "en": "Key words: moet = must; dan = then; werken = work."
+      },
+      {
+        "nl": "Wanneer moet Selina iets laten weten aan Coen?",
+        "en": "Key words: wanneer = when; moet = must; aan = to/at."
+      },
+      {
+        "nl": "Abid gaat de cursus Houten Meubels Maken volgen.",
+        "en": "Key words: cursus = course."
+      },
+      {
+        "nl": "Hij leest informatie over de cursus.",
+        "en": "Key words: informatie = information; cursus = course."
       }
     ]
   },
@@ -1956,6 +2604,10 @@
         "en": "Key words: in = in; lessen = lessons; u = you (formal)."
       },
       {
+        "nl": "Inschrijven",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Inschrijven voor de cursus kan via deze website.",
         "en": "Key words: voor = for/before; cursus = course; kan = can."
       },
@@ -1964,12 +2616,36 @@
         "en": "Key words: u = you (formal); kunt = can; ook = also; naar = to."
       },
       {
+        "nl": "Hebt u zich ingeschreven, maar kunt u niet naar de les komen of bent u later?",
+        "en": "Key words: hebt = have; u = you (formal); kunt = can; niet = not; naar = to; les = lesson."
+      },
+      {
         "nl": "Bel dan onze receptie: 023-3691117.",
         "en": "Key words: dan = then."
       },
       {
         "nl": "Zij melden u dan af bij de docent.",
         "en": "Key words: u = you (formal); dan = then; bij = at/with."
+      },
+      {
+        "nl": "Wat moet Abid meenemen naar de cursus?",
+        "en": "Key words: wat = what; moet = must; naar = to; cursus = course."
+      },
+      {
+        "nl": "Wat gaan de cursisten in de eerste les doen?",
+        "en": "Key words: wat = what; in = in; les = lesson."
+      },
+      {
+        "nl": "Abid kan niet op tijd in de les zijn.",
+        "en": "Key words: kan = can; niet = not; op = on/at; in = in; les = lesson; zijn = are."
+      },
+      {
+        "nl": "Wat moet hij doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Mia krijgt een brief van de tandarts.",
+        "en": "Key words: brief = letter; van = of/from."
       }
     ]
   },
@@ -1990,6 +2666,10 @@
       {
         "nl": "Tandarts Altman stopt helaas per 1 oktober met werken bij onze praktijk.",
         "en": "Key words: met = with; werken = work; bij = at/with."
+      },
+      {
+        "nl": "Hij gaat namelijk verhuizen.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
         "nl": "Wij hebben nu een afspraak voor u gemaakt bij tandarts Jensma.",
@@ -2046,6 +2726,22 @@
       {
         "nl": "Secretaresse",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Waarom is de afspraak van Mia verplaatst?",
+        "en": "Key words: waarom = why; is = is; afspraak = appointment; van = of/from."
+      },
+      {
+        "nl": "Wanneer heeft Mia een nieuwe afspraak?",
+        "en": "Key words: wanneer = when; heeft = has; afspraak = appointment."
+      },
+      {
+        "nl": "Lito werkt bij de gemeente.",
+        "en": "Key words: bij = at/with."
+      },
+      {
+        "nl": "Hij krijgt een e-mail van zijn baas, Pascal.",
+        "en": "Key words: van = of/from; zijn = are."
       }
     ]
   },
@@ -2062,6 +2758,10 @@
       {
         "nl": "Wil je dat deze week doen?",
         "en": "Key words: wil = want; je = you."
+      },
+      {
+        "nl": "Dan kan ik een nieuwe planning voor de vakantieperiode maken.",
+        "en": "Key words: dan = then; kan = can; voor = for/before."
       },
       {
         "nl": "In het rooster kun je zien wie wanneer al vakantie heeft.",
@@ -2108,8 +2808,28 @@
         "en": "Key words: vanaf = from; weer = again."
       },
       {
+        "nl": "Dan moet iedereen weer aan het werk zijn.",
+        "en": "Key words: dan = then; moet = must; weer = again; aan = to/at; werk = work; zijn = are."
+      },
+      {
         "nl": "Vriendelijke groet,",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Waarom stuurt Pascal deze e-mail?",
+        "en": "Key words: waarom = why."
+      },
+      {
+        "nl": "Waarom moeten er altijd twee collega's aan het werk zijn in de zomer?",
+        "en": "Key words: waarom = why; moeten = must; aan = to/at; werk = work; zijn = are; in = in."
+      },
+      {
+        "nl": "Lito wil twee weken achter elkaar vrij.",
+        "en": "Key words: wil = want."
+      },
+      {
+        "nl": "Wanneer kan Lito het beste vakantie nemen?",
+        "en": "Key words: wanneer = when; kan = can."
       }
     ]
   },
@@ -2140,8 +2860,16 @@
         "en": "Key words: we = we; zijn = are; ook = also; willen = want; werken = work."
       },
       {
+        "nl": "Laten jullie mij weten of jullie extra willen werken?",
+        "en": "Key words: willen = want; werken = work."
+      },
+      {
         "nl": "Dat hoor ik graag vóór dinsdag.",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Dan kan ik het nieuwe rooster gaan maken.",
+        "en": "Key words: dan = then; kan = can."
       },
       {
         "nl": "Je hoeft natuurlijk niet meer te werken, als je dat niet wilt.",
@@ -2156,6 +2884,14 @@
         "en": "Key words: als = if/when; vragen = questions/ask; dan = then."
       },
       {
+        "nl": "Donderdag werkt het hele team.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Dan wil ik graag met jullie allemaal praten.",
+        "en": "Key words: dan = then; wil = want; met = with."
+      },
+      {
         "nl": "We kunnen dan het nieuwe rooster bespreken.",
         "en": "Key words: we = we; dan = then."
       },
@@ -2166,6 +2902,22 @@
       {
         "nl": "Dat is misschien wel nodig, als jullie werktijden veranderen.",
         "en": "Key words: is = is; als = if/when."
+      },
+      {
+        "nl": "Wat moet Halil aan Theo laten weten?",
+        "en": "Key words: wat = what; moet = must; aan = to/at."
+      },
+      {
+        "nl": "Theo wil volgende week met het hele team praten.",
+        "en": "Key words: wil = want; met = with."
+      },
+      {
+        "nl": "Op welke dag is dat?",
+        "en": "Key words: op = on/at; welke = which; is = is."
+      },
+      {
+        "nl": "Iwan wil een cursus Techniek volgen.",
+        "en": "Key words: wil = want; cursus = course."
       },
       {
         "nl": "Hij kijkt op de website van een cursuscentrum.",
@@ -2200,6 +2952,10 @@
         "en": "Key words: dan = then; kunt = can; u = you (formal); ook = also; bij = at/with."
       },
       {
+        "nl": "Daarvoor moet u wel al wat weten van techniek.",
+        "en": "Key words: moet = must; u = you (formal); wat = what; van = of/from."
+      },
+      {
         "nl": "De cursus bestaat uit theorielessen en praktijklessen.",
         "en": "Key words: cursus = course."
       },
@@ -2224,6 +2980,10 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Meer informatie",
+        "en": "Key words: informatie = information."
+      },
+      {
         "nl": "Wilt u zich inschrijven voor de cursus?",
         "en": "Key words: wilt = want; u = you (formal); voor = for/before; cursus = course."
       },
@@ -2244,8 +3004,40 @@
         "en": "Key words: u = you (formal); van = of/from."
       },
       {
+        "nl": "Hebt u vragen over de cursus of over de verschillende lessen?",
+        "en": "Key words: hebt = have; u = you (formal); vragen = questions/ask; cursus = course; lessen = lessons."
+      },
+      {
         "nl": "Bel ons dan: 070 - 365 2211.",
         "en": "Key words: dan = then."
+      },
+      {
+        "nl": "Voor wie is de cursus Techniek bedoeld?",
+        "en": "Key words: voor = for/before; is = is; cursus = course."
+      },
+      {
+        "nl": "Iwan wil een cursus Techniek volgen.",
+        "en": "Key words: wil = want; cursus = course."
+      },
+      {
+        "nl": "Wat kan hij zelf kiezen?",
+        "en": "Key words: wat = what; kan = can."
+      },
+      {
+        "nl": "Iwan wil weten wat ze gaan doen in de praktijklessen.",
+        "en": "Key words: wil = want; wat = what; in = in."
+      },
+      {
+        "nl": "Wat moet hij doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Selem staat bij de bushalte.",
+        "en": "Key words: bij = at/with."
+      },
+      {
+        "nl": "Hij leest een bericht over de bussen.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       }
     ]
   },
@@ -2328,7 +3120,27 @@
         "en": "Key words: naar = to; zijn = are; werk = work."
       },
       {
+        "nl": "Tot wanneer rijdt deze bus een andere route?",
+        "en": "Key words: tot = until; wanneer = when."
+      },
+      {
+        "nl": "Waar is voor twee weken een bushalte voor bus 323?",
+        "en": "Key words: waar = where; is = is; voor = for/before."
+      },
+      {
         "nl": "De vrouw van Selem neemt elke dag bus 14.",
+        "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "Waarom rijdt die bus in oktober een andere route?",
+        "en": "Key words: waarom = why; in = in."
+      },
+      {
+        "nl": "Maya volgt een taalcursus.",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Ze leest een briefje van het cursuscentrum.",
         "en": "Key words: van = of/from."
       }
     ]
@@ -2348,12 +3160,20 @@
         "en": "Key words: op = on/at."
       },
       {
+        "nl": "Daarom gaat deze verdieping vanaf volgende week maandag een paar dagen dicht.",
+        "en": "Key words: daarom = therefore; vanaf = from."
+      },
+      {
         "nl": "Er zijn dan geen lessen in het Kuijpergebouw.",
         "en": "Key words: zijn = are; dan = then; geen = no/not any; lessen = lessons; in = in."
       },
       {
         "nl": "Ook het studiecentrum is op deze dagen gesloten.",
         "en": "Key words: ook = also; is = is; op = on/at."
+      },
+      {
+        "nl": "Studeren kan dan op de begane grond, in het computerlokaal.",
+        "en": "Key words: kan = can; dan = then; op = on/at; in = in."
       },
       {
         "nl": "De verbouwing duurt tot en met donderdag, daarna gaat het hele gebouw weer open.",
@@ -2366,6 +3186,10 @@
       {
         "nl": "Ook de lessen van de nieuwe cursus 'Nederlands voor beginners' zijn dan in dit gebouw.",
         "en": "Key words: ook = also; lessen = lessons; van = of/from; cursus = course; voor = for/before; zijn = are; dan = then; in = in."
+      },
+      {
+        "nl": "Nieuwe locatie cursus 'Nederlands in de praktijk'",
+        "en": "Key words: cursus = course; in = in."
       },
       {
         "nl": "De cursus 'Nederlands in de praktijk' kan door de verbouwing niet doorgaan in het Kuijpergebouw.",
@@ -2394,6 +3218,30 @@
       {
         "nl": "Het bestuur",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Maya wil volgende week woensdag studeren in het Kuijpergebouw.",
+        "en": "Key words: wil = want; in = in."
+      },
+      {
+        "nl": "Vanaf wanneer is er volgende week weer les in het Kuijpergebouw?",
+        "en": "Key words: vanaf = from; wanneer = when; is = is; weer = again; les = lesson; in = in."
+      },
+      {
+        "nl": "Maya volgt de cursus 'Nederlands in de praktijk'.",
+        "en": "Key words: cursus = course; in = in."
+      },
+      {
+        "nl": "Wat moet ze weten?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Ali werkt in een speelgoedwinkel.",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "Hij krijgt een e-mail van zijn baas.",
+        "en": "Key words: van = of/from; zijn = are."
       }
     ]
   },
@@ -2436,6 +3284,10 @@
         "en": "Key words: ook = also; op = on/at; bij = at/with."
       },
       {
+        "nl": "Zie je collega's samen pauze nemen op een druk moment?",
+        "en": "Key words: je = you; op = on/at."
+      },
+      {
         "nl": "Zeg er dan wat van.",
         "en": "Key words: dan = then; wat = what; van = of/from."
       },
@@ -2462,6 +3314,10 @@
       {
         "nl": "Dat kun je in de winkel zetten.",
         "en": "Key words: je = you; in = in; winkel = store."
+      },
+      {
+        "nl": "Schoonmaken kan ook.",
+        "en": "Key words: kan = can; ook = also."
       },
       {
         "nl": "Je kunt bijvoorbeeld de kasten schoonmaken.",
@@ -2496,8 +3352,32 @@
         "en": "Key words: als = if/when; vragen = questions/ask."
       },
       {
+        "nl": "Ali wil pauze nemen.",
+        "en": "Key words: wil = want."
+      },
+      {
+        "nl": "Wat moet hij eerst doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
         "nl": "De winkel is open, maar er zijn geen klanten.",
         "en": "Key words: winkel = store; is = is; zijn = are; geen = no/not any."
+      },
+      {
+        "nl": "Wat moet Ali doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Waar gaat Hans meer op letten?",
+        "en": "Key words: waar = where; op = on/at."
+      },
+      {
+        "nl": "Yuri doet een cursus Nederlands.",
+        "en": "Key words: cursus = course."
+      },
+      {
+        "nl": "Hij krijgt een e-mail van de docent.",
+        "en": "Key words: van = of/from."
       }
     ]
   },
@@ -2528,12 +3408,68 @@
         "en": "Key words: je = you; hebt = have; van = of/from."
       },
       {
+        "nl": "Je moet deze toets nog wel doen.",
+        "en": "Key words: je = you; moet = must."
+      },
+      {
+        "nl": "Dat kan op 10 december om 10.00 uur.",
+        "en": "Key words: kan = can; op = on/at; om = at/in order to."
+      },
+      {
         "nl": "We bespreken de toets dan in de les daarna, op 15 december.",
         "en": "Key words: we = we; dan = then; in = in; les = lesson; op = on/at."
       },
       {
+        "nl": "Je moet vier foto's uitzoeken voor de toets.",
+        "en": "Key words: je = you; moet = must; voor = for/before."
+      },
+      {
+        "nl": "Je mag zelf weten wat voor foto's dit zijn.",
+        "en": "Key words: je = you; wat = what; voor = for/before; zijn = are."
+      },
+      {
+        "nl": "Tijdens de toets moet je over die foto's vertellen.",
+        "en": "Key words: moet = must; je = you."
+      },
+      {
+        "nl": "Neem de foto's dus ook mee, de 10e.",
+        "en": "Key words: ook = also."
+      },
+      {
+        "nl": "Het is slim om voor de toets nog te oefenen.",
+        "en": "Key words: is = is; om = at/in order to; voor = for/before."
+      },
+      {
+        "nl": "In het cursusboek staan een paar oefentoetsen.",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "Die kun je doen.",
+        "en": "Key words: je = you."
+      },
+      {
+        "nl": "Je kunt ook nog even naar je portfolio kijken.",
+        "en": "Key words: je = you; kunt = can; ook = also; naar = to."
+      },
+      {
+        "nl": "Daarin staan opdrachten die je al gedaan hebt.",
+        "en": "Key words: je = you; hebt = have."
+      },
+      {
+        "nl": "Die kunnen je helpen.",
+        "en": "Key words: je = you; helpen = help."
+      },
+      {
+        "nl": "Je mag trouwens geen woordenboek gebruiken tijdens de toets.",
+        "en": "Key words: je = you; geen = no/not any."
+      },
+      {
         "nl": "Als je de toets niet haalt, kun je nog een herkansing doen.",
         "en": "Key words: als = if/when; je = you; niet = not."
+      },
+      {
+        "nl": "Dat kan maximaal één keer.",
+        "en": "Key words: kan = can."
       },
       {
         "nl": "Als je de herkansing ook niet haalt, krijg je geen certificaat.",
@@ -2542,6 +3478,10 @@
       {
         "nl": "Wil je wel een certificaat?",
         "en": "Key words: wil = want; je = you."
+      },
+      {
+        "nl": "Dan moet je extra opdrachten voor je portfolio doen.",
+        "en": "Key words: dan = then; moet = must; je = you; voor = for/before."
       },
       {
         "nl": "Je kunt dan alsnog je certificaat voor de cursus krijgen.",
@@ -2554,6 +3494,18 @@
       {
         "nl": "Joop van den Berg",
         "en": "Key words: van = of/from."
+      },
+      {
+        "nl": "Wanneer kan Yuri de spreektoets inhalen?",
+        "en": "Key words: wanneer = when; kan = can."
+      },
+      {
+        "nl": "Wat moet Yuri meenemen naar de spreektoets?",
+        "en": "Key words: wat = what; moet = must; naar = to."
+      },
+      {
+        "nl": "Evita krijgt een folder in de brievenbus.",
+        "en": "Key words: in = in."
       }
     ]
   },
@@ -2592,6 +3544,10 @@
         "en": "Key words: wilt = want; u = you (formal)."
       },
       {
+        "nl": "Of heel kort haar?",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "Wij geven gratis advies bij elke afspraak.",
         "en": "Key words: wij = we; gratis = free; bij = at/with; afspraak = appointment."
       },
@@ -2628,6 +3584,10 @@
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
       {
+        "nl": "Openingstijden",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
         "nl": "zondag & maandag gesloten",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
       },
@@ -2646,6 +3606,38 @@
       {
         "nl": "zaterdag 09.00 - 13.00 uur",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Evita wil kans maken op een gratis knipbeurt.",
+        "en": "Key words: wil = want; op = on/at; gratis = free."
+      },
+      {
+        "nl": "Wat kan ze dan doen?",
+        "en": "Key words: wat = what; kan = can; dan = then."
+      },
+      {
+        "nl": "Evita heeft een dochtertje van zes jaar.",
+        "en": "Key words: heeft = has; van = of/from."
+      },
+      {
+        "nl": "Evita wil het haar van haar dochtertje laten wassen en knippen.",
+        "en": "Key words: wil = want; van = of/from."
+      },
+      {
+        "nl": "Hoeveel kost dat?",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Evita moet elke dag tot 18.00 uur werken.",
+        "en": "Key words: moet = must; tot = until; werken = work."
+      },
+      {
+        "nl": "Op welke dag kan ze naar Kapper Style?",
+        "en": "Key words: op = on/at; welke = which; kan = can; naar = to."
+      },
+      {
+        "nl": "Martin krijgt een e-mail van Sharon.",
+        "en": "Key words: van = of/from."
       }
     ]
   },
@@ -2658,6 +3650,26 @@
       {
         "nl": "Hallo iedereen,",
         "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Thomas en Janneke zijn op 20 april 25 jaar getrouwd.",
+        "en": "Key words: zijn = are; op = on/at."
+      },
+      {
+        "nl": "We hebben daarom een feest gepland met al hun vrienden, ook met jou dus.",
+        "en": "Key words: we = we; daarom = therefore; met = with; ook = also."
+      },
+      {
+        "nl": "Het feest is nog een verrassing voor ze!",
+        "en": "Key words: is = is; voor = for/before."
+      },
+      {
+        "nl": "We vieren het op 24 april in café De Sjoes, vanaf 16.00 uur!",
+        "en": "Key words: we = we; op = on/at; in = in; vanaf = from."
+      },
+      {
+        "nl": "Laat je voor 15 april aan mij weten of je kunt komen?",
+        "en": "Key words: je = you; voor = for/before; aan = to/at; kunt = can."
       },
       {
         "nl": "We verzamelen om 15.00 uur bij het zwembad.",
@@ -2692,6 +3704,10 @@
         "en": "Key words: we = we; is = is."
       },
       {
+        "nl": "Weet jij wat Thomas en Janneke leuk vinden?",
+        "en": "Key words: jij = you; wat = what."
+      },
+      {
         "nl": "Ik weet dat ze van lezen houden, maar hun kast staat al vol boeken.",
         "en": "Key words: van = of/from."
       },
@@ -2700,12 +3716,36 @@
         "en": "Key words: geen = no/not any."
       },
       {
+        "nl": "Weet jij misschien een leuk cadeau?",
+        "en": "Key words: jij = you."
+      },
+      {
         "nl": "Laat het me dan weten!",
         "en": "Key words: dan = then."
       },
       {
         "nl": "Hopelijk tot dan!",
         "en": "Key words: tot = until; dan = then."
+      },
+      {
+        "nl": "Tot wanneer kan Martin zich aanmelden voor het feest?",
+        "en": "Key words: tot = until; wanneer = when; kan = can; voor = for/before."
+      },
+      {
+        "nl": "Waarom moet Martin om 15.00 uur bij het zwembad zijn?",
+        "en": "Key words: waarom = why; moet = must; om = at/in order to; bij = at/with; zijn = are."
+      },
+      {
+        "nl": "Wat wil Sharon als cadeau geven?",
+        "en": "Key words: wat = what; wil = want; als = if/when."
+      },
+      {
+        "nl": "Bouchra werkt in een verpleeghuis.",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "Ze krijgt een e-mail van haar baas.",
+        "en": "Key words: van = of/from."
       }
     ]
   },
@@ -2750,6 +3790,218 @@
       {
         "nl": "Als je nog vragen hebt, kom dan naar me toe.",
         "en": "Key words: als = if/when; je = you; vragen = questions/ask; hebt = have; dan = then; naar = to."
+      },
+      {
+        "nl": "Wat zegt Gerrie over de komende weken?",
+        "en": "Key words: wat = what."
+      },
+      {
+        "nl": "Op welke afdeling moet Bouchra op 30 april werken?",
+        "en": "Key words: op = on/at; welke = which; moet = must; werken = work."
+      },
+      {
+        "nl": "Met wie werkt Bouchra op 5 mei samen op de afdeling?",
+        "en": "Key words: met = with; op = on/at."
+      }
+    ]
+  },
+  {
+    "id": "exam1-questions",
+    "les": 40,
+    "exam": 1,
+    "title": "Exam 1 questions",
+    "sentences": [
+      {
+        "nl": "Begin met het maken van een planning: wat gaat u wanneer doen?",
+        "en": "Key words: met = with; van = of/from; wat = what; u = you (formal); wanneer = when."
+      },
+      {
+        "nl": "Wat moet hij volgens de tekst het eerste doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Wanneer kan je volgens de tekst het beste leren?",
+        "en": "Key words: wanneer = when; kan = can; je = you; leren = learn."
+      },
+      {
+        "nl": "Welk advies kan je hem geven?",
+        "en": "Key words: kan = can; je = you."
+      },
+      {
+        "nl": "Waarom krijgen de dorpsbewoners deze brief van Piet Jansen?",
+        "en": "Key words: waarom = why; brief = letter; van = of/from."
+      },
+      {
+        "nl": "Wanneer moet hij zijn auto weghalen op zaterdag 13 juni?",
+        "en": "Key words: wanneer = when; moet = must; zijn = are; op = on/at."
+      },
+      {
+        "nl": "Hebt u meubels gezien die u wilt kopen?",
+        "en": "Key words: hebt = have; u = you (formal); wilt = want."
+      },
+      {
+        "nl": "En wilt u dat wij deze meubels bij u thuisbezorgen?",
+        "en": "Key words: wilt = want; u = you (formal); wij = we; bij = at/with."
+      },
+      {
+        "nl": "Hoe werkt het?",
+        "en": "Key words: hoe = how."
+      },
+      {
+        "nl": "Hoeveel weegt uw bestelling?",
+        "en": "Reading sentence from the mock exam. Tap Dutch words for meaning."
+      },
+      {
+        "nl": "Wilt u de meubels op meer adressen laten bezorgen?",
+        "en": "Key words: wilt = want; u = you (formal); op = on/at."
+      },
+      {
+        "nl": "* Wilt u weten hoe laat wij de meubels bezorgen?",
+        "en": "Key words: wilt = want; u = you (formal); hoe = how; wij = we."
+      },
+      {
+        "nl": "* Woont u op de vijfde verdieping of hoger?",
+        "en": "Key words: u = you (formal); op = on/at."
+      },
+      {
+        "nl": "Wat moet hij hiervoor betalen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Wanneer kan zij dat vragen?",
+        "en": "Key words: wanneer = when; kan = can; vragen = questions/ask."
+      },
+      {
+        "nl": "Wat moet je meenemen?",
+        "en": "Key words: wat = what; moet = must; je = you."
+      },
+      {
+        "nl": "Laat je weten of je erbij kunt zijn?",
+        "en": "Key words: je = you; kunt = can; zijn = are."
+      },
+      {
+        "nl": "Wat moet Sabrina meenemen naar het personeelsuitje?",
+        "en": "Key words: wat = what; moet = must; naar = to."
+      },
+      {
+        "nl": "Aan wie moet ze dat vragen?",
+        "en": "Key words: aan = to/at; moet = must; vragen = questions/ask."
+      },
+      {
+        "nl": "Wil jij hem misschien ophalen en naar de portier brengen?",
+        "en": "Key words: wil = want; jij = you; naar = to."
+      },
+      {
+        "nl": "Wil je me een bericht sturen als je de tas gevonden hebt?",
+        "en": "Key words: wil = want; je = you; als = if/when; hebt = have."
+      },
+      {
+        "nl": "Waar is de tas van Suzanne?",
+        "en": "Key words: waar = where; is = is; van = of/from."
+      },
+      {
+        "nl": "Wilt u om 9 uur op het veld zijn?",
+        "en": "Key words: wilt = want; u = you (formal); om = at/in order to; op = on/at; zijn = are."
+      },
+      {
+        "nl": "Als u geen vlees eet, wilt u dit dan doorgeven aan Marie?",
+        "en": "Key words: als = if/when; u = you (formal); geen = no/not any; wilt = want; dan = then; aan = to/at."
+      },
+      {
+        "nl": "Welke sport gaan ze doen?",
+        "en": "Key words: welke = which."
+      },
+      {
+        "nl": "Wil je mee met de bus?",
+        "en": "Key words: wil = want; je = you; met = with."
+      },
+      {
+        "nl": "Welk cadeau gaan de collega's samen geven aan Nadia en Richard?",
+        "en": "Key words: aan = to/at."
+      },
+      {
+        "nl": "Waarom stuurt de feestcommissie deze e-mail vooral?",
+        "en": "Key words: waarom = why."
+      },
+      {
+        "nl": "Is een kind bijvoorbeeld gewond of ziek?",
+        "en": "Key words: is = is; ziek = sick."
+      },
+      {
+        "nl": "Of moet een kind ineens erg hoesten?",
+        "en": "Key words: moet = must."
+      },
+      {
+        "nl": "Welke cursus is het meest geschikt voor Myra?",
+        "en": "Key words: welke = which; cursus = course; is = is; voor = for/before."
+      },
+      {
+        "nl": "In hoeveel bijeenkomsten leert zij dat?",
+        "en": "Key words: in = in."
+      },
+      {
+        "nl": "Welke cursus kan hij het beste kiezen?",
+        "en": "Key words: welke = which; cursus = course; kan = can."
+      },
+      {
+        "nl": "Wat hebben we te koop?",
+        "en": "Key words: wat = what; we = we."
+      },
+      {
+        "nl": "Hoe werken we?",
+        "en": "Key words: hoe = how; werken = work; we = we."
+      },
+      {
+        "nl": "Wat doen we met onze winst?",
+        "en": "Key words: wat = what; we = we; met = with."
+      },
+      {
+        "nl": "Hebt u spullen die u niet meer gebruikt?",
+        "en": "Key words: hebt = have; u = you (formal); niet = not."
+      },
+      {
+        "nl": "Hebt u kleren die u niet meer draagt?",
+        "en": "Key words: hebt = have; u = you (formal); niet = not."
+      },
+      {
+        "nl": "Hebt u iets nodig voor weinig geld?",
+        "en": "Key words: hebt = have; u = you (formal); voor = for/before."
+      },
+      {
+        "nl": "Wat doet Bartjes met de kapotte spullen?",
+        "en": "Key words: wat = what; met = with."
+      },
+      {
+        "nl": "Hoeveel moet hij dan betalen aan Bartjes?",
+        "en": "Key words: moet = must; dan = then; aan = to/at."
+      },
+      {
+        "nl": "Waar gaat de winst van Bartjes dit jaar naartoe?",
+        "en": "Key words: waar = where; van = of/from."
+      },
+      {
+        "nl": "Waar hebt u last van?",
+        "en": "Key words: waar = where; hebt = have; u = you (formal); van = of/from."
+      },
+      {
+        "nl": "Wat gaat u doen om zo snel mogelijk beter te worden?",
+        "en": "Key words: wat = what; u = you (formal); om = at/in order to."
+      },
+      {
+        "nl": "Wanneer kunt u weer werken, denkt u?",
+        "en": "Key words: wanneer = when; kunt = can; u = you (formal); weer = again; werken = work."
+      },
+      {
+        "nl": "Moeten uw collega's werk van u overnemen?",
+        "en": "Key words: moeten = must; werk = work; van = of/from; u = you (formal)."
+      },
+      {
+        "nl": "Wat moet ze doen?",
+        "en": "Key words: wat = what; moet = must."
+      },
+      {
+        "nl": "Wat moet hij vertellen tijdens zijn ziekmelding?",
+        "en": "Key words: wat = what; moet = must; zijn = are."
       }
     ]
   }

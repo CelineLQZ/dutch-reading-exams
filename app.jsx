@@ -115,31 +115,34 @@ function analyzeSentenceGrammar(sentence) {
   const add = (label, nl) => forms.push({ label, nl });
 
   if (/[?]$/.test(sentence.trim()) || /^(wat|waar|wanneer|waarom|hoe|welke|wie|aan wie)\b/i.test(sentence.trim())) {
-    add('question', 'Question word or question order. In Dutch, the finite verb often comes before the subject in questions.');
+    add('疑问句', '荷兰语疑问句常见两种：疑问词开头（wat/waar/wanneer/hoe 等），或者变位动词提前到主语前面。');
   }
   if (/\b(moet|moeten|kunt|kan|kunnen|wilt|wil|willen|mag|mogen|hoeft|hoeven)\b/.test(lower)) {
-    add('modal verb', 'A modal verb is combined with an infinitive, usually later in the sentence: moet doen, kunt kiezen, wilt kopen.');
+    add('情态动词', 'moeten/kunnen/willen/mogen/hoeven 后面通常接动词原形，动词原形经常放在句子后面。');
   }
   if (/\b(niet|geen|niets|niemand)\b/.test(lower)) {
-    add('negation', 'niet negates verbs, adjectives, or clauses. geen negates an indefinite noun: geen auto, geen vlees.');
+    add('否定', 'niet 常否定动作、形容词或整句；geen 放在不定名词前，表示“没有/不是任何”。');
   }
   if (/\b(om half|om \d|uur|'s morgens|'s middags|'s avonds|vanaf|tot|voor|na de pauze)\b/.test(lower)) {
-    add('time expression', 'Time phrases often use om for clock time, vanaf for starting time, tot for until, and voor/na for before/after.');
+    add('时间表达', '具体时间常用 om；vanaf 表示“从……开始”；tot 表示“直到”；voor/na 表示“之前/之后”。');
   }
   if (/\b(als|dat|wanneer|omdat|zodat|voordat)\b/.test(lower)) {
-    add('subclause', 'After words like als, dat, wanneer, omdat, the conjugated verb often moves toward the end of the clause.');
+    add('从句语序', 'als/dat/wanneer/omdat 等引导从句时，变位动词常移到从句后面，这一点和英语语序不同。');
   }
   if (/\b(op|aan|bij|naar|met|voor|van|tot|in|uit)\b/.test(lower)) {
-    add('preposition', 'Prepositions are small words such as op, aan, bij, naar, met, voor, van. They are often part of fixed expressions.');
+    add('介词', 'op/aan/bij/naar/met/voor/van 等是高频介词，也经常和动词或名词组成固定搭配。');
   }
   if (/\b(mee|op|weg|aan|uit|door|thuis|terug)\b/.test(lower) && /\b(halen|nemen|melden|geven|doen|gaan|brengen|bezorgen|aantrekken)\b/.test(lower)) {
-    add('separable verb', 'Separable verbs can split in a sentence: haal ... op, geef ... door, trek ... aan.');
+    add('可分动词', '有些动词会拆开使用，例如 haal ... op、geef ... door、trek ... aan。看到小品词在后面时要和前面的动词连起来理解。');
   }
   if (/\b(het beste|het meest|beter|meer|minder|hoger|langer)\b/.test(lower)) {
-    add('comparison', 'Dutch uses forms like beter for comparative and het beste / het meest for superlative.');
+    add('比较级/最高级', 'beter/meer/minder 是比较级；het beste/het meest 常表示最高级。');
   }
   if (/\b(wordt|worden|is|zijn)\b/.test(lower) && /\b(verbouwd|gekozen|bezorgd|gelezen|gevonden|vergeten)\b/.test(lower)) {
-    add('passive/perfect', 'Forms with worden/zijn plus a past participle can show passive or completed meaning.');
+    add('被动或完成', 'worden/zijn 加过去分词时，常表示被动或已经完成的状态。');
+  }
+  if (/^(dan|daarom|daarna|ook|op|om|vandaag|morgen|volgende|in|na|voor)\b/i.test(sentence.trim())) {
+    add('语序提醒', '时间、地点或连接词放句首时，荷兰语常把变位动词放到第二位，主语跟在动词后面，这和英语/中文直译顺序不同。');
   }
 
   return forms.length ? { kind: 'sentence', forms } : null;
@@ -399,8 +402,8 @@ function App() {
   const orderedSentences = useMemo(() => {
     let list = allSentences;
     if (prefs.les !== 'all') list = list.filter(s => s.les === prefs.les);
-    return prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
-  }, [allSentences, prefs.les, prefs.order]);
+    return list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
+  }, [allSentences, prefs.les]);
 
   const lessons = useMemo(() => {
     const m = {};

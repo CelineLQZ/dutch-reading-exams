@@ -27,19 +27,19 @@
   <!-- Babel standalone (compiles JSX in-browser) -->
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
 
-  <!-- App modules v20 — cache refresh -->
-  <script src="store.js?v=20"></script>
-  <script src="tts.js?v=20"></script>
-  <script type="text/babel" src="swipe-deck.jsx?v=20"></script>
-  <script type="text/babel" src="card.jsx?v=20"></script>
-  <script type="text/babel" src="screens.jsx?v=20"></script>
-  <script type="text/babel" src="app.jsx?v=20"></script>
+  <!-- App modules v21 — cache refresh -->
+  <script src="store.js?v=21"></script>
+  <script src="tts.js?v=21"></script>
+  <script type="text/babel" src="swipe-deck.jsx?v=21"></script>
+  <script type="text/babel" src="card.jsx?v=21"></script>
+  <script type="text/babel" src="screens.jsx?v=21"></script>
+  <script type="text/babel" src="app.jsx?v=21"></script>
 
   <!-- Service worker registration -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(reg => reg.update()).catch(() => {});
+        navigator.serviceWorker.register('./sw.js').then(reg => reg.update()).catch(() => {});
       });
       navigator.serviceWorker.addEventListener('controllerchange', () => {
         if (!window.__swReloaded) {

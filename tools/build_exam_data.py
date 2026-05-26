@@ -530,10 +530,6 @@ def looks_like_question_or_instruction(line):
         return True
     if line in {"Lees eerst de vraag.", "Lees daarna de tekst."}:
         return True
-    if re.match(r"^[A-Z][a-z]+ (wil|werkt|woont|volgt|krijgt|leest|doet|gaat|heeft|moet|kan|staat)\b", line):
-        return True
-    if line.endswith("?") and not line.lower().startswith(("heeft u", "wilt u", "kunt u", "bent u", "wil je", "heb je")):
-        return True
     return False
 
 
@@ -556,8 +552,6 @@ def auto_exam_rows(start_les=11):
                 continue
             if looks_like_question_or_instruction(line):
                 continue
-            if line in SUBHEADINGS:
-                continue
             chunks = re.split(r"(?<=[.!?])\s+", line)
             for chunk in chunks:
                 chunk = clean_text(chunk)
@@ -574,7 +568,7 @@ def auto_exam_rows(start_les=11):
                 "les": idx,
                 "exam": current["exam"],
                 "title": current["title"],
-                "sentences": sentences[:28],
+                "sentences": sentences,
             })
         current = None
 
@@ -636,6 +630,36 @@ def article_rows():
         }
         for i, (title, pairs) in enumerate(ARTICLE_TRANSLATIONS.items())
     ]
+
+
+def exam1_question_rows(start_les):
+    if not SOURCE_MD.exists():
+        return []
+    questions = []
+    seen = set()
+    for raw in SOURCE_MD.read_text().splitlines():
+        line = strip_md(raw)
+        if not line or looks_like_question_or_instruction(line):
+            continue
+        chunks = re.split(r"(?<=[.!?])\s+", line)
+        for chunk in chunks:
+            chunk = clean_text(chunk)
+            if len(chunk) < 10 or not chunk.endswith("?"):
+                continue
+            key = chunk.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            questions.append({"nl": chunk, "en": sentence_gloss(chunk)})
+    if not questions:
+        return []
+    return [{
+        "id": "exam1-questions",
+        "les": start_les,
+        "exam": 1,
+        "title": "Exam 1 questions",
+        "sentences": questions,
+    }]
 
 
 def source_tokens():
@@ -778,6 +802,7 @@ def main():
     words = build_words()
     readings = article_rows()
     readings.extend(auto_exam_rows(start_les=len(readings) + 1))
+    readings.extend(exam1_question_rows(start_les=len(readings) + 1))
     OUT_WORDS.write_text(json.dumps(words, ensure_ascii=False, indent=2) + "\n")
     OUT_READINGS.write_text(json.dumps(readings, ensure_ascii=False, indent=2) + "\n")
     print(f"wrote {len(words)} cards to {OUT_WORDS}")
