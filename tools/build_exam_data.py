@@ -674,11 +674,11 @@ def source_tokens():
     return list(out.keys())
 
 
-def source_sentence_examples():
-    examples = {}
+def source_sentences():
+    sentences = []
     source = "\n".join(p.read_text() for p in SOURCE_FILES)
     source = source.replace("\u2028", "\n").replace("\xa0", " ")
-    source = re.sub(r"\|.*\|", " ", source)
+    source = re.sub(r"[|]", " ", source)
     source = re.sub(r"[*_`#>+-]", " ", source)
     source = re.sub(r"\+\+([^+]+)\+\+", r"\1", source)
     for line in source.splitlines():
@@ -687,25 +687,60 @@ def source_sentence_examples():
             continue
         for sent in re.split(r"(?<=[.!?])\s+", line):
             sent = clean_text(sent)
-            if len(sent) < 12:
+            if len(sent) < 2:
                 continue
-            fallback_en = "Original sentence from the mock exam."
-            for token in re.findall(r"[A-Za-zÀ-ÿ']+", sent.lower()):
-                token = token.strip("'")
-                if len(token) >= 3 and token not in COMMON_SKIP and token not in examples:
-                    examples[token] = {"nl": sent, "en": fallback_en}
+            sentences.append(sent)
+    return sentences
+
+
+def translated_sentence_map():
+    translations = {}
     for pairs in ARTICLE_TRANSLATIONS.values():
-      for nl, en in pairs:
-        for token in re.findall(r"[A-Za-zÀ-ÿ']+", nl.lower()):
+        for nl, en in pairs:
+            translations[clean_text(nl)] = en
+    return translations
+
+
+def source_sentence_examples():
+    examples = {}
+    translations = translated_sentence_map()
+    for sent in source_sentences():
+        fallback_en = translations.get(sent) or sentence_gloss(sent)
+        for token in re.findall(r"[A-Za-zÀ-ÿ']+", sent.lower()):
             token = token.strip("'")
-            if len(token) >= 3 and token not in COMMON_SKIP:
-                examples[token] = {"nl": nl, "en": en}
+            if len(token) >= 2 and token not in COMMON_SKIP and token not in examples:
+                examples[token] = {"nl": sent, "en": fallback_en}
     return examples
 
 
+def normalize_term(text):
+    return re.sub(r"^(de|het|een)\s+", "", (text or "").lower()).strip(" .,!?:;()[]'\"")
+
+
+def find_source_example(nl, source_examples, source_sents):
+    normalized = normalize_term(nl)
+    candidates = [normalized]
+    candidates.extend(normalize_term(part) for part in re.split(r"\s*/\s*", nl))
+    candidates = [c for c in candidates if c and "..." not in c and not c.endswith("?")]
+
+    translations = translated_sentence_map()
+    for candidate in candidates:
+        if candidate in source_examples:
+            return source_examples[candidate]
+
+    for candidate in candidates:
+        words = [w for w in re.findall(r"[a-zà-ÿ']+", candidate.lower()) if len(w) >= 2]
+        if not words:
+            continue
+        pattern = re.compile(r"\b" + r"\b.*\b".join(re.escape(w) for w in words[:3]) + r"\b", re.I)
+        for sent in source_sents:
+            if pattern.search(sent):
+                return {"nl": sent, "en": translations.get(sent) or sentence_gloss(sent)}
+    return None
+
+
 def clone_word(item, les, token=None, source_examples=None):
-    examples = item.get("examples") or {}
-    ex = (source_examples or {}).get(token or "") or examples.get("a1") or examples.get("a0") or examples.get("a2") or {}
+    ex = (source_examples or {}).get(token or "") or {}
     nl = item.get("nl", "")
     grammar = item.get("grammar")
     normalized = word_key({"nl": nl}) if nl else ""
@@ -758,6 +793,7 @@ def make_extra(nl, en, pos, les, example):
 def build_words():
     old = load_old_words()
     examples = source_sentence_examples()
+    source_sents = source_sentences()
     tokens = source_tokens()
     selected = OrderedDict()
 
@@ -786,11 +822,12 @@ def build_words():
                 cloned["en"] = en
             selected[key] = cloned
         else:
-            ex = examples.get(nl.lower(), {"nl": nl, "en": en})
+            ex = find_source_example(nl, examples, source_sents) or {"nl": nl, "en": en}
             selected[key] = make_extra(nl, en, pos, les, ex["nl"])
 
     for nl, en, pos, les, example in EXTRA_ITEMS:
-        selected[nl.lower()] = make_extra(nl, en, pos, les, example)
+        ex = find_source_example(nl, examples, source_sents) or {"nl": example, "en": en}
+        selected[nl.lower()] = make_extra(nl, en, pos, les, ex["nl"])
 
     words = list(selected.values())
     for i, w in enumerate(words):
