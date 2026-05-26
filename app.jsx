@@ -1,0 +1,624 @@
+// Root app — multi-user, palette, routing
+const { useState, useEffect, useMemo } = React;
+
+/* ── Palettes ───────────────────────────────────── */
+const PALETTES = {
+  'delft': {
+    name: 'Delft Porcelain',
+    cream:'#FBF8F1', paper:'#FFFFFF', 'paper-2':'#F0EDE3', line:'#E2DDD0',
+    ink:'#1A2540', 'ink-soft':'#5A6680', 'ink-faint':'#9AA4BC',
+    brand:'#1E5BA8', 'brand-ink':'#FFFFFF', 'brand-shadow':'rgba(30,91,168,0.28)', 'brand-faint':'rgba(30,91,168,0.10)',
+    keep:'#2A7D5C', forgot:'#B0432F', accent:'#D4A437',
+    'card-shadow':'0 10px 28px rgba(26,37,64,0.12), 0 2px 6px rgba(26,37,64,0.06)'
+  },
+  'coral-night': {
+    name: 'Coral Night',
+    cream:'#14152A', paper:'#1F2140', 'paper-2':'#292C50', line:'#2E3157',
+    ink:'#F5F2EE', 'ink-soft':'#B7B8D2', 'ink-faint':'#6E7090',
+    brand:'#FF7E70', 'brand-ink':'#3a0d05', 'brand-shadow':'rgba(255,126,112,0.35)', 'brand-faint':'rgba(255,126,112,0.14)',
+    keep:'#3FE0CE', forgot:'#FF6B85', accent:'#FFD23F',
+    'card-shadow':'0 14px 36px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)'
+  },
+  'espresso': {
+    name: 'Espresso',
+    cream:'#15110D', paper:'#1F1A14', 'paper-2':'#2A241B', line:'#332C22',
+    ink:'#F1E8DA', 'ink-soft':'#B7AC9A', 'ink-faint':'#7A7263',
+    brand:'#D4A437', 'brand-ink':'#1F1A14', 'brand-shadow':'rgba(212,164,55,0.35)', 'brand-faint':'rgba(212,164,55,0.14)',
+    keep:'#7CB97E', forgot:'#E07A5F', accent:'#E07A5F',
+    'card-shadow':'0 14px 36px rgba(0,0,0,0.55), 0 2px 8px rgba(0,0,0,0.3)'
+  },
+  'heritage': {
+    name: 'Heritage Ink',
+    cream:'#F1ECDF', paper:'#FAF6ED', 'paper-2':'#E8E0CE', line:'#D8CFB6',
+    ink:'#2A2520', 'ink-soft':'#5A5145', 'ink-faint':'#948A78',
+    brand:'#8B2C2F', 'brand-ink':'#FAF6ED', 'brand-shadow':'rgba(139,44,47,0.28)', 'brand-faint':'rgba(139,44,47,0.10)',
+    keep:'#3A6D4E', forgot:'#B85844', accent:'#C19A3E',
+    'card-shadow':'0 10px 28px rgba(42,37,32,0.14), 0 2px 6px rgba(42,37,32,0.07)'
+  },
+  'midnight-tulip': {
+    name: 'Midnight Tulip',
+    cream:'#1A1424', paper:'#251E33', 'paper-2':'#312842', line:'#3E344F',
+    ink:'#F0E5F1', 'ink-soft':'#BCB1C8', 'ink-faint':'#7A6E89',
+    brand:'#F26B7E', 'brand-ink':'#1A1424', 'brand-shadow':'rgba(242,107,126,0.35)', 'brand-faint':'rgba(242,107,126,0.14)',
+    keep:'#84D4B9', forgot:'#FFB444', accent:'#FFB444',
+    'card-shadow':'0 14px 36px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)'
+  },
+  'polder': {
+    name: 'Polder',
+    cream:'#E8E4DA', paper:'#F2EFE7', 'paper-2':'#DDD8C9', line:'#CFC9B6',
+    ink:'#2E2A1F', 'ink-soft':'#5F5848', 'ink-faint':'#928B79',
+    brand:'#5A7A4E', 'brand-ink':'#F2EFE7', 'brand-shadow':'rgba(90,122,78,0.28)', 'brand-faint':'rgba(90,122,78,0.12)',
+    keep:'#3F8C6D', forgot:'#B85844', accent:'#C9A14A',
+    'card-shadow':'0 10px 28px rgba(46,42,31,0.14), 0 2px 6px rgba(46,42,31,0.07)'
+  },
+  'meadow': {
+    name: 'Meadow',
+    cream:'#FFFFFF', paper:'#FAFAF7', 'paper-2':'#F0F0E8', line:'#E2E2D6',
+    ink:'#1F2937', 'ink-soft':'#5B6373', 'ink-faint':'#9CA3AF',
+    brand:'#3FB950', 'brand-ink':'#FFFFFF', 'brand-shadow':'rgba(63,185,80,0.32)', 'brand-faint':'rgba(63,185,80,0.12)',
+    keep:'#3FB950', forgot:'#E84855', accent:'#FFC93C',
+    'card-shadow':'0 10px 28px rgba(31,41,55,0.10), 0 2px 6px rgba(31,41,55,0.05)'
+  },
+  'sunshine': {
+    name: 'Sunshine',
+    cream:'#FFF8EC', paper:'#FFFFFF', 'paper-2':'#FFEFD0', line:'#F5E0B5',
+    ink:'#3A2A14', 'ink-soft':'#7A5F3D', 'ink-faint':'#B59E78',
+    brand:'#F49B0E', 'brand-ink':'#FFFFFF', 'brand-shadow':'rgba(244,155,14,0.35)', 'brand-faint':'rgba(244,155,14,0.15)',
+    keep:'#2BB673', forgot:'#E94F4F', accent:'#7E5BEF',
+    'card-shadow':'0 10px 28px rgba(58,42,20,0.12), 0 2px 6px rgba(58,42,20,0.06)'
+  }
+};
+
+function applyPalette(id) {
+  const p = PALETTES[id] || PALETTES['delft'];
+  const r = document.documentElement;
+  Object.entries(p).forEach(([k, v]) => { if (k !== 'name') r.style.setProperty('--' + k, v); });
+  document.body.style.background = p.cream;
+}
+
+function isPaletteDark(id) {
+  const p = PALETTES[id]; if (!p) return false;
+  const hex = p.cream.replace('#','');
+  const lum = (0.299 * parseInt(hex.slice(0,2),16) + 0.587 * parseInt(hex.slice(2,4),16) + 0.114 * parseInt(hex.slice(4,6),16)) / 255;
+  return lum < 0.5;
+}
+
+function shuffleA(arr) {
+  const a = arr.slice();
+  for (let i = a.length-1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+
+function wordKey(w, index = 0) {
+  return w._key || [w.les ?? '', w.nl ?? '', w.en ?? '', index].join('|');
+}
+
+function flattenReadings(readings) {
+  return readings.flatMap(article => (article.sentences || []).map((s, i) => ({
+    nl: s.nl,
+    en: s.en,
+    ipa: '',
+    pos: 'sentence',
+    type: 'sentence',
+    les: article.les,
+    articleTitle: article.title,
+    sentenceNumber: i + 1,
+    examples: {},
+    grammar: analyzeSentenceGrammar(s.nl),
+    _key: `sentence|${article.id}|${i + 1}|${s.nl}`
+  })));
+}
+
+function analyzeSentenceGrammar(sentence) {
+  const lower = sentence.toLowerCase();
+  const forms = [];
+  const add = (label, nl) => forms.push({ label, nl });
+
+  if (/[?]$/.test(sentence.trim()) || /^(wat|waar|wanneer|waarom|hoe|welke|wie|aan wie)\b/i.test(sentence.trim())) {
+    add('question', 'Question word or question order. In Dutch, the finite verb often comes before the subject in questions.');
+  }
+  if (/\b(moet|moeten|kunt|kan|kunnen|wilt|wil|willen|mag|mogen|hoeft|hoeven)\b/.test(lower)) {
+    add('modal verb', 'A modal verb is combined with an infinitive, usually later in the sentence: moet doen, kunt kiezen, wilt kopen.');
+  }
+  if (/\b(niet|geen|niets|niemand)\b/.test(lower)) {
+    add('negation', 'niet negates verbs, adjectives, or clauses. geen negates an indefinite noun: geen auto, geen vlees.');
+  }
+  if (/\b(om half|om \d|uur|'s morgens|'s middags|'s avonds|vanaf|tot|voor|na de pauze)\b/.test(lower)) {
+    add('time expression', 'Time phrases often use om for clock time, vanaf for starting time, tot for until, and voor/na for before/after.');
+  }
+  if (/\b(als|dat|wanneer|omdat|zodat|voordat)\b/.test(lower)) {
+    add('subclause', 'After words like als, dat, wanneer, omdat, the conjugated verb often moves toward the end of the clause.');
+  }
+  if (/\b(op|aan|bij|naar|met|voor|van|tot|in|uit)\b/.test(lower)) {
+    add('preposition', 'Prepositions are small words such as op, aan, bij, naar, met, voor, van. They are often part of fixed expressions.');
+  }
+  if (/\b(mee|op|weg|aan|uit|door|thuis|terug)\b/.test(lower) && /\b(halen|nemen|melden|geven|doen|gaan|brengen|bezorgen|aantrekken)\b/.test(lower)) {
+    add('separable verb', 'Separable verbs can split in a sentence: haal ... op, geef ... door, trek ... aan.');
+  }
+  if (/\b(het beste|het meest|beter|meer|minder|hoger|langer)\b/.test(lower)) {
+    add('comparison', 'Dutch uses forms like beter for comparative and het beste / het meest for superlative.');
+  }
+  if (/\b(wordt|worden|is|zijn)\b/.test(lower) && /\b(verbouwd|gekozen|bezorgd|gelezen|gevonden|vergeten)\b/.test(lower)) {
+    add('passive/perfect', 'Forms with worden/zijn plus a past participle can show passive or completed meaning.');
+  }
+
+  return forms.length ? { kind: 'sentence', forms } : null;
+}
+
+function clampTestCount(value) {
+  const n = Number.parseInt(value, 10);
+  if (!Number.isFinite(n)) return 100;
+  return Math.max(20, Math.min(1200, n));
+}
+
+function wordCategory(w) {
+  const pos = (w.pos || 'other').toLowerCase();
+  if (pos.includes('pronoun')) return 'pronoun';
+  if (pos.includes('adverb')) return 'adverb';
+  if (pos.includes('noun')) return 'noun';
+  if (pos.includes('verb')) return 'verb';
+  if (pos.includes('preposition')) return 'preposition';
+  if (pos.includes('adjective')) return 'adjective';
+  if (pos.includes('conjunction')) return 'conjunction';
+  if (pos.includes('time')) return 'time';
+  if (pos.includes('number')) return 'number';
+  if (pos.includes('phrase')) return 'phrase';
+  if (pos.includes('question')) return 'question';
+  if (pos.includes('grammar')) return 'grammar';
+  return 'other';
+}
+
+function normalizeDictKey(text) {
+  return (text || '')
+    .toLowerCase()
+    .replace(/[.,!?;:"“”()]/g, '')
+    .replace(/^'(.*)'$/, '$1')
+    .replace(/^(de|het|een)\s+/, '')
+    .trim();
+}
+
+function buildDictionary(words) {
+  const skip = new Set(['de', 'het', 'een']);
+  const overrides = {
+    weer: { en: 'again', pos: 'adverb' },
+    dan: { en: 'then', pos: 'adverb' },
+    daarna: { en: 'after that', pos: 'adverb' },
+    eerst: { en: 'first', pos: 'adverb' },
+    ongeveer: { en: 'about / approximately', pos: 'adverb' },
+    veilig: { en: 'safe', pos: 'adjective' },
+    weinig: { en: 'little / not much', pos: 'adjective' },
+    rustig: { en: 'quiet / calm', pos: 'adjective' },
+    makkelijk: { en: 'easy', pos: 'adjective' },
+    samen: { en: 'together', pos: 'adverb' },
+    gratis: { en: 'free', pos: 'adjective' },
+    kapot: { en: 'broken', pos: 'adjective' },
+    meteen: { en: 'immediately', pos: 'adverb' },
+    uiterlijk: { en: 'at the latest', pos: 'adverb' },
+    misschien: { en: 'maybe', pos: 'adverb' },
+    natuurlijk: { en: 'of course', pos: 'adverb' },
+    zelf: { en: 'self / yourself', pos: 'pronoun' },
+    thuis: { en: 'at home / home', pos: 'adverb' },
+    mee: { en: 'along / with', pos: 'particle' },
+    af: { en: 'finished / off', pos: 'particle' },
+    moet: { en: 'must / have to', pos: 'modal verb' },
+    moeten: { en: 'must / have to', pos: 'modal verb' },
+    kunt: { en: 'can / are able to', pos: 'modal verb' },
+    kan: { en: 'can / is able to', pos: 'modal verb' },
+    kunnen: { en: 'can / be able to', pos: 'modal verb' },
+    wilt: { en: 'want / would like', pos: 'modal verb' },
+    wil: { en: 'want / would like', pos: 'modal verb' },
+    willen: { en: 'to want', pos: 'verb' },
+    hoeft: { en: 'need to / have to', pos: 'modal verb' },
+    hebt: { en: 'have', pos: 'verb' },
+    heeft: { en: 'has', pos: 'verb' },
+    hebben: { en: 'to have', pos: 'verb' },
+    ben: { en: 'am', pos: 'verb' },
+    bent: { en: 'are', pos: 'verb' },
+    is: { en: 'is', pos: 'verb' },
+    zijn: { en: 'are / to be', pos: 'verb' },
+    gaat: { en: 'goes / is going', pos: 'verb' },
+    gaan: { en: 'to go', pos: 'verb' },
+    doen: { en: 'to do', pos: 'verb' },
+    doet: { en: 'does', pos: 'verb' }
+  };
+  const map = {};
+  const add = (key, word, sourceLabel) => {
+    const clean = normalizeDictKey(key);
+    if (!clean || clean.length < 2 || skip.has(clean)) return;
+    if (!map[clean]) {
+      map[clean] = {
+        nl: clean,
+        headword: word.nl,
+        en: word.en,
+        pos: word.pos || 'word',
+        source: sourceLabel || word.nl
+      };
+    }
+  };
+
+  words.forEach(word => {
+    add(word.nl, word, word.nl);
+    normalizeDictKey(word.nl).split(/\s+/).forEach(part => add(part, word, word.nl));
+    (word.grammar?.forms || []).forEach(form => {
+      add(form.nl, word, form.label);
+      normalizeDictKey(form.nl).split(/\s+/).forEach(part => add(part, word, form.label));
+    });
+  });
+  Object.entries(overrides).forEach(([key, value]) => {
+    map[key] = { nl: key, headword: key, en: value.en, pos: value.pos, source: 'reading dictionary' };
+  });
+  return map;
+}
+
+/* ── Settings hook ──────────────────────────────── */
+function useSettings() {
+  const KEY = 'dutchReading.settings';
+  const DEF = { palette: 'delft', autoplay: true };
+  const [s, setS] = useState(() => {
+    try { return { ...DEF, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; }
+    catch { return DEF; }
+  });
+  const update = (k, v) => setS(prev => {
+    const n = { ...prev, [k]: v };
+    try { localStorage.setItem(KEY, JSON.stringify(n)); } catch {}
+    return n;
+  });
+  return [s, update];
+}
+
+/* ── Settings modal ─────────────────────────────── */
+function SettingsModal({ settings, onUpdate, onClose }) {
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-handle"></div>
+        <h2>Instellingen</h2>
+
+        <div className="field-label" style={{ marginBottom: 10 }}>Thema</div>
+        <div className="palette-grid">
+          {Object.entries(PALETTES).map(([id, p]) => (
+            <button key={id} type="button"
+              className={'palette-card' + (settings.palette === id ? ' active' : '')}
+              onClick={() => onUpdate('palette', id)}>
+              <div className="swatch">
+                {[p.cream, p.paper, p.brand, p.keep, p.accent].map((c,i) => (
+                  <div key={i} className="col" style={{ background: c }}></div>
+                ))}
+              </div>
+              <div className="name">{p.name}</div>
+            </button>
+          ))}
+        </div>
+
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 0 8px', borderTop:'1px solid var(--line)', marginTop:16 }}>
+          <span style={{ fontSize:14, fontWeight:700, color:'var(--ink)' }}>Auto-play pronunciation</span>
+          <button onClick={() => onUpdate('autoplay', !settings.autoplay)}
+            style={{ width:48, height:28, borderRadius:14,
+              background: settings.autoplay ? 'var(--brand)' : 'var(--line)',
+              border:'none', cursor:'pointer', position:'relative', transition:'background 0.2s', flexShrink:0 }}>
+            <span style={{ position:'absolute', top:3,
+              left: settings.autoplay ? 23 : 3,
+              width:22, height:22, borderRadius:'50%', background:'white',
+              transition:'left 0.2s', boxShadow:'0 1px 3px rgba(0,0,0,0.3)' }}></span>
+          </button>
+        </div>
+
+        <button className="ghost-btn" onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
+}
+
+/* ── App ────────────────────────────────────────── */
+function App() {
+  const Store = window.DutchStore;
+  const [allWords, setAllWords]       = useState([]);
+  const [readings, setReadings]        = useState([]);
+  const [loading, setLoading]         = useState(true);
+  const [settings, updateSetting]     = useSettings();
+  const [users, setUsers]             = useState([]);
+  const [activeUser, setActiveUser]   = useState(null);
+  const [userData, setUserData]       = useState(null);
+  const [route, setRoute]             = useState('register');
+  const [resuming, setResuming]       = useState(false);
+  const [retryWords, setRetryWords]   = useState(null);
+  const [showSwitcher, setShowSwitcher] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+
+  // Load words.json
+  useEffect(() => {
+    Promise.all([
+      fetch('words.json?' + Date.now()).then(r => r.json()),
+      fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => [])
+    ])
+      .then(([wordData, readingData]) => {
+        setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
+        setReadings(readingData);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  // Apply palette
+  useEffect(() => { applyPalette(settings.palette); }, [settings.palette]);
+
+  useEffect(() => {
+    window.DutchDictionary = buildDictionary(allWords);
+  }, [allWords]);
+
+  // Init user from store once words loaded
+  useEffect(() => {
+    if (loading) return;
+    const list = Store.listUsers();
+    setUsers(list);
+    const active = Store.activeUser();
+    if (active && list.includes(active)) {
+      setActiveUser(active); setUserData(Store.getUser(active)); setRoute('home');
+    } else if (list.length > 0) {
+      Store.setActiveUser(list[0]);
+      setActiveUser(list[0]); setUserData(Store.getUser(list[0])); setRoute('home');
+    } else {
+      setRoute('register');
+    }
+  }, [loading]);
+
+  // Persist userData changes
+  useEffect(() => { if (activeUser && userData) Store.saveUser(activeUser, userData); }, [activeUser, userData]);
+
+  const createUser = name => {
+    Store.addUser(name); const list = Store.listUsers();
+    setUsers(list); setActiveUser(name); setUserData(Store.getUser(name));
+    setShowSwitcher(false); setRoute('home');
+  };
+  const pickUser = name => {
+    Store.setActiveUser(name);
+    setActiveUser(name); setUserData(Store.getUser(name));
+    setShowSwitcher(false); setRoute('home');
+  };
+  const deleteUser = name => {
+    Store.deleteUser(name); const left = Store.listUsers(); setUsers(left);
+    if (left.length === 0) { setActiveUser(null); setUserData(null); setRoute('register'); }
+    else if (name === activeUser) pickUser(left[0]);
+  };
+
+  const prefs  = { order:'random', level:'a1', les:'all', category:'all', contentType:'words', filterMode:'article', testCount:100, ...(userData?.prefs || {}) };
+  const status = userData?.status || {};
+
+  const orderedWords = useMemo(() => {
+    let list = allWords;
+    if (prefs.filterMode === 'category') {
+      if (prefs.category !== 'all') list = list.filter(w => wordCategory(w) === prefs.category);
+    } else if (prefs.les !== 'all') {
+      list = list.filter(w => w.les === prefs.les);
+    }
+    return prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0));
+  }, [allWords, prefs.les, prefs.category, prefs.filterMode, prefs.order]);
+
+  const allSentences = useMemo(() => flattenReadings(readings), [readings]);
+
+  const orderedSentences = useMemo(() => {
+    let list = allSentences;
+    if (prefs.les !== 'all') list = list.filter(s => s.les === prefs.les);
+    return prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
+  }, [allSentences, prefs.les, prefs.order]);
+
+  const lessons = useMemo(() => {
+    const m = {};
+    allWords.forEach(w => { m[w.les] = (m[w.les]||0)+1; });
+    return Object.keys(m).map(k => ({ les:Number(k), count:m[k] })).sort((a,b)=>a.les-b.les);
+  }, [allWords]);
+
+  const articles = useMemo(() => {
+    const wordCounts = {};
+    allWords.forEach(w => { wordCounts[w.les] = (wordCounts[w.les] || 0) + 1; });
+    return readings.map(r => ({
+      les: r.les,
+      title: r.title,
+      wordCount: wordCounts[r.les] || 0,
+      sentenceCount: r.sentences?.length || 0
+    }));
+  }, [readings, allWords]);
+
+  const wordCategories = useMemo(() => {
+    const labels = {
+      noun:'Nouns',
+      verb:'Verbs',
+      pronoun:'Pronouns',
+      preposition:'Prepositions',
+      adverb:'Adverbs',
+      adjective:'Adjectives',
+      conjunction:'Conjunctions',
+      time:'Time',
+      number:'Numbers',
+      phrase:'Phrases',
+      question:'Questions',
+      grammar:'Grammar',
+      other:'Other'
+    };
+    const counts = {};
+    allWords.forEach(w => {
+      const cat = wordCategory(w);
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    return Object.keys(labels)
+      .filter(id => counts[id])
+      .map(id => ({ id, label: labels[id], count: counts[id] }));
+  }, [allWords]);
+
+  const learnedCount   = useMemo(() => Object.values(status).filter(s=>s==='learned').length, [status]);
+  const forgottenCount = useMemo(() => Object.values(status).filter(s=>s==='forgotten').length, [status]);
+  const reviewQueue    = useMemo(() => orderedWords.filter(w=>status[wordKey(w)]==='forgotten' || status[w.nl]==='forgotten'), [orderedWords, status]);
+  const sentenceStatus = userData?.sentenceStatus || {};
+  const sentenceLearnedCount = useMemo(() => Object.values(sentenceStatus).filter(s=>s==='learned').length, [sentenceStatus]);
+  const sentenceForgottenCount = useMemo(() => Object.values(sentenceStatus).filter(s=>s==='forgotten').length, [sentenceStatus]);
+  const sentenceReviewQueue = useMemo(() => orderedSentences.filter(s=>sentenceStatus[wordKey(s)]==='forgotten'), [orderedSentences, sentenceStatus]);
+  // Test pool: all words in the current lesson filter (or all words if 'all')
+  const testPool = useMemo(() => orderedWords, [orderedWords]);
+  const sentenceTestPool = useMemo(() => orderedSentences, [orderedSentences]);
+  const selectedWordStats = useMemo(() => ({
+    total: orderedWords.length,
+    learned: orderedWords.filter(w => status[wordKey(w)] === 'learned').length,
+    forgotten: orderedWords.filter(w => status[wordKey(w)] === 'forgotten' || status[w.nl] === 'forgotten').length
+  }), [orderedWords, status]);
+  const selectedSentenceStats = useMemo(() => ({
+    total: orderedSentences.length,
+    learned: orderedSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
+    forgotten: orderedSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
+  }), [orderedSentences, sentenceStatus]);
+
+  const updatePrefs  = patch => setUserData(d => {
+    const next = { ...patch };
+    if (Object.prototype.hasOwnProperty.call(next, 'testCount')) next.testCount = clampTestCount(next.testCount);
+    return { ...d, prefs: { ...d.prefs, ...next } };
+  });
+  const recordSwipe  = (word, dir) => setUserData(d => ({ ...d, status: { ...d.status, [wordKey(word)]: dir==='right'?'learned':'forgotten' } }));
+  const recordSentenceSwipe = (sentence, dir) => setUserData(d => ({ ...d, sentenceStatus: { ...(d.sentenceStatus || {}), [wordKey(sentence)]: dir==='right'?'learned':'forgotten' } }));
+  const saveSession  = (mode, words, cursor) => {
+    if (cursor >= words.length) setUserData(d => ({ ...d, session: null }));
+    else setUserData(d => ({ ...d, session: { mode, words: words.map(w=>wordKey(w)), cursor } }));
+  };
+  const clearSession = () => setUserData(d => ({ ...d, session: null }));
+
+  const continueSession = useMemo(() => {
+    if (!userData?.session) return null;
+    const s = userData.session;
+    const byKey = new Map(allWords.map((w, i) => [wordKey(w, i), w]));
+    const words = s.words.map(k => byKey.get(k) || allWords.find(w=>w.nl===k)).filter(Boolean);
+    if (!words.length) return null;
+    if ((s.cursor || 0) >= words.length) return null;
+    return { ...s, words };
+  }, [userData?.session, allWords]);
+
+  // Loading splash
+  if (loading) {
+    return (
+      <div className="app-root" style={{ display:'grid', placeItems:'center' }}>
+        <div style={{ color:'var(--ink-soft)', fontFamily:'var(--font-ui)', fontSize:16 }}>Laden…</div>
+      </div>
+    );
+  }
+
+  // Modals rendered over every screen
+  const modals = (
+    <>
+      {showSwitcher && <UserSwitcher users={users} active={activeUser}
+        onPick={pickUser} onAdd={createUser} onDelete={deleteUser}
+        onClose={() => setShowSwitcher(false)} />}
+      {showSettings && <SettingsModal settings={settings} onUpdate={updateSetting}
+        onClose={() => setShowSettings(false)} />}
+    </>
+  );
+
+  // Register
+  if (!activeUser || !userData) {
+    return (
+      <div className="app-root">
+        <RegisterScreen existingUsers={users} onCreate={createUser} onPickExisting={pickUser} />
+        {modals}
+      </div>
+    );
+  }
+
+  // Route → screen
+  let screen;
+  if (route === 'home') {
+    const resolveMode = action => {
+      if (prefs.contentType === 'sentences') {
+        return action === 'study' ? 'reading' : action === 'review' ? 'sentence-review' : 'sentence-test';
+      }
+      return action === 'study' ? 'learn' : action === 'review' ? 'review' : 'test';
+    };
+    screen = (
+      <HomeScreen user={activeUser}
+        stats={selectedWordStats}
+        sentenceStats={selectedSentenceStats}
+        prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
+        onPickMode={m => { setResuming(false); clearSession(); setRoute(resolveMode(m)); }}
+        onChangePrefs={updatePrefs}
+        onSwitchUser={() => setShowSwitcher(true)}
+        onShowSettings={() => setShowSettings(true)}
+        continueSession={continueSession}
+        onContinue={() => { if (continueSession) { setResuming(true); setRoute(continueSession.mode); } }}
+      />
+    );
+  } else if (route === 'reading' || route === 'sentence-review') {
+    const fullSentences = route === 'reading' ? orderedSentences : sentenceReviewQueue;
+    screen = (
+      <DeckScreen mode={route} words={fullSentences} progressOffset={0}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        onExit={() => { setResuming(false); setRoute('home'); }}
+        onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
+      />
+    );
+  } else if (route === 'learn' || route === 'review') {
+    const useSaved = resuming && continueSession?.mode === route;
+    const fullWords = route === 'learn'
+      ? (useSaved ? continueSession.words : orderedWords)
+      : (useSaved ? continueSession.words : reviewQueue);
+    const offset = useSaved ? Math.min(continueSession.cursor || 0, fullWords.length) : 0;
+    const words = useSaved ? fullWords.slice(offset) : fullWords;
+    screen = (
+      <DeckScreen mode={route} words={words} progressOffset={offset}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        onExit={() => { setResuming(false); setRoute('home'); }}
+        onSwipe={(word, dir, cursor) => { recordSwipe(word, dir); saveSession(route, fullWords, offset + cursor); }}
+      />
+    );
+  } else if (route === 'test') {
+    // When testing by lesson, use all lesson words (no cap); when all, apply user's testCount
+    const maxQ = prefs.les !== 'all' ? null : clampTestCount(prefs.testCount);
+    screen = (
+      <TestScreen key="test" words={testPool} allWords={allWords} autoplay={settings.autoplay}
+        maxQuestions={maxQ}
+        onWrongWord={word => recordSwipe(word, 'left')}
+        onExit={() => { clearSession(); setRoute('home'); }}
+        onComplete={wrongs => { setRetryWords(wrongs); setRoute('retry'); }}
+      />
+    );
+  } else if (route === 'sentence-test') {
+    const maxQ = prefs.les !== 'all' ? null : clampTestCount(prefs.testCount);
+    screen = (
+      <TestScreen key="sentence-test" words={sentenceTestPool} allWords={allSentences} autoplay={settings.autoplay}
+        maxQuestions={maxQ}
+        onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
+        onExit={() => { clearSession(); setRoute('home'); }}
+        onComplete={wrongs => { setRetryWords(wrongs); setRoute('sentence-retry'); }}
+      />
+    );
+  } else if (route === 'sentence-retry' && retryWords) {
+    screen = (
+      <TestScreen key="sentence-retry" words={retryWords} allWords={allSentences} autoplay={settings.autoplay}
+        maxQuestions={null}
+        onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
+        onExit={() => { setRetryWords(null); setRoute('home'); }}
+        onComplete={wrongs => {
+          setRetryWords(wrongs.length ? wrongs : null);
+          if (!wrongs.length) setRoute('home');
+        }}
+      />
+    );
+  } else if (route === 'retry' && retryWords) {
+    screen = (
+      <TestScreen key="retry" words={retryWords} allWords={allWords} autoplay={settings.autoplay}
+        maxQuestions={null}
+        onWrongWord={word => recordSwipe(word, 'left')}
+        onExit={() => { setRetryWords(null); setRoute('home'); }}
+        onComplete={wrongs => {
+          setRetryWords(wrongs.length ? wrongs : null);
+          if (!wrongs.length) setRoute('home');
+        }}
+      />
+    );
+  }
+
+  return (
+    <div className="app-root">
+      {screen}
+      {modals}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
