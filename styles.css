@@ -380,6 +380,52 @@ button { font-family: inherit; }
 .select-input:focus {
   border-color: var(--brand);
 }
+.custom-filter-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px 14px;
+  margin-bottom: 14px;
+}
+.custom-filter-card .section-h {
+  margin-top: 0;
+}
+.inline-input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.inline-input-grid label {
+  min-width: 0;
+}
+.inline-input-grid label span {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.number-input.compact {
+  padding: 10px 9px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+.pick-heading-row {
+  gap: 10px;
+}
+.sort-toggle-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--brand);
+  font-size: 21px;
+  font-weight: 900;
+  cursor: pointer;
+}
 
 /* Reading */
 .reading-screen {

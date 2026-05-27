@@ -391,7 +391,7 @@ function App() {
     else if (name === activeUser) pickUser(left[0]);
   };
 
-  const prefs  = { order:'random', level:'a1', les:'all', category:'all', contentType:'words', filterMode:'article', testCount:100, ...(userData?.prefs || {}) };
+  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', ...(userData?.prefs || {}) };
   const status = userData?.status || {};
 
   const orderedWords = useMemo(() => {
@@ -401,8 +401,15 @@ function App() {
     } else if (prefs.les !== 'all') {
       list = list.filter(w => w.les === prefs.les);
     }
-    return prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0));
-  }, [allWords, prefs.les, prefs.category, prefs.filterMode, prefs.order]);
+    const from = Number.parseInt(prefs.lesFrom, 10);
+    const to = Number.parseInt(prefs.lesTo, 10);
+    if (Number.isFinite(from)) list = list.filter(w => (w.les || 0) >= from);
+    if (Number.isFinite(to)) list = list.filter(w => (w.les || 0) <= to);
+    list = prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0));
+    const limit = Number.parseInt(prefs.wordLimit, 10);
+    if (Number.isFinite(limit) && limit > 0) list = list.slice(0, Math.min(limit, list.length));
+    return list;
+  }, [allWords, prefs.les, prefs.category, prefs.filterMode, prefs.order, prefs.wordLimit, prefs.lesFrom, prefs.lesTo]);
 
   const allSentences = useMemo(() => flattenReadings(readings), [readings]);
 
