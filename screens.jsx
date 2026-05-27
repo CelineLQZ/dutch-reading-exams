@@ -104,7 +104,7 @@ function UserSwitcher({ users, active, onPick, onAdd, onDelete, onClose }) {
 }
 
 /* ── Home ────────────────────────────────────────── */
-function HomeScreen({ user, stats, sentenceStats, prefs, lessons, articles, wordCategories, onPickMode, onChangePrefs, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+function LegacyHomeScreen({ user, stats, sentenceStats, prefs, lessons, articles, wordCategories, onPickMode, onPickContent, onChangePrefs, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   const [lesOpen, setLesOpen] = useStateS(false);
   const [categoryOpen, setCategoryOpen] = useStateS(false);
   const [testCountDraft, setTestCountDraft] = useStateS(String(prefs.testCount || 100));
@@ -179,7 +179,7 @@ function HomeScreen({ user, stats, sentenceStats, prefs, lessons, articles, word
         <div className="seg" style={{ marginBottom: 14 }}>
           {[{v:'words',lab:'Words'},{v:'sentences',lab:'Sentences'}].map(o => (
             <div key={o.v} className={'opt' + (prefs.contentType === o.v ? ' active' : '')}
-              onClick={() => onChangePrefs({ contentType: o.v, filterMode: o.v === 'sentences' ? 'article' : prefs.filterMode })}>{o.lab}</div>
+              onClick={() => onPickContent ? onPickContent(o.v) : onChangePrefs({ contentType: o.v, filterMode: o.v === 'sentences' ? 'article' : prefs.filterMode })}>{o.lab}</div>
           ))}
         </div>
 
@@ -297,6 +297,363 @@ function HomeScreen({ user, stats, sentenceStats, prefs, lessons, articles, word
           {[{v:'random',lab:'Random'},{v:'course',lab:'By lesson'}].map(o => (
             <div key={o.v} className={'opt' + (prefs.order === o.v ? ' active' : '')}
               onClick={() => onChangePrefs({ order: o.v })}>{o.lab}</div>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+function LegacyWordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onBack, onPickAll, onPickCategory, onPickArticle }) {
+  const [mode, setMode] = useStateS('category');
+  const orderedCategories = ['verb', 'noun', 'preposition', 'question', 'time', 'phrase', 'pronoun', 'adverb', 'adjective', 'grammar', 'other'];
+  const categories = wordCategories.slice().sort((a, b) => {
+    const ai = orderedCategories.indexOf(a.id);
+    const bi = orderedCategories.indexOf(b.id);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
+        <div className="mode-pill"><span className="dot"></span>Words</div>
+        <div style={{ width: 38 }}></div>
+      </div>
+      <div className="home pick-screen">
+        <div className="seg">
+          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => { setMode('all'); onPickAll(); }}>All</div>
+          <div className={'opt' + (mode === 'article' ? ' active' : '')} onClick={() => setMode('article')}>Article</div>
+          <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => setMode('category')}>Category</div>
+        </div>
+
+        {mode === 'article' ? (
+          <>
+            <div className="section-h"><h3>Articles</h3></div>
+            <div className="pick-list">
+              {articles.map(a => (
+                <div key={a.les} className="mode-card pick-row" onClick={() => onPickArticle(a.les)}>
+                  <div className="glyph reading">{a.les}</div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="title">Article {a.les}</div>
+                    <div className="desc">{a.title} · {a.wordCount} words</div>
+                  </div>
+                  <div className="chev">›</div>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="section-h"><h3>Categories</h3></div>
+            <div className="pick-grid">
+              {categories.map(c => {
+                const s = statsByCategory[c.id] || { total: c.count, learned: 0 };
+                const pct = s.total ? Math.round((s.learned / s.total) * 100) : 0;
+                return (
+                  <div key={c.id} className="pick-card" onClick={() => onPickCategory(c.id)}>
+                    <div className="pick-card-title">{c.label}</div>
+                    <div className="pick-card-count">{c.count} words</div>
+                    <div className="mini-progress"><span style={{ width: `${pct}%` }}></span></div>
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function LegacySentencesPickScreen({ readings, statsByArticle, onBack, onPickArticle }) {
+  const rows = readings.map(r => {
+    const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0 };
+    return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
+  });
+  const resume = rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
+
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
+        <div className="mode-pill"><span className="dot"></span>Sentences</div>
+        <div style={{ width: 38 }}></div>
+      </div>
+      <div className="home pick-screen">
+        {resume && (
+          <div className="continue-banner pick-continue" onClick={() => onPickArticle(resume.les)}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="label">Continue</div>
+              <div className="title">{resume.title}</div>
+              <div className="desc-light">Sentence {Math.min(resume.stats.learned + 1, resume.stats.total)}/{resume.stats.total}</div>
+              <div className="progress"><span style={{ width: `${resume.pct}%` }}></span></div>
+            </div>
+            <div className="play"><PlayIcon /></div>
+          </div>
+        )}
+
+        <div className="section-h"><h3>All articles</h3></div>
+        <div className="pick-list">
+          {rows.map(r => (
+            <div key={r.id} className="mode-card pick-row" onClick={() => onPickArticle(r.les)}>
+              <div className="glyph reading">{r.stats.total}</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div className="title">{r.title}</div>
+                <div className="desc">{r.stats.total} sentences</div>
+                <div className="mini-progress"><span style={{ width: `${r.pct}%` }}></span></div>
+              </div>
+              <div className="chev">›</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, unit = 'items' }) {
+  if (!selected) {
+    return (
+      <div className="empty-hint-card">
+        Choose the content you want to practice first.
+      </div>
+    );
+  }
+  return (
+    <>
+      <div className="section-h"><h3>Modes</h3></div>
+      <div className="mode-list">
+        <div className="mode-card learn" onClick={() => onStart('study')}>
+          <div className="glyph">📖</div>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div className="title">Study</div>
+            <div className="desc">Swipe through {selected.label}.</div>
+          </div>
+          <div className="chev">›</div>
+        </div>
+        <div className="mode-card review" onClick={() => onStart('review')}>
+          <div className="glyph">🔁</div>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div className="title">Review</div>
+            <div className="desc">{reviewCount ? `${reviewCount} ${unit} to retry` : 'Nothing to review yet'}</div>
+          </div>
+          <div className="chev">›</div>
+        </div>
+        <div className="mode-card test" onClick={() => onStart('test')}>
+          <div className="glyph">✓</div>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div className="title">Test</div>
+            <div className="desc">Dutch → English, 4 choices.</div>
+          </div>
+          <div className="chev">›</div>
+        </div>
+      </div>
+
+      <div className="section-h"><h3>Order</h3></div>
+      <div className="seg" style={{ marginBottom: 14 }}>
+        {[{v:'random',lab:'Random'},{v:'course',lab:'By lesson'}].map(o => (
+          <div key={o.v} className={'opt' + (order === o.v ? ' active' : '')}
+            onClick={() => onOrder(o.v)}>{o.lab}</div>
+        ))}
+      </div>
+    </>
+  );
+}
+
+function HomeScreen({ user, stats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 18, letterSpacing: '-0.01em' }}>
+          🇳🇱&nbsp;&nbsp;Lezen
+        </div>
+        <button className="iconbtn" onClick={onShowSettings} title="Instellingen"><GearIcon /></button>
+      </div>
+
+      <div className="home">
+        <div className="home-greet" onClick={onSwitchUser}>
+          <div className="user-avatar">{initial(user)}</div>
+          <div className="who">
+            <div className="hi">Hallo, {user}!</div>
+            <div className="sw">Tap to switch user</div>
+          </div>
+          <div style={{ color: 'var(--ink-faint)', fontSize: 22 }}>⇅</div>
+        </div>
+
+        <div className="stats-row">
+          <div className="stat-card brand"><div className="num">{stats.total}</div><div className="lbl">Words</div></div>
+          <div className="stat-card keep"><div className="num">{sentenceStats.total}</div><div className="lbl">Sentences</div></div>
+          <div className="stat-card forgot"><div className="num">{stats.forgotten + sentenceStats.forgotten}</div><div className="lbl">Review</div></div>
+        </div>
+
+        {continueSession && (
+          <div className="continue-banner" onClick={onContinue}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="label">Continue</div>
+              <div className="title">Learning session</div>
+              <div className="progress">
+                <span style={{ width: `${Math.round((continueSession.cursor / continueSession.words.length) * 100)}%` }}></span>
+              </div>
+            </div>
+            <div className="play"><PlayIcon /></div>
+          </div>
+        )}
+
+        <div className="section-h"><h3>Choose content</h3></div>
+        <div className="mode-list">
+          <div className="mode-card learn" onClick={() => onPickContent('words')}>
+            <div className="glyph">▣</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="title">Words</div>
+              <div className="desc">Pick a deck by article or category.</div>
+            </div>
+            <div className="chev">›</div>
+          </div>
+          <div className="mode-card reading" onClick={() => onPickContent('sentences')}>
+            <div className="glyph">¶</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="title">Sentences</div>
+              <div className="desc">Pick an article and read sentence by sentence.</div>
+            </div>
+            <div className="chev">›</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onBack, onStartDeck }) {
+  const [mode, setMode] = useStateS('category');
+  const [selected, setSelected] = useStateS(null);
+  const [order, setOrder] = useStateS(prefs.order || 'random');
+  const orderedCategories = ['verb', 'noun', 'preposition', 'question', 'time', 'phrase', 'pronoun', 'adverb', 'adjective', 'grammar', 'other'];
+  const categories = wordCategories.slice().sort((a, b) => {
+    const ai = orderedCategories.indexOf(a.id);
+    const bi = orderedCategories.indexOf(b.id);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+  const pick = deck => setSelected(deck);
+  const start = action => selected && onStartDeck(action, { ...selected.patch, order });
+
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
+        <div className="mode-pill"><span className="dot"></span>Words</div>
+        <div style={{ width: 38 }}></div>
+      </div>
+      <div className="home pick-screen">
+        <div className="seg">
+          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => { setMode('all'); pick({ label: 'all words', reviewCount: 0, patch: { filterMode: 'article', les: 'all', category: 'all' } }); }}>All</div>
+          <div className={'opt' + (mode === 'article' ? ' active' : '')} onClick={() => { setMode('article'); setSelected(null); }}>Article</div>
+          <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => { setMode('category'); setSelected(null); }}>Category</div>
+        </div>
+
+        {selected && (
+          <div className="selected-deck-pill">
+            Selected: <strong>{selected.label}</strong>
+          </div>
+        )}
+
+        <SessionModeList selected={selected} order={order} onOrder={setOrder}
+          reviewCount={selected?.reviewCount || 0} unit="words" onStart={start} />
+
+        {mode === 'article' ? (
+          <>
+            <div className="section-h"><h3>Pick article</h3></div>
+            <div className="pick-list compact-pick-list">
+              {articles.map(a => (
+                <div key={a.les} className={'mode-card pick-row' + (selected?.id === `article-${a.les}` ? ' selected' : '')}
+                  onClick={() => pick({ id: `article-${a.les}`, label: `Article ${a.les}`, reviewCount: 0, patch: { filterMode: 'article', les: a.les, category: 'all' } })}>
+                  <div className="glyph reading">{a.les}</div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div className="title">{a.title}</div>
+                    <div className="desc">{a.wordCount} words</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        ) : mode === 'category' ? (
+          <>
+            <div className="section-h"><h3>Pick category</h3></div>
+            <div className="pick-grid">
+              {categories.map(c => {
+                const s = statsByCategory[c.id] || { total: c.count, learned: 0, forgotten: 0 };
+                const pct = s.total ? Math.round((s.learned / s.total) * 100) : 0;
+                return (
+                  <div key={c.id} className={'pick-card' + (selected?.id === `category-${c.id}` ? ' selected' : '')}
+                    onClick={() => pick({ id: `category-${c.id}`, label: c.label, reviewCount: s.forgotten, patch: { filterMode: 'category', category: c.id, les: 'all' } })}>
+                    <div className="pick-card-title">{c.label}</div>
+                    <div className="pick-card-count">{c.count} words</div>
+                    <div className="mini-progress"><span style={{ width: `${pct}%` }}></span></div>
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        ) : null}
+
+      </div>
+    </div>
+  );
+}
+
+function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle }) {
+  const [selected, setSelected] = useStateS(null);
+  const [order, setOrder] = useStateS(prefs.order || 'course');
+  const rows = readings.map(r => {
+    const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0, forgotten: 0 };
+    return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
+  });
+  const resume = rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
+  const pick = r => setSelected({ id: r.id, label: r.title, reviewCount: r.stats.forgotten, les: r.les });
+  const start = action => selected && onStartArticle(action, selected.les, order);
+
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
+        <div className="mode-pill"><span className="dot"></span>Sentences</div>
+        <div style={{ width: 38 }}></div>
+      </div>
+      <div className="home pick-screen">
+        {resume && (
+          <div className="continue-banner pick-continue" onClick={() => pick(resume)}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="label">Continue</div>
+              <div className="title">{resume.title}</div>
+              <div className="desc-light">Sentence {Math.min(resume.stats.learned + 1, resume.stats.total)}/{resume.stats.total}</div>
+              <div className="progress"><span style={{ width: `${resume.pct}%` }}></span></div>
+            </div>
+            <div className="play"><PlayIcon /></div>
+          </div>
+        )}
+
+        {selected && (
+          <div className="selected-deck-pill">
+            Selected: <strong>{selected.label}</strong>
+          </div>
+        )}
+
+        <SessionModeList selected={selected} order={order} onOrder={setOrder}
+          reviewCount={selected?.reviewCount || 0} unit="sentences" onStart={start} />
+
+        <div className="section-h"><h3>Pick article</h3></div>
+        <div className="pick-list compact-pick-list">
+          {rows.map(r => (
+            <div key={r.id} className={'mode-card pick-row' + (selected?.id === r.id ? ' selected' : '')}
+              onClick={() => pick(r)}>
+              <div className="glyph reading">{r.stats.total}</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div className="title">{r.title}</div>
+                <div className="desc">{r.stats.total} sentences</div>
+                <div className="mini-progress"><span style={{ width: `${r.pct}%` }}></span></div>
+              </div>
+            </div>
           ))}
         </div>
 
@@ -615,6 +972,8 @@ function DoneScreen({ right, wrong, wrongWords, onExit, onRetry }) {
 window.RegisterScreen = RegisterScreen;
 window.UserSwitcher   = UserSwitcher;
 window.HomeScreen     = HomeScreen;
+window.WordsPickScreen = WordsPickScreen;
+window.SentencesPickScreen = SentencesPickScreen;
 window.DeckScreen     = DeckScreen;
 window.ReadingScreen  = ReadingScreen;
 window.TestScreen     = TestScreen;

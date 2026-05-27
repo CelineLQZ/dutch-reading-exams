@@ -448,6 +448,19 @@ function App() {
       .map(id => ({ id, label: labels[id], count: counts[id] }));
   }, [allWords]);
 
+  const wordCategoryStats = useMemo(() => {
+    const out = {};
+    allWords.forEach((w, i) => {
+      const cat = wordCategory(w);
+      if (!out[cat]) out[cat] = { total: 0, learned: 0, forgotten: 0 };
+      out[cat].total += 1;
+      const s = status[wordKey(w, i)] || status[w.nl];
+      if (s === 'learned') out[cat].learned += 1;
+      if (s === 'forgotten') out[cat].forgotten += 1;
+    });
+    return out;
+  }, [allWords, status]);
+
   const learnedCount   = useMemo(() => Object.values(status).filter(s=>s==='learned').length, [status]);
   const forgottenCount = useMemo(() => Object.values(status).filter(s=>s==='forgotten').length, [status]);
   const reviewQueue    = useMemo(() => orderedWords.filter(w=>status[wordKey(w)]==='forgotten' || status[w.nl]==='forgotten'), [orderedWords, status]);
@@ -455,6 +468,21 @@ function App() {
   const sentenceLearnedCount = useMemo(() => Object.values(sentenceStatus).filter(s=>s==='learned').length, [sentenceStatus]);
   const sentenceForgottenCount = useMemo(() => Object.values(sentenceStatus).filter(s=>s==='forgotten').length, [sentenceStatus]);
   const sentenceReviewQueue = useMemo(() => orderedSentences.filter(s=>sentenceStatus[wordKey(s)]==='forgotten'), [orderedSentences, sentenceStatus]);
+  const articleSentenceStats = useMemo(() => {
+    const out = {};
+    readings.forEach(article => {
+      const total = article.sentences?.length || 0;
+      let learned = 0;
+      let forgotten = 0;
+      (article.sentences || []).forEach((s, i) => {
+        const key = `sentence|${article.id}|${i + 1}|${s.nl}`;
+        if (sentenceStatus[key] === 'learned') learned += 1;
+        if (sentenceStatus[key] === 'forgotten') forgotten += 1;
+      });
+      out[article.id] = { total, learned, forgotten };
+    });
+    return out;
+  }, [readings, sentenceStatus]);
   // Test pool: all words in the current lesson filter (or all words if 'all')
   const testPool = useMemo(() => orderedWords, [orderedWords]);
   const sentenceTestPool = useMemo(() => orderedSentences, [orderedSentences]);
@@ -468,6 +496,16 @@ function App() {
     learned: orderedSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
     forgotten: orderedSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
   }), [orderedSentences, sentenceStatus]);
+  const allWordStats = useMemo(() => ({
+    total: allWords.length,
+    learned: allWords.filter((w, i) => status[wordKey(w, i)] === 'learned').length,
+    forgotten: allWords.filter((w, i) => status[wordKey(w, i)] === 'forgotten' || status[w.nl] === 'forgotten').length
+  }), [allWords, status]);
+  const allSentenceStats = useMemo(() => ({
+    total: allSentences.length,
+    learned: allSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
+    forgotten: allSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
+  }), [allSentences, sentenceStatus]);
 
   const updatePrefs  = patch => setUserData(d => {
     const next = { ...patch };
@@ -533,15 +571,52 @@ function App() {
     };
     screen = (
       <HomeScreen user={activeUser}
-        stats={selectedWordStats}
-        sentenceStats={selectedSentenceStats}
+        stats={allWordStats}
+        sentenceStats={allSentenceStats}
         prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
         onPickMode={m => { setResuming(false); clearSession(); setRoute(resolveMode(m)); }}
+        onPickContent={type => {
+          setResuming(false);
+          clearSession();
+          updatePrefs({ contentType: type, filterMode: type === 'sentences' ? 'article' : prefs.filterMode });
+          setRoute(type === 'sentences' ? 'sentences-pick' : 'words-pick');
+        }}
         onChangePrefs={updatePrefs}
         onSwitchUser={() => setShowSwitcher(true)}
         onShowSettings={() => setShowSettings(true)}
         continueSession={continueSession}
         onContinue={() => { if (continueSession) { setResuming(true); setRoute(continueSession.mode); } }}
+      />
+    );
+  } else if (route === 'words-pick') {
+    screen = (
+      <WordsPickScreen
+        wordCategories={wordCategories}
+        statsByCategory={wordCategoryStats}
+        articles={articles}
+        prefs={prefs}
+        onBack={() => setRoute('home')}
+        onStartDeck={(action, patch) => {
+          setResuming(false);
+          clearSession();
+          updatePrefs({ contentType: 'words', ...patch });
+          setRoute(action === 'study' ? 'learn' : action === 'review' ? 'review' : 'test');
+        }}
+      />
+    );
+  } else if (route === 'sentences-pick') {
+    screen = (
+      <SentencesPickScreen
+        readings={readings}
+        statsByArticle={articleSentenceStats}
+        prefs={prefs}
+        onBack={() => setRoute('home')}
+        onStartArticle={(action, les, order) => {
+          setResuming(false);
+          clearSession();
+          updatePrefs({ contentType: 'sentences', filterMode: 'article', les, order });
+          setRoute(action === 'study' ? 'reading' : action === 'review' ? 'sentence-review' : 'sentence-test');
+        }}
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {
