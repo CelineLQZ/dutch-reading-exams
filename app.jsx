@@ -171,6 +171,12 @@ function wordCategory(w) {
   return 'other';
 }
 
+const PRIMARY_WORD_CATEGORIES = ['verb', 'noun', 'preposition', 'question'];
+function wordCategoryGroup(w) {
+  const cat = wordCategory(w);
+  return PRIMARY_WORD_CATEGORIES.includes(cat) ? cat : 'other';
+}
+
 function normalizeDictKey(text) {
   return (text || '')
     .toLowerCase()
@@ -324,6 +330,7 @@ function App() {
   const [userData, setUserData]       = useState(null);
   const [route, setRoute]             = useState('register');
   const [resuming, setResuming]       = useState(false);
+  const [sessionBackRoute, setSessionBackRoute] = useState('home');
   const [retryWords, setRetryWords]   = useState(null);
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -390,7 +397,7 @@ function App() {
   const orderedWords = useMemo(() => {
     let list = allWords;
     if (prefs.filterMode === 'category') {
-      if (prefs.category !== 'all') list = list.filter(w => wordCategory(w) === prefs.category);
+      if (prefs.category !== 'all') list = list.filter(w => wordCategoryGroup(w) === prefs.category);
     } else if (prefs.les !== 'all') {
       list = list.filter(w => w.les === prefs.les);
     }
@@ -424,23 +431,15 @@ function App() {
 
   const wordCategories = useMemo(() => {
     const labels = {
-      noun:'Nouns',
       verb:'Verbs',
-      pronoun:'Pronouns',
+      noun:'Nouns',
       preposition:'Prepositions',
-      adverb:'Adverbs',
-      adjective:'Adjectives',
-      conjunction:'Conjunctions',
-      time:'Time',
-      number:'Numbers',
-      phrase:'Phrases',
       question:'Questions',
-      grammar:'Grammar',
       other:'Other'
     };
     const counts = {};
     allWords.forEach(w => {
-      const cat = wordCategory(w);
+      const cat = wordCategoryGroup(w);
       counts[cat] = (counts[cat] || 0) + 1;
     });
     return Object.keys(labels)
@@ -451,7 +450,7 @@ function App() {
   const wordCategoryStats = useMemo(() => {
     const out = {};
     allWords.forEach((w, i) => {
-      const cat = wordCategory(w);
+      const cat = wordCategoryGroup(w);
       if (!out[cat]) out[cat] = { total: 0, learned: 0, forgotten: 0 };
       out[cat].total += 1;
       const s = status[wordKey(w, i)] || status[w.nl];
@@ -599,6 +598,7 @@ function App() {
         onStartDeck={(action, patch) => {
           setResuming(false);
           clearSession();
+          setSessionBackRoute('words-pick');
           updatePrefs({ contentType: 'words', ...patch });
           setRoute(action === 'study' ? 'learn' : action === 'review' ? 'review' : 'test');
         }}
@@ -614,6 +614,7 @@ function App() {
         onStartArticle={(action, les, order) => {
           setResuming(false);
           clearSession();
+          setSessionBackRoute('sentences-pick');
           updatePrefs({ contentType: 'sentences', filterMode: 'article', les, order });
           setRoute(action === 'study' ? 'reading' : action === 'review' ? 'sentence-review' : 'sentence-test');
         }}
@@ -625,7 +626,7 @@ function App() {
       <DeckScreen mode={route} words={fullSentences} progressOffset={0}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
-        onExit={() => { setResuming(false); setRoute('home'); }}
+        onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
       />
     );
@@ -640,7 +641,7 @@ function App() {
       <DeckScreen mode={route} words={words} progressOffset={offset}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
-        onExit={() => { setResuming(false); setRoute('home'); }}
+        onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(word, dir, cursor) => { recordSwipe(word, dir); saveSession(route, fullWords, offset + cursor); }}
       />
     );
@@ -651,7 +652,7 @@ function App() {
       <TestScreen key="test" words={testPool} allWords={allWords} autoplay={settings.autoplay}
         maxQuestions={maxQ}
         onWrongWord={word => recordSwipe(word, 'left')}
-        onExit={() => { clearSession(); setRoute('home'); }}
+        onExit={() => { clearSession(); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => { setRetryWords(wrongs); setRoute('retry'); }}
       />
     );
@@ -661,7 +662,7 @@ function App() {
       <TestScreen key="sentence-test" words={sentenceTestPool} allWords={allSentences} autoplay={settings.autoplay}
         maxQuestions={maxQ}
         onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
-        onExit={() => { clearSession(); setRoute('home'); }}
+        onExit={() => { clearSession(); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => { setRetryWords(wrongs); setRoute('sentence-retry'); }}
       />
     );
@@ -670,10 +671,10 @@ function App() {
       <TestScreen key="sentence-retry" words={retryWords} allWords={allSentences} autoplay={settings.autoplay}
         maxQuestions={null}
         onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
-        onExit={() => { setRetryWords(null); setRoute('home'); }}
+        onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => {
           setRetryWords(wrongs.length ? wrongs : null);
-          if (!wrongs.length) setRoute('home');
+          if (!wrongs.length) setRoute(sessionBackRoute || 'home');
         }}
       />
     );
@@ -682,10 +683,10 @@ function App() {
       <TestScreen key="retry" words={retryWords} allWords={allWords} autoplay={settings.autoplay}
         maxQuestions={null}
         onWrongWord={word => recordSwipe(word, 'left')}
-        onExit={() => { setRetryWords(null); setRoute('home'); }}
+        onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => {
           setRetryWords(wrongs.length ? wrongs : null);
-          if (!wrongs.length) setRoute('home');
+          if (!wrongs.length) setRoute(sessionBackRoute || 'home');
         }}
       />
     );

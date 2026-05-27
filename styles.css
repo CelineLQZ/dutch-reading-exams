@@ -341,12 +341,44 @@ button { font-family: inherit; }
   font-weight: 800;
   margin: 12px 0;
 }
+.selected-deck-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
 .selected-deck-pill strong { color: var(--ink); }
+.selected-deck-pill button {
+  border: 0;
+  background: transparent;
+  color: var(--brand);
+  font-weight: 900;
+  cursor: pointer;
+}
 .empty-hint-card { text-align: center; }
 .compact-pick-list .mode-card .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.mini-seg {
+  margin-bottom: 10px;
+}
+.select-input {
+  width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 14px;
+  outline: none;
+  margin-bottom: 14px;
+}
+.select-input:focus {
+  border-color: var(--brand);
 }
 
 /* Reading */
