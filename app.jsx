@@ -216,7 +216,7 @@ function normalizeDictKey(text) {
     .trim();
 }
 
-function buildDictionary(words) {
+function buildDictionary(words, externalDictionary = {}) {
   const skip = new Set(['de', 'het', 'een']);
   const overrides = {
     weer: { en: 'again', pos: 'adverb' },
@@ -344,6 +344,19 @@ function buildDictionary(words) {
     map[key] = { nl: key, headword: key, en: value.en, pos: value.pos, source: 'reading dictionary' };
   });
   map.staan = { nl: 'staan', headword: 'staan', en: 'to stand / be listed / be written', pos: 'verb', source: 'reading dictionary' };
+  const externalEntries = externalDictionary.entries || externalDictionary || {};
+  Object.entries(externalEntries).forEach(([key, value]) => {
+    const clean = normalizeDictKey(key);
+    if (!clean || clean.length < 2 || skip.has(clean) || !value?.en) return;
+    map[clean] = {
+      nl: clean,
+      headword: value.headword || clean,
+      en: value.en,
+      pos: value.pos || 'word',
+      grammar: null,
+      source: value.source || 'external dictionary'
+    };
+  });
   return map;
 }
 
@@ -411,6 +424,7 @@ function App() {
   const Store = window.DutchStore;
   const [allWords, setAllWords]       = useState([]);
   const [readings, setReadings]        = useState([]);
+  const [externalDictionary, setExternalDictionary] = useState({});
   const [loading, setLoading]         = useState(true);
   const [settings, updateSetting]     = useSettings();
   const [users, setUsers]             = useState([]);
@@ -427,11 +441,13 @@ function App() {
   useEffect(() => {
     Promise.all([
       fetch('words.json?' + Date.now()).then(r => r.json()),
-      fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => [])
+      fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => []),
+      fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
     ])
-      .then(([wordData, readingData]) => {
+      .then(([wordData, readingData, dictionaryData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
+        setExternalDictionary(dictionaryData || {});
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -441,8 +457,8 @@ function App() {
   useEffect(() => { applyPalette(settings.palette); }, [settings.palette]);
 
   useEffect(() => {
-    window.DutchDictionary = buildDictionary(allWords);
-  }, [allWords]);
+    window.DutchDictionary = buildDictionary(allWords, externalDictionary);
+  }, [allWords, externalDictionary]);
 
   // Init user from store once words loaded
   useEffect(() => {

@@ -1,5 +1,5 @@
 // Reading app service worker — cache-first shell, network-first data.
-const CACHE = 'inburgering-lezen-v36';
+const CACHE = 'inburgering-lezen-v37';
 const BASE = new URL('./', self.registration.scope).pathname;
 const SHELL = [
   './',
@@ -11,6 +11,7 @@ const SHELL = [
   './card.jsx',
   './screens.jsx',
   './app.jsx',
+  './dictionary.json',
   './manifest.json',
 ].map(path => new URL(path, self.registration.scope).toString());
 
@@ -33,7 +34,7 @@ self.addEventListener('fetch', e => {
   const isLocalApp = url.origin === self.location.origin && url.pathname.startsWith(BASE);
 
   // Data files: network-first (pick up updates), fall back to cache.
-  if (url.pathname.endsWith('words.json') || url.pathname.endsWith('readings.json')) {
+  if (url.pathname.endsWith('words.json') || url.pathname.endsWith('readings.json') || url.pathname.endsWith('dictionary.json')) {
     e.respondWith(
       fetch(e.request).then(res => {
         const clone = res.clone();
