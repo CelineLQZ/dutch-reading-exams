@@ -746,7 +746,7 @@ button { font-family: inherit; }
 /* ─── Deck / Card ─────────────────────────────────── */
 .progressbar {
   margin: 6px 18px 8px; height: 5px;
-  background: var(--paper); border: 1px solid var(--line); border-radius: 99px; overflow: hidden; flex-shrink: 0;
+  background: transparent; border: none; border-radius: 99px; overflow: hidden; flex-shrink: 0;
 }
 .progressbar span { display: block; height: 100%; background: var(--brand); border-radius: 99px; transition: width 0.3s ease; }
 
