@@ -147,17 +147,19 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
         </React.Fragment>
       )}
 
-      <div className="card-top-row">
-        <span className="les-tag">Article {word.les}</span>
+      <div className="card-top-row sentence-card-header">
+        <div className="sentence-card-meta">
+          <span className="les-tag">Article {word.les}</span>
+          <div className="sentence-number">{word.articleTitle || 'Reading'}</div>
+        </div>
         <span className="pos-tag">sentence</span>
       </div>
 
       <div className="sentence-study-card">
-        <div className="sentence-number">{word.articleTitle || 'Reading'}</div>
-        <div className="sentence-nl large"><ClickableDutchText text={word.nl} /></div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className="sentence-nl large sentence-nl-with-speaker">
+          <ClickableDutchText text={word.nl} />
           <button
-            className="speaker-btn"
+            className="speaker-btn sentence-inline-speaker"
             onPointerDown={e => e.stopPropagation()}
             onClick={e => { e.stopPropagation(); speak(word.nl); }}
             aria-label="Sentence pronunciation"

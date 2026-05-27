@@ -606,6 +606,7 @@ button { font-family: inherit; }
   color: var(--ink-faint);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  line-height: 1.25;
 }
 .sentence-nl {
   font-size: 17px;
@@ -636,9 +637,9 @@ button { font-family: inherit; }
   min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-  padding: 10px 2px;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 24px 2px 10px;
 }
 .word.sentence-word {
   font-size: 24px;
@@ -769,6 +770,27 @@ button { font-family: inherit; }
 .swipe-card::-webkit-scrollbar { display: none; }
 
 .card-top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sentence-card-header {
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  margin-bottom: 4px;
+}
+.sentence-card-meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.sentence-card-header .sentence-number {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.sentence-card-header .pos-tag {
+  margin-top: 0;
+  flex-shrink: 0;
+}
 .les-tag, .pos-tag {
   background: var(--paper-2); color: var(--ink-soft);
   font-size: 10px; font-weight: 800; text-transform: uppercase;
@@ -792,6 +814,21 @@ button { font-family: inherit; }
 .speaker-btn:active { transform: scale(0.92); }
 .speaker-btn.small { width: 28px; height: 28px; }
 .speaker-btn.keep  { background: var(--keep); color: white; }
+.sentence-nl-with-speaker {
+  position: relative;
+}
+.sentence-inline-speaker {
+  display: inline-grid;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 4px 0 4px 12px;
+  transform: none;
+}
+.sentence-inline-speaker svg {
+  width: 15px;
+  height: 15px;
+}
 
 .divider { height: 1px; background: var(--line); margin: 12px 0 10px; }
 
