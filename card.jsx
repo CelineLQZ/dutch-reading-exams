@@ -74,7 +74,23 @@ function compactWordGrammar(word) {
 
 function ClickableDutchText({ text }) {
   const [selected, setSelected] = useStateW(null);
+  const [inList, setInList] = useStateW(false);
   const parts = String(text || '').split(/([A-Za-zÀ-ÿ']+)/g);
+
+  useEffectW(() => {
+    if (!selected) return;
+    const api = window.DutchStudyListAPI;
+    setInList(api ? api.isInList(selected.token) : false);
+  }, [selected]);
+
+  const handleAdd = e => {
+    e.stopPropagation();
+    const api = window.DutchStudyListAPI;
+    if (!api || !selected) return;
+    const displayWord = (selected.entry.headword || selected.token).replace(/^(de|het|een)\s+/i, '');
+    if (inList) { api.remove(selected.token); setInList(false); }
+    else { api.add({ nl: displayWord, en: selected.entry.en, pos: selected.entry.pos, headword: selected.entry.headword }); setInList(true); }
+  };
 
   return (
     <span className="dict-text">
@@ -95,12 +111,13 @@ function ClickableDutchText({ text }) {
       })}
       {selected && (
         <span className="dict-popover" onPointerDown={e => e.stopPropagation()}>
-          <span className="dict-head">
-            <span>{selected.token}</span>
-            <button type="button" onClick={e => { e.stopPropagation(); setSelected(null); }}>×</button>
-          </span>
           <span className="dict-meaning">{selected.entry.en}</span>
-          <span className="dict-meta">{selected.entry.headword} · {selected.entry.pos}</span>
+          <span className="dict-popover-actions">
+            <button type="button" className={'dict-add-btn' + (inList ? ' in-list' : '')} onClick={handleAdd}>
+              {inList ? '✓ in deck' : '+ to deck'}
+            </button>
+            <button type="button" className="dict-close-btn" onClick={e => { e.stopPropagation(); setSelected(null); }} aria-label="Close">×</button>
+          </span>
         </span>
       )}
     </span>

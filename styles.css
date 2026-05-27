@@ -848,7 +848,9 @@ button { font-family: inherit; }
 }
 .dict-word:active { color: var(--brand); }
 .dict-popover {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-top: 10px;
   background: var(--paper-2);
   border: 1px solid var(--line);
@@ -858,41 +860,47 @@ button { font-family: inherit; }
   font-family: var(--font-ui);
   text-align: left;
 }
-.dict-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 900;
-  color: var(--brand);
-  line-height: 1.1;
-}
-.dict-head button {
-  border: none;
-  background: transparent;
-  color: var(--ink-faint);
-  font-size: 18px;
-  line-height: 1;
-  cursor: pointer;
-}
 .dict-meaning {
-  display: block;
-  margin-top: 5px;
+  flex: 1;
+  min-width: 0;
   font-size: 14px;
   line-height: 1.35;
   color: var(--ink);
   font-weight: 800;
 }
-.dict-meta {
-  display: block;
-  margin-top: 4px;
-  font-size: 11px;
-  line-height: 1.25;
+.dict-popover-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.dict-add-btn {
+  appearance: none;
+  border: 1.5px solid var(--brand);
+  background: var(--brand);
+  color: var(--brand-ink);
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.dict-add-btn:active { transform: scale(0.96); }
+.dict-add-btn.in-list {
+  background: var(--keep);
+  border-color: var(--keep);
+  color: white;
+}
+.dict-close-btn {
+  border: none;
+  background: transparent;
   color: var(--ink-faint);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
 }
 
 /* Grammar */
@@ -1002,4 +1010,364 @@ button { font-family: inherit; }
 .score-breakdown .right { color: var(--keep); }
 .score-breakdown .wrong { color: var(--forgot); }
 .button-row { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 280px; margin-top: 16px; }
+
+/* ─── Home v2 ─────────────────────────────────────── */
+.home-brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Today stats card */
+.today-card {
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 20px;
+  padding: 14px 16px 16px;
+  margin-bottom: 22px;
+}
+.today-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.today-card-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.today-card-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-faint);
+}
+.today-stats-row {
+  display: flex;
+  align-items: stretch;
+}
+.today-stat {
+  flex: 1;
+  text-align: center;
+}
+.today-stat-num {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.today-stat-unit {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 6px;
+}
+.today-divider {
+  width: 1px;
+  background: var(--line);
+  align-self: stretch;
+  margin: 2px 4px;
+}
+
+/* Start with label + content cards */
+.start-with-label {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+.content-pick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.content-pick-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 20px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.content-pick-card:active { transform: scale(0.98); }
+.content-pick-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.cpick-brand { background: color-mix(in srgb, var(--brand) 13%, var(--paper)); color: var(--brand); }
+.cpick-forgot { background: color-mix(in srgb, var(--forgot) 13%, var(--paper)); color: var(--forgot); }
+.cpick-keep  { background: color-mix(in srgb, var(--keep)  13%, var(--paper)); color: var(--keep);  }
+.content-pick-body {
+  flex: 1;
+  min-width: 0;
+}
+.content-pick-title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 9px;
+}
+.content-pick-bar {
+  height: 7px;
+  background: var(--line);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.content-pick-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  min-width: 0;
+}
+.content-pick-bar.cpick-brand span  { background: var(--brand); }
+.content-pick-bar.cpick-forgot span { background: var(--forgot); }
+.content-pick-bar.cpick-keep span   { background: var(--keep); }
+.content-pick-arrow {
+  color: var(--ink-soft);
+  font-size: 20px;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 1;
+}
 .button-row .primary-btn { margin-top: 0; }
+
+/* Extra tones for content cards / dots */
+.content-stat-dot.accent { background: var(--accent); }
+.mode-card.studylist .glyph { background: var(--accent); color: var(--brand-ink, white); }
+
+/* Dictionary bottom sheet */
+.dict-sheet-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: dictFadeIn 0.16s ease-out;
+}
+@keyframes dictFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dictSlideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.dict-sheet {
+  background: var(--paper);
+  width: 100%;
+  max-width: 440px;
+  border-radius: 24px 24px 0 0;
+  padding: 8px 22px 26px;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.22);
+  animation: dictSlideUp 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  font-family: var(--font-ui);
+  max-height: 82vh;
+  overflow-y: auto;
+}
+.dict-sheet-handle {
+  width: 42px; height: 4px;
+  background: var(--line);
+  border-radius: 2px;
+  margin: 4px auto 16px;
+}
+.dict-sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+.dict-sheet-word {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  flex: 1;
+  word-break: break-word;
+}
+.dict-sheet-speak {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  display: grid; place-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.dict-sheet-speak:active { transform: scale(0.94); }
+.dict-sheet-type {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-faint);
+  margin: 4px 0 14px;
+}
+.dict-sheet-divider {
+  border: none;
+  border-top: 1.5px dotted var(--line);
+  margin: 0 0 16px;
+}
+.dict-sheet-meaning {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.dict-sheet-form {
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.dict-sheet-context {
+  background: var(--paper-2);
+  border-radius: 14px;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+}
+.dict-sheet-context-label {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 5px;
+}
+.dict-sheet-context-text {
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.4;
+}
+.dict-sheet-actions {
+  display: flex;
+  gap: 10px;
+}
+.dict-action-btn {
+  flex: 1;
+  padding: 11px 16px;
+  border-radius: 999px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: transform 0.1s;
+}
+.dict-action-btn:active { transform: scale(0.97); }
+.dict-action-btn.primary {
+  background: var(--brand);
+  color: var(--brand-ink);
+  border: 1.5px solid var(--brand);
+}
+.dict-action-btn.primary.in-list {
+  background: var(--keep);
+  border-color: var(--keep);
+  color: white;
+}
+.dict-action-btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+
+/* Study list screen */
+.studylist-screen .topbar-back {
+  background: transparent;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-left: -8px;
+}
+.studylist-screen .home {
+  padding-top: 6px;
+}
+.studylist-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.studylist-sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.studylist-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.studylist-actions .primary-btn,
+.studylist-actions .ghost-btn { margin-top: 0; flex: 1; }
+.studylist-empty {
+  padding: 40px 18px;
+  text-align: center;
+  border: 1.5px dashed var(--line);
+  border-radius: 18px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.studylist-empty .big { font-size: 40px; margin-bottom: 8px; }
+.studylist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.studylist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.studylist-item .nl {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.studylist-item .en {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.studylist-item .body { flex: 1; min-width: 0; }
+.studylist-item .remove {
+  border: none;
+  background: transparent;
+  color: var(--ink-faint);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.studylist-item .remove:active { color: var(--forgot); }

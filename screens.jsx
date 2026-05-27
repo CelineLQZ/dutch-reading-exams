@@ -481,11 +481,48 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
   );
 }
 
-function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+/* ── Content card icons ──────────────────────────── */
+function BookIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </svg>
+  );
+}
+function GradCapIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+      <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+    </svg>
+  );
+}
+function ListIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <line x1="4" y1="7"  x2="20" y2="7"/>
+      <line x1="4" y1="12" x2="20" y2="12"/>
+      <line x1="4" y1="17" x2="20" y2="17"/>
+    </svg>
+  );
+}
+
+/* ── Home ────────────────────────────────────────── */
+function StudyListIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    </svg>
+  );
+}
+
+function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   const dashboardRows = [
     { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0, tone: 'brand' },
-    { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0, tone: 'forgot' },
-    { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'keep' },
+    { label: 'A2 Words',         total: arStats?.total     || 0, learned: arStats?.learned     || 0, review: arStats?.forgotten     || 0, tone: 'forgot' },
+    { label: 'Sentences',        total: sentenceStats?.total||0, learned: sentenceStats?.learned||0, review: sentenceStats?.forgotten||0, tone: 'keep' },
+    { label: 'My Study List',    total: studyListCount, learned: 0, review: 0, tone: 'accent' },
   ];
   return (
     <div className="app-screen">
@@ -536,15 +573,15 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
         <div className="section-h"><h3>Choose content</h3></div>
         <div className="mode-list">
           <div className="mode-card learn" onClick={() => onPickContent('common')}>
-            <div className="glyph">▣</div>
+            <div className="glyph"><BookIcon /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="title">1000 Dutch Words</div>
-              <div className="desc">{commonStats?.total || 0} words by lesson or category.</div>
+              <div className="desc">Most common Dutch words</div>
             </div>
             <div className="chev">›</div>
           </div>
           <div className="mode-card review" onClick={() => onPickContent('ar')}>
-            <div className="glyph">A2</div>
+            <div className="glyph"><GradCapIcon /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="title">A2 Words</div>
               <div className="desc">{arStats?.total || 0} words from mock exams.</div>
@@ -552,10 +589,18 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
             <div className="chev">›</div>
           </div>
           <div className="mode-card reading" onClick={() => onPickContent('sentences')}>
-            <div className="glyph">¶</div>
+            <div className="glyph"><ListIcon /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="title">Sentences</div>
               <div className="desc">Pick an article and read sentence by sentence.</div>
+            </div>
+            <div className="chev">›</div>
+          </div>
+          <div className="mode-card studylist" onClick={() => onPickContent('studylist')}>
+            <div className="glyph"><StudyListIcon /></div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="title">My Study List</div>
+              <div className="desc">{studyListCount > 0 ? `${studyListCount} saved word${studyListCount === 1 ? '' : 's'}` : 'Save words from sentences to study later.'}</div>
             </div>
             <div className="chev">›</div>
           </div>
@@ -712,7 +757,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
   });
   const articleOptions = rows.slice().sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
   const resume = rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
-  const effectiveArticle = selected || rows.find(r => String(r.les) === String(articleLes)) || articleOptions[0];
+  const effectiveArticle = (selected && rows.find(r => r.les === selected.les)) || rows.find(r => String(r.les) === String(articleLes)) || articleOptions[0];
   const effectiveSelected = effectiveArticle
     ? { id: effectiveArticle.id, label: effectiveArticle.title, reviewCount: effectiveArticle.stats.forgotten, les: effectiveArticle.les }
     : null;
@@ -1088,6 +1133,52 @@ function DoneScreen({ right, wrong, wrongWords, onExit, onRetry }) {
   );
 }
 
+function StudyListScreen({ items, onBack, onRemove, onStudy }) {
+  return (
+    <div className="app-screen studylist-screen">
+      <div className="topbar">
+        <button className="topbar-back" onClick={onBack} aria-label="Back">‹</button>
+        <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 18, letterSpacing: '-0.01em' }}>
+          My Study List
+        </div>
+        <div style={{ width: 30 }} />
+      </div>
+      <div className="home">
+        <div className="studylist-title">Saved words</div>
+        <div className="studylist-sub">
+          {items.length === 0
+            ? 'Tap “+ to deck” in the dictionary popup to save words here.'
+            : `${items.length} word${items.length === 1 ? '' : 's'} ready to study.`}
+        </div>
+        {items.length > 0 && (
+          <div className="studylist-actions">
+            <button className="primary-btn" onClick={onStudy}>Study these words</button>
+          </div>
+        )}
+        {items.length === 0 ? (
+          <div className="studylist-empty">
+            <div className="big">📑</div>
+            Your study list is empty.<br/>
+            Tap any underlined word in a sentence to add it.
+          </div>
+        ) : (
+          <div className="studylist-list">
+            {items.map(item => (
+              <div key={item.nl} className="studylist-item">
+                <div className="body">
+                  <div className="nl">{item.headword || item.nl}</div>
+                  <div className="en">{item.en}</div>
+                </div>
+                <button className="remove" onClick={() => onRemove(item.nl)} aria-label="Remove">×</button>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 window.RegisterScreen = RegisterScreen;
 window.UserSwitcher   = UserSwitcher;
 window.HomeScreen     = HomeScreen;
@@ -1097,3 +1188,4 @@ window.DeckScreen     = DeckScreen;
 window.ReadingScreen  = ReadingScreen;
 window.TestScreen     = TestScreen;
 window.DoneScreen     = DoneScreen;
+window.StudyListScreen = StudyListScreen;

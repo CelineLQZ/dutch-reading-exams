@@ -239,6 +239,61 @@ function buildDictionary(words) {
     thuis: { en: 'at home / home', pos: 'adverb' },
     mee: { en: 'along / with', pos: 'particle' },
     af: { en: 'finished / off', pos: 'particle' },
+    met: { en: 'with', pos: 'preposition' },
+    op: { en: 'on / at', pos: 'preposition' },
+    in: { en: 'in', pos: 'preposition' },
+    aan: { en: 'at / on / to', pos: 'preposition' },
+    bij: { en: 'at / near / with', pos: 'preposition' },
+    voor: { en: 'for / before / in front of', pos: 'preposition' },
+    naar: { en: 'to / toward', pos: 'preposition' },
+    van: { en: 'of / from', pos: 'preposition' },
+    door: { en: 'through / by', pos: 'preposition' },
+    over: { en: 'over / about', pos: 'preposition' },
+    onder: { en: 'under / among', pos: 'preposition' },
+    achter: { en: 'behind', pos: 'preposition' },
+    tegen: { en: 'against / to', pos: 'preposition' },
+    tussen: { en: 'between', pos: 'preposition' },
+    vanaf: { en: 'from (starting at)', pos: 'preposition' },
+    tot: { en: 'until / up to', pos: 'preposition' },
+    om: { en: 'at (time) / around / in order to', pos: 'preposition' },
+    per: { en: 'per / by', pos: 'preposition' },
+    zonder: { en: 'without', pos: 'preposition' },
+    uit: { en: 'out of / from', pos: 'preposition' },
+    na: { en: 'after', pos: 'preposition' },
+    langs: { en: 'along / past', pos: 'preposition' },
+    naast: { en: 'next to / beside', pos: 'preposition' },
+    boven: { en: 'above', pos: 'preposition' },
+    buiten: { en: 'outside / except', pos: 'preposition' },
+    binnen: { en: 'inside / within', pos: 'preposition' },
+    rond: { en: 'around', pos: 'preposition' },
+    en: { en: 'and', pos: 'conjunction' },
+    of: { en: 'or', pos: 'conjunction' },
+    maar: { en: 'but', pos: 'conjunction' },
+    want: { en: 'because / for', pos: 'conjunction' },
+    omdat: { en: 'because', pos: 'conjunction' },
+    als: { en: 'if / when / as', pos: 'conjunction' },
+    dat: { en: 'that', pos: 'conjunction' },
+    dus: { en: 'so / therefore', pos: 'adverb' },
+    ook: { en: 'also / too', pos: 'adverb' },
+    nog: { en: 'still / yet', pos: 'adverb' },
+    al: { en: 'already', pos: 'adverb' },
+    niet: { en: 'not', pos: 'adverb' },
+    geen: { en: 'no / not any', pos: 'determiner' },
+    wel: { en: 'indeed / do', pos: 'adverb' },
+    erg: { en: 'very', pos: 'adverb' },
+    heel: { en: 'very / whole', pos: 'adverb' },
+    zeer: { en: 'very', pos: 'adverb' },
+    nu: { en: 'now', pos: 'adverb' },
+    hier: { en: 'here', pos: 'adverb' },
+    daar: { en: 'there', pos: 'adverb' },
+    waar: { en: 'where', pos: 'question word' },
+    wat: { en: 'what', pos: 'question word' },
+    wie: { en: 'who', pos: 'question word' },
+    hoe: { en: 'how', pos: 'question word' },
+    wanneer: { en: 'when', pos: 'question word' },
+    waarom: { en: 'why', pos: 'question word' },
+    welke: { en: 'which', pos: 'question word' },
+    welk: { en: 'which', pos: 'question word' },
     moet: { en: 'must / have to', pos: 'modal verb' },
     moeten: { en: 'must / have to', pos: 'modal verb' },
     kunt: { en: 'can / are able to', pos: 'modal verb' },
@@ -270,6 +325,7 @@ function buildDictionary(words) {
         headword: word.nl,
         en: word.en,
         pos: word.pos || 'word',
+        grammar: word.grammar || null,
         source: sourceLabel || word.nl
       };
     }
@@ -423,6 +479,30 @@ function App() {
 
   const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'ar', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', exampleMode:'beginner', ...(userData?.prefs || {}) };
   const status = userData?.status || {};
+  const studyList = userData?.studyList || [];
+
+  useEffect(() => {
+    window.DutchStudyListAPI = {
+      isInList: (nl) => {
+        const key = (nl || '').toLowerCase().trim();
+        return (userData?.studyList || []).some(w => (w.nl || '').toLowerCase().trim() === key);
+      },
+      add: (word) => {
+        const key = (word.nl || '').toLowerCase().trim();
+        if (!key) return;
+        setUserData(d => {
+          const list = d.studyList || [];
+          if (list.some(w => (w.nl || '').toLowerCase().trim() === key)) return d;
+          return { ...d, studyList: [...list, { nl: word.nl, en: word.en, pos: word.pos, headword: word.headword, addedAt: Date.now() }] };
+        });
+      },
+      remove: (nl) => {
+        const key = (nl || '').toLowerCase().trim();
+        setUserData(d => ({ ...d, studyList: (d.studyList || []).filter(w => (w.nl || '').toLowerCase().trim() !== key) }));
+      },
+      onViewList: () => setRoute('studylist')
+    };
+  }, [userData]);
   const activeWordDeck = prefs.wordDeck || 'ar';
   const activeWords = useMemo(() => allWords.filter(w => (w.deck || 'ar') === activeWordDeck), [allWords, activeWordDeck]);
 
@@ -573,6 +653,16 @@ function App() {
     if (Object.prototype.hasOwnProperty.call(next, 'testCount')) next.testCount = clampTestCount(next.testCount);
     return { ...d, prefs: { ...d.prefs, ...next } };
   });
+
+  // ── Today stats helpers ────────────────────────────
+  function todayDateStr() { return new Date().toISOString().slice(0, 10); }
+  function getTodayStats(d) {
+    const today = todayDateStr();
+    return d.todayStats?.date === today
+      ? d.todayStats
+      : { date: today, words: 0, sentences: 0, right: 0, total: 0 };
+  }
+
   const recordSwipe  = (word, dir, swipeMode = route) => setUserData(d => {
     const key = wordKey(word);
     const reviewCounts = { ...(d.reviewCounts || {}) };
@@ -587,9 +677,15 @@ function App() {
     } else {
       statusNext[key] = 'learned';
     }
-    return { ...d, status: statusNext, reviewCounts };
+    const prevToday = getTodayStats(d);
+    const newToday  = { ...prevToday, words: prevToday.words + 1, right: prevToday.right + (dir === 'right' ? 1 : 0), total: prevToday.total + 1 };
+    return { ...d, status: statusNext, reviewCounts, todayStats: newToday };
   });
-  const recordSentenceSwipe = (sentence, dir) => setUserData(d => ({ ...d, sentenceStatus: { ...(d.sentenceStatus || {}), [wordKey(sentence)]: dir==='right'?'learned':'forgotten' } }));
+  const recordSentenceSwipe = (sentence, dir) => setUserData(d => {
+    const prevToday = getTodayStats(d);
+    const newToday  = { ...prevToday, sentences: prevToday.sentences + 1, right: prevToday.right + (dir === 'right' ? 1 : 0), total: prevToday.total + 1 };
+    return { ...d, sentenceStatus: { ...(d.sentenceStatus || {}), [wordKey(sentence)]: dir==='right'?'learned':'forgotten' }, todayStats: newToday };
+  });
   const saveSession  = (mode, words, cursor) => {
     if (cursor >= words.length) setUserData(d => ({ ...d, session: null }));
     else setUserData(d => ({ ...d, session: { mode, words: words.map(w=>wordKey(w)), cursor } }));
@@ -636,6 +732,10 @@ function App() {
     );
   }
 
+  // ── Today stats for home screen ───────────────────
+  const _todayStr  = todayDateStr();
+  const todayStats = userData?.todayStats?.date === _todayStr ? userData.todayStats : { date: _todayStr, words: 0, sentences: 0, right: 0, total: 0 };
+
   // Route → screen
   let screen;
   if (route === 'home') {
@@ -651,6 +751,8 @@ function App() {
         commonStats={commonWordStats}
         arStats={arWordStats}
         sentenceStats={allSentenceStats}
+        studyListCount={studyList.length}
+        todayStats={todayStats}
         prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
         onPickMode={m => { setResuming(false); clearSession(); setRoute(resolveMode(m)); }}
         onPickContent={type => {
@@ -659,6 +761,8 @@ function App() {
           if (type === 'sentences') {
             updatePrefs({ contentType: 'sentences', filterMode: 'article' });
             setRoute('sentences-pick');
+          } else if (type === 'studylist') {
+            setRoute('studylist');
           } else {
             const deck = type === 'common' ? 'common' : 'ar';
             updatePrefs({ contentType: 'words', wordDeck: deck, filterMode: deck === 'common' ? 'lesson' : 'article', les: 'all', category: 'all', wordLimit: '', lesFrom: '', lesTo: '' });
@@ -732,6 +836,30 @@ function App() {
         onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(word, dir, cursor) => { recordSwipe(word, dir, route); saveSession(route, fullWords, offset + cursor); }}
         onRetryMissed={route === 'learn' ? missed => { setRetryWords(missed); clearSession(); setRoute('learn-retry'); } : null}
+      />
+    );
+  } else if (route === 'studylist') {
+    screen = (
+      <StudyListScreen
+        items={studyList}
+        onBack={() => setRoute('home')}
+        onRemove={nl => window.DutchStudyListAPI?.remove(nl)}
+        onStudy={() => {
+          if (!studyList.length) return;
+          const byKey = {};
+          allWords.forEach((w, i) => { byKey[(w.nl || '').toLowerCase().trim()] = w; });
+          const words = studyList.map(item => {
+            const key = (item.nl || '').toLowerCase().trim();
+            return byKey[key] || {
+              nl: item.nl, en: item.en, pos: item.pos || 'word', ipa: '', les: 0,
+              examples: {}, grammar: null, deck: 'studylist',
+              _key: `studylist|${key}`
+            };
+          });
+          setSessionBackRoute('studylist');
+          setRetryWords(words);
+          setRoute('learn-retry');
+        }}
       />
     );
   } else if (route === 'learn-retry' && retryWords) {
