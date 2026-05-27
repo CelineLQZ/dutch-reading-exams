@@ -551,7 +551,6 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const [wordLimit, setWordLimit] = useStateS(String(prefs.wordLimit || ''));
   const [lesFrom, setLesFrom] = useStateS(String(prefs.lesFrom || ''));
   const [lesTo, setLesTo] = useStateS(String(prefs.lesTo || ''));
-  const [exampleMode, setExampleMode] = useStateS(prefs.exampleMode || 'beginner');
   const orderedCategories = ['verb', 'noun', 'preposition', 'adjective', 'question', 'other'];
   const categories = wordCategories.slice().sort((a, b) => {
     const ai = orderedCategories.indexOf(a.id);
@@ -578,7 +577,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const start = action => {
     if (!selected) return;
     const custom = selected.id === 'all' ? allCustom : { wordLimit: '', lesFrom: '', lesTo: '' };
-    onStartDeck(action, { ...selected.patch, ...custom, order, exampleMode });
+    onStartDeck(action, { ...selected.patch, ...custom, order });
   };
 
   return (
@@ -658,18 +657,6 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
               })}
             </select>
           </>
-        )}
-
-        {isCommon && (
-          <div className="custom-filter-card">
-            <div className="section-h"><h3>Example mode</h3></div>
-            <div className="seg">
-              {[{v:'beginner', lab:'Beginner'}, {v:'exam', lab:'Exam'}].map(o => (
-                <div key={o.v} className={'opt' + (exampleMode === o.v ? ' active' : '')}
-                  onClick={() => setExampleMode(o.v)}>{o.lab}</div>
-              ))}
-            </div>
-          </div>
         )}
 
         <SessionModeList selected={selected} order={order} onOrder={setOrder}
@@ -753,6 +740,7 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
   const [cursor, setCursor] = useStateS(0);
   const [internalLevel, setInternalLevel] = useStateS(level);
   const [missed, setMissed] = useStateS([]);
+  const [internalExampleMode, setInternalExampleMode] = useStateS(exampleMode || 'beginner');
   const totalWords = progressOffset + words.length;
 
   if (!words.length) {
@@ -809,7 +797,8 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
               ) : (
                 <WordCard word={w} mode={mode} level={internalLevel}
                   onLevelChange={lv => { setInternalLevel(lv); onLevelChange?.(lv); }}
-                  autoplay={autoplay} isTop={isTop} dragState={dragState} exampleMode={exampleMode} />
+                  autoplay={autoplay} isTop={isTop} dragState={dragState}
+                  exampleMode={internalExampleMode} onExampleModeChange={setInternalExampleMode} />
               )
             )}
           />

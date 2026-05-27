@@ -130,7 +130,7 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 }
 
 // ── Word card (Learn / Review) ──────────────────────────
-function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState, exampleMode = 'beginner' }) {
+function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState, exampleMode = 'beginner', onExampleModeChange }) {
   const [grammarOpen, setGrammarOpen] = useStateW(false);
   const playedRef = useRefW(null);
 
@@ -154,6 +154,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       ? 'From the exam text'
       : 'Beginner example';
   const hasGrammar = !!(word.grammar?.forms?.length);
+  const showExampleToggle = word.deck === 'common';
 
   return (
     <React.Fragment>
@@ -188,7 +189,21 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       <div className="example-block">
         {hasEx ? (
           <>
-            <div className="sentence-grammar-title">{exampleTitle}</div>
+            <div className="example-head-row">
+              <div className="sentence-grammar-title">{exampleTitle}</div>
+              {showExampleToggle && (
+                <div className="card-example-toggle" onPointerDown={e => e.stopPropagation()}>
+                  {[{v:'beginner', lab:'Beginner'}, {v:'exam', lab:'Exam'}].map(o => (
+                    <button
+                      key={o.v}
+                      type="button"
+                      className={exampleMode === o.v ? 'active' : ''}
+                      onClick={e => { e.stopPropagation(); onExampleModeChange?.(o.v); }}
+                    >{o.lab}</button>
+                  ))}
+                </div>
+              )}
+            </div>
             <div className="example-nl">
               <button
                 className="speaker-btn small keep"

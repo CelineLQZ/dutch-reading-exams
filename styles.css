@@ -741,6 +741,39 @@ button { font-family: inherit; }
 .level-tab.active { background: var(--paper); color: var(--brand); }
 
 .example-block { margin-top: 12px; }
+.example-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.example-head-row .sentence-grammar-title {
+  margin-bottom: 0;
+}
+.card-example-toggle {
+  display: flex;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+.card-example-toggle button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.card-example-toggle button.active {
+  background: var(--brand);
+  color: var(--brand-ink);
+}
 .example-nl { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; font-weight: 600; line-height: 1.35; color: var(--ink); }
 .example-en { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; padding-left: 38px; font-style: italic; line-height: 1.4; }
 .example-missing { color: var(--ink-faint); font-size: 12px; font-style: italic; padding: 4px 0 8px; text-align: center; }
