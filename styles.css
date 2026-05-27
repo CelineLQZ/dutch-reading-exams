@@ -439,6 +439,109 @@ button { font-family: inherit; }
 .select-input:focus {
   border-color: var(--brand);
 }
+.grammar-reference {
+  margin-top: 4px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.grammar-reference summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.grammar-reference summary::-webkit-details-marker { display: none; }
+.section-kicker {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.grammar-reference-title {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.grammar-reference-chevron {
+  color: var(--ink-faint);
+  font-size: 24px;
+  line-height: 1;
+  transition: transform 0.18s ease;
+}
+.grammar-reference[open] .grammar-reference-chevron { transform: rotate(180deg); }
+.grammar-reference-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 12px 12px;
+}
+.grammar-reference-card {
+  background: rgba(247, 244, 237, 0.48);
+  border: 1px solid rgba(222, 216, 205, 0.72);
+  border-radius: 14px;
+  padding: 12px;
+}
+.grammar-reference-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.grammar-type-pill {
+  flex-shrink: 0;
+  color: var(--brand);
+  background: var(--brand-faint, transparent);
+  border: 1px solid var(--brand);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.grammar-rule {
+  min-width: 0;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.grammar-reference-explain {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.grammar-reference-example {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(222, 216, 205, 0.78);
+}
+.grammar-reference-example .nl {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 850;
+}
+.grammar-reference-example .en {
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 650;
+  font-style: italic;
+}
 .custom-filter-card {
   background: var(--paper);
   border: 1px solid var(--line);

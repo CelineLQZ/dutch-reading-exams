@@ -745,6 +745,87 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   );
 }
 
+const SENTENCE_GRAMMAR_REFERENCE = [
+  {
+    type: 'Type A',
+    rule: 'Question word order',
+    explain: '疑问句里，疑问词或 yes/no 触发词后面常接变位动词，再接主语。',
+    nl: 'Heeft u veel pijn en kunt u niet wachten tot maandag?',
+    en: 'Are you in a lot of pain and unable to wait until Monday?'
+  },
+  {
+    type: 'Type B',
+    rule: 'Subclause verb-final',
+    explain: 'dat/als/wanneer/hoe/wat/die 引导从句时，动词组合常放到从句末尾。',
+    nl: 'Noa weet niet hoe hij het beste kan leren.',
+    en: 'Noa does not know how he can study best.'
+  },
+  {
+    type: 'Type C',
+    rule: 'Dutch adv./obj. placement',
+    explain: '荷兰语常把时间、副词、否定词、宾语或介词短语放在句子中间，位置和英语不一样。',
+    nl: 'Leer ze niet alleen van boven naar beneden, maar ook van beneden naar boven en door elkaar.',
+    en: 'Do not learn them only from top to bottom, but also from bottom to top and in random order.'
+  },
+  {
+    type: 'Type D',
+    rule: 'Fronted element + V2 inversion',
+    explain: '时间、地点、副词或宾语放句首时，变位动词仍在第二位，所以主语会到动词后面。',
+    nl: 'Daarom sluiten wij een aantal straten en wegen af.',
+    en: 'That is why we are closing several streets and roads.'
+  },
+  {
+    type: 'Type E',
+    rule: 'Separable verb / particle split',
+    explain: '可分动词会拆开：变位部分靠前，小品词放后面。',
+    nl: 'Gooi ze niet weg!',
+    en: 'Do not throw them away!'
+  },
+  {
+    type: 'Type F',
+    rule: 'Fronted condition clause inversion',
+    explain: 'als 条件从句放在前面时，后面的主句常以变位动词开头，然后才是主语。',
+    nl: 'Als u dat kunt, weet u zeker dat u het hebt begrepen.',
+    en: 'If you can do that, you know for sure that you have understood it.'
+  },
+  {
+    type: 'Type G',
+    rule: 'Negative imperative',
+    explain: '否定命令句可以直接用命令式加 niet。',
+    nl: 'Ga niet stil zitten als er geen klanten in de winkel zijn.',
+    en: 'Do not sit still when there are no customers in the store.'
+  }
+];
+
+function SentenceGrammarReference() {
+  return (
+    <details className="grammar-reference">
+      <summary>
+        <span>
+          <span className="section-kicker">Grammar</span>
+          <span className="grammar-reference-title">Word order types A-G</span>
+        </span>
+        <span className="grammar-reference-chevron">⌄</span>
+      </summary>
+      <div className="grammar-reference-list">
+        {SENTENCE_GRAMMAR_REFERENCE.map(item => (
+          <div className="grammar-reference-card" key={item.type}>
+            <div className="grammar-reference-head">
+              <span className="grammar-type-pill">{item.type}</span>
+              <span className="grammar-rule">{item.rule}</span>
+            </div>
+            <div className="grammar-reference-explain">{item.explain}</div>
+            <div className="grammar-reference-example">
+              <div className="nl">{item.nl}</div>
+              <div className="en">{item.en}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </details>
+  );
+}
+
 function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
@@ -807,6 +888,8 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
 
         <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
           reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences" onStart={start} />
+
+        <SentenceGrammarReference />
 
       </div>
     </div>
