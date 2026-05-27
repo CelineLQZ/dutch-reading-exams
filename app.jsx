@@ -90,7 +90,7 @@ function shuffleA(arr) {
 }
 
 function wordKey(w, index = 0) {
-  return w._key || [w.les ?? '', w.nl ?? '', w.en ?? '', index].join('|');
+  return w._key || [w.deck ?? 'ar', w.les ?? '', w.nl ?? '', w.en ?? '', index].join('|');
 }
 
 function flattenReadings(readings) {
@@ -391,25 +391,30 @@ function App() {
     else if (name === activeUser) pickUser(left[0]);
   };
 
-  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', ...(userData?.prefs || {}) };
+  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'ar', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', ...(userData?.prefs || {}) };
   const status = userData?.status || {};
+  const activeWordDeck = prefs.wordDeck || 'ar';
+  const activeWords = useMemo(() => allWords.filter(w => (w.deck || 'ar') === activeWordDeck), [allWords, activeWordDeck]);
 
   const orderedWords = useMemo(() => {
-    let list = allWords;
+    let list = activeWords;
     if (prefs.filterMode === 'category') {
       if (prefs.category !== 'all') list = list.filter(w => wordCategoryGroup(w) === prefs.category);
     } else if (prefs.les !== 'all') {
-      list = list.filter(w => w.les === prefs.les);
+      list = list.filter(w => (w.articleLes || [w.les]).includes(prefs.les));
     }
     const from = Number.parseInt(prefs.lesFrom, 10);
     const to = Number.parseInt(prefs.lesTo, 10);
-    if (Number.isFinite(from)) list = list.filter(w => (w.les || 0) >= from);
-    if (Number.isFinite(to)) list = list.filter(w => (w.les || 0) <= to);
+    if (Number.isFinite(from) || Number.isFinite(to)) {
+      list = list.filter(w => (w.articleLes || [w.les || 0]).some(les =>
+        (!Number.isFinite(from) || les >= from) && (!Number.isFinite(to) || les <= to)
+      ));
+    }
     list = prefs.order === 'random' ? shuffleA(list) : list.slice().sort((a,b) => (a.les||0)-(b.les||0));
     const limit = Number.parseInt(prefs.wordLimit, 10);
     if (Number.isFinite(limit) && limit > 0) list = list.slice(0, Math.min(limit, list.length));
     return list;
-  }, [allWords, prefs.les, prefs.category, prefs.filterMode, prefs.order, prefs.wordLimit, prefs.lesFrom, prefs.lesTo]);
+  }, [activeWords, prefs.les, prefs.category, prefs.filterMode, prefs.order, prefs.wordLimit, prefs.lesFrom, prefs.lesTo]);
 
   const allSentences = useMemo(() => flattenReadings(readings), [readings]);
 
@@ -421,15 +426,18 @@ function App() {
 
   const lessons = useMemo(() => {
     const m = {};
-    allWords.forEach(w => { m[w.les] = (m[w.les]||0)+1; });
+    activeWords.forEach(w => { m[w.les] = (m[w.les]||0)+1; });
     return Object.keys(m).map(k => ({ les:Number(k), count:m[k] })).sort((a,b)=>a.les-b.les);
-  }, [allWords]);
+  }, [activeWords]);
 
   const articles = useMemo(() => {
     const wordCounts = {};
-    allWords.forEach(w => { wordCounts[w.les] = (wordCounts[w.les] || 0) + 1; });
+    allWords.filter(w => (w.deck || 'ar') === 'ar').forEach(w => {
+      (w.articleLes || [w.les]).forEach(les => { wordCounts[les] = (wordCounts[les] || 0) + 1; });
+    });
     return readings.map(r => ({
       les: r.les,
+      label: r.label,
       title: r.title,
       wordCount: wordCounts[r.les] || 0,
       sentenceCount: r.sentences?.length || 0
@@ -445,18 +453,18 @@ function App() {
       other:'Other'
     };
     const counts = {};
-    allWords.forEach(w => {
+    activeWords.forEach(w => {
       const cat = wordCategoryGroup(w);
       counts[cat] = (counts[cat] || 0) + 1;
     });
     return Object.keys(labels)
       .filter(id => counts[id])
       .map(id => ({ id, label: labels[id], count: counts[id] }));
-  }, [allWords]);
+  }, [activeWords]);
 
   const wordCategoryStats = useMemo(() => {
     const out = {};
-    allWords.forEach((w, i) => {
+    activeWords.forEach((w, i) => {
       const cat = wordCategoryGroup(w);
       if (!out[cat]) out[cat] = { total: 0, learned: 0, forgotten: 0 };
       out[cat].total += 1;
@@ -465,7 +473,7 @@ function App() {
       if (s === 'forgotten') out[cat].forgotten += 1;
     });
     return out;
-  }, [allWords, status]);
+  }, [activeWords, status]);
 
   const learnedCount   = useMemo(() => Object.values(status).filter(s=>s==='learned').length, [status]);
   const forgottenCount = useMemo(() => Object.values(status).filter(s=>s==='forgotten').length, [status]);
@@ -507,6 +515,22 @@ function App() {
     learned: allWords.filter((w, i) => status[wordKey(w, i)] === 'learned').length,
     forgotten: allWords.filter((w, i) => status[wordKey(w, i)] === 'forgotten' || status[w.nl] === 'forgotten').length
   }), [allWords, status]);
+  const commonWordStats = useMemo(() => {
+    const list = allWords.filter(w => (w.deck || 'ar') === 'common');
+    return {
+      total: list.length,
+      learned: list.filter((w, i) => status[wordKey(w, i)] === 'learned').length,
+      forgotten: list.filter((w, i) => status[wordKey(w, i)] === 'forgotten' || status[w.nl] === 'forgotten').length
+    };
+  }, [allWords, status]);
+  const arWordStats = useMemo(() => {
+    const list = allWords.filter(w => (w.deck || 'ar') === 'ar');
+    return {
+      total: list.length,
+      learned: list.filter((w, i) => status[wordKey(w, i)] === 'learned').length,
+      forgotten: list.filter((w, i) => status[wordKey(w, i)] === 'forgotten' || status[w.nl] === 'forgotten').length
+    };
+  }, [allWords, status]);
   const allSentenceStats = useMemo(() => ({
     total: allSentences.length,
     learned: allSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
@@ -578,14 +602,22 @@ function App() {
     screen = (
       <HomeScreen user={activeUser}
         stats={allWordStats}
+        commonStats={commonWordStats}
+        arStats={arWordStats}
         sentenceStats={allSentenceStats}
         prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
         onPickMode={m => { setResuming(false); clearSession(); setRoute(resolveMode(m)); }}
         onPickContent={type => {
           setResuming(false);
           clearSession();
-          updatePrefs({ contentType: type, filterMode: type === 'sentences' ? 'article' : prefs.filterMode });
-          setRoute(type === 'sentences' ? 'sentences-pick' : 'words-pick');
+          if (type === 'sentences') {
+            updatePrefs({ contentType: 'sentences', filterMode: 'article' });
+            setRoute('sentences-pick');
+          } else {
+            const deck = type === 'common' ? 'common' : 'ar';
+            updatePrefs({ contentType: 'words', wordDeck: deck, filterMode: deck === 'common' ? 'lesson' : 'article', les: 'all', category: 'all', wordLimit: '', lesFrom: '', lesTo: '' });
+            setRoute('words-pick');
+          }
         }}
         onChangePrefs={updatePrefs}
         onSwitchUser={() => setShowSwitcher(true)}
@@ -600,6 +632,8 @@ function App() {
         wordCategories={wordCategories}
         statsByCategory={wordCategoryStats}
         articles={articles}
+        lessons={lessons}
+        wordDeck={activeWordDeck}
         prefs={prefs}
         onBack={() => setRoute('home')}
         onStartDeck={(action, patch) => {

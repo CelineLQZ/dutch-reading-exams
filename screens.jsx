@@ -462,7 +462,7 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
   );
 }
 
-function HomeScreen({ user, stats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   return (
     <div className="app-screen">
       <div className="topbar">
@@ -503,11 +503,19 @@ function HomeScreen({ user, stats, sentenceStats, onPickContent, onSwitchUser, o
 
         <div className="section-h"><h3>Choose content</h3></div>
         <div className="mode-list">
-          <div className="mode-card learn" onClick={() => onPickContent('words')}>
+          <div className="mode-card learn" onClick={() => onPickContent('common')}>
             <div className="glyph">▣</div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">Words</div>
-              <div className="desc">Pick a deck by article or category.</div>
+              <div className="title">1000 Common Words</div>
+              <div className="desc">{commonStats?.total || 0} words by lesson or category.</div>
+            </div>
+            <div className="chev">›</div>
+          </div>
+          <div className="mode-card review" onClick={() => onPickContent('ar')}>
+            <div className="glyph">AR</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div className="title">AR Words</div>
+              <div className="desc">{arStats?.total || 0} words from mock exams.</div>
             </div>
             <div className="chev">›</div>
           </div>
@@ -525,14 +533,20 @@ function HomeScreen({ user, stats, sentenceStats, onPickContent, onSwitchUser, o
   );
 }
 
-function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onBack, onStartDeck }) {
-  const allDeck = { id: 'all', label: 'all words', reviewCount: 0, patch: { filterMode: 'article', les: 'all', category: 'all' } };
+function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, wordDeck, prefs, onBack, onStartDeck }) {
+  const isCommon = wordDeck === 'common';
+  const primaryMode = isCommon ? 'lesson' : 'article';
+  const primaryLabel = isCommon ? 'lesson' : 'article';
+  const allDeck = { id: 'all', label: 'all words', reviewCount: 0, patch: { wordDeck, filterMode: primaryMode, les: 'all', category: 'all' } };
   const [mode, setMode] = useStateS('all');
   const [order, setOrder] = useStateS(prefs.order || 'course');
-  const [articleOrder, setArticleOrder] = useStateS('asc');
+  const [itemOrder, setItemOrder] = useStateS('asc');
   const [allScope, setAllScope] = useStateS('all');
-  const firstArticle = articles.find(a => a.wordCount > 0);
-  const [articleLes, setArticleLes] = useStateS(String(firstArticle?.les || ''));
+  const sourceItems = isCommon
+    ? lessons.map(l => ({ les: l.les, title: `Lesson ${l.les}`, wordCount: l.count }))
+    : articles.filter(a => a.wordCount > 0);
+  const firstItem = sourceItems[0];
+  const [itemLes, setItemLes] = useStateS(String(firstItem?.les || ''));
   const [categoryId, setCategoryId] = useStateS('verb');
   const [wordLimit, setWordLimit] = useStateS(String(prefs.wordLimit || ''));
   const [lesFrom, setLesFrom] = useStateS(String(prefs.lesFrom || ''));
@@ -543,11 +557,10 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
     const bi = orderedCategories.indexOf(b.id);
     return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
   });
-  const articleOptions = articles
-    .filter(a => a.wordCount > 0)
+  const itemOptions = sourceItems
     .slice()
-    .sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
-  const selectedArticle = articles.find(a => String(a.les) === String(articleLes)) || articleOptions[0];
+    .sort((a, b) => itemOrder === 'asc' ? a.les - b.les : b.les - a.les);
+  const selectedItem = sourceItems.find(a => String(a.les) === String(itemLes)) || itemOptions[0];
   const selectedCategory = categories.find(c => c.id === categoryId) || categories[0];
   const allCustom = allScope === 'count'
     ? { wordLimit, lesFrom: '', lesTo: '' }
@@ -555,11 +568,11 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
       ? { wordLimit: '', lesFrom, lesTo }
       : { wordLimit: '', lesFrom: '', lesTo: '' };
   const selected = mode === 'all'
-    ? { ...allDeck, label: allScope === 'count' && wordLimit ? `${wordLimit} words` : allScope === 'range' && (lesFrom || lesTo) ? `articles ${lesFrom || '1'}-${lesTo || '40'}` : 'all words' }
-    : mode === 'article' && selectedArticle
-      ? { id: `article-${selectedArticle.les}`, label: selectedArticle.title, reviewCount: 0, patch: { filterMode: 'article', les: selectedArticle.les, category: 'all' } }
+    ? { ...allDeck, label: allScope === 'count' && wordLimit ? `${wordLimit} words` : allScope === 'range' && (lesFrom || lesTo) ? `${primaryLabel}s ${lesFrom || '1'}-${lesTo || '40'}` : 'all words' }
+    : mode === primaryMode && selectedItem
+      ? { id: `${primaryMode}-${selectedItem.les}`, label: selectedItem.title, reviewCount: 0, patch: { wordDeck, filterMode: primaryMode, les: selectedItem.les, category: 'all' } }
       : mode === 'category' && selectedCategory
-        ? { id: `category-${selectedCategory.id}`, label: selectedCategory.label, reviewCount: (statsByCategory[selectedCategory.id] || {}).forgotten || 0, patch: { filterMode: 'category', category: selectedCategory.id, les: 'all' } }
+        ? { id: `category-${selectedCategory.id}`, label: selectedCategory.label, reviewCount: (statsByCategory[selectedCategory.id] || {}).forgotten || 0, patch: { wordDeck, filterMode: 'category', category: selectedCategory.id, les: 'all' } }
         : null;
   const start = action => {
     if (!selected) return;
@@ -571,13 +584,13 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
     <div className="app-screen">
       <div className="topbar">
         <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
-        <div className="mode-pill"><span className="dot"></span>Words</div>
+        <div className="mode-pill"><span className="dot"></span>{isCommon ? '1000 Words' : 'AR Words'}</div>
         <div style={{ width: 38 }}></div>
       </div>
       <div className="home pick-screen">
         <div className="seg">
           <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => setMode('all')}>All</div>
-          <div className={'opt' + (mode === 'article' ? ' active' : '')} onClick={() => setMode('article')}>Article</div>
+          <div className={'opt' + (mode === primaryMode ? ' active' : '')} onClick={() => setMode(primaryMode)}>{isCommon ? 'Lesson' : 'Article'}</div>
           <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => setMode('category')}>Category</div>
         </div>
 
@@ -589,7 +602,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
               <select className="select-input compact-select" value={allScope} onChange={e => setAllScope(e.target.value)}>
                 <option value="all">All words</option>
                 <option value="count">Choose by number of words</option>
-                <option value="range">Choose by article range</option>
+                <option value="range">Choose by {primaryLabel} range</option>
               </select>
             </label>
             {allScope === 'count' && (
@@ -602,12 +615,12 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
             {allScope === 'range' && (
               <div className="inline-input-grid two">
                 <label>
-                  <span>From article</span>
+                  <span>From {primaryLabel}</span>
                   <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
                     placeholder="1" value={lesFrom} onChange={e => setLesFrom(e.target.value)} />
                 </label>
                 <label>
-                  <span>To article</span>
+                  <span>To {primaryLabel}</span>
                   <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
                     placeholder="40" value={lesTo} onChange={e => setLesTo(e.target.value)} />
                 </label>
@@ -616,18 +629,18 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
           </div>
         )}
 
-        {mode === 'article' && (
+        {mode === primaryMode && (
           <>
             <div className="section-h pick-heading-row">
-              <h3>Pick article</h3>
+              <h3>Pick {primaryLabel}</h3>
               <button className="sort-toggle-btn" type="button"
-                onClick={() => setArticleOrder(o => o === 'asc' ? 'desc' : 'asc')}>
-                {articleOrder === 'asc' ? '↑' : '↓'}
+                onClick={() => setItemOrder(o => o === 'asc' ? 'desc' : 'asc')}>
+                {itemOrder === 'asc' ? '↑' : '↓'}
               </button>
             </div>
-            <select className="select-input" value={articleLes} onChange={e => setArticleLes(e.target.value)}>
-              {articleOptions.map(a => (
-                <option key={a.les} value={a.les}>Article {a.les}: {a.title} · {a.wordCount} words</option>
+            <select className="select-input" value={itemLes} onChange={e => setItemLes(e.target.value)}>
+              {itemOptions.map(a => (
+                <option key={a.les} value={a.les}>{isCommon ? `Lesson ${a.les}` : a.title} · {a.wordCount} words</option>
               ))}
             </select>
           </>
@@ -658,27 +671,26 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [articleOrder, setArticleOrder] = useStateS('asc');
-  const [articleLes, setArticleLes] = useStateS('');
+  const [articleLes, setArticleLes] = useStateS(String(readings[0]?.les || ''));
   const rows = readings.map(r => {
     const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0, forgotten: 0 };
     return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
   });
   const articleOptions = rows.slice().sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
   const resume = rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
+  const effectiveArticle = selected || rows.find(r => String(r.les) === String(articleLes)) || articleOptions[0];
+  const effectiveSelected = effectiveArticle
+    ? { id: effectiveArticle.id, label: effectiveArticle.title, reviewCount: effectiveArticle.stats.forgotten, les: effectiveArticle.les }
+    : null;
   const pick = r => {
     setArticleLes(String(r.les));
     setSelected({ id: r.id, label: r.title, reviewCount: r.stats.forgotten, les: r.les });
   };
-  const start = action => selected && onStartArticle(action, selected.les, order);
-  const changeContent = () => {
-    setSelected(null);
-    setArticleLes('');
-  };
+  const start = action => effectiveSelected && onStartArticle(action, effectiveSelected.les, order);
   const pickArticleValue = value => {
     const les = Number(value);
     const article = rows.find(r => r.les === les);
     if (article) pick(article);
-    else changeContent();
   };
 
   return (
@@ -701,33 +713,21 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
           </div>
         )}
 
-        {selected && (
-          <div className="selected-deck-pill">
-            Selected: <strong>{selected.label}</strong>
-            <button type="button" onClick={changeContent}>Change</button>
-          </div>
-        )}
+        <div className="section-h pick-heading-row">
+          <h3>Pick article</h3>
+          <button className="sort-toggle-btn" type="button"
+            onClick={() => setArticleOrder(o => o === 'asc' ? 'desc' : 'asc')}>
+            {articleOrder === 'asc' ? '↑' : '↓'}
+          </button>
+        </div>
+        <select className="select-input" value={String(effectiveSelected?.les || articleLes)} onChange={e => pickArticleValue(e.target.value)}>
+          {articleOptions.map(r => (
+            <option key={r.id} value={r.les}>{r.title} · {r.stats.total} sentences</option>
+          ))}
+        </select>
 
-        <SessionModeList selected={selected} order={order} onOrder={setOrder}
-          reviewCount={selected?.reviewCount || 0} unit="sentences" onStart={start} />
-
-        {!selected && (
-          <>
-            <div className="section-h"><h3>Pick article</h3></div>
-            <div className="seg mini-seg">
-              {[{v:'asc',lab:'1 → 40'},{v:'desc',lab:'40 → 1'}].map(o => (
-                <div key={o.v} className={'opt' + (articleOrder === o.v ? ' active' : '')}
-                  onClick={() => setArticleOrder(o.v)}>{o.lab}</div>
-              ))}
-            </div>
-            <select className="select-input" value={articleLes} onChange={e => pickArticleValue(e.target.value)}>
-              <option value="">Choose an article</option>
-              {articleOptions.map(r => (
-                <option key={r.id} value={r.les}>Article {r.les}: {r.title} · {r.stats.total} sentences</option>
-              ))}
-            </select>
-          </>
-        )}
+        <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
+          reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences" onStart={start} />
 
       </div>
     </div>

@@ -7,7 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_MD = ROOT / "data" / "mock-exam1.md"
 EXTRA_SOURCE_MD = ROOT / "data" / "mock-exams-2-4.md"
-SOURCE_FILES = [p for p in [SOURCE_MD, EXTRA_SOURCE_MD] if p.exists()]
+UPDATED_SOURCE_MD = Path("/Users/liceline/Desktop/荷兰融入考试阅读/荷兰融入考试阅读 mock exams/荷兰融入考试阅读 mock exams.md")
+SOURCE_FILES = [p for p in [UPDATED_SOURCE_MD, SOURCE_MD, EXTRA_SOURCE_MD] if p.exists()]
 OLD_WORDS = Path("/Users/liceline/Desktop/荷兰语单词/dutch-app/words.json")
 OUT_WORDS = ROOT / "words.json"
 OUT_READINGS = ROOT / "readings.json"
@@ -601,6 +602,119 @@ def auto_exam_rows(start_les=11):
     return rows
 
 
+def updated_exam_rows():
+    if not UPDATED_SOURCE_MD.exists():
+        return []
+    rows = []
+    current_exam = None
+    block = None
+
+    def clean_title(line):
+        line = strip_md(line).strip("| ")
+        line = re.sub(r"^(Onderwerp|Betreft|Aan):\s*", "", line, flags=re.I)
+        line = re.sub(r"^#+\s*", "", line)
+        return clean_text(line).strip(" .")
+
+    def title_from(lines, exam, index):
+        cleaned = [clean_title(x) for x in lines]
+        cleaned = [x for x in cleaned if x]
+        for raw in cleaned:
+            for pat in AUTO_TITLE_PATTERNS:
+                if raw.replace("’", "'").replace("‘", "'").startswith(pat):
+                    return pat.title() if pat.isupper() else pat
+        for raw in cleaned:
+            if raw.lower().startswith("onderwerp:"):
+                return clean_title(raw)
+        for raw in cleaned[:10]:
+            low = raw.lower()
+            if low in {"lees eerst de vraag.", "lees daarna de tekst."}:
+                continue
+            if raw in SUBHEADINGS:
+                continue
+            if low.startswith(("beste ", "hoi ", "dag ", "geachte ", "met vriendelijke", "groetjes", "namens")):
+                continue
+            if 3 <= len(raw) <= 80 and not raw.endswith("?") and not re.match(r"^\d+\.?$", raw):
+                return raw
+        return f"Exam {exam} article {index}"
+
+    def flush():
+        nonlocal block
+        if not block or not block.get("lines"):
+            block = None
+            return
+        exam = block["exam"]
+        exam_index = sum(1 for r in rows if r["exam"] == exam) + 1
+        title = title_from(block["lines"], exam, exam_index)
+        label = f"{exam}.{exam_index}"
+        sentences = []
+        seen = set()
+        for raw in block["lines"]:
+            line = strip_md(raw)
+            if not line or re.match(r"^-+$", line) or re.match(r"^[| :.-]+$", line):
+                continue
+            if line in {"Lees eerst de vraag.", "Lees daarna de tekst."}:
+                continue
+            if line in SUBHEADINGS and len(line) < 32:
+                continue
+            line = re.sub(r"^\d+\.\s*", "", line)
+            chunks = re.split(r"(?<=[.!?])\s+", line)
+            for chunk in chunks:
+                chunk = clean_text(chunk)
+                chunk = re.sub(r"^\d+\.\s*", "", chunk).strip()
+                if len(chunk) < 8:
+                    continue
+                key = chunk.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                sentences.append({"nl": chunk, "en": translated_sentence_map().get(chunk) or sentence_gloss(chunk)})
+        if sentences:
+            rows.append({
+                "id": f"exam{exam}-{exam_index}",
+                "les": len(rows) + 1,
+                "exam": exam,
+                "examIndex": exam_index,
+                "label": label,
+                "title": f"{label} {title}",
+                "rawTitle": title,
+                "sentences": sentences,
+            })
+        block = None
+
+    lines = UPDATED_SOURCE_MD.read_text().splitlines()
+    after_prompt = False
+    for raw in lines:
+        line = strip_md(raw)
+        m_exam = re.match(r"#?\s*exam\s+(\d+)\s*$", line, re.I)
+        if m_exam:
+            flush()
+            current_exam = int(m_exam.group(1))
+            after_prompt = False
+            continue
+        if current_exam is None:
+            continue
+        if current_exam == 2:
+            title_candidate = clean_title(line)
+            title_match = any(title_candidate.replace("’", "'").replace("‘", "'").startswith(pat) for pat in AUTO_TITLE_PATTERNS)
+            if title_match and title_candidate not in SUBHEADINGS:
+                flush()
+                block = {"exam": current_exam, "lines": [raw]}
+                after_prompt = False
+                continue
+        if line == "Lees eerst de vraag.":
+            flush()
+            after_prompt = True
+            continue
+        if after_prompt and line == "Lees daarna de tekst.":
+            block = {"exam": current_exam, "lines": []}
+            after_prompt = False
+            continue
+        if block is not None:
+            block["lines"].append(raw)
+    flush()
+    return rows
+
+
 def word_key(word):
     return re.sub(r"^(de|het|een)\s+", "", word["nl"].lower()).strip()
 
@@ -761,7 +875,8 @@ def clone_word(item, les, token=None, source_examples=None):
             "a2": ex or {"nl": item.get("nl", ""), "en": item.get("en", "")},
         },
         "grammar": grammar,
-        "source": "mock exam 1",
+        "source": "mock exams",
+        "deck": "ar",
     }
 
 
@@ -787,10 +902,23 @@ def make_extra(nl, en, pos, les, example):
         },
         "grammar": grammar,
         "source": "automatic pattern extraction",
+        "deck": "ar",
     }
 
 
-def build_words():
+def common_words():
+    words = json.loads(OLD_WORDS.read_text())
+    out = []
+    for i, item in enumerate(words):
+        cloned = dict(item)
+        cloned["deck"] = "common"
+        cloned["source"] = "1000 common words"
+        cloned["_sourceIndex"] = i
+        out.append(cloned)
+    return out
+
+
+def build_ar_words():
     old = load_old_words()
     examples = source_sentence_examples()
     source_sents = source_sentences()
@@ -830,16 +958,47 @@ def build_words():
         selected[nl.lower()] = make_extra(nl, en, pos, les, ex["nl"])
 
     words = list(selected.values())
+    source_articles = updated_exam_rows() or article_rows()
+    sent_to_les = {}
+    for article in source_articles:
+        for sentence in article.get("sentences", []):
+            sent_to_les[clean_text(sentence.get("nl", ""))] = article["les"]
     for i, w in enumerate(words):
-        w["les"] = int(w.get("les") or (i // 18 + 1))
+        example = clean_text(((w.get("examples") or {}).get("a0") or {}).get("nl", ""))
+        w["les"] = int(sent_to_les.get(example) or w.get("les") or (i // 18 + 1))
+        terms = [normalize_term(w.get("nl", ""))]
+        terms.extend(normalize_term(part) for part in re.split(r"\s*/\s*", w.get("nl", "")))
+        terms = [t for t in terms if t and "..." not in t and not t.endswith("?")]
+        article_les = set()
+        for article in source_articles:
+            text = " ".join(sentence.get("nl", "") for sentence in article.get("sentences", [])).lower()
+            for term in terms:
+                parts = [p for p in re.findall(r"[a-zà-ÿ']+", term.lower()) if len(p) >= 2]
+                if not parts:
+                    continue
+                if len(parts) == 1:
+                    if re.search(r"\b" + re.escape(parts[0]) + r"\b", text):
+                        article_les.add(article["les"])
+                        break
+                elif all(re.search(r"\b" + re.escape(part) + r"\b", text) for part in parts[:3]):
+                    article_les.add(article["les"])
+                    break
+        w["articleLes"] = sorted(article_les or {w["les"]})
+        w["deck"] = "ar"
     return words
+
+
+def build_words():
+    return common_words() + build_ar_words()
 
 
 def main():
     words = build_words()
-    readings = article_rows()
-    readings.extend(auto_exam_rows(start_les=len(readings) + 1))
-    readings.extend(exam1_question_rows(start_les=len(readings) + 1))
+    readings = updated_exam_rows()
+    if not readings:
+        readings = article_rows()
+        readings.extend(auto_exam_rows(start_les=len(readings) + 1))
+        readings.extend(exam1_question_rows(start_les=len(readings) + 1))
     OUT_WORDS.write_text(json.dumps(words, ensure_ascii=False, indent=2) + "\n")
     OUT_READINGS.write_text(json.dumps(readings, ensure_ascii=False, indent=2) + "\n")
     print(f"wrote {len(words)} cards to {OUT_WORDS}")
