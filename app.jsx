@@ -171,11 +171,17 @@ const ADJECTIVE_WORDS = new Set([
   'nodig', 'open', 'oud', 'oude', 'prive', 'privé', 'rustig', 'schoon', 'snel',
   'veilig', 'veel', 'vol', 'vrij', 'weinig', 'ziek'
 ]);
+const VERB_WORDS = new Set([
+  'borrelen', 'dansen', 'hockeyen', 'kamperen', 'koken', 'leren', 'snijden',
+  'sporten', 'stappen', 'studeren', 'tennissen', 'tuinieren', 'uitgaan',
+  'wandelen', 'werken', 'winkelen', 'wonen', 'zwemmen'
+]);
 
 function wordCategory(w) {
   const pos = (w.pos || 'other').toLowerCase();
   const rawTerm = (w.nl || '').toLowerCase().trim();
   const term = rawTerm.replace(/^(de|het|een)\s+/, '').trim();
+  if (w.grammar?.kind === 'verb' || VERB_WORDS.has(term)) return 'verb';
   if (/^(de|het|een)\s+\S+/.test(rawTerm)) return 'noun';
   if (PREPOSITION_WORDS.has(term)) return 'preposition';
   if (QUESTION_WORDS.has(term)) return 'question';
@@ -415,7 +421,7 @@ function App() {
     else if (name === activeUser) pickUser(left[0]);
   };
 
-  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'ar', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', ...(userData?.prefs || {}) };
+  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'ar', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', exampleMode:'beginner', ...(userData?.prefs || {}) };
   const status = userData?.status || {};
   const activeWordDeck = prefs.wordDeck || 'ar';
   const activeWords = useMemo(() => allWords.filter(w => (w.deck || 'ar') === activeWordDeck), [allWords, activeWordDeck]);
@@ -707,6 +713,7 @@ function App() {
       <DeckScreen mode={route} words={fullSentences} progressOffset={0}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
+        exampleMode={prefs.exampleMode}
         onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
       />
@@ -732,6 +739,7 @@ function App() {
       <DeckScreen key={`learn-retry-${retryWords.map(w => wordKey(w)).join('|')}`} mode="learn" words={retryWords} progressOffset={0}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
+        exampleMode={prefs.exampleMode}
         onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(word, dir) => recordSwipe(word, dir, 'learn')}
         onRetryMissed={missed => { setRetryWords(missed); setRoute('learn-retry'); }}

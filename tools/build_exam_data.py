@@ -908,9 +908,19 @@ def make_extra(nl, en, pos, les, example):
 
 def common_words():
     words = json.loads(OLD_WORDS.read_text())
+    examples = source_sentence_examples()
+    source_sents = source_sentences()
     out = []
     for i, item in enumerate(words):
         cloned = dict(item)
+        exam_ex = find_source_example(cloned.get("nl", ""), examples, source_sents)
+        if exam_ex:
+            cloned["examExamples"] = {
+                "a0": exam_ex,
+                "a1": exam_ex,
+                "a2": exam_ex,
+            }
+        cloned["beginnerExamples"] = cloned.get("examples") or {}
         cloned["deck"] = "common"
         cloned["source"] = "1000 common words"
         cloned["_sourceIndex"] = i

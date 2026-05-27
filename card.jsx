@@ -130,7 +130,7 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 }
 
 // ── Word card (Learn / Review) ──────────────────────────
-function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState }) {
+function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState, exampleMode = 'beginner' }) {
   const [grammarOpen, setGrammarOpen] = useStateW(false);
   const playedRef = useRefW(null);
 
@@ -143,9 +143,16 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
     return () => clearTimeout(t);
   }, [isTop, word.nl, autoplay]);
 
-  const exMap  = word.examples || {};
+  const exMap  = exampleMode === 'exam'
+    ? (word.examExamples || word.examples || {})
+    : (word.beginnerExamples || word.examples || {});
   const ex     = exMap.a1 || exMap.a0 || exMap.a2 || { nl: '—', en: '' };
   const hasEx  = ex.nl && ex.nl !== '—';
+  const exampleTitle = word.deck === 'ar'
+    ? 'From the exam text'
+    : exampleMode === 'exam' && word.examExamples
+      ? 'From the exam text'
+      : 'Beginner example';
   const hasGrammar = !!(word.grammar?.forms?.length);
 
   return (
@@ -181,7 +188,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       <div className="example-block">
         {hasEx ? (
           <>
-            <div className="sentence-grammar-title">From the article</div>
+            <div className="sentence-grammar-title">{exampleTitle}</div>
             <div className="example-nl">
               <button
                 className="speaker-btn small keep"
