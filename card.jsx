@@ -36,6 +36,42 @@ function lookupDutchWord(token) {
   return dict[key] || dict[key.replace(/'s$/, '')] || null;
 }
 
+function pickGrammarForm(forms, patterns) {
+  return forms.find(f => {
+    const label = String(f.label || '').toLowerCase();
+    return patterns.some(pattern => pattern.test(label));
+  });
+}
+
+function compactWordGrammar(word) {
+  const forms = word.grammar?.forms || [];
+  if (!forms.length) return [];
+
+  const grammarKind = String(word.grammar?.kind || '').toLowerCase();
+  const pos = String(word.pos || '').toLowerCase();
+
+  if (grammarKind === 'noun' || pos.includes('noun')) {
+    const plural = pickGrammarForm(forms, [/meervoud/, /plural/]);
+    return plural ? [{ label: 'plural', nl: plural.nl }] : [];
+  }
+
+  if (grammarKind === 'verb' || pos.includes('verb')) {
+    const ik = pickGrammarForm(forms, [/^ik$/]);
+    const hij = pickGrammarForm(forms, [/^hij\b/, /hij\/zij/, /hij\/zij\/het/]);
+    const past = pickGrammarForm(forms, [/^verleden$/, /^past$/]);
+    const perfect = pickGrammarForm(forms, [/voltooid/, /perfect/]);
+
+    return [
+      ik && { label: 'ik', nl: ik.nl },
+      hij && { label: 'hij', nl: hij.nl },
+      past && { label: 'past', nl: past.nl },
+      perfect && { label: 'perfect', nl: perfect.nl },
+    ].filter(Boolean);
+  }
+
+  return [];
+}
+
 function ClickableDutchText({ text }) {
   const [selected, setSelected] = useStateW(null);
   const parts = String(text || '').split(/([A-Za-zÀ-ÿ']+)/g);
@@ -131,14 +167,12 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 
 // ── Word card (Learn / Review) ──────────────────────────
 function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState, exampleMode = 'beginner', onExampleModeChange }) {
-  const [grammarOpen, setGrammarOpen] = useStateW(false);
   const playedRef = useRefW(null);
 
   useEffectW(() => {
     if (!isTop || !autoplay) return;
     if (playedRef.current === word.nl) return;
     playedRef.current = word.nl;
-    setGrammarOpen(false);
     const t = setTimeout(() => speak(word.nl), 180);
     return () => clearTimeout(t);
   }, [isTop, word.nl, autoplay]);
@@ -153,7 +187,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
     : exampleMode === 'exam' && word.examExamples
       ? 'From the exam text'
       : 'Beginner example';
-  const hasGrammar = !!(word.grammar?.forms?.length);
+  const grammarRows = compactWordGrammar(word);
   const showExampleToggle = word.deck === 'common';
 
   return (
@@ -221,32 +255,16 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
         )}
       </div>
 
-      {hasGrammar && (
-        <React.Fragment>
-          <button
-            className={'grammar-toggle ' + (grammarOpen ? 'open' : '')}
-            onPointerDown={e => e.stopPropagation()}
-            onClick={e => { e.stopPropagation(); setGrammarOpen(o => !o); }}
-          >
-            <span>Grammatica</span>
-            <span className="chev"><ChevDown /></span>
-          </button>
-          {grammarOpen && (
-            <div className="grammar-panel" onPointerDown={e => e.stopPropagation()}>
-              {word.grammar.forms.map((f, i) => (
-                <div className="grammar-row" key={i}>
-                  <span className="lab">{f.label}</span>
-                  <span className="form">{f.nl}</span>
-                  <button
-                    className="speaker-btn small"
-                    onClick={e => { e.stopPropagation(); speak(f.nl); }}
-                    aria-label={'Uitspreken: ' + f.label}
-                  ><SpeakerIcon size={11} /></button>
-                </div>
-              ))}
+      {grammarRows.length > 0 && mode !== 'test' && (
+        <div className="grammar-card" onPointerDown={e => e.stopPropagation()}>
+          <div className="grammar-card-title">Grammatica</div>
+          {grammarRows.map((f, i) => (
+            <div className="grammar-card-row" key={i}>
+              <span className="lab">{f.label}</span>
+              <span className="form">{f.nl}</span>
             </div>
-          )}
-        </React.Fragment>
+          ))}
+        </div>
       )}
     </React.Fragment>
   );

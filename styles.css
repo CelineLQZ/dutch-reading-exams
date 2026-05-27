@@ -896,20 +896,45 @@ button { font-family: inherit; }
 }
 
 /* Grammar */
-.grammar-toggle {
-  margin-top: 12px; display: flex; align-items: center; justify-content: space-between; gap: 6px;
-  background: var(--paper-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
-  font-weight: 800; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-soft); cursor: pointer; width: 100%;
-}
-.grammar-toggle:active { transform: scale(0.98); }
-.grammar-toggle .chev { display: inline-block; transition: transform 0.2s; color: var(--ink-faint); }
-.grammar-toggle.open .chev { transform: rotate(180deg); }
 .grammar-panel { margin-top: 8px; background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; }
-.grammar-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); }
-.grammar-row:last-child { border-bottom: none; }
-.grammar-row .lab  { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); flex-shrink: 0; min-width: 90px; }
-.grammar-row .form { flex: 1; font-weight: 600; font-size: 14px; color: var(--ink); }
+.grammar-card {
+  margin-top: 12px;
+  background: var(--paper-2);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.grammar-card-title {
+  margin-bottom: 6px;
+  color: var(--ink-faint);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.grammar-card-row {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-top: 1px solid rgba(25, 39, 70, 0.1);
+}
+.grammar-card-row:first-of-type { border-top: none; }
+.grammar-card-row .lab {
+  color: var(--ink-faint);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: lowercase;
+}
+.grammar-card-row .form {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
 
 /* Swipe stamps */
 .stamp {
