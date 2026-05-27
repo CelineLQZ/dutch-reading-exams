@@ -174,7 +174,9 @@ const ADJECTIVE_WORDS = new Set([
 
 function wordCategory(w) {
   const pos = (w.pos || 'other').toLowerCase();
-  const term = (w.nl || '').toLowerCase().replace(/^(de|het|een)\s+/, '').trim();
+  const rawTerm = (w.nl || '').toLowerCase().trim();
+  const term = rawTerm.replace(/^(de|het|een)\s+/, '').trim();
+  if (/^(de|het|een)\s+\S+/.test(rawTerm)) return 'noun';
   if (PREPOSITION_WORDS.has(term)) return 'preposition';
   if (QUESTION_WORDS.has(term)) return 'question';
   if (ADJECTIVE_WORDS.has(term)) return 'adjective';
