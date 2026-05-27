@@ -506,7 +506,7 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
           <div className="mode-card learn" onClick={() => onPickContent('common')}>
             <div className="glyph">▣</div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">1000 Common Words</div>
+              <div className="title">1000 Dutch Words</div>
               <div className="desc">{commonStats?.total || 0} words by lesson or category.</div>
             </div>
             <div className="chev">›</div>
@@ -514,7 +514,7 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
           <div className="mode-card review" onClick={() => onPickContent('ar')}>
             <div className="glyph">AR</div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">AR Words</div>
+              <div className="title">A2 Words</div>
               <div className="desc">{arStats?.total || 0} words from mock exams.</div>
             </div>
             <div className="chev">›</div>
@@ -584,7 +584,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
     <div className="app-screen">
       <div className="topbar">
         <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
-        <div className="mode-pill"><span className="dot"></span>{isCommon ? '1000 Words' : 'AR Words'}</div>
+        <div className="mode-pill"><span className="dot"></span>{isCommon ? '1000 Words' : 'A2 Words'}</div>
         <div style={{ width: 38 }}></div>
       </div>
       <div className="home pick-screen">
