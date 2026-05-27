@@ -154,8 +154,30 @@ function clampTestCount(value) {
   return Math.max(20, Math.min(1200, n));
 }
 
+const PREPOSITION_WORDS = new Set([
+  'aan', 'achter', 'bij', 'binnen', 'boven', 'buiten', 'door', 'in', 'langs', 'met',
+  'na', 'naar', 'naast', 'om', 'onder', 'op', 'over', 'per', 'rond', 'tegen', 'tot',
+  'tussen', 'uit', 'van', 'vanaf', 'voor', 'zonder'
+]);
+const QUESTION_WORDS = new Set([
+  'wat', 'waar', 'waarom', 'wanneer', 'wie', 'welk', 'welke', 'hoe', 'hoeveel', 'waarheen',
+  'waarmee', 'waarvoor', 'waarvan'
+]);
+const ADJECTIVE_WORDS = new Set([
+  'ander', 'andere', 'belangrijk', 'beste', 'beter', 'blij', 'breed', 'druk', 'duur',
+  'echt', 'eenvoudig', 'erg', 'fijn', 'gratis', 'goed', 'grote', 'groot', 'half',
+  'hoog', 'hoger', 'jong', 'koud', 'klein', 'laat', 'lang', 'leeg', 'lekker', 'leuk',
+  'makkelijk', 'medisch', 'medische', 'moeilijk', 'mooi', 'nat', 'nieuw', 'nieuwe',
+  'nodig', 'open', 'oud', 'oude', 'prive', 'privé', 'rustig', 'schoon', 'snel',
+  'veilig', 'veel', 'vol', 'vrij', 'weinig', 'ziek'
+]);
+
 function wordCategory(w) {
   const pos = (w.pos || 'other').toLowerCase();
+  const term = (w.nl || '').toLowerCase().replace(/^(de|het|een)\s+/, '').trim();
+  if (PREPOSITION_WORDS.has(term)) return 'preposition';
+  if (QUESTION_WORDS.has(term)) return 'question';
+  if (ADJECTIVE_WORDS.has(term)) return 'adjective';
   if (pos.includes('pronoun')) return 'pronoun';
   if (pos.includes('adverb')) return 'adverb';
   if (pos.includes('noun')) return 'noun';
@@ -171,7 +193,7 @@ function wordCategory(w) {
   return 'other';
 }
 
-const PRIMARY_WORD_CATEGORIES = ['verb', 'noun', 'preposition', 'question'];
+const PRIMARY_WORD_CATEGORIES = ['verb', 'noun', 'preposition', 'adjective', 'question'];
 function wordCategoryGroup(w) {
   const cat = wordCategory(w);
   return PRIMARY_WORD_CATEGORIES.includes(cat) ? cat : 'other';
@@ -449,6 +471,7 @@ function App() {
       verb:'Verbs',
       noun:'Nouns',
       preposition:'Prepositions',
+      adjective:'Adjectives',
       question:'Questions',
       other:'Other'
     };
@@ -542,7 +565,22 @@ function App() {
     if (Object.prototype.hasOwnProperty.call(next, 'testCount')) next.testCount = clampTestCount(next.testCount);
     return { ...d, prefs: { ...d.prefs, ...next } };
   });
-  const recordSwipe  = (word, dir) => setUserData(d => ({ ...d, status: { ...d.status, [wordKey(word)]: dir==='right'?'learned':'forgotten' } }));
+  const recordSwipe  = (word, dir, swipeMode = route) => setUserData(d => {
+    const key = wordKey(word);
+    const reviewCounts = { ...(d.reviewCounts || {}) };
+    const statusNext = { ...d.status };
+    if (dir === 'left') {
+      reviewCounts[key] = 0;
+      statusNext[key] = 'forgotten';
+    } else if (swipeMode === 'review') {
+      const nextCount = (reviewCounts[key] || 0) + 1;
+      reviewCounts[key] = nextCount;
+      statusNext[key] = nextCount >= 3 ? 'learned' : 'forgotten';
+    } else {
+      statusNext[key] = 'learned';
+    }
+    return { ...d, status: statusNext, reviewCounts };
+  });
   const recordSentenceSwipe = (sentence, dir) => setUserData(d => ({ ...d, sentenceStatus: { ...(d.sentenceStatus || {}), [wordKey(sentence)]: dir==='right'?'learned':'forgotten' } }));
   const saveSession  = (mode, words, cursor) => {
     if (cursor >= words.length) setUserData(d => ({ ...d, session: null }));
@@ -683,7 +721,18 @@ function App() {
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
         onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
-        onSwipe={(word, dir, cursor) => { recordSwipe(word, dir); saveSession(route, fullWords, offset + cursor); }}
+        onSwipe={(word, dir, cursor) => { recordSwipe(word, dir, route); saveSession(route, fullWords, offset + cursor); }}
+        onRetryMissed={route === 'learn' ? missed => { setRetryWords(missed); clearSession(); setRoute('learn-retry'); } : null}
+      />
+    );
+  } else if (route === 'learn-retry' && retryWords) {
+    screen = (
+      <DeckScreen key={`learn-retry-${retryWords.map(w => wordKey(w)).join('|')}`} mode="learn" words={retryWords} progressOffset={0}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
+        onSwipe={(word, dir) => recordSwipe(word, dir, 'learn')}
+        onRetryMissed={missed => { setRetryWords(missed); setRoute('learn-retry'); }}
       />
     );
   } else if (route === 'test') {

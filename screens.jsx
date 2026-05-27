@@ -551,7 +551,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const [wordLimit, setWordLimit] = useStateS(String(prefs.wordLimit || ''));
   const [lesFrom, setLesFrom] = useStateS(String(prefs.lesFrom || ''));
   const [lesTo, setLesTo] = useStateS(String(prefs.lesTo || ''));
-  const orderedCategories = ['verb', 'noun', 'preposition', 'question', 'other'];
+  const orderedCategories = ['verb', 'noun', 'preposition', 'adjective', 'question', 'other'];
   const categories = wordCategories.slice().sort((a, b) => {
     const ai = orderedCategories.indexOf(a.id);
     const bi = orderedCategories.indexOf(b.id);
@@ -735,10 +735,11 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
 }
 
 /* ── Deck (Learn / Review) ───────────────────────── */
-function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwipe, progressOffset = 0 }) {
+function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwipe, onRetryMissed, progressOffset = 0 }) {
   const deckRef = useRefS(null);
   const [cursor, setCursor] = useStateS(0);
   const [internalLevel, setInternalLevel] = useStateS(level);
+  const [missed, setMissed] = useStateS([]);
   const totalWords = progressOffset + words.length;
 
   if (!words.length) {
@@ -766,6 +767,13 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
   const modeLabel = sentenceMode
     ? (mode.includes('review') ? 'Sentence Review' : 'Sentences')
     : (mode === 'review' ? 'Review' : 'Learn');
+  const handleSwipe = (i, dir, item) => {
+    setCursor(i + 1);
+    if (dir === 'left' && onRetryMissed && !sentenceMode) {
+      setMissed(prev => prev.concat(item));
+    }
+    onSwipe?.(item, dir, i + 1);
+  };
 
   return (
     <div className="app-screen">
@@ -781,7 +789,7 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
       <div className="deck-stage">
         {!done ? (
           <SwipeDeck ref={deckRef} items={words}
-            onSwipe={(i, dir, item) => { setCursor(i + 1); onSwipe?.(item, dir, i + 1); }}
+            onSwipe={handleSwipe}
             renderCard={(w, i, isTop, dragState) => (
               sentenceMode ? (
                 <SentenceCard word={w} mode={mode} autoplay={autoplay} isTop={isTop} dragState={dragState} />
@@ -796,7 +804,10 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
           <div className="empty-state">
             <div className="big">🎉</div>
             <div className="title">Session done!</div>
-            <div className="desc">Nice work. Come back tomorrow to keep your streak alive.</div>
+            <div className="desc">{missed.length ? `${missed.length} cards were marked again.` : 'Nice work. Come back tomorrow to keep your streak alive.'}</div>
+            {missed.length > 0 && onRetryMissed && (
+              <button className="primary-btn" style={{ maxWidth: 220 }} onClick={() => onRetryMissed(missed)}>Retry missed</button>
+            )}
             <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back home</button>
           </div>
         )}
