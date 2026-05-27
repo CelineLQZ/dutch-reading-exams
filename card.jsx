@@ -137,6 +137,7 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
   }, [isTop, word.nl, autoplay]);
 
   const grammarForms = word.grammar?.forms || [];
+  const grammarMode = word.pos === 'grammar';
 
   return (
     <React.Fragment>
@@ -149,10 +150,10 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 
       <div className="card-top-row sentence-card-header">
         <div className="sentence-card-meta">
-          <span className="les-tag">Article {word.les}</span>
+          <span className="les-tag">{grammarMode ? 'Grammar' : `Article ${word.les}`}</span>
           <div className="sentence-number">{word.articleTitle || 'Reading'}</div>
         </div>
-        <span className="pos-tag">sentence</span>
+        <span className="pos-tag">{grammarMode ? 'rule' : 'sentence'}</span>
       </div>
 
       <div className="sentence-study-card">
@@ -219,7 +220,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       )}
 
       <div className="card-top-row">
-        <span className="les-tag">Article {word.les}</span>
+        <span className="les-tag">{word.pos === 'grammar' ? 'Grammar' : `Article ${word.les}`}</span>
         {word.pos && <span className="pos-tag">{word.pos}</span>}
       </div>
 

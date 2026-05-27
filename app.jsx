@@ -109,40 +109,80 @@ function flattenReadings(readings) {
   })));
 }
 
+const GRAMMAR_TYPE_REASONS = {
+  A: 'Q order: WH/yes-no trigger + fin.V before subj.; infinitive/participle may move later.',
+  B: 'Subclause marker pushes verb group toward clause end.',
+  C: 'Dutch places adv./neg./prep. phrase mid-sentence; EN often moves it later.',
+  D: 'Fronted element in pos.1; fin.V stays pos.2, so subj. follows.',
+  E: 'Sep. verb/particle pattern: fin.V part early, particle/infinitive part later.',
+  F: 'Fronted condition takes pos.1; main clause starts with fin.V + subj.',
+  G: 'Neg. command: imperative + niet.'
+};
+
+const FIXED_COLLOCATION_PATTERNS = [
+  [/tips?\s+om\b/i, 'tips om', 'tips for / tips to'],
+  [/\bom\s+te\s+\w+/i, 'om te + verb', 'in order to / to'],
+  [/\bgoed\s+te\s+leren\b/i, 'goed te leren', 'to study well'],
+  [/\bbeter\s+te\s+kunnen\s+leren\b/i, 'beter te kunnen leren', 'to be able to study better'],
+  [/\been\s+planning\s+maken\b/i, 'een planning maken', 'to make a plan'],
+  [/\been\s+pauze\s+nemen\b|\bneem\s+.*\bpauze\b/i, 'een pauze nemen', 'to take a break'],
+  [/\bdenken?\s+.*\bna\s+over\b|\bdenk\s+.*\bna\s+over\b/i, 'nadenken over', 'to think about'],
+  [/\buitleggen\b|\bleg\s+.*\buit\b/i, 'uitleggen aan iemand', 'to explain to someone'],
+  [/\bzeker\s+weten\b|\bweet\s+u\s+zeker\b/i, 'zeker weten', 'to know for sure'],
+  [/\blast\s+heb\w*\s+van\b/i, 'last hebben van', 'to be bothered by / suffer from'],
+  [/\bzin\s+in\s+heeft\b|\bzin\s+heb\w*\s+in\b/i, 'zin hebben in', 'to feel like / want to'],
+  [/\bmeedoen\s+aan\b|\bmeedoet\s+aan\b/i, 'meedoen aan', 'to take part in'],
+  [/\bkijken\s+naar\b|\bnaar\s+.*\bkijken\b/i, 'kijken naar', 'to look at / watch'],
+  [/\binformatie\s+geven\s+over\b/i, 'informatie geven over', 'to give information about'],
+  [/\bveilig\s+is\s+voor\b|\bveilig\s+zijn\s+voor\b/i, 'veilig zijn voor', 'to be safe for'],
+  [/\bstraten\s+.*\bafsluiten\b|\bsluiten\s+.*\baf\b/i, 'afsluiten', 'to close off'],
+  [/\bwegslepen\b/i, 'wegslepen', 'to tow away'],
+  [/\bop\s+de\s+route\b/i, 'op de route', 'on the route'],
+  [/\bgebruikmaken\s+van\b/i, 'gebruikmaken van', 'to use / make use of'],
+  [/\bbestaat\s+uit\b/i, 'bestaan uit', 'to consist of'],
+  [/\bsolliciteert\s+naar\b|\bsolliciteren\s+naar\b/i, 'solliciteren naar', 'to apply for'],
+  [/\bhelpen\s+tijdens\b/i, 'helpen tijdens', 'to help during'],
+  [/\baanmelden\s+bij\b|\baanmelden\s+voor\b/i, 'zich aanmelden bij/voor', 'to register with / for'],
+  [/\bbellen\s+met\b/i, 'bellen met', 'to call'],
+  [/\bmelden\s+bij\b/i, 'melden bij', 'to report to'],
+  [/\blast\s+van\s+heeft\b|\blast\s+van\s+hebben\b/i, 'last hebben van', 'to have trouble with'],
+  [/\bafspraak\s+maken\s+met\b/i, 'een afspraak maken met', 'to make an appointment with'],
+  [/\bpraten\s+over\b/i, 'praten over', 'to talk about'],
+  [/\bopgeven\b|\bgeef\s+.*\bop\b/i, 'zich opgeven', 'to sign up'],
+  [/\bdoorgeven\s+aan\b|\bgeef\s+.*\bdoor\b/i, 'doorgeven aan', 'to pass on to / inform'],
+  [/\bletten\s+op\b|\blet\s+.*\bop\b/i, 'letten op', 'to pay attention to'],
+  [/\brekening\s+houden\s+met\b/i, 'rekening houden met', 'to take into account']
+];
+
 function analyzeSentenceGrammar(sentence) {
   const lower = sentence.toLowerCase();
   const forms = [];
   const add = (label, nl) => forms.push({ label, nl });
 
+  FIXED_COLLOCATION_PATTERNS.forEach(([pattern, label, en]) => {
+    if (pattern.test(sentence)) add(label, en);
+  });
+
   if (/[?]$/.test(sentence.trim()) || /^(wat|waar|wanneer|waarom|hoe|welke|wie|aan wie)\b/i.test(sentence.trim())) {
-    add('疑问句', '荷兰语疑问句常见两种：疑问词开头（wat/waar/wanneer/hoe 等），或者变位动词提前到主语前面。');
+    add('Grammar Type A', GRAMMAR_TYPE_REASONS.A);
   }
-  if (/\b(moet|moeten|kunt|kan|kunnen|wilt|wil|willen|mag|mogen|hoeft|hoeven)\b/.test(lower)) {
-    add('情态动词', 'moeten/kunnen/willen/mogen/hoeven 后面通常接动词原形，动词原形经常放在句子后面。');
+  if (/\b(dat|als|wanneer|hoe|wat|die|of|omdat|zodat|voordat)\b/.test(lower)) {
+    add('Grammar Type B', GRAMMAR_TYPE_REASONS.B);
   }
-  if (/\b(niet|geen|niets|niemand)\b/.test(lower)) {
-    add('否定', 'niet 常否定动作、形容词或整句；geen 放在不定名词前，表示“没有/不是任何”。');
+  if (/\b(dan|daar|daarom|daarna|ook|nog|niet|geen|wel|zelf|thuis|samen|op|aan|bij|naar|met|voor|van|tot|in|uit|om|over)\b/.test(lower)) {
+    add('Grammar Type C', GRAMMAR_TYPE_REASONS.C);
   }
-  if (/\b(om half|om \d|uur|'s morgens|'s middags|'s avonds|vanaf|tot|voor|na de pauze)\b/.test(lower)) {
-    add('时间表达', '具体时间常用 om；vanaf 表示“从……开始”；tot 表示“直到”；voor/na 表示“之前/之后”。');
+  if (/^(dan|daarom|daarna|ook|op|om|vandaag|morgen|volgende|in|na|voor|gelukkig|wel|meer|dit|de prijzen|auto’s die)\b/i.test(sentence.trim())) {
+    add('Grammar Type D', GRAMMAR_TYPE_REASONS.D);
   }
-  if (/\b(als|dat|wanneer|omdat|zodat|voordat)\b/.test(lower)) {
-    add('从句语序', 'als/dat/wanneer/omdat 等引导从句时，变位动词常移到从句后面，这一点和英语语序不同。');
+  if (/\b(mee|op|weg|aan|uit|door|thuis|terug|af)\b/.test(lower) && /\b(halen|nemen|melden|geven|doen|gaan|brengen|bezorgen|aantrekken|sluiten|slepen|denken|leggen|maken|gebruiken|opgeven|doorgeven)\b/.test(lower)) {
+    add('Grammar Type E', GRAMMAR_TYPE_REASONS.E);
   }
-  if (/\b(op|aan|bij|naar|met|voor|van|tot|in|uit)\b/.test(lower)) {
-    add('介词', 'op/aan/bij/naar/met/voor/van 等是高频介词，也经常和动词或名词组成固定搭配。');
+  if (/^als\b/i.test(sentence.trim()) || /^wordt u\b/i.test(sentence.trim())) {
+    add('Grammar Type F', GRAMMAR_TYPE_REASONS.F);
   }
-  if (/\b(mee|op|weg|aan|uit|door|thuis|terug)\b/.test(lower) && /\b(halen|nemen|melden|geven|doen|gaan|brengen|bezorgen|aantrekken)\b/.test(lower)) {
-    add('可分动词', '有些动词会拆开使用，例如 haal ... op、geef ... door、trek ... aan。看到小品词在后面时要和前面的动词连起来理解。');
-  }
-  if (/\b(het beste|het meest|beter|meer|minder|hoger|langer)\b/.test(lower)) {
-    add('比较级/最高级', 'beter/meer/minder 是比较级；het beste/het meest 常表示最高级。');
-  }
-  if (/\b(wordt|worden|is|zijn)\b/.test(lower) && /\b(verbouwd|gekozen|bezorgd|gelezen|gevonden|vergeten)\b/.test(lower)) {
-    add('被动或完成', 'worden/zijn 加过去分词时，常表示被动或已经完成的状态。');
-  }
-  if (/^(dan|daarom|daarna|ook|op|om|vandaag|morgen|volgende|in|na|voor)\b/i.test(sentence.trim())) {
-    add('语序提醒', '时间、地点或连接词放句首时，荷兰语常把变位动词放到第二位，主语跟在动词后面，这和英语/中文直译顺序不同。');
+  if (/^(leer|denk|gooi|ga|zeg|vertel|bel|neem|let)\b/i.test(sentence.trim()) && /\bniet\b/i.test(sentence)) {
+    add('Grammar Type G', GRAMMAR_TYPE_REASONS.G);
   }
 
   return forms.length ? { kind: 'sentence', forms } : null;
@@ -546,6 +586,32 @@ function App() {
   }, [activeWords, prefs.les, prefs.category, prefs.filterMode, prefs.order, prefs.wordLimit, prefs.lesFrom, prefs.lesTo]);
 
   const allSentences = useMemo(() => flattenReadings(readings), [readings]);
+  const grammarStudyItems = useMemo(() => (window.SENTENCE_GRAMMAR_REFERENCE || []).map(item => ({
+    nl: item.nl,
+    en: item.en,
+    ipa: '',
+    pos: 'grammar',
+    type: 'sentence',
+    les: item.type.replace('Type ', ''),
+    articleTitle: `${item.type} · ${item.rule}`,
+    sentenceNumber: 1,
+    examples: {},
+    grammar: { kind: 'sentence', forms: [{ label: item.type, nl: item.reason }] },
+    _key: `grammar-study|${item.type}`
+  })), []);
+  const grammarTestItems = useMemo(() => (window.SENTENCE_GRAMMAR_REFERENCE || []).map(item => ({
+    nl: item.testNl || item.nl,
+    en: `${item.type} — ${item.rule}`,
+    ipa: '',
+    pos: 'grammar',
+    type: 'sentence',
+    les: item.type.replace('Type ', ''),
+    articleTitle: 'Grammar test',
+    sentenceNumber: 1,
+    examples: {},
+    grammar: { kind: 'sentence', forms: [{ label: item.type, nl: item.reason }] },
+    _key: `grammar-test|${item.type}`
+  })), []);
 
   const orderedSentences = useMemo(() => {
     let list = allSentences;
@@ -839,6 +905,21 @@ function App() {
           updatePrefs({ contentType: 'sentences', filterMode: 'article', les: article.les, order });
           setRoute('reading');
         }}
+        onStartGrammar={action => {
+          setResuming(false);
+          clearSession();
+          setSessionBackRoute('sentences-pick');
+          setRoute(action === 'test' ? 'grammar-test' : 'grammar-study');
+        }}
+      />
+    );
+  } else if (route === 'grammar-study') {
+    screen = (
+      <DeckScreen mode="grammar-study" words={grammarStudyItems} progressOffset={0}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        exampleMode={prefs.exampleMode}
+        onExit={() => setRoute(sessionBackRoute || 'sentences-pick')}
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {
@@ -924,6 +1005,13 @@ function App() {
         onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
         onExit={() => { clearSession(); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => { setRetryWords(wrongs); setRoute('sentence-retry'); }}
+      />
+    );
+  } else if (route === 'grammar-test') {
+    screen = (
+      <TestScreen key="grammar-test" words={grammarTestItems} allWords={grammarTestItems} autoplay={settings.autoplay}
+        maxQuestions={null}
+        onExit={() => setRoute(sessionBackRoute || 'sentences-pick')}
       />
     );
   } else if (route === 'sentence-retry' && retryWords) {

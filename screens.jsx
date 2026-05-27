@@ -711,10 +711,6 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
           <>
             <div className="section-h pick-heading-row">
               <h3>Pick {primaryLabel}</h3>
-              <button className="sort-toggle-btn" type="button"
-                onClick={() => setItemOrder(o => o === 'asc' ? 'desc' : 'asc')}>
-                {itemOrder === 'asc' ? '↑' : '↓'}
-              </button>
             </div>
             <select className="select-input" value={itemLes} onChange={e => setItemLes(e.target.value)}>
               {itemOptions.map(a => (
@@ -749,53 +745,68 @@ const SENTENCE_GRAMMAR_REFERENCE = [
   {
     type: 'Type A',
     rule: 'Question word order',
-    explain: '疑问句里，疑问词或 yes/no 触发词后面常接变位动词，再接主语。',
+    reason: 'Q order: WH/yes-no trigger + fin.V before subj.; infinitive/participle may move later.',
     nl: 'Heeft u veel pijn en kunt u niet wachten tot maandag?',
-    en: 'Are you in a lot of pain and unable to wait until Monday?'
+    en: 'Are you in a lot of pain and unable to wait until Monday?',
+    testNl: 'Wat moet hij doen?',
+    testEn: 'What should he do?'
   },
   {
     type: 'Type B',
     rule: 'Subclause verb-final',
-    explain: 'dat/als/wanneer/hoe/wat/die 引导从句时，动词组合常放到从句末尾。',
+    reason: 'Subclause marker pushes verb group toward clause end.',
     nl: 'Noa weet niet hoe hij het beste kan leren.',
-    en: 'Noa does not know how he can study best.'
+    en: 'Noa does not know how he can study best.',
+    testNl: 'Ze wil weten hoe laat de meubels bezorgd worden.',
+    testEn: 'She wants to know what time the furniture will be delivered.'
   },
   {
     type: 'Type C',
     rule: 'Dutch adv./obj. placement',
-    explain: '荷兰语常把时间、副词、否定词、宾语或介词短语放在句子中间，位置和英语不一样。',
+    reason: 'Dutch places adv./neg./prep. phrase mid-sentence; EN often moves it later.',
     nl: 'Leer ze niet alleen van boven naar beneden, maar ook van beneden naar boven en door elkaar.',
-    en: 'Do not learn them only from top to bottom, but also from bottom to top and in random order.'
+    en: 'Do not learn them only from top to bottom, but also from bottom to top and in random order.',
+    testNl: 'U kunt dan bellen met het noodnummer.',
+    testEn: 'You can then call the emergency number.'
   },
   {
     type: 'Type D',
     rule: 'Fronted element + V2 inversion',
-    explain: '时间、地点、副词或宾语放句首时，变位动词仍在第二位，所以主语会到动词后面。',
+    reason: 'Fronted element in pos.1; fin.V stays pos.2, so subj. follows.',
     nl: 'Daarom sluiten wij een aantal straten en wegen af.',
-    en: 'That is why we are closing several streets and roads.'
+    en: 'That is why we are closing several streets and roads.',
+    testNl: 'Op vrijdag zijn wij gesloten.',
+    testEn: 'On Fridays we are closed.'
   },
   {
     type: 'Type E',
     rule: 'Separable verb / particle split',
-    explain: '可分动词会拆开：变位部分靠前，小品词放后面。',
+    reason: 'Sep. verb/particle pattern: fin.V part early, particle/infinitive part later.',
     nl: 'Gooi ze niet weg!',
-    en: 'Do not throw them away!'
+    en: 'Do not throw them away!',
+    testNl: 'Dan haal ik mijn tas daar morgen op.',
+    testEn: 'Then I will pick up my bag there tomorrow.'
   },
   {
     type: 'Type F',
     rule: 'Fronted condition clause inversion',
-    explain: 'als 条件从句放在前面时，后面的主句常以变位动词开头，然后才是主语。',
+    reason: 'Fronted condition takes pos.1; main clause starts with fin.V + subj.',
     nl: 'Als u dat kunt, weet u zeker dat u het hebt begrepen.',
-    en: 'If you can do that, you know for sure that you have understood it.'
+    en: 'If you can do that, you know for sure that you have understood it.',
+    testNl: 'Als u het leuk vindt, kunt u helpen tijdens de open dagen.',
+    testEn: 'If you like it, you can help during the open days.'
   },
   {
     type: 'Type G',
     rule: 'Negative imperative',
-    explain: '否定命令句可以直接用命令式加 niet。',
+    reason: 'Neg. command: imperative + niet.',
     nl: 'Ga niet stil zitten als er geen klanten in de winkel zijn.',
-    en: 'Do not sit still when there are no customers in the store.'
+    en: 'Do not sit still when there are no customers in the store.',
+    testNl: 'Leer niet langer dan een half uur.',
+    testEn: 'Do not study for longer than half an hour.'
   }
 ];
+window.SENTENCE_GRAMMAR_REFERENCE = SENTENCE_GRAMMAR_REFERENCE;
 
 function SentenceGrammarReference() {
   return (
@@ -814,7 +825,7 @@ function SentenceGrammarReference() {
               <span className="grammar-type-pill">{item.type}</span>
               <span className="grammar-rule">{item.rule}</span>
             </div>
-            <div className="grammar-reference-explain">{item.explain}</div>
+            <div className="grammar-reference-explain">{item.reason}</div>
             <div className="grammar-reference-example">
               <div className="nl">{item.nl}</div>
               <div className="en">{item.en}</div>
@@ -826,7 +837,23 @@ function SentenceGrammarReference() {
   );
 }
 
-function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle }) {
+function GrammarPracticeCard({ onStudy, onTest }) {
+  return (
+    <div className="grammar-practice-card">
+      <div className="grammar-practice-copy">
+        <div className="label">Grammar</div>
+        <div className="title">Word order types A-G</div>
+        <div className="desc-light">Study fixed examples, then test the grammar rule.</div>
+      </div>
+      <div className="grammar-practice-actions">
+        <button type="button" onClick={onStudy}>Study</button>
+        <button type="button" onClick={onTest}>Test</button>
+      </div>
+    </div>
+  );
+}
+
+function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle, onStartGrammar }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
@@ -861,6 +888,11 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
         <div style={{ width: 38 }}></div>
       </div>
       <div className="home pick-screen">
+        <GrammarPracticeCard
+          onStudy={() => onStartGrammar?.('study')}
+          onTest={() => onStartGrammar?.('test')}
+        />
+
         {resume && (
           <div className="continue-banner pick-continue" onClick={() => onContinueArticle ? onContinueArticle(resume, order) : pick(resume)}>
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -875,10 +907,6 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
 
         <div className="section-h pick-heading-row">
           <h3>Pick article</h3>
-          <button className="sort-toggle-btn" type="button"
-            onClick={() => setArticleOrder(o => o === 'asc' ? 'desc' : 'asc')}>
-            {articleOrder === 'asc' ? '↑' : '↓'}
-          </button>
         </div>
         <select className="select-input" value={String(effectiveSelected?.les || articleLes)} onChange={e => pickArticleValue(e.target.value)}>
           {articleOptions.map(r => (
@@ -888,8 +916,6 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
 
         <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
           reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences" onStart={start} />
-
-        <SentenceGrammarReference />
 
       </div>
     </div>
@@ -926,9 +952,10 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
   const done = cursor >= words.length;
   const pct  = totalWords ? Math.round(((progressOffset + cursor) / totalWords) * 100) : 0;
   const swipe = (dir) => deckRef.current?.swipe(dir);
-  const sentenceMode = words[0]?.type === 'sentence' || mode.startsWith('sentence') || mode === 'reading';
+  const grammarMode = words[0]?.pos === 'grammar' || mode.startsWith('grammar');
+  const sentenceMode = words[0]?.type === 'sentence' || mode.startsWith('sentence') || mode === 'reading' || grammarMode;
   const modeLabel = sentenceMode
-    ? (mode.includes('review') ? 'Sentence Review' : 'Sentences')
+    ? (grammarMode ? 'Grammar' : mode.includes('review') ? 'Sentence Review' : 'Sentences')
     : (mode === 'review' ? 'Review' : 'Learn');
   const handleSwipe = (i, dir, item) => {
     setCursor(i + 1);
@@ -1100,6 +1127,7 @@ function TestScreen({ words, allWords, autoplay, maxQuestions, onWrongWord, onEx
       return { word: w, choices: shuffleArr([w.en, ...distractors]) };
     });
   }, [words, allWords, maxQuestions]);
+  const grammarMode = words[0]?.pos === 'grammar';
   const sentenceMode = words[0]?.type === 'sentence';
 
   useEffectS(() => {
@@ -1114,13 +1142,13 @@ function TestScreen({ words, allWords, autoplay, maxQuestions, onWrongWord, onEx
       <div className="app-screen">
         <div className="topbar">
           <div className="iconbtn" onClick={onExit}><CloseIcon /></div>
-          <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>{sentenceMode ? 'Sentence Test' : 'Test'}</div>
+          <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>{grammarMode ? 'Grammar Test' : sentenceMode ? 'Sentence Test' : 'Test'}</div>
           <div style={{ width: 38 }}></div>
         </div>
         <div className="empty-state">
           <div className="big">📭</div>
-          <div className="title">{sentenceMode ? 'No sentences yet' : 'No words yet'}</div>
-          <div className="desc">{sentenceMode ? 'Choose another article filter or try again.' : 'Learn a few words first, then test yourself.'}</div>
+          <div className="title">{grammarMode ? 'No grammar rules yet' : sentenceMode ? 'No sentences yet' : 'No words yet'}</div>
+          <div className="desc">{grammarMode ? 'Try again from the grammar card.' : sentenceMode ? 'Choose another article filter or try again.' : 'Learn a few words first, then test yourself.'}</div>
           <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back home</button>
         </div>
       </div>
@@ -1140,7 +1168,7 @@ function TestScreen({ words, allWords, autoplay, maxQuestions, onWrongWord, onEx
     <div className="app-screen">
       <div className="topbar">
         <div className="iconbtn" onClick={onExit}><CloseIcon /></div>
-        <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>{sentenceMode ? 'Sentence Test' : 'Test'}</div>
+        <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>{grammarMode ? 'Grammar Test' : sentenceMode ? 'Sentence Test' : 'Test'}</div>
         <div className="counter">{cursor + 1}/{total}</div>
       </div>
       <div className="progressbar"><span style={{ width: pct + '%' }}></span></div>
