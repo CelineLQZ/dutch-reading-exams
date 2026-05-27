@@ -189,21 +189,20 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       <div className="example-block">
         {hasEx ? (
           <>
-            <div className="example-head-row">
+            {showExampleToggle ? (
+              <div className="card-example-seg" onPointerDown={e => e.stopPropagation()}>
+                {[{v:'beginner', lab:'Beginner'}, {v:'exam', lab:'Exam'}].map(o => (
+                  <button
+                    key={o.v}
+                    type="button"
+                    className={exampleMode === o.v ? 'active' : ''}
+                    onClick={e => { e.stopPropagation(); onExampleModeChange?.(o.v); }}
+                  >{o.lab}</button>
+                ))}
+              </div>
+            ) : (
               <div className="sentence-grammar-title">{exampleTitle}</div>
-              {showExampleToggle && (
-                <div className="card-example-toggle" onPointerDown={e => e.stopPropagation()}>
-                  {[{v:'beginner', lab:'Beginner'}, {v:'exam', lab:'Exam'}].map(o => (
-                    <button
-                      key={o.v}
-                      type="button"
-                      className={exampleMode === o.v ? 'active' : ''}
-                      onClick={e => { e.stopPropagation(); onExampleModeChange?.(o.v); }}
-                    >{o.lab}</button>
-                  ))}
-                </div>
-              )}
-            </div>
+            )}
             <div className="example-nl">
               <button
                 className="speaker-btn small keep"

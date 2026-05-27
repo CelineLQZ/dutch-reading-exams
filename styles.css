@@ -741,38 +741,35 @@ button { font-family: inherit; }
 .level-tab.active { background: var(--paper); color: var(--brand); }
 
 .example-block { margin-top: 12px; }
-.example-head-row {
+.card-example-seg {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-.example-head-row .sentence-grammar-title {
-  margin-bottom: 0;
-}
-.card-example-toggle {
-  display: flex;
-  background: var(--paper-2);
+  width: 100%;
+  background: color-mix(in srgb, var(--paper-2) 88%, var(--line));
   border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 2px;
-  flex-shrink: 0;
+  border-radius: 16px;
+  padding: 5px;
+  gap: 5px;
+  margin: 0 0 12px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.55);
 }
-.card-example-toggle button {
+.card-example-seg button {
+  flex: 1;
   border: 0;
-  border-radius: 999px;
+  border-radius: 12px;
   background: transparent;
   color: var(--ink-soft);
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 900;
-  padding: 5px 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 8px;
   cursor: pointer;
 }
-.card-example-toggle button.active {
-  background: var(--brand);
-  color: var(--brand-ink);
+.card-example-seg button.active {
+  background: var(--paper);
+  color: var(--brand);
+  box-shadow: 0 8px 18px rgba(26,37,64,0.08);
 }
 .example-nl { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; font-weight: 600; line-height: 1.35; color: var(--ink); }
 .example-en { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; padding-left: 38px; font-style: italic; line-height: 1.4; }
