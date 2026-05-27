@@ -482,11 +482,7 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
 }
 
 function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
-  const dashboard = {
-    total: (stats?.total || 0) + (sentenceStats?.total || 0),
-    learned: (stats?.learned || 0) + (sentenceStats?.learned || 0),
-    review: (stats?.forgotten || 0) + (sentenceStats?.forgotten || 0)
-  };
+  const reviewTotal = (stats?.forgotten || 0) + (sentenceStats?.forgotten || 0);
   return (
     <div className="app-screen">
       <div className="topbar">
@@ -507,9 +503,18 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
         </div>
 
         <div className="stats-row">
-          <div className="stat-card brand"><div className="num">{dashboard.total}</div><div className="lbl">Total</div></div>
-          <div className="stat-card keep"><div className="num">{dashboard.learned}</div><div className="lbl">Learned</div></div>
-          <div className="stat-card forgot"><div className="num">{dashboard.review}</div><div className="lbl">Review</div></div>
+          <div className="stat-card brand">
+            <div className="num">{stats?.learned || 0}<span>/{stats?.total || 0}</span></div>
+            <div className="lbl">Words</div>
+          </div>
+          <div className="stat-card keep">
+            <div className="num">{sentenceStats?.learned || 0}<span>/{sentenceStats?.total || 0}</span></div>
+            <div className="lbl">Sentences</div>
+          </div>
+          <div className="stat-card forgot">
+            <div className="num">{reviewTotal}</div>
+            <div className="lbl">Review</div>
+          </div>
         </div>
 
         {continueSession && (

@@ -176,6 +176,7 @@ button { font-family: inherit; }
   border-radius: 16px; padding: 12px 10px 11px; text-align: center;
 }
 .stat-card .num { font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.05; color: var(--ink); font-variant-numeric: tabular-nums; }
+.stat-card .num span { font-family: var(--font-ui); font-size: 12px; font-weight: 900; color: var(--ink-faint); margin-left: 2px; }
 .stat-card.brand .num { color: var(--brand); }
 .stat-card.keep  .num { color: var(--keep); }
 .stat-card.forgot .num { color: var(--forgot); }
