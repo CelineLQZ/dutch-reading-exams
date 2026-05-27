@@ -9,8 +9,20 @@
     "rawTitle": "Tips om goed te leren",
     "sentences": [
       {
-        "nl": "Tips om goed te leren",
-        "en": "Approximate English: Tips at/in order to good learn"
+        "nl": "In een opleidingsgids staan tips om te leren.",
+        "en": "A training guide contains tips for studying."
+      },
+      {
+        "nl": "Lees eerst de vraag.",
+        "en": "First read the question."
+      },
+      {
+        "nl": "Lees daarna de tekst.",
+        "en": "Then read the text."
+      },
+      {
+        "nl": "Tips om goed te leren.",
+        "en": "Tips for studying well."
       },
       {
         "nl": "Iedereen leert op zijn eigen manier.",
@@ -18,15 +30,15 @@
       },
       {
         "nl": "Toch geven we u een paar tips om beter te kunnen leren.",
-        "en": "Still, we give you a few tips so you can learn better."
+        "en": "Still, we are giving you a few tips to help you study better."
       },
       {
         "nl": "Begin met het maken van een planning: wat gaat u wanneer doen?",
-        "en": "Start by making a plan: what are you going to do and when?"
+        "en": "Start by making a plan: what are you going to do, and when?"
       },
       {
         "nl": "Elke dag een beetje leren is beter dan alles op één dag leren.",
-        "en": "Approximate English: Elke day a bit learn is better then everything on/at day learn."
+        "en": "Studying a little every day is better than studying everything in one day."
       },
       {
         "nl": "Lees op verschillende dagen dezelfde bladzijdes een paar keer opnieuw.",
@@ -34,11 +46,11 @@
       },
       {
         "nl": "U onthoudt de informatie dan beter.",
-        "en": "Then you remember the information better."
+        "en": "You will remember the information better that way."
       },
       {
-        "nl": "Zoek uit wanneer u het beste kan leren: 's morgens, 's middags of 's avonds.",
-        "en": "Find out when you can learn best: in the morning, afternoon, or evening."
+        "nl": "Zoek uit wanneer u het beste kan leren: ’s morgens, ’s middags of ’s avonds.",
+        "en": "Find out when you can study best: in the morning, in the afternoon, or in the evening."
       },
       {
         "nl": "Leer niet langer dan een half uur.",
@@ -58,7 +70,7 @@
       },
       {
         "nl": "Lees eerst een stuk tekst.",
-        "en": "First read a piece of text."
+        "en": "First read a section of text."
       },
       {
         "nl": "Denk daarna even na over de inhoud.",
@@ -66,7 +78,7 @@
       },
       {
         "nl": "Lees dan een nieuw stuk tekst en denk weer na over die inhoud.",
-        "en": "Then read a new piece of text and think again about that content."
+        "en": "Then read a new section of text and think about that content again."
       },
       {
         "nl": "Ga zo verder tot het einde van de tekst.",
@@ -86,27 +98,23 @@
       },
       {
         "nl": "Jamie heeft volgende week een belangrijk examen.",
-        "en": "Approximate English: Jamie has next week a important."
+        "en": "Jamie has an important exam next week."
       },
       {
         "nl": "Wat moet hij volgens de tekst het eerste doen?",
-        "en": "Approximate English: What must he the the to do?"
+        "en": "According to the text, what should he do first?"
       },
       {
         "nl": "Wanneer kan je volgens de tekst het beste leren?",
-        "en": "Approximate English: When can you the the learn?"
+        "en": "According to the text, when can you study best?"
       },
       {
         "nl": "Noa weet niet hoe hij het beste kan leren.",
-        "en": "Approximate English: Noa not how he the can learn."
+        "en": "Noa does not know how he can study best."
       },
       {
         "nl": "Welk advies kan je hem geven?",
-        "en": "Approximate English: Welk can you to give?"
-      },
-      {
-        "nl": "Alle bewoners van een dorp krijgen een brief.",
-        "en": "Approximate English: Alle of/from a village get a letter."
+        "en": "What advice can you give him?"
       }
     ]
   },
@@ -120,67 +128,71 @@
     "rawTitle": "Aan de bewoners van het dorp",
     "sentences": [
       {
-        "nl": "Aan de bewoners van het dorp",
-        "en": "Approximate English: To/at the of/from the village"
+        "nl": "Alle bewoners van een dorp krijgen een brief.",
+        "en": "All residents of a village receive a letter."
       },
       {
-        "nl": "Onderwerp: Jaarlijkse hardloopwedstrijd",
-        "en": "Approximate English: Onderwerp Jaarlijkse"
+        "nl": "Aan de bewoners van het dorp.",
+        "en": "To the residents of the village."
+      },
+      {
+        "nl": "Onderwerp: Jaarlijkse hardloopwedstrijd.",
+        "en": "Subject: Annual running race."
       },
       {
         "nl": "Wij willen u met deze brief informatie geven over de jaarlijkse hardloopwedstrijd in ons dorp.",
-        "en": "With this letter, we want to give you information about the annual running race in our village."
+        "en": "With this letter, we would like to give you information about the annual running race in our village."
       },
       {
         "nl": "Ook willen wij u vertellen wat er die dag anders is voor het verkeer.",
-        "en": "We also want to tell you what will be different for traffic that day."
+        "en": "We would also like to tell you what will be different for traffic on that day."
       },
       {
         "nl": "We willen dat alles zo goed mogelijk gaat en we hopen dat u weinig last hebt van de wedstrijd.",
-        "en": "We want everything to go as well as possible, and we hope the race causes you little trouble."
+        "en": "We want everything to go as well as possible, and we hope that the race causes you little inconvenience."
       },
       {
         "nl": "Ongeveer 500 hardlopers doen mee aan de hardloopwedstrijd.",
-        "en": "About 500 runners take part in the running race."
+        "en": "About 500 runners are taking part in the running race."
       },
       {
         "nl": "De start en de finish zijn op het Dorpsplein.",
-        "en": "The start and finish are on the village square."
+        "en": "The start and the finish are on the village square."
       },
       {
         "nl": "U kunt naar de hardlopers komen kijken, als u daar zin in heeft.",
         "en": "You can come and watch the runners if you feel like it."
       },
       {
-        "nl": "Datum: zaterdag 13 juni",
-        "en": "Approximate English: Datum Saturday June"
+        "nl": "Datum: zaterdag 13 juni.",
+        "en": "Date: Saturday, 13 June."
       },
       {
-        "nl": "Tijd: van 11.00 uur tot 16.00 uur",
-        "en": "Approximate English: Tijd of/from hour until hour"
+        "nl": "Tijd: van 11.00 uur tot 16.00 uur.",
+        "en": "Time: from 11:00 to 16:00."
       },
       {
-        "nl": "Route: Dorpsplein - Dorpsstraat - Bergsebaan - Flamingostraat - Dorpsplein",
-        "en": "Approximate English: Route Dorpsplein Dorpsstraat Bergsebaan Flamingostraat Dorpsplein"
+        "nl": "Route: Dorpsplein – Dorpsstraat – Bergsebaan – Flamingostraat – Dorpsplein.",
+        "en": "Route: Village Square – Dorpsstraat – Bergsebaan – Flamingostraat – Village Square."
       },
       {
         "nl": "We willen dat alles veilig is voor de hardlopers, het verkeer en het publiek.",
-        "en": "We want everything to be safe for the runners, traffic, and the public."
+        "en": "We want everything to be safe for the runners, the traffic, and the public."
       },
       {
         "nl": "Daarom sluiten wij een aantal straten en wegen af.",
-        "en": "Therefore we are closing a number of streets and roads."
+        "en": "That is why we are closing several streets and roads."
       },
       {
-        "nl": "Op de route mogen tot 17.00 uur geen auto's staan.",
-        "en": "No cars may be parked on the route until 5 p.m."
+        "nl": "Op de route mogen tot 17.00 uur geen auto’s staan.",
+        "en": "No cars may be parked along the route until 17:00."
       },
       {
         "nl": "Wij vragen u daarom uw auto vóór zaterdagmorgen 13 juni 10.00 uur weg te halen.",
-        "en": "Approximate English: We questions/ask you (formal) therefore your car June hour road to pick up."
+        "en": "We therefore ask you to move your car before 10:00 on Saturday morning, 13 June."
       },
       {
-        "nl": "Auto's die er daarna nog staan zal de politie wegslepen.",
+        "nl": "Auto’s die er daarna nog staan zal de politie wegslepen.",
         "en": "Cars that are still there after that will be towed away by the police."
       },
       {
@@ -188,32 +200,28 @@
         "en": "We apologize for the inconvenience and thank you for your cooperation."
       },
       {
-        "nl": "Met vriendelijke groet,",
-        "en": "Approximate English: With"
+        "nl": "Met vriendelijke groet.",
+        "en": "Kind regards."
       },
       {
-        "nl": "Piet Jansen",
-        "en": "Approximate English: Piet Jansen"
+        "nl": "Piet Jansen.",
+        "en": "Piet Jansen."
       },
       {
-        "nl": "Organisator hardloopwedstrijd",
-        "en": "Approximate English: Organisator"
+        "nl": "Organisator hardloopwedstrijd.",
+        "en": "Organizer of the running race."
       },
       {
         "nl": "Waarom krijgen de dorpsbewoners deze brief van Piet Jansen?",
-        "en": "Approximate English: Why get the these, this letter of/from Piet Jansen?"
+        "en": "Why are the village residents receiving this letter from Piet Jansen?"
       },
       {
         "nl": "Gaston woont in de Flamingostraat.",
-        "en": "Approximate English: Gaston in the Flamingostraat."
+        "en": "Gaston lives on Flamingostraat."
       },
       {
         "nl": "Wanneer moet hij zijn auto weghalen op zaterdag 13 juni?",
-        "en": "Approximate English: When must he are car on/at Saturday June?"
-      },
-      {
-        "nl": "In een meubelwinkel ligt een folder met informatie over de transportservice.",
-        "en": "Approximate English: In a a with information about the."
+        "en": "When must he move his car on Saturday, 13 June?"
       }
     ]
   },
@@ -227,8 +235,12 @@
     "rawTitle": "Verzamel- en transportservice",
     "sentences": [
       {
-        "nl": "Verzamel- en transportservice",
-        "en": "Approximate English: Verzamel and"
+        "nl": "In een meubelwinkel ligt een folder met informatie over de transportservice.",
+        "en": "In a furniture store, there is a brochure with information about the transport service."
+      },
+      {
+        "nl": "Verzamel- en transportservice.",
+        "en": "Collection and transport service."
       },
       {
         "nl": "Hebt u meubels gezien die u wilt kopen?",
@@ -236,7 +248,7 @@
       },
       {
         "nl": "En wilt u dat wij deze meubels bij u thuisbezorgen?",
-        "en": "And do you want us to deliver this furniture to your home?"
+        "en": "And would you like us to deliver this furniture to your home?"
       },
       {
         "nl": "Dan kunt u gebruikmaken van onze transportservice.",
@@ -244,7 +256,7 @@
       },
       {
         "nl": "Hoe werkt het?",
-        "en": "Approximate English: How the?"
+        "en": "How does it work?"
       },
       {
         "nl": "U maakt een lijstje met de meubels, op internet of in onze winkel.",
@@ -256,115 +268,79 @@
       },
       {
         "nl": "Dit alles voor een klein bedrag.",
-        "en": "All of this for a small amount of money."
+        "en": "All of this for a small fee."
       },
       {
         "nl": "De prijzen voor het bezorgen ziet u hieronder.",
         "en": "You can see the delivery prices below."
       },
       {
-        "nl": "Tarieven:",
-        "en": "Approximate English: Tarieven"
-      },
-      {
-        "nl": "Hoeveel weegt uw bestelling?",
-        "en": "Approximate English: How much your?"
-      },
-      {
-        "nl": "Bezorging op de begane grond Bezorging op de 1e, 2e, 3e etc.",
-        "en": "Approximate English: Bezorging on/at the Bezorging on/at the."
-      },
-      {
-        "nl": "verdieping",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "0-199 kg € 54,- € 64,-",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "200 kg of meer € 104,- € 144,-",
-        "en": "Approximate English: Or lake"
-      },
-      {
         "nl": "Deze prijzen zijn geldig voor één adres.",
-        "en": "Approximate English: These, this are for/before address."
+        "en": "These prices are valid for one address."
       },
       {
         "nl": "Wilt u de meubels op meer adressen laten bezorgen?",
-        "en": "Do you want the furniture delivered to more addresses?"
+        "en": "Would you like to have the furniture delivered to more than one address?"
       },
       {
         "nl": "Ga dan voor meer informatie naar de informatiebalie in onze winkel.",
         "en": "Then go to the information desk in our store for more information."
       },
       {
-        "nl": "Bezorging",
-        "en": "Approximate English: Bezorging"
+        "nl": "De levertijd van de meubels is ten minste twee weken.",
+        "en": "The delivery time for the furniture is at least two weeks."
       },
       {
-        "nl": "* De levertijd van de meubels is ten minste twee weken.",
-        "en": "Approximate English: The of/from the is two."
+        "nl": "U kunt op onze website zien op welke dagen wij meubels thuisbezorgen.",
+        "en": "You can see on our website on which days we deliver furniture to homes."
       },
       {
-        "nl": "* U kunt op onze website zien op welke dagen wij meubels thuisbezorgen",
-        "en": "Approximate English: You (formal) can on/at to see on/at which we"
-      },
-      {
-        "nl": "* Wilt u weten hoe laat wij de meubels bezorgen?",
-        "en": "Approximate English: Want you (formal) to know how late we the?"
+        "nl": "Wilt u weten hoe laat wij de meubels bezorgen?",
+        "en": "Do you want to know what time we will deliver the furniture?"
       },
       {
         "nl": "Bel dan naar onze klantenservice.",
         "en": "Then call our customer service."
       },
       {
-        "nl": "Dit kan alleen op de dag van de bezorging, vanaf 8 uur 's ochtends.",
-        "en": "This is only possible on the day of delivery, from 8 a.m."
+        "nl": "Dit kan alleen op de dag van de bezorging, vanaf 8 uur ’s ochtends.",
+        "en": "This is only possible on the day of delivery, from 8 o’clock in the morning."
       },
       {
-        "nl": "* Woont u op de vijfde verdieping of hoger?",
-        "en": "Approximate English: Woont you (formal) on/at the or?"
+        "nl": "Woont u op de vijfde verdieping of hoger?",
+        "en": "Do you live on the fifth floor or higher?"
       },
       {
         "nl": "Wij bezorgen alleen als er een lift is.",
-        "en": "We deliver only if there is an elevator."
+        "en": "We only deliver if there is an elevator."
       },
       {
         "nl": "Modibo woont in een flat, op de tweede verdieping.",
-        "en": "Approximate English: Modibo in a on/at the."
+        "en": "Modibo lives in an apartment building, on the second floor."
       },
       {
         "nl": "Hij heeft een tafel van 20 kilo gekocht.",
-        "en": "Approximate English: He has a table of/from."
+        "en": "He has bought a table weighing 20 kilos."
       },
       {
-        "nl": "Hij wil deze tafel thuis laten.",
-        "en": "Approximate English: He want these, this table home to leave."
-      },
-      {
-        "nl": "bezorgen.",
-        "en": "Approximate English: This is a sentence from the mock exam text."
+        "nl": "Hij wil deze tafel thuis laten bezorgen.",
+        "en": "He wants to have this table delivered to his home."
       },
       {
         "nl": "Wat moet hij hiervoor betalen?",
-        "en": "Approximate English: What must he to pay?"
+        "en": "What does he have to pay for this?"
       },
       {
         "nl": "Thérèse wil meubels thuis laten bezorgen.",
-        "en": "Approximate English: Thérèse want home to leave."
+        "en": "Thérèse wants to have furniture delivered to her home."
       },
       {
         "nl": "Ze wil weten hoe laat de meubels bezorgd worden.",
-        "en": "Approximate English: She/they want to know how late the to become."
+        "en": "She wants to know what time the furniture will be delivered."
       },
       {
         "nl": "Wanneer kan zij dat vragen?",
-        "en": "Approximate English: When can she that questions/ask?"
-      },
-      {
-        "nl": "Sabrina krijgt een brief van haar werk.",
-        "en": "Approximate English: Sabrina gets a letter of/from hair work."
+        "en": "When can she ask that?"
       }
     ]
   },
@@ -378,40 +354,44 @@
     "rawTitle": "Beste collega",
     "sentences": [
       {
-        "nl": "Beste collega,",
-        "en": "Approximate English: Beste colleague"
+        "nl": "Sabrina krijgt een brief van haar werk.",
+        "en": "Sabrina receives a letter from her work."
+      },
+      {
+        "nl": "Beste collega.",
+        "en": "Dear colleague."
       },
       {
         "nl": "Op vrijdag 9 mei gaan we met het bedrijf kanovaren!",
-        "en": "Approximate English: On/at Friday may to go we with the company!"
+        "en": "On Friday, 9 May, we are going canoeing with the company!"
       },
       {
-        "nl": "Jan van 'Botenverhuur de Rijnstroom' wacht op ons om half 11 in Utrecht.",
-        "en": "Approximate English: Jan of/from the Rijnstroom' on/at us at/in order to in Utrecht."
+        "nl": "Jan van ‘Botenverhuur de Rijnstroom’ wacht op ons om half 11 in Utrecht.",
+        "en": "Jan from “Botenverhuur de Rijnstroom” will be waiting for us at 10:30 in Utrecht."
       },
       {
         "nl": "Adres: Rhijnauwen 2.",
-        "en": "Approximate English: Address Rhijnauwen."
+        "en": "Address: Rhijnauwen 2."
       },
       {
         "nl": "Om half 12 is er lunch met een kop koffie of thee.",
-        "en": "At 11:30 there is lunch with a cup of coffee or tea."
+        "en": "At 11:30 there will be lunch with a cup of coffee or tea."
       },
       {
         "nl": "Om half 8 eten we een pannenkoek bij het pannenkoekenhuis.",
-        "en": "At 7:30 we will eat a pancake at the pancake restaurant."
+        "en": "At 19:30 we will eat a pancake at the pancake restaurant."
       },
       {
         "nl": "Je hoeft zelf dus geen eten mee te nemen.",
-        "en": "So you do not have to bring food yourself."
+        "en": "So you do not need to bring any food yourself."
       },
       {
         "nl": "Het programma eindigt om half 9.",
-        "en": "The program ends at 8:30."
+        "en": "The program ends at 20:30."
       },
       {
         "nl": "Wat moet je meenemen?",
-        "en": "Approximate English: What must you?"
+        "en": "What should you bring?"
       },
       {
         "nl": "We raden aan om extra kleding mee te nemen, voor als je kleding nat wordt op de boot.",
@@ -427,47 +407,35 @@
       },
       {
         "nl": "Laat je weten of je erbij kunt zijn?",
-        "en": "Approximate English: Late you to know or you can are?"
+        "en": "Will you let us know whether you can be there?"
       },
       {
         "nl": "Je kunt je tot 2 mei bij Ingmar aanmelden.",
-        "en": "You can register with Ingmar until May 2."
+        "en": "You can sign up with Ingmar until 2 May."
       },
       {
-        "nl": "Als je nog vragen hebt, kun je bellen met Charlotte, tel.",
-        "en": "Approximate English: If/when you still questions/ask have you call with Charlotte."
-      },
-      {
-        "nl": "030 - 2521312.",
-        "en": "Approximate English: This is a sentence from the mock exam text."
+        "nl": "Als je nog vragen hebt, kun je bellen met Charlotte, tel. 030 - 2521312.",
+        "en": "If you still have questions, you can call Charlotte at 030 - 2521312."
       },
       {
         "nl": "Wij hopen op een gezellige dag!",
-        "en": "Approximate English: We on/at a day!"
+        "en": "We hope it will be a pleasant day!"
       },
       {
-        "nl": "Namens de feestcommissie,",
-        "en": "Approximate English: Namens the"
-      },
-      {
-        "nl": "Henk de Groot",
-        "en": "Approximate English: Henk the big"
+        "nl": "Namens de feestcommissie, Henk de Groot.",
+        "en": "On behalf of the party committee, Henk de Groot."
       },
       {
         "nl": "Wat moet Sabrina meenemen naar het personeelsuitje?",
-        "en": "Approximate English: What must Sabrina to the?"
+        "en": "What should Sabrina bring to the staff outing?"
       },
       {
         "nl": "Sabrina wil weten of haar man ook mee mag.",
-        "en": "Approximate English: Sabrina want to know or hair man also."
+        "en": "Sabrina wants to know whether her husband may also come along."
       },
       {
         "nl": "Aan wie moet ze dat vragen?",
-        "en": "Approximate English: To/at who must she/they that questions/ask?"
-      },
-      {
-        "nl": "Jasper ontvangt een e-mail van zijn collega.",
-        "en": "Approximate English: Jasper a of/from are colleague."
+        "en": "Whom should she ask?"
       }
     ]
   },
@@ -481,20 +449,20 @@
     "rawTitle": "j.degraaf@werk.nl",
     "sentences": [
       {
-        "nl": "Aan: j.degraaf@werk.nl",
-        "en": "Approximate English: To/at. work."
+        "nl": "Jasper ontvangt een e-mail van zijn collega.",
+        "en": "Jasper receives an email from his colleague."
       },
       {
-        "nl": "Onderwerp: Tas vergeten",
-        "en": "Approximate English: Onderwerp Tas to forget"
+        "nl": "Onderwerp: Tas vergeten.",
+        "en": "Subject: Forgot bag."
       },
       {
-        "nl": "Hoi Jasper,",
-        "en": "Approximate English: Hi Jasper"
+        "nl": "Hoi Jasper.",
+        "en": "Hi Jasper."
       },
       {
         "nl": "Ik zit nu in de trein van mijn werk naar huis en merk dat ik mijn tas ben vergeten!",
-        "en": "Approximate English: I now in the train of/from my work to house and that I my to forget!"
+        "en": "I am now on the train from work to home and I notice that I have forgotten my bag!"
       },
       {
         "nl": "Hij staat nog op mijn bureau.",
@@ -522,31 +490,23 @@
       },
       {
         "nl": "Gelukkig heb ik mijn telefoon en portemonnee wel bij me!",
-        "en": "Approximate English: Gelukkig I my telephone and (confirmative) at/with!"
+        "en": "Luckily, I do have my phone and wallet with me!"
       },
       {
         "nl": "Wil je me een bericht sturen als je de tas gevonden hebt?",
         "en": "Will you send me a message when you have found the bag?"
       },
       {
-        "nl": "Alvast bedankt!",
-        "en": "Approximate English: Alvast!"
-      },
-      {
-        "nl": "Groetjes,",
-        "en": "Approximate English: Groetjes"
+        "nl": "Alvast bedankt! Groetjes, Suzanne.",
+        "en": "Thanks in advance! Best wishes, Suzanne."
       },
       {
         "nl": "Waar is de tas van Suzanne?",
-        "en": "Approximate English: Where is the of/from Suzanne?"
+        "en": "Where is Suzanne’s bag?"
       },
       {
         "nl": "Wat zit er in de tas van Suzanne?",
-        "en": "Approximate English: What in the of/from Suzanne?"
-      },
-      {
-        "nl": "Halima krijgt een brief van de buurtvereniging.",
-        "en": "Approximate English: Halima gets a letter of/from the."
+        "en": "What is in Suzanne’s bag?"
       }
     ]
   },
@@ -560,16 +520,20 @@
     "rawTitle": "Beste buurtbewoner",
     "sentences": [
       {
-        "nl": "Beste buurtbewoners,",
-        "en": "Approximate English: Beste"
+        "nl": "Halima krijgt een brief van de buurtvereniging.",
+        "en": "Halima receives a letter from the neighborhood association."
+      },
+      {
+        "nl": "Beste buurtbewoners.",
+        "en": "Dear neighborhood residents."
       },
       {
         "nl": "Op 9 juli is onze sportdag in het Sportpark in Amsterdam.",
-        "en": "On July 9, our sports day is at the Sportpark in Amsterdam."
+        "en": "On 9 July, our sports day will take place in the Sports Park in Amsterdam."
       },
       {
         "nl": "Wilt u om 9 uur op het veld zijn?",
-        "en": "Would you be on the field at 9 o'clock?"
+        "en": "Would you please be on the field at 9 o’clock?"
       },
       {
         "nl": "Dan kunnen we op tijd beginnen.",
@@ -580,44 +544,44 @@
         "en": "We start at 9:30 with a tennis tournament."
       },
       {
-        "nl": "U kunt 's ochtends ook kiezen voor basketbal.",
-        "en": "In the morning you can also choose basketball."
+        "nl": "U kunt ’s ochtends ook kiezen voor basketbal.",
+        "en": "In the morning, you can also choose basketball."
       },
       {
         "nl": "Daarna hebben we lunchpauze.",
-        "en": "After that we have a lunch break."
+        "en": "After that, we have a lunch break."
       },
       {
         "nl": "U moet zelf uw brood meenemen, wij zorgen voor koffie en thee.",
-        "en": "You must bring your own bread; we provide coffee and tea."
+        "en": "You must bring your own bread; we will provide coffee and tea."
       },
       {
         "nl": "Na de pauze is er een voetbaltoernooi.",
-        "en": "After the break there is a football tournament."
+        "en": "After the break, there will be a football tournament."
       },
       {
         "nl": "Voor de kinderen is er dan een volleybalwedstrijd.",
-        "en": "For the children there is then a volleyball match."
+        "en": "For the children, there will then be a volleyball match."
       },
       {
         "nl": "Om half 7 is de sportdag afgelopen.",
-        "en": "At 6:30 the sports day is over."
+        "en": "The sports day ends at 18:30."
       },
       {
         "nl": "We gaan dan barbecueën.",
-        "en": "Approximate English: We to go then."
+        "en": "Then we will have a barbecue."
       },
       {
         "nl": "Als u geen vlees eet, wilt u dit dan doorgeven aan Marie?",
-        "en": "If you do not eat meat, would you pass this on to Marie?"
+        "en": "If you do not eat meat, would you please tell Marie?"
       },
       {
         "nl": "Zij doet samen met Mo de boodschappen.",
         "en": "She does the shopping together with Mo."
       },
       {
-        "nl": "*Let op!* Wij kunnen de kleedkamers van het Sportpark niet gebruiken.",
-        "en": "Approximate English: Let on/at! we to can the of/from the Sportpark not to use."
+        "nl": "Wij kunnen de kleedkamers van het Sportpark niet gebruiken.",
+        "en": "We cannot use the changing rooms at the Sports Park."
       },
       {
         "nl": "De kleedkamers worden verbouwd.",
@@ -628,88 +592,68 @@
         "en": "So you must put on your sports clothes at home."
       },
       {
-        "nl": "De sportdag (met barbecue en drankjes) kost € 15,- per persoon.",
-        "en": "Approximate English: The with and."
+        "nl": "De sportdag met barbecue en drankjes kost € 15,- per persoon.",
+        "en": "The sports day, including barbecue and drinks, costs €15 per person."
       },
       {
         "nl": "Kinderen betalen € 8,50.",
-        "en": "Approximate English: Kinderen to pay."
+        "en": "Children pay €8.50."
       },
       {
         "nl": "U moet betalen als u zich aanmeldt.",
-        "en": "You must pay when you register."
+        "en": "You must pay when you sign up."
       },
       {
-        "nl": "U kunt zich aanmelden tot 25 juni bij Jan (Vissersplein 45A).",
-        "en": "Approximate English: You (formal) can until June at/with Jan Vissersplein A."
+        "nl": "U kunt zich aanmelden tot 25 juni bij Jan.",
+        "en": "You can sign up with Jan until 25 June."
       },
       {
         "nl": "Vorig jaar was de barbecue alleen voor de deelnemers van de sportdag.",
-        "en": "Approximate English: Vorig was the alone for/before the of/from the."
+        "en": "Last year, the barbecue was only for the participants in the sports day."
       },
       {
         "nl": "Dit jaar is dat anders: ook mensen die niet meedoen mogen mee barbecueën.",
-        "en": "Approximate English: This is that also that, those not."
+        "en": "This year that is different: people who are not taking part may also join the barbecue."
       },
       {
         "nl": "Zij betalen dan € 10,-.",
-        "en": "Approximate English: She to pay then."
+        "en": "They then pay €10."
       },
       {
-        "nl": "Als u niet meedoet aan de sportdag, kunt u zich tot 1 juli voor de barbecue aanmelden bij Mo (Abrahamslaan 2).",
-        "en": "Approximate English: If/when you (formal) not to/at the can you (formal) until July for/before the at/with Mo Abrahamslaan."
+        "nl": "Als u niet meedoet aan de sportdag, kunt u zich tot 1 juli voor de barbecue aanmelden bij Mo.",
+        "en": "If you are not taking part in the sports day, you can sign up for the barbecue with Mo until 1 July."
       },
       {
         "nl": "Wij hopen op een zonnige sportdag!",
-        "en": "Approximate English: We on/at a!"
-      },
-      {
-        "nl": "Met vriendelijke groeten,",
-        "en": "Approximate English: With"
-      },
-      {
-        "nl": "Jan, Marie, Bas en Mo",
-        "en": "Approximate English: Jan Marie Bas and Mo"
+        "en": "We hope for a sunny sports day!"
       },
       {
         "nl": "Halima wil meedoen met de sportdag.",
-        "en": "Approximate English: Halima want with the."
+        "en": "Halima wants to take part in the sports day."
       },
       {
         "nl": "Wat moet ze meenemen?",
-        "en": "Approximate English: What must she/they?"
+        "en": "What should she bring?"
       },
       {
-        "nl": "De kinderen van Halima doen 's middags mee met de sportdag.",
-        "en": "Approximate English: The of/from Halima to do with the."
+        "nl": "De kinderen van Halima doen ‘s middags mee met de sportdag.",
+        "en": "Halima’s children are taking part in the sports day in the afternoon."
       },
       {
         "nl": "Welke sport gaan ze doen?",
-        "en": "Approximate English: Which to go she/they to do?"
+        "en": "Which sport are they going to do?"
       },
       {
         "nl": "De man van Halima kan niet meedoen met de sportdag.",
-        "en": "Approximate English: The man of/from Halima can not with the."
+        "en": "Halima’s husband cannot take part in the sports day."
       },
       {
         "nl": "Hij wil wel meedoen aan de barbecue.",
-        "en": "Approximate English: He want (confirmative) to/at the."
+        "en": "He does want to join the barbecue."
       },
       {
         "nl": "Wat moet hij doen?",
-        "en": "Approximate English: What must he to do?"
-      },
-      {
-        "nl": "Michael werkt op een kantoor.",
-        "en": "Approximate English: Michael on/at a office."
-      },
-      {
-        "nl": "Zijn collega Nadia gaat trouwen met Richard.",
-        "en": "Approximate English: Are colleague Nadia to marry with Richard."
-      },
-      {
-        "nl": "Michael krijgt een e-mail van de feestcommissie.",
-        "en": "Approximate English: Michael gets a of/from the."
+        "en": "What should he do?"
       }
     ]
   },
@@ -723,16 +667,20 @@
     "rawTitle": "Beste collega's",
     "sentences": [
       {
-        "nl": "Bruiloft Nadia en Richard",
-        "en": "Approximate English: Wedding Nadia and Richard"
+        "nl": "Michael werkt op een kantoor.",
+        "en": "Michael works in an office."
       },
       {
-        "nl": "Beste collega's,",
-        "en": "Approximate English: Beste"
+        "nl": "Zijn collega Nadia gaat trouwen met Richard.",
+        "en": "His colleague Nadia is going to marry Richard."
+      },
+      {
+        "nl": "Michael krijgt een e-mail van de feestcommissie.",
+        "en": "Michael receives an email from the party committee."
       },
       {
         "nl": "Volgende week vrijdag is de bruiloft van Nadia en Richard!",
-        "en": "Approximate English: Next week Friday is the wedding of/from Nadia and Richard!"
+        "en": "Next Friday is Nadia and Richard’s wedding!"
       },
       {
         "nl": "Daarom hebben we een feestcommissie opgericht.",
@@ -744,10 +692,10 @@
       },
       {
         "nl": "We hebben alle drie een taak, zodat we er een leuke dag van kunnen maken!",
-        "en": "Approximate English: We to have three a we a day of/from to can to make!"
+        "en": "The three of us each have a task so that we can make it a nice day!"
       },
       {
-        "nl": "Wij willen een bus huren om samen met collega's naar de bruiloft te gaan.",
+        "nl": "Wij willen een bus huren om samen met collega’s naar de bruiloft te gaan.",
         "en": "We want to rent a bus to go to the wedding together with colleagues."
       },
       {
@@ -759,12 +707,12 @@
         "en": "Then sign up with David."
       },
       {
-        "nl": "We willen met de collega's een cadeau geven aan het bruidspaar.",
-        "en": "We want to give the bridal couple a gift together with the colleagues."
+        "nl": "We willen met de collega’s een cadeau geven aan het bruidspaar.",
+        "en": "We want to give a gift to the bridal couple together with the colleagues."
       },
       {
         "nl": "Als je wilt, kun je ook meedoen.",
-        "en": "If you want, you can also participate."
+        "en": "If you want, you can also take part."
       },
       {
         "nl": "Je kunt geld aan William geven.",
@@ -776,55 +724,43 @@
       },
       {
         "nl": "Op het bureau van Elise ligt een lijstje met cadeaus.",
-        "en": "On Elise's desk there is a list of gifts."
+        "en": "There is a list of gifts on Elise’s desk."
       },
       {
         "nl": "Kruis op het lijstje aan wat je het leukste cadeau vindt: een cadeaubon of een weekendje weg.",
-        "en": "Approximate English: Kruis on/at the to/at what you the gift a or a road."
+        "en": "Tick on the list which gift you like best: a gift voucher or a weekend away."
       },
       {
         "nl": "We gaan het cadeau geven dat het meest gekozen is door jullie.",
-        "en": "We are going to give the gift that you choose most often."
+        "en": "We will give the gift that is chosen most often by you."
       },
       {
         "nl": "Nadia is deze week nog gewoon aan het werk.",
-        "en": "Nadia is still at work as usual this week."
+        "en": "Nadia is still working as usual this week."
       },
       {
         "nl": "Ons cadeau moet natuurlijk wel een verrassing blijven.",
-        "en": "Of course our gift must remain a surprise."
+        "en": "Of course, our gift must remain a surprise."
       },
       {
         "nl": "Let er dus op dat je niets zegt tegen Nadia!",
-        "en": "Approximate English: Let so on/at that you nothing against Nadia!"
-      },
-      {
-        "nl": "Groeten, de feestcommissie",
-        "en": "Approximate English: Groeten the"
-      },
-      {
-        "nl": "David, William en Elise",
-        "en": "Approximate English: David William and Elise"
+        "en": "So make sure you do not say anything to Nadia!"
       },
       {
         "nl": "Michael wil met de bus mee naar de bruiloft.",
-        "en": "Approximate English: Michael want with the bus to the wedding."
+        "en": "Michael wants to go to the wedding on the bus."
       },
       {
         "nl": "Bij wie moet hij zich opgeven?",
-        "en": "Approximate English: At/with who must he?"
+        "en": "With whom should he sign up?"
       },
       {
-        "nl": "Welk cadeau gaan de collega's samen geven aan Nadia en Richard?",
-        "en": "Approximate English: Welk gift to go the together to give to/at Nadia and Richard?"
+        "nl": "Welk cadeau gaan de collega’s samen geven aan Nadia en Richard?",
+        "en": "Which gift are the colleagues going to give Nadia and Richard together?"
       },
       {
         "nl": "Waarom stuurt de feestcommissie deze e-mail vooral?",
-        "en": "Approximate English: Why the these, this?"
-      },
-      {
-        "nl": "Op internet staat een folder met informatie over EHBO-cursussen.",
-        "en": "Approximate English: On/at a with information about first aid."
+        "en": "What is the main reason the party committee is sending this email?"
       }
     ]
   },
@@ -838,56 +774,44 @@
     "rawTitle": "EHBO De Groene Cirkel",
     "sentences": [
       {
-        "nl": "EHBO De Groene Cirkel",
-        "en": "Approximate English: First aid the Groene circle"
+        "nl": "Op internet staat een folder met informatie over EHBO-cursussen.",
+        "en": "There is a brochure online with information about first-aid courses."
       },
       {
         "nl": "EHBO betekent: Eerste Hulp Bij Ongelukken.",
-        "en": "Approximate English: First aid Eerste Hulp at/with Ongelukken."
+        "en": "EHBO means First Aid in Accidents."
       },
       {
-        "nl": "Als EHBO'er kunt u helpen als er een ongeluk gebeurt.",
-        "en": "As a first aider, you can help when an accident happens."
+        "nl": "Als EHBO’er kunt u helpen als er een ongeluk gebeurt.",
+        "en": "As a first-aider, you can help when an accident happens."
       },
       {
         "nl": "Bijvoorbeeld als uw buurjongen valt en zijn arm breekt.",
-        "en": "For example, if your neighbor boy falls and breaks his arm."
+        "en": "For example, if your neighbor’s boy falls and breaks his arm."
       },
       {
         "nl": "Of als iemand zich snijdt bij het eten maken.",
-        "en": "Or if someone cuts themselves while making food."
+        "en": "Or if someone cuts themselves while preparing food."
       },
       {
         "nl": "U kunt bij ons verschillende EHBO-cursussen volgen.",
-        "en": "You can take different first aid courses with us."
+        "en": "You can take various first-aid courses with us."
       },
       {
         "nl": "U haalt uw diploma bij ons altijd in korte tijd.",
-        "en": "With us, you always get your diploma in a short time."
+        "en": "With us, you always get your certificate in a short time."
       },
       {
-        "nl": "U kunt kiezen uit:",
-        "en": "Approximate English: You (formal) can to choose"
-      },
-      {
-        "nl": "Cursus EHBO I",
-        "en": "Approximate English: Course first aid I"
-      },
-      {
-        "nl": "Dit is de algemene cursus 'EHBO'.",
-        "en": "Approximate English: This is the course first aid."
+        "nl": "Cursus EHBO I is de algemene cursus EHBO.",
+        "en": "First Aid Course I is the general First Aid course."
       },
       {
         "nl": "U leert om te helpen bij allerlei ongelukken.",
         "en": "You learn to help with all kinds of accidents."
       },
       {
-        "nl": "Bijvoorbeeld als iemand z'n been breekt.",
-        "en": "Approximate English: For example if/when somebody leg."
-      },
-      {
         "nl": "Maar u leert ook wat u moet doen bij andere problemen, zoals een bloedneus of brandwond.",
-        "en": "Approximate English: But you (formal) also what you (formal) must to do at/with a or."
+        "en": "But you also learn what to do with other problems, such as a nosebleed or a burn."
       },
       {
         "nl": "De cursus bestaat uit zes bijeenkomsten.",
@@ -895,119 +819,67 @@
       },
       {
         "nl": "U krijgt er een online cursusboek bij.",
-        "en": "Approximate English: You (formal) gets a at/with."
+        "en": "You receive an online course book with it."
       },
       {
         "nl": "Aan het einde van de cursus doet u examen in de praktijk.",
-        "en": "At the end of the course you take a practical exam."
+        "en": "At the end of the course, you take a practical exam."
       },
       {
-        "nl": "Kosten voor de cursus: € 124,50",
-        "en": "Approximate English: To cost for/before the course"
-      },
-      {
-        "nl": "Cursus EHBO II",
-        "en": "Approximate English: Course first aid II"
-      },
-      {
-        "nl": "Dit is de cursus 'Reanimeren'.",
-        "en": "Approximate English: This is the course."
+        "nl": "Cursus EHBO II is de cursus Reanimeren.",
+        "en": "First Aid Course II is the Resuscitation course."
       },
       {
         "nl": "Deze cursus kan u helpen om levens te redden!",
-        "en": "Approximate English: These, this course can you (formal) help at/in order to to save!"
+        "en": "This course can help you save lives!"
       },
       {
         "nl": "U leert mensen met een hartstilstand of ademstilstand te helpen.",
-        "en": "You learn to help people with cardiac arrest or respiratory arrest."
-      },
-      {
-        "nl": "U weet na de cursus precies wat u dan moet doen.",
-        "en": "Approximate English: You (formal) after the course what you (formal) then must to do."
+        "en": "You learn to help people who have cardiac arrest or respiratory arrest."
       },
       {
         "nl": "De cursus bestaat uit één bijeenkomst van drie uur.",
-        "en": "Approximate English: The course of/from three hour."
+        "en": "The course consists of one three-hour meeting."
       },
       {
-        "nl": "U krijgt de gids 'Reanimatie' mee naar huis.",
-        "en": "Approximate English: You (formal) gets the to house."
-      },
-      {
-        "nl": "Kosten voor de cursus: € 72,50",
-        "en": "Approximate English: To cost for/before the course"
-      },
-      {
-        "nl": "Cursus EHBO III",
-        "en": "Approximate English: Course first aid III"
-      },
-      {
-        "nl": "Dit is de cursus 'EHBO voor ouders'.",
-        "en": "Approximate English: This is the course first aid for/before."
+        "nl": "Cursus EHBO III is de cursus EHBO voor ouders.",
+        "en": "First Aid Course III is the First Aid for Parents course."
       },
       {
         "nl": "Deze cursus is zeer geschikt voor ouders en verzorgers.",
         "en": "This course is very suitable for parents and caregivers."
       },
       {
-        "nl": "Is een kind bijvoorbeeld gewond of ziek?",
-        "en": "Approximate English: Is a child for example or sick?"
-      },
-      {
-        "nl": "Of moet een kind ineens erg hoesten?",
-        "en": "Approximate English: Or must a child very?"
-      },
-      {
-        "nl": "Deze cursus leert u hoe u dan kunt helpen.",
-        "en": "Approximate English: These, this course you (formal) how you (formal) then can help."
+        "nl": "Deze cursus leert u hoe u kunt helpen als een kind gewond of ziek is.",
+        "en": "This course teaches you how to help if a child is injured or sick."
       },
       {
         "nl": "De cursus is ook erg handig als u in het onderwijs werkt.",
         "en": "The course is also very useful if you work in education."
       },
       {
-        "nl": "De cursus bestaat uit vier bijeenkomsten.",
-        "en": "The course consists of four meetings."
-      },
-      {
-        "nl": "U krijgt het cursusboek bij de eerste bijeenkomst.",
-        "en": "Approximate English: You (formal) gets the at/with the."
-      },
-      {
-        "nl": "Kosten voor de cursus: € 105,-",
-        "en": "Approximate English: To cost for/before the course"
-      },
-      {
         "nl": "Myra geeft les op een basisschool.",
-        "en": "Approximate English: Myra lesson on/at a."
-      },
-      {
-        "nl": "Ze wil een EHBO-cursus volgen die past bij haar werk.",
-        "en": "Approximate English: She/they want a first aid course to follow that, those at/with hair work."
+        "en": "Myra teaches at a primary school."
       },
       {
         "nl": "Welke cursus is het meest geschikt voor Myra?",
-        "en": "Approximate English: Which course is the most for/before Myra?"
+        "en": "Which course is the most suitable for Myra?"
       },
       {
         "nl": "Aylin wil leren reanimeren.",
-        "en": "Approximate English: Aylin want learn."
+        "en": "Aylin wants to learn how to resuscitate."
       },
       {
         "nl": "In hoeveel bijeenkomsten leert zij dat?",
-        "en": "Approximate English: In how much she that?"
+        "en": "In how many meetings will she learn that?"
       },
       {
         "nl": "Ronald wil zoveel mogelijk verschillende dingen leren over EHBO.",
-        "en": "Approximate English: Ronald want possible learn about first aid."
+        "en": "Ronald wants to learn as many different things as possible about first aid."
       },
       {
         "nl": "Welke cursus kan hij het beste kiezen?",
-        "en": "Approximate English: Which course can he the to choose?"
-      },
-      {
-        "nl": "In de krant staat een tekst over Bartjes Kringloopcentrum.",
-        "en": "Approximate English: In the newspaper a about Bartjes Kringloopcentrum."
+        "en": "Which course is best for him to choose?"
       }
     ]
   },
@@ -1021,20 +893,20 @@
     "rawTitle": "Bartjes Kringloopcentrum",
     "sentences": [
       {
-        "nl": "Bartjes Kringloopcentrum",
-        "en": "Approximate English: Bartjes Kringloopcentrum"
+        "nl": "In de krant staat een tekst over Bartjes Kringloopcentrum.",
+        "en": "There is a text in the newspaper about Bartjes Recycling Center."
       },
       {
         "nl": "In Bartjes Kringloopcentrum is veel te koop.",
-        "en": "There is a lot for sale at Bartjes thrift center."
+        "en": "There is a lot for sale at Bartjes Recycling Center."
       },
       {
         "nl": "Gebruikte spullen of nieuwe spullen, altijd goed en goedkoop.",
-        "en": "Used things or new things, always good and cheap."
+        "en": "Used things or new things, always good and inexpensive."
       },
       {
         "nl": "Kom regelmatig kijken.",
-        "en": "Come and look regularly."
+        "en": "Come and have a look regularly."
       },
       {
         "nl": "Er is altijd weer iets anders te koop.",
@@ -1042,23 +914,19 @@
       },
       {
         "nl": "Wat hebben we te koop?",
-        "en": "Approximate English: What to have we?"
+        "en": "What do we have for sale?"
       },
       {
-        "nl": "* Kleding en schoenen voor dames, heren en kinderen",
-        "en": "Approximate English: Clothing and for/before and"
+        "nl": "Kleding en schoenen voor dames, heren en kinderen.",
+        "en": "Clothing and shoes for women, men, and children."
       },
       {
-        "nl": "* Boeken en tijdschriften voor volwassenen en jeugd",
-        "en": "Approximate English: Boeken and for/before and"
+        "nl": "Boeken en tijdschriften voor volwassenen en jeugd.",
+        "en": "Books and magazines for adults and young people."
       },
       {
-        "nl": "* Elektrische apparaten, meubels, speelgoed, enzovoorts",
-        "en": "Approximate English: Elektrische"
-      },
-      {
-        "nl": "Hoe werken we?",
-        "en": "Approximate English: How work we?"
+        "nl": "Elektrische apparaten, meubels, speelgoed, enzovoorts.",
+        "en": "Electrical appliances, furniture, toys, and so on."
       },
       {
         "nl": "U brengt uw spullen naar ons.",
@@ -1066,7 +934,7 @@
       },
       {
         "nl": "Wij kunnen ze ook gratis bij u thuis ophalen.",
-        "en": "We can also pick them up from your home for free."
+        "en": "We can also collect them from your home for free."
       },
       {
         "nl": "We nemen niet alles mee, alleen wat we kunnen verkopen in onze winkel.",
@@ -1078,7 +946,7 @@
       },
       {
         "nl": "Wat kapot is, proberen we te maken.",
-        "en": "What is broken, we try to repair."
+        "en": "We try to repair anything that is broken."
       },
       {
         "nl": "Ook maken we alles schoon.",
@@ -1086,27 +954,23 @@
       },
       {
         "nl": "Daarna zetten we de spullen te koop in onze winkel.",
-        "en": "After that we put the items up for sale in our store."
+        "en": "After that, we put the items up for sale in our store."
       },
       {
         "nl": "Als u spullen bij ons koopt, kunnen we ze bij u thuis afleveren.",
-        "en": "If you buy things from us, we can deliver them to your home."
+        "en": "If you buy items from us, we can deliver them to your home."
       },
       {
         "nl": "Daarvoor betaalt u 5 euro.",
-        "en": "For that you pay 5 euros."
-      },
-      {
-        "nl": "Wat doen we met onze winst?",
-        "en": "Approximate English: What to do we with?"
+        "en": "You pay 5 euros for that."
       },
       {
         "nl": "U krijgt geen geld voor uw spullen.",
-        "en": "You do not receive money for your things."
+        "en": "You do not get any money for your things."
       },
       {
         "nl": "De medewerkers van Bartjes zijn allemaal vrijwilligers.",
-        "en": "The employees of Bartjes are all volunteers."
+        "en": "The employees at Bartjes are all volunteers."
       },
       {
         "nl": "Het geld dat we verdienen met de verkoop gaat naar een goed doel.",
@@ -1117,64 +981,52 @@
         "en": "Every year we choose a different charity."
       },
       {
-        "nl": "Het goede doel is dit jaar kinderboerderij 'Het bokje'.",
-        "en": "Approximate English: The goal is this the."
+        "nl": "Het goede doel is dit jaar kinderboerderij ‘Het bokje’.",
+        "en": "This year’s charity is the children’s farm “Het bokje.”"
       },
       {
         "nl": "Hebt u spullen die u niet meer gebruikt?",
-        "en": "Approximate English: Have you (formal) that, those you (formal) not lake?"
-      },
-      {
-        "nl": "Hebt u kleren die u niet meer draagt?",
-        "en": "Approximate English: Have you (formal) clothes that, those you (formal) not lake?"
+        "en": "Do you have things that you no longer use?"
       },
       {
         "nl": "Gooi ze niet weg!",
-        "en": "Approximate English: Gooi she/they not road!"
+        "en": "Do not throw them away!"
       },
       {
         "nl": "Geef de spullen aan ons!",
-        "en": "Approximate English: Geef the to/at us!"
+        "en": "Give the items to us!"
       },
       {
         "nl": "Hebt u iets nodig voor weinig geld?",
-        "en": "Approximate English: Have you (formal) something for/before money?"
+        "en": "Do you need something for little money?"
       },
       {
         "nl": "Koop het bij ons!",
-        "en": "Approximate English: Koop the at/with us!"
+        "en": "Buy it from us!"
       },
       {
         "nl": "Bartjes krijgt vaak kapotte spullen.",
-        "en": "Approximate English: Bartjes gets often."
+        "en": "Bartjes often receives broken items."
       },
       {
         "nl": "Wat doet Bartjes met de kapotte spullen?",
-        "en": "Approximate English: What Bartjes with the?"
+        "en": "What does Bartjes do with the broken items?"
       },
       {
         "nl": "John heeft spullen voor Bartjes.",
-        "en": "Approximate English: John has for/before Bartjes."
+        "en": "John has items for Bartjes."
       },
       {
         "nl": "Bartjes moet de spullen bij hem op komen halen.",
-        "en": "Approximate English: Bartjes must the at/with on/at to come to pick up."
+        "en": "Bartjes has to come and collect the items from his home."
       },
       {
         "nl": "Hoeveel moet hij dan betalen aan Bartjes?",
-        "en": "Approximate English: How much must he then to pay to/at Bartjes?"
+        "en": "How much does he then have to pay Bartjes?"
       },
       {
         "nl": "Waar gaat de winst van Bartjes dit jaar naartoe?",
-        "en": "Approximate English: Where the of/from Bartjes this?"
-      },
-      {
-        "nl": "Felicity, Emilio en Jaime werken bij supermarkt BJ.",
-        "en": "Approximate English: Felicity Emilio and Jaime work at/with supermarket BJ."
-      },
-      {
-        "nl": "Dit zijn de regels voor als je je ziek meldt.",
-        "en": "Approximate English: This are the for/before if/when you you sick."
+        "en": "Where does Bartjes’ profit go this year?"
       }
     ]
   },
@@ -1188,24 +1040,28 @@
     "rawTitle": "Ziekmelding",
     "sentences": [
       {
-        "nl": "Ziekmelding",
-        "en": "Approximate English: Ziekmelding"
+        "nl": "Felicity, Emilio en Jaime werken bij supermarkt BJ.",
+        "en": "Felicity, Emilio, and Jaime work at supermarket BJ."
       },
       {
-        "nl": "*Hoe meld ik mij ziek?*",
-        "en": "Approximate English: How I sick?"
+        "nl": "Dit zijn de regels voor als je je ziek meldt.",
+        "en": "These are the rules for reporting sick."
+      },
+      {
+        "nl": "Hoe meld ik mij ziek?",
+        "en": "How do I report sick?"
       },
       {
         "nl": "U meldt u telefonisch ziek bij uw werkgever.",
-        "en": "You report sick to your employer by phone."
+        "en": "You report sick to your employer by telephone."
       },
       {
         "nl": "Dit doet u zo snel mogelijk, maar uiterlijk op het tijdstip dat uw werkdag begint.",
-        "en": "You do this as soon as possible, but no later than the time your workday begins."
+        "en": "You do this as soon as possible, but no later than the time your working day begins."
       },
       {
         "nl": "Als uw werkdag normaal bijvoorbeeld om 9 uur begint, meldt u zich uiterlijk om 9 uur ziek.",
-        "en": "If your workday normally starts at 9 o'clock, for example, you report sick by 9 o'clock at the latest."
+        "en": "For example, if your working day normally starts at 9 o’clock, you report sick by 9 o’clock at the latest."
       },
       {
         "nl": "Wordt u onder werktijd ziek, dan meldt u dit meteen.",
@@ -1213,31 +1069,31 @@
       },
       {
         "nl": "In ieder geval voordat u naar huis gaat.",
-        "en": "In any case before you go home."
+        "en": "In any case, before you go home."
       },
       {
-        "nl": "*Wat vertel ik tijdens een ziekmelding?*",
-        "en": "Approximate English: What I a?"
+        "nl": "Wat vertel ik tijdens een ziekmelding?",
+        "en": "What do I say when reporting sick?"
       },
       {
         "nl": "Waar hebt u last van?",
-        "en": "What symptoms do you have?"
+        "en": "What symptoms or problems do you have?"
       },
       {
         "nl": "Wat gaat u doen om zo snel mogelijk beter te worden?",
-        "en": "What are you going to do to get better as quickly as possible?"
+        "en": "What are you going to do to get better as soon as possible?"
       },
       {
         "nl": "Wanneer kunt u weer werken, denkt u?",
         "en": "When do you think you can work again?"
       },
       {
-        "nl": "Moeten uw collega's werk van u overnemen?",
-        "en": "Do your colleagues need to take over work from you?"
+        "nl": "Moeten uw collega’s werk van u overnemen?",
+        "en": "Do your colleagues need to take over any of your work?"
       },
       {
         "nl": "Dit zijn allemaal dingen die uw werkgever moet weten.",
-        "en": "These are all things your employer needs to know."
+        "en": "These are all things that your employer needs to know."
       },
       {
         "nl": "Ook is het belangrijk dat uw werkgever u kan bereiken.",
@@ -1248,12 +1104,8 @@
         "en": "During the conversation, you also agree when you will speak to each other again."
       },
       {
-        "nl": "*Moet ik alle klachten aan mijn werkgever vertellen?*",
-        "en": "Approximate English: Must I to/at my to tell?"
-      },
-      {
         "nl": "U hebt recht op uw privacy.",
-        "en": "You have a right to your privacy."
+        "en": "You have the right to privacy."
       },
       {
         "nl": "U hoeft geen medische gegevens te geven.",
@@ -1261,39 +1113,35 @@
       },
       {
         "nl": "Als u privéproblemen hebt, hoeft u daar niets over te vertellen.",
-        "en": "Approximate English: If/when you (formal) have you (formal) there nothing about to tell."
+        "en": "If you have private problems, you do not have to say anything about them."
       },
       {
         "nl": "U moet wél vertellen waarom u niet kunt komen werken.",
-        "en": "Approximate English: You (formal) must to tell why you (formal) not can to come work."
-      },
-      {
-        "nl": "U kunt zeggen dat u om medische redenen of privéredenen niet kunt komen werken.",
-        "en": "Approximate English: You (formal) can to say that you (formal) at/in order to or not can to come work."
+        "en": "You do have to say why you cannot come to work."
       },
       {
         "nl": "Meer hoeft u niet te zeggen.",
-        "en": "You do not have to say more."
+        "en": "You do not have to say any more than that."
       },
       {
         "nl": "Felicity is aan het werk en voelt zich ziek.",
-        "en": "Approximate English: Felicity is to/at the work and sick."
+        "en": "Felicity is at work and feels ill."
       },
       {
-        "nl": "Het is drie uur 's middags.",
-        "en": "Approximate English: The is three hour."
+        "nl": "Het is drie uur ’s middags.",
+        "en": "It is three o’clock in the afternoon."
       },
       {
         "nl": "Wat moet ze doen?",
-        "en": "Approximate English: What must she/they to do?"
+        "en": "What should she do?"
       },
       {
         "nl": "Jaime meldt zich ziek.",
-        "en": "Approximate English: Jaime sick."
+        "en": "Jaime reports sick."
       },
       {
         "nl": "Wat moet hij vertellen tijdens zijn ziekmelding?",
-        "en": "Approximate English: What must he to tell are?"
+        "en": "What must he say when reporting sick?"
       }
     ]
   },
@@ -1307,96 +1155,64 @@
     "rawTitle": "Welkom bij de tandartspraktijk Oud Zwaluwen",
     "sentences": [
       {
-        "nl": "Welkom bij de tandartspraktijk Oud Zwaluwen",
-        "en": "Approximate English: Welcome at/with the old Zwaluwen"
-      },
-      {
-        "nl": "Ons team Werkdagen",
-        "en": "Approximate English: Us Werkdagen"
-      },
-      {
-        "nl": "Javier Barnet, tandarts maandag en donderdag",
-        "en": "Approximate English: Javier Barnet dentist Monday and Thursday"
-      },
-      {
-        "nl": "Marie de Klop, tandarts dinsdag en woensdag",
-        "en": "Approximate English: Marie the Klop dentist Tuesday and Wednesday"
-      },
-      {
-        "nl": "Peter de Vries, kindertandarts woensdag en donderdag",
-        "en": "Approximate English: Peter the Vries Wednesday and Thursday"
-      },
-      {
-        "nl": "Salah Ben Ali, mondhygiënist maandag, dinsdag en donderdag",
-        "en": "Approximate English: Salah Ben Ali Monday Tuesday and Thursday"
+        "nl": "Welkom bij de tandartspraktijk Oud Zwaluwen.",
+        "en": "Welcome to the Oud Zwaluwen dental practice."
       },
       {
         "nl": "De praktijk is elke dag geopend van 8.30 tot 17.00 uur.",
-        "en": "Approximate English: The is day of/from until hour."
+        "en": "The practice is open every day from 8:30 to 17:00."
       },
       {
         "nl": "Op vrijdag en in het weekend zijn wij gesloten.",
-        "en": "Approximate English: On/at Friday and in the are we."
+        "en": "We are closed on Friday and on weekends."
       },
       {
         "nl": "U kunt onze receptie bellen van maandag tot en met donderdag van 9.00 tot 12.00 uur.",
-        "en": "Approximate English: You (formal) can call of/from Monday until and with Thursday of/from until hour."
-      },
-      {
-        "nl": "Op vrijdag zijn wij gesloten.",
-        "en": "Approximate English: On/at Friday are we."
+        "en": "You can call our reception from Monday through Thursday from 9:00 to 12:00."
       },
       {
         "nl": "Ons telefoonnummer is 070 - 3609916.",
-        "en": "Approximate English: Us is."
-      },
-      {
-        "nl": "Spoedbehandeling tijdens openingstijden",
-        "en": "Approximate English: Spoedbehandeling"
+        "en": "Our phone number is 070 - 3609916."
       },
       {
         "nl": "Heeft u zoveel pijn dat u direct geholpen moet worden?",
-        "en": "Approximate English: Has you (formal) ache that you (formal) must to become?"
+        "en": "Are you in so much pain that you need to be helped immediately?"
       },
       {
         "nl": "U kunt dan een spoedafspraak maken met de assistente op 06-35571209.",
-        "en": "Approximate English: You (formal) can then a to make with the on/at."
+        "en": "You can then make an emergency appointment with the assistant at 06-35571209."
       },
       {
         "nl": "U kunt dan altijd dezelfde dag nog bij onze praktijk terecht.",
-        "en": "Approximate English: You (formal) can then always day still at/with."
+        "en": "You can then always come to our practice the same day."
       },
       {
-        "nl": "Let op: Dit kan niet op vrijdag of in het weekend!",
-        "en": "Approximate English: Let on/at this can not on/at Friday or in the!"
-      },
-      {
-        "nl": "Spoedbehandeling op vrijdag en in het weekend",
-        "en": "Approximate English: Spoedbehandeling on/at Friday and in the"
+        "nl": "Dit kan niet op vrijdag of in het weekend.",
+        "en": "This is not possible on Friday or on weekends."
       },
       {
         "nl": "Op vrijdag en in het weekend is de praktijk gesloten.",
-        "en": "Approximate English: On/at Friday and in the is the."
+        "en": "The practice is closed on Friday and on weekends."
       },
       {
         "nl": "Heeft u veel pijn en kunt u niet wachten tot maandag?",
-        "en": "Approximate English: Has you (formal) ache and can you (formal) not to wait until Monday?"
+        "en": "Are you in a lot of pain and unable to wait until Monday?"
       },
       {
-        "nl": "U kunt dan bellen met het noodnummer: 070 - 3608814.",
-        "en": "Approximate English: You (formal) can then call with the."
+        "nl": "U kunt dan bellen met het noodnummer: 070 – 3608814.",
+        "en": "You can then call the emergency number: 070 – 3608814."
       },
       {
         "nl": "Het is woensdag.",
-        "en": "Approximate English: The is Wednesday."
+        "en": "It is Wednesday."
       },
       {
         "nl": "Sergio heeft kiespijn en wil zo snel mogelijk naar de tandarts.",
-        "en": "Approximate English: Sergio has and want like this fast possible to the dentist."
+        "en": "Sergio has a toothache and wants to go to the dentist as soon as possible."
       },
       {
         "nl": "Wat moet hij doen?",
-        "en": "Approximate English: What must he to do?"
+        "en": "What should he do?"
       }
     ]
   },
@@ -1411,83 +1227,55 @@
     "sentences": [
       {
         "nl": "Wat is een cv?",
-        "en": "Approximate English: What is a?"
+        "en": "What is a CV?"
       },
       {
         "nl": "Uw curriculum vitae (cv) stuurt u op als u solliciteert naar een baan.",
-        "en": "Approximate English: Your you (formal) on/at if/when you (formal) to a job."
+        "en": "You send your curriculum vitae, or CV, when you apply for a job."
       },
       {
         "nl": "In uw cv staat wie u bent en wat u kunt.",
-        "en": "Approximate English: In your who you (formal) and what you (formal) can."
+        "en": "Your CV says who you are and what you can do."
       },
       {
-        "nl": "Een cv bestaat uit de volgende punten:",
-        "en": "Approximate English: A the next"
+        "nl": "Een cv bestaat uit persoonlijke gegevens, opleiding, werkervaring en overig.",
+        "en": "A CV consists of personal details, education, work experience, and other information."
       },
       {
-        "nl": "* persoonlijke gegevens",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "Hier zet u uw naam, adres, telefoon, e-mailadres, geboortedatum.",
-        "en": "Approximate English: Here you (formal) your name address telephone."
-      },
-      {
-        "nl": "* opleiding",
-        "en": "Approximate English: Education"
+        "nl": "Hier zet u uw naam, adres, telefoon, e-mailadres en geboortedatum.",
+        "en": "Here you put your name, address, phone number, email address, and date of birth."
       },
       {
         "nl": "Hier zet u alle opleidingen en cursussen die u hebt gedaan.",
-        "en": "Approximate English: Here you (formal) and that, those you (formal) have."
-      },
-      {
-        "nl": "* werkervaring",
-        "en": "Approximate English: This is a sentence from the mock exam text."
+        "en": "Here you put all the programs and courses you have completed."
       },
       {
         "nl": "Hier schrijft u het werk dat u gedaan heeft.",
-        "en": "Approximate English: Here you (formal) the work that you (formal) has."
+        "en": "Here you write the work that you have done."
       },
       {
         "nl": "Dus ook vrijwilligerswerk en stages.",
-        "en": "Approximate English: So also and."
+        "en": "So also volunteer work and internships."
       },
       {
         "nl": "Schrijf hier ook wat u allemaal op uw werk moest doen.",
-        "en": "Approximate English: Schrijf here also what you (formal) all on/at your work to do."
-      },
-      {
-        "nl": "* overig",
-        "en": "Approximate English: This is a sentence from the mock exam text."
+        "en": "Also write here everything you had to do at your work."
       },
       {
         "nl": "Hier zet u alle andere dingen die belangrijk zijn.",
-        "en": "Approximate English: Here you (formal) that, those important are."
-      },
-      {
-        "nl": "* talenkennis",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "* computerkennis",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "* rijbewijs",
-        "en": "Approximate English: Driving license"
+        "en": "Here you put all other things that are important."
       },
       {
         "nl": "Waarom maakt Anna een cv?",
-        "en": "Approximate English: Why Anna a?"
+        "en": "Why does Anna make a CV?"
       },
       {
         "nl": "Anna heeft in een buurthuis vrijwillig klusjes gedaan.",
-        "en": "Approximate English: Anna has in a."
+        "en": "Anna has done volunteer chores in a community center."
       },
       {
         "nl": "Waar moet ze dat op haar cv zetten?",
-        "en": "Approximate English: Where must she/they that on/at hair to put?"
+        "en": "Where should she put that on her CV?"
       }
     ]
   },
@@ -1501,124 +1289,76 @@
     "rawTitle": "Vakanties",
     "sentences": [
       {
-        "nl": "Vakanties",
-        "en": "Approximate English: Vakanties"
-      },
-      {
-        "nl": "Herfstvakantie Maandag 17 oktober t/m vrijdag 21 oktober",
-        "en": "Approximate English: Herfstvakantie Monday October Friday October"
-      },
-      {
-        "nl": "Kerstvakantie Maandag 26 december t/m vrijdag 6 januari",
-        "en": "Approximate English: Kerstvakantie Monday December Friday January"
-      },
-      {
-        "nl": "Voorjaarsvakantie Maandag 27 februari t/m vrijdag 2 maart",
-        "en": "Approximate English: Voorjaarsvakantie Monday February Friday march"
-      },
-      {
-        "nl": "Meivakantie Dinsdag 1 mei t/m vrijdag 4 mei",
-        "en": "Approximate English: Meivakantie Tuesday may Friday may"
-      },
-      {
-        "nl": "Zomervakantie Maandag 16 juli t/m vrijdag 31 augustus",
-        "en": "Approximate English: Zomervakantie Monday July Friday august"
-      },
-      {
         "nl": "Gaat u buiten de vakantieperiode om op vakantie?",
-        "en": "Approximate English: Gaat you (formal) outside the at/in order to on/at holiday?"
+        "en": "Are you going on holiday outside the holiday period?"
       },
       {
         "nl": "Vertel dit dan aan uw docent.",
-        "en": "Approximate English: Vertel this then to/at your."
+        "en": "Then tell your teacher."
       },
       {
-        "nl": "Dit moet u uiterlijk 2 weken vóór uw vakantie schriftelijk doen",
-        "en": "Approximate English: This must you (formal) your holiday to do"
+        "nl": "Dit moet u uiterlijk 2 weken vóór uw vakantie schriftelijk doen.",
+        "en": "You must do this in writing no later than two weeks before your holiday."
       },
       {
         "nl": "Bent u ziek en kunt u niet naar de les komen, bel dan met de administratie van de talenschool.",
-        "en": "Approximate English: Bent you (formal) sick and can you (formal) not to the lesson to come then with the of/from the."
+        "en": "If you are sick and cannot come to class, call the administration office of the language school."
       },
       {
         "nl": "U moet dit zo snel mogelijk doen, uiterlijk een uur voordat de les begint.",
-        "en": "Approximate English: You (formal) must this like this fast possible to do a hour the lesson."
+        "en": "You must do this as soon as possible, no later than one hour before the lesson begins."
       },
       {
-        "nl": "Belangstellenden en nieuwe cursisten zijn welkom op:",
-        "en": "Approximate English: Belangstellenden and are welcome on/at"
-      },
-      {
-        "nl": "Donderdag 26 januari 17.30 uur - 21.00 uur",
-        "en": "Approximate English: Thursday January hour hour"
-      },
-      {
-        "nl": "Zaterdag 28 januari 10.00 uur - 13.00 uur",
-        "en": "Approximate English: Saturday January hour hour"
-      },
-      {
-        "nl": "Vrijdag 20 april 18.30 uur - 21.00 uur",
-        "en": "Approximate English: Friday April hour hour"
+        "nl": "Belangstellenden en nieuwe cursisten zijn welkom op de open dagen.",
+        "en": "Interested people and new course participants are welcome on the open days."
       },
       {
         "nl": "Op deze dagen zijn er geen lessen op de talenschool.",
-        "en": "Approximate English: On/at these, this are no/not any lessons on/at the."
+        "en": "On these days there are no lessons at the language school."
       },
       {
         "nl": "Als u het leuk vindt, kunt u helpen tijdens de open dagen.",
-        "en": "Approximate English: If/when you (formal) the funny can you (formal) help the."
+        "en": "If you would like to, you can help during the open days."
       },
       {
         "nl": "U kunt bijvoorbeeld informatie geven aan mensen die een talencursus willen volgen.",
-        "en": "Approximate English: You (formal) can for example information to give to/at that, those a want to follow."
-      },
-      {
-        "nl": "Zij vinden het leuk om te horen wat u van de talenschool vindt.",
-        "en": "Approximate English: She to find, to think (have an opinion) the funny at/in order to to hear what you (formal) of/from the."
-      },
-      {
-        "nl": "Nieuwe cursisten komen ook vaak naar de open dagen.",
-        "en": "Approximate English: Nieuwe to come also often to the."
-      },
-      {
-        "nl": "Zo kunt u ze alvast leren kennen.",
-        "en": "Approximate English: Like this can you (formal) she/they learn to know."
+        "en": "For example, you can give information to people who want to take a language course."
       },
       {
         "nl": "Wilt u helpen tijdens de open dagen?",
-        "en": "Approximate English: Want you (formal) help the?"
+        "en": "Would you like to help during the open days?"
       },
       {
         "nl": "Zeg dit dan tegen uw docent of tegen de administratie.",
-        "en": "Approximate English: Zeg this then against your or against the."
+        "en": "Then tell your teacher or the administration office."
       },
       {
         "nl": "Joy gaat in juni een week naar het buitenland.",
-        "en": "Approximate English: Joy in June a week to the."
+        "en": "Joy is going abroad for a week in June."
       },
       {
         "nl": "Wat moet zij doen?",
-        "en": "Approximate English: What must she to do?"
+        "en": "What should she do?"
       },
       {
         "nl": "Samad heeft elke donderdag Nederlandse les.",
-        "en": "Approximate English: Samad has Thursday Nederlandse lesson."
+        "en": "Samad has Dutch lessons every Thursday."
       },
       {
         "nl": "Wat kan hij donderdag 26 januari op de talenschool doen?",
-        "en": "Approximate English: What can he Thursday January on/at the to do?"
+        "en": "What can he do at the language school on Thursday, 26 January?"
       },
       {
         "nl": "Yolande wil graag naar een open dag van talenschool Het Palet.",
-        "en": "Approximate English: Yolande want to a day of/from the Palet."
+        "en": "Yolande would like to go to an open day at language school Het Palet."
       },
       {
         "nl": "Zij werkt van dinsdag tot en met zaterdag van 16:00 tot 22.00 uur.",
-        "en": "Approximate English: She of/from Tuesday until and with Saturday of/from until hour."
+        "en": "She works from Tuesday through Saturday from 16:00 to 22:00."
       },
       {
         "nl": "Wanneer kan zij naar een open dag?",
-        "en": "Approximate English: When can she to a day?"
+        "en": "When can she go to an open day?"
       }
     ]
   },
@@ -1632,84 +1372,48 @@
     "rawTitle": "Ziekmelding",
     "sentences": [
       {
-        "nl": "Ziekmelding",
-        "en": "Approximate English: Ziekmelding"
-      },
-      {
         "nl": "Als u ziek bent en niet kunt komen werken, moet u dit bij uw leidinggevende melden.",
-        "en": "Approximate English: If/when you (formal) sick and not can to come work must you (formal) this at/with your."
+        "en": "If you are sick and cannot come to work, you must report this to your supervisor."
       },
       {
         "nl": "U hoeft niet te vertellen waar u last van heeft.",
-        "en": "Approximate English: You (formal) not to tell where you (formal) of/from has."
+        "en": "You do not have to say what is bothering you."
       },
       {
         "nl": "Wel moet u zeggen hoe lang u denkt ziek te zijn.",
-        "en": "Approximate English: (confirmative) must you (formal) to say how long you (formal) sick are."
+        "en": "However, you must say how long you think you will be sick."
       },
       {
         "nl": "Uw leidinggevende is Chantal Miedema.",
-        "en": "Approximate English: Your is Chantal Miedema."
+        "en": "Your supervisor is Chantal Miedema."
       },
       {
         "nl": "U kunt haar bellen vanaf 7:00 uur.",
-        "en": "Approximate English: You (formal) can hair call from hour."
-      },
-      {
-        "nl": "Haar telefoonnummer is 06-12563490.",
-        "en": "Approximate English: Hair is."
+        "en": "You can call her from 7:00."
       },
       {
         "nl": "U moet Chantal altijd voor 9:30 uur bellen.",
-        "en": "Approximate English: You (formal) must Chantal always for/before hour call."
+        "en": "You must always call Chantal before 9:30."
       },
       {
         "nl": "Als u Chantal niet kunt bereiken, dan kunt u bellen met Jaap van Bommel.",
-        "en": "Approximate English: If/when you (formal) Chantal not can then can you (formal) call with Jaap of/from Bommel."
+        "en": "If you cannot reach Chantal, then you can call Jaap van Bommel."
       },
       {
-        "nl": "Hij werkt bij het secretariaat.",
-        "en": "Approximate English: He at/with the."
-      },
-      {
-        "nl": "Het secretariaat is bereikbaar tussen 8:00 en 12:00 uur op 030-5452343.",
-        "en": "Approximate English: The is between and hour on/at."
+        "nl": "Het secretariaat is bereikbaar tussen 8:00 en 12:00 uur.",
+        "en": "The secretariat can be reached between 8:00 and 12:00."
       },
       {
         "nl": "U kunt altijd een afspraak maken met de bedrijfsarts.",
-        "en": "Approximate English: You (formal) can always a appointment to make with the."
-      },
-      {
-        "nl": "Zijn telefoonnummer is 030-3448015.",
-        "en": "Approximate English: Are is."
+        "en": "You can always make an appointment with the company doctor."
       },
       {
         "nl": "Als u langer dan zes weken ziek bent, krijgt u een uitnodiging van onze bedrijfsarts.",
-        "en": "Approximate English: If/when you (formal) then six sick gets you (formal) a of/from."
-      },
-      {
-        "nl": "Zijn naam is Cees Zwaan.",
-        "en": "Approximate English: Are name is Cees swan."
+        "en": "If you are sick for longer than six weeks, you will receive an invitation from our company doctor."
       },
       {
         "nl": "Hij gaat samen met u kijken hoe u weer beter kunt worden.",
-        "en": "Approximate English: He together with you (formal) to look how you (formal) again better can to become."
-      },
-      {
-        "nl": "Anya moet zich ziek melden bij Jaap van Bommel.",
-        "en": "Approximate English: Anya must sick at/with Jaap of/from Bommel."
-      },
-      {
-        "nl": "Hoe laat kan ze bellen?",
-        "en": "Approximate English: How late can she/they call?"
-      },
-      {
-        "nl": "Antonio wil een afspraak maken met de bedrijfsarts.",
-        "en": "Approximate English: Antonio want a appointment to make with the."
-      },
-      {
-        "nl": "Wanneer kan dat?",
-        "en": "Approximate English: When can that?"
+        "en": "He will look together with you at how you can get better again."
       }
     ]
   },
@@ -1723,120 +1427,44 @@
     "rawTitle": "Uitnodiging buurtbijeenkomst",
     "sentences": [
       {
-        "nl": "Uitnodiging buurtbijeenkomst",
-        "en": "Approximate English: Uitnodiging"
-      },
-      {
         "nl": "We hebben de afgelopen jaren veel gedaan in de Oranjebuurt.",
-        "en": "Approximate English: We to have the in the Oranjebuurt."
+        "en": "In recent years, we have done a lot in the Oranjebuurt."
       },
       {
         "nl": "Er is nu een speeltuin voor de kinderen.",
-        "en": "Approximate English: Er is now a for/before the."
+        "en": "There is now a playground for the children."
       },
       {
         "nl": "En we hebben met alle bewoners een paar bomen geplant.",
-        "en": "Approximate English: And we to have with a."
+        "en": "And together with all the residents, we have planted a few trees."
       },
       {
         "nl": "Maar we willen meer.",
-        "en": "Approximate English: But we want lake."
+        "en": "But we want more."
       },
       {
         "nl": "We nodigen u daarom van harte uit voor de buurtbijeenkomst op woensdagavond 24 november.",
-        "en": "Approximate English: We you (formal) therefore of/from for/before the on/at November."
+        "en": "We therefore warmly invite you to the neighborhood meeting on Wednesday evening, 24 November."
       },
       {
         "nl": "We zullen dan met elkaar praten over de veranderingen.",
-        "en": "Approximate English: We will then with to talk about the."
+        "en": "We will then talk with each other about the changes."
       },
       {
         "nl": "We zullen ook de plannen voor volgend jaar bespreken.",
-        "en": "Approximate English: We will also the for/before."
+        "en": "We will also discuss the plans for next year."
       },
       {
-        "nl": "19:30 uur: Ontvangst en welkomstdrankje",
-        "en": "Approximate English: Hour Ontvangst and"
-      },
-      {
-        "nl": "19:45 uur: Muzikaal optreden Milan & Zelina",
-        "en": "Approximate English: Hour Muzikaal Milan Zelina"
-      },
-      {
-        "nl": "20:15 uur: Film over wat we gedaan hebben in de wijk",
-        "en": "Approximate English: Hour Film about what we to have in the"
-      },
-      {
-        "nl": "21:00 uur: Themagroepen (zie hieronder)",
-        "en": "Approximate English: Hour Themagroepen"
-      },
-      {
-        "nl": "22:00 uur: Hapjes, drankjes en muziek",
-        "en": "Approximate English: Hour Hapjes and music"
-      },
-      {
-        "nl": "U kunt meepraten over de volgende thema's:",
-        "en": "Approximate English: You (formal) can about the next"
-      },
-      {
-        "nl": "* Activiteiten voor kinderen",
-        "en": "Approximate English: Activiteiten for/before"
-      },
-      {
-        "nl": "* Winkels",
-        "en": "Approximate English: Winkels"
-      },
-      {
-        "nl": "* Werkgelegenheid",
-        "en": "Approximate English: Werkgelegenheid"
-      },
-      {
-        "nl": "* Veiligheid",
-        "en": "Approximate English: Veiligheid"
-      },
-      {
-        "nl": "* Groen en schoon",
-        "en": "Approximate English: Green and clean"
-      },
-      {
-        "nl": "De buurtbijeenkomst wordt een informatieve en gezellige avond.",
-        "en": "Approximate English: The a and evening."
+        "nl": "U kunt meepraten over activiteiten voor kinderen, winkels, werkgelegenheid, veiligheid, groen en schoon.",
+        "en": "You can join the discussion about activities for children, shops, employment, safety, green spaces, and cleanliness."
       },
       {
         "nl": "Wilt u komen?",
-        "en": "Approximate English: Want you (formal) to come?"
+        "en": "Would you like to come?"
       },
       {
         "nl": "Laat dat dan vóór 23 november weten aan het buurtcomité.",
-        "en": "Approximate English: Late that then November to know to/at the."
-      },
-      {
-        "nl": "We zien u graag op 24 november in het buurthuis!",
-        "en": "Approximate English: We to see you (formal) on/at November in the!"
-      },
-      {
-        "nl": "Buurtcomité Oranjebuurt",
-        "en": "Approximate English: Buurtcomité Oranjebuurt"
-      },
-      {
-        "nl": "Allan wil meer sportlessen voor kinderen.",
-        "en": "Approximate English: Allan want lake for/before."
-      },
-      {
-        "nl": "Hij wil graag naar de buurtbijeenkomst komen, maar hij heeft weinig tijd.",
-        "en": "Approximate English: He want to the to come but he has."
-      },
-      {
-        "nl": "Hoe laat kan hij het beste komen om over de sportlessen te praten?",
-        "en": "Approximate English: How late can he the to come at/in order to about the to talk?"
-      },
-      {
-        "nl": "Mirja wil naar de buurtbijeenkomst komen.",
-        "en": "Approximate English: Mirja want to the to come."
-      },
-      {
-        "nl": "Wanneer moet ze zich opgeven?",
-        "en": "Approximate English: When must she/they?"
+        "en": "Then let the neighborhood committee know before 23 November."
       }
     ]
   },
@@ -1850,80 +1478,28 @@
     "rawTitle": "Het sportcentrum is geopend",
     "sentences": [
       {
-        "nl": "Het sportcentrum is geopend op:",
-        "en": "Approximate English: The is on/at"
+        "nl": "Het sportcentrum is geopend op werkdagen van 08.00 uur tot 22.00 uur.",
+        "en": "The sports center is open on weekdays from 08:00 to 22:00."
       },
       {
-        "nl": "Werkdagen van 08.00 uur tot 22.00 uur.",
-        "en": "Approximate English: Werkdagen of/from hour until hour."
+        "nl": "Zaterdag en zondag is het geopend van 09.00 uur tot 17.00 uur.",
+        "en": "On Saturday and Sunday, it is open from 09:00 to 17:00."
       },
       {
-        "nl": "Zaterdag en zondag van 09.00 uur tot 17.00 uur.",
-        "en": "Approximate English: Saturday and Sunday of/from hour until hour."
+        "nl": "Er zijn drie soorten abonnementen: Basis, Daluren en Weekend.",
+        "en": "There are three types of subscriptions: Basic, Off-peak, and Weekend."
       },
       {
-        "nl": "Er zijn drie soorten abonnementen:",
-        "en": "Approximate English: Er are three"
+        "nl": "Met Basis kunt u zoveel sporten als u maar wilt.",
+        "en": "With Basic, you can exercise as much as you want."
       },
       {
-        "nl": "€ 14,- per maand",
-        "en": "Approximate English: Month"
+        "nl": "Met Daluren kunt u op werkdagen sporten tot 17.00 uur.",
+        "en": "With Off-peak, you can exercise on weekdays until 17:00."
       },
       {
-        "nl": "zoveel sporten als u maar wilt",
-        "en": "Approximate English: To exercise if/when you (formal) but want"
-      },
-      {
-        "nl": "€ 12,95 per maand",
-        "en": "Approximate English: Month"
-      },
-      {
-        "nl": "op werkdagen sporten tot 17.00 uur",
-        "en": "Approximate English: On/at to exercise until hour"
-      },
-      {
-        "nl": "€ 10,- per maand",
-        "en": "Approximate English: Month"
-      },
-      {
-        "nl": "vanaf vrijdagmiddag 17.00 uur",
-        "en": "Approximate English: From hour"
-      },
-      {
-        "nl": "U kunt zich aanmelden bij het sportcentrum.",
-        "en": "Approximate English: You (formal) can at/with the."
-      },
-      {
-        "nl": "Basis € 14,- per maand zoveel sporten als u maar wilt",
-        "en": "Approximate English: Basis month to exercise if/when you (formal) but want"
-      },
-      {
-        "nl": "Daluren € 12,95 per maand op werkdagen sporten tot 17.00 uur",
-        "en": "Approximate English: Daluren month on/at to exercise until hour"
-      },
-      {
-        "nl": "Weekend € 10,- per maand vanaf vrijdagmiddag 17.00 uur",
-        "en": "Approximate English: Weekend month from hour"
-      },
-      {
-        "nl": "Mohammed heeft een basisabonnement.",
-        "en": "Approximate English: Mohammed has a."
-      },
-      {
-        "nl": "Tot hoe laat kan hij op dinsdag sporten?",
-        "en": "Approximate English: Until how late can he on/at Tuesday to exercise?"
-      },
-      {
-        "nl": "Ali heeft een weekendabonnement.",
-        "en": "Approximate English: Ali has a."
-      },
-      {
-        "nl": "Hij krijgt een baan in het weekend, dan moet hij van 9 tot 5 uur werken.",
-        "en": "Approximate English: He gets a job in the then must he of/from until hour work."
-      },
-      {
-        "nl": "Wanneer kan Ali nog sporten?",
-        "en": "Approximate English: When can Ali still to exercise?"
+        "nl": "Met Weekend kunt u sporten vanaf vrijdagmiddag 17.00 uur.",
+        "en": "With Weekend, you can exercise from Friday afternoon at 17:00."
       }
     ]
   },
@@ -1937,100 +1513,52 @@
     "rawTitle": "Dag Yvonne",
     "sentences": [
       {
-        "nl": "Dag Yvonne,",
-        "en": "Approximate English: Day Yvonne"
-      },
-      {
         "nl": "Ik wil je graag bedanken voor de geweldige taalcursus.",
-        "en": "Approximate English: I want you for/before the."
+        "en": "I would like to thank you for the wonderful language course."
       },
       {
         "nl": "Ik heb geleerd om de Nederlandse taal echt te gebruiken.",
-        "en": "Approximate English: I at/in order to the Nederlandse language real to use."
+        "en": "I have learned to really use the Dutch language."
       },
       {
         "nl": "Ik durf nu meer in het Nederlands te praten en te schrijven.",
-        "en": "Approximate English: I now lake in the Nederlands to talk and to write."
-      },
-      {
-        "nl": "En ik kan het nu ook veel beter.",
-        "en": "Approximate English: And I can the now also better."
+        "en": "I now dare to speak and write more in Dutch."
       },
       {
         "nl": "Ik praatte eigenlijk nooit met Nederlanders.",
-        "en": "Approximate English: I never with Nederlanders."
+        "en": "I actually never used to talk with Dutch people."
       },
       {
         "nl": "Ik vind het nog steeds moeilijk en maak nog steeds fouten, maar ik doe het nu wel.",
-        "en": "Approximate English: I the still difficult and still but I the now (confirmative)."
-      },
-      {
-        "nl": "Mijn man heeft me wel geholpen bij deze brief.",
-        "en": "Approximate English: My man has (confirmative) at/with these, this letter."
+        "en": "I still find it difficult and still make mistakes, but now I do it."
       },
       {
         "nl": "Het is belangrijk dat ik blijf oefenen.",
-        "en": "Approximate English: The is important that I."
+        "en": "It is important that I keep practicing."
       },
       {
         "nl": "Dat doe ik door de taal gewoon te gebruiken.",
-        "en": "Approximate English: That I through the language usual to use."
+        "en": "I do that by simply using the language."
       },
       {
         "nl": "Soms willen mijn man of mijn kinderen me helpen.",
-        "en": "Approximate English: Sometimes want my man or my help."
+        "en": "Sometimes my husband or my children want to help me."
       },
       {
         "nl": "Maar ik wil het zelf proberen.",
-        "en": "Approximate English: But I want the to try."
-      },
-      {
-        "nl": "Als ik hun hulp nodig heb, dan vraag ik het wel.",
-        "en": "Approximate English: If/when I their then I the (confirmative)."
+        "en": "But I want to try it myself."
       },
       {
         "nl": "Het is jammer dat ik alles in één jaar moest leren.",
-        "en": "Approximate English: The is that I everything in learn."
-      },
-      {
-        "nl": "Het is echt heel veel.",
-        "en": "Approximate English: The is real whole, very."
+        "en": "It is a pity that I had to learn everything in one year."
       },
       {
         "nl": "Maar ik heb de cursus afgemaakt.",
-        "en": "Approximate English: But I the course."
+        "en": "But I completed the course."
       },
       {
         "nl": "En ik ben geslaagd voor mijn examen.",
-        "en": "Approximate English: And I for/before my."
-      },
-      {
-        "nl": "Nogmaals heel veel dank voor al je hulp.",
-        "en": "Approximate English: Nogmaals whole, very for/before already you."
-      },
-      {
-        "nl": "Jij bent een fantastische docent!",
-        "en": "Approximate English: You a!"
-      },
-      {
-        "nl": "Groetjes,",
-        "en": "Approximate English: Groetjes"
-      },
-      {
-        "nl": "Wat heeft Samira van Yvonne geleerd?",
-        "en": "Approximate English: What has Samira of/from Yvonne?"
-      },
-      {
-        "nl": "Samira is blij met de cursus van Yvonne.",
-        "en": "Approximate English: Samira is happy with the course of/from Yvonne."
-      },
-      {
-        "nl": "Toch vindt ze niet alles goed.",
-        "en": "Approximate English: Toch she/they not everything good."
-      },
-      {
-        "nl": "Wat vindt ze niet zo goed?",
-        "en": "Approximate English: What she/they not like this good?"
+        "en": "And I passed my exam."
       }
     ]
   },
@@ -2044,88 +1572,40 @@
     "rawTitle": "Informatie huisarts",
     "sentences": [
       {
-        "nl": "Informatie huisarts",
-        "en": "Approximate English: Information general practitioner"
-      },
-      {
         "nl": "Wij zijn open van maandag tot en met donderdag van 08:00 tot 17:00 uur en op vrijdag van 08:00 tot 12:30 uur.",
-        "en": "Approximate English: We are of/from Monday until and with Thursday of/from until hour and on/at Friday of/from until hour."
+        "en": "We are open from Monday through Thursday from 08:00 to 17:00 and on Friday from 08:00 to 12:30."
       },
       {
-        "nl": "'s Avonds, in het weekend en tijdens de vakantie",
-        "en": "Approximate English: Avonds in the and the holiday"
-      },
-      {
-        "nl": "Op avonden, in het weekend en op vrijdagmiddag kunt u de centrale huisartsenpost bellen (0900 2233333).",
-        "en": "Approximate English: On/at in the and on/at can you (formal) the call."
+        "nl": "Op avonden, in het weekend en op vrijdagmiddag kunt u de centrale huisartsenpost bellen.",
+        "en": "In the evenings, on weekends, and on Friday afternoons, you can call the central out-of-hours GP service."
       },
       {
         "nl": "Zij geven u telefonisch advies.",
-        "en": "Approximate English: She to give you (formal)."
+        "en": "They give you advice by telephone."
       },
       {
         "nl": "Als het nodig is, kunt u een afspraak maken voor een bezoek.",
-        "en": "Approximate English: If/when the is can you (formal) a appointment to make for/before a visit."
-      },
-      {
-        "nl": "Deze informatie staat ook op onze website: www.uwhuisarts.nl.",
-        "en": "Approximate English: These, this information also on/at."
+        "en": "If necessary, you can make an appointment for a visit."
       },
       {
         "nl": "Hier kunt u ook vinden wie uw huisarts vervangt tijdens vakanties.",
-        "en": "Approximate English: Here can you (formal) also to find, to think (have an opinion) who your general practitioner."
+        "en": "Here you can also find out who replaces your GP during holidays."
       },
       {
-        "nl": "Als u bij een noodgeval niemand direct kunt bereiken, belt u dan het alarmnummer (112).",
-        "en": "Approximate English: If/when you (formal) at/with a can you (formal) then the."
+        "nl": "Als u bij een noodgeval niemand direct kunt bereiken, belt u dan het alarmnummer.",
+        "en": "If you cannot reach anyone immediately in an emergency, call the emergency number."
       },
       {
         "nl": "Een afspraak voor het spreekuur van de huisarts kunt u maken bij de assistente.",
-        "en": "Approximate English: A appointment for/before the consultation hours of/from the general practitioner can you (formal) to make at/with the."
-      },
-      {
-        "nl": "U kunt dat bij ons aan de balie doen of telefonisch: 031 2850127.",
-        "en": "Approximate English: You (formal) can that at/with us to/at the to do or."
+        "en": "You can make an appointment for the GP’s consultation hour with the assistant."
       },
       {
         "nl": "Belt u het liefst tussen 08:00 en 10:30 uur.",
-        "en": "Approximate English: Belt you (formal) the between and hour."
+        "en": "Preferably call between 08:00 and 10:30."
       },
       {
-        "nl": "Voor kort overleg en uitslagen (bijvoorbeeld na bloed prikken) kunt u de assistente bellen.",
-        "en": "Approximate English: For/before short and for example after blood can you (formal) the call."
-      },
-      {
-        "nl": "Dat kan van maandag tot en met donderdag van 13:30 tot 14:30 uur.",
-        "en": "Approximate English: That can of/from Monday until and with Thursday of/from until hour."
-      },
-      {
-        "nl": "Ons adres en ons telefoonnummer kunt u ook vinden in het weekblad.",
-        "en": "Approximate English: Us address and us can you (formal) also to find, to think (have an opinion) in the."
-      },
-      {
-        "nl": "Het is vrijdag.",
-        "en": "Approximate English: The is Friday."
-      },
-      {
-        "nl": "Mouna wil een afspraak met haar huisarts.",
-        "en": "Approximate English: Mouna want a appointment with hair general practitioner."
-      },
-      {
-        "nl": "Wat is de beste tijd om de huisarts te bellen?",
-        "en": "Approximate English: What is the at/in order to the general practitioner call?"
-      },
-      {
-        "nl": "Mouna heeft een huisarts nodig.",
-        "en": "Approximate English: Mouna has a general practitioner."
-      },
-      {
-        "nl": "Haar eigen huisarts heeft vakantie.",
-        "en": "Approximate English: Hair own general practitioner has holiday."
-      },
-      {
-        "nl": "Wat moet Mouna doen?",
-        "en": "Approximate English: What must Mouna to do?"
+        "nl": "Voor kort overleg en uitslagen kunt u de assistente bellen.",
+        "en": "For brief consultation and results, you can call the assistant."
       }
     ]
   },
@@ -2139,168 +1619,68 @@
     "rawTitle": "Woorden leren",
     "sentences": [
       {
-        "nl": "Woorden leren",
-        "en": "Approximate English: Woorden learn"
-      },
-      {
         "nl": "Kent u nog bijna geen woorden in de taal die u wilt leren?",
-        "en": "Approximate English: Kent you (formal) still almost no/not any in the language that, those you (formal) want learn?"
+        "en": "Do you still know almost no words in the language you want to learn?"
       },
       {
-        "nl": "Dan is dit een goede manier.",
-        "en": "Approximate English: Then is this a."
-      },
-      {
-        "nl": "U neemt een stapel kaartjes (bijvoorbeeld 5 x 10 cm).",
-        "en": "Approximate English: You (formal) a for example."
+        "nl": "Dan is de kaartjesmethode een goede manier.",
+        "en": "Then the card method is a good method."
       },
       {
         "nl": "U schrijft op elk kaartje een woord dat u moet leren.",
-        "en": "Approximate English: You (formal) on/at each a word that you (formal) must learn."
+        "en": "You write a word that you need to learn on each card."
       },
       {
-        "nl": "Op de achterkant van het kaartje schrijft u wat het woord in uw eigen taal betekent.",
-        "en": "Approximate English: On/at the of/from the you (formal) what the word in your own language."
-      },
-      {
-        "nl": "U legt de kaartjes op een stapel.",
-        "en": "Approximate English: You (formal) the on/at a."
-      },
-      {
-        "nl": "U kijkt bij elk woord of u weet wat het woord betekent.",
-        "en": "Approximate English: You (formal) at/with each word or you (formal) what the word."
+        "nl": "Op de achterkant schrijft u wat het woord in uw eigen taal betekent.",
+        "en": "On the back, you write what the word means in your own language."
       },
       {
         "nl": "Weet u het?",
-        "en": "Approximate English: Weet you (formal) the?"
+        "en": "Do you know it?"
       },
       {
-        "nl": "Dan legt u het kaartje op de stapel 'goed'.",
-        "en": "Approximate English: Then you (formal) the on/at the good."
+        "nl": "Dan legt u het kaartje op de stapel goed.",
+        "en": "Then you put the card on the correct stack."
       },
       {
         "nl": "Weet u het niet?",
-        "en": "Approximate English: Weet you (formal) the not?"
+        "en": "Do you not know it?"
       },
       {
-        "nl": "Dan legt u het kaartje op de stapel 'fout'.",
-        "en": "Approximate English: Then you (formal) the on/at the."
-      },
-      {
-        "nl": "U doet dit met alle kaartjes.",
-        "en": "Approximate English: You (formal) this with."
-      },
-      {
-        "nl": "U pakt daarna de stapel 'fout' opnieuw.",
-        "en": "Approximate English: You (formal) the."
-      },
-      {
-        "nl": "U doet weer hetzelfde als bij stap 2.",
-        "en": "Approximate English: You (formal) again if/when at/with."
-      },
-      {
-        "nl": "U doet stap 2 en stap 3 net zo lang tot de stapel 'fout' weg is.",
-        "en": "Approximate English: You (formal) and just like this long until the road is."
-      },
-      {
-        "nl": "Heeft u het altijd druk?",
-        "en": "Approximate English: Has you (formal) the always busy?"
+        "nl": "Dan legt u het kaartje op de stapel fout.",
+        "en": "Then you put the card on the wrong stack."
       },
       {
         "nl": "De schuifmethode is een snelle manier om woorden te leren.",
-        "en": "Approximate English: The is a at/in order to learn."
-      },
-      {
-        "nl": "U legt een papier op de woordenlijst die u moet leren.",
-        "en": "Approximate English: You (formal) a paper on/at the that, those you (formal) must learn."
-      },
-      {
-        "nl": "U schuift dit papier naar beneden, zodat u alleen het woord ziet dat u wilt leren.",
-        "en": "Approximate English: You (formal) this paper to down, downstairs you (formal) alone the word that you (formal) want learn."
+        "en": "The sliding method is a quick way to learn words."
       },
       {
         "nl": "U spreekt het vreemde woord eerst hardop uit.",
-        "en": "Approximate English: You (formal) the word."
+        "en": "You first say the foreign word out loud."
       },
       {
         "nl": "U schrijft daarna het woord op.",
-        "en": "Approximate English: You (formal) the word on/at."
-      },
-      {
-        "nl": "U kijkt of u het woord goed geschreven heeft.",
-        "en": "Approximate English: You (formal) or you (formal) the word good has."
-      },
-      {
-        "nl": "U leert zo de eerste 8 woorden.",
-        "en": "Approximate English: You (formal) like this the."
+        "en": "Then you write down the word."
       },
       {
         "nl": "Leer ze niet alleen van boven naar beneden, maar ook van beneden naar boven en door elkaar.",
-        "en": "Approximate English: Leer she/they not alone of/from above, up, upstairs to down, downstairs but also of/from down, downstairs to above, up, upstairs and through."
-      },
-      {
-        "nl": "U leert daarna de volgende 8 woorden en u herhaalt de eerste 8 woorden.",
-        "en": "Approximate English: You (formal) the next and you (formal) the."
-      },
-      {
-        "nl": "Zo leert u de hele woordenlijst.",
-        "en": "Approximate English: Like this you (formal) the."
+        "en": "Do not learn them only from top to bottom, but also from bottom to top and in random order."
       },
       {
         "nl": "Kent u al veel woorden?",
-        "en": "Approximate English: Kent you (formal) already?"
+        "en": "Do you already know many words?"
       },
       {
         "nl": "Maar vergeet u altijd een paar moeilijke woorden?",
-        "en": "Approximate English: But you (formal) always a?"
+        "en": "But do you always forget a few difficult words?"
       },
       {
-        "nl": "Maak dan een 'woordnet' voor elk moeilijk woord.",
-        "en": "Approximate English: Maak then a for/before each difficult word."
-      },
-      {
-        "nl": "U schrijft het moeilijke woord in het midden van een blad papier.",
-        "en": "Approximate English: You (formal) the word in the middle of/from a paper."
-      },
-      {
-        "nl": "U zet daaromheen allemaal woorden die iets te maken hebben met het moeilijke woord.",
-        "en": "Approximate English: You (formal) all that, those something to make to have with the word."
-      },
-      {
-        "nl": "U zet bij 'verjaardag' bijvoorbeeld 'taart', 'cadeautjes', 'feest', 'jarig' en 'slingers'.",
-        "en": "Approximate English: You (formal) at/with birthday for example pie party and."
+        "nl": "Maak dan een woordnet voor elk moeilijk woord.",
+        "en": "Then make a word web for each difficult word."
       },
       {
         "nl": "Zo onthoudt u het moeilijke woord beter.",
-        "en": "Approximate English: Like this you (formal) the word better."
-      },
-      {
-        "nl": "Karima gebruikt de schuifmethode om woorden te leren.",
-        "en": "Approximate English: Karima the at/in order to learn."
-      },
-      {
-        "nl": "In welke volgorde moet zij de woorden leren",
-        "en": "Approximate English: In which must she the learn"
-      },
-      {
-        "nl": "Noa leert al een paar maanden Nederlandse woorden.",
-        "en": "Approximate English: Noa already a Nederlandse."
-      },
-      {
-        "nl": "Ze kent de meeste woorden al goed.",
-        "en": "Approximate English: She/they the already good."
-      },
-      {
-        "nl": "Ze heeft moeite met sommige woorden.",
-        "en": "Approximate English: She/they has with."
-      },
-      {
-        "nl": "Ze wil die ook graag leren.",
-        "en": "Approximate English: She/they want that, those also learn."
-      },
-      {
-        "nl": "Welke manier is dan het beste?",
-        "en": "Approximate English: Which is then the?"
+        "en": "This way, you remember the difficult word better."
       }
     ]
   },
@@ -2314,64 +1694,52 @@
     "rawTitle": "Werkrooster Hotel",
     "sentences": [
       {
-        "nl": "WERKROOSTER HOTEL 'CHEZ JANOU'",
-        "en": "Approximate English: WERKROOSTER HOTEL JANOU'"
+        "nl": "WERKROOSTER HOTEL ‘CHEZ JANOU’.",
+        "en": "WORK SCHEDULE HOTEL “CHEZ JANOU.”"
       },
       {
-        "nl": "N nachtdienst van 23.00 uur tot 07.30 uur",
-        "en": "Approximate English: N of/from hour until hour"
+        "nl": "[image/table not available in source text]",
+        "en": "[image/table not available in source text]"
       },
       {
-        "nl": "O ochtenddienst van 7.30 uur tot 14.00 uur",
-        "en": "Approximate English: O of/from hour until hour"
+        "nl": "N nachtdienst van 23.00 uur tot 07.30 uur.",
+        "en": "N night shift from 23:00 to 07:30."
       },
       {
-        "nl": "M middagdienst van 14.00 uur tot 18.30 uur",
-        "en": "Approximate English: M of/from hour until hour"
+        "nl": "O ochtenddienst van 7.30 uur tot 14.00 uur.",
+        "en": "O morning shift from 7:30 to 14:00."
       },
       {
-        "nl": "A avonddienst van 18.30 uur tot 23.00 uur",
-        "en": "Approximate English: A of/from hour until hour"
+        "nl": "M middagdienst van 14.00 uur tot 18.30 uur.",
+        "en": "M afternoon shift from 14:00 to 18:30."
+      },
+      {
+        "nl": "A avonddienst van 18.30 uur tot 23.00 uur.",
+        "en": "A evening shift from 18:30 to 23:00."
       },
       {
         "nl": "Wil je een dienst ruilen met een collega?",
-        "en": "Approximate English: Want you a with a colleague?"
+        "en": "Do you want to swap a shift with a colleague?"
       },
       {
         "nl": "Dan moet je dat zelf regelen.",
-        "en": "Approximate English: Then must you that."
+        "en": "Then you must arrange that yourself."
       },
       {
-        "nl": "Kijk eerst op het rooster wie van je collega's kan.",
-        "en": "Approximate English: Kijk on/at the who of/from you can."
+        "nl": "Kijk eerst op het rooster wie van je collega’s kan.",
+        "en": "First check the schedule to see which of your colleagues can do it."
       },
       {
-        "nl": "* Je mag altijd twee diensten achter elkaar werken.",
-        "en": "Approximate English: You always two behind work."
+        "nl": "Je mag altijd twee diensten achter elkaar werken.",
+        "en": "You may always work two shifts in a row."
       },
       {
-        "nl": "Let op: als je nachtdienst hebt (gehad), mag dat niet",
-        "en": "Approximate English: Let on/at if/when you have that not"
+        "nl": "Als je nachtdienst hebt gehad, mag dat niet.",
+        "en": "If you have had a night shift, that is not allowed."
       },
       {
-        "nl": "* Je mag per weekend maximaal twee nachtdiensten draaien.",
-        "en": "Approximate English: You two to turn."
-      },
-      {
-        "nl": "Hoe lang moet Xavier vrijdag werken?",
-        "en": "Approximate English: How long must Xavier Friday work?"
-      },
-      {
-        "nl": "Xavier moet op zaterdagmiddag werken.",
-        "en": "Approximate English: Xavier must on/at work."
-      },
-      {
-        "nl": "Hij wil dan graag vrij.",
-        "en": "Approximate English: He want then free."
-      },
-      {
-        "nl": "Met wie kan Xavier ruilen?",
-        "en": "Approximate English: With who can Xavier?"
+        "nl": "Je mag per weekend maximaal twee nachtdiensten draaien.",
+        "en": "You may work a maximum of two night shifts per weekend."
       }
     ]
   },
@@ -2385,120 +1753,68 @@
     "rawTitle": "Beste collega's",
     "sentences": [
       {
-        "nl": "Beste collega's,",
-        "en": "Approximate English: Beste"
-      },
-      {
         "nl": "We hebben vanmorgen met zijn allen gepraat.",
-        "en": "Approximate English: We to have with are."
-      },
-      {
-        "nl": "Dat was goed om te doen.",
-        "en": "Approximate English: That was good at/in order to to do."
+        "en": "We all talked together this morning."
       },
       {
         "nl": "We hebben duidelijke afspraken gemaakt over het werk in de winkel.",
-        "en": "Approximate English: We to have about the work in the store."
+        "en": "We made clear agreements about the work in the store."
       },
       {
         "nl": "Iedereen moet zich aan deze afspraken houden.",
-        "en": "Approximate English: Everybody must to/at these, this to hold, to keep."
+        "en": "Everyone must follow these agreements."
       },
       {
-        "nl": "De afspraken staan hieronder:",
-        "en": "Approximate English: The to stand"
-      },
-      {
-        "nl": "* De winkel is vanaf nu elke eerste en derde zondag van de maand open.",
-        "en": "Approximate English: The store is from now and Sunday of/from the month."
+        "nl": "De winkel is vanaf nu elke eerste en derde zondag van de maand open.",
+        "en": "From now on, the store is open every first and third Sunday of the month."
       },
       {
         "nl": "Jantine werkt dan altijd.",
-        "en": "Approximate English: Jantine then always."
+        "en": "Jantine always works then."
       },
       {
         "nl": "Elke eerste zondag helpt Ricardo haar.",
-        "en": "Approximate English: Elke Sunday Ricardo hair."
+        "en": "Every first Sunday, Ricardo helps her."
       },
       {
         "nl": "Nadia werkt op elke derde zondag van de maand met Jantine.",
-        "en": "Approximate English: Nadia on/at Sunday of/from the month with Jantine."
-      },
-      {
-        "nl": "Op de andere zondagen is de winkel dicht.",
-        "en": "Approximate English: On/at the is the store."
+        "en": "Nadia works with Jantine on every third Sunday of the month."
       },
       {
         "nl": "Omar en Moniek werken niet op zondag.",
-        "en": "Approximate English: Omar and Moniek work not on/at Sunday."
+        "en": "Omar and Moniek do not work on Sundays."
       },
       {
-        "nl": "* We hebben vanaf 1 maart een nieuwe klantenkaart.",
-        "en": "Approximate English: We to have from march a."
+        "nl": "We hebben vanaf 1 maart een nieuwe klantenkaart.",
+        "en": "From 1 March, we have a new customer card."
       },
       {
         "nl": "Klanten mogen hun oude klantenkaart dan niet meer gebruiken.",
-        "en": "Approximate English: Klanten their then not lake to use."
+        "en": "Customers may no longer use their old customer card then."
       },
       {
-        "nl": "De oude kaart kostte €5,- , maar de nieuwe klantenkaart is gratis!",
-        "en": "Approximate English: The but the is free!"
-      },
-      {
-        "nl": "We vertellen de klant ook over het sparen met de nieuwe kaart.",
-        "en": "Approximate English: We to tell the also about the with the."
+        "nl": "De oude kaart kostte €5,-, maar de nieuwe klantenkaart is gratis!",
+        "en": "The old card cost €5, but the new customer card is free!"
       },
       {
         "nl": "Bij elke €10,- krijgt de klant één punt.",
-        "en": "Approximate English: At/with gets the."
+        "en": "For every €10, the customer receives one point."
       },
       {
         "nl": "Bij tien punten krijgt de klant €15,- korting.",
-        "en": "Approximate English: At/with ten gets the."
+        "en": "With ten points, the customer gets a €15 discount."
       },
       {
-        "nl": "* We dweilen de winkel twee keer per week: op dinsdag en op zaterdag.",
-        "en": "Approximate English: We the store two week on/at Tuesday and on/at Saturday."
-      },
-      {
-        "nl": "We deden dit tot nu toe altijd één keer per week, maar het is nu wel erg vaak vies.",
-        "en": "Approximate English: We this until now always week but the is now (confirmative) very often dirty, disgusting."
+        "nl": "We dweilen de winkel twee keer per week: op dinsdag en op zaterdag.",
+        "en": "We mop the store twice a week: on Tuesday and on Saturday."
       },
       {
         "nl": "Is het druk geweest in de winkel?",
-        "en": "Approximate English: Is the busy in the store?"
+        "en": "Has it been busy in the store?"
       },
       {
         "nl": "Dan dweilen we nog een derde keer.",
-        "en": "Approximate English: Then we still a."
-      },
-      {
-        "nl": "We willen de winkel graag schoonhouden.",
-        "en": "Approximate English: We want the store."
-      },
-      {
-        "nl": "Heb je nog vragen?",
-        "en": "Approximate English: Heb you still questions/ask?"
-      },
-      {
-        "nl": "Laat het me even weten.",
-        "en": "Approximate English: Late the just (as) to know."
-      },
-      {
-        "nl": "Groeten,",
-        "en": "Approximate English: Groeten"
-      },
-      {
-        "nl": "Wie werken op de eerste zondag van april?",
-        "en": "Approximate English: Who work on/at the Sunday of/from April?"
-      },
-      {
-        "nl": "Hoeveel kost de nieuwe klantenkaart?",
-        "en": "Approximate English: How much the?"
-      },
-      {
-        "nl": "Hoe vaak moeten Omar en zijn collega's dweilen?",
-        "en": "Approximate English: How often must Omar and are?"
+        "en": "Then we mop a third time."
       }
     ]
   },
@@ -2512,108 +1828,56 @@
     "rawTitle": "Beste cursist",
     "sentences": [
       {
-        "nl": "Beste cursist,",
-        "en": "Approximate English: Beste"
+        "nl": "Irena volgt een cursus Nederlands.",
+        "en": "Irena is taking a Dutch course."
       },
       {
         "nl": "Harry de Bont gaat weg.",
-        "en": "Approximate English: Harry the Bont road."
+        "en": "Harry de Bont is leaving."
       },
       {
         "nl": "Op 1 mei wordt hij namelijk 67 jaar.",
-        "en": "Approximate English: On/at may he."
+        "en": "He will turn 67 on 1 May."
       },
       {
         "nl": "Hij stopt dan met werken.",
-        "en": "Approximate English: He then with work."
+        "en": "He will stop working then."
       },
       {
         "nl": "Op woensdag 18 april geeft hij zijn laatste les Nederlands en op donderdag 19 april zijn laatste les Engels.",
-        "en": "Approximate English: On/at Wednesday April he are lesson Nederlands and on/at Thursday April are lesson Engels."
+        "en": "On Wednesday, 18 April, he will give his last Dutch lesson, and on Thursday, 19 April, his last English lesson."
       },
       {
         "nl": "Daarna geeft Nadia Luiten de lessen Nederlands.",
-        "en": "Approximate English: Daarna Nadia Luiten the lessons Nederlands."
+        "en": "After that, Nadia Luiten will teach the Dutch lessons."
       },
       {
         "nl": "Nirosha Brouwer neemt de lessen Engels over.",
-        "en": "Approximate English: Nirosha Brouwer the lessons Engels about."
+        "en": "Nirosha Brouwer will take over the English lessons."
       },
       {
         "nl": "Harry heeft bijna dertig jaar gewerkt bij ons cursuscentrum.",
-        "en": "Approximate English: Harry has almost thirty at/with us."
-      },
-      {
-        "nl": "Dat is heel bijzonder.",
-        "en": "Approximate English: That is whole, very special."
+        "en": "Harry has worked at our course center for almost thirty years."
       },
       {
         "nl": "Daarom geven we een groot feest voor hem.",
-        "en": "Approximate English: Therefore to give we a big party for/before."
+        "en": "That is why we are giving a big party for him."
       },
       {
         "nl": "Het feest is op vrijdag 20 april in de kantine.",
-        "en": "Approximate English: The party is on/at Friday April in the."
-      },
-      {
-        "nl": "Het begint om 20.00 uur.",
-        "en": "Approximate English: The at/in order to hour."
+        "en": "The party is on Friday, 20 April, in the canteen."
       },
       {
         "nl": "Harry krijgt een mooi cadeau van ons allemaal.",
-        "en": "Approximate English: Harry gets a beautiful gift of/from us all."
-      },
-      {
-        "nl": "We hebben met de docenten een mooi geldbedrag bij elkaar gelegd.",
-        "en": "Approximate English: We to have with the a beautiful at/with."
-      },
-      {
-        "nl": "Daarvan hebben we een bijzonder boek voor Harry gekocht.",
-        "en": "Approximate English: Daarvan to have we a special book for/before Harry."
-      },
-      {
-        "nl": "Willen jullie ook iets doen?",
-        "en": "Approximate English: Want you also something to do?"
+        "en": "Harry will receive a nice gift from all of us."
       },
       {
         "nl": "Schrijf dan iets voor Harry.",
-        "en": "Approximate English: Schrijf then something for/before Harry."
+        "en": "Then write something for Harry."
       },
       {
         "nl": "Geef je tekst aan Leo Coppens.",
-        "en": "Approximate English: Geef you to/at Leo Coppens."
-      },
-      {
-        "nl": "Hij maakt er een boek van.",
-        "en": "Approximate English: He a book of/from."
-      },
-      {
-        "nl": "Kom je ook afscheid nemen van Harry?",
-        "en": "Approximate English: Kom you also to take of/from Harry?"
-      },
-      {
-        "nl": "We hopen dat het een gezellig feest wordt!",
-        "en": "Approximate English: We that the a party!"
-      },
-      {
-        "nl": "Pascal van Dijk",
-        "en": "Approximate English: Pascal of/from dike"
-      },
-      {
-        "nl": "Wanneer is de laatste les Nederlands van Harry de Bont?",
-        "en": "Approximate English: When is the lesson Nederlands of/from Harry the Bont?"
-      },
-      {
-        "nl": "Van wie krijgt Irena straks Nederlandse les?",
-        "en": "Approximate English: Of/from who gets Irena Nederlandse lesson?"
-      },
-      {
-        "nl": "Carmen woont in Maastricht.",
-        "en": "Approximate English: Carmen in Maastricht."
-      },
-      {
-        "nl": "Ze leest een artikel op de website van de gemeente.",
-        "en": "Approximate English: She/they a on/at the of/from the municipality."
+        "en": "Give your text to Leo Coppens."
       }
     ]
   },
@@ -2627,104 +1891,48 @@
     "rawTitle": "Gratis stadsbus",
     "sentences": [
       {
-        "nl": "Gratis stadsbus",
-        "en": "Approximate English: Free"
-      },
-      {
-        "nl": "Waarom wordt de stadsbus gratis?",
-        "en": "Approximate English: Why the free?"
-      },
-      {
         "nl": "Het centrum van Maastricht wordt drukker en drukker.",
-        "en": "Approximate English: The of/from Maastricht and."
+        "en": "The center of Maastricht is becoming busier and busier."
       },
       {
-        "nl": "Er rijden steeds meer auto's en er is vaak niet genoeg plek om te parkeren.",
-        "en": "Approximate English: Er to drive lake and is often not enough at/in order to."
+        "nl": "Er rijden steeds meer auto’s en er is vaak niet genoeg plek om te parkeren.",
+        "en": "More and more cars are driving there, and there is often not enough space to park."
       },
       {
         "nl": "Daarom wordt de stadsbus gratis tijdens drukke winkeltijden.",
-        "en": "Approximate English: Therefore the free."
+        "en": "That is why the city bus will be free during busy shopping hours."
       },
       {
         "nl": "We hopen dat het dan minder druk wordt in de stad.",
-        "en": "Approximate English: We that the then less busy in the city."
-      },
-      {
-        "nl": "En we willen natuurlijk de schoonste gemeente van Limburg blijven!",
-        "en": "Approximate English: And we want of course the municipality of/from Limburg to stay!"
+        "en": "We hope that the city will then become less busy."
       },
       {
         "nl": "De stadsbus gaat gratis rijden vanaf 1 september.",
-        "en": "Approximate English: The free to drive from September."
-      },
-      {
-        "nl": "Het gaat om deze dagen en tijden:",
-        "en": "Approximate English: The at/in order to these, this and"
-      },
-      {
-        "nl": "dag gratis busdienst",
-        "en": "Approximate English: Day free"
-      },
-      {
-        "nl": "vrijdag van 18.00 tot 22.00 uur (koopavond)",
-        "en": "Approximate English: Friday of/from until hour"
-      },
-      {
-        "nl": "zaterdag van 09.00 tot 17.00 uur",
-        "en": "Approximate English: Saturday of/from until hour"
-      },
-      {
-        "nl": "zondag van 12.00 tot 17.30 uur",
-        "en": "Approximate English: Sunday of/from until hour"
+        "en": "The city bus will start running for free from 1 September."
       },
       {
         "nl": "Maandag tot en met donderdag betaalt u de hele dag voor de stadsbus.",
-        "en": "Approximate English: Monday until and with Thursday you (formal) the day for/before the."
+        "en": "From Monday through Thursday, you pay for the city bus all day."
       },
       {
         "nl": "De stadsbus rijdt van 08.00 tot 22.00 uur.",
-        "en": "Approximate English: The of/from until hour."
+        "en": "The city bus runs from 08:00 to 22:00."
       },
       {
         "nl": "Op werkdagen vertrekt de bus elke twintig minuten vanaf het station.",
-        "en": "Approximate English: On/at the bus twenty from the railway station."
+        "en": "On weekdays, the bus leaves from the station every twenty minutes."
       },
       {
         "nl": "Op zaterdag rijdt de bus elke tien minuten.",
-        "en": "Approximate English: On/at Saturday the bus ten."
+        "en": "On Saturday, the bus runs every ten minutes."
       },
       {
         "nl": "Na 18.00 uur rijdt de bus nog elk kwartier.",
-        "en": "Approximate English: After hour the bus still each quarter."
+        "en": "After 18:00, the bus still runs every fifteen minutes."
       },
       {
         "nl": "Op zondag rijdt de bus elke dertig minuten.",
-        "en": "Approximate English: On/at Sunday the bus thirty."
-      },
-      {
-        "nl": "Waarom maakt de gemeente de stadsbus gratis?",
-        "en": "Approximate English: Why the municipality the free?"
-      },
-      {
-        "nl": "Carmen wil op maandag de stadsbus nemen.",
-        "en": "Approximate English: Carmen want on/at Monday the to take."
-      },
-      {
-        "nl": "Hoe vaak gaat de bus die dag?",
-        "en": "Approximate English: How often the bus that, those day?"
-      },
-      {
-        "nl": "Carmen wil op vrijdag gratis met de stadsbus.",
-        "en": "Approximate English: Carmen want on/at Friday free with the."
-      },
-      {
-        "nl": "Wanneer kan dat?",
-        "en": "Approximate English: When can that?"
-      },
-      {
-        "nl": "Lisa krijgt een brief van een buurman.",
-        "en": "Approximate English: Lisa gets a letter of/from a."
+        "en": "On Sunday, the bus runs every thirty minutes."
       }
     ]
   },
@@ -2738,108 +1946,56 @@
     "rawTitle": "Beste buurtbewoner",
     "sentences": [
       {
-        "nl": "Beste buurtbewoner,",
-        "en": "Approximate English: Beste"
-      },
-      {
         "nl": "Op 3 juli was er een buurtvergadering.",
-        "en": "Approximate English: On/at July was a."
+        "en": "There was a neighborhood meeting on 3 July."
       },
       {
         "nl": "We hebben toen een datum afgesproken voor een activiteit voor de hele buurt.",
-        "en": "Approximate English: We to have at that time (past) a for/before a for/before the."
+        "en": "We then agreed on a date for an activity for the whole neighborhood."
       },
       {
         "nl": "De activiteit is op zaterdag 16 september.",
-        "en": "Approximate English: The is on/at Saturday September."
+        "en": "The activity is on Saturday, 16 September."
       },
       {
         "nl": "Heb jij een goed idee voor een activiteit?",
-        "en": "Approximate English: Heb you a good idea for/before a?"
-      },
-      {
-        "nl": "Stuur het dan op!",
-        "en": "Approximate English: Stuur the then on/at!"
+        "en": "Do you have a good idea for an activity?"
       },
       {
         "nl": "Beschrijf jouw idee voor een activiteit.",
-        "en": "Approximate English: Beschrijf idea for/before a."
+        "en": "Describe your idea for an activity."
       },
       {
         "nl": "De activiteit moet leuk zijn voor buurtbewoners van alle leeftijden.",
-        "en": "Approximate English: The must funny are for/before of/from."
-      },
-      {
-        "nl": "Schrijf op wanneer jouw activiteit is: is het overdag, 's avonds of de hele dag?",
-        "en": "Approximate English: Schrijf on/at when is is the or the day?"
+        "en": "The activity must be fun for neighborhood residents of all ages."
       },
       {
         "nl": "Reken uit hoeveel de activiteit kost.",
-        "en": "Approximate English: Reken how much the."
+        "en": "Calculate how much the activity costs."
       },
       {
         "nl": "Vorig jaar kostte de activiteit € 25,- per persoon.",
-        "en": "Approximate English: Vorig the."
+        "en": "Last year, the activity cost €25 per person."
       },
       {
         "nl": "Veel mensen vonden dat te duur.",
-        "en": "Approximate English: Veel that expensive."
+        "en": "Many people thought that was too expensive."
       },
       {
         "nl": "Daarom mag de activiteit dit jaar maximaal € 15,- per persoon kosten.",
-        "en": "Approximate English: Therefore the this to cost."
+        "en": "That is why the activity may cost a maximum of €15 per person this year."
       },
       {
         "nl": "Als je ook wilt eten met zijn allen mag het iets duurder zijn.",
-        "en": "Approximate English: If/when you also want eat with are the something are."
+        "en": "If you also want to eat together, it may be a little more expensive."
       },
       {
         "nl": "Dan is het maximaal € 20,- per persoon.",
-        "en": "Approximate English: Then is the."
-      },
-      {
-        "nl": "Stuur jouw idee op naar boris.de.vries@mail.nl.",
-        "en": "Approximate English: Stuur idea on/at to. the."
+        "en": "Then it is a maximum of €20 per person."
       },
       {
         "nl": "Doe dat voor 1 augustus.",
-        "en": "Approximate English: Doe that for/before august."
-      },
-      {
-        "nl": "We bespreken alle ideeën in de buurtvergadering van 5 augustus.",
-        "en": "Approximate English: We in the of/from august."
-      },
-      {
-        "nl": "We hopen dat we uit veel ideeën kunnen kiezen!",
-        "en": "Approximate English: We that we to can to choose!"
-      },
-      {
-        "nl": "Wat is het belangrijkst aan de activiteit?",
-        "en": "Approximate English: What is the to/at the?"
-      },
-      {
-        "nl": "Lisa weet een leuke activiteit.",
-        "en": "Approximate English: Lisa a."
-      },
-      {
-        "nl": "Voor wanneer moet ze haar idee opsturen?",
-        "en": "Approximate English: For/before when must she/they hair idea?"
-      },
-      {
-        "nl": "Lisa heeft een idee voor een activiteit: spelletjes doen en pannenkoeken eten in het buurthuis.",
-        "en": "Approximate English: Lisa has a idea for/before a to do and eat in the."
-      },
-      {
-        "nl": "Hoe duur mag die activiteit maximaal zijn?",
-        "en": "Approximate English: How expensive that, those are?"
-      },
-      {
-        "nl": "Aziza wil graag in een winkel werken.",
-        "en": "Approximate English: Aziza want in a store work."
-      },
-      {
-        "nl": "Ze bekijkt een vacature op internet.",
-        "en": "Approximate English: She/they a vacancy on/at."
+        "en": "Do that before 1 August."
       }
     ]
   },
@@ -2853,92 +2009,44 @@
     "rawTitle": "Verkopers Gezocht",
     "sentences": [
       {
-        "nl": "VERKOPERS GEZOCHT",
-        "en": "Approximate English: VERKOPERS GEZOCHT"
-      },
-      {
-        "nl": "Nino's is een van de bekendste winkels voor kinderkleding in Amsterdam.",
-        "en": "Approximate English: Nino's is a of/from the for/before in Amsterdam."
+        "nl": "Nino’s is een van de bekendste winkels voor kinderkleding in Amsterdam.",
+        "en": "Nino’s is one of the best-known children’s clothing stores in Amsterdam."
       },
       {
         "nl": "Onze eerste winkel in het centrum was al snel een succes.",
-        "en": "Approximate English: Onze store in the was already fast a."
+        "en": "Our first store in the city center quickly became a success."
       },
       {
         "nl": "Ook onze tweede winkel in Amsterdam-Oost groeit hard.",
-        "en": "Approximate English: Also store in Amsterdam east hard, fast."
+        "en": "Our second store in Amsterdam East is also growing fast."
       },
       {
         "nl": "We zoeken daarom nog goede verkopers voor deze winkel.",
-        "en": "Approximate English: We to search therefore still for/before these, this store."
-      },
-      {
-        "nl": "Er zijn zelfs plannen voor een nieuwe winkel, in Amsterdam-Zuid!",
-        "en": "Approximate English: Er are for/before a store in Amsterdam south!"
+        "en": "That is why we are looking for more good sales assistants for this store."
       },
       {
         "nl": "Je helpt alle klanten vriendelijk en je zorgt dat iedereen tevreden naar huis gaat.",
-        "en": "Approximate English: You friendly and you that everybody satisfied to house."
+        "en": "You help all customers in a friendly way and make sure everyone goes home satisfied."
       },
       {
         "nl": "We zoeken verkopers die 16 tot 24 uur kunnen werken.",
-        "en": "Approximate English: We to search that, those until hour to can work."
+        "en": "We are looking for sales assistants who can work 16 to 24 hours."
       },
       {
-        "nl": "Je werkt minimaal op twee doordeweekse dagen (maandag - vrijdag).",
-        "en": "Approximate English: You on/at two Monday Friday."
+        "nl": "Je werkt minimaal op twee doordeweekse dagen.",
+        "en": "You work on at least two weekdays."
       },
       {
         "nl": "Je bent ook op zaterdag beschikbaar.",
-        "en": "Approximate English: You also on/at Saturday available."
+        "en": "You are also available on Saturday."
       },
       {
         "nl": "Wij zoeken iemand die flexibel is en hard wil werken.",
-        "en": "Approximate English: We to search somebody that, those is and hard, fast want work."
-      },
-      {
-        "nl": "Je hoeft niet veel van mode te weten, maar je moet wel van kleding houden.",
-        "en": "Approximate English: You not of/from to know but you must (confirmative) of/from clothing to hold, to keep."
-      },
-      {
-        "nl": "Ervaring met werken in een kledingwinkel is een voordeel, maar is niet verplicht.",
-        "en": "Approximate English: Experience with work in a clothes shop is a but is not."
+        "en": "We are looking for someone who is flexible and wants to work hard."
       },
       {
         "nl": "Het belangrijkste is dat je goed met kinderen kunt omgaan.",
-        "en": "Approximate English: The is that you good with can."
-      },
-      {
-        "nl": "Past dit bij jou?",
-        "en": "Approximate English: Past this at/with?"
-      },
-      {
-        "nl": "Dan ben jij de verkoper die we zoeken!",
-        "en": "Approximate English: Then you the salesman that, those we to search!"
-      },
-      {
-        "nl": "Solliciteer direct via het online formulier op onze website!",
-        "en": "Approximate English: Solliciteer the on/at!"
-      },
-      {
-        "nl": "Voor welke winkel zoekt Nino's nog mensen?",
-        "en": "Approximate English: For/before which store Nino's still?"
-      },
-      {
-        "nl": "Voor wanneer zoekt Nino's nog mensen?",
-        "en": "Approximate English: For/before when Nino's still?"
-      },
-      {
-        "nl": "Wat is het belangrijkste als Aziza bij Nino's wil werken?",
-        "en": "Approximate English: What is the if/when Aziza at/with Nino's want work?"
-      },
-      {
-        "nl": "Chang doet een taalcursus.",
-        "en": "Approximate English: Chang a."
-      },
-      {
-        "nl": "Hij leest een e-mail van een medecursist.",
-        "en": "Approximate English: He a of/from a."
+        "en": "The most important thing is that you can deal well with children."
       }
     ]
   },
@@ -2952,112 +2060,40 @@
     "rawTitle": "Hoi Chang",
     "sentences": [
       {
-        "nl": "Hoi Chang,",
-        "en": "Approximate English: Hi Chang"
-      },
-      {
         "nl": "Ik mail je, omdat wij maandag onze presentatie over een Nederlandse stad moeten geven.",
-        "en": "Approximate English: I you because we Monday about a Nederlandse city must to give."
-      },
-      {
-        "nl": "Eliza en Jamil doen hun presentatie donderdag over Utrecht.",
-        "en": "Approximate English: Eliza and Jamil to do their Thursday about Utrecht."
-      },
-      {
-        "nl": "En de presentatie van gisteren ging over Haarlem.",
-        "en": "Approximate English: And the of/from about Haarlem."
+        "en": "I am emailing you because we have to give our presentation about a Dutch city on Monday."
       },
       {
         "nl": "Welke stad kiezen wij?",
-        "en": "Approximate English: Which city to choose we?"
+        "en": "Which city shall we choose?"
       },
       {
         "nl": "Zullen wij iets over Groningen vertellen?",
-        "en": "Approximate English: Will we something about Groningen to tell?"
+        "en": "Shall we talk about Groningen?"
       },
       {
         "nl": "Ik heb daar een jaar gewoond, het is echt een leuke stad.",
-        "en": "Approximate English: I there a the is real a city."
-      },
-      {
-        "nl": "Ik heb al een paar foto's van mooie plekken gevonden.",
-        "en": "Approximate English: I already a of/from."
+        "en": "I lived there for a year; it is really a nice city."
       },
       {
         "nl": "Kun jij dan iets zoeken over de geschiedenis van de stad?",
-        "en": "Approximate English: Kun you then something to search about the of/from the city?"
-      },
-      {
-        "nl": "Dat vind jij niet erg, toch?",
-        "en": "Approximate English: That you not very?"
+        "en": "Could you then look for something about the history of the city?"
       },
       {
         "nl": "We moeten ook iets vertellen over de winkels en restaurants.",
-        "en": "Approximate English: We must also something to tell about the and."
+        "en": "We also have to say something about the shops and restaurants."
       },
       {
         "nl": "Daarover zoeken we dan wel samen informatie.",
-        "en": "Approximate English: Daarover to search we then (confirmative) together information."
+        "en": "We will look for information about that together."
       },
       {
         "nl": "Zullen we nog een keer afspreken?",
-        "en": "Approximate English: Will we still a?"
+        "en": "Shall we meet one more time?"
       },
       {
         "nl": "Dan kunnen we de presentatie oefenen.",
-        "en": "Approximate English: Then to can we the."
-      },
-      {
-        "nl": "Ik kan woensdag wel, bij mij thuis.",
-        "en": "Approximate English: I can Wednesday (confirmative) at/with home."
-      },
-      {
-        "nl": "Donderdag kan het niet bij mij.",
-        "en": "Approximate English: Thursday can the not at/with."
-      },
-      {
-        "nl": "Mijn man heeft dan bezoek.",
-        "en": "Approximate English: My man has then visit."
-      },
-      {
-        "nl": "We kunnen wel na de les in de mediatheek zitten.",
-        "en": "Approximate English: We to can (confirmative) after the lesson in the to sit."
-      },
-      {
-        "nl": "Vrijdag moet ik werken, dus dan kan ik helemaal niet.",
-        "en": "Approximate English: Friday must I work so then can I not."
-      },
-      {
-        "nl": "Laat je me weten wanneer jij kunt?",
-        "en": "Approximate English: Late you to know when you can?"
-      },
-      {
-        "nl": "Bedankt!",
-        "en": "Approximate English: Bedankt!"
-      },
-      {
-        "nl": "Groetjes,",
-        "en": "Approximate English: Groetjes"
-      },
-      {
-        "nl": "Over welke stad wil Sasha de presentatie geven?",
-        "en": "Approximate English: About which city want Sasha the to give?"
-      },
-      {
-        "nl": "Waarover wil Sasha samen met Chang informatie zoeken?",
-        "en": "Approximate English: Waarover want Sasha together with Chang information to search?"
-      },
-      {
-        "nl": "Wanneer kan Chang bij Sasha thuis oefenen voor de presentatie?",
-        "en": "Approximate English: When can Chang at/with Sasha home for/before the?"
-      },
-      {
-        "nl": "Selina werkt bij een schoonmaakbedrijf.",
-        "en": "Approximate English: Selina at/with a."
-      },
-      {
-        "nl": "Ze krijgt een e-mail van haar manager, Coen.",
-        "en": "Approximate English: She/they gets a of/from hair Coen."
+        "en": "Then we can practice the presentation."
       }
     ]
   },
@@ -3071,88 +2107,32 @@
     "rawTitle": "Beste Selina",
     "sentences": [
       {
-        "nl": "Beste Selina,",
-        "en": "Approximate English: Beste Selina"
-      },
-      {
-        "nl": "Ik wil je graag iets vragen.",
-        "en": "Approximate English: I want you something questions/ask."
-      },
-      {
         "nl": "Ik heb een probleem met het werkrooster.",
-        "en": "Approximate English: I a with the."
+        "en": "I have a problem with the work schedule."
       },
       {
         "nl": "Farouk belde net: hij heeft zijn arm gebroken.",
-        "en": "Approximate English: Farouk just he has are poor."
+        "en": "Farouk just called: he has broken his arm."
       },
       {
         "nl": "Hij moet volgende week twee dagen werken, maar dat gaat nu niet.",
-        "en": "Approximate English: He must next week two work but that now not."
+        "en": "He has to work two days next week, but that is not possible now."
       },
       {
         "nl": "Dus ik zoek mensen die extra dagen kunnen werken.",
-        "en": "Approximate English: So I that, those to can work."
+        "en": "So I am looking for people who can work extra days."
       },
       {
-        "nl": "Ik heb Rachel al gevraagd, maar zij moet drie dagen naar school.",
-        "en": "Approximate English: I Rachel already but she must three to school."
+        "nl": "Rachel kan maar één dag extra werken: op woensdag.",
+        "en": "Rachel can only work one extra day: on Wednesday."
       },
       {
-        "nl": "Zij kan daarom maar één dag extra werken: op woensdag.",
-        "en": "Approximate English: She can therefore but day work on/at Wednesday."
+        "nl": "Kiki werkt volgende week al vijf dagen.",
+        "en": "Kiki is already working five days next week."
       },
       {
-        "nl": "En Kiki werkt volgende week al vijf dagen.",
-        "en": "Approximate English: And Kiki next week already five."
-      },
-      {
-        "nl": "Dus wil jij volgende week misschien een extra dag werken, op dinsdag?",
-        "en": "Approximate English: So want you next week maybe a day work on/at Tuesday?"
-      },
-      {
-        "nl": "Het zou fijn zijn als je kunt.",
-        "en": "Approximate English: The are if/when you can."
-      },
-      {
-        "nl": "Laat je me dat vóór vrijdag even weten?",
-        "en": "Approximate English: Late you that Friday just (as) to know?"
-      },
-      {
-        "nl": "Hartelijke groet,",
-        "en": "Approximate English: Hartelijke"
-      },
-      {
-        "nl": "Coen de Weerdt",
-        "en": "Approximate English: Coen the Weerdt"
-      },
-      {
-        "nl": "Coen vraagt of Selina extra kan werken.",
-        "en": "Approximate English: Coen or Selina can work."
-      },
-      {
-        "nl": "Voor wie moet Selina werken?",
-        "en": "Approximate English: For/before who must Selina work?"
-      },
-      {
-        "nl": "Selina kan volgende week extra werken.",
-        "en": "Approximate English: Selina can next week work."
-      },
-      {
-        "nl": "Hoeveel dagen moet ze dan extra werken?",
-        "en": "Approximate English: How much must she/they then work?"
-      },
-      {
-        "nl": "Wanneer moet Selina iets laten weten aan Coen?",
-        "en": "Approximate English: When must Selina something to leave to know to/at Coen?"
-      },
-      {
-        "nl": "Abid gaat de cursus Houten Meubels Maken volgen.",
-        "en": "Approximate English: Abid the course Houten Meubels to make to follow."
-      },
-      {
-        "nl": "Hij leest informatie over de cursus.",
-        "en": "Approximate English: He information about the course."
+        "nl": "Wil jij volgende week misschien een extra dag werken, op dinsdag?",
+        "en": "Would you maybe like to work an extra day next week, on Tuesday?"
       }
     ]
   },
@@ -3166,92 +2146,44 @@
     "rawTitle": "Cursus Houten Meubels Maken",
     "sentences": [
       {
-        "nl": "Cursus Houten Meubels Maken",
-        "en": "Approximate English: Course Houten Meubels to make"
-      },
-      {
         "nl": "De cursus Houten Meubels Maken bestaat uit zes lessen.",
-        "en": "Approximate English: The course Houten Meubels to make six lessons."
+        "en": "The Wooden Furniture Making course consists of six lessons."
       },
       {
         "nl": "De eerste les is op 18 juni van 10.00 uur tot 15.00 uur.",
-        "en": "Approximate English: The lesson is on/at June of/from hour until hour."
+        "en": "The first lesson is on 18 June from 10:00 to 15:00."
       },
       {
         "nl": "Wij zorgen voor de lunch en koffie of thee.",
-        "en": "Approximate English: We for/before the lunch and coffee or tea."
+        "en": "We provide lunch and coffee or tea."
       },
       {
         "nl": "Het enige wat u moet meenemen, is het theorieboek van de cursus.",
-        "en": "Approximate English: The only what you (formal) must is the of/from the course."
-      },
-      {
-        "nl": "Dat kunt u online bestellen.",
-        "en": "Approximate English: That can you (formal)."
-      },
-      {
-        "nl": "Verder hebben wij alles wat u nodig hebt voor de cursus.",
-        "en": "Approximate English: Further to have we everything what you (formal) have for/before the course."
+        "en": "The only thing you need to bring is the theory book for the course."
       },
       {
         "nl": "U kunt uw eigen gereedschap dus thuis laten!",
-        "en": "Approximate English: You (formal) can your own tools so home to leave!"
+        "en": "So you can leave your own tools at home!"
       },
       {
         "nl": "In de eerste les leert u welke soorten hout er zijn en wat u daarmee kunt maken.",
-        "en": "Approximate English: In the lesson you (formal) which wood are and what you (formal) can to make."
-      },
-      {
-        "nl": "In de lessen daarna gaat u zelf werken met verschillende gereedschappen.",
-        "en": "Approximate English: In the lessons you (formal) work with."
+        "en": "In the first lesson, you learn what kinds of wood there are and what you can make with them."
       },
       {
         "nl": "In de tweede les begint u met het maken van een klein kistje.",
-        "en": "Approximate English: In the lesson you (formal) with the to make of/from a small."
-      },
-      {
-        "nl": "En in de lessen erna gaat u uw eigen meubelstuk ontwerpen en maken, bijvoorbeeld een stoel of tafeltje!",
-        "en": "Approximate English: And in the lessons you (formal) your own and to make for example a chair or!"
+        "en": "In the second lesson, you start making a small box."
       },
       {
         "nl": "Inschrijven voor de cursus kan via deze website.",
-        "en": "Approximate English: To subscribe for/before the course can these, this."
+        "en": "You can register for the course through this website."
       },
       {
-        "nl": "U kunt ook mailen naar meubelmakers@home.nl.",
-        "en": "Approximate English: You (formal) can also to."
+        "nl": "Kunt u niet naar de les komen of bent u later?",
+        "en": "Are you unable to come to class, or will you be late?"
       },
       {
-        "nl": "Hebt u zich ingeschreven, maar kunt u niet naar de les komen of bent u later?",
-        "en": "Approximate English: Have you (formal) but can you (formal) not to the lesson to come or you (formal)?"
-      },
-      {
-        "nl": "Bel dan onze receptie: 023-3691117.",
-        "en": "Approximate English: Bel then."
-      },
-      {
-        "nl": "Zij melden u dan af bij de docent.",
-        "en": "Approximate English: She you (formal) then at/with the."
-      },
-      {
-        "nl": "Wat moet Abid meenemen naar de cursus?",
-        "en": "Approximate English: What must Abid to the course?"
-      },
-      {
-        "nl": "Wat gaan de cursisten in de eerste les doen?",
-        "en": "Approximate English: What to go the in the lesson to do?"
-      },
-      {
-        "nl": "Abid kan niet op tijd in de les zijn.",
-        "en": "Approximate English: Abid can not on/at in the lesson are."
-      },
-      {
-        "nl": "Wat moet hij doen?",
-        "en": "Approximate English: What must he to do?"
-      },
-      {
-        "nl": "Mia krijgt een brief van de tandarts.",
-        "en": "Approximate English: Mia gets a letter of/from the dentist."
+        "nl": "Bel dan onze receptie.",
+        "en": "Then call our reception."
       }
     ]
   },
@@ -3265,96 +2197,32 @@
     "rawTitle": "Geachte mevrouw",
     "sentences": [
       {
-        "nl": "Geachte mevrouw Krüger,",
-        "en": "Approximate English: Geachte Krüger"
-      },
-      {
         "nl": "U hebt op dinsdag 4 oktober om 14.00 uur een afspraak bij tandarts Altman.",
-        "en": "Approximate English: You (formal) have on/at Tuesday October at/in order to hour a appointment at/with dentist Altman."
+        "en": "You have an appointment with dentist Altman on Tuesday, 4 October at 14:00."
       },
       {
         "nl": "Tandarts Altman stopt helaas per 1 oktober met werken bij onze praktijk.",
-        "en": "Approximate English: Dentist Altman October with work at/with."
+        "en": "Unfortunately, dentist Altman will stop working at our practice as of 1 October."
       },
       {
         "nl": "Hij gaat namelijk verhuizen.",
-        "en": "Approximate English: He to move."
+        "en": "He is moving."
       },
       {
         "nl": "Wij hebben nu een afspraak voor u gemaakt bij tandarts Jensma.",
-        "en": "Approximate English: We to have now a appointment for/before you (formal) at/with dentist Jensma."
+        "en": "We have now made an appointment for you with dentist Jensma."
       },
       {
         "nl": "Wilt u liever naar een andere tandarts?",
-        "en": "Approximate English: Want you (formal) to a dentist?"
-      },
-      {
-        "nl": "Dat kan.",
-        "en": "Approximate English: That can."
-      },
-      {
-        "nl": "Meld dit dan bij ons.",
-        "en": "Approximate English: Meld this then at/with us."
-      },
-      {
-        "nl": "Tandarts Diepenveen werkt nu ook bij onze praktijk.",
-        "en": "Approximate English: Dentist Diepenveen now also at/with."
-      },
-      {
-        "nl": "Hij is net klaar met studeren.",
-        "en": "Approximate English: He is just ready with."
-      },
-      {
-        "nl": "Tandarts De Groot kent u misschien al, maar hij zit op dit moment vol.",
-        "en": "Approximate English: Dentist the big you (formal) maybe already but he on/at this full."
+        "en": "Would you rather go to another dentist?"
       },
       {
         "nl": "Uw afspraak van 4 oktober is verplaatst naar een andere datum: 16 oktober.",
-        "en": "Approximate English: Your appointment of/from October is to a October."
+        "en": "Your appointment of 4 October has been moved to another date: 16 October."
       },
       {
-        "nl": "Het tijdstip van de afspraak (14.00 uur) blijft hetzelfde.",
-        "en": "Approximate English: The of/from the appointment hour."
-      },
-      {
-        "nl": "Kunt u dan niet?",
-        "en": "Approximate English: Can you (formal) then not?"
-      },
-      {
-        "nl": "Neem even contact met ons op.",
-        "en": "Approximate English: Neem just (as) with us on/at."
-      },
-      {
-        "nl": "Wij hopen dat we u voldoende hebben geïnformeerd.",
-        "en": "Approximate English: We that we you (formal) to have."
-      },
-      {
-        "nl": "Met vriendelijke groet,",
-        "en": "Approximate English: With"
-      },
-      {
-        "nl": "Jenny Koolstra",
-        "en": "Approximate English: Jenny Koolstra"
-      },
-      {
-        "nl": "Secretaresse",
-        "en": "Approximate English: Secretaresse"
-      },
-      {
-        "nl": "Waarom is de afspraak van Mia verplaatst?",
-        "en": "Approximate English: Why is the appointment of/from Mia?"
-      },
-      {
-        "nl": "Wanneer heeft Mia een nieuwe afspraak?",
-        "en": "Approximate English: When has Mia a appointment?"
-      },
-      {
-        "nl": "Lito werkt bij de gemeente.",
-        "en": "Approximate English: Lito at/with the municipality."
-      },
-      {
-        "nl": "Hij krijgt een e-mail van zijn baas, Pascal.",
-        "en": "Approximate English: He gets a of/from are boss Pascal."
+        "nl": "Het tijdstip van de afspraak blijft hetzelfde.",
+        "en": "The time of the appointment remains the same."
       }
     ]
   },
@@ -3368,92 +2236,36 @@
     "rawTitle": "Dag Lito",
     "sentences": [
       {
-        "nl": "Dag Lito,",
-        "en": "Approximate English: Day Lito"
-      },
-      {
         "nl": "Je hebt je zomervakantie nog niet aangevraagd.",
-        "en": "Approximate English: You have you still not."
+        "en": "You have not yet requested your summer holiday."
       },
       {
         "nl": "Wil je dat deze week doen?",
-        "en": "Approximate English: Want you that these, this week to do?"
+        "en": "Would you do that this week?"
       },
       {
         "nl": "Dan kan ik een nieuwe planning voor de vakantieperiode maken.",
-        "en": "Approximate English: Then can I a for/before the to make."
+        "en": "Then I can make a new schedule for the holiday period."
       },
       {
         "nl": "In het rooster kun je zien wie wanneer al vakantie heeft.",
-        "en": "Approximate English: In the you to see who when already holiday has."
+        "en": "In the schedule, you can see who already has holiday and when."
       },
       {
-        "nl": "week 30 week 31 week 32 week 33 week 34",
-        "en": "Approximate English: Week week week week week"
-      },
-      {
-        "nl": "Ronald x x",
-        "en": "Approximate English: Ronald"
-      },
-      {
-        "nl": "Suraya x x",
-        "en": "Approximate English: Suraya"
-      },
-      {
-        "nl": "Micha x x",
-        "en": "Approximate English: Micha"
-      },
-      {
-        "nl": "Vergeet ook de vakantieregels niet:",
-        "en": "Approximate English: Vergeet also the not"
-      },
-      {
-        "nl": "* Je mag maximaal twee weken vakantie opnemen.",
-        "en": "Approximate English: You two holiday."
+        "nl": "Je mag maximaal twee weken vakantie opnemen.",
+        "en": "You may take a maximum of two weeks of holiday."
       },
       {
         "nl": "Je mag twee weken achter elkaar vrij nemen, maar het mogen ook twee losse weken zijn.",
-        "en": "Approximate English: You two behind free to take but the also two are."
+        "en": "You may take two consecutive weeks off, but they may also be two separate weeks."
       },
       {
-        "nl": "* Er is altijd iemand nodig aan de balie én iemand om de telefoon op te nemen.",
-        "en": "Approximate English: Er is always somebody to/at the somebody at/in order to the telephone on/at to take."
+        "nl": "Er is altijd iemand nodig aan de balie én iemand om de telefoon op te nemen.",
+        "en": "Someone is always needed at the front desk and someone is needed to answer the phone."
       },
       {
-        "nl": "Er moeten dus altijd twee collega's aan het werk zijn.",
-        "en": "Approximate English: Er must so always two to/at the work are."
-      },
-      {
-        "nl": "* Zorg ervoor dat je geen belangrijk werk hebt in de weken waarin je vakantie wilt.",
-        "en": "Approximate English: Zorg that you no/not any important work have in the you holiday want."
-      },
-      {
-        "nl": "* Vanaf week 35 wordt het weer druk.",
-        "en": "Approximate English: From week the again busy."
-      },
-      {
-        "nl": "Dan moet iedereen weer aan het werk zijn.",
-        "en": "Approximate English: Then must everybody again to/at the work are."
-      },
-      {
-        "nl": "Vriendelijke groet,",
-        "en": "Approximate English: Vriendelijke"
-      },
-      {
-        "nl": "Waarom stuurt Pascal deze e-mail?",
-        "en": "Approximate English: Why Pascal these, this?"
-      },
-      {
-        "nl": "Waarom moeten er altijd twee collega's aan het werk zijn in de zomer?",
-        "en": "Approximate English: Why must always two to/at the work are in the summer?"
-      },
-      {
-        "nl": "Lito wil twee weken achter elkaar vrij.",
-        "en": "Approximate English: Lito want two behind free."
-      },
-      {
-        "nl": "Wanneer kan Lito het beste vakantie nemen?",
-        "en": "Approximate English: When can Lito the holiday to take?"
+        "nl": "Er moeten dus altijd twee collega’s aan het werk zijn.",
+        "en": "So there must always be two colleagues at work."
       }
     ]
   },
@@ -3467,92 +2279,36 @@
     "rawTitle": "Hallo allemaal",
     "sentences": [
       {
-        "nl": "Hallo allemaal,",
-        "en": "Approximate English: Hello all"
-      },
-      {
-        "nl": "Misschien hebben jullie het al gehoord: vanaf volgende maand is onze winkel langer open.",
-        "en": "Approximate English: Maybe to have you the already from next month is store."
+        "nl": "Vanaf volgende maand is onze winkel langer open.",
+        "en": "From next month, our store will be open longer."
       },
       {
         "nl": "We zijn dan iedere dag open tot 20.00 uur!",
-        "en": "Approximate English: We are then day until hour!"
+        "en": "We will then be open every day until 20:00!"
       },
       {
         "nl": "De reden voor deze verandering is simpel: andere winkels zijn ook langer open.",
-        "en": "Approximate English: The for/before these, this is are also."
+        "en": "The reason for this change is simple: other stores are also open longer."
       },
       {
         "nl": "Omdat we langer open zijn, zoek ik ook mensen die meer willen werken.",
-        "en": "Approximate English: Because we are I also that, those lake want work."
+        "en": "Because we are open longer, I am also looking for people who want to work more."
       },
       {
         "nl": "Laten jullie mij weten of jullie extra willen werken?",
-        "en": "Approximate English: To leave you to know or you want work?"
+        "en": "Will you let me know whether you want to work extra?"
       },
       {
         "nl": "Dat hoor ik graag vóór dinsdag.",
-        "en": "Approximate English: That I Tuesday."
-      },
-      {
-        "nl": "Dan kan ik het nieuwe rooster gaan maken.",
-        "en": "Approximate English: Then can I the to go to make."
-      },
-      {
-        "nl": "Je hoeft natuurlijk niet meer te werken, als je dat niet wilt.",
-        "en": "Approximate English: You of course not lake work if/when you that not want."
-      },
-      {
-        "nl": "Maandag ben ik in de winkel.",
-        "en": "Approximate English: Monday I in the store."
-      },
-      {
-        "nl": "Als jullie vragen hebben, kunnen jullie ze dan stellen.",
-        "en": "Approximate English: If/when you questions/ask to have to can you she/they then."
+        "en": "I would like to hear that before Tuesday."
       },
       {
         "nl": "Donderdag werkt het hele team.",
-        "en": "Approximate English: Thursday the."
+        "en": "The whole team works on Thursday."
       },
       {
         "nl": "Dan wil ik graag met jullie allemaal praten.",
-        "en": "Approximate English: Then want I with you all to talk."
-      },
-      {
-        "nl": "We kunnen dan het nieuwe rooster bespreken.",
-        "en": "Approximate English: We to can then the."
-      },
-      {
-        "nl": "We gaan dan ook samen kijken wie misschien andere taken moet doen.",
-        "en": "Approximate English: We to go then also together to look who maybe must to do."
-      },
-      {
-        "nl": "Dat is misschien wel nodig, als jullie werktijden veranderen.",
-        "en": "Approximate English: That is maybe (confirmative) if/when you to change."
-      },
-      {
-        "nl": "Groeten,",
-        "en": "Approximate English: Groeten"
-      },
-      {
-        "nl": "Wat moet Halil aan Theo laten weten?",
-        "en": "Approximate English: What must Halil to/at Theo to leave to know?"
-      },
-      {
-        "nl": "Theo wil volgende week met het hele team praten.",
-        "en": "Approximate English: Theo want next week with the to talk."
-      },
-      {
-        "nl": "Op welke dag is dat?",
-        "en": "Approximate English: On/at which day is that?"
-      },
-      {
-        "nl": "Iwan wil een cursus Techniek volgen.",
-        "en": "Approximate English: Iwan want a course Techniek to follow."
-      },
-      {
-        "nl": "Hij kijkt op de website van een cursuscentrum.",
-        "en": "Approximate English: He on/at the of/from a."
+        "en": "Then I would like to talk with all of you."
       }
     ]
   },
@@ -3566,112 +2322,40 @@
     "rawTitle": "Cursus Techniek",
     "sentences": [
       {
-        "nl": "Cursus Techniek",
-        "en": "Approximate English: Course Techniek"
-      },
-      {
         "nl": "In deze cursus leert u over verschillende machines.",
-        "en": "Approximate English: In these, this course you (formal) about."
+        "en": "In this course, you learn about different machines."
       },
       {
         "nl": "U leert hoe ze werken en hoe u ze kunt repareren.",
-        "en": "Approximate English: You (formal) how she/they work and how you (formal) she/they can."
+        "en": "You learn how they work and how you can repair them."
       },
       {
         "nl": "Deze cursus is vooral voor mensen die niet veel kennis hebben van techniek.",
-        "en": "Approximate English: These, this course is for/before that, those not acquaintance to have of/from."
+        "en": "This course is mainly for people who do not have much knowledge of technology."
       },
       {
         "nl": "Wilt u graag een baan in de techniek?",
-        "en": "Approximate English: Want you (formal) a job in the?"
+        "en": "Would you like a job in technology?"
       },
       {
         "nl": "Dan kunt u ook een opleiding Algemene Techniek bij ons volgen.",
-        "en": "Approximate English: Then can you (formal) also a education Algemene Techniek at/with us to follow."
+        "en": "Then you can also take a General Technology training program with us."
       },
       {
         "nl": "Daarvoor moet u wel al wat weten van techniek.",
-        "en": "Approximate English: Daarvoor must you (formal) (confirmative) already what to know of/from."
+        "en": "For that, you do need to already know something about technology."
       },
       {
         "nl": "De cursus bestaat uit theorielessen en praktijklessen.",
-        "en": "Approximate English: The course and."
+        "en": "The course consists of theory lessons and practical lessons."
       },
       {
         "nl": "U kunt een cursus volgen in Amsterdam of Den Haag.",
-        "en": "Approximate English: You (formal) can a course to follow in Amsterdam or Den Haag."
-      },
-      {
-        "nl": "Hieronder ziet u wanneer de lessen starten.",
-        "en": "Approximate English: Hieronder you (formal) when the lessons."
-      },
-      {
-        "nl": "Start Soort lessen Plaats",
-        "en": "Approximate English: Start Soort lessons place"
-      },
-      {
-        "nl": "11 september theorielessen Amsterdam of Den Haag",
-        "en": "Approximate English: September Amsterdam or Den Haag"
-      },
-      {
-        "nl": "25 september praktijklessen Amsterdam of Den Haag",
-        "en": "Approximate English: September Amsterdam or Den Haag"
-      },
-      {
-        "nl": "Wilt u zich inschrijven voor de cursus?",
-        "en": "Approximate English: Want you (formal) to subscribe for/before the course?"
-      },
-      {
-        "nl": "Ga dan naar www.techniekcursus.nl.",
-        "en": "Approximate English: Ga then to."
+        "en": "You can take a course in Amsterdam or The Hague."
       },
       {
         "nl": "U moet zich uiterlijk een maand van tevoren inschrijven.",
-        "en": "Approximate English: You (formal) must a month of/from to subscribe."
-      },
-      {
-        "nl": "U kunt op de website ook een folder downloaden.",
-        "en": "Approximate English: You (formal) can on/at the also a."
-      },
-      {
-        "nl": "Daarin ziet u een overzicht van al onze cursussen.",
-        "en": "Approximate English: Daarin you (formal) a of/from already."
-      },
-      {
-        "nl": "Hebt u vragen over de cursus of over de verschillende lessen?",
-        "en": "Approximate English: Have you (formal) questions/ask about the course or about the lessons?"
-      },
-      {
-        "nl": "Bel ons dan: 070 - 365 2211.",
-        "en": "Approximate English: Bel us then."
-      },
-      {
-        "nl": "Voor wie is de cursus Techniek bedoeld?",
-        "en": "Approximate English: For/before who is the course Techniek?"
-      },
-      {
-        "nl": "Iwan wil een cursus Techniek volgen.",
-        "en": "Approximate English: Iwan want a course Techniek to follow."
-      },
-      {
-        "nl": "Wat kan hij zelf kiezen?",
-        "en": "Approximate English: What can he to choose?"
-      },
-      {
-        "nl": "Iwan wil weten wat ze gaan doen in de praktijklessen.",
-        "en": "Approximate English: Iwan want to know what she/they to go to do in the."
-      },
-      {
-        "nl": "Wat moet hij doen?",
-        "en": "Approximate English: What must he to do?"
-      },
-      {
-        "nl": "Selem staat bij de bushalte.",
-        "en": "Approximate English: Selem at/with the."
-      },
-      {
-        "nl": "Hij leest een bericht over de bussen.",
-        "en": "Approximate English: He a message about the."
+        "en": "You must register no later than one month in advance."
       }
     ]
   },
@@ -3685,104 +2369,44 @@
     "rawTitle": "Andere routes bus 14 en bus 323",
     "sentences": [
       {
-        "nl": "Andere routes bus 14 en bus 323",
-        "en": "Approximate English: Andere bus and bus"
-      },
-      {
         "nl": "Bus 14 en bus 323 rijden de komende periode een andere route dan normaal.",
-        "en": "Approximate English: Bus and bus to drive the a then usually."
+        "en": "Bus 14 and bus 323 will run a different route than usual in the coming period."
       },
       {
         "nl": "Kijk in het schema wat er verandert.",
-        "en": "Approximate English: Kijk in the what."
+        "en": "Look at the schedule to see what changes."
       },
       {
-        "nl": "buslijn 323 14",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "startdatum 2 oktober 4 oktober",
-        "en": "Approximate English: October October"
-      },
-      {
-        "nl": "einddatum 18 oktober 9 oktober",
-        "en": "Approximate English: October October"
-      },
-      {
-        "nl": "reden De Binnensingel is twee weken dicht.",
-        "en": "Approximate English: The Binnensingel is two."
+        "nl": "De Binnensingel is twee weken dicht.",
+        "en": "The Binnensingel is closed for two weeks."
       },
       {
         "nl": "De gemeente werkt aan de weg.",
-        "en": "Approximate English: The municipality to/at the road."
+        "en": "The municipality is working on the road."
       },
       {
-        "nl": "Er is kermis in de binnenstad.",
-        "en": "Approximate English: Er is in the."
-      },
-      {
-        "nl": "verandering",
-        "en": "Approximate English: This is a sentence from the mock exam text."
-      },
-      {
-        "nl": "in de route De bus rijdt via een andere route en stopt niet bij de bushalte aan de Binnensingel.",
-        "en": "Approximate English: In the the bus a and not at/with the to/at the Binnensingel."
+        "nl": "De bus rijdt via een andere route en stopt niet bij de bushalte aan de Binnensingel.",
+        "en": "The bus runs via a different route and does not stop at the bus stop on the Binnensingel."
       },
       {
         "nl": "U kunt opstappen aan de Schaepmanlaan.",
-        "en": "Approximate English: You (formal) can to/at the Schaepmanlaan."
+        "en": "You can board at the Schaepmanlaan."
       },
       {
         "nl": "Daar is voor twee weken een extra bushalte.",
-        "en": "Approximate English: There is for/before two a."
+        "en": "There is an extra bus stop there for two weeks."
       },
       {
-        "nl": "De tijden blijven hetzelfde.",
-        "en": "Approximate English: The to stay."
+        "nl": "Er is kermis in de binnenstad.",
+        "en": "There is a fair in the city center."
       },
       {
         "nl": "De bus kan niet door het centrum rijden.",
-        "en": "Approximate English: The bus can not through the to drive."
-      },
-      {
-        "nl": "De bus komt dus niet bij de halte in de Kerkstraat.",
-        "en": "Approximate English: The bus so not at/with the stopping place in the Kerkstraat."
+        "en": "The bus cannot drive through the center."
       },
       {
         "nl": "U kunt bij de extra bushalte bij het tankstation in de Koopmansstraat opstappen.",
-        "en": "Approximate English: You (formal) can at/with the at/with the in the Koopmansstraat."
-      },
-      {
-        "nl": "De bus rijdt dan tijdelijk via de Hoofdstraat.",
-        "en": "Approximate English: The bus then the Hoofdstraat."
-      },
-      {
-        "nl": "Selem neemt bus 323 naar zijn werk.",
-        "en": "Approximate English: Selem bus to are work."
-      },
-      {
-        "nl": "Tot wanneer rijdt deze bus een andere route?",
-        "en": "Approximate English: Until when these, this bus a?"
-      },
-      {
-        "nl": "Waar is voor twee weken een bushalte voor bus 323?",
-        "en": "Approximate English: Where is for/before two a for/before bus?"
-      },
-      {
-        "nl": "De vrouw van Selem neemt elke dag bus 14.",
-        "en": "Approximate English: The woman of/from Selem day bus."
-      },
-      {
-        "nl": "Waarom rijdt die bus in oktober een andere route?",
-        "en": "Approximate English: Why that, those bus in October a?"
-      },
-      {
-        "nl": "Maya volgt een taalcursus.",
-        "en": "Approximate English: Maya a."
-      },
-      {
-        "nl": "Ze leest een briefje van het cursuscentrum.",
-        "en": "Approximate English: She/they a of/from the."
+        "en": "You can board at the extra bus stop near the gas station on Koopmansstraat."
       }
     ]
   },
@@ -3796,104 +2420,44 @@
     "rawTitle": "Verbouwing Kuijpergebouw",
     "sentences": [
       {
-        "nl": "Verbouwing Kuijpergebouw",
-        "en": "Approximate English: Verbouwing Kuijpergebouw"
-      },
-      {
         "nl": "Er komen nieuwe leslokalen in het Kuijpergebouw.",
-        "en": "Approximate English: Er to come in the Kuijpergebouw."
+        "en": "New classrooms are being added in the Kuijper Building."
       },
       {
         "nl": "De extra lokalen komen op de eerste verdieping.",
-        "en": "Approximate English: The to come on/at the."
+        "en": "The extra rooms will be on the first floor."
       },
       {
         "nl": "Daarom gaat deze verdieping vanaf volgende week maandag een paar dagen dicht.",
-        "en": "Approximate English: Therefore these, this from next week Monday a."
+        "en": "That is why this floor will be closed for a few days from next Monday."
       },
       {
         "nl": "Er zijn dan geen lessen in het Kuijpergebouw.",
-        "en": "Approximate English: Er are then no/not any lessons in the Kuijpergebouw."
+        "en": "There will then be no lessons in the Kuijper Building."
       },
       {
         "nl": "Ook het studiecentrum is op deze dagen gesloten.",
-        "en": "Approximate English: Also the is on/at these, this."
+        "en": "The study center is also closed on these days."
       },
       {
         "nl": "Studeren kan dan op de begane grond, in het computerlokaal.",
-        "en": "Approximate English: Studeren can then on/at the in the."
+        "en": "Studying is then possible on the ground floor, in the computer room."
       },
       {
         "nl": "De verbouwing duurt tot en met donderdag, daarna gaat het hele gebouw weer open.",
-        "en": "Approximate English: The until and with Thursday the building again."
+        "en": "The renovation lasts through Thursday; after that, the whole building will open again."
       },
       {
         "nl": "Vanaf vrijdag zijn er dus weer lessen op de eerste verdieping.",
-        "en": "Approximate English: From Friday are so again lessons on/at the."
+        "en": "So from Friday onward, there will be lessons on the first floor again."
       },
       {
-        "nl": "Ook de lessen van de nieuwe cursus 'Nederlands voor beginners' zijn dan in dit gebouw.",
-        "en": "Approximate English: Also the lessons of/from the course for/before are then in this building."
-      },
-      {
-        "nl": "Nieuwe locatie cursus 'Nederlands in de praktijk'",
-        "en": "Approximate English: Nieuwe course in the"
-      },
-      {
-        "nl": "De cursus 'Nederlands in de praktijk' kan door de verbouwing niet doorgaan in het Kuijpergebouw.",
-        "en": "Approximate English: The course in the can through the not to continue in the Kuijpergebouw."
-      },
-      {
-        "nl": "We willen geen lessen overslaan.",
-        "en": "Approximate English: We want no/not any lessons."
+        "nl": "De cursus Nederlands in de praktijk kan door de verbouwing niet doorgaan in het Kuijpergebouw.",
+        "en": "Because of the renovation, the course Dutch in Practice cannot take place in the Kuijper Building."
       },
       {
         "nl": "Daarom is de les van woensdag in het Marcellusgebouw aan de Molenstraat.",
-        "en": "Approximate English: Therefore is the lesson of/from Wednesday in the Marcellusgebouw to/at the Molenstraat."
-      },
-      {
-        "nl": "De laatste twee lessen zijn weer gewoon in het Kuijpergebouw.",
-        "en": "Approximate English: The two lessons are again usual in the Kuijpergebouw."
-      },
-      {
-        "nl": "Mail ze naar service@kuijpergb.nl.",
-        "en": "Approximate English: Mail she/they to."
-      },
-      {
-        "nl": "Vriendelijke groet,",
-        "en": "Approximate English: Vriendelijke"
-      },
-      {
-        "nl": "Het bestuur",
-        "en": "Approximate English: The"
-      },
-      {
-        "nl": "Maya wil volgende week woensdag studeren in het Kuijpergebouw.",
-        "en": "Approximate English: Maya want next week Wednesday in the Kuijpergebouw."
-      },
-      {
-        "nl": "Kan dat?",
-        "en": "Approximate English: Can that?"
-      },
-      {
-        "nl": "Vanaf wanneer is er volgende week weer les in het Kuijpergebouw?",
-        "en": "Approximate English: From when is next week again lesson in the Kuijpergebouw?"
-      },
-      {
-        "nl": "Maya volgt de cursus 'Nederlands in de praktijk'.",
-        "en": "Approximate English: Maya the course in the."
-      },
-      {
-        "nl": "Wat moet ze weten?",
-        "en": "Approximate English: What must she/they to know?"
-      },
-      {
-        "nl": "Ali werkt in een speelgoedwinkel.",
-        "en": "Approximate English: Ali in a."
-      },
-      {
-        "nl": "Hij krijgt een e-mail van zijn baas.",
-        "en": "Approximate English: He gets a of/from are boss."
+        "en": "That is why Wednesday’s lesson will be in the Marcellus Building on Molenstraat."
       }
     ]
   },
@@ -3907,136 +2471,60 @@
     "rawTitle": "Beste collega's",
     "sentences": [
       {
-        "nl": "Beste collega's,",
-        "en": "Approximate English: Beste"
-      },
-      {
         "nl": "Ik merk dat niet iedereen altijd goed de regels volgt.",
-        "en": "Approximate English: I that not everybody always good the."
+        "en": "I notice that not everyone always follows the rules properly."
       },
       {
         "nl": "Daarom leg ik ze nog een keer uit in deze e-mail.",
-        "en": "Approximate English: Therefore I she/they still a in these, this."
+        "en": "That is why I am explaining them again in this email."
       },
       {
         "nl": "Jullie nemen vaak samen pauze, maar dat is niet fijn voor onze klanten.",
-        "en": "Approximate English: You to take often together but that is not for/before."
+        "en": "You often take breaks together, but that is not nice for our customers."
       },
       {
         "nl": "Er zijn dan soms niet genoeg mensen in de winkel.",
-        "en": "Approximate English: Er are then sometimes not enough in the store."
+        "en": "Sometimes there are not enough people in the store then."
       },
       {
         "nl": "Wil je pauze nemen?",
-        "en": "Approximate English: Want you to take?"
+        "en": "Do you want to take a break?"
       },
       {
         "nl": "Kijk dan even of het niet te druk is.",
-        "en": "Approximate English: Kijk then just (as) or the not busy is."
-      },
-      {
-        "nl": "Let hier ook op bij elkaar.",
-        "en": "Approximate English: Let here also on/at at/with."
-      },
-      {
-        "nl": "Zie je collega's samen pauze nemen op een druk moment?",
-        "en": "Approximate English: Zie you together to take on/at a busy?"
-      },
-      {
-        "nl": "Zeg er dan wat van.",
-        "en": "Approximate English: Zeg then what of/from."
-      },
-      {
-        "nl": "Ik hoop dat jullie zelf kunnen bepalen wanneer jullie pauze kunnen nemen.",
-        "en": "Approximate English: I that you to can when you to can to take."
-      },
-      {
-        "nl": "Dat hoeven jullie mij niet te vragen.",
-        "en": "Approximate English: That you not questions/ask."
+        "en": "Then first check whether it is not too busy."
       },
       {
         "nl": "Ga niet stil zitten als er geen klanten in de winkel zijn.",
-        "en": "Approximate English: Ga not quiet to sit if/when no/not any in the store are."
+        "en": "Do not sit still when there are no customers in the store."
       },
       {
         "nl": "Zorg dat de winkel er altijd netjes uitziet.",
-        "en": "Approximate English: Zorg that the store always."
+        "en": "Make sure the store always looks tidy."
       },
       {
         "nl": "We bestellen iedere week nieuw speelgoed.",
-        "en": "Approximate English: We week."
-      },
-      {
-        "nl": "Dat kun je in de winkel zetten.",
-        "en": "Approximate English: That you in the store to put."
-      },
-      {
-        "nl": "Schoonmaken kan ook.",
-        "en": "Approximate English: Schoonmaken can also."
-      },
-      {
-        "nl": "Je kunt bijvoorbeeld de kasten schoonmaken.",
-        "en": "Approximate English: You can for example the."
+        "en": "We order new toys every week."
       },
       {
         "nl": "Stofzuigen doen we alleen als de winkel dicht is.",
-        "en": "Approximate English: Stofzuigen to do we alone if/when the store is."
+        "en": "We only vacuum when the store is closed."
       },
       {
-        "nl": "Tot slot: ik weet dat jullie graag met de klanten praten, en dat is prima.",
-        "en": "Approximate English: Until lock I that you with the to talk and that is."
-      },
-      {
-        "nl": "Het is fijn dat jullie vriendelijk tegen hen zijn.",
-        "en": "Approximate English: The is that you friendly against are."
+        "nl": "Ik weet dat jullie graag met de klanten praten, en dat is prima.",
+        "en": "I know that you like talking with the customers, and that is fine."
       },
       {
         "nl": "Maar jullie praten ook veel met elkaar.",
-        "en": "Approximate English: But you to talk also with."
+        "en": "But you also talk a lot with each other."
       },
       {
         "nl": "Té veel!",
-        "en": "Approximate English: Té!"
+        "en": "Too much!"
       },
       {
         "nl": "Daar ga ik meer op letten, want het is niet netjes.",
-        "en": "Approximate English: There I lake on/at because the is not."
-      },
-      {
-        "nl": "Klanten denken dan misschien dat jullie niet hard werken.",
-        "en": "Approximate English: Klanten to think then maybe that you not hard, fast work."
-      },
-      {
-        "nl": "Als jullie vragen hebben, hoor ik het graag.",
-        "en": "Approximate English: If/when you questions/ask to have I the."
-      },
-      {
-        "nl": "Ali wil pauze nemen.",
-        "en": "Approximate English: Ali want to take."
-      },
-      {
-        "nl": "Wat moet hij eerst doen?",
-        "en": "Approximate English: What must he to do?"
-      },
-      {
-        "nl": "De winkel is open, maar er zijn geen klanten.",
-        "en": "Approximate English: The store is but are no/not any."
-      },
-      {
-        "nl": "Wat moet Ali doen?",
-        "en": "Approximate English: What must Ali to do?"
-      },
-      {
-        "nl": "Waar gaat Hans meer op letten?",
-        "en": "Approximate English: Where Hans lake on/at?"
-      },
-      {
-        "nl": "Yuri doet een cursus Nederlands.",
-        "en": "Approximate English: Yuri a course Nederlands."
-      },
-      {
-        "nl": "Hij krijgt een e-mail van de docent.",
-        "en": "Approximate English: He gets a of/from the."
+        "en": "I am going to pay more attention to that, because it is not proper."
       }
     ]
   },
@@ -4050,124 +2538,48 @@
     "rawTitle": "Beste Yuri",
     "sentences": [
       {
-        "nl": "Beste Yuri,",
-        "en": "Approximate English: Beste Yuri"
-      },
-      {
         "nl": "Je bent nu al twee weken ziek.",
-        "en": "Approximate English: You now already two sick."
-      },
-      {
-        "nl": "Vervelend!",
-        "en": "Approximate English: Annoying!"
+        "en": "You have already been sick for two weeks."
       },
       {
         "nl": "Ik hoop dat je je snel beter voelt.",
-        "en": "Approximate English: I that you you fast better."
+        "en": "I hope you feel better soon."
       },
       {
         "nl": "Je hebt de spreektoets van 26 november gemist.",
-        "en": "Approximate English: You have the of/from November."
+        "en": "You missed the speaking test of 26 November."
       },
       {
         "nl": "Je moet deze toets nog wel doen.",
-        "en": "Approximate English: You must these, this still (confirmative) to do."
+        "en": "You still have to take this test."
       },
       {
         "nl": "Dat kan op 10 december om 10.00 uur.",
-        "en": "Approximate English: That can on/at December at/in order to hour."
+        "en": "That can be done on 10 December at 10:00."
       },
       {
-        "nl": "We bespreken de toets dan in de les daarna, op 15 december.",
-        "en": "Approximate English: We the then in the lesson on/at December."
+        "nl": "Je moet vier foto’s uitzoeken voor de toets.",
+        "en": "You must choose four photos for the test."
       },
       {
-        "nl": "Je moet vier foto's uitzoeken voor de toets.",
-        "en": "Approximate English: You must four for/before the."
+        "nl": "Tijdens de toets moet je over die foto’s vertellen.",
+        "en": "During the test, you have to talk about those photos."
       },
       {
-        "nl": "Je mag zelf weten wat voor foto's dit zijn.",
-        "en": "Approximate English: You to know what for/before this are."
+        "nl": "Neem de foto’s dus ook mee.",
+        "en": "So bring the photos with you."
       },
       {
-        "nl": "Tijdens de toets moet je over die foto's vertellen.",
-        "en": "Approximate English: Tijdens the must you about that, those to tell."
-      },
-      {
-        "nl": "Neem de foto's dus ook mee, de 10e.",
-        "en": "Approximate English: Neem the so also the."
-      },
-      {
-        "nl": "Het is slim om voor de toets nog te oefenen.",
-        "en": "Approximate English: The is clever at/in order to for/before the still."
-      },
-      {
-        "nl": "In het cursusboek staan een paar oefentoetsen.",
-        "en": "Approximate English: In the to stand a."
-      },
-      {
-        "nl": "Die kun je doen.",
-        "en": "Approximate English: That, those you to do."
-      },
-      {
-        "nl": "Je kunt ook nog even naar je portfolio kijken.",
-        "en": "Approximate English: You can also still just (as) to you to look."
-      },
-      {
-        "nl": "Daarin staan opdrachten die je al gedaan hebt.",
-        "en": "Approximate English: Daarin to stand that, those you already have."
-      },
-      {
-        "nl": "Die kunnen je helpen.",
-        "en": "Approximate English: That, those to can you help."
-      },
-      {
-        "nl": "Je mag trouwens geen woordenboek gebruiken tijdens de toets.",
-        "en": "Approximate English: You no/not any to use the."
+        "nl": "Je mag geen woordenboek gebruiken tijdens de toets.",
+        "en": "You may not use a dictionary during the test."
       },
       {
         "nl": "Als je de toets niet haalt, kun je nog een herkansing doen.",
-        "en": "Approximate English: If/when you the not you still a to do."
+        "en": "If you do not pass the test, you can still do a resit."
       },
       {
         "nl": "Dat kan maximaal één keer.",
-        "en": "Approximate English: That can."
-      },
-      {
-        "nl": "Als je de herkansing ook niet haalt, krijg je geen certificaat.",
-        "en": "Approximate English: If/when you the also not you no/not any."
-      },
-      {
-        "nl": "Wil je wel een certificaat?",
-        "en": "Approximate English: Want you (confirmative) a?"
-      },
-      {
-        "nl": "Dan moet je extra opdrachten voor je portfolio doen.",
-        "en": "Approximate English: Then must you for/before you to do."
-      },
-      {
-        "nl": "Je kunt dan alsnog je certificaat voor de cursus krijgen.",
-        "en": "Approximate English: You can then you for/before the course get."
-      },
-      {
-        "nl": "Met vriendelijke groeten,",
-        "en": "Approximate English: With"
-      },
-      {
-        "nl": "Joop van den Berg",
-        "en": "Approximate English: Joop of/from mountain"
-      },
-      {
-        "nl": "Wanneer kan Yuri de spreektoets inhalen?",
-        "en": "Approximate English: When can Yuri the?"
-      },
-      {
-        "nl": "Wat moet Yuri meenemen naar de spreektoets?",
-        "en": "Approximate English: What must Yuri to the?"
-      },
-      {
-        "nl": "Evita krijgt een folder in de brievenbus.",
-        "en": "Approximate English: Evita gets a in the."
+        "en": "That is possible only once at most."
       }
     ]
   },
@@ -4181,132 +2593,44 @@
     "rawTitle": "Kapper Style",
     "sentences": [
       {
-        "nl": "Kapper Style",
-        "en": "Approximate English: Hairdresser Style"
-      },
-      {
         "nl": "Kom naar Kapper Style!",
-        "en": "Approximate English: Kom to hairdresser Style!"
+        "en": "Come to Kapper Style!"
       },
       {
         "nl": "U vindt onze salon op Weststraat 7.",
-        "en": "Approximate English: You (formal) on/at Weststraat."
+        "en": "You can find our salon at Weststraat 7."
       },
       {
         "nl": "Wij knippen alleen op afspraak, dus u hoeft nooit te wachten!",
-        "en": "Approximate English: We to cut (with scissors) alone on/at appointment so you (formal) never to wait!"
+        "en": "We only cut hair by appointment, so you never have to wait!"
       },
       {
         "nl": "Wilt u een afspraak maken?",
-        "en": "Approximate English: Want you (formal) a appointment to make?"
-      },
-      {
-        "nl": "Bel dan naar 030 - 516 13 33.",
-        "en": "Approximate English: Bel then to."
-      },
-      {
-        "nl": "Wilt u advies over uw haar?",
-        "en": "Approximate English: Want you (formal) about your hair?"
-      },
-      {
-        "nl": "Wilt u bijvoorbeeld graag krullen?",
-        "en": "Approximate English: Want you (formal) for example?"
-      },
-      {
-        "nl": "Of heel kort haar?",
-        "en": "Approximate English: Or whole, very short hair?"
-      },
-      {
-        "nl": "Dat kan!",
-        "en": "Approximate English: That can!"
+        "en": "Would you like to make an appointment?"
       },
       {
         "nl": "Wij geven gratis advies bij elke afspraak.",
-        "en": "Approximate English: We to give free at/with appointment."
-      },
-      {
-        "nl": "Op onze website www.kapperstyle.nl staan foto's van onze klanten met hun oude en nieuwe kapsel.",
-        "en": "Approximate English: On/at. to stand of/from with their and."
-      },
-      {
-        "nl": "Daar zit misschien wel iets leuks voor u tussen.",
-        "en": "Approximate English: There maybe (confirmative) something for/before you (formal) between."
+        "en": "We give free advice with every appointment."
       },
       {
         "nl": "Elke maand geven we één gratis knipbeurt weg!",
-        "en": "Approximate English: Elke month to give we free road!"
+        "en": "Every month, we give away one free haircut!"
       },
       {
         "nl": "Wilt u ook kans maken?",
-        "en": "Approximate English: Want you (formal) also to make?"
+        "en": "Would you also like a chance to win?"
       },
       {
-        "nl": "Meld u dan aan voor onze nieuwsbrief via style@mail.nl.",
-        "en": "Approximate English: Meld you (formal) then to/at for/before."
+        "nl": "Meld u dan aan voor onze nieuwsbrief.",
+        "en": "Then sign up for our newsletter."
       },
       {
-        "nl": "dames knippen € 16,50 heren wassen & knippen € 18,00",
-        "en": "Approximate English: To cut (with scissors) to wash to cut (with scissors)"
+        "nl": "Kinderen wassen en knippen kost € 15,00.",
+        "en": "Children’s wash and haircut costs €15.00."
       },
       {
-        "nl": "dames wassen & knippen € 19,00 kinderen knippen € 12,50",
-        "en": "Approximate English: To wash to cut (with scissors) to cut (with scissors)"
-      },
-      {
-        "nl": "heren knippen € 15,50 kinderen wassen & knippen € 15,00",
-        "en": "Approximate English: To cut (with scissors) to wash to cut (with scissors)"
-      },
-      {
-        "nl": "zondag & maandag gesloten",
-        "en": "Approximate English: Sunday Monday"
-      },
-      {
-        "nl": "dinsdag & woensdag 08.30 - 18.00 uur",
-        "en": "Approximate English: Tuesday Wednesday hour"
-      },
-      {
-        "nl": "donderdag 08.30 - 20.00 uur",
-        "en": "Approximate English: Thursday hour"
-      },
-      {
-        "nl": "vrijdag 08.30 - 18.00 uur",
-        "en": "Approximate English: Friday hour"
-      },
-      {
-        "nl": "zaterdag 09.00 - 13.00 uur",
-        "en": "Approximate English: Saturday hour"
-      },
-      {
-        "nl": "Evita wil kans maken op een gratis knipbeurt.",
-        "en": "Approximate English: Evita want to make on/at a free."
-      },
-      {
-        "nl": "Wat kan ze dan doen?",
-        "en": "Approximate English: What can she/they then to do?"
-      },
-      {
-        "nl": "Evita heeft een dochtertje van zes jaar.",
-        "en": "Approximate English: Evita has a of/from six."
-      },
-      {
-        "nl": "Evita wil het haar van haar dochtertje laten wassen en knippen.",
-        "en": "Approximate English: Evita want the hair of/from hair to leave to wash and to cut (with scissors)."
-      },
-      {
-        "nl": "Hoeveel kost dat?",
-        "en": "Approximate English: How much that?"
-      },
-      {
-        "nl": "Evita moet elke dag tot 18.00 uur werken.",
-        "en": "Approximate English: Evita must day until hour work."
-      },
-      {
-        "nl": "Op welke dag kan ze naar Kapper Style?",
-        "en": "Approximate English: On/at which day can she/they to hairdresser Style?"
-      },
-      {
-        "nl": "Martin krijgt een e-mail van Sharon.",
-        "en": "Approximate English: Martin gets a of/from Sharon."
+        "nl": "Donderdag is de salon open tot 20.00 uur.",
+        "en": "On Thursday, the salon is open until 20:00."
       }
     ]
   },
@@ -4320,108 +2644,44 @@
     "rawTitle": "Hallo iedereen",
     "sentences": [
       {
-        "nl": "Hallo iedereen,",
-        "en": "Approximate English: Hello everybody"
-      },
-      {
         "nl": "Thomas en Janneke zijn op 20 april 25 jaar getrouwd.",
-        "en": "Approximate English: Thomas and Janneke are on/at April."
+        "en": "Thomas and Janneke will have been married for 25 years on 20 April."
       },
       {
-        "nl": "We hebben daarom een feest gepland met al hun vrienden, ook met jou dus.",
-        "en": "Approximate English: We to have therefore a party with already their also with so."
+        "nl": "We hebben daarom een feest gepland met al hun vrienden.",
+        "en": "That is why we have planned a party with all their friends."
       },
       {
         "nl": "Het feest is nog een verrassing voor ze!",
-        "en": "Approximate English: The party is still a for/before she/they!"
+        "en": "The party is still a surprise for them!"
       },
       {
-        "nl": "We vieren het op 24 april in café De Sjoes, vanaf 16.00 uur!",
-        "en": "Approximate English: We to celebrate the on/at April in the Sjoes from hour!"
+        "nl": "We vieren het op 24 april in café De Sjoes, vanaf 16.00 uur.",
+        "en": "We are celebrating it on 24 April at café De Sjoes, from 16:00."
       },
       {
         "nl": "Laat je voor 15 april aan mij weten of je kunt komen?",
-        "en": "Approximate English: Late you for/before April to/at to know or you can to come?"
+        "en": "Will you let me know before 15 April whether you can come?"
       },
       {
         "nl": "We verzamelen om 15.00 uur bij het zwembad.",
-        "en": "Approximate English: We at/in order to hour at/with the swimming pool."
+        "en": "We will gather at 15:00 at the swimming pool."
       },
       {
         "nl": "Zorg dat je er dan bent, want we willen dan een lied oefenen.",
-        "en": "Approximate English: Zorg that you then because we want then a."
-      },
-      {
-        "nl": "Dat gaan we voor Thomas en Janneke zingen op het feest.",
-        "en": "Approximate English: That to go we for/before Thomas and Janneke to sing on/at the party."
-      },
-      {
-        "nl": "Ik zorg voor de tekst.",
-        "en": "Approximate English: I for/before the."
-      },
-      {
-        "nl": "Om 15.30 uur ga ik Thomas en Janneke ophalen.",
-        "en": "Approximate English: At/in order to hour I Thomas and Janneke."
-      },
-      {
-        "nl": "De rest kan dan naar het café rijden.",
-        "en": "Approximate English: The can then to the to drive."
+        "en": "Make sure you are there then, because we want to practice a song then."
       },
       {
         "nl": "Ik vind het leuk om samen een cadeau te geven.",
-        "en": "Approximate English: I the funny at/in order to together a gift to give."
+        "en": "I think it would be nice to give a gift together."
       },
       {
         "nl": "We zouden natuurlijk geld kunnen geven, maar dat is wel een beetje saai.",
-        "en": "Approximate English: We of course money to can to give but that is (confirmative) a bit boring."
-      },
-      {
-        "nl": "Weet jij wat Thomas en Janneke leuk vinden?",
-        "en": "Approximate English: Weet you what Thomas and Janneke funny to find, to think (have an opinion)?"
-      },
-      {
-        "nl": "Ik weet dat ze van lezen houden, maar hun kast staat al vol boeken.",
-        "en": "Approximate English: I that she/they of/from reading to hold, to keep but their closet already full."
-      },
-      {
-        "nl": "Ik heb dus eigenlijk geen idee.",
-        "en": "Approximate English: I so no/not any idea."
+        "en": "Of course, we could give money, but that is a bit boring."
       },
       {
         "nl": "Weet jij misschien een leuk cadeau?",
-        "en": "Approximate English: Weet you maybe a funny gift?"
-      },
-      {
-        "nl": "Laat het me dan weten!",
-        "en": "Approximate English: Late the then to know!"
-      },
-      {
-        "nl": "Hopelijk tot dan!",
-        "en": "Approximate English: Hopelijk until then!"
-      },
-      {
-        "nl": "Groeten,",
-        "en": "Approximate English: Groeten"
-      },
-      {
-        "nl": "Tot wanneer kan Martin zich aanmelden voor het feest?",
-        "en": "Approximate English: Until when can Martin for/before the party?"
-      },
-      {
-        "nl": "Waarom moet Martin om 15.00 uur bij het zwembad zijn?",
-        "en": "Approximate English: Why must Martin at/in order to hour at/with the swimming pool are?"
-      },
-      {
-        "nl": "Wat wil Sharon als cadeau geven?",
-        "en": "Approximate English: What want Sharon if/when gift to give?"
-      },
-      {
-        "nl": "Bouchra werkt in een verpleeghuis.",
-        "en": "Approximate English: Bouchra in a."
-      },
-      {
-        "nl": "Ze krijgt een e-mail van haar baas.",
-        "en": "Approximate English: She/they gets a of/from hair boss."
+        "en": "Do you perhaps know a nice gift?"
       }
     ]
   },
@@ -4435,56 +2695,44 @@
     "rawTitle": "Beste collega's",
     "sentences": [
       {
-        "nl": "Beste collega's,",
-        "en": "Approximate English: Beste"
+        "nl": "Bouchra werkt in een verpleeghuis.",
+        "en": "Bouchra works in a nursing home."
       },
       {
         "nl": "De komende weken is er een ander werkrooster.",
-        "en": "Approximate English: The is a other."
+        "en": "There will be a different work schedule in the coming weeks."
       },
       {
         "nl": "Er zijn namelijk een paar feestdagen.",
-        "en": "Approximate English: Er are a."
+        "en": "This is because there are a few public holidays."
       },
       {
         "nl": "Een aantal mensen is dan vrij.",
-        "en": "Approximate English: A is then free."
+        "en": "A number of people will then have time off."
       },
       {
         "nl": "Sommigen hebben vakantie.",
-        "en": "Approximate English: Sommigen to have holiday."
+        "en": "Some people are on holiday."
       },
       {
         "nl": "Er werken dus minder mensen, maar het is wel druk.",
-        "en": "Approximate English: Er work so less but the is (confirmative) busy."
+        "en": "So fewer people are working, but it is busy."
       },
       {
         "nl": "De rest moet dus extra dagen werken.",
-        "en": "Approximate English: The must so work."
+        "en": "The rest therefore have to work extra days."
       },
       {
         "nl": "In het rooster zie je wanneer en op welke afdeling je moet werken.",
-        "en": "Approximate English: In the you when and on/at which you must work."
+        "en": "In the schedule, you can see when and in which department you have to work."
+      },
+      {
+        "nl": "[image/table not available in source text]",
+        "en": "[image/table not available in source text]"
       },
       {
         "nl": "Als je nog vragen hebt, kom dan naar me toe.",
-        "en": "Approximate English: If/when you still questions/ask have then to."
-      },
-      {
-        "nl": "Groeten,",
-        "en": "Approximate English: Groeten"
-      },
-      {
-        "nl": "Wat zegt Gerrie over de komende weken?",
-        "en": "Approximate English: What Gerrie about the?"
-      },
-      {
-        "nl": "Op welke afdeling moet Bouchra op 30 april werken?",
-        "en": "Approximate English: On/at which must Bouchra on/at April work?"
-      },
-      {
-        "nl": "Met wie werkt Bouchra op 5 mei samen op de afdeling?",
-        "en": "Approximate English: With who Bouchra on/at may together on/at the?"
+        "en": "If you still have questions, come to me."
       }
     ]
   }

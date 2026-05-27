@@ -546,11 +546,9 @@ def sentence_gloss(sentence):
             pieces.append(mini[low])
         elif raw[:1].isupper():
             pieces.append(raw)
-    if pieces:
-        text = " ".join(pieces)
-        text = re.sub(r"\s+([.!?])", r"\1", text)
-        return "Approximate English: " + text[:1].upper() + text[1:]
-    return "Approximate English: This is a sentence from the mock exam text."
+    # Do not emit guessed translations into learner-facing data. If a sentence
+    # is not present in the reviewed translation source, leave English blank.
+    return ""
 
 
 def looks_like_question_or_instruction(line):
