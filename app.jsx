@@ -286,6 +286,7 @@ function buildDictionary(words) {
     nu: { en: 'now', pos: 'adverb' },
     hier: { en: 'here', pos: 'adverb' },
     daar: { en: 'there', pos: 'adverb' },
+    opleidingsgids: { en: 'training guide / study guide', pos: 'noun' },
     waar: { en: 'where', pos: 'question word' },
     wat: { en: 'what', pos: 'question word' },
     wie: { en: 'who', pos: 'question word' },
@@ -342,6 +343,7 @@ function buildDictionary(words) {
   Object.entries(overrides).forEach(([key, value]) => {
     map[key] = { nl: key, headword: key, en: value.en, pos: value.pos, source: 'reading dictionary' };
   });
+  map.staan = { nl: 'staan', headword: 'staan', en: 'to stand / be listed / be written', pos: 'verb', source: 'reading dictionary' };
   return map;
 }
 
