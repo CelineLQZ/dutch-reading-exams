@@ -20,6 +20,25 @@ function shuffleArr(arr) {
   return a;
 }
 
+function useSwipeBack(onBack) {
+  const startRef = useRefS(null);
+  return {
+    onTouchStart: e => {
+      const t = e.touches?.[0];
+      if (t) startRef.current = { x: t.clientX, y: t.clientY };
+    },
+    onTouchEnd: e => {
+      const start = startRef.current;
+      const t = e.changedTouches?.[0];
+      startRef.current = null;
+      if (!start || !t) return;
+      const dx = t.clientX - start.x;
+      const dy = t.clientY - start.y;
+      if (Math.abs(dx) > 90 && Math.abs(dx) > Math.abs(dy) * 1.7) onBack?.();
+    }
+  };
+}
+
 /* ── Register ─────────────────────────────────────── */
 function RegisterScreen({ existingUsers, onCreate, onPickExisting }) {
   const [name, setName] = useStateS('');
@@ -463,6 +482,11 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
 }
 
 function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+  const dashboard = {
+    total: (stats?.total || 0) + (sentenceStats?.total || 0),
+    learned: (stats?.learned || 0) + (sentenceStats?.learned || 0),
+    review: (stats?.forgotten || 0) + (sentenceStats?.forgotten || 0)
+  };
   return (
     <div className="app-screen">
       <div className="topbar">
@@ -483,9 +507,9 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
         </div>
 
         <div className="stats-row">
-          <div className="stat-card brand"><div className="num">{stats.total}</div><div className="lbl">Words</div></div>
-          <div className="stat-card keep"><div className="num">{sentenceStats.total}</div><div className="lbl">Sentences</div></div>
-          <div className="stat-card forgot"><div className="num">{stats.forgotten + sentenceStats.forgotten}</div><div className="lbl">Review</div></div>
+          <div className="stat-card brand"><div className="num">{dashboard.total}</div><div className="lbl">Total</div></div>
+          <div className="stat-card keep"><div className="num">{dashboard.learned}</div><div className="lbl">Learned</div></div>
+          <div className="stat-card forgot"><div className="num">{dashboard.review}</div><div className="lbl">Review</div></div>
         </div>
 
         {continueSession && (
@@ -512,7 +536,7 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
             <div className="chev">›</div>
           </div>
           <div className="mode-card review" onClick={() => onPickContent('ar')}>
-            <div className="glyph">AR</div>
+            <div className="glyph">A2</div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="title">A2 Words</div>
               <div className="desc">{arStats?.total || 0} words from mock exams.</div>
@@ -534,6 +558,7 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
 }
 
 function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, wordDeck, prefs, onBack, onStartDeck }) {
+  const swipeBack = useSwipeBack(onBack);
   const isCommon = wordDeck === 'common';
   const primaryMode = isCommon ? 'lesson' : 'article';
   const primaryLabel = isCommon ? 'lesson' : 'article';
@@ -581,7 +606,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   };
 
   return (
-    <div className="app-screen">
+    <div className="app-screen" {...swipeBack}>
       <div className="topbar">
         <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
         <div className="mode-pill"><span className="dot"></span>{isCommon ? '1000 Words' : 'A2 Words'}</div>
@@ -668,6 +693,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
 }
 
 function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle }) {
+  const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [articleOrder, setArticleOrder] = useStateS('asc');
@@ -694,7 +720,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
   };
 
   return (
-    <div className="app-screen">
+    <div className="app-screen" {...swipeBack}>
       <div className="topbar">
         <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
         <div className="mode-pill"><span className="dot"></span>Sentences</div>

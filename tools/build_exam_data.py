@@ -515,15 +515,42 @@ def sentence_gloss(sentence):
         "les": "lesson", "lessen": "lessons", "brief": "letter", "e-mail": "email",
         "vragen": "questions/ask", "bellen": "call", "werken": "work", "leren": "learn",
         "helpen": "help", "informatie": "information", "gratis": "free", "ziek": "sick",
+        "harry": "Harry", "krijgt": "gets", "krijgen": "get", "mooi": "beautiful",
+        "cadeau": "gift", "ons": "us", "allemaal": "all", "ze": "she/they",
+        "was": "was", "handboek": "manual", "tuinieren": "gardening", "lezen": "reading",
+        "snijden": "cut", "vlees": "meat", "eten": "eat", "beter": "better",
     }
-    found = []
-    for tok in re.findall(r"[A-Za-zÀ-ÿ']+", sentence.lower()):
-        tok = tok.strip("'")
-        if tok in mini and tok not in [x[0] for x in found]:
-            found.append((tok, mini[tok]))
-    if not found:
-        return "Reading sentence from the mock exam. Tap Dutch words for meaning."
-    return "Key words: " + "; ".join(f"{nl} = {en}" for nl, en in found[:8]) + "."
+    try:
+        if not hasattr(sentence_gloss, "_old_words"):
+            sentence_gloss._old_words = json.loads(OLD_WORDS.read_text())
+        for item in sentence_gloss._old_words:
+            key = normalize_term(item.get("nl", ""))
+            en = re.sub(r"^(the|a|an)\s+", "", item.get("en", "").strip(), flags=re.I)
+            if key and en and key not in mini:
+                mini[key] = en
+    except Exception:
+        pass
+
+    pieces = []
+    for raw in re.findall(r"[A-Za-zÀ-ÿ']+|[0-9]+(?:[.:,][0-9]+)?|[.!?]", sentence):
+        low = raw.lower().strip("'")
+        if low in {".", "!", "?"}:
+            if pieces and not pieces[-1].endswith((".", "!", "?")):
+                pieces[-1] += low
+            continue
+        if low in {"de", "het"}:
+            pieces.append("the")
+        elif low == "een":
+            pieces.append("a")
+        elif low in mini:
+            pieces.append(mini[low])
+        elif raw[:1].isupper():
+            pieces.append(raw)
+    if pieces:
+        text = " ".join(pieces)
+        text = re.sub(r"\s+([.!?])", r"\1", text)
+        return "Approximate English: " + text[:1].upper() + text[1:]
+    return "Approximate English: This is a sentence from the mock exam text."
 
 
 def looks_like_question_or_instruction(line):
