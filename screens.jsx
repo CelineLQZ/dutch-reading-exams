@@ -745,7 +745,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   );
 }
 
-function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle }) {
+function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
@@ -781,7 +781,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
       </div>
       <div className="home pick-screen">
         {resume && (
-          <div className="continue-banner pick-continue" onClick={() => pick(resume)}>
+          <div className="continue-banner pick-continue" onClick={() => onContinueArticle ? onContinueArticle(resume, order) : pick(resume)}>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="label">Continue</div>
               <div className="title">{resume.title}</div>

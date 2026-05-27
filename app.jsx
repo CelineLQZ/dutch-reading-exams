@@ -433,6 +433,7 @@ function App() {
   const [route, setRoute]             = useState('register');
   const [resuming, setResuming]       = useState(false);
   const [sessionBackRoute, setSessionBackRoute] = useState('home');
+  const [sentenceResumeOffset, setSentenceResumeOffset] = useState(0);
   const [retryWords, setRetryWords]   = useState(null);
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -823,20 +824,33 @@ function App() {
         onStartArticle={(action, les, order) => {
           setResuming(false);
           clearSession();
+          setSentenceResumeOffset(0);
           setSessionBackRoute('sentences-pick');
           updatePrefs({ contentType: 'sentences', filterMode: 'article', les, order });
           setRoute(action === 'study' ? 'reading' : action === 'review' ? 'sentence-review' : 'sentence-test');
+        }}
+        onContinueArticle={(article, order) => {
+          const stats = article.stats || {};
+          const offset = Math.max(0, Math.min(stats.learned || 0, Math.max((stats.total || 1) - 1, 0)));
+          setResuming(false);
+          clearSession();
+          setSentenceResumeOffset(offset);
+          setSessionBackRoute('sentences-pick');
+          updatePrefs({ contentType: 'sentences', filterMode: 'article', les: article.les, order });
+          setRoute('reading');
         }}
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {
     const fullSentences = route === 'reading' ? orderedSentences : sentenceReviewQueue;
+    const offset = route === 'reading' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
+    const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
     screen = (
-      <DeckScreen mode={route} words={fullSentences} progressOffset={0}
+      <DeckScreen mode={route} words={sentences} progressOffset={offset}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
         exampleMode={prefs.exampleMode}
-        onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
+        onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
       />
     );
