@@ -528,10 +528,12 @@ function HomeScreen({ user, stats, sentenceStats, onPickContent, onSwitchUser, o
 function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onBack, onStartDeck }) {
   const allDeck = { id: 'all', label: 'all words', reviewCount: 0, patch: { filterMode: 'article', les: 'all', category: 'all' } };
   const [mode, setMode] = useStateS('all');
-  const [selected, setSelected] = useStateS(allDeck);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [articleOrder, setArticleOrder] = useStateS('asc');
-  const [articleLes, setArticleLes] = useStateS('');
+  const [allScope, setAllScope] = useStateS('all');
+  const firstArticle = articles.find(a => a.wordCount > 0);
+  const [articleLes, setArticleLes] = useStateS(String(firstArticle?.les || ''));
+  const [categoryId, setCategoryId] = useStateS('verb');
   const [wordLimit, setWordLimit] = useStateS(String(prefs.wordLimit || ''));
   const [lesFrom, setLesFrom] = useStateS(String(prefs.lesFrom || ''));
   const [lesTo, setLesTo] = useStateS(String(prefs.lesTo || ''));
@@ -545,23 +547,24 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
     .filter(a => a.wordCount > 0)
     .slice()
     .sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
-  const pick = deck => setSelected(deck);
+  const selectedArticle = articles.find(a => String(a.les) === String(articleLes)) || articleOptions[0];
+  const selectedCategory = categories.find(c => c.id === categoryId) || categories[0];
+  const allCustom = allScope === 'count'
+    ? { wordLimit, lesFrom: '', lesTo: '' }
+    : allScope === 'range'
+      ? { wordLimit: '', lesFrom, lesTo }
+      : { wordLimit: '', lesFrom: '', lesTo: '' };
+  const selected = mode === 'all'
+    ? { ...allDeck, label: allScope === 'count' && wordLimit ? `${wordLimit} words` : allScope === 'range' && (lesFrom || lesTo) ? `articles ${lesFrom || '1'}-${lesTo || '40'}` : 'all words' }
+    : mode === 'article' && selectedArticle
+      ? { id: `article-${selectedArticle.les}`, label: selectedArticle.title, reviewCount: 0, patch: { filterMode: 'article', les: selectedArticle.les, category: 'all' } }
+      : mode === 'category' && selectedCategory
+        ? { id: `category-${selectedCategory.id}`, label: selectedCategory.label, reviewCount: (statsByCategory[selectedCategory.id] || {}).forgotten || 0, patch: { filterMode: 'category', category: selectedCategory.id, les: 'all' } }
+        : null;
   const start = action => {
     if (!selected) return;
-    const custom = selected.id === 'all' ? { wordLimit, lesFrom, lesTo } : { wordLimit: '', lesFrom: '', lesTo: '' };
+    const custom = selected.id === 'all' ? allCustom : { wordLimit: '', lesFrom: '', lesTo: '' };
     onStartDeck(action, { ...selected.patch, ...custom, order });
-  };
-  const changeContent = () => {
-    setSelected(null);
-    setArticleLes('');
-  };
-  const pickArticleValue = value => {
-    const les = Number(value);
-    const article = articles.find(a => a.les === les);
-    setArticleLes(value);
-    if (article) {
-      pick({ id: `article-${article.les}`, label: article.title, reviewCount: 0, patch: { filterMode: 'article', les: article.les, category: 'all' } });
-    }
   };
 
   return (
@@ -573,45 +576,47 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
       </div>
       <div className="home pick-screen">
         <div className="seg">
-          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => { setMode('all'); pick(allDeck); }}>All</div>
-          <div className={'opt' + (mode === 'article' ? ' active' : '')} onClick={() => { setMode('article'); changeContent(); }}>Article</div>
-          <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => { setMode('category'); changeContent(); }}>Category</div>
+          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => setMode('all')}>All</div>
+          <div className={'opt' + (mode === 'article' ? ' active' : '')} onClick={() => setMode('article')}>Article</div>
+          <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => setMode('category')}>Category</div>
         </div>
 
-        {selected && (
-          <div className="selected-deck-pill">
-            Selected: <strong>{selected.label}</strong>
-            <button type="button" onClick={changeContent}>Change</button>
-          </div>
-        )}
-
-        {selected?.id === 'all' && (
+        {mode === 'all' && (
           <div className="custom-filter-card">
             <div className="section-h"><h3>Customize all words</h3></div>
-            <div className="inline-input-grid">
-              <label>
+            <label className="stacked-field">
+              <span>Scope</span>
+              <select className="select-input compact-select" value={allScope} onChange={e => setAllScope(e.target.value)}>
+                <option value="all">All words</option>
+                <option value="count">Choose by number of words</option>
+                <option value="range">Choose by article range</option>
+              </select>
+            </label>
+            {allScope === 'count' && (
+              <label className="stacked-field">
                 <span>Words</span>
                 <input className="number-input compact" inputMode="numeric" type="number" min="1" max="1200"
-                  placeholder="All" value={wordLimit} onChange={e => setWordLimit(e.target.value)} />
+                  placeholder="100" value={wordLimit} onChange={e => setWordLimit(e.target.value)} />
               </label>
-              <label>
-                <span>From article</span>
-                <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
-                  placeholder="1" value={lesFrom} onChange={e => setLesFrom(e.target.value)} />
-              </label>
-              <label>
-                <span>To article</span>
-                <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
-                  placeholder="40" value={lesTo} onChange={e => setLesTo(e.target.value)} />
-              </label>
-            </div>
+            )}
+            {allScope === 'range' && (
+              <div className="inline-input-grid two">
+                <label>
+                  <span>From article</span>
+                  <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
+                    placeholder="1" value={lesFrom} onChange={e => setLesFrom(e.target.value)} />
+                </label>
+                <label>
+                  <span>To article</span>
+                  <input className="number-input compact" inputMode="numeric" type="number" min="1" max="40"
+                    placeholder="40" value={lesTo} onChange={e => setLesTo(e.target.value)} />
+                </label>
+              </div>
+            )}
           </div>
         )}
 
-        <SessionModeList selected={selected} order={order} onOrder={setOrder}
-          reviewCount={selected?.reviewCount || 0} unit="words" onStart={start} />
-
-        {!selected && mode === 'article' ? (
+        {mode === 'article' && (
           <>
             <div className="section-h pick-heading-row">
               <h3>Pick article</h3>
@@ -620,32 +625,29 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, prefs, onB
                 {articleOrder === 'asc' ? '↑' : '↓'}
               </button>
             </div>
-            <select className="select-input" value={articleLes} onChange={e => pickArticleValue(e.target.value)}>
-              <option value="">Choose an article</option>
+            <select className="select-input" value={articleLes} onChange={e => setArticleLes(e.target.value)}>
               {articleOptions.map(a => (
                 <option key={a.les} value={a.les}>Article {a.les}: {a.title} · {a.wordCount} words</option>
               ))}
             </select>
           </>
-        ) : !selected && mode === 'category' ? (
+        )}
+
+        {mode === 'category' && (
           <>
             <div className="section-h"><h3>Pick category</h3></div>
-            <div className="pick-grid">
+            <select className="select-input" value={categoryId} onChange={e => setCategoryId(e.target.value)}>
               {categories.map(c => {
-                const s = statsByCategory[c.id] || { total: c.count, learned: 0, forgotten: 0 };
-                const pct = s.total ? Math.round((s.learned / s.total) * 100) : 0;
                 return (
-                  <div key={c.id} className={'pick-card' + (selected?.id === `category-${c.id}` ? ' selected' : '')}
-                    onClick={() => pick({ id: `category-${c.id}`, label: c.label, reviewCount: s.forgotten, patch: { filterMode: 'category', category: c.id, les: 'all' } })}>
-                    <div className="pick-card-title">{c.label}</div>
-                    <div className="pick-card-count">{c.count} words</div>
-                    <div className="mini-progress"><span style={{ width: `${pct}%` }}></span></div>
-                  </div>
+                  <option key={c.id} value={c.id}>{c.label} · {c.count} words</option>
                 );
               })}
-            </div>
+            </select>
           </>
-        ) : null}
+        )}
+
+        <SessionModeList selected={selected} order={order} onOrder={setOrder}
+          reviewCount={selected?.reviewCount || 0} unit="words" onStart={start} />
 
       </div>
     </div>

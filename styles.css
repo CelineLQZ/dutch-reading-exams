@@ -395,10 +395,14 @@ button { font-family: inherit; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
+.inline-input-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .inline-input-grid label {
   min-width: 0;
 }
-.inline-input-grid label span {
+.inline-input-grid label span,
+.stacked-field span {
   display: block;
   color: var(--ink-faint);
   font-size: 10px;
@@ -406,6 +410,16 @@ button { font-family: inherit; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 6px;
+}
+.stacked-field {
+  display: block;
+  margin-bottom: 10px;
+}
+.stacked-field:last-child {
+  margin-bottom: 0;
+}
+.compact-select {
+  margin-bottom: 0;
 }
 .number-input.compact {
   padding: 10px 9px;
