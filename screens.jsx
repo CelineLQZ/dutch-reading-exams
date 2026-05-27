@@ -482,7 +482,11 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
 }
 
 function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
-  const reviewTotal = (stats?.forgotten || 0) + (sentenceStats?.forgotten || 0);
+  const dashboardRows = [
+    { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0, tone: 'brand' },
+    { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0, tone: 'forgot' },
+    { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'keep' },
+  ];
   return (
     <div className="app-screen">
       <div className="topbar">
@@ -502,19 +506,18 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, onPickCo
           <div style={{ color: 'var(--ink-faint)', fontSize: 22 }}>⇅</div>
         </div>
 
-        <div className="stats-row">
-          <div className="stat-card brand">
-            <div className="num">{stats?.learned || 0}<span>/{stats?.total || 0}</span></div>
-            <div className="lbl">Words</div>
-          </div>
-          <div className="stat-card keep">
-            <div className="num">{sentenceStats?.learned || 0}<span>/{sentenceStats?.total || 0}</span></div>
-            <div className="lbl">Sentences</div>
-          </div>
-          <div className="stat-card forgot">
-            <div className="num">{reviewTotal}</div>
-            <div className="lbl">Review</div>
-          </div>
+        <div className="content-dashboard">
+          {dashboardRows.map(row => (
+            <div key={row.label} className="content-stat-row">
+              <div className={`content-stat-dot ${row.tone}`}></div>
+              <div className="content-stat-name">{row.label}</div>
+              <div className="content-stat-metrics">
+                <div><strong>{row.total}</strong><span>Total</span></div>
+                <div><strong>{row.learned}</strong><span>Learned</span></div>
+                <div><strong>{row.review}</strong><span>Review</span></div>
+              </div>
+            </div>
+          ))}
         </div>
 
         {continueSession && (
@@ -568,7 +571,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const primaryMode = isCommon ? 'lesson' : 'article';
   const primaryLabel = isCommon ? 'lesson' : 'article';
   const allDeck = { id: 'all', label: 'all words', reviewCount: 0, patch: { wordDeck, filterMode: primaryMode, les: 'all', category: 'all' } };
-  const [mode, setMode] = useStateS('all');
+  const [mode, setMode] = useStateS(primaryMode);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [itemOrder, setItemOrder] = useStateS('asc');
   const [allScope, setAllScope] = useStateS('all');
@@ -619,9 +622,9 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
       </div>
       <div className="home pick-screen">
         <div className="seg">
-          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => setMode('all')}>All</div>
           <div className={'opt' + (mode === primaryMode ? ' active' : '')} onClick={() => setMode(primaryMode)}>{isCommon ? 'Lesson' : 'Article'}</div>
           <div className={'opt' + (mode === 'category' ? ' active' : '')} onClick={() => setMode('category')}>Category</div>
+          <div className={'opt' + (mode === 'all' ? ' active' : '')} onClick={() => setMode('all')}>All</div>
         </div>
 
         {mode === 'all' && (
