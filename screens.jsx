@@ -530,19 +530,14 @@ function StudyListIcon() {
   );
 }
 
-function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+function HomeScreen({ user, stats, commonStats, sentenceStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   const primary = { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0 };
   const libraryRows = [
     { label: '1000 Dutch Words', total: primary.total, learned: primary.learned, review: primary.review, tone: 'keep', icon: <BookIcon />, action: 'common' },
-    { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0, tone: 'forgot', icon: <GradCapIcon />, action: 'ar' },
     { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
     { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
-  const continueDeck = continueSession?.words?.[0]?.deck === 'common'
-    ? primary
-    : continueSession?.words?.[0]?.deck === 'ar'
-      ? { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0 }
-      : primary;
+  const continueDeck = primary;
   const continueProgress = continueSession?.words?.length
     ? Math.round((continueSession.cursor / continueSession.words.length) * 100)
     : 0;

@@ -530,7 +530,7 @@ function App() {
     else if (name === activeUser) pickUser(left[0]);
   };
 
-  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'ar', filterMode:'article', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', exampleMode:'beginner', ...(userData?.prefs || {}) };
+  const prefs  = { order:'course', level:'a1', les:'all', category:'all', contentType:'words', wordDeck:'common', filterMode:'lesson', testCount:100, wordLimit:'', lesFrom:'', lesTo:'', exampleMode:'beginner', ...(userData?.prefs || {}) };
   const status = userData?.status || {};
   const studyList = userData?.studyList || [];
 
@@ -556,7 +556,7 @@ function App() {
       onViewList: () => setRoute('studylist')
     };
   }, [userData]);
-  const activeWordDeck = prefs.wordDeck || 'ar';
+  const activeWordDeck = prefs.wordDeck || 'common';
   const activeWords = useMemo(() => allWords.filter(w => (w.deck || 'ar') === activeWordDeck), [allWords, activeWordDeck]);
 
   const orderedWords = useMemo(() => {
@@ -750,6 +750,7 @@ function App() {
     const byKey = new Map(allWords.map((w, i) => [wordKey(w, i), w]));
     const words = s.words.map(k => byKey.get(k) || allWords.find(w=>w.nl===k)).filter(Boolean);
     if (!words.length) return null;
+    if (words[0]?.deck === 'ar') return null;
     if ((s.cursor || 0) >= words.length) return null;
     return { ...s, words };
   }, [userData?.session, allWords]);
@@ -801,7 +802,6 @@ function App() {
       <HomeScreen user={activeUser}
         stats={allWordStats}
         commonStats={commonWordStats}
-        arStats={arWordStats}
         sentenceStats={allSentenceStats}
         studyListCount={studyList.length}
         todayStats={todayStats}
@@ -815,9 +815,8 @@ function App() {
             setRoute('sentences-pick');
           } else if (type === 'studylist') {
             setRoute('studylist');
-          } else {
-            const deck = type === 'common' ? 'common' : 'ar';
-            updatePrefs({ contentType: 'words', wordDeck: deck, filterMode: deck === 'common' ? 'lesson' : 'article', les: 'all', category: 'all', wordLimit: '', lesFrom: '', lesTo: '' });
+          } else if (type === 'common') {
+            updatePrefs({ contentType: 'words', wordDeck: 'common', filterMode: 'lesson', les: 'all', category: 'all', wordLimit: '', lesFrom: '', lesTo: '' });
             setRoute('words-pick');
           }
         }}
