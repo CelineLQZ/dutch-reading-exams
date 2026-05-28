@@ -432,7 +432,7 @@ function LegacySentencesPickScreen({ readings, statsByArticle, onBack, onPickArt
   );
 }
 
-function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, unit = 'items', testCount = 100 }) {
+function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, unit = 'items', testCount = 100, testLabel = null }) {
   const [orderOpen, setOrderOpen] = useStateS(false);
   if (!selected) {
     return (
@@ -485,7 +485,7 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
             <div className="study-small-icon">✓</div>
             <div>
               <div className="study-small-title">Test</div>
-              <div className="study-small-desc">{testCount} questions</div>
+              <div className="study-small-desc">{testLabel || `${testCount} questions`}</div>
             </div>
           </div>
         </div>
@@ -537,7 +537,9 @@ function HomeScreen({ user, stats, commonStats, sentenceStats, studyListCount = 
     { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
     { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
-  const continueDeck = primary;
+  const continueDeck = continueSession?.words?.[0]?.type === 'sentence'
+    ? { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0 }
+    : primary;
   const continueProgress = continueSession?.words?.length
     ? Math.round((continueSession.cursor / continueSession.words.length) * 100)
     : 0;
@@ -656,7 +658,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
     const custom = selected.id === 'all' ? allCustom : { wordLimit: '', lesFrom: '', lesTo: '' };
     onStartDeck(action, { ...selected.patch, ...custom, order });
   };
-  const shownItems = showAllItems ? itemOptions : itemOptions.slice(0, 8);
+  const shownItems = itemOptions;
   const categoryShort = label => ({
     verb: 'Verbs',
     verbs: 'Verbs',
@@ -733,7 +735,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
                 {itemOrder === 'asc' ? 'A → Z' : 'Z → A'}⌄
               </button>
             </div>
-            <div className="content-list-card">
+            <div className="content-list-card compact-scroll-list lesson-scroll-list">
               {shownItems.map(a => {
                 const selectedRow = String(a.les) === String(itemLes);
                 return (
@@ -748,11 +750,6 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
                   </div>
                 );
               })}
-              {itemOptions.length > 8 && (
-                <button type="button" className="show-all-btn" onClick={() => setShowAllItems(v => !v)}>
-                  {showAllItems ? `Show fewer ${primaryLabel}s` : `Show all ${itemOptions.length} ${primaryLabel}s`}⌄
-                </button>
-              )}
             </div>
           </>
         )}
@@ -777,32 +774,37 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
         )}
 
         <SessionModeList selected={selected} order={order} onOrder={setOrder}
-          reviewCount={selected?.reviewCount || 0} unit="words" testCount={prefs.testCount || 100} onStart={start} />
+          reviewCount={selected?.reviewCount || 0} unit="words"
+          testLabel={`${selected?.total || 0} questions`} onStart={start} />
 
       </div>
     </div>
   );
 }
 
-function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle }) {
+function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession, onBack, onStartArticle, onContinueArticle }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [articleOrder, setArticleOrder] = useStateS('asc');
-  const [articleLes, setArticleLes] = useStateS(String(readings[0]?.les || ''));
+  const defaultArticleLes = prefs.les && prefs.les !== 'all' ? String(prefs.les) : String(readings[0]?.les || '');
+  const [articleLes, setArticleLes] = useStateS(defaultArticleLes);
   const rows = readings.map(r => {
     const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0, forgotten: 0 };
     return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
   });
   const articleOptions = rows.slice().sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
-  const resume = rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
+  const resumeArticle = continueSession?.mode === 'reading'
+    ? rows.find(r => r.les === continueSession.words?.[0]?.les)
+    : null;
+  const resume = resumeArticle || rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
   const effectiveArticle = (selected && rows.find(r => r.les === selected.les)) || rows.find(r => String(r.les) === String(articleLes)) || articleOptions[0];
   const effectiveSelected = effectiveArticle
-    ? { id: effectiveArticle.id, label: effectiveArticle.title, reviewCount: effectiveArticle.stats.forgotten, les: effectiveArticle.les }
+    ? { id: effectiveArticle.id, label: effectiveArticle.title, reviewCount: effectiveArticle.stats.forgotten, total: effectiveArticle.stats.total, les: effectiveArticle.les }
     : null;
   const pick = r => {
     setArticleLes(String(r.les));
-    setSelected({ id: r.id, label: r.title, reviewCount: r.stats.forgotten, les: r.les });
+    setSelected({ id: r.id, label: r.title, reviewCount: r.stats.forgotten, total: r.stats.total, les: r.les });
   };
   const start = action => effectiveSelected && onStartArticle(action, effectiveSelected.les, order);
   const pickArticleValue = value => {
@@ -831,17 +833,36 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
           </div>
         )}
 
-        <div className="section-h pick-heading-row">
+        <div className="section-h pick-heading-row compact-pick-heading">
           <h3>Pick article</h3>
+          <button type="button" className="list-sort-btn" onClick={() => setArticleOrder(o => o === 'asc' ? 'desc' : 'asc')}>
+            {articleOrder === 'asc' ? 'A → Z' : 'Z → A'}⌄
+          </button>
         </div>
-        <select className="select-input" value={String(effectiveSelected?.les || articleLes)} onChange={e => pickArticleValue(e.target.value)}>
-          {articleOptions.map(r => (
-            <option key={r.id} value={r.les}>{r.title} · {r.stats.total} sentences</option>
-          ))}
-        </select>
+        {effectiveArticle && (
+          <div className="content-list-card sentence-article-picker">
+            <div className="compact-scroll-list article-scroll-list">
+              {articleOptions.map(r => {
+                const selectedRow = String(r.les) === String(effectiveArticle.les);
+                return (
+                  <div key={r.id} className={'content-list-row' + (selectedRow ? ' selected' : '')} onClick={() => pick(r)}>
+                    <div className="content-list-index">{r.les}</div>
+                    <div className="content-list-main">
+                      <div className="content-list-title">{r.title}</div>
+                      <div className="content-list-meta">{r.stats.learned} / {r.stats.total} learned</div>
+                    </div>
+                    <div className="content-list-progress"><span style={{ width: `${r.pct}%` }}></span></div>
+                    <div className="content-list-chev">›</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
-          reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences" onStart={start} />
+          reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences"
+          testLabel={`${effectiveSelected?.total || 0} questions`} onStart={start} />
 
       </div>
     </div>
@@ -881,7 +902,7 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
   const grammarMode = words[0]?.pos === 'grammar' || mode.startsWith('grammar');
   const sentenceMode = words[0]?.type === 'sentence' || mode.startsWith('sentence') || mode === 'reading' || grammarMode;
   const modeLabel = sentenceMode
-    ? (grammarMode ? 'Grammar' : mode.includes('review') ? 'Sentence Review' : 'Sentences')
+    ? (grammarMode ? 'Grammar' : mode.includes('review') ? 'Sentence Review' : 'Sentences Study')
     : (mode === 'review' ? 'Review' : 'Learn');
   const handleSwipe = (i, dir, item) => {
     setCursor(i + 1);
@@ -1171,6 +1192,28 @@ function DoneScreen({ right, wrong, wrongWords, onExit, onRetry }) {
 }
 
 function StudyListScreen({ items, onBack, onRemove, onStudy }) {
+  const resolveItem = item => {
+    const resolved = window.lookupDutchWord?.(item.nl) || window.lookupDutchWord?.(item.headword) || null;
+    const hasOnlyGrammar = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i.test(String(item.en || ''));
+    if (resolved?.formMeaning) {
+      return {
+        ...item,
+        nl: item.nl,
+        headword: item.nl,
+        en: resolved.formMeaning,
+        pos: resolved.pos || item.pos
+      };
+    }
+    if (!resolved || (!hasOnlyGrammar && !resolved.baseForm)) return item;
+    return {
+      ...item,
+      nl: resolved.baseForm || resolved.headword || item.nl,
+      headword: resolved.baseForm || resolved.headword || item.headword,
+      en: resolved.en || item.en,
+      pos: resolved.pos || item.pos
+    };
+  };
+  const displayItems = items.map(resolveItem);
   return (
     <div className="app-screen studylist-screen">
       <div className="topbar">
@@ -1183,16 +1226,16 @@ function StudyListScreen({ items, onBack, onRemove, onStudy }) {
       <div className="home">
         <div className="studylist-title">Saved words</div>
         <div className="studylist-sub">
-          {items.length === 0
+          {displayItems.length === 0
             ? 'Tap “+ to deck” in the dictionary popup to save words here.'
-            : `${items.length} word${items.length === 1 ? '' : 's'} ready to study.`}
+            : `${displayItems.length} word${displayItems.length === 1 ? '' : 's'} ready to study.`}
         </div>
-        {items.length > 0 && (
+        {displayItems.length > 0 && (
           <div className="studylist-actions">
             <button className="primary-btn" onClick={onStudy}>Study these words</button>
           </div>
         )}
-        {items.length === 0 ? (
+        {displayItems.length === 0 ? (
           <div className="studylist-empty">
             <div className="big">📑</div>
             Your study list is empty.<br/>
@@ -1200,7 +1243,7 @@ function StudyListScreen({ items, onBack, onRemove, onStudy }) {
           </div>
         ) : (
           <div className="studylist-list">
-            {items.map(item => (
+            {displayItems.map(item => (
               <div key={item.nl} className="studylist-item">
                 <div className="body">
                   <div className="nl">{item.headword || item.nl}</div>

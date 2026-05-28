@@ -249,6 +249,52 @@ function normalizeDictKey(text) {
 
 function buildDictionary(words, externalDictionary = {}) {
   const skip = new Set(['de', 'het', 'een']);
+  const grammarOnlyRe = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i;
+  const attributiveOnlyRe = /\battributive\b|\bmasculine\b|\bfeminine\b|\bneuter\b|\bcomparative degree\b|\bsuperlative degree\b/i;
+  const isGrammarOnlyMeaning = text => grammarOnlyRe.test(String(text || ''));
+  const isAttributiveOnlyMeaning = text => attributiveOnlyRe.test(String(text || ''));
+  const isFormOnlyMeaning = text => isGrammarOnlyMeaning(text) || isAttributiveOnlyMeaning(text);
+  const infinitiveCandidates = (key, meaning = '') => {
+    const clean = normalizeDictKey(key);
+    const out = [];
+    const ofMatch = String(meaning || '').match(/\bof\s+([a-zà-ÿ'-]+)\b/i);
+    if (ofMatch) out.push(normalizeDictKey(ofMatch[1]));
+    if (clean.endsWith('t') && clean.length > 3) {
+      const stem = clean.slice(0, -1);
+      out.push(stem + 'en', stem + stem.slice(-1) + 'en');
+      if (/f$/.test(stem)) out.push(stem.replace(/f$/, 'v') + 'en');
+      if (/s$/.test(stem)) out.push(stem.replace(/s$/, 'z') + 'en');
+    }
+    if (clean.length > 3) out.push(clean + 'en');
+    if (clean.endsWith('de') || clean.endsWith('te')) {
+      const stem = clean.slice(0, -2);
+      out.push(stem + 'en');
+      if (/f$/.test(stem)) out.push(stem.replace(/f$/, 'v') + 'en');
+      if (/s$/.test(stem)) out.push(stem.replace(/s$/, 'z') + 'en');
+    }
+    if (clean.endsWith('den') || clean.endsWith('ten')) {
+      const stem = clean.slice(0, -3);
+      out.push(stem + 'en');
+      if (/f$/.test(stem)) out.push(stem.replace(/f$/, 'v') + 'en');
+      if (/s$/.test(stem)) out.push(stem.replace(/s$/, 'z') + 'en');
+    }
+    return [...new Set(out.filter(Boolean))];
+  };
+  const adjectiveCandidates = (key, meaning = '') => {
+    const clean = normalizeDictKey(key);
+    const out = [];
+    const ofMatch = String(meaning || '').match(/\bof\s+([a-zà-ÿ'-]+)\b/i);
+    if (ofMatch) out.push(normalizeDictKey(ofMatch[1]));
+    if (clean.endsWith('ste') && clean.length > 5) out.push(clean.slice(0, -3));
+    if (clean.endsWith('e') && clean.length > 4) {
+      const stem = clean.slice(0, -1);
+      out.push(stem);
+      if (/kk$/.test(stem)) out.push(stem.replace(/kk$/, 'k'));
+      if (/tt$/.test(stem)) out.push(stem.replace(/tt$/, 't'));
+      if (/ss$/.test(stem)) out.push(stem.replace(/ss$/, 's'));
+    }
+    return [...new Set(out.filter(Boolean))];
+  };
   const overrides = {
     weer: { en: 'again', pos: 'adverb' },
     dan: { en: 'then', pos: 'adverb' },
@@ -344,6 +390,12 @@ function buildDictionary(words, externalDictionary = {}) {
     zijn: { en: 'are / to be', pos: 'verb' },
     gaat: { en: 'goes / is going', pos: 'verb' },
     gaan: { en: 'to go', pos: 'verb' },
+    werk: { en: 'work / job', pos: 'noun (het)' },
+    bekende: { en: 'known / familiar', formMeaning: 'known / familiar', pos: 'adjective', headword: 'bekend', baseForm: 'bekend', formLabel: 'attributive -e form' },
+    bekendste: { en: 'known / familiar', formMeaning: 'best-known / most famous', pos: 'superlative adjective', headword: 'bekend', baseForm: 'bekend', formLabel: 'superlative -ste form' },
+    onze: { en: 'our', formMeaning: 'our', pos: 'possessive pronoun', headword: 'ons', baseForm: 'ons', formLabel: 'attributive possessive form' },
+    doordeweekse: { en: 'weekday / during the week', formMeaning: 'weekday / during the week', pos: 'adjective', headword: 'doordeweeks', baseForm: 'doordeweeks', formLabel: 'attributive -e form' },
+    belangrijkste: { en: 'important', formMeaning: 'most important', pos: 'superlative adjective', headword: 'belangrijk', baseForm: 'belangrijk', formLabel: 'superlative -ste form' },
     doen: { en: 'to do', pos: 'verb' },
     doet: { en: 'does', pos: 'verb' }
   };
@@ -372,7 +424,16 @@ function buildDictionary(words, externalDictionary = {}) {
     });
   });
   Object.entries(overrides).forEach(([key, value]) => {
-    map[key] = { nl: key, headword: key, en: value.en, pos: value.pos, source: 'reading dictionary' };
+    map[key] = {
+      nl: key,
+      headword: value.headword || key,
+      en: value.en,
+      pos: value.pos,
+      source: 'reading dictionary',
+      baseForm: value.baseForm || null,
+      formLabel: value.formLabel || null,
+      formMeaning: value.formMeaning || null
+    };
   });
   map.staan = { nl: 'staan', headword: 'staan', en: 'to stand / be listed / be written', pos: 'verb', source: 'reading dictionary' };
   const externalEntries = externalDictionary.entries || externalDictionary || {};
@@ -380,7 +441,7 @@ function buildDictionary(words, externalDictionary = {}) {
     const clean = normalizeDictKey(key);
     if (!clean || clean.length < 2 || skip.has(clean) || !value?.en) return;
     const externalMeaning = String(value.en || '');
-    const isInflectionOnly = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bparticiple\b/i.test(externalMeaning);
+    const isInflectionOnly = isFormOnlyMeaning(externalMeaning);
     if (map[clean] && isInflectionOnly) return;
     map[clean] = {
       nl: clean,
@@ -391,6 +452,28 @@ function buildDictionary(words, externalDictionary = {}) {
       source: value.source || 'external dictionary'
     };
   });
+  Object.entries(map).forEach(([key, entry]) => {
+    if (!isFormOnlyMeaning(entry.en)) return;
+    const candidates = isGrammarOnlyMeaning(entry.en) ? infinitiveCandidates(key, entry.en) : adjectiveCandidates(key, entry.en);
+    const baseKey = candidates.find(candidate => map[candidate] && !isFormOnlyMeaning(map[candidate].en));
+    if (!baseKey) return;
+    const base = map[baseKey];
+    map[key] = {
+      ...entry,
+      headword: base.headword || baseKey,
+      en: base.en,
+      pos: base.pos || entry.pos,
+      grammar: base.grammar || entry.grammar || null,
+      baseForm: base.headword || baseKey,
+      formMeaning: null,
+      formLabel: isAttributiveOnlyMeaning(entry.en)
+        ? (/ste|superlative/i.test(entry.en) ? 'superlative/attributive form' : 'attributive form')
+        : /past|participle/i.test(entry.en)
+        ? 'verb form'
+        : 'u/hij/zij/het-vorm, tegenwoordige tijd'
+    };
+  });
+  map.voor = { nl: 'voor', headword: 'voor', en: 'for / before / in front of', pos: 'preposition', source: 'reading dictionary' };
   return map;
 }
 
@@ -747,13 +830,17 @@ function App() {
   const continueSession = useMemo(() => {
     if (!userData?.session) return null;
     const s = userData.session;
-    const byKey = new Map(allWords.map((w, i) => [wordKey(w, i), w]));
-    const words = s.words.map(k => byKey.get(k) || allWords.find(w=>w.nl===k)).filter(Boolean);
+    const byKey = new Map([
+      ...allWords.map((w, i) => [wordKey(w, i), w]),
+      ...allSentences.map((w, i) => [wordKey(w, i), w])
+    ]);
+    const source = s.mode === 'reading' || s.mode === 'sentence-review' || s.mode === 'sentence-test' ? allSentences : allWords;
+    const words = s.words.map(k => byKey.get(k) || source.find(w=>w.nl===k)).filter(Boolean);
     if (!words.length) return null;
     if (words[0]?.deck === 'ar') return null;
     if ((s.cursor || 0) >= words.length) return null;
     return { ...s, words };
-  }, [userData?.session, allWords]);
+  }, [userData?.session, allWords, allSentences]);
 
   // Loading splash
   if (loading) {
@@ -852,6 +939,7 @@ function App() {
         readings={readings}
         statsByArticle={articleSentenceStats}
         prefs={prefs}
+        continueSession={continueSession}
         onBack={() => setRoute('home')}
         onStartArticle={(action, les, order) => {
           setResuming(false);
@@ -862,6 +950,14 @@ function App() {
           setRoute(action === 'study' ? 'reading' : action === 'review' ? 'sentence-review' : 'sentence-test');
         }}
         onContinueArticle={(article, order) => {
+          if (continueSession?.mode === 'reading' && continueSession.words?.[0]?.les === article.les) {
+            setResuming(true);
+            setSentenceResumeOffset(0);
+            setSessionBackRoute('sentences-pick');
+            updatePrefs({ contentType: 'sentences', filterMode: 'article', les: article.les, order });
+            setRoute('reading');
+            return;
+          }
           const stats = article.stats || {};
           const offset = Math.max(0, Math.min(stats.learned || 0, Math.max((stats.total || 1) - 1, 0)));
           setResuming(false);
@@ -874,8 +970,15 @@ function App() {
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {
-    const fullSentences = route === 'reading' ? orderedSentences : sentenceReviewQueue;
-    const offset = route === 'reading' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
+    const useSaved = resuming && continueSession?.mode === route;
+    const fullSentences = route === 'reading'
+      ? (useSaved ? continueSession.words : orderedSentences)
+      : (useSaved ? continueSession.words : sentenceReviewQueue);
+    const offset = useSaved
+      ? Math.min(continueSession.cursor || 0, fullSentences.length)
+      : route === 'reading'
+        ? Math.min(sentenceResumeOffset, fullSentences.length)
+        : 0;
     const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
     screen = (
       <DeckScreen mode={route} words={sentences} progressOffset={offset}
@@ -883,7 +986,7 @@ function App() {
         autoplay={settings.autoplay}
         exampleMode={prefs.exampleMode}
         onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
-        onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
+        onSwipe={(sentence, dir, cursor) => { recordSentenceSwipe(sentence, dir); saveSession(route, fullSentences, offset + cursor); }}
       />
     );
   } else if (route === 'learn' || route === 'review') {
@@ -913,9 +1016,15 @@ function App() {
           const byKey = {};
           allWords.forEach((w, i) => { byKey[(w.nl || '').toLowerCase().trim()] = w; });
           const words = studyList.map(item => {
-            const key = (item.nl || '').toLowerCase().trim();
+            const resolved = window.lookupDutchWord?.(item.nl) || window.lookupDutchWord?.(item.headword) || null;
+            const fixedItem = resolved?.formMeaning
+              ? { ...item, nl: item.nl, en: resolved.formMeaning, pos: resolved.pos || item.pos, headword: item.nl }
+              : resolved?.baseForm || /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i.test(String(item.en || ''))
+              ? { ...item, nl: resolved?.baseForm || resolved?.headword || item.nl, en: resolved?.en || item.en, pos: resolved?.pos || item.pos, headword: resolved?.baseForm || resolved?.headword || item.headword }
+              : item;
+            const key = (fixedItem.nl || '').toLowerCase().trim();
             return byKey[key] || {
-              nl: item.nl, en: item.en, pos: item.pos || 'word', ipa: '', les: 0,
+              nl: fixedItem.nl, en: fixedItem.en, pos: fixedItem.pos || 'word', ipa: '', les: 0,
               examples: {}, grammar: null, deck: 'studylist',
               _key: `studylist|${key}`
             };

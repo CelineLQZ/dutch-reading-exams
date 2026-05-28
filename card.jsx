@@ -61,6 +61,8 @@ function contextualDutchEntry(key, context) {
 
 const DUTCH_ZH_HINTS = {
   ontvangen: '收到 / 接收',
+  liggen: '位于 / 躺',
+  verzamelen: '收集 / 集合',
   krijgen: '得到 / 收到',
   geven: '给',
   gaan: '去 / 将要',
@@ -80,25 +82,39 @@ const DUTCH_ZH_HINTS = {
 };
 
 function isInflectionOnlyMeaning(text) {
-  return /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bparticiple\b/i.test(String(text || ''));
+  return /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b|\battributive\b|\bmasculine\b|\bfeminine\b|\bneuter\b|\bcomparative degree\b|\bsuperlative degree\b/i.test(String(text || ''));
 }
 
 function inferInfinitiveCandidates(key) {
   const candidates = [];
+  const ofMatch = String(arguments[1] || '').match(/\bof\s+([a-zà-ÿ'-]+)\b/i);
+  if (ofMatch) candidates.push(normalizeDictLookup(ofMatch[1]));
+  if (/attributive|masculine|feminine|neuter|comparative|superlative/i.test(String(arguments[1] || ''))) {
+    if (key.endsWith('ste') && key.length > 5) candidates.push(key.slice(0, -3));
+    if (key.endsWith('e') && key.length > 4) {
+      const stem = key.slice(0, -1);
+      candidates.push(stem);
+      if (/kk$/.test(stem)) candidates.push(stem.replace(/kk$/, 'k'));
+      if (/tt$/.test(stem)) candidates.push(stem.replace(/tt$/, 't'));
+      if (/ss$/.test(stem)) candidates.push(stem.replace(/ss$/, 's'));
+    }
+  }
   if (key.endsWith('t') && key.length > 3) {
     const stem = key.slice(0, -1);
     candidates.push(stem + 'en');
+    candidates.push(stem + stem.slice(-1) + 'en');
     if (/([aeiou])\1f$/.test(stem)) candidates.push(stem.replace(/([aeiou])\1f$/, '$1v') + 'en');
     if (/([aeiou])\1s$/.test(stem)) candidates.push(stem.replace(/([aeiou])\1s$/, '$1z') + 'en');
     if (/f$/.test(stem)) candidates.push(stem.replace(/f$/, 'v') + 'en');
     if (/s$/.test(stem)) candidates.push(stem.replace(/s$/, 'z') + 'en');
   }
+  if (key.length > 3) candidates.push(key + 'en');
   return candidates;
 }
 
 function enrichDictEntry(key, entry, dict) {
   if (!isInflectionOnlyMeaning(entry.en)) return entry;
-  const baseKey = inferInfinitiveCandidates(key).find(candidate => dict[candidate] && !isInflectionOnlyMeaning(dict[candidate].en));
+  const baseKey = inferInfinitiveCandidates(key, entry.en).find(candidate => dict[candidate] && !isInflectionOnlyMeaning(dict[candidate].en));
   if (!baseKey) return entry;
   const base = dict[baseKey];
   const zh = DUTCH_ZH_HINTS[baseKey];
@@ -120,7 +136,9 @@ function DictMeaning({ selected }) {
       {entry.baseForm ? (
         <>
           <span className="dict-main">{entry.baseForm} = {entry.en}{entry.zh ? ` (${entry.zh})` : ''}</span>
-          <span className="dict-note">{selected.token} = {entry.formLabel}</span>
+          <span className="dict-note">
+            {selected.token} = {entry.formMeaning ? `${entry.formMeaning} · ` : ''}{entry.formLabel}
+          </span>
         </>
       ) : (
         <>
@@ -185,11 +203,14 @@ function ClickableDutchText({ text }) {
     }
     return '';
   };
+  const selectedStudyKey = selected
+    ? (selected.entry.formMeaning ? selected.token : (selected.entry.headword || selected.token)).replace(/^(de|het|een)\s+/i, '')
+    : '';
 
   useEffectW(() => {
     if (!selected) return;
     const api = window.DutchStudyListAPI;
-    setInList(api ? api.isInList(selected.token) : false);
+    setInList(api ? api.isInList(selectedStudyKey) : false);
   }, [selected]);
 
   useEffectW(() => {
@@ -206,8 +227,8 @@ function ClickableDutchText({ text }) {
     e.stopPropagation();
     const api = window.DutchStudyListAPI;
     if (!api || !selected) return;
-    const displayWord = (selected.entry.headword || selected.token).replace(/^(de|het|een)\s+/i, '');
-    if (inList) { api.remove(selected.token); setInList(false); }
+    const displayWord = selectedStudyKey;
+    if (inList) { api.remove(displayWord); setInList(false); }
     else { api.add({ nl: displayWord, en: selected.entry.en, pos: selected.entry.pos, headword: selected.entry.headword }); setInList(true); }
   };
 
@@ -222,9 +243,9 @@ function ClickableDutchText({ text }) {
           <button
             key={i}
             type="button"
-            className="dict-word"
+            className={'dict-word' + (selected?.index === i ? ' active' : '')}
             onPointerDown={e => e.stopPropagation()}
-            onClick={e => { e.stopPropagation(); setSelected({ token: part, entry }); }}
+            onClick={e => { e.stopPropagation(); setSelected({ token: part, entry, index: i }); }}
           >
             {part}
           </button>
@@ -378,6 +399,17 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 
       {mode !== 'test' && (grammarForms.length > 0 || collocations.length > 0) && (
         <div className="grammar-panel sentence-grammar-panel" onPointerDown={e => e.stopPropagation()}>
+          {collocations.length > 0 && (
+            <div className={grammarForms.length > 0 ? 'sentence-collocation-block first' : ''}>
+              <div className="sentence-grammar-title">Collocation</div>
+              {collocations.map((f, i) => (
+                <div className="sentence-grammar-row collocation-row" key={`${f.label}-${i}`}>
+                  <span className="lab">{f.label}</span>
+                  <span className="form">{f.nl}</span>
+                </div>
+              ))}
+            </div>
+          )}
           {grammarForms.length > 0 && (
             <>
               <div className="sentence-grammar-head">
@@ -394,17 +426,6 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
                 </div>
               ))}
             </>
-          )}
-          {collocations.length > 0 && (
-            <div className={grammarForms.length > 0 ? 'sentence-collocation-block' : ''}>
-              <div className="sentence-grammar-title">Collocation</div>
-              {collocations.map((f, i) => (
-                <div className="sentence-grammar-row collocation-row" key={`${f.label}-${i}`}>
-                  <span className="lab">{f.label}</span>
-                  <span className="form">{f.nl}</span>
-                </div>
-              ))}
-            </div>
           )}
         </div>
       )}
@@ -595,3 +616,4 @@ window.SentenceCard = SentenceCard;
 window.TestCard  = TestCard;
 window.SpeakerIcon = SpeakerIcon;
 window.ChevDown  = ChevDown;
+window.lookupDutchWord = lookupDutchWord;
