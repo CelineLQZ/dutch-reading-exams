@@ -586,18 +586,26 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, studyLis
         <div className="section-h library-heading"><h3>Your library</h3></div>
         <div className="library-list">
           {libraryRows.map(row => (
-            <div key={row.label} className="library-row" onClick={() => onPickContent(row.action)}>
-              <div className={`library-icon ${row.tone}`}>{row.icon}</div>
-              <div className="library-body">
-                <div className="library-title">{row.label}</div>
-                <div className="library-meta">
-                  <span>{row.learned} / {row.total}</span>
-                  {row.saved ? <span>{row.total === 1 ? 'saved' : 'saved'}</span> : null}
-                  {!row.saved && row.review > 0 && <span className="library-review">{row.review} review</span>}
+            <React.Fragment key={row.label}>
+              <div className="library-row" onClick={() => onPickContent(row.action)}>
+                <div className={`library-icon ${row.tone}`}>{row.icon}</div>
+                <div className="library-body">
+                  <div className="library-title">{row.label}</div>
+                  <div className="library-meta">
+                    <span>{row.learned} / {row.total}</span>
+                    {row.saved ? <span>{row.total === 1 ? 'saved' : 'saved'}</span> : null}
+                    {!row.saved && row.review > 0 && <span className="library-review">{row.review} review</span>}
+                  </div>
                 </div>
+                <div className="library-chev">›</div>
               </div>
-              <div className="library-chev">›</div>
-            </div>
+              {row.action === 'common' && (
+                <div className="library-source-note">
+                  <span className="library-source-icon">🌐</span>
+                  <span>1000 Dutch Words uses public free course materials from <a href="https://learndutch.org" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>learndutch.org</a> by Bart de Pau.</span>
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>

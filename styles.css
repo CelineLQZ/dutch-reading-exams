@@ -334,6 +334,25 @@ button { font-family: inherit; }
   line-height: 1;
   flex-shrink: 0;
 }
+.library-source-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 0 4px 10px;
+  color: var(--ink-faint);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.library-source-icon {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-top: 1px;
+}
+.library-source-note a {
+  color: var(--brand);
+  text-decoration: none;
+}
 
 .stats-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 14px; }
 .stat-card {
