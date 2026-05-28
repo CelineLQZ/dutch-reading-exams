@@ -29,11 +29,107 @@ function normalizeDictLookup(text) {
     .trim();
 }
 
-function lookupDutchWord(token) {
+function lookupDutchWord(token, context = {}) {
   const dict = window.DutchDictionary || {};
   const key = normalizeDictLookup(token);
   if (!key) return null;
-  return dict[key] || dict[key.replace(/'s$/, '')] || null;
+  const contextual = contextualDutchEntry(key, context);
+  if (contextual) return contextual;
+  const entry = dict[key] || dict[key.replace(/'s$/, '')] || null;
+  return entry ? enrichDictEntry(key, entry, dict) : null;
+}
+
+function contextualDutchEntry(key, context) {
+  if (key === 'zijn') {
+    const prev = normalizeDictLookup(context.prevWord || '');
+    const next = normalizeDictLookup(context.nextWord || '');
+    const prepBefore = ['van', 'voor', 'met', 'bij', 'naar', 'aan', 'over', 'door', 'op', 'in'].includes(prev);
+    const startsPossessivePhrase = !prev && !!next;
+    if (prepBefore || startsPossessivePhrase) {
+      return {
+        nl: 'zijn',
+        headword: 'zijn',
+        en: 'his',
+        zh: '他的',
+        pos: 'possessive pronoun',
+        note: '这里不是动词 zijn/to be，而是物主代词：zijn collega = his colleague'
+      };
+    }
+  }
+  return null;
+}
+
+const DUTCH_ZH_HINTS = {
+  ontvangen: '收到 / 接收',
+  krijgen: '得到 / 收到',
+  geven: '给',
+  gaan: '去 / 将要',
+  doen: '做',
+  lezen: '读',
+  hebben: '有',
+  zijn: '是',
+  worden: '变成 / 被',
+  kunnen: '能够',
+  moeten: '必须',
+  willen: '想要',
+  helpen: '帮助',
+  zorgen: '照顾 / 确保',
+  werken: '工作',
+  komen: '来',
+  maken: '做 / 制作'
+};
+
+function isInflectionOnlyMeaning(text) {
+  return /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bparticiple\b/i.test(String(text || ''));
+}
+
+function inferInfinitiveCandidates(key) {
+  const candidates = [];
+  if (key.endsWith('t') && key.length > 3) {
+    const stem = key.slice(0, -1);
+    candidates.push(stem + 'en');
+    if (/([aeiou])\1f$/.test(stem)) candidates.push(stem.replace(/([aeiou])\1f$/, '$1v') + 'en');
+    if (/([aeiou])\1s$/.test(stem)) candidates.push(stem.replace(/([aeiou])\1s$/, '$1z') + 'en');
+    if (/f$/.test(stem)) candidates.push(stem.replace(/f$/, 'v') + 'en');
+    if (/s$/.test(stem)) candidates.push(stem.replace(/s$/, 'z') + 'en');
+  }
+  return candidates;
+}
+
+function enrichDictEntry(key, entry, dict) {
+  if (!isInflectionOnlyMeaning(entry.en)) return entry;
+  const baseKey = inferInfinitiveCandidates(key).find(candidate => dict[candidate] && !isInflectionOnlyMeaning(dict[candidate].en));
+  if (!baseKey) return entry;
+  const base = dict[baseKey];
+  const zh = DUTCH_ZH_HINTS[baseKey];
+  return {
+    ...entry,
+    headword: base.headword || baseKey,
+    en: base.en,
+    pos: base.pos || entry.pos,
+    baseForm: base.headword || baseKey,
+    formLabel: 'u/hij/zij/het-vorm, tegenwoordige tijd',
+    zh
+  };
+}
+
+function DictMeaning({ selected }) {
+  const entry = selected.entry;
+  return (
+    <span className="dict-meaning">
+      {entry.baseForm ? (
+        <>
+          <span className="dict-main">{entry.baseForm} = {entry.en}{entry.zh ? ` (${entry.zh})` : ''}</span>
+          <span className="dict-note">{selected.token} = {entry.formLabel}</span>
+        </>
+      ) : (
+        <>
+          <span className="dict-main">{entry.en}{entry.zh ? ` (${entry.zh})` : ''}</span>
+          {entry.note && <span className="dict-note">{entry.note}</span>}
+        </>
+      )}
+    </span>
+  );
 }
 
 function pickGrammarForm(forms, patterns) {
@@ -75,12 +171,35 @@ function compactWordGrammar(word) {
 function ClickableDutchText({ text }) {
   const [selected, setSelected] = useStateW(null);
   const [inList, setInList] = useStateW(false);
+  const wrapRef = useRefW(null);
   const parts = String(text || '').split(/([A-Za-zÀ-ÿ']+)/g);
+  const wordBefore = index => {
+    for (let i = index; i >= 0; i--) {
+      if (/^[A-Za-zÀ-ÿ']+$/.test(parts[i])) return parts[i];
+    }
+    return '';
+  };
+  const wordAfter = index => {
+    for (let i = index; i < parts.length; i++) {
+      if (/^[A-Za-zÀ-ÿ']+$/.test(parts[i])) return parts[i];
+    }
+    return '';
+  };
 
   useEffectW(() => {
     if (!selected) return;
     const api = window.DutchStudyListAPI;
     setInList(api ? api.isInList(selected.token) : false);
+  }, [selected]);
+
+  useEffectW(() => {
+    if (!selected) return;
+    const closeOutside = e => {
+      if (wrapRef.current?.contains(e.target)) return;
+      setSelected(null);
+    };
+    document.addEventListener('pointerdown', closeOutside, true);
+    return () => document.removeEventListener('pointerdown', closeOutside, true);
   }, [selected]);
 
   const handleAdd = e => {
@@ -93,9 +212,11 @@ function ClickableDutchText({ text }) {
   };
 
   return (
-    <span className="dict-text">
+    <span className="dict-text" ref={wrapRef}>
       {parts.map((part, i) => {
-        const entry = /^[A-Za-zÀ-ÿ']+$/.test(part) ? lookupDutchWord(part) : null;
+        const entry = /^[A-Za-zÀ-ÿ']+$/.test(part)
+          ? lookupDutchWord(part, { prevWord: wordBefore(i - 1), nextWord: wordAfter(i + 1) })
+          : null;
         if (!entry) return <React.Fragment key={i}>{part}</React.Fragment>;
         return (
           <button
@@ -111,7 +232,7 @@ function ClickableDutchText({ text }) {
       })}
       {selected && (
         <span className="dict-popover" onPointerDown={e => e.stopPropagation()}>
-          <span className="dict-meaning">{selected.entry.en}</span>
+          <DictMeaning selected={selected} />
           <span className="dict-popover-actions">
             <button type="button" className={'dict-add-btn' + (inList ? ' in-list' : '')} onClick={handleAdd}>
               {inList ? '✓ in deck' : '+ to deck'}
@@ -124,9 +245,89 @@ function ClickableDutchText({ text }) {
   );
 }
 
+function GrammarReferencePopover({ lang, onLangChange }) {
+  const [open, setOpen] = useStateW(false);
+  const [dragX, setDragX] = useStateW(0);
+  const wrapRef = useRefW(null);
+  const popoverRef = useRefW(null);
+  const dragRef = useRefW(null);
+  const reference = window.SENTENCE_GRAMMAR_DATA?.reference?.[lang] || [];
+
+  useEffectW(() => {
+    if (!open) return;
+    const closeOutside = e => {
+      if (wrapRef.current?.contains(e.target)) return;
+      if (popoverRef.current?.contains(e.target)) return;
+      setOpen(false);
+    };
+    document.addEventListener('pointerdown', closeOutside, true);
+    return () => document.removeEventListener('pointerdown', closeOutside, true);
+  }, [open]);
+
+  if (!reference.length) return null;
+
+  const startDrag = e => {
+    if (e.target.closest('button')) return;
+    dragRef.current = { x: e.clientX, start: dragX };
+    e.currentTarget.setPointerCapture?.(e.pointerId);
+  };
+  const moveDrag = e => {
+    if (!dragRef.current) return;
+    const next = dragRef.current.start + e.clientX - dragRef.current.x;
+    setDragX(Math.max(-220, Math.min(220, next)));
+  };
+  const endDrag = () => { dragRef.current = null; };
+  const popover = open && ReactDOM.createPortal(
+    <span
+      ref={popoverRef}
+      className="grammar-ref-popover"
+      style={{ '--grammar-ref-x': `${dragX}px` }}
+      onPointerDown={e => e.stopPropagation()}
+    >
+      <span
+        className="grammar-ref-popover-head"
+        onPointerDown={startDrag}
+        onPointerMove={moveDrag}
+        onPointerUp={endDrag}
+        onPointerCancel={endDrag}
+      >
+        <span>Grammar Type Reference</span>
+        <span className="grammar-lang-toggle compact">
+          <button type="button" className={lang === 'zh' ? 'active' : ''} onClick={e => { e.stopPropagation(); onLangChange('zh'); }}>中文</button>
+          <button type="button" className={lang === 'en' ? 'active' : ''} onClick={e => { e.stopPropagation(); onLangChange('en'); }}>EN</button>
+        </span>
+      </span>
+      <span className="grammar-ref-list">
+        {reference.map(item => (
+          <span className="grammar-ref-item" key={item.type}>
+            <span className="grammar-ref-type">{item.type}</span>
+            <span className="grammar-ref-rule">{item.rule}</span>
+            <span className="grammar-ref-text">{item.explanation}</span>
+            <span className="grammar-ref-pattern">{item.pattern}</span>
+          </span>
+        ))}
+      </span>
+    </span>,
+    document.body
+  );
+
+  return (
+    <span className="grammar-ref-wrap" ref={wrapRef} onPointerDown={e => e.stopPropagation()}>
+      <button
+        type="button"
+        className="grammar-ref-btn"
+        aria-label="Grammar type reference"
+        onClick={e => { e.stopPropagation(); setOpen(v => !v); setDragX(0); }}
+      >?</button>
+      {popover}
+    </span>
+  );
+}
+
 // ── Sentence card (Reading learn / review) ───────────────────────
 function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
   const playedRef = useRefW(null);
+  const [grammarLang, setGrammarLang] = useStateW('zh');
 
   useEffectW(() => {
     if (!isTop || !autoplay) return;
@@ -136,7 +337,9 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
     return () => clearTimeout(t);
   }, [isTop, word.nl, autoplay]);
 
-  const grammarForms = word.grammar?.forms || [];
+  const grammarEntry = word.grammar?.languages?.[grammarLang] || word.grammar?.languages?.zh || word.grammar?.languages?.en;
+  const grammarForms = grammarEntry?.forms || word.grammar?.forms || [];
+  const collocations = word.grammar?.collocations || [];
   const grammarMode = word.pos === 'grammar';
 
   return (
@@ -153,7 +356,10 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
           <span className="les-tag">{grammarMode ? 'Grammar' : `Article ${word.les}`}</span>
           <div className="sentence-number">{word.articleTitle || 'Reading'}</div>
         </div>
-        <span className="pos-tag">{grammarMode ? 'rule' : 'sentence'}</span>
+        <div className="sentence-card-tools">
+          {!grammarMode && <GrammarReferencePopover lang={grammarLang} onLangChange={setGrammarLang} />}
+          <span className="pos-tag">{grammarMode ? 'rule' : 'sentence'}</span>
+        </div>
       </div>
 
       <div className="sentence-study-card">
@@ -170,15 +376,36 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
         {mode !== 'test' && <div className="sentence-en large">{word.en}</div>}
       </div>
 
-      {mode !== 'test' && grammarForms.length > 0 && (
+      {mode !== 'test' && (grammarForms.length > 0 || collocations.length > 0) && (
         <div className="grammar-panel sentence-grammar-panel" onPointerDown={e => e.stopPropagation()}>
-          <div className="sentence-grammar-title">Grammar</div>
-          {grammarForms.map((f, i) => (
-            <div className="sentence-grammar-row" key={i}>
-              <span className="lab">{f.label}</span>
-              <span className="form">{f.nl}</span>
+          {grammarForms.length > 0 && (
+            <>
+              <div className="sentence-grammar-head">
+                <div className="sentence-grammar-title">Grammar</div>
+                <div className="grammar-lang-toggle">
+                  <button type="button" className={grammarLang === 'zh' ? 'active' : ''} onClick={e => { e.stopPropagation(); setGrammarLang('zh'); }}>中文</button>
+                  <button type="button" className={grammarLang === 'en' ? 'active' : ''} onClick={e => { e.stopPropagation(); setGrammarLang('en'); }}>EN</button>
+                </div>
+              </div>
+              {grammarForms.map((f, i) => (
+                <div className="sentence-grammar-row" key={i}>
+                  <span className="lab">{f.label}</span>
+                  <span className="form">{f.nl}</span>
+                </div>
+              ))}
+            </>
+          )}
+          {collocations.length > 0 && (
+            <div className={grammarForms.length > 0 ? 'sentence-collocation-block' : ''}>
+              <div className="sentence-grammar-title">Collocation</div>
+              {collocations.map((f, i) => (
+                <div className="sentence-grammar-row collocation-row" key={`${f.label}-${i}`}>
+                  <span className="lab">{f.label}</span>
+                  <span className="form">{f.nl}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
       )}
     </React.Fragment>

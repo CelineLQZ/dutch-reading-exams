@@ -1,5 +1,5 @@
 // Reading app service worker — cache-first shell, network-first data.
-const CACHE = 'inburgering-lezen-v43';
+const CACHE = 'inburgering-lezen-v54';
 const BASE = new URL('./', self.registration.scope).pathname;
 const SHELL = [
   './',
@@ -7,6 +7,7 @@ const SHELL = [
   './styles.css',
   './store.js',
   './tts.js',
+  './sentence-grammar-data.js',
   './swipe-deck.jsx',
   './card.jsx',
   './screens.jsx',

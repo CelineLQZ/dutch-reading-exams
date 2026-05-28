@@ -109,17 +109,15 @@ function flattenReadings(readings) {
   })));
 }
 
-const GRAMMAR_TYPE_REASONS = {
-  A: 'Q order: WH/yes-no trigger + fin.V before subj.; infinitive/participle may move later.',
-  B: 'Subclause marker pushes verb group toward clause end.',
-  C: 'Dutch places adv./neg./prep. phrase mid-sentence; EN often moves it later.',
-  D: 'Fronted element in pos.1; fin.V stays pos.2, so subj. follows.',
-  E: 'Sep. verb/particle pattern: fin.V part early, particle/infinitive part later.',
-  F: 'Fronted condition takes pos.1; main clause starts with fin.V + subj.',
-  G: 'Neg. command: imperative + niet.'
-};
+function normalizeSentenceGrammarKey(sentence) {
+  return String(sentence || '')
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
-const FIXED_COLLOCATION_PATTERNS = [
+const SENTENCE_COLLOCATION_PATTERNS = [
   [/tips?\s+om\b/i, 'tips om', 'tips for / tips to'],
   [/\bom\s+te\s+\w+/i, 'om te + verb', 'in order to / to'],
   [/\bgoed\s+te\s+leren\b/i, 'goed te leren', 'to study well'],
@@ -154,38 +152,31 @@ const FIXED_COLLOCATION_PATTERNS = [
   [/\brekening\s+houden\s+met\b/i, 'rekening houden met', 'to take into account']
 ];
 
+function analyzeSentenceCollocations(sentence) {
+  const seen = new Set();
+  return SENTENCE_COLLOCATION_PATTERNS
+    .filter(([pattern]) => pattern.test(sentence))
+    .map(([, label, en]) => ({ label, nl: en }))
+    .filter(item => {
+      const key = item.label.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
 function analyzeSentenceGrammar(sentence) {
-  const lower = sentence.toLowerCase();
-  const forms = [];
-  const add = (label, nl) => forms.push({ label, nl });
-
-  FIXED_COLLOCATION_PATTERNS.forEach(([pattern, label, en]) => {
-    if (pattern.test(sentence)) add(label, en);
-  });
-
-  if (/[?]$/.test(sentence.trim()) || /^(wat|waar|wanneer|waarom|hoe|welke|wie|aan wie)\b/i.test(sentence.trim())) {
-    add('Grammar Type A', GRAMMAR_TYPE_REASONS.A);
-  }
-  if (/\b(dat|als|wanneer|hoe|wat|die|of|omdat|zodat|voordat)\b/.test(lower)) {
-    add('Grammar Type B', GRAMMAR_TYPE_REASONS.B);
-  }
-  if (/\b(dan|daar|daarom|daarna|ook|nog|niet|geen|wel|zelf|thuis|samen|op|aan|bij|naar|met|voor|van|tot|in|uit|om|over)\b/.test(lower)) {
-    add('Grammar Type C', GRAMMAR_TYPE_REASONS.C);
-  }
-  if (/^(dan|daarom|daarna|ook|op|om|vandaag|morgen|volgende|in|na|voor|gelukkig|wel|meer|dit|de prijzen|auto’s die)\b/i.test(sentence.trim())) {
-    add('Grammar Type D', GRAMMAR_TYPE_REASONS.D);
-  }
-  if (/\b(mee|op|weg|aan|uit|door|thuis|terug|af)\b/.test(lower) && /\b(halen|nemen|melden|geven|doen|gaan|brengen|bezorgen|aantrekken|sluiten|slepen|denken|leggen|maken|gebruiken|opgeven|doorgeven)\b/.test(lower)) {
-    add('Grammar Type E', GRAMMAR_TYPE_REASONS.E);
-  }
-  if (/^als\b/i.test(sentence.trim()) || /^wordt u\b/i.test(sentence.trim())) {
-    add('Grammar Type F', GRAMMAR_TYPE_REASONS.F);
-  }
-  if (/^(leer|denk|gooi|ga|zeg|vertel|bel|neem|let)\b/i.test(sentence.trim()) && /\bniet\b/i.test(sentence)) {
-    add('Grammar Type G', GRAMMAR_TYPE_REASONS.G);
-  }
-
-  return forms.length ? { kind: 'sentence', forms } : null;
+  const data = window.SENTENCE_GRAMMAR_DATA?.sentences || {};
+  const key = normalizeSentenceGrammarKey(sentence);
+  const entry = data[key] || Object.entries(data).find(([candidate]) => normalizeSentenceGrammarKey(candidate) === key)?.[1];
+  const collocations = analyzeSentenceCollocations(sentence);
+  if (!entry && !collocations.length) return null;
+  return {
+    kind: 'sentence',
+    languages: entry || null,
+    forms: (entry?.zh || entry?.en || {}).forms || [],
+    collocations
+  };
 }
 
 function clampTestCount(value) {
@@ -388,6 +379,9 @@ function buildDictionary(words, externalDictionary = {}) {
   Object.entries(externalEntries).forEach(([key, value]) => {
     const clean = normalizeDictKey(key);
     if (!clean || clean.length < 2 || skip.has(clean) || !value?.en) return;
+    const externalMeaning = String(value.en || '');
+    const isInflectionOnly = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bparticiple\b/i.test(externalMeaning);
+    if (map[clean] && isInflectionOnly) return;
     map[clean] = {
       nl: clean,
       headword: value.headword || clean,
@@ -586,33 +580,6 @@ function App() {
   }, [activeWords, prefs.les, prefs.category, prefs.filterMode, prefs.order, prefs.wordLimit, prefs.lesFrom, prefs.lesTo]);
 
   const allSentences = useMemo(() => flattenReadings(readings), [readings]);
-  const grammarStudyItems = useMemo(() => (window.SENTENCE_GRAMMAR_REFERENCE || []).map(item => ({
-    nl: item.nl,
-    en: item.en,
-    ipa: '',
-    pos: 'grammar',
-    type: 'sentence',
-    les: item.type.replace('Type ', ''),
-    articleTitle: `${item.type} · ${item.rule}`,
-    sentenceNumber: 1,
-    examples: {},
-    grammar: { kind: 'sentence', forms: [{ label: item.type, nl: item.reason }] },
-    _key: `grammar-study|${item.type}`
-  })), []);
-  const grammarTestItems = useMemo(() => (window.SENTENCE_GRAMMAR_REFERENCE || []).map(item => ({
-    nl: item.testNl || item.nl,
-    en: `${item.type} — ${item.rule}`,
-    ipa: '',
-    pos: 'grammar',
-    type: 'sentence',
-    les: item.type.replace('Type ', ''),
-    articleTitle: 'Grammar test',
-    sentenceNumber: 1,
-    examples: {},
-    grammar: { kind: 'sentence', forms: [{ label: item.type, nl: item.reason }] },
-    _key: `grammar-test|${item.type}`
-  })), []);
-
   const orderedSentences = useMemo(() => {
     let list = allSentences;
     if (prefs.les !== 'all') list = list.filter(s => s.les === prefs.les);
@@ -905,21 +872,6 @@ function App() {
           updatePrefs({ contentType: 'sentences', filterMode: 'article', les: article.les, order });
           setRoute('reading');
         }}
-        onStartGrammar={action => {
-          setResuming(false);
-          clearSession();
-          setSessionBackRoute('sentences-pick');
-          setRoute(action === 'test' ? 'grammar-test' : 'grammar-study');
-        }}
-      />
-    );
-  } else if (route === 'grammar-study') {
-    screen = (
-      <DeckScreen mode="grammar-study" words={grammarStudyItems} progressOffset={0}
-        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
-        autoplay={settings.autoplay}
-        exampleMode={prefs.exampleMode}
-        onExit={() => setRoute(sessionBackRoute || 'sentences-pick')}
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {
@@ -1005,13 +957,6 @@ function App() {
         onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
         onExit={() => { clearSession(); setRoute(sessionBackRoute || 'home'); }}
         onComplete={wrongs => { setRetryWords(wrongs); setRoute('sentence-retry'); }}
-      />
-    );
-  } else if (route === 'grammar-test') {
-    screen = (
-      <TestScreen key="grammar-test" words={grammarTestItems} allWords={grammarTestItems} autoplay={settings.autoplay}
-        maxQuestions={null}
-        onExit={() => setRoute(sessionBackRoute || 'sentences-pick')}
       />
     );
   } else if (route === 'sentence-retry' && retryWords) {

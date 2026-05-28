@@ -518,12 +518,22 @@ function StudyListIcon() {
 }
 
 function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
-  const dashboardRows = [
-    { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0, tone: 'brand' },
-    { label: 'A2 Words',         total: arStats?.total     || 0, learned: arStats?.learned     || 0, review: arStats?.forgotten     || 0, tone: 'forgot' },
-    { label: 'Sentences',        total: sentenceStats?.total||0, learned: sentenceStats?.learned||0, review: sentenceStats?.forgotten||0, tone: 'keep' },
-    { label: 'My Study List',    total: studyListCount, learned: 0, review: 0, tone: 'accent' },
+  const primary = { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0 };
+  const libraryRows = [
+    { label: '1000 Dutch Words', total: primary.total, learned: primary.learned, review: primary.review, tone: 'keep', icon: <BookIcon />, action: 'common' },
+    { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0, tone: 'forgot', icon: <GradCapIcon />, action: 'ar' },
+    { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
+    { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
+  const continueDeck = continueSession?.words?.[0]?.deck === 'common'
+    ? primary
+    : continueSession?.words?.[0]?.deck === 'ar'
+      ? { label: 'A2 Words', total: arStats?.total || 0, learned: arStats?.learned || 0, review: arStats?.forgotten || 0 }
+      : primary;
+  const continueProgress = continueSession?.words?.length
+    ? Math.round((continueSession.cursor / continueSession.words.length) * 100)
+    : 0;
+
   return (
     <div className="app-screen">
       <div className="topbar">
@@ -540,70 +550,42 @@ function HomeScreen({ user, stats, commonStats, arStats, sentenceStats, studyLis
             <div className="hi">Hallo, {user}!</div>
             <div className="sw">Tap to switch user</div>
           </div>
-          <div style={{ color: 'var(--ink-faint)', fontSize: 22 }}>⇅</div>
-        </div>
-
-        <div className="content-dashboard">
-          {dashboardRows.map(row => (
-            <div key={row.label} className="content-stat-row">
-              <div className={`content-stat-dot ${row.tone}`}></div>
-              <div className="content-stat-name">{row.label}</div>
-              <div className="content-stat-metrics">
-                <div><strong>{row.total}</strong><span>Total</span></div>
-                <div><strong>{row.learned}</strong><span>Learned</span></div>
-                <div><strong>{row.review}</strong><span>Review</span></div>
-              </div>
-            </div>
-          ))}
+          <div className="home-switch-chev">⌄</div>
         </div>
 
         {continueSession && (
-          <div className="continue-banner" onClick={onContinue}>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="label">Continue</div>
-              <div className="title">Learning session</div>
-              <div className="progress">
-                <span style={{ width: `${Math.round((continueSession.cursor / continueSession.words.length) * 100)}%` }}></span>
+          <div className="home-continue-card" onClick={onContinue}>
+            <div className="home-continue-copy">
+              <div className="home-continue-label">Pick up where you left off</div>
+              <div className="home-continue-title">{continueDeck.label}</div>
+              <div className="home-continue-meta">
+                <span>{continueDeck.learned} learned</span>
+                {continueDeck.review > 0 && <span className="home-review-pill">{continueDeck.review} due for review</span>}
+              </div>
+              <div className="home-continue-progress" aria-hidden="true">
+                <span style={{ width: `${continueProgress}%` }}></span>
               </div>
             </div>
-            <div className="play"><PlayIcon /></div>
+            <div className="home-continue-play"><PlayIcon /></div>
           </div>
         )}
 
-        <div className="section-h"><h3>Choose content</h3></div>
-        <div className="mode-list">
-          <div className="mode-card learn" onClick={() => onPickContent('common')}>
-            <div className="glyph"><BookIcon /></div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">1000 Dutch Words</div>
-              <div className="desc">Most common Dutch words</div>
+        <div className="section-h library-heading"><h3>Your library</h3></div>
+        <div className="library-list">
+          {libraryRows.map(row => (
+            <div key={row.label} className="library-row" onClick={() => onPickContent(row.action)}>
+              <div className={`library-icon ${row.tone}`}>{row.icon}</div>
+              <div className="library-body">
+                <div className="library-title">{row.label}</div>
+                <div className="library-meta">
+                  <span>{row.learned} / {row.total}</span>
+                  {row.saved ? <span>{row.total === 1 ? 'saved' : 'saved'}</span> : null}
+                  {!row.saved && row.review > 0 && <span className="library-review">{row.review} review</span>}
+                </div>
+              </div>
+              <div className="library-chev">›</div>
             </div>
-            <div className="chev">›</div>
-          </div>
-          <div className="mode-card review" onClick={() => onPickContent('ar')}>
-            <div className="glyph"><GradCapIcon /></div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">A2 Words</div>
-              <div className="desc">{arStats?.total || 0} words from mock exams.</div>
-            </div>
-            <div className="chev">›</div>
-          </div>
-          <div className="mode-card reading" onClick={() => onPickContent('sentences')}>
-            <div className="glyph"><ListIcon /></div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">Sentences</div>
-              <div className="desc">Pick an article and read sentence by sentence.</div>
-            </div>
-            <div className="chev">›</div>
-          </div>
-          <div className="mode-card studylist" onClick={() => onPickContent('studylist')}>
-            <div className="glyph"><StudyListIcon /></div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div className="title">My Study List</div>
-              <div className="desc">{studyListCount > 0 ? `${studyListCount} saved word${studyListCount === 1 ? '' : 's'}` : 'Save words from sentences to study later.'}</div>
-            </div>
-            <div className="chev">›</div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
@@ -741,119 +723,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   );
 }
 
-const SENTENCE_GRAMMAR_REFERENCE = [
-  {
-    type: 'Type A',
-    rule: 'Question word order',
-    reason: 'Q order: WH/yes-no trigger + fin.V before subj.; infinitive/participle may move later.',
-    nl: 'Heeft u veel pijn en kunt u niet wachten tot maandag?',
-    en: 'Are you in a lot of pain and unable to wait until Monday?',
-    testNl: 'Wat moet hij doen?',
-    testEn: 'What should he do?'
-  },
-  {
-    type: 'Type B',
-    rule: 'Subclause verb-final',
-    reason: 'Subclause marker pushes verb group toward clause end.',
-    nl: 'Noa weet niet hoe hij het beste kan leren.',
-    en: 'Noa does not know how he can study best.',
-    testNl: 'Ze wil weten hoe laat de meubels bezorgd worden.',
-    testEn: 'She wants to know what time the furniture will be delivered.'
-  },
-  {
-    type: 'Type C',
-    rule: 'Dutch adv./obj. placement',
-    reason: 'Dutch places adv./neg./prep. phrase mid-sentence; EN often moves it later.',
-    nl: 'Leer ze niet alleen van boven naar beneden, maar ook van beneden naar boven en door elkaar.',
-    en: 'Do not learn them only from top to bottom, but also from bottom to top and in random order.',
-    testNl: 'U kunt dan bellen met het noodnummer.',
-    testEn: 'You can then call the emergency number.'
-  },
-  {
-    type: 'Type D',
-    rule: 'Fronted element + V2 inversion',
-    reason: 'Fronted element in pos.1; fin.V stays pos.2, so subj. follows.',
-    nl: 'Daarom sluiten wij een aantal straten en wegen af.',
-    en: 'That is why we are closing several streets and roads.',
-    testNl: 'Op vrijdag zijn wij gesloten.',
-    testEn: 'On Fridays we are closed.'
-  },
-  {
-    type: 'Type E',
-    rule: 'Separable verb / particle split',
-    reason: 'Sep. verb/particle pattern: fin.V part early, particle/infinitive part later.',
-    nl: 'Gooi ze niet weg!',
-    en: 'Do not throw them away!',
-    testNl: 'Dan haal ik mijn tas daar morgen op.',
-    testEn: 'Then I will pick up my bag there tomorrow.'
-  },
-  {
-    type: 'Type F',
-    rule: 'Fronted condition clause inversion',
-    reason: 'Fronted condition takes pos.1; main clause starts with fin.V + subj.',
-    nl: 'Als u dat kunt, weet u zeker dat u het hebt begrepen.',
-    en: 'If you can do that, you know for sure that you have understood it.',
-    testNl: 'Als u het leuk vindt, kunt u helpen tijdens de open dagen.',
-    testEn: 'If you like it, you can help during the open days.'
-  },
-  {
-    type: 'Type G',
-    rule: 'Negative imperative',
-    reason: 'Neg. command: imperative + niet.',
-    nl: 'Ga niet stil zitten als er geen klanten in de winkel zijn.',
-    en: 'Do not sit still when there are no customers in the store.',
-    testNl: 'Leer niet langer dan een half uur.',
-    testEn: 'Do not study for longer than half an hour.'
-  }
-];
-window.SENTENCE_GRAMMAR_REFERENCE = SENTENCE_GRAMMAR_REFERENCE;
-
-function SentenceGrammarReference() {
-  return (
-    <details className="grammar-reference">
-      <summary>
-        <span>
-          <span className="section-kicker">Grammar</span>
-          <span className="grammar-reference-title">Word order types A-G</span>
-        </span>
-        <span className="grammar-reference-chevron">⌄</span>
-      </summary>
-      <div className="grammar-reference-list">
-        {SENTENCE_GRAMMAR_REFERENCE.map(item => (
-          <div className="grammar-reference-card" key={item.type}>
-            <div className="grammar-reference-head">
-              <span className="grammar-type-pill">{item.type}</span>
-              <span className="grammar-rule">{item.rule}</span>
-            </div>
-            <div className="grammar-reference-explain">{item.reason}</div>
-            <div className="grammar-reference-example">
-              <div className="nl">{item.nl}</div>
-              <div className="en">{item.en}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </details>
-  );
-}
-
-function GrammarPracticeCard({ onStudy, onTest }) {
-  return (
-    <div className="grammar-practice-card">
-      <div className="grammar-practice-copy">
-        <div className="label">Grammar</div>
-        <div className="title">Word order types A-G</div>
-        <div className="desc-light">Study fixed examples, then test the grammar rule.</div>
-      </div>
-      <div className="grammar-practice-actions">
-        <button type="button" onClick={onStudy}>Study</button>
-        <button type="button" onClick={onTest}>Test</button>
-      </div>
-    </div>
-  );
-}
-
-function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle, onStartGrammar }) {
+function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartArticle, onContinueArticle }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
@@ -888,11 +758,6 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, onBack, onStartA
         <div style={{ width: 38 }}></div>
       </div>
       <div className="home pick-screen">
-        <GrammarPracticeCard
-          onStudy={() => onStartGrammar?.('study')}
-          onTest={() => onStartGrammar?.('test')}
-        />
-
         {resume && (
           <div className="continue-banner pick-continue" onClick={() => onContinueArticle ? onContinueArticle(resume, order) : pick(resume)}>
             <div style={{ flex: 1, minWidth: 0 }}>
