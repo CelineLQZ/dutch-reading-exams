@@ -388,14 +388,38 @@ function buildDictionary(words, externalDictionary = {}) {
     bent: { en: 'are', pos: 'verb' },
     is: { en: 'is', pos: 'verb' },
     zijn: { en: 'are / to be', pos: 'verb' },
+    was: { en: 'was', pos: 'verb', headword: 'zijn', baseForm: 'zijn', formLabel: 'ik/hij/zij/het-vorm, verleden tijd' },
     gaat: { en: 'goes / is going', pos: 'verb' },
     gaan: { en: 'to go', pos: 'verb' },
+    wonen: { en: 'to live', pos: 'verb' },
+    woont: { en: 'to live', pos: 'verb', headword: 'wonen', baseForm: 'wonen', formLabel: 'u/hij/zij/het-vorm, tegenwoordige tijd' },
+    zullen: { en: 'will / shall', pos: 'modal verb' },
+    zal: { en: 'will / shall', pos: 'modal verb', headword: 'zullen', baseForm: 'zullen', formLabel: 'ik/hij/zij/het-vorm, tegenwoordige tijd' },
     werk: { en: 'work / job', pos: 'noun (het)' },
+    wegen: { en: 'roads / ways; to weigh', pos: 'noun plural / verb' },
+    sluiten: { en: 'to close', pos: 'verb' },
+    meenemen: { en: 'to bring / take along', pos: 'verb' },
+    aanmelden: { en: 'to register / sign up', pos: 'verb' },
+    aanmeldt: { en: 'to register / sign up', pos: 'verb', headword: 'aanmelden', baseForm: 'aanmelden', formLabel: 'u/hij/zij/het-vorm, tegenwoordige tijd' },
+    verbouwen: { en: 'to renovate / rebuild', pos: 'verb' },
+    verbouwd: { en: 'to renovate / rebuild', pos: 'verb', headword: 'verbouwen', baseForm: 'verbouwen', formLabel: 'past participle / verb form' },
     bekende: { en: 'known / familiar', formMeaning: 'known / familiar', pos: 'adjective', headword: 'bekend', baseForm: 'bekend', formLabel: 'attributive -e form' },
     bekendste: { en: 'known / familiar', formMeaning: 'best-known / most famous', pos: 'superlative adjective', headword: 'bekend', baseForm: 'bekend', formLabel: 'superlative -ste form' },
     onze: { en: 'our', formMeaning: 'our', pos: 'possessive pronoun', headword: 'ons', baseForm: 'ons', formLabel: 'attributive possessive form' },
     doordeweekse: { en: 'weekday / during the week', formMeaning: 'weekday / during the week', pos: 'adjective', headword: 'doordeweeks', baseForm: 'doordeweeks', formLabel: 'attributive -e form' },
     belangrijkste: { en: 'important', formMeaning: 'most important', pos: 'superlative adjective', headword: 'belangrijk', baseForm: 'belangrijk', formLabel: 'superlative -ste form' },
+    jaarlijks: { en: 'annual / yearly', pos: 'adjective' },
+    jaarlijkse: { en: 'annual / yearly', formMeaning: 'annual / yearly', pos: 'adjective', headword: 'jaarlijks', baseForm: 'jaarlijks', formLabel: 'attributive -e form' },
+    zonnig: { en: 'sunny', pos: 'adjective' },
+    zonnige: { en: 'sunny', formMeaning: 'sunny', pos: 'adjective', headword: 'zonnig', baseForm: 'zonnig', formLabel: 'attributive -e form' },
+    anders: { en: 'different / otherwise', pos: 'adjective / adverb' },
+    deelnemer: { en: 'participant', pos: 'noun' },
+    deelnemers: { en: 'participant', formMeaning: 'participants', pos: 'noun', headword: 'deelnemer', baseForm: 'deelnemer', formLabel: 'plural form' },
+    kind: { en: 'child', pos: 'noun (het)' },
+    kinderen: { en: 'child', formMeaning: 'children', pos: 'noun', headword: 'kind', baseForm: 'kind', formLabel: 'plural form' },
+    drankje: { en: 'drink / beverage', pos: 'noun (het)' },
+    drankjes: { en: 'drink / beverage', formMeaning: 'drinks / beverages', pos: 'noun', headword: 'drankje', baseForm: 'drankje', formLabel: 'plural form' },
+    zich: { en: 'oneself / himself / herself / themselves', pos: 'reflexive pronoun' },
     doen: { en: 'to do', pos: 'verb' },
     doet: { en: 'does', pos: 'verb' }
   };
@@ -442,6 +466,7 @@ function buildDictionary(words, externalDictionary = {}) {
     if (!clean || clean.length < 2 || skip.has(clean) || !value?.en) return;
     const externalMeaning = String(value.en || '');
     const isInflectionOnly = isFormOnlyMeaning(externalMeaning);
+    if (map[clean]?.source === 'reading dictionary') return;
     if (map[clean] && isInflectionOnly) return;
     map[clean] = {
       nl: clean,

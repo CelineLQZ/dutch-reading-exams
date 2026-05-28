@@ -78,7 +78,17 @@ const DUTCH_ZH_HINTS = {
   zorgen: '照顾 / 确保',
   werken: '工作',
   komen: '来',
-  maken: '做 / 制作'
+  maken: '做 / 制作',
+  wonen: '居住',
+  zullen: '将会',
+  verbouwen: '翻新 / 改建',
+  meenemen: '带上',
+  sluiten: '关闭',
+  aanmelden: '报名 / 登记',
+  zonnig: '晴朗的',
+  jaarlijks: '每年的',
+  kind: '孩子',
+  drankje: '饮料'
 };
 
 function isInflectionOnlyMeaning(text) {
