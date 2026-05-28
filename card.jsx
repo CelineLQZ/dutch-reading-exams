@@ -436,6 +436,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       : 'Beginner example';
   const grammarRows = compactWordGrammar(word);
   const showExampleToggle = word.deck === 'common';
+  const unitLabel = word.deck === 'common' ? 'Lesson' : 'Article';
 
   return (
     <React.Fragment>
@@ -447,7 +448,7 @@ function WordCard({ word, mode, level, onLevelChange, autoplay, isTop, dragState
       )}
 
       <div className="card-top-row">
-        <span className="les-tag">{word.pos === 'grammar' ? 'Grammar' : `Article ${word.les}`}</span>
+        <span className="les-tag">{word.pos === 'grammar' ? 'Grammar' : `${unitLabel} ${word.les}`}</span>
         {word.pos && <span className="pos-tag">{word.pos}</span>}
       </div>
 
@@ -549,7 +550,7 @@ function TestCard({ word, choices, autoplay, isTop, dragState, onAnswered }) {
       )}
 
       <div className="card-top-row">
-        <span className="les-tag">Article {word.les}</span>
+        <span className="les-tag">{word.deck === 'common' ? 'Lesson' : 'Article'} {word.les}</span>
         {word.pos && <span className="pos-tag">{word.pos}</span>}
       </div>
 

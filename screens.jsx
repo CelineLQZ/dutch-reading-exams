@@ -432,7 +432,8 @@ function LegacySentencesPickScreen({ readings, statsByArticle, onBack, onPickArt
   );
 }
 
-function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, unit = 'items' }) {
+function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, unit = 'items', testCount = 100 }) {
+  const [orderOpen, setOrderOpen] = useStateS(false);
   if (!selected) {
     return (
       <div className="empty-hint-card">
@@ -440,42 +441,54 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
       </div>
     );
   }
+  const orderLabel = order === 'random' ? 'random order' : (selected.orderLabel || 'by order');
+  const total = selected.total || selected.count || 0;
+  const scope = selected.scopeLabel || selected.label;
   return (
     <>
-      <div className="section-h"><h3>Modes</h3></div>
-      <div className="mode-list">
-        <div className="mode-card learn" onClick={() => onStart('study')}>
-          <div className="glyph">📖</div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div className="title">Study</div>
-            <div className="desc">Swipe through {selected.label}.</div>
-          </div>
-          <div className="chev">›</div>
-        </div>
-        <div className="mode-card review" onClick={() => onStart('review')}>
-          <div className="glyph">🔁</div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div className="title">Review</div>
-            <div className="desc">{reviewCount ? `${reviewCount} ${unit} to retry` : 'Nothing to review yet'}</div>
-          </div>
-          <div className="chev">›</div>
-        </div>
-        <div className="mode-card test" onClick={() => onStart('test')}>
-          <div className="glyph">✓</div>
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div className="title">Test</div>
-            <div className="desc">Dutch → English, 4 choices.</div>
-          </div>
-          <div className="chev">›</div>
+      <div className="section-h study-mode-heading">
+        <h3>Study modes</h3>
+        <div className="order-menu-wrap">
+          <button type="button" className="order-menu-btn" onClick={() => setOrderOpen(v => !v)} aria-label="Order options">...</button>
+          {orderOpen && (
+            <div className="order-menu">
+              {[{v:'course', lab:'By order'}, {v:'random', lab:'Random'}].map(o => (
+                <button
+                  type="button"
+                  key={o.v}
+                  className={order === o.v ? 'active' : ''}
+                  onClick={() => { onOrder(o.v); setOrderOpen(false); }}
+                >{o.lab}</button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
-
-      <div className="section-h"><h3>Order</h3></div>
-      <div className="seg" style={{ marginBottom: 14 }}>
-        {[{v:'course',lab:'By order'},{v:'random',lab:'Random'}].map(o => (
-          <div key={o.v} className={'opt' + (order === o.v ? ' active' : '')}
-            onClick={() => onOrder(o.v)}>{o.lab}</div>
-        ))}
+      <div className="study-mode-grid">
+        <div className="study-start-card" onClick={() => onStart('study')}>
+          <div className="study-start-copy">
+            <div className="study-start-label">Start session</div>
+            <div className="study-start-title">Study {total || ''} {unit}</div>
+            <div className="study-start-desc">{scope} · in {orderLabel}</div>
+          </div>
+          <div className="study-start-play"><PlayIcon /></div>
+        </div>
+        <div className="study-secondary-row">
+          <div className="study-small-card review" onClick={() => onStart('review')}>
+            <div className="study-small-icon">↻</div>
+            <div>
+              <div className="study-small-title">Review</div>
+              <div className="study-small-desc">{reviewCount ? `${reviewCount} due` : '0 due'}</div>
+            </div>
+          </div>
+          <div className="study-small-card test" onClick={() => onStart('test')}>
+            <div className="study-small-icon">✓</div>
+            <div>
+              <div className="study-small-title">Test</div>
+              <div className="study-small-desc">{testCount} questions</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -601,6 +614,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const [mode, setMode] = useStateS(primaryMode);
   const [order, setOrder] = useStateS(prefs.order || 'course');
   const [itemOrder, setItemOrder] = useStateS('asc');
+  const [showAllItems, setShowAllItems] = useStateS(false);
   const [allScope, setAllScope] = useStateS('all');
   const sourceItems = isCommon
     ? lessons.map(l => ({ les: l.les, title: `Lesson ${l.les}`, wordCount: l.count }))
@@ -628,17 +642,36 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
       ? { wordLimit: '', lesFrom, lesTo }
       : { wordLimit: '', lesFrom: '', lesTo: '' };
   const selected = mode === 'all'
-    ? { ...allDeck, label: allScope === 'count' && wordLimit ? `${wordLimit} words` : allScope === 'range' && (lesFrom || lesTo) ? `${primaryLabel}s ${lesFrom || '1'}-${lesTo || '40'}` : 'all words' }
+    ? { ...allDeck, label: allScope === 'count' && wordLimit ? `${wordLimit} words` : allScope === 'range' && (lesFrom || lesTo) ? `${primaryLabel}s ${lesFrom || '1'}-${lesTo || '40'}` : 'all words', total: allScope === 'count' && wordLimit ? Number(wordLimit) : sourceItems.reduce((sum, item) => sum + (item.wordCount || 0), 0), scopeLabel: isCommon ? '1000 Dutch Words' : 'A2 Words', orderLabel: isCommon ? 'lesson order' : 'article order' }
     : mode === primaryMode && selectedItem
-      ? { id: `${primaryMode}-${selectedItem.les}`, label: selectedItem.title, reviewCount: 0, patch: { wordDeck, filterMode: primaryMode, les: selectedItem.les, category: 'all' } }
+      ? { id: `${primaryMode}-${selectedItem.les}`, label: selectedItem.title, reviewCount: 0, total: selectedItem.wordCount || 0, scopeLabel: isCommon ? `Lesson ${selectedItem.les}` : selectedItem.title, orderLabel: isCommon ? 'lesson order' : 'article order', patch: { wordDeck, filterMode: primaryMode, les: selectedItem.les, category: 'all' } }
       : mode === 'category' && selectedCategory
-        ? { id: `category-${selectedCategory.id}`, label: selectedCategory.label, reviewCount: (statsByCategory[selectedCategory.id] || {}).forgotten || 0, patch: { wordDeck, filterMode: 'category', category: selectedCategory.id, les: 'all' } }
+        ? { id: `category-${selectedCategory.id}`, label: selectedCategory.label, reviewCount: (statsByCategory[selectedCategory.id] || {}).forgotten || 0, total: selectedCategory.count || 0, scopeLabel: selectedCategory.label, orderLabel: 'category order', patch: { wordDeck, filterMode: 'category', category: selectedCategory.id, les: 'all' } }
         : null;
   const start = action => {
     if (!selected) return;
     const custom = selected.id === 'all' ? allCustom : { wordLimit: '', lesFrom: '', lesTo: '' };
     onStartDeck(action, { ...selected.patch, ...custom, order });
   };
+  const shownItems = showAllItems ? itemOptions : itemOptions.slice(0, 8);
+  const categoryShort = label => ({
+    verb: 'Verbs',
+    verbs: 'Verbs',
+    noun: 'Nouns',
+    nouns: 'Nouns',
+    preposition: 'Prep.',
+    prepositions: 'Prep.',
+    adjective: 'Adj.',
+    adjectives: 'Adj.',
+    question: 'Question',
+    questions: 'Question',
+    time: 'Time',
+    phrase: 'Phrase',
+    phrases: 'Phrase',
+    adverb: 'Adverb',
+    adverbs: 'Adverb',
+    other: 'Other'
+  }[String(label || '').toLowerCase()] || label);
 
   return (
     <div className="app-screen" {...swipeBack}>
@@ -692,31 +725,56 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
         {mode === primaryMode && (
           <>
             <div className="section-h pick-heading-row">
-              <h3>Pick {primaryLabel}</h3>
+              <h3>Or pick one {primaryLabel}</h3>
+              <button type="button" className="list-sort-btn" onClick={() => setItemOrder(o => o === 'asc' ? 'desc' : 'asc')}>
+                {itemOrder === 'asc' ? 'A → Z' : 'Z → A'}⌄
+              </button>
             </div>
-            <select className="select-input" value={itemLes} onChange={e => setItemLes(e.target.value)}>
-              {itemOptions.map(a => (
-                <option key={a.les} value={a.les}>{isCommon ? `Lesson ${a.les}` : a.title} · {a.wordCount} words</option>
-              ))}
-            </select>
+            <div className="content-list-card">
+              {shownItems.map(a => {
+                const selectedRow = String(a.les) === String(itemLes);
+                return (
+                  <div key={a.les} className={'content-list-row' + (selectedRow ? ' selected' : '')} onClick={() => setItemLes(String(a.les))}>
+                    <div className="content-list-index">{a.les}</div>
+                    <div className="content-list-main">
+                      <div className="content-list-title">{isCommon ? `Lesson ${a.les}` : a.title}</div>
+                      <div className="content-list-meta">0 / {a.wordCount} learned</div>
+                    </div>
+                    <div className="content-list-progress"><span style={{ width: selectedRow ? '18%' : '0%' }}></span></div>
+                    <div className="content-list-chev">›</div>
+                  </div>
+                );
+              })}
+              {itemOptions.length > 8 && (
+                <button type="button" className="show-all-btn" onClick={() => setShowAllItems(v => !v)}>
+                  {showAllItems ? `Show fewer ${primaryLabel}s` : `Show all ${itemOptions.length} ${primaryLabel}s`}⌄
+                </button>
+              )}
+            </div>
           </>
         )}
 
         {mode === 'category' && (
           <>
             <div className="section-h"><h3>Pick category</h3></div>
-            <select className="select-input" value={categoryId} onChange={e => setCategoryId(e.target.value)}>
-              {categories.map(c => {
-                return (
-                  <option key={c.id} value={c.id}>{c.label} · {c.count} words</option>
-                );
-              })}
-            </select>
+            <div className="category-tile-grid">
+              {categories.map(c => (
+                <button
+                  type="button"
+                  key={c.id}
+                  className={'category-tile' + (categoryId === c.id ? ' active' : '')}
+                  onClick={() => setCategoryId(c.id)}
+                >
+                  <span>{categoryShort(c.label || c.id)}</span>
+                  <strong>{c.count}</strong>
+                </button>
+              ))}
+            </div>
           </>
         )}
 
         <SessionModeList selected={selected} order={order} onOrder={setOrder}
-          reviewCount={selected?.reviewCount || 0} unit="words" onStart={start} />
+          reviewCount={selected?.reviewCount || 0} unit="words" testCount={prefs.testCount || 100} onStart={start} />
 
       </div>
     </div>
