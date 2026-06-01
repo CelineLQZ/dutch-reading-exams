@@ -180,12 +180,14 @@ function compactWordGrammar(word) {
   }
 
   if (grammarKind === 'verb' || pos.includes('verb')) {
+    const inf = pickGrammarForm(forms, [/^infinitief$/, /^infinitive$/, /^inf\.?$/]);
     const ik = pickGrammarForm(forms, [/^ik$/]);
     const hij = pickGrammarForm(forms, [/^hij\b/, /hij\/zij/, /hij\/zij\/het/]);
     const past = pickGrammarForm(forms, [/^verleden$/, /^past$/]);
     const perfect = pickGrammarForm(forms, [/voltooid/, /perfect/]);
 
     return [
+      inf && { label: 'inf.', nl: inf.nl },
       ik && { label: 'ik', nl: ik.nl },
       hij && { label: 'hij', nl: hij.nl },
       past && { label: 'past', nl: past.nl },
@@ -262,8 +264,18 @@ function ClickableDutchText({ text }) {
         );
       })}
       {selected && (
-        <span className="dict-popover" onPointerDown={e => e.stopPropagation()}>
-          <DictMeaning selected={selected} />
+        <span className={'dict-popover' + (selected.entry.verb ? ' has-verb' : '')} onPointerDown={e => e.stopPropagation()}>
+          <span className="dict-popover-main">
+            <DictMeaning selected={selected} />
+            {selected.entry.verb && (
+              <span className="dict-verb-forms">
+                <span className="dict-verb-row"><span className="lab">inf.</span><span className="form">{selected.entry.verb.inf}</span></span>
+                <span className="dict-verb-row"><span className="lab">hij</span><span className="form">{selected.entry.verb.hij}</span></span>
+                <span className="dict-verb-row"><span className="lab">past</span><span className="form">{selected.entry.verb.past}</span></span>
+                <span className="dict-verb-row"><span className="lab">perfect</span><span className="form">{selected.entry.verb.perfect}</span></span>
+              </span>
+            )}
+          </span>
           <span className="dict-popover-actions">
             <button type="button" className={'dict-add-btn' + (inList ? ' in-list' : '')} onClick={handleAdd}>
               {inList ? '✓ in deck' : '+ to deck'}

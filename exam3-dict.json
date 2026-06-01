@@ -1,0 +1,2965 @@
+[
+  {
+    "nl": "aan",
+    "en": "to / at"
+  },
+  {
+    "nl": "aangevraagd",
+    "en": "requested / applied for",
+    "pos": "verb",
+    "verb": {
+      "inf": "aanvragen",
+      "hij": "vraagt aan",
+      "past": "vroeg aan",
+      "perfect": "aangevraagd"
+    }
+  },
+  {
+    "nl": "achter",
+    "en": "after / behind"
+  },
+  {
+    "nl": "activiteit",
+    "en": "activity"
+  },
+  {
+    "nl": "af",
+    "en": "off / absent"
+  },
+  {
+    "nl": "afgesproken",
+    "en": "agreed",
+    "pos": "verb",
+    "verb": {
+      "inf": "afspreken",
+      "hij": "spreekt af",
+      "past": "sprak af",
+      "perfect": "afgesproken"
+    }
+  },
+  {
+    "nl": "afmelden",
+    "en": "cancel / report absence",
+    "pos": "verb",
+    "verb": {
+      "inf": "afmelden",
+      "hij": "meldt af",
+      "past": "meldde af",
+      "perfect": "afgemeld"
+    }
+  },
+  {
+    "nl": "afscheid",
+    "en": "goodbye / farewell"
+  },
+  {
+    "nl": "afspraak",
+    "en": "appointment"
+  },
+  {
+    "nl": "afspreken",
+    "en": "meet / make an appointment",
+    "pos": "verb",
+    "verb": {
+      "inf": "afspreken",
+      "hij": "spreekt af",
+      "past": "sprak af",
+      "perfect": "afgesproken"
+    }
+  },
+  {
+    "nl": "al",
+    "en": "already"
+  },
+  {
+    "nl": "alle",
+    "en": "all"
+  },
+  {
+    "nl": "alleen",
+    "en": "only"
+  },
+  {
+    "nl": "alleen's",
+    "en": "only in the evening (typo spacing; alleen 's avonds)"
+  },
+  {
+    "nl": "allemaal",
+    "en": "all together / everyone"
+  },
+  {
+    "nl": "allen",
+    "en": "all together"
+  },
+  {
+    "nl": "alles",
+    "en": "everything"
+  },
+  {
+    "nl": "als",
+    "en": "if / when"
+  },
+  {
+    "nl": "altijd",
+    "en": "always"
+  },
+  {
+    "nl": "amsterdam",
+    "en": "Amsterdam"
+  },
+  {
+    "nl": "andere",
+    "en": "other / another"
+  },
+  {
+    "nl": "april",
+    "en": "April"
+  },
+  {
+    "nl": "arm",
+    "en": "arm"
+  },
+  {
+    "nl": "artikel",
+    "en": "article"
+  },
+  {
+    "nl": "augustus",
+    "en": "August"
+  },
+  {
+    "nl": "auto's",
+    "en": "cars"
+  },
+  {
+    "nl": "avonds",
+    "en": "in the evening"
+  },
+  {
+    "nl": "baas",
+    "en": "boss"
+  },
+  {
+    "nl": "balie",
+    "en": "counter / desk"
+  },
+  {
+    "nl": "bedankt",
+    "en": "thanks"
+  },
+  {
+    "nl": "begint",
+    "en": "begins",
+    "pos": "verb",
+    "verb": {
+      "inf": "beginnen",
+      "hij": "begint",
+      "past": "begon",
+      "perfect": "begonnen"
+    }
+  },
+  {
+    "nl": "bekendste",
+    "en": "best-known"
+  },
+  {
+    "nl": "bekijkt",
+    "en": "looks at / views",
+    "pos": "verb",
+    "verb": {
+      "inf": "bekijken",
+      "hij": "bekijkt",
+      "past": "bekeek",
+      "perfect": "bekeken"
+    }
+  },
+  {
+    "nl": "bel",
+    "en": "call",
+    "pos": "verb",
+    "verb": {
+      "inf": "bellen",
+      "hij": "belt",
+      "past": "belde",
+      "perfect": "gebeld"
+    }
+  },
+  {
+    "nl": "belangrijk",
+    "en": "important"
+  },
+  {
+    "nl": "belangrijkst",
+    "en": "most important"
+  },
+  {
+    "nl": "belangrijkste",
+    "en": "most important"
+  },
+  {
+    "nl": "belde",
+    "en": "called",
+    "pos": "verb",
+    "verb": {
+      "inf": "bellen",
+      "hij": "belt",
+      "past": "belde",
+      "perfect": "gebeld"
+    }
+  },
+  {
+    "nl": "bellen",
+    "en": "call by phone",
+    "pos": "verb",
+    "verb": {
+      "inf": "bellen",
+      "hij": "belt",
+      "past": "belde",
+      "perfect": "gebeld"
+    }
+  },
+  {
+    "nl": "ben",
+    "en": "am / are",
+    "pos": "verb",
+    "verb": {
+      "inf": "zijn",
+      "hij": "is",
+      "past": "was",
+      "perfect": "geweest"
+    }
+  },
+  {
+    "nl": "bent",
+    "en": "are",
+    "pos": "verb",
+    "verb": {
+      "inf": "zijn",
+      "hij": "is",
+      "past": "was",
+      "perfect": "geweest"
+    }
+  },
+  {
+    "nl": "beschikbaar",
+    "en": "available"
+  },
+  {
+    "nl": "beschrijf",
+    "en": "describe",
+    "pos": "verb",
+    "verb": {
+      "inf": "beschrijven",
+      "hij": "beschrijft",
+      "past": "beschreef",
+      "perfect": "beschreven"
+    }
+  },
+  {
+    "nl": "bespreken",
+    "en": "discuss",
+    "pos": "verb",
+    "verb": {
+      "inf": "bespreken",
+      "hij": "bespreekt",
+      "past": "besprak",
+      "perfect": "besproken"
+    }
+  },
+  {
+    "nl": "bestaat",
+    "en": "consists"
+  },
+  {
+    "nl": "beste",
+    "en": "dear / best"
+  },
+  {
+    "nl": "bestellen",
+    "en": "order",
+    "pos": "verb",
+    "verb": {
+      "inf": "bestellen",
+      "hij": "bestelt",
+      "past": "bestelde",
+      "perfect": "besteld"
+    }
+  },
+  {
+    "nl": "betaalt",
+    "en": "pays",
+    "pos": "verb",
+    "verb": {
+      "inf": "betalen",
+      "hij": "betaalt",
+      "past": "betaalde",
+      "perfect": "betaald"
+    }
+  },
+  {
+    "nl": "bezoek",
+    "en": "visit / visitors"
+  },
+  {
+    "nl": "bij",
+    "en": "at / with"
+  },
+  {
+    "nl": "bijna",
+    "en": "almost"
+  },
+  {
+    "nl": "bijvoorbeeld",
+    "en": "for example"
+  },
+  {
+    "nl": "bijzonder",
+    "en": "special"
+  },
+  {
+    "nl": "blijft",
+    "en": "remains",
+    "pos": "verb",
+    "verb": {
+      "inf": "blijven",
+      "hij": "blijft",
+      "past": "bleef",
+      "perfect": "gebleven"
+    }
+  },
+  {
+    "nl": "blijven",
+    "en": "remain / stay",
+    "pos": "verb",
+    "verb": {
+      "inf": "blijven",
+      "hij": "blijft",
+      "past": "bleef",
+      "perfect": "gebleven"
+    }
+  },
+  {
+    "nl": "boek",
+    "en": "book"
+  },
+  {
+    "nl": "brief",
+    "en": "letter"
+  },
+  {
+    "nl": "bus",
+    "en": "bus"
+  },
+  {
+    "nl": "busdienst",
+    "en": "bus service"
+  },
+  {
+    "nl": "buurman",
+    "en": "neighbour man"
+  },
+  {
+    "nl": "buurt",
+    "en": "neighbourhood"
+  },
+  {
+    "nl": "buurtbewoner",
+    "en": "neighbourhood resident"
+  },
+  {
+    "nl": "buurtbewoners",
+    "en": "neighbourhood residents"
+  },
+  {
+    "nl": "buurthuis",
+    "en": "community house"
+  },
+  {
+    "nl": "buurtvergadering",
+    "en": "neighbourhood meeting"
+  },
+  {
+    "nl": "cadeau",
+    "en": "present / gift"
+  },
+  {
+    "nl": "centrum",
+    "en": "centre"
+  },
+  {
+    "nl": "collega's",
+    "en": "colleagues"
+  },
+  {
+    "nl": "contact",
+    "en": "contact"
+  },
+  {
+    "nl": "cursist",
+    "en": "course participant"
+  },
+  {
+    "nl": "cursisten",
+    "en": "course participants"
+  },
+  {
+    "nl": "cursus",
+    "en": "course"
+  },
+  {
+    "nl": "cursuscentrum",
+    "en": "course centre"
+  },
+  {
+    "nl": "daar",
+    "en": "there"
+  },
+  {
+    "nl": "daarmee",
+    "en": "with that"
+  },
+  {
+    "nl": "daarna",
+    "en": "after that"
+  },
+  {
+    "nl": "daarom",
+    "en": "therefore"
+  },
+  {
+    "nl": "daarover",
+    "en": "about that"
+  },
+  {
+    "nl": "daarvan",
+    "en": "from that"
+  },
+  {
+    "nl": "dag",
+    "en": "day"
+  },
+  {
+    "nl": "dagen",
+    "en": "days"
+  },
+  {
+    "nl": "dan",
+    "en": "then"
+  },
+  {
+    "nl": "dat",
+    "en": "that"
+  },
+  {
+    "nl": "datum",
+    "en": "date"
+  },
+  {
+    "nl": "de",
+    "en": "the"
+  },
+  {
+    "nl": "denkt",
+    "en": "thinks",
+    "pos": "verb",
+    "verb": {
+      "inf": "denken",
+      "hij": "denkt",
+      "past": "dacht",
+      "perfect": "gedacht"
+    }
+  },
+  {
+    "nl": "dertig",
+    "en": "thirty"
+  },
+  {
+    "nl": "deze",
+    "en": "this / these"
+  },
+  {
+    "nl": "die",
+    "en": "that / who"
+  },
+  {
+    "nl": "dinsdag",
+    "en": "Tuesday"
+  },
+  {
+    "nl": "direct",
+    "en": "directly"
+  },
+  {
+    "nl": "dit",
+    "en": "this"
+  },
+  {
+    "nl": "docent",
+    "en": "teacher"
+  },
+  {
+    "nl": "docenten",
+    "en": "teachers"
+  },
+  {
+    "nl": "doe",
+    "en": "do",
+    "pos": "verb",
+    "verb": {
+      "inf": "doen",
+      "hij": "doet",
+      "past": "deed",
+      "perfect": "gedaan"
+    }
+  },
+  {
+    "nl": "doen",
+    "en": "do",
+    "pos": "verb",
+    "verb": {
+      "inf": "doen",
+      "hij": "doet",
+      "past": "deed",
+      "perfect": "gedaan"
+    }
+  },
+  {
+    "nl": "doet",
+    "en": "does",
+    "pos": "verb",
+    "verb": {
+      "inf": "doen",
+      "hij": "doet",
+      "past": "deed",
+      "perfect": "gedaan"
+    }
+  },
+  {
+    "nl": "donderdag",
+    "en": "Thursday"
+  },
+  {
+    "nl": "doordeweeks",
+    "en": "on weekdays"
+  },
+  {
+    "nl": "doordeweekse",
+    "en": "weekday"
+  },
+  {
+    "nl": "drie",
+    "en": "three"
+  },
+  {
+    "nl": "drinken",
+    "en": "drink"
+  },
+  {
+    "nl": "druk",
+    "en": "busy"
+  },
+  {
+    "nl": "drukke",
+    "en": "busy"
+  },
+  {
+    "nl": "drukker",
+    "en": "busier"
+  },
+  {
+    "nl": "dus",
+    "en": "so / therefore"
+  },
+  {
+    "nl": "duur",
+    "en": "expensive",
+    "pos": "verb",
+    "verb": {
+      "inf": "duren",
+      "hij": "duurt",
+      "past": "duurde",
+      "perfect": "geduurd"
+    }
+  },
+  {
+    "nl": "duurder",
+    "en": "more expensive"
+  },
+  {
+    "nl": "duurt",
+    "en": "lasts / takes time",
+    "pos": "verb",
+    "verb": {
+      "inf": "duren",
+      "hij": "duurt",
+      "past": "duurde",
+      "perfect": "geduurd"
+    }
+  },
+  {
+    "nl": "e",
+    "en": "e"
+  },
+  {
+    "nl": "echt",
+    "en": "really"
+  },
+  {
+    "nl": "een",
+    "en": "a / an / one"
+  },
+  {
+    "nl": "eerder",
+    "en": "earlier / before"
+  },
+  {
+    "nl": "eerst",
+    "en": "first"
+  },
+  {
+    "nl": "eerste",
+    "en": "first"
+  },
+  {
+    "nl": "eigen",
+    "en": "own"
+  },
+  {
+    "nl": "elk",
+    "en": "every / each"
+  },
+  {
+    "nl": "elkaar",
+    "en": "each other"
+  },
+  {
+    "nl": "elke",
+    "en": "every"
+  },
+  {
+    "nl": "en",
+    "en": "and"
+  },
+  {
+    "nl": "engels",
+    "en": "English"
+  },
+  {
+    "nl": "enige",
+    "en": "only"
+  },
+  {
+    "nl": "er",
+    "en": "there / it"
+  },
+  {
+    "nl": "erg",
+    "en": "bad / annoying"
+  },
+  {
+    "nl": "erna",
+    "en": "after it / afterwards"
+  },
+  {
+    "nl": "ervaring",
+    "en": "experience"
+  },
+  {
+    "nl": "ervoor",
+    "en": "for it / make sure"
+  },
+  {
+    "nl": "eten",
+    "en": "eat / food",
+    "pos": "verb",
+    "verb": {
+      "inf": "eten",
+      "hij": "eet",
+      "past": "at",
+      "perfect": "gegeten"
+    }
+  },
+  {
+    "nl": "even",
+    "en": "briefly / just"
+  },
+  {
+    "nl": "extra",
+    "en": "extra"
+  },
+  {
+    "nl": "feest",
+    "en": "party"
+  },
+  {
+    "nl": "fijn",
+    "en": "nice / fine"
+  },
+  {
+    "nl": "flexibel",
+    "en": "flexible"
+  },
+  {
+    "nl": "formulier",
+    "en": "form"
+  },
+  {
+    "nl": "foto's",
+    "en": "photos"
+  },
+  {
+    "nl": "gaan",
+    "en": "go / are going",
+    "pos": "verb",
+    "verb": {
+      "inf": "gaan",
+      "hij": "gaat",
+      "past": "ging",
+      "perfect": "gegaan"
+    }
+  },
+  {
+    "nl": "gaat",
+    "en": "goes",
+    "pos": "verb",
+    "verb": {
+      "inf": "gaan",
+      "hij": "gaat",
+      "past": "ging",
+      "perfect": "gegaan"
+    }
+  },
+  {
+    "nl": "geachte",
+    "en": "dear / respected"
+  },
+  {
+    "nl": "gebroken",
+    "en": "broken",
+    "pos": "verb",
+    "verb": {
+      "inf": "breken",
+      "hij": "breekt",
+      "past": "brak",
+      "perfect": "gebroken"
+    }
+  },
+  {
+    "nl": "geef",
+    "en": "give",
+    "pos": "verb",
+    "verb": {
+      "inf": "geven",
+      "hij": "geeft",
+      "past": "gaf",
+      "perfect": "gegeven"
+    }
+  },
+  {
+    "nl": "geeft",
+    "en": "gives",
+    "pos": "verb",
+    "verb": {
+      "inf": "geven",
+      "hij": "geeft",
+      "past": "gaf",
+      "perfect": "gegeven"
+    }
+  },
+  {
+    "nl": "geen",
+    "en": "no / none"
+  },
+  {
+    "nl": "gekocht",
+    "en": "bought",
+    "pos": "verb",
+    "verb": {
+      "inf": "kopen",
+      "hij": "koopt",
+      "past": "kocht",
+      "perfect": "gekocht"
+    }
+  },
+  {
+    "nl": "geldbedrag",
+    "en": "money amount"
+  },
+  {
+    "nl": "gelegd",
+    "en": "put / laid",
+    "pos": "verb",
+    "verb": {
+      "inf": "leggen",
+      "hij": "legt",
+      "past": "legde",
+      "perfect": "gelegd"
+    }
+  },
+  {
+    "nl": "gemaakt",
+    "en": "made",
+    "pos": "verb",
+    "verb": {
+      "inf": "maken",
+      "hij": "maakt",
+      "past": "maakte",
+      "perfect": "gemaakt"
+    }
+  },
+  {
+    "nl": "gemeente",
+    "en": "municipality"
+  },
+  {
+    "nl": "genoeg",
+    "en": "enough"
+  },
+  {
+    "nl": "gereedschap",
+    "en": "tools"
+  },
+  {
+    "nl": "gereedschappen",
+    "en": "tools"
+  },
+  {
+    "nl": "geschiedenis",
+    "en": "history"
+  },
+  {
+    "nl": "geven",
+    "en": "give",
+    "pos": "verb",
+    "verb": {
+      "inf": "geven",
+      "hij": "geeft",
+      "past": "gaf",
+      "perfect": "gegeven"
+    }
+  },
+  {
+    "nl": "gevonden",
+    "en": "found",
+    "pos": "verb",
+    "verb": {
+      "inf": "vinden",
+      "hij": "vindt",
+      "past": "vond",
+      "perfect": "gevonden"
+    }
+  },
+  {
+    "nl": "gevraagd",
+    "en": "asked",
+    "pos": "verb",
+    "verb": {
+      "inf": "vragen",
+      "hij": "vraagt",
+      "past": "vroeg",
+      "perfect": "gevraagd"
+    }
+  },
+  {
+    "nl": "gewerkt",
+    "en": "worked",
+    "pos": "verb",
+    "verb": {
+      "inf": "werken",
+      "hij": "werkt",
+      "past": "werkte",
+      "perfect": "gewerkt"
+    }
+  },
+  {
+    "nl": "gewoond",
+    "en": "lived",
+    "pos": "verb",
+    "verb": {
+      "inf": "wonen",
+      "hij": "woont",
+      "past": "woonde",
+      "perfect": "gewoond"
+    }
+  },
+  {
+    "nl": "gezellig",
+    "en": "pleasant / cosy"
+  },
+  {
+    "nl": "gezocht",
+    "en": "wanted",
+    "pos": "verb",
+    "verb": {
+      "inf": "zoeken",
+      "hij": "zoekt",
+      "past": "zocht",
+      "perfect": "gezocht"
+    }
+  },
+  {
+    "nl": "geïnformeerd",
+    "en": "informed",
+    "pos": "verb",
+    "verb": {
+      "inf": "informeren",
+      "hij": "informeert",
+      "past": "informeerde",
+      "perfect": "geïnformeerd"
+    }
+  },
+  {
+    "nl": "ging",
+    "en": "went",
+    "pos": "verb",
+    "verb": {
+      "inf": "gaan",
+      "hij": "gaat",
+      "past": "ging",
+      "perfect": "gegaan"
+    }
+  },
+  {
+    "nl": "gisteren",
+    "en": "yesterday"
+  },
+  {
+    "nl": "goed",
+    "en": "good"
+  },
+  {
+    "nl": "goede",
+    "en": "good"
+  },
+  {
+    "nl": "graag",
+    "en": "gladly / would like"
+  },
+  {
+    "nl": "gratis",
+    "en": "free"
+  },
+  {
+    "nl": "groeit",
+    "en": "grows",
+    "pos": "verb",
+    "verb": {
+      "inf": "groeien",
+      "hij": "groeit",
+      "past": "groeide",
+      "perfect": "gegroeid"
+    }
+  },
+  {
+    "nl": "groet",
+    "en": "greeting / regards"
+  },
+  {
+    "nl": "groetjes",
+    "en": "greetings"
+  },
+  {
+    "nl": "groot",
+    "en": "big"
+  },
+  {
+    "nl": "haar",
+    "en": "her"
+  },
+  {
+    "nl": "hard",
+    "en": "hard / fast"
+  },
+  {
+    "nl": "hartelijke",
+    "en": "warm / cordial"
+  },
+  {
+    "nl": "heb",
+    "en": "have",
+    "pos": "verb",
+    "verb": {
+      "inf": "hebben",
+      "hij": "heeft",
+      "past": "had",
+      "perfect": "gehad"
+    }
+  },
+  {
+    "nl": "hebben",
+    "en": "have",
+    "pos": "verb",
+    "verb": {
+      "inf": "hebben",
+      "hij": "heeft",
+      "past": "had",
+      "perfect": "gehad"
+    }
+  },
+  {
+    "nl": "hebt",
+    "en": "have",
+    "pos": "verb",
+    "verb": {
+      "inf": "hebben",
+      "hij": "heeft",
+      "past": "had",
+      "perfect": "gehad"
+    }
+  },
+  {
+    "nl": "heeft",
+    "en": "has",
+    "pos": "verb",
+    "verb": {
+      "inf": "hebben",
+      "hij": "heeft",
+      "past": "had",
+      "perfect": "gehad"
+    }
+  },
+  {
+    "nl": "heel",
+    "en": "very / whole"
+  },
+  {
+    "nl": "helaas",
+    "en": "unfortunately"
+  },
+  {
+    "nl": "hele",
+    "en": "whole"
+  },
+  {
+    "nl": "helemaal",
+    "en": "completely"
+  },
+  {
+    "nl": "helpt",
+    "en": "helps",
+    "pos": "verb",
+    "verb": {
+      "inf": "helpen",
+      "hij": "helpt",
+      "past": "hielp",
+      "perfect": "geholpen"
+    }
+  },
+  {
+    "nl": "hem",
+    "en": "him"
+  },
+  {
+    "nl": "het",
+    "en": "the / it"
+  },
+  {
+    "nl": "hetzelfde",
+    "en": "the same"
+  },
+  {
+    "nl": "hij",
+    "en": "he"
+  },
+  {
+    "nl": "hoe",
+    "en": "how"
+  },
+  {
+    "nl": "hoeft",
+    "en": "needs / has to",
+    "pos": "verb",
+    "verb": {
+      "inf": "hoeven",
+      "hij": "hoeft",
+      "past": "hoefde",
+      "perfect": "gehoeven"
+    }
+  },
+  {
+    "nl": "hoeveel",
+    "en": "how many / how much"
+  },
+  {
+    "nl": "hoi",
+    "en": "hi"
+  },
+  {
+    "nl": "home",
+    "en": "home"
+  },
+  {
+    "nl": "hopen",
+    "en": "hope",
+    "pos": "verb",
+    "verb": {
+      "inf": "hopen",
+      "hij": "hoopt",
+      "past": "hoopte",
+      "perfect": "gehoopt"
+    }
+  },
+  {
+    "nl": "houden",
+    "en": "to love / to like",
+    "pos": "verb",
+    "verb": {
+      "inf": "houden",
+      "hij": "houdt",
+      "past": "hield",
+      "perfect": "gehouden"
+    }
+  },
+  {
+    "nl": "hout",
+    "en": "wood"
+  },
+  {
+    "nl": "houten",
+    "en": "wooden"
+  },
+  {
+    "nl": "huis",
+    "en": "home / house"
+  },
+  {
+    "nl": "hun",
+    "en": "their"
+  },
+  {
+    "nl": "idee",
+    "en": "idea"
+  },
+  {
+    "nl": "ideeën",
+    "en": "ideas"
+  },
+  {
+    "nl": "iedereen",
+    "en": "everyone"
+  },
+  {
+    "nl": "iemand",
+    "en": "someone"
+  },
+  {
+    "nl": "iets",
+    "en": "something"
+  },
+  {
+    "nl": "ik",
+    "en": "I"
+  },
+  {
+    "nl": "in",
+    "en": "in"
+  },
+  {
+    "nl": "informatie",
+    "en": "information"
+  },
+  {
+    "nl": "ingeschreven",
+    "en": "registered",
+    "pos": "verb",
+    "verb": {
+      "inf": "inschrijven",
+      "hij": "schrijft in",
+      "past": "schreef in",
+      "perfect": "ingeschreven"
+    }
+  },
+  {
+    "nl": "inschrijven",
+    "en": "registering / to register",
+    "pos": "verb",
+    "verb": {
+      "inf": "inschrijven",
+      "hij": "schrijft in",
+      "past": "schreef in",
+      "perfect": "ingeschreven"
+    }
+  },
+  {
+    "nl": "interesse",
+    "en": "interest"
+  },
+  {
+    "nl": "internet",
+    "en": "internet"
+  },
+  {
+    "nl": "is",
+    "en": "is",
+    "pos": "verb",
+    "verb": {
+      "inf": "zijn",
+      "hij": "is",
+      "past": "was",
+      "perfect": "geweest"
+    }
+  },
+  {
+    "nl": "jaar",
+    "en": "year"
+  },
+  {
+    "nl": "je",
+    "en": "you / your"
+  },
+  {
+    "nl": "jij",
+    "en": "you"
+  },
+  {
+    "nl": "jou",
+    "en": "you"
+  },
+  {
+    "nl": "jouw",
+    "en": "your"
+  },
+  {
+    "nl": "juli",
+    "en": "July"
+  },
+  {
+    "nl": "jullie",
+    "en": "you plural"
+  },
+  {
+    "nl": "juni",
+    "en": "June"
+  },
+  {
+    "nl": "kan",
+    "en": "can",
+    "pos": "verb",
+    "verb": {
+      "inf": "kunnen",
+      "hij": "kan",
+      "past": "kon",
+      "perfect": "gekund"
+    }
+  },
+  {
+    "nl": "kantine",
+    "en": "canteen"
+  },
+  {
+    "nl": "keer",
+    "en": "time"
+  },
+  {
+    "nl": "kent",
+    "en": "knows",
+    "pos": "verb",
+    "verb": {
+      "inf": "kennen",
+      "hij": "kent",
+      "past": "kende",
+      "perfect": "gekend"
+    }
+  },
+  {
+    "nl": "kiezen",
+    "en": "choose",
+    "pos": "verb",
+    "verb": {
+      "inf": "kiezen",
+      "hij": "kiest",
+      "past": "koos",
+      "perfect": "gekozen"
+    }
+  },
+  {
+    "nl": "kinderen",
+    "en": "children"
+  },
+  {
+    "nl": "kinderkleding",
+    "en": "children’s clothing"
+  },
+  {
+    "nl": "kistje",
+    "en": "small box"
+  },
+  {
+    "nl": "klaar",
+    "en": "finished / ready"
+  },
+  {
+    "nl": "klanten",
+    "en": "customers"
+  },
+  {
+    "nl": "kleding",
+    "en": "clothing"
+  },
+  {
+    "nl": "kledingwinkel",
+    "en": "clothing shop"
+  },
+  {
+    "nl": "klein",
+    "en": "small"
+  },
+  {
+    "nl": "koffie",
+    "en": "coffee"
+  },
+  {
+    "nl": "kom",
+    "en": "come",
+    "pos": "verb",
+    "verb": {
+      "inf": "komen",
+      "hij": "komt",
+      "past": "kwam",
+      "perfect": "gekomen"
+    }
+  },
+  {
+    "nl": "komen",
+    "en": "come",
+    "pos": "verb",
+    "verb": {
+      "inf": "komen",
+      "hij": "komt",
+      "past": "kwam",
+      "perfect": "gekomen"
+    }
+  },
+  {
+    "nl": "koopavond",
+    "en": "shopping evening"
+  },
+  {
+    "nl": "kost",
+    "en": "costs",
+    "pos": "verb",
+    "verb": {
+      "inf": "kosten",
+      "hij": "kost",
+      "past": "kostte",
+      "perfect": "gekost"
+    }
+  },
+  {
+    "nl": "kosten",
+    "en": "cost",
+    "pos": "verb",
+    "verb": {
+      "inf": "kosten",
+      "hij": "kost",
+      "past": "kostte",
+      "perfect": "gekost"
+    }
+  },
+  {
+    "nl": "kostte",
+    "en": "costed / cost",
+    "pos": "verb",
+    "verb": {
+      "inf": "kosten",
+      "hij": "kost",
+      "past": "kostte",
+      "perfect": "gekost"
+    }
+  },
+  {
+    "nl": "krijgt",
+    "en": "gets / receives",
+    "pos": "verb",
+    "verb": {
+      "inf": "krijgen",
+      "hij": "krijgt",
+      "past": "kreeg",
+      "perfect": "gekregen"
+    }
+  },
+  {
+    "nl": "kun",
+    "en": "can",
+    "pos": "verb",
+    "verb": {
+      "inf": "kunnen",
+      "hij": "kan",
+      "past": "kon",
+      "perfect": "gekund"
+    }
+  },
+  {
+    "nl": "kunnen",
+    "en": "can",
+    "pos": "verb",
+    "verb": {
+      "inf": "kunnen",
+      "hij": "kan",
+      "past": "kon",
+      "perfect": "gekund"
+    }
+  },
+  {
+    "nl": "kunt",
+    "en": "can",
+    "pos": "verb",
+    "verb": {
+      "inf": "kunnen",
+      "hij": "kan",
+      "past": "kon",
+      "perfect": "gekund"
+    }
+  },
+  {
+    "nl": "kwartier",
+    "en": "quarter hour"
+  },
+  {
+    "nl": "laat",
+    "en": "let / leave",
+    "pos": "verb",
+    "verb": {
+      "inf": "laten",
+      "hij": "laat",
+      "past": "liet",
+      "perfect": "gelaten"
+    }
+  },
+  {
+    "nl": "laatste",
+    "en": "last"
+  },
+  {
+    "nl": "laten",
+    "en": "let / leave",
+    "pos": "verb",
+    "verb": {
+      "inf": "laten",
+      "hij": "laat",
+      "past": "liet",
+      "perfect": "gelaten"
+    }
+  },
+  {
+    "nl": "later",
+    "en": "later"
+  },
+  {
+    "nl": "leeftijden",
+    "en": "ages"
+  },
+  {
+    "nl": "leert",
+    "en": "learns",
+    "pos": "verb",
+    "verb": {
+      "inf": "leren",
+      "hij": "leert",
+      "past": "leerde",
+      "perfect": "geleerd"
+    }
+  },
+  {
+    "nl": "lees",
+    "en": "read",
+    "pos": "verb",
+    "verb": {
+      "inf": "lezen",
+      "hij": "leest",
+      "past": "las",
+      "perfect": "gelezen"
+    }
+  },
+  {
+    "nl": "leest",
+    "en": "reads",
+    "pos": "verb",
+    "verb": {
+      "inf": "lezen",
+      "hij": "leest",
+      "past": "las",
+      "perfect": "gelezen"
+    }
+  },
+  {
+    "nl": "leren",
+    "en": "learn",
+    "pos": "verb",
+    "verb": {
+      "inf": "leren",
+      "hij": "leert",
+      "past": "leerde",
+      "perfect": "geleerd"
+    }
+  },
+  {
+    "nl": "les",
+    "en": "lesson"
+  },
+  {
+    "nl": "lessen",
+    "en": "lessons"
+  },
+  {
+    "nl": "leuk",
+    "en": "fun / nice"
+  },
+  {
+    "nl": "leuke",
+    "en": "fun / nice"
+  },
+  {
+    "nl": "liever",
+    "en": "preferably / rather"
+  },
+  {
+    "nl": "limburg",
+    "en": "Limburg"
+  },
+  {
+    "nl": "losse",
+    "en": "separate"
+  },
+  {
+    "nl": "lunch",
+    "en": "lunch"
+  },
+  {
+    "nl": "maakt",
+    "en": "makes",
+    "pos": "verb",
+    "verb": {
+      "inf": "maken",
+      "hij": "maakt",
+      "past": "maakte",
+      "perfect": "gemaakt"
+    }
+  },
+  {
+    "nl": "maandag",
+    "en": "Monday"
+  },
+  {
+    "nl": "maar",
+    "en": "but"
+  },
+  {
+    "nl": "maastricht",
+    "en": "Maastricht"
+  },
+  {
+    "nl": "mag",
+    "en": "may",
+    "pos": "verb",
+    "verb": {
+      "inf": "mogen",
+      "hij": "mag",
+      "past": "mocht",
+      "perfect": "gemogen"
+    }
+  },
+  {
+    "nl": "mail",
+    "en": "mail",
+    "pos": "verb",
+    "verb": {
+      "inf": "mailen",
+      "hij": "mailt",
+      "past": "mailde",
+      "perfect": "gemaild"
+    }
+  },
+  {
+    "nl": "mailen",
+    "en": "to e-mail",
+    "pos": "verb",
+    "verb": {
+      "inf": "mailen",
+      "hij": "mailt",
+      "past": "mailde",
+      "perfect": "gemaild"
+    }
+  },
+  {
+    "nl": "maken",
+    "en": "make / making",
+    "pos": "verb",
+    "verb": {
+      "inf": "maken",
+      "hij": "maakt",
+      "past": "maakte",
+      "perfect": "gemaakt"
+    }
+  },
+  {
+    "nl": "man",
+    "en": "husband / man"
+  },
+  {
+    "nl": "manager",
+    "en": "manager"
+  },
+  {
+    "nl": "maximaal",
+    "en": "maximum"
+  },
+  {
+    "nl": "me",
+    "en": "me"
+  },
+  {
+    "nl": "medecursist",
+    "en": "fellow course participant"
+  },
+  {
+    "nl": "mediatheek",
+    "en": "media library"
+  },
+  {
+    "nl": "meenemen",
+    "en": "bring along",
+    "pos": "verb",
+    "verb": {
+      "inf": "meenemen",
+      "hij": "neemt mee",
+      "past": "nam mee",
+      "perfect": "meegenomen"
+    }
+  },
+  {
+    "nl": "meer",
+    "en": "more"
+  },
+  {
+    "nl": "mei",
+    "en": "May"
+  },
+  {
+    "nl": "meld",
+    "en": "report",
+    "pos": "verb",
+    "verb": {
+      "inf": "melden",
+      "hij": "meldt",
+      "past": "meldde",
+      "perfect": "gemeld"
+    }
+  },
+  {
+    "nl": "melden",
+    "en": "report",
+    "pos": "verb",
+    "verb": {
+      "inf": "melden",
+      "hij": "meldt",
+      "past": "meldde",
+      "perfect": "gemeld"
+    }
+  },
+  {
+    "nl": "mensen",
+    "en": "people"
+  },
+  {
+    "nl": "met",
+    "en": "with"
+  },
+  {
+    "nl": "meubelmakers",
+    "en": "furniture makers"
+  },
+  {
+    "nl": "meubels",
+    "en": "furniture"
+  },
+  {
+    "nl": "meubelstuk",
+    "en": "piece of furniture"
+  },
+  {
+    "nl": "mevrouw",
+    "en": "Mrs. / madam"
+  },
+  {
+    "nl": "mij",
+    "en": "me / my place"
+  },
+  {
+    "nl": "mijn",
+    "en": "my"
+  },
+  {
+    "nl": "minder",
+    "en": "less"
+  },
+  {
+    "nl": "minimaal",
+    "en": "minimally / at least"
+  },
+  {
+    "nl": "minuten",
+    "en": "minutes"
+  },
+  {
+    "nl": "misschien",
+    "en": "maybe"
+  },
+  {
+    "nl": "mode",
+    "en": "fashion"
+  },
+  {
+    "nl": "moet",
+    "en": "must",
+    "pos": "verb",
+    "verb": {
+      "inf": "moeten",
+      "hij": "moet",
+      "past": "moest",
+      "perfect": "gemoeten"
+    }
+  },
+  {
+    "nl": "moeten",
+    "en": "must",
+    "pos": "verb",
+    "verb": {
+      "inf": "moeten",
+      "hij": "moet",
+      "past": "moest",
+      "perfect": "gemoeten"
+    }
+  },
+  {
+    "nl": "mogen",
+    "en": "may / are allowed",
+    "pos": "verb",
+    "verb": {
+      "inf": "mogen",
+      "hij": "mag",
+      "past": "mocht",
+      "perfect": "gemogen"
+    }
+  },
+  {
+    "nl": "moment",
+    "en": "moment"
+  },
+  {
+    "nl": "mooi",
+    "en": "beautiful / nice"
+  },
+  {
+    "nl": "mooie",
+    "en": "beautiful / nice"
+  },
+  {
+    "nl": "na",
+    "en": "after"
+  },
+  {
+    "nl": "naar",
+    "en": "to"
+  },
+  {
+    "nl": "namelijk",
+    "en": "namely / because"
+  },
+  {
+    "nl": "natuurlijk",
+    "en": "naturally / of course"
+  },
+  {
+    "nl": "nederlands",
+    "en": "Dutch"
+  },
+  {
+    "nl": "nederlandse",
+    "en": "Dutch"
+  },
+  {
+    "nl": "neem",
+    "en": "take",
+    "pos": "verb",
+    "verb": {
+      "inf": "nemen",
+      "hij": "neemt",
+      "past": "nam",
+      "perfect": "genomen"
+    }
+  },
+  {
+    "nl": "neemt",
+    "en": "takes",
+    "pos": "verb",
+    "verb": {
+      "inf": "opnemen",
+      "hij": "neemt op",
+      "past": "nam op",
+      "perfect": "opgenomen"
+    }
+  },
+  {
+    "nl": "nemen",
+    "en": "take",
+    "pos": "verb",
+    "verb": {
+      "inf": "nemen",
+      "hij": "neemt",
+      "past": "nam",
+      "perfect": "genomen"
+    }
+  },
+  {
+    "nl": "net",
+    "en": "just now / just"
+  },
+  {
+    "nl": "niet",
+    "en": "not"
+  },
+  {
+    "nl": "nieuwe",
+    "en": "new"
+  },
+  {
+    "nl": "nl",
+    "en": "Netherlands / domain ending"
+  },
+  {
+    "nl": "nodig",
+    "en": "needed"
+  },
+  {
+    "nl": "nog",
+    "en": "still / yet"
+  },
+  {
+    "nl": "nu",
+    "en": "now"
+  },
+  {
+    "nl": "oefenen",
+    "en": "practice",
+    "pos": "verb",
+    "verb": {
+      "inf": "oefenen",
+      "hij": "oefent",
+      "past": "oefende",
+      "perfect": "geoefend"
+    }
+  },
+  {
+    "nl": "of",
+    "en": "or"
+  },
+  {
+    "nl": "oktober",
+    "en": "October"
+  },
+  {
+    "nl": "om",
+    "en": "at / in order to"
+  },
+  {
+    "nl": "omdat",
+    "en": "because"
+  },
+  {
+    "nl": "omgaan",
+    "en": "deal with / handle"
+  },
+  {
+    "nl": "online",
+    "en": "online"
+  },
+  {
+    "nl": "ons",
+    "en": "us / our"
+  },
+  {
+    "nl": "ontwerpen",
+    "en": "design",
+    "pos": "verb",
+    "verb": {
+      "inf": "ontwerpen",
+      "hij": "ontwerpt",
+      "past": "ontwierp",
+      "perfect": "ontworpen"
+    }
+  },
+  {
+    "nl": "onze",
+    "en": "our"
+  },
+  {
+    "nl": "ook",
+    "en": "also"
+  },
+  {
+    "nl": "oost",
+    "en": "East"
+  },
+  {
+    "nl": "op",
+    "en": "on"
+  },
+  {
+    "nl": "opnemen",
+    "en": "take / record / answer",
+    "pos": "verb",
+    "verb": {
+      "inf": "opnemen",
+      "hij": "neemt op",
+      "past": "nam op",
+      "perfect": "opgenomen"
+    }
+  },
+  {
+    "nl": "opsturen",
+    "en": "send in",
+    "pos": "verb",
+    "verb": {
+      "inf": "opsturen",
+      "hij": "stuurt op",
+      "past": "stuurde op",
+      "perfect": "opgestuurd"
+    }
+  },
+  {
+    "nl": "over",
+    "en": "over / about"
+  },
+  {
+    "nl": "overdag",
+    "en": "during the day"
+  },
+  {
+    "nl": "paar",
+    "en": "few / couple"
+  },
+  {
+    "nl": "pannenkoeken",
+    "en": "pancakes"
+  },
+  {
+    "nl": "parkeren",
+    "en": "to park",
+    "pos": "verb",
+    "verb": {
+      "inf": "parkeren",
+      "hij": "parkeert",
+      "past": "parkeerde",
+      "perfect": "geparkeerd"
+    }
+  },
+  {
+    "nl": "past",
+    "en": "fits",
+    "pos": "verb",
+    "verb": {
+      "inf": "passen",
+      "hij": "past",
+      "past": "paste",
+      "perfect": "gepast"
+    }
+  },
+  {
+    "nl": "per",
+    "en": "per / as of"
+  },
+  {
+    "nl": "persoon",
+    "en": "person"
+  },
+  {
+    "nl": "plannen",
+    "en": "plans",
+    "pos": "verb",
+    "verb": {
+      "inf": "plannen",
+      "hij": "plant",
+      "past": "plande",
+      "perfect": "gepland"
+    }
+  },
+  {
+    "nl": "planning",
+    "en": "planning"
+  },
+  {
+    "nl": "plek",
+    "en": "place / space"
+  },
+  {
+    "nl": "plekken",
+    "en": "places"
+  },
+  {
+    "nl": "praktijk",
+    "en": "practice"
+  },
+  {
+    "nl": "presentatie",
+    "en": "presentation"
+  },
+  {
+    "nl": "probleem",
+    "en": "problem"
+  },
+  {
+    "nl": "receptie",
+    "en": "reception"
+  },
+  {
+    "nl": "reken",
+    "en": "calculate"
+  },
+  {
+    "nl": "restaurants",
+    "en": "restaurants"
+  },
+  {
+    "nl": "rijden",
+    "en": "drive / ride",
+    "pos": "verb",
+    "verb": {
+      "inf": "rijden",
+      "hij": "rijdt",
+      "past": "reed",
+      "perfect": "gereden"
+    }
+  },
+  {
+    "nl": "rijdt",
+    "en": "drives / runs",
+    "pos": "verb",
+    "verb": {
+      "inf": "rijden",
+      "hij": "rijdt",
+      "past": "reed",
+      "perfect": "gereden"
+    }
+  },
+  {
+    "nl": "rooster",
+    "en": "schedule"
+  },
+  {
+    "nl": "s",
+    "en": "in / of (as in ’s avonds)"
+  },
+  {
+    "nl": "samen",
+    "en": "together"
+  },
+  {
+    "nl": "school",
+    "en": "school"
+  },
+  {
+    "nl": "schoonmaakbedrijf",
+    "en": "cleaning company"
+  },
+  {
+    "nl": "schoonste",
+    "en": "cleanest"
+  },
+  {
+    "nl": "schrijf",
+    "en": "write",
+    "pos": "verb",
+    "verb": {
+      "inf": "schrijven",
+      "hij": "schrijft",
+      "past": "schreef",
+      "perfect": "geschreven"
+    }
+  },
+  {
+    "nl": "secretaresse",
+    "en": "secretary"
+  },
+  {
+    "nl": "september",
+    "en": "September"
+  },
+  {
+    "nl": "snel",
+    "en": "quickly"
+  },
+  {
+    "nl": "solliciteer",
+    "en": "apply",
+    "pos": "verb",
+    "verb": {
+      "inf": "solliciteren",
+      "hij": "solliciteert",
+      "past": "solliciteerde",
+      "perfect": "gesolliciteerd"
+    }
+  },
+  {
+    "nl": "soorten",
+    "en": "types / kinds"
+  },
+  {
+    "nl": "spelletjes",
+    "en": "games"
+  },
+  {
+    "nl": "stad",
+    "en": "city"
+  },
+  {
+    "nl": "stadsbus",
+    "en": "city bus"
+  },
+  {
+    "nl": "station",
+    "en": "station"
+  },
+  {
+    "nl": "steeds",
+    "en": "always / increasingly"
+  },
+  {
+    "nl": "stoel",
+    "en": "chair"
+  },
+  {
+    "nl": "stopt",
+    "en": "stops",
+    "pos": "verb",
+    "verb": {
+      "inf": "stoppen",
+      "hij": "stopt",
+      "past": "stopte",
+      "perfect": "gestopt"
+    }
+  },
+  {
+    "nl": "straks",
+    "en": "later / soon"
+  },
+  {
+    "nl": "studeren",
+    "en": "studying / to study"
+  },
+  {
+    "nl": "sturen",
+    "en": "send",
+    "pos": "verb",
+    "verb": {
+      "inf": "sturen",
+      "hij": "stuurt",
+      "past": "stuurde",
+      "perfect": "gestuurd"
+    }
+  },
+  {
+    "nl": "stuur",
+    "en": "send",
+    "pos": "verb",
+    "verb": {
+      "inf": "sturen",
+      "hij": "stuurt",
+      "past": "stuurde",
+      "perfect": "gestuurd"
+    }
+  },
+  {
+    "nl": "stuurt",
+    "en": "sends",
+    "pos": "verb",
+    "verb": {
+      "inf": "sturen",
+      "hij": "stuurt",
+      "past": "stuurde",
+      "perfect": "gestuurd"
+    }
+  },
+  {
+    "nl": "succes",
+    "en": "success"
+  },
+  {
+    "nl": "taalcursus",
+    "en": "language course"
+  },
+  {
+    "nl": "tafeltje",
+    "en": "small table"
+  },
+  {
+    "nl": "tandarts",
+    "en": "dentist"
+  },
+  {
+    "nl": "te",
+    "en": "to / too"
+  },
+  {
+    "nl": "tekst",
+    "en": "text"
+  },
+  {
+    "nl": "telefoon",
+    "en": "telephone"
+  },
+  {
+    "nl": "tevreden",
+    "en": "satisfied"
+  },
+  {
+    "nl": "thee",
+    "en": "tea"
+  },
+  {
+    "nl": "theorieboek",
+    "en": "theory book"
+  },
+  {
+    "nl": "thuis",
+    "en": "home"
+  },
+  {
+    "nl": "tien",
+    "en": "ten"
+  },
+  {
+    "nl": "tijd",
+    "en": "time"
+  },
+  {
+    "nl": "tijden",
+    "en": "times"
+  },
+  {
+    "nl": "tijdens",
+    "en": "during"
+  },
+  {
+    "nl": "tijdstip",
+    "en": "time point / time"
+  },
+  {
+    "nl": "toch",
+    "en": "right / isn’t it"
+  },
+  {
+    "nl": "toen",
+    "en": "then"
+  },
+  {
+    "nl": "tot",
+    "en": "until / to"
+  },
+  {
+    "nl": "twee",
+    "en": "two"
+  },
+  {
+    "nl": "tweede",
+    "en": "second"
+  },
+  {
+    "nl": "twintig",
+    "en": "twenty"
+  },
+  {
+    "nl": "u",
+    "en": "you (formal)"
+  },
+  {
+    "nl": "uit",
+    "en": "out of / from"
+  },
+  {
+    "nl": "uitleggen",
+    "en": "explain",
+    "pos": "verb",
+    "verb": {
+      "inf": "uitleggen",
+      "hij": "legt uit",
+      "past": "legde uit",
+      "perfect": "uitgelegd"
+    }
+  },
+  {
+    "nl": "uur",
+    "en": "hour / o’clock"
+  },
+  {
+    "nl": "uw",
+    "en": "your (formal)"
+  },
+  {
+    "nl": "vaak",
+    "en": "often"
+  },
+  {
+    "nl": "vacature",
+    "en": "vacancy"
+  },
+  {
+    "nl": "vakantie",
+    "en": "holiday"
+  },
+  {
+    "nl": "vakantieperiode",
+    "en": "holiday period"
+  },
+  {
+    "nl": "vakantieregels",
+    "en": "holiday rules"
+  },
+  {
+    "nl": "vakantierooster",
+    "en": "holiday schedule"
+  },
+  {
+    "nl": "vaker",
+    "en": "more often"
+  },
+  {
+    "nl": "van",
+    "en": "of / from"
+  },
+  {
+    "nl": "vanaf",
+    "en": "from / starting from"
+  },
+  {
+    "nl": "veel",
+    "en": "many / much"
+  },
+  {
+    "nl": "verder",
+    "en": "furthermore"
+  },
+  {
+    "nl": "vergeet",
+    "en": "forget",
+    "pos": "verb",
+    "verb": {
+      "inf": "vergeten",
+      "hij": "vergeet",
+      "past": "vergat",
+      "perfect": "vergeten"
+    }
+  },
+  {
+    "nl": "verhuizen",
+    "en": "move house",
+    "pos": "verb",
+    "verb": {
+      "inf": "verhuizen",
+      "hij": "verhuist",
+      "past": "verhuisde",
+      "perfect": "verhuisd"
+    }
+  },
+  {
+    "nl": "verkoper",
+    "en": "salesperson"
+  },
+  {
+    "nl": "verkopers",
+    "en": "salespeople"
+  },
+  {
+    "nl": "verplaatst",
+    "en": "moved / rescheduled",
+    "pos": "verb",
+    "verb": {
+      "inf": "verplaatsen",
+      "hij": "verplaatst",
+      "past": "verplaatste",
+      "perfect": "verplaatst"
+    }
+  },
+  {
+    "nl": "verplicht",
+    "en": "required / obligatory"
+  },
+  {
+    "nl": "verschillende",
+    "en": "different"
+  },
+  {
+    "nl": "vertellen",
+    "en": "tell",
+    "pos": "verb",
+    "verb": {
+      "inf": "vertellen",
+      "hij": "vertelt",
+      "past": "vertelde",
+      "perfect": "verteld"
+    }
+  },
+  {
+    "nl": "vertrekt",
+    "en": "departs",
+    "pos": "verb",
+    "verb": {
+      "inf": "vertrekken",
+      "hij": "vertrekt",
+      "past": "vertrok",
+      "perfect": "vertrokken"
+    }
+  },
+  {
+    "nl": "via",
+    "en": "via"
+  },
+  {
+    "nl": "vijf",
+    "en": "five"
+  },
+  {
+    "nl": "vind",
+    "en": "find / think",
+    "pos": "verb",
+    "verb": {
+      "inf": "vinden",
+      "hij": "vindt",
+      "past": "vond",
+      "perfect": "gevonden"
+    }
+  },
+  {
+    "nl": "vindt",
+    "en": "finds / thinks",
+    "pos": "verb",
+    "verb": {
+      "inf": "vinden",
+      "hij": "vindt",
+      "past": "vond",
+      "perfect": "gevonden"
+    }
+  },
+  {
+    "nl": "vol",
+    "en": "full"
+  },
+  {
+    "nl": "voldoende",
+    "en": "sufficiently"
+  },
+  {
+    "nl": "volgen",
+    "en": "follow / take",
+    "pos": "verb",
+    "verb": {
+      "inf": "volgen",
+      "hij": "volgt",
+      "past": "volgde",
+      "perfect": "gevolgd"
+    }
+  },
+  {
+    "nl": "volgende",
+    "en": "next"
+  },
+  {
+    "nl": "volgt",
+    "en": "follows / takes",
+    "pos": "verb",
+    "verb": {
+      "inf": "volgen",
+      "hij": "volgt",
+      "past": "volgde",
+      "perfect": "gevolgd"
+    }
+  },
+  {
+    "nl": "vonden",
+    "en": "found",
+    "pos": "verb",
+    "verb": {
+      "inf": "vinden",
+      "hij": "vindt",
+      "past": "vond",
+      "perfect": "gevonden"
+    }
+  },
+  {
+    "nl": "voor",
+    "en": "for / before"
+  },
+  {
+    "nl": "voordeel",
+    "en": "advantage"
+  },
+  {
+    "nl": "vorig",
+    "en": "previous / last"
+  },
+  {
+    "nl": "vraag",
+    "en": "question",
+    "pos": "verb",
+    "verb": {
+      "inf": "vragen",
+      "hij": "vraagt",
+      "past": "vroeg",
+      "perfect": "gevraagd"
+    }
+  },
+  {
+    "nl": "vraagt",
+    "en": "asks",
+    "pos": "verb",
+    "verb": {
+      "inf": "aanvragen",
+      "hij": "vraagt aan",
+      "past": "vroeg aan",
+      "perfect": "aangevraagd"
+    }
+  },
+  {
+    "nl": "vragen",
+    "en": "ask",
+    "pos": "verb",
+    "verb": {
+      "inf": "vragen",
+      "hij": "vraagt",
+      "past": "vroeg",
+      "perfect": "gevraagd"
+    }
+  },
+  {
+    "nl": "vriendelijk",
+    "en": "friendly"
+  },
+  {
+    "nl": "vriendelijke",
+    "en": "friendly"
+  },
+  {
+    "nl": "vrij",
+    "en": "free / off"
+  },
+  {
+    "nl": "vrijdag",
+    "en": "Friday"
+  },
+  {
+    "nl": "vrijday",
+    "en": "Friday (typo; should be Vrijdag)"
+  },
+  {
+    "nl": "vóór",
+    "en": "before"
+  },
+  {
+    "nl": "waarin",
+    "en": "in which"
+  },
+  {
+    "nl": "waarom",
+    "en": "why"
+  },
+  {
+    "nl": "waarover",
+    "en": "about what"
+  },
+  {
+    "nl": "wanneer",
+    "en": "when"
+  },
+  {
+    "nl": "was",
+    "en": "was",
+    "pos": "verb",
+    "verb": {
+      "inf": "zijn",
+      "hij": "is",
+      "past": "was",
+      "perfect": "geweest"
+    }
+  },
+  {
+    "nl": "wat",
+    "en": "what"
+  },
+  {
+    "nl": "we",
+    "en": "we"
+  },
+  {
+    "nl": "website",
+    "en": "website"
+  },
+  {
+    "nl": "week",
+    "en": "week"
+  },
+  {
+    "nl": "weekend",
+    "en": "weekend"
+  },
+  {
+    "nl": "weer",
+    "en": "again / weather"
+  },
+  {
+    "nl": "weerdt",
+    "en": "Weerdt"
+  },
+  {
+    "nl": "weet",
+    "en": "knows",
+    "pos": "verb",
+    "verb": {
+      "inf": "weten",
+      "hij": "weet",
+      "past": "wist",
+      "perfect": "geweten"
+    }
+  },
+  {
+    "nl": "weg",
+    "en": "away / leaving"
+  },
+  {
+    "nl": "weken",
+    "en": "weeks"
+  },
+  {
+    "nl": "wel",
+    "en": "indeed / can / do"
+  },
+  {
+    "nl": "welke",
+    "en": "which"
+  },
+  {
+    "nl": "werk",
+    "en": "work",
+    "pos": "verb",
+    "verb": {
+      "inf": "werken",
+      "hij": "werkt",
+      "past": "werkte",
+      "perfect": "gewerkt"
+    }
+  },
+  {
+    "nl": "werkdagen",
+    "en": "working days"
+  },
+  {
+    "nl": "werken",
+    "en": "working / to work",
+    "pos": "verb",
+    "verb": {
+      "inf": "werken",
+      "hij": "werkt",
+      "past": "werkte",
+      "perfect": "gewerkt"
+    }
+  },
+  {
+    "nl": "werkrooster",
+    "en": "work schedule"
+  },
+  {
+    "nl": "werkt",
+    "en": "works",
+    "pos": "verb",
+    "verb": {
+      "inf": "werken",
+      "hij": "werkt",
+      "past": "werkte",
+      "perfect": "gewerkt"
+    }
+  },
+  {
+    "nl": "weten",
+    "en": "to know",
+    "pos": "verb",
+    "verb": {
+      "inf": "weten",
+      "hij": "weet",
+      "past": "wist",
+      "perfect": "geweten"
+    }
+  },
+  {
+    "nl": "wie",
+    "en": "who"
+  },
+  {
+    "nl": "wij",
+    "en": "we"
+  },
+  {
+    "nl": "wil",
+    "en": "wants / want",
+    "pos": "verb",
+    "verb": {
+      "inf": "willen",
+      "hij": "wil",
+      "past": "wilde",
+      "perfect": "gewild"
+    }
+  },
+  {
+    "nl": "willen",
+    "en": "want",
+    "pos": "verb",
+    "verb": {
+      "inf": "willen",
+      "hij": "wil",
+      "past": "wilde",
+      "perfect": "gewild"
+    }
+  },
+  {
+    "nl": "wilt",
+    "en": "want",
+    "pos": "verb",
+    "verb": {
+      "inf": "willen",
+      "hij": "wil",
+      "past": "wilde",
+      "perfect": "gewild"
+    }
+  },
+  {
+    "nl": "winkel",
+    "en": "shop"
+  },
+  {
+    "nl": "winkels",
+    "en": "shops"
+  },
+  {
+    "nl": "winkeltijden",
+    "en": "shopping times"
+  },
+  {
+    "nl": "woensdag",
+    "en": "Wednesday"
+  },
+  {
+    "nl": "woont",
+    "en": "lives",
+    "pos": "verb",
+    "verb": {
+      "inf": "wonen",
+      "hij": "woont",
+      "past": "woonde",
+      "perfect": "gewoond"
+    }
+  },
+  {
+    "nl": "worden",
+    "en": "to become / to be made",
+    "pos": "verb",
+    "verb": {
+      "inf": "worden",
+      "hij": "wordt",
+      "past": "werd",
+      "perfect": "geworden"
+    }
+  },
+  {
+    "nl": "wordt",
+    "en": "becomes / is made",
+    "pos": "verb",
+    "verb": {
+      "inf": "worden",
+      "hij": "wordt",
+      "past": "werd",
+      "perfect": "geworden"
+    }
+  },
+  {
+    "nl": "zaterdag",
+    "en": "Saturday"
+  },
+  {
+    "nl": "ze",
+    "en": "she / they"
+  },
+  {
+    "nl": "zelf",
+    "en": "self / yourself"
+  },
+  {
+    "nl": "zelfs",
+    "en": "even"
+  },
+  {
+    "nl": "zes",
+    "en": "six"
+  },
+  {
+    "nl": "zich",
+    "en": "oneself / himself / herself"
+  },
+  {
+    "nl": "zien",
+    "en": "see",
+    "pos": "verb",
+    "verb": {
+      "inf": "zien",
+      "hij": "ziet",
+      "past": "zag",
+      "perfect": "gezien"
+    }
+  },
+  {
+    "nl": "zij",
+    "en": "she / they"
+  },
+  {
+    "nl": "zijn",
+    "en": "his / its / to be",
+    "pos": "verb",
+    "verb": {
+      "inf": "zijn",
+      "hij": "is",
+      "past": "was",
+      "perfect": "geweest"
+    }
+  },
+  {
+    "nl": "zit",
+    "en": "sits / is",
+    "pos": "verb",
+    "verb": {
+      "inf": "zitten",
+      "hij": "zit",
+      "past": "zat",
+      "perfect": "gezeten"
+    }
+  },
+  {
+    "nl": "zitten",
+    "en": "sit",
+    "pos": "verb",
+    "verb": {
+      "inf": "zitten",
+      "hij": "zit",
+      "past": "zat",
+      "perfect": "gezeten"
+    }
+  },
+  {
+    "nl": "zoek",
+    "en": "search / look for",
+    "pos": "verb",
+    "verb": {
+      "inf": "zoeken",
+      "hij": "zoekt",
+      "past": "zocht",
+      "perfect": "gezocht"
+    }
+  },
+  {
+    "nl": "zoeken",
+    "en": "search / look for",
+    "pos": "verb",
+    "verb": {
+      "inf": "zoeken",
+      "hij": "zoekt",
+      "past": "zocht",
+      "perfect": "gezocht"
+    }
+  },
+  {
+    "nl": "zoekt",
+    "en": "searches / looks for",
+    "pos": "verb",
+    "verb": {
+      "inf": "zoeken",
+      "hij": "zoekt",
+      "past": "zocht",
+      "perfect": "gezocht"
+    }
+  },
+  {
+    "nl": "zomer",
+    "en": "summer"
+  },
+  {
+    "nl": "zomervakantie",
+    "en": "summer holiday"
+  },
+  {
+    "nl": "zondag",
+    "en": "Sunday"
+  },
+  {
+    "nl": "zorg",
+    "en": "ensure / care",
+    "pos": "verb",
+    "verb": {
+      "inf": "zorgen",
+      "hij": "zorgt",
+      "past": "zorgde",
+      "perfect": "gezorgd"
+    }
+  },
+  {
+    "nl": "zorgen",
+    "en": "to ensure / to care",
+    "pos": "verb",
+    "verb": {
+      "inf": "zorgen",
+      "hij": "zorgt",
+      "past": "zorgde",
+      "perfect": "gezorgd"
+    }
+  },
+  {
+    "nl": "zorgt",
+    "en": "ensures / cares",
+    "pos": "verb",
+    "verb": {
+      "inf": "zorgen",
+      "hij": "zorgt",
+      "past": "zorgde",
+      "perfect": "gezorgd"
+    }
+  },
+  {
+    "nl": "zou",
+    "en": "would",
+    "pos": "verb",
+    "verb": {
+      "inf": "zullen",
+      "hij": "zal",
+      "past": "zou",
+      "perfect": "—"
+    }
+  },
+  {
+    "nl": "zuid",
+    "en": "South"
+  },
+  {
+    "nl": "zullen",
+    "en": "shall",
+    "pos": "verb",
+    "verb": {
+      "inf": "zullen",
+      "hij": "zal",
+      "past": "zou",
+      "perfect": "—"
+    }
+  },
+  {
+    "nl": "én",
+    "en": "and / as well as"
+  },
+  {
+    "nl": "één",
+    "en": "one"
+  }
+]

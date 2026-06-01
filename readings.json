@@ -1832,6 +1832,22 @@
         "en": "Irena is taking a Dutch course."
       },
       {
+        "nl": "Ze krijgt een e-mail van een docent.",
+        "en": "She receives an email from a teacher."
+      },
+      {
+        "nl": "Lees eerst de vraag.",
+        "en": "Read the question first."
+      },
+      {
+        "nl": "Lees daarna de tekst.",
+        "en": "Then read the text."
+      },
+      {
+        "nl": "Beste cursist,",
+        "en": "Dear course participant,"
+      },
+      {
         "nl": "Harry de Bont gaat weg.",
         "en": "Harry de Bont is leaving."
       },
@@ -1845,7 +1861,7 @@
       },
       {
         "nl": "Op woensdag 18 april geeft hij zijn laatste les Nederlands en op donderdag 19 april zijn laatste les Engels.",
-        "en": "On Wednesday, 18 April, he will give his last Dutch lesson, and on Thursday, 19 April, his last English lesson."
+        "en": "On Wednesday 18 April he will give his last Dutch lesson, and on Thursday 19 April his last English lesson."
       },
       {
         "nl": "Daarna geeft Nadia Luiten de lessen Nederlands.",
@@ -1857,19 +1873,39 @@
       },
       {
         "nl": "Harry heeft bijna dertig jaar gewerkt bij ons cursuscentrum.",
-        "en": "Harry has worked at our course center for almost thirty years."
+        "en": "Harry has worked at our course centre for almost thirty years."
+      },
+      {
+        "nl": "Dat is heel bijzonder.",
+        "en": "That is very special."
       },
       {
         "nl": "Daarom geven we een groot feest voor hem.",
-        "en": "That is why we are giving a big party for him."
+        "en": "That's why we are throwing a big party for him."
       },
       {
         "nl": "Het feest is op vrijdag 20 april in de kantine.",
-        "en": "The party is on Friday, 20 April, in the canteen."
+        "en": "The party is on Friday 20 April in the canteen."
+      },
+      {
+        "nl": "Het begint om 20.00 uur.",
+        "en": "It starts at 20:00."
       },
       {
         "nl": "Harry krijgt een mooi cadeau van ons allemaal.",
-        "en": "Harry will receive a nice gift from all of us."
+        "en": "Harry will get a beautiful gift from all of us."
+      },
+      {
+        "nl": "We hebben met de docenten een mooi geldbedrag bij elkaar gelegd.",
+        "en": "Together with the teachers we have put together a nice sum of money."
+      },
+      {
+        "nl": "Daarvan hebben we een bijzonder boek voor Harry gekocht.",
+        "en": "With that we bought a special book for Harry."
+      },
+      {
+        "nl": "Willen jullie ook iets doen?",
+        "en": "Would you like to do something too?"
       },
       {
         "nl": "Schrijf dan iets voor Harry.",
@@ -1878,6 +1914,30 @@
       {
         "nl": "Geef je tekst aan Leo Coppens.",
         "en": "Give your text to Leo Coppens."
+      },
+      {
+        "nl": "Hij maakt er een boek van.",
+        "en": "He will turn it into a book."
+      },
+      {
+        "nl": "Kom je ook afscheid nemen van Harry?",
+        "en": "Will you also come to say goodbye to Harry?"
+      },
+      {
+        "nl": "We hopen dat het een gezellig feest wordt!",
+        "en": "We hope it will be a fun party!"
+      },
+      {
+        "nl": "Groet, Pascal van Dijk",
+        "en": "Regards, Pascal van Dijk"
+      },
+      {
+        "nl": "Wanneer is de laatste les Nederlands van Harry de Bont?",
+        "en": "When is Harry de Bont's last Dutch lesson?"
+      },
+      {
+        "nl": "Van wie krijgt Irena straks Nederlandse les?",
+        "en": "Who will be giving Irena her Dutch lessons from now on?"
       }
     ]
   },
@@ -1891,28 +1951,76 @@
     "rawTitle": "Gratis stadsbus",
     "sentences": [
       {
+        "nl": "Carmen woont in Maastricht.",
+        "en": "Carmen lives in Maastricht."
+      },
+      {
+        "nl": "Ze leest een artikel op de website van de gemeente.",
+        "en": "She reads an article on the municipality's website."
+      },
+      {
+        "nl": "Gratis stadsbus",
+        "en": "Free city bus"
+      },
+      {
+        "nl": "Waarom wordt de stadsbus gratis?",
+        "en": "Why is the city bus becoming free?"
+      },
+      {
         "nl": "Het centrum van Maastricht wordt drukker en drukker.",
-        "en": "The center of Maastricht is becoming busier and busier."
+        "en": "The centre of Maastricht is getting busier and busier."
       },
       {
         "nl": "Er rijden steeds meer auto’s en er is vaak niet genoeg plek om te parkeren.",
-        "en": "More and more cars are driving there, and there is often not enough space to park."
+        "en": "More and more cars are on the road and there is often not enough space to park."
       },
       {
         "nl": "Daarom wordt de stadsbus gratis tijdens drukke winkeltijden.",
-        "en": "That is why the city bus will be free during busy shopping hours."
+        "en": "That's why the city bus will be free during busy shopping hours."
       },
       {
         "nl": "We hopen dat het dan minder druk wordt in de stad.",
-        "en": "We hope that the city will then become less busy."
+        "en": "We hope this will make the city less crowded."
+      },
+      {
+        "nl": "En we willen natuurlijk de schoonste gemeente van Limburg blijven!",
+        "en": "And of course we want to remain the cleanest municipality in Limburg!"
+      },
+      {
+        "nl": "Wanneer is de stadsbus gratis?",
+        "en": "When is the city bus free?"
       },
       {
         "nl": "De stadsbus gaat gratis rijden vanaf 1 september.",
-        "en": "The city bus will start running for free from 1 September."
+        "en": "The city bus will run for free from 1 September."
+      },
+      {
+        "nl": "Het gaat om deze dagen en tijden:",
+        "en": "These are the days and times it applies to:"
+      },
+      {
+        "nl": "Dag: gratis busdienst.",
+        "en": "Day: free bus service."
+      },
+      {
+        "nl": "Vrijday: van 18.00 tot 22.00 uur (koopavond).",
+        "en": "Friday: from 18:00 to 22:00 (late-night shopping)."
+      },
+      {
+        "nl": "Zaterdag: van 09.00 tot 17.00 uur.",
+        "en": "Saturday: from 09:00 to 17:00."
+      },
+      {
+        "nl": "Zondag: van 12.00 tot 17.30 uur.",
+        "en": "Sunday: from 12:00 to 17:30."
       },
       {
         "nl": "Maandag tot en met donderdag betaalt u de hele dag voor de stadsbus.",
-        "en": "From Monday through Thursday, you pay for the city bus all day."
+        "en": "From Monday through Thursday you pay for the city bus all day."
+      },
+      {
+        "nl": "Wanneer rijdt de stadsbus?",
+        "en": "When does the city bus run?"
       },
       {
         "nl": "De stadsbus rijdt van 08.00 tot 22.00 uur.",
@@ -1920,19 +2028,39 @@
       },
       {
         "nl": "Op werkdagen vertrekt de bus elke twintig minuten vanaf het station.",
-        "en": "On weekdays, the bus leaves from the station every twenty minutes."
+        "en": "On weekdays, the bus departs from the station every twenty minutes."
       },
       {
         "nl": "Op zaterdag rijdt de bus elke tien minuten.",
-        "en": "On Saturday, the bus runs every ten minutes."
+        "en": "On Saturdays the bus runs every ten minutes."
       },
       {
         "nl": "Na 18.00 uur rijdt de bus nog elk kwartier.",
-        "en": "After 18:00, the bus still runs every fifteen minutes."
+        "en": "After 18:00 the bus still runs every fifteen minutes."
       },
       {
         "nl": "Op zondag rijdt de bus elke dertig minuten.",
-        "en": "On Sunday, the bus runs every thirty minutes."
+        "en": "On Sundays the bus runs every thirty minutes."
+      },
+      {
+        "nl": "Waarom maakt de gemeente de stadsbus gratis?",
+        "en": "Why is the municipality making the city bus free?"
+      },
+      {
+        "nl": "Carmen wil op maandag de stadsbus nemen.",
+        "en": "Carmen wants to take the city bus on Monday."
+      },
+      {
+        "nl": "Hoe vaak gaat de bus die dag?",
+        "en": "How often does the bus run that day?"
+      },
+      {
+        "nl": "Carmen wil op vrijdag gratis met de stadsbus.",
+        "en": "Carmen wants to take the city bus for free on Friday."
+      },
+      {
+        "nl": "Wanneer kan dat?",
+        "en": "When is that possible?"
       }
     ]
   },
@@ -1946,20 +2074,36 @@
     "rawTitle": "Beste buurtbewoner",
     "sentences": [
       {
+        "nl": "Lisa krijgt een brief van een buurman.",
+        "en": "Lisa receives a letter from a neighbour."
+      },
+      {
+        "nl": "Beste buurtbewoner,",
+        "en": "Dear neighbour,"
+      },
+      {
         "nl": "Op 3 juli was er een buurtvergadering.",
-        "en": "There was a neighborhood meeting on 3 July."
+        "en": "On 3 July there was a neighbourhood meeting."
       },
       {
         "nl": "We hebben toen een datum afgesproken voor een activiteit voor de hele buurt.",
-        "en": "We then agreed on a date for an activity for the whole neighborhood."
+        "en": "At that meeting we agreed on a date for an activity for the whole neighbourhood."
       },
       {
         "nl": "De activiteit is op zaterdag 16 september.",
-        "en": "The activity is on Saturday, 16 September."
+        "en": "The activity is on Saturday 16 September."
       },
       {
         "nl": "Heb jij een goed idee voor een activiteit?",
         "en": "Do you have a good idea for an activity?"
+      },
+      {
+        "nl": "Stuur het dan op!",
+        "en": "Then send it in!"
+      },
+      {
+        "nl": "Wat moet je doen?",
+        "en": "What do you need to do?"
       },
       {
         "nl": "Beschrijf jouw idee voor een activiteit.",
@@ -1967,15 +2111,19 @@
       },
       {
         "nl": "De activiteit moet leuk zijn voor buurtbewoners van alle leeftijden.",
-        "en": "The activity must be fun for neighborhood residents of all ages."
+        "en": "The activity has to be fun for neighbours of all ages."
+      },
+      {
+        "nl": "Schrijf op wanneer jouw activiteit is: is het overdag, ’s avonds of de hele dag?",
+        "en": "Write down when your activity is — during the day, in the evening, or all day?"
       },
       {
         "nl": "Reken uit hoeveel de activiteit kost.",
-        "en": "Calculate how much the activity costs."
+        "en": "Calculate how much the activity will cost."
       },
       {
         "nl": "Vorig jaar kostte de activiteit € 25,- per persoon.",
-        "en": "Last year, the activity cost €25 per person."
+        "en": "Last year the activity cost €25 per person."
       },
       {
         "nl": "Veel mensen vonden dat te duur.",
@@ -1983,19 +2131,51 @@
       },
       {
         "nl": "Daarom mag de activiteit dit jaar maximaal € 15,- per persoon kosten.",
-        "en": "That is why the activity may cost a maximum of €15 per person this year."
+        "en": "That's why this year the activity may cost a maximum of €15 per person."
       },
       {
         "nl": "Als je ook wilt eten met zijn allen mag het iets duurder zijn.",
-        "en": "If you also want to eat together, it may be a little more expensive."
+        "en": "If you want everyone to eat together as well, it may be a bit more expensive."
       },
       {
         "nl": "Dan is het maximaal € 20,- per persoon.",
-        "en": "Then it is a maximum of €20 per person."
+        "en": "In that case the maximum is €20 per person."
+      },
+      {
+        "nl": "Stuur jouw idee op naar boris.de.vries@mail.nl.",
+        "en": "Send your idea to boris.de.vries@mail.nl."
       },
       {
         "nl": "Doe dat voor 1 augustus.",
         "en": "Do that before 1 August."
+      },
+      {
+        "nl": "We bespreken alle ideeën in de buurtvergadering van 5 augustus.",
+        "en": "We will discuss all the ideas at the neighbourhood meeting on 5 August."
+      },
+      {
+        "nl": "We hopen dat we uit veel ideeën kunnen kiezen!",
+        "en": "We hope we'll have many ideas to choose from!"
+      },
+      {
+        "nl": "Wat is het belangrijkst aan de activiteit?",
+        "en": "What is the most important thing about the activity?"
+      },
+      {
+        "nl": "Lisa weet een leuke activiteit.",
+        "en": "Lisa has a fun activity in mind."
+      },
+      {
+        "nl": "Voor wanneer moet ze haar idee opsturen?",
+        "en": "By when does she need to send in her idea?"
+      },
+      {
+        "nl": "Lisa heeft een idee voor een activiteit: spelletjes doen en pannenkoeken eten in het buurthuis.",
+        "en": "Lisa has an idea for an activity: playing games and eating pancakes at the community centre."
+      },
+      {
+        "nl": "Hoe duur mag die activiteit maximaal zijn?",
+        "en": "What is the maximum that activity may cost?"
       }
     ]
   },
@@ -2009,44 +2189,104 @@
     "rawTitle": "Verkopers Gezocht",
     "sentences": [
       {
+        "nl": "Aziza wil graag in een winkel werken.",
+        "en": "Aziza would like to work in a shop."
+      },
+      {
+        "nl": "Ze bekijkt een vacature op internet.",
+        "en": "She looks at a job listing on the internet."
+      },
+      {
+        "nl": "Verkopers gezocht.",
+        "en": "Salespeople wanted."
+      },
+      {
         "nl": "Nino’s is een van de bekendste winkels voor kinderkleding in Amsterdam.",
-        "en": "Nino’s is one of the best-known children’s clothing stores in Amsterdam."
+        "en": "Nino's is one of the best-known children's clothing shops in Amsterdam."
       },
       {
         "nl": "Onze eerste winkel in het centrum was al snel een succes.",
-        "en": "Our first store in the city center quickly became a success."
+        "en": "Our first shop in the city centre was quickly a success."
       },
       {
         "nl": "Ook onze tweede winkel in Amsterdam-Oost groeit hard.",
-        "en": "Our second store in Amsterdam East is also growing fast."
+        "en": "Our second shop in Amsterdam-East is also growing fast."
       },
       {
         "nl": "We zoeken daarom nog goede verkopers voor deze winkel.",
-        "en": "That is why we are looking for more good sales assistants for this store."
+        "en": "That's why we are still looking for good salespeople for this shop."
+      },
+      {
+        "nl": "Er zijn zelfs plannen voor een nieuwe winkel, in Amsterdam-Zuid!",
+        "en": "There are even plans for a new shop in Amsterdam-South!"
+      },
+      {
+        "nl": "Wat moet je doen?",
+        "en": "What do you need to do?"
       },
       {
         "nl": "Je helpt alle klanten vriendelijk en je zorgt dat iedereen tevreden naar huis gaat.",
-        "en": "You help all customers in a friendly way and make sure everyone goes home satisfied."
+        "en": "You help every customer in a friendly way and make sure that everyone leaves satisfied."
       },
       {
         "nl": "We zoeken verkopers die 16 tot 24 uur kunnen werken.",
-        "en": "We are looking for sales assistants who can work 16 to 24 hours."
+        "en": "We are looking for salespeople who can work 16 to 24 hours."
       },
       {
-        "nl": "Je werkt minimaal op twee doordeweekse dagen.",
-        "en": "You work on at least two weekdays."
+        "nl": "Je werkt minimaal op twee doordeweekse dagen (maandag - vrijdag).",
+        "en": "You work at least two weekdays (Monday–Friday)."
       },
       {
         "nl": "Je bent ook op zaterdag beschikbaar.",
-        "en": "You are also available on Saturday."
+        "en": "You are also available on Saturdays."
+      },
+      {
+        "nl": "Wie zoeken wij?",
+        "en": "Who are we looking for?"
       },
       {
         "nl": "Wij zoeken iemand die flexibel is en hard wil werken.",
-        "en": "We are looking for someone who is flexible and wants to work hard."
+        "en": "We are looking for someone who is flexible and willing to work hard."
+      },
+      {
+        "nl": "Je hoeft niet veel van mode te weten, maar je moet wel van kleding houden.",
+        "en": "You don't need to know a lot about fashion, but you do have to love clothes."
+      },
+      {
+        "nl": "Ervaring met werken in een kledingwinkel is een voordeel, maar is niet verplicht.",
+        "en": "Experience working in a clothing shop is a plus, but it isn't required."
       },
       {
         "nl": "Het belangrijkste is dat je goed met kinderen kunt omgaan.",
-        "en": "The most important thing is that you can deal well with children."
+        "en": "The most important thing is that you're good with children."
+      },
+      {
+        "nl": "Past dit bij jou?",
+        "en": "Does this sound like you?"
+      },
+      {
+        "nl": "Dan ben jij de verkoper die we zoeken!",
+        "en": "Then you are the salesperson we are looking for!"
+      },
+      {
+        "nl": "Interesse?",
+        "en": "Interested?"
+      },
+      {
+        "nl": "Solliciteer direct via het online formulier op onze website!",
+        "en": "Apply right away through the online form on our website!"
+      },
+      {
+        "nl": "Voor welke winkel zoekt Nino’s nog mensen?",
+        "en": "Which shop is Nino's still hiring for?"
+      },
+      {
+        "nl": "Voor wanneer zoekt Nino’s nog mensen?",
+        "en": "For when is Nino's still looking for people?"
+      },
+      {
+        "nl": "Wat is het belangrijkste als Aziza bij Nino’s wil werken?",
+        "en": "What is most important if Aziza wants to work at Nino's?"
       }
     ]
   },
@@ -2060,12 +2300,32 @@
     "rawTitle": "Hoi Chang",
     "sentences": [
       {
+        "nl": "Chang doet een taalcursus.",
+        "en": "Chang is taking a language course."
+      },
+      {
+        "nl": "Hij leest een e-mail van een medecursist.",
+        "en": "He reads an email from a fellow course participant."
+      },
+      {
+        "nl": "Hoi Chang,",
+        "en": "Hi Chang,"
+      },
+      {
         "nl": "Ik mail je, omdat wij maandag onze presentatie over een Nederlandse stad moeten geven.",
-        "en": "I am emailing you because we have to give our presentation about a Dutch city on Monday."
+        "en": "I'm emailing you because we have to give our presentation about a Dutch city on Monday."
+      },
+      {
+        "nl": "Eliza en Jamil doen hun presentatie donderdag over Utrecht.",
+        "en": "Eliza and Jamil are doing their presentation on Thursday — about Utrecht."
+      },
+      {
+        "nl": "En de presentatie van gisteren ging over Haarlem.",
+        "en": "And yesterday's presentation was about Haarlem."
       },
       {
         "nl": "Welke stad kiezen wij?",
-        "en": "Which city shall we choose?"
+        "en": "Which city should we pick?"
       },
       {
         "nl": "Zullen wij iets over Groningen vertellen?",
@@ -2073,27 +2333,79 @@
       },
       {
         "nl": "Ik heb daar een jaar gewoond, het is echt een leuke stad.",
-        "en": "I lived there for a year; it is really a nice city."
+        "en": "I lived there for a year — it's a really nice city."
+      },
+      {
+        "nl": "Ik heb al een paar foto’s van mooie plekken gevonden.",
+        "en": "I've already found a few photos of nice spots."
       },
       {
         "nl": "Kun jij dan iets zoeken over de geschiedenis van de stad?",
-        "en": "Could you then look for something about the history of the city?"
+        "en": "Could you then look up something about the city's history?"
+      },
+      {
+        "nl": "Dat vind jij niet erg, toch?",
+        "en": "You don't mind, do you?"
       },
       {
         "nl": "We moeten ook iets vertellen over de winkels en restaurants.",
-        "en": "We also have to say something about the shops and restaurants."
+        "en": "We also need to say something about the shops and restaurants."
       },
       {
         "nl": "Daarover zoeken we dan wel samen informatie.",
-        "en": "We will look for information about that together."
+        "en": "We can look that up together."
       },
       {
         "nl": "Zullen we nog een keer afspreken?",
-        "en": "Shall we meet one more time?"
+        "en": "Shall we meet up one more time?"
       },
       {
         "nl": "Dan kunnen we de presentatie oefenen.",
-        "en": "Then we can practice the presentation."
+        "en": "Then we can practise the presentation."
+      },
+      {
+        "nl": "Ik kan woensdag wel, bij mij thuis.",
+        "en": "I'm free on Wednesday, at my place."
+      },
+      {
+        "nl": "Donderdag kan het niet bij mij.",
+        "en": "Thursday doesn't work at my place."
+      },
+      {
+        "nl": "Mijn man heeft dan bezoek.",
+        "en": "My husband will have visitors then."
+      },
+      {
+        "nl": "We kunnen wel na de les in de mediatheek zitten.",
+        "en": "We could sit in the media library after class."
+      },
+      {
+        "nl": "Vrijdag moet ik werken, dus dan kan ik helemaal niet.",
+        "en": "I have to work on Friday, so I can't make it at all then."
+      },
+      {
+        "nl": "Laat je me weten wanneer jij kunt?",
+        "en": "Let me know when you're free?"
+      },
+      {
+        "nl": "Bedankt!",
+        "en": "Thanks!"
+      },
+      {
+        "nl": "Groetjes, Sasha",
+        "en": "Cheers, Sasha"
+      },
+      {
+        "nl": "Over welke stad wil Sasha de presentatie geven?",
+        "en": "Which city does Sasha want to give the presentation about?"
+      },
+      {
+        "nl": "Waarover wil Sasha samen met Chang informatie zoeken?",
+        "en": "What does Sasha want to research together with Chang?"
+      },
+      {
+        "nl": "Wanneer kan Chang bij Sasha thuis oefenen voor de presentatie?",
+        "en": "When can Chang practise for the presentation at Sasha's home?"
       }
     ]
   },
@@ -2107,6 +2419,22 @@
     "rawTitle": "Beste Selina",
     "sentences": [
       {
+        "nl": "Selina werkt bij een schoonmaakbedrijf.",
+        "en": "Selina works at a cleaning company."
+      },
+      {
+        "nl": "Ze krijgt een e-mail van haar manager, Coen.",
+        "en": "She receives an email from her manager, Coen."
+      },
+      {
+        "nl": "Beste Selina,",
+        "en": "Dear Selina,"
+      },
+      {
+        "nl": "Ik wil je graag iets vragen.",
+        "en": "I'd like to ask you something."
+      },
+      {
         "nl": "Ik heb een probleem met het werkrooster.",
         "en": "I have a problem with the work schedule."
       },
@@ -2116,23 +2444,59 @@
       },
       {
         "nl": "Hij moet volgende week twee dagen werken, maar dat gaat nu niet.",
-        "en": "He has to work two days next week, but that is not possible now."
+        "en": "He's supposed to work two days next week, but that's not possible now."
       },
       {
         "nl": "Dus ik zoek mensen die extra dagen kunnen werken.",
-        "en": "So I am looking for people who can work extra days."
+        "en": "So I'm looking for people who can work extra days."
       },
       {
-        "nl": "Rachel kan maar één dag extra werken: op woensdag.",
-        "en": "Rachel can only work one extra day: on Wednesday."
+        "nl": "Ik heb Rachel al gevraagd, maar zij moet drie dagen naar school.",
+        "en": "I've already asked Rachel, but she has school three days."
       },
       {
-        "nl": "Kiki werkt volgende week al vijf dagen.",
-        "en": "Kiki is already working five days next week."
+        "nl": "Zij kan daarom maar één dag extra werken: op woensdag.",
+        "en": "So she can only work one extra day — on Wednesday."
       },
       {
-        "nl": "Wil jij volgende week misschien een extra dag werken, op dinsdag?",
-        "en": "Would you maybe like to work an extra day next week, on Tuesday?"
+        "nl": "En Kiki werkt volgende week al vijf dagen.",
+        "en": "And Kiki is already working five days next week."
+      },
+      {
+        "nl": "Dus wil jij volgende week misschien een extra dag werken, op dinsdag?",
+        "en": "So could you maybe work an extra day next week, on Tuesday?"
+      },
+      {
+        "nl": "Het zou fijn zijn als je kunt.",
+        "en": "It would be great if you can."
+      },
+      {
+        "nl": "Laat je me dat vóór vrijdag even weten?",
+        "en": "Could you let me know before Friday?"
+      },
+      {
+        "nl": "Hartelijke groet, Coen de Weerdt",
+        "en": "Kind regards, Coen de Weerdt"
+      },
+      {
+        "nl": "Coen vraagt of Selina extra kan werken.",
+        "en": "Coen is asking whether Selina can work extra."
+      },
+      {
+        "nl": "Voor wie moet Selina werken?",
+        "en": "Who does Selina need to cover for?"
+      },
+      {
+        "nl": "Selina kan volgende week extra werken.",
+        "en": "Selina can work extra next week."
+      },
+      {
+        "nl": "Hoeveel dagen moet ze dan extra werken?",
+        "en": "How many extra days does she have to work then?"
+      },
+      {
+        "nl": "Wanneer moet Selina iets laten weten aan Coen?",
+        "en": "By when does Selina have to let Coen know?"
       }
     ]
   },
@@ -2146,8 +2510,24 @@
     "rawTitle": "Cursus Houten Meubels Maken",
     "sentences": [
       {
+        "nl": "Abid gaat de cursus Houten Meubels Maken volgen.",
+        "en": "Abid is going to take the course \"Making Wooden Furniture\"."
+      },
+      {
+        "nl": "Hij leest informatie over de cursus.",
+        "en": "He reads information about the course."
+      },
+      {
+        "nl": "Cursus Houten Meubels Maken.",
+        "en": "Course: Making Wooden Furniture."
+      },
+      {
+        "nl": "De lessen.",
+        "en": "The lessons."
+      },
+      {
         "nl": "De cursus Houten Meubels Maken bestaat uit zes lessen.",
-        "en": "The Wooden Furniture Making course consists of six lessons."
+        "en": "The course \"Making Wooden Furniture\" consists of six lessons."
       },
       {
         "nl": "De eerste les is op 18 juni van 10.00 uur tot 15.00 uur.",
@@ -2159,7 +2539,15 @@
       },
       {
         "nl": "Het enige wat u moet meenemen, is het theorieboek van de cursus.",
-        "en": "The only thing you need to bring is the theory book for the course."
+        "en": "The only thing you need to bring is the course theory book."
+      },
+      {
+        "nl": "Dat kunt u online bestellen.",
+        "en": "You can order it online."
+      },
+      {
+        "nl": "Verder hebben wij alles wat u nodig hebt voor de cursus.",
+        "en": "We have everything else you need for the course."
       },
       {
         "nl": "U kunt uw eigen gereedschap dus thuis laten!",
@@ -2167,23 +2555,63 @@
       },
       {
         "nl": "In de eerste les leert u welke soorten hout er zijn en wat u daarmee kunt maken.",
-        "en": "In the first lesson, you learn what kinds of wood there are and what you can make with them."
+        "en": "In the first lesson you learn what kinds of wood exist and what you can make with them."
+      },
+      {
+        "nl": "In de lessen daarna gaat u zelf werken met verschillende gereedschappen.",
+        "en": "In the lessons after that you will work with various tools yourself."
       },
       {
         "nl": "In de tweede les begint u met het maken van een klein kistje.",
-        "en": "In the second lesson, you start making a small box."
+        "en": "In the second lesson you start by making a small box."
+      },
+      {
+        "nl": "En in de lessen erna gaat u uw eigen meubelstuk ontwerpen en maken, bijvoorbeeld een stoel of tafeltje!",
+        "en": "And in the lessons after that you will design and build your own piece of furniture — for example a chair or a small table!"
+      },
+      {
+        "nl": "Inschrijven.",
+        "en": "Registration."
       },
       {
         "nl": "Inschrijven voor de cursus kan via deze website.",
-        "en": "You can register for the course through this website."
+        "en": "You can register for the course on this website."
       },
       {
-        "nl": "Kunt u niet naar de les komen of bent u later?",
-        "en": "Are you unable to come to class, or will you be late?"
+        "nl": "U kunt ook mailen naar meubelmakers@home.nl.",
+        "en": "You can also email meubelmakers@home.nl."
       },
       {
-        "nl": "Bel dan onze receptie.",
-        "en": "Then call our reception."
+        "nl": "Afmelden.",
+        "en": "Cancelling."
+      },
+      {
+        "nl": "Hebt u zich ingeschreven, maar kunt u niet naar de les komen of bent u later?",
+        "en": "Have you registered but can't make it to class, or will you be late?"
+      },
+      {
+        "nl": "Bel dan onze receptie: 023-3691117.",
+        "en": "Then call our reception: 023-3691117."
+      },
+      {
+        "nl": "Zij melden u dan af bij de docent.",
+        "en": "They will report your absence to the teacher."
+      },
+      {
+        "nl": "Wat moet Abid meenemen naar de cursus?",
+        "en": "What does Abid have to bring to the course?"
+      },
+      {
+        "nl": "Wat gaan de cursisten in de eerste les doen?",
+        "en": "What will the participants do in the first lesson?"
+      },
+      {
+        "nl": "Abid kan niet op tijd in de les zijn.",
+        "en": "Abid can't be at the lesson on time."
+      },
+      {
+        "nl": "Wat moet hij doen?",
+        "en": "What should he do?"
       }
     ]
   },
@@ -2197,16 +2625,24 @@
     "rawTitle": "Geachte mevrouw",
     "sentences": [
       {
+        "nl": "Mia krijgt een brief van de tandarts.",
+        "en": "Mia receives a letter from the dentist."
+      },
+      {
+        "nl": "Geachte mevrouw Krüger,",
+        "en": "Dear Mrs. Krüger,"
+      },
+      {
         "nl": "U hebt op dinsdag 4 oktober om 14.00 uur een afspraak bij tandarts Altman.",
-        "en": "You have an appointment with dentist Altman on Tuesday, 4 October at 14:00."
+        "en": "You have an appointment with dentist Altman on Tuesday 4 October at 14:00."
       },
       {
         "nl": "Tandarts Altman stopt helaas per 1 oktober met werken bij onze praktijk.",
-        "en": "Unfortunately, dentist Altman will stop working at our practice as of 1 October."
+        "en": "Unfortunately, dentist Altman is leaving our practice as of 1 October."
       },
       {
         "nl": "Hij gaat namelijk verhuizen.",
-        "en": "He is moving."
+        "en": "He is moving house."
       },
       {
         "nl": "Wij hebben nu een afspraak voor u gemaakt bij tandarts Jensma.",
@@ -2214,15 +2650,59 @@
       },
       {
         "nl": "Wilt u liever naar een andere tandarts?",
-        "en": "Would you rather go to another dentist?"
+        "en": "Would you prefer a different dentist?"
+      },
+      {
+        "nl": "Dat kan.",
+        "en": "That's possible."
+      },
+      {
+        "nl": "Meld dit dan bij ons.",
+        "en": "Just let us know."
+      },
+      {
+        "nl": "Tandarts Diepenveen werkt nu ook bij onze praktijk.",
+        "en": "Dentist Diepenveen is now also working at our practice."
+      },
+      {
+        "nl": "Hij is net klaar met studeren.",
+        "en": "He has just finished his studies."
+      },
+      {
+        "nl": "Tandarts De Groot kent u misschien al, maar hij zit op dit moment vol.",
+        "en": "You may already know dentist De Groot, but he is fully booked at the moment."
       },
       {
         "nl": "Uw afspraak van 4 oktober is verplaatst naar een andere datum: 16 oktober.",
-        "en": "Your appointment of 4 October has been moved to another date: 16 October."
+        "en": "Your appointment of 4 October has been moved to a new date: 16 October."
       },
       {
-        "nl": "Het tijdstip van de afspraak blijft hetzelfde.",
-        "en": "The time of the appointment remains the same."
+        "nl": "Het tijdstip van de afspraak (14.00 uur) blijft hetzelfde.",
+        "en": "The time of the appointment (14:00) stays the same."
+      },
+      {
+        "nl": "Kunt u dan niet?",
+        "en": "Are you not available then?"
+      },
+      {
+        "nl": "Neem even contact met ons op.",
+        "en": "Please get in touch with us."
+      },
+      {
+        "nl": "Wij hopen dat we u voldoende hebben geïnformeerd.",
+        "en": "We hope we have informed you sufficiently."
+      },
+      {
+        "nl": "Met vriendelijke groet, Jenny Koolstra, Secretaresse",
+        "en": "Kind regards, Jenny Koolstra, Secretary"
+      },
+      {
+        "nl": "Waarom is de afspraak van Mia verplaatst?",
+        "en": "Why has Mia's appointment been moved?"
+      },
+      {
+        "nl": "Wanneer heeft Mia een nieuwe afspraak?",
+        "en": "When is Mia's new appointment?"
       }
     ]
   },
@@ -2236,12 +2716,24 @@
     "rawTitle": "Dag Lito",
     "sentences": [
       {
+        "nl": "Lito werkt bij de gemeente.",
+        "en": "Lito works at the municipality."
+      },
+      {
+        "nl": "Hij krijgt een e-mail van zijn baas, Pascal.",
+        "en": "He receives an email from his boss, Pascal."
+      },
+      {
+        "nl": "Dag Lito,",
+        "en": "Hello Lito,"
+      },
+      {
         "nl": "Je hebt je zomervakantie nog niet aangevraagd.",
-        "en": "You have not yet requested your summer holiday."
+        "en": "You haven't requested your summer holiday yet."
       },
       {
         "nl": "Wil je dat deze week doen?",
-        "en": "Would you do that this week?"
+        "en": "Could you do that this week?"
       },
       {
         "nl": "Dan kan ik een nieuwe planning voor de vakantieperiode maken.",
@@ -2249,7 +2741,11 @@
       },
       {
         "nl": "In het rooster kun je zien wie wanneer al vakantie heeft.",
-        "en": "In the schedule, you can see who already has holiday and when."
+        "en": "In the schedule you can see who already has holiday and when."
+      },
+      {
+        "nl": "Vergeet ook de vakantieregels niet:",
+        "en": "And don't forget the holiday rules:"
       },
       {
         "nl": "Je mag maximaal twee weken vakantie opnemen.",
@@ -2261,11 +2757,43 @@
       },
       {
         "nl": "Er is altijd iemand nodig aan de balie én iemand om de telefoon op te nemen.",
-        "en": "Someone is always needed at the front desk and someone is needed to answer the phone."
+        "en": "Someone always needs to be at the front desk and someone needs to answer the phone."
       },
       {
         "nl": "Er moeten dus altijd twee collega’s aan het werk zijn.",
-        "en": "So there must always be two colleagues at work."
+        "en": "So there always have to be two colleagues on duty."
+      },
+      {
+        "nl": "Zorg ervoor dat je geen belangrijk werk hebt in de weken waarin je vakantie wilt.",
+        "en": "Make sure you don't have any important work in the weeks when you want to be on holiday."
+      },
+      {
+        "nl": "Vanaf week 35 wordt het weer druk.",
+        "en": "From week 35 it will be busy again."
+      },
+      {
+        "nl": "Dan moet iedereen weer aan het werk zijn.",
+        "en": "Then everyone has to be back at work."
+      },
+      {
+        "nl": "Vriendelijke groet, Pascal",
+        "en": "Kind regards, Pascal"
+      },
+      {
+        "nl": "Waarom stuurt Pascal deze e-mail?",
+        "en": "Why is Pascal sending this email?"
+      },
+      {
+        "nl": "Waarom moeten er altijd twee collega’s aan het werk zijn in de zomer?",
+        "en": "Why do there always have to be two colleagues on duty in the summer?"
+      },
+      {
+        "nl": "Lito wil twee weken achter elkaar vrij.",
+        "en": "Lito wants two consecutive weeks off."
+      },
+      {
+        "nl": "Wanneer kan Lito het beste vakantie nemen?",
+        "en": "When is the best time for Lito to take his holiday?"
       }
     ]
   },

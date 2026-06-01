@@ -616,17 +616,33 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   const primaryMode = isCommon ? 'lesson' : 'article';
   const primaryLabel = isCommon ? 'lesson' : 'article';
   const allDeck = { id: 'all', label: 'all words', reviewCount: 0, patch: { wordDeck, filterMode: primaryMode, les: 'all', category: 'all' } };
-  const [mode, setMode] = useStateS(primaryMode);
-  const [order, setOrder] = useStateS(prefs.order || 'course');
-  const [itemOrder, setItemOrder] = useStateS('asc');
-  const [showAllItems, setShowAllItems] = useStateS(false);
-  const [allScope, setAllScope] = useStateS('all');
   const sourceItems = isCommon
     ? lessons.map(l => ({ les: l.les, title: `Lesson ${l.les}`, wordCount: l.count }))
     : articles.filter(a => a.wordCount > 0);
   const firstItem = sourceItems[0];
-  const [itemLes, setItemLes] = useStateS(String(firstItem?.les || ''));
-  const [categoryId, setCategoryId] = useStateS('verb');
+  const remembered = prefs.les && prefs.les !== 'all' && sourceItems.some(i => String(i.les) === String(prefs.les))
+    ? String(prefs.les)
+    : String(firstItem?.les || '');
+  const initialMode = prefs.filterMode === 'category' ? 'category'
+                    : prefs.filterMode === 'lesson' || prefs.filterMode === 'article' ? primaryMode
+                    : (prefs.les === 'all' ? 'all' : primaryMode);
+  const [mode, setMode] = useStateS(initialMode);
+  const [order, setOrder] = useStateS(prefs.order || 'course');
+  const [itemOrder, setItemOrder] = useStateS('asc');
+  const [showAllItems, setShowAllItems] = useStateS(false);
+  const [allScope, setAllScope] = useStateS('all');
+  const [itemLes, setItemLes] = useStateS(remembered);
+  const [categoryId, setCategoryId] = useStateS(prefs.category && prefs.category !== 'all' ? prefs.category : 'verb');
+  const lessonListRef = useRefS(null);
+  useEffectS(() => {
+    const container = lessonListRef.current;
+    if (!container) return;
+    const selectedRow = container.querySelector('.content-list-row.selected');
+    if (!selectedRow) return;
+    const cRect = container.getBoundingClientRect();
+    const rRect = selectedRow.getBoundingClientRect();
+    container.scrollTop += (rRect.top - cRect.top) - (cRect.height / 2 - rRect.height / 2);
+  }, [itemLes, mode]);
   const [wordLimit, setWordLimit] = useStateS(String(prefs.wordLimit || ''));
   const [lesFrom, setLesFrom] = useStateS(String(prefs.lesFrom || ''));
   const [lesTo, setLesTo] = useStateS(String(prefs.lesTo || ''));
@@ -735,7 +751,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
                 {itemOrder === 'asc' ? 'A → Z' : 'Z → A'}⌄
               </button>
             </div>
-            <div className="content-list-card compact-scroll-list lesson-scroll-list">
+            <div className="content-list-card compact-scroll-list lesson-scroll-list" ref={lessonListRef}>
               {shownItems.map(a => {
                 const selectedRow = String(a.les) === String(itemLes);
                 return (
@@ -789,6 +805,17 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
   const [articleOrder, setArticleOrder] = useStateS('asc');
   const defaultArticleLes = prefs.les && prefs.les !== 'all' ? String(prefs.les) : String(readings[0]?.les || '');
   const [articleLes, setArticleLes] = useStateS(defaultArticleLes);
+  const articleListRef = useRefS(null);
+  useEffectS(() => {
+    const container = articleListRef.current;
+    if (!container) return;
+    const selectedRow = container.querySelector('.content-list-row.selected');
+    if (!selectedRow) return;
+    // Center the selected row inside the scrollable list (no smooth so it doesn't visually animate on first load)
+    const cRect = container.getBoundingClientRect();
+    const rRect = selectedRow.getBoundingClientRect();
+    container.scrollTop += (rRect.top - cRect.top) - (cRect.height / 2 - rRect.height / 2);
+  }, [articleLes]);
   const rows = readings.map(r => {
     const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0, forgotten: 0 };
     return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
@@ -841,7 +868,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
         </div>
         {effectiveArticle && (
           <div className="content-list-card sentence-article-picker">
-            <div className="compact-scroll-list article-scroll-list">
+            <div className="compact-scroll-list article-scroll-list" ref={articleListRef}>
               {articleOptions.map(r => {
                 const selectedRow = String(r.les) === String(effectiveArticle.les);
                 return (
@@ -870,7 +897,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
 }
 
 /* ── Deck (Learn / Review) ───────────────────────── */
-function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwipe, onRetryMissed, exampleMode = 'beginner', progressOffset = 0 }) {
+function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwipe, onRetryMissed, exampleMode = 'beginner', progressOffset = 0, onNextSession, nextSessionLabel }) {
   const deckRef = useRefS(null);
   const [cursor, setCursor] = useStateS(0);
   const [internalLevel, setInternalLevel] = useStateS(level);
@@ -944,9 +971,14 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
             <div className="title">Session done!</div>
             <div className="desc">{missed.length ? `${missed.length} cards were marked again.` : 'Nice work. Come back tomorrow to keep your streak alive.'}</div>
             {missed.length > 0 && onRetryMissed && (
-              <button className="primary-btn" style={{ maxWidth: 220 }} onClick={() => onRetryMissed(missed)}>Retry missed</button>
+              <button className="primary-btn" style={{ maxWidth: 240 }} onClick={() => onRetryMissed(missed)}>Retry missed</button>
             )}
-            <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back home</button>
+            {onNextSession && (
+              <button className="primary-btn" style={{ maxWidth: 240 }} onClick={onNextSession}>
+                Next session{nextSessionLabel ? ` · ${nextSessionLabel}` : ''} →
+              </button>
+            )}
+            <button className={onNextSession ? "ghost-btn" : "primary-btn"} style={{ maxWidth: 240 }} onClick={onExit}>Back home</button>
           </div>
         )}
       </div>
@@ -1191,26 +1223,30 @@ function DoneScreen({ right, wrong, wrongWords, onExit, onRetry }) {
   );
 }
 
-function StudyListScreen({ items, onBack, onRemove, onStudy }) {
+function StudyListScreen({ items, onBack, onRemove, onStartSession }) {
+  const [order, setOrder] = useStateS('course');
   const resolveItem = item => {
     const resolved = window.lookupDutchWord?.(item.nl) || window.lookupDutchWord?.(item.headword) || null;
     const hasOnlyGrammar = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i.test(String(item.en || ''));
+    const verb = resolved?.verb || null;
     if (resolved?.formMeaning) {
       return {
         ...item,
         nl: item.nl,
         headword: item.nl,
         en: resolved.formMeaning,
-        pos: resolved.pos || item.pos
+        pos: resolved.pos || item.pos,
+        verb,
       };
     }
-    if (!resolved || (!hasOnlyGrammar && !resolved.baseForm)) return item;
+    if (!resolved || (!hasOnlyGrammar && !resolved.baseForm)) return { ...item, verb };
     return {
       ...item,
       nl: resolved.baseForm || resolved.headword || item.nl,
       headword: resolved.baseForm || resolved.headword || item.headword,
       en: resolved.en || item.en,
-      pos: resolved.pos || item.pos
+      pos: resolved.pos || item.pos,
+      verb,
     };
   };
   const displayItems = items.map(resolveItem);
@@ -1230,11 +1266,67 @@ function StudyListScreen({ items, onBack, onRemove, onStudy }) {
             ? 'Tap “+ to deck” in the dictionary popup to save words here.'
             : `${displayItems.length} word${displayItems.length === 1 ? '' : 's'} ready to study.`}
         </div>
+
         {displayItems.length > 0 && (
-          <div className="studylist-actions">
-            <button className="primary-btn" onClick={onStudy}>Study these words</button>
-          </div>
+          <>
+            <div className="section-h study-mode-heading">
+              <h3>Study modes</h3>
+              <button type="button" className="list-sort-btn" onClick={() => setOrder(o => o === 'random' ? 'course' : 'random')}>
+                {order === 'random' ? 'Shuffle' : 'In order'}⌄
+              </button>
+            </div>
+            <div className="study-mode-grid">
+              <div className="study-start-card" onClick={() => onStartSession?.('study', order)}>
+                <div className="study-start-copy">
+                  <div className="study-start-label">Start session</div>
+                  <div className="study-start-title">Study {displayItems.length} words</div>
+                  <div className="study-start-desc">My Study List · {order === 'random' ? 'random order' : 'order saved'}</div>
+                </div>
+                <div className="study-start-play"><PlayIcon /></div>
+              </div>
+              <div className="study-secondary-row single">
+                <div className="study-small-card test" onClick={() => onStartSession?.('test', order)}>
+                  <div className="study-small-icon">✓</div>
+                  <div>
+                    <div className="study-small-title">Test</div>
+                    <div className="study-small-desc">{displayItems.length} questions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="studylist-actions">
+              <button
+                type="button"
+                className="ghost-btn"
+                onClick={() => {
+                  const payload = {
+                    exportedAt: new Date().toISOString(),
+                    count: displayItems.length,
+                    items: displayItems.map(it => ({
+                      nl: it.nl,
+                      headword: it.headword || it.nl,
+                      en: it.en,
+                      pos: it.pos || null,
+                      addedAt: it.addedAt || null,
+                    })),
+                  };
+                  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  const stamp = new Date().toISOString().slice(0, 10);
+                  a.href = url;
+                  a.download = `study-list-${stamp}.json`;
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                  URL.revokeObjectURL(url);
+                }}
+              >Export to file</button>
+            </div>
+          </>
         )}
+
         {displayItems.length === 0 ? (
           <div className="studylist-empty">
             <div className="big">📑</div>
@@ -1244,10 +1336,18 @@ function StudyListScreen({ items, onBack, onRemove, onStudy }) {
         ) : (
           <div className="studylist-list">
             {displayItems.map(item => (
-              <div key={item.nl} className="studylist-item">
+              <div key={item.nl} className={'studylist-item' + (item.verb ? ' has-verb' : '')}>
                 <div className="body">
                   <div className="nl">{item.headword || item.nl}</div>
                   <div className="en">{item.en}</div>
+                  {item.verb && (
+                    <div className="studylist-verb">
+                      <span><em>inf.</em> {item.verb.inf}</span>
+                      <span><em>hij</em> {item.verb.hij}</span>
+                      <span><em>past</em> {item.verb.past}</span>
+                      <span><em>perfect</em> {item.verb.perfect}</span>
+                    </div>
+                  )}
                 </div>
                 <button className="remove" onClick={() => onRemove(item.nl)} aria-label="Remove">×</button>
               </div>

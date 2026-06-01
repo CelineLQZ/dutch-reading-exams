@@ -247,7 +247,7 @@ function normalizeDictKey(text) {
     .trim();
 }
 
-function buildDictionary(words, externalDictionary = {}) {
+function buildDictionary(words, externalDictionary = {}, examDict = []) {
   const skip = new Set(['de', 'het', 'een']);
   const grammarOnlyRe = /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i;
   const attributiveOnlyRe = /\battributive\b|\bmasculine\b|\bfeminine\b|\bneuter\b|\bcomparative degree\b|\bsuperlative degree\b/i;
@@ -499,6 +499,22 @@ function buildDictionary(words, externalDictionary = {}) {
     };
   });
   map.voor = { nl: 'voor', headword: 'voor', en: 'for / before / in front of', pos: 'preposition', source: 'reading dictionary' };
+
+  // exam3-dict.json — highest priority overrides for exam 3 reading vocabulary
+  (Array.isArray(examDict) ? examDict : []).forEach(entry => {
+    if (!entry?.nl || !entry?.en) return;
+    const clean = normalizeDictKey(entry.nl);
+    if (!clean || skip.has(clean)) return;
+    map[clean] = {
+      nl: clean,
+      headword: entry.headword || clean,
+      en: entry.en,
+      pos: entry.pos || 'word',
+      grammar: null,
+      verb: entry.verb || null,
+      source: 'exam3 dictionary'
+    };
+  });
   return map;
 }
 
@@ -580,17 +596,21 @@ function App() {
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
+  const [examDict, setExamDict] = useState([]);
+
   // Load words.json
   useEffect(() => {
     Promise.all([
       fetch('words.json?' + Date.now()).then(r => r.json()),
       fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => []),
-      fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+      fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      fetch('exam3-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData]) => {
+      .then(([wordData, readingData, dictionaryData, examDictData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
         setExternalDictionary(dictionaryData || {});
+        setExamDict(Array.isArray(examDictData) ? examDictData : []);
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -600,8 +620,8 @@ function App() {
   useEffect(() => { applyPalette(settings.palette); }, [settings.palette]);
 
   useEffect(() => {
-    window.DutchDictionary = buildDictionary(allWords, externalDictionary);
-  }, [allWords, externalDictionary]);
+    window.DutchDictionary = buildDictionary(allWords, externalDictionary, examDict);
+  }, [allWords, externalDictionary, examDict]);
 
   // Init user from store once words loaded
   useEffect(() => {
@@ -928,7 +948,10 @@ function App() {
           } else if (type === 'studylist') {
             setRoute('studylist');
           } else if (type === 'common') {
-            updatePrefs({ contentType: 'words', wordDeck: 'common', filterMode: 'lesson', les: 'all', category: 'all', wordLimit: '', lesFrom: '', lesTo: '' });
+            // Preserve last-selected lesson/category so the picker reopens where the user left off.
+            const patch = { contentType: 'words', wordDeck: 'common' };
+            if (!prefs.filterMode || prefs.wordDeck !== 'common') patch.filterMode = 'lesson';
+            updatePrefs(patch);
             setRoute('words-pick');
           }
         }}
@@ -1005,11 +1028,23 @@ function App() {
         ? Math.min(sentenceResumeOffset, fullSentences.length)
         : 0;
     const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
+    // Next article (only when filtered by one specific article)
+    const sortedArticles = readings.slice().sort((a, b) => (a.les || 0) - (b.les || 0));
+    const curIdx = sortedArticles.findIndex(r => r.les === prefs.les);
+    const nextArticle = curIdx >= 0 && curIdx + 1 < sortedArticles.length ? sortedArticles[curIdx + 1] : null;
+    const handleNextArticle = nextArticle ? () => {
+      setResuming(false);
+      clearSession();
+      setSentenceResumeOffset(0);
+      updatePrefs({ les: nextArticle.les });
+    } : null;
     screen = (
-      <DeckScreen mode={route} words={sentences} progressOffset={offset}
+      <DeckScreen key={`${route}-${prefs.les}`} mode={route} words={sentences} progressOffset={offset}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
         exampleMode={prefs.exampleMode}
+        nextSessionLabel={nextArticle ? nextArticle.title : null}
+        onNextSession={handleNextArticle}
         onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(sentence, dir, cursor) => { recordSentenceSwipe(sentence, dir); saveSession(route, fullSentences, offset + cursor); }}
       />
@@ -1021,42 +1056,93 @@ function App() {
       : (useSaved ? continueSession.words : reviewQueue);
     const offset = useSaved ? Math.min(continueSession.cursor || 0, fullWords.length) : 0;
     const words = useSaved ? fullWords.slice(offset) : fullWords;
+    // Next lesson/article — when filtered by a single les
+    const sortedLessons = (lessons || []).slice().sort((a, b) => a.les - b.les);
+    const lessonIdx = (prefs.filterMode === 'lesson' || prefs.filterMode === 'article') && prefs.les !== 'all'
+      ? sortedLessons.findIndex(l => l.les === prefs.les)
+      : -1;
+    const nextLesson = lessonIdx >= 0 && lessonIdx + 1 < sortedLessons.length ? sortedLessons[lessonIdx + 1] : null;
+    const handleNextLesson = nextLesson ? () => {
+      setResuming(false);
+      clearSession();
+      updatePrefs({ les: nextLesson.les });
+    } : null;
     screen = (
-      <DeckScreen mode={route} words={words} progressOffset={offset}
+      <DeckScreen key={`${route}-${prefs.les}-${prefs.filterMode}-${prefs.category}`} mode={route} words={words} progressOffset={offset}
         level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
         autoplay={settings.autoplay}
+        nextSessionLabel={nextLesson ? (activeWordDeck === 'common' ? `Lesson ${nextLesson.les}` : `Article ${nextLesson.les}`) : null}
+        onNextSession={handleNextLesson}
         onExit={() => { setResuming(false); setRoute(sessionBackRoute || 'home'); }}
         onSwipe={(word, dir, cursor) => { recordSwipe(word, dir, route); saveSession(route, fullWords, offset + cursor); }}
         onRetryMissed={route === 'learn' ? missed => { setRetryWords(missed); clearSession(); setRoute('learn-retry'); } : null}
       />
     );
   } else if (route === 'studylist') {
+    const buildStudyListWords = (order = 'course') => {
+      if (!studyList.length) return [];
+      const byKey = {};
+      allWords.forEach((w, i) => { byKey[(w.nl || '').toLowerCase().trim()] = w; });
+      const list = studyList.map(item => {
+        const resolved = window.lookupDutchWord?.(item.nl) || window.lookupDutchWord?.(item.headword) || null;
+        const fixedItem = resolved?.formMeaning
+          ? { ...item, nl: item.nl, en: resolved.formMeaning, pos: resolved.pos || item.pos, headword: item.nl }
+          : resolved?.baseForm || /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i.test(String(item.en || ''))
+          ? { ...item, nl: resolved?.baseForm || resolved?.headword || item.nl, en: resolved?.en || item.en, pos: resolved?.pos || item.pos, headword: resolved?.baseForm || resolved?.headword || item.headword }
+          : item;
+        const key = (fixedItem.nl || '').toLowerCase().trim();
+        const base = byKey[key];
+        if (base) return base;
+        // synthesize a word entry; pull verb grammar forms from the dictionary so it shows correctly on test
+        const dictEntry = window.lookupDutchWord?.(fixedItem.nl) || null;
+        const grammar = dictEntry?.verb ? {
+          kind: 'verb',
+          forms: [
+            { label: 'infinitief', nl: dictEntry.verb.inf },
+            { label: 'hij', nl: dictEntry.verb.hij },
+            { label: 'verleden', nl: dictEntry.verb.past },
+            { label: 'voltooid', nl: dictEntry.verb.perfect },
+          ],
+        } : null;
+        return {
+          nl: fixedItem.nl,
+          en: fixedItem.en,
+          pos: fixedItem.pos || (grammar ? 'verb' : 'word'),
+          ipa: '',
+          les: 0,
+          examples: {},
+          grammar,
+          deck: 'studylist',
+          _key: `studylist|${key}`,
+        };
+      });
+      return order === 'random' ? shuffleA(list) : list;
+    };
     screen = (
       <StudyListScreen
         items={studyList}
         onBack={() => setRoute('home')}
         onRemove={nl => window.DutchStudyListAPI?.remove(nl)}
-        onStudy={() => {
-          if (!studyList.length) return;
-          const byKey = {};
-          allWords.forEach((w, i) => { byKey[(w.nl || '').toLowerCase().trim()] = w; });
-          const words = studyList.map(item => {
-            const resolved = window.lookupDutchWord?.(item.nl) || window.lookupDutchWord?.(item.headword) || null;
-            const fixedItem = resolved?.formMeaning
-              ? { ...item, nl: item.nl, en: resolved.formMeaning, pos: resolved.pos || item.pos, headword: item.nl }
-              : resolved?.baseForm || /\b(first|second|third)-person\b|\bpresent indicative\b|\bpast tense\b|\bpast indicative\b|\bparticiple\b|\binflection of\b|\bform of\b/i.test(String(item.en || ''))
-              ? { ...item, nl: resolved?.baseForm || resolved?.headword || item.nl, en: resolved?.en || item.en, pos: resolved?.pos || item.pos, headword: resolved?.baseForm || resolved?.headword || item.headword }
-              : item;
-            const key = (fixedItem.nl || '').toLowerCase().trim();
-            return byKey[key] || {
-              nl: fixedItem.nl, en: fixedItem.en, pos: fixedItem.pos || 'word', ipa: '', les: 0,
-              examples: {}, grammar: null, deck: 'studylist',
-              _key: `studylist|${key}`
-            };
-          });
+        onStartSession={(action, order) => {
+          const words = buildStudyListWords(order);
+          if (!words.length) return;
           setSessionBackRoute('studylist');
           setRetryWords(words);
-          setRoute('learn-retry');
+          if (action === 'test') setRoute('studylist-test');
+          else setRoute('learn-retry');
+        }}
+      />
+    );
+  } else if (route === 'studylist-test' && retryWords) {
+    screen = (
+      <TestScreen key={`studylist-test-${retryWords.length}`} words={retryWords} allWords={[...allWords, ...retryWords]} autoplay={settings.autoplay}
+        maxQuestions={null}
+        onWrongWord={word => recordSwipe(word, 'left')}
+        onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
+        onComplete={wrongs => {
+          setRetryWords(wrongs.length ? wrongs : null);
+          if (!wrongs.length) setRoute(sessionBackRoute || 'home');
+          else setRoute('retry');
         }}
       />
     );
