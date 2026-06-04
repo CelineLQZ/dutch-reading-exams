@@ -604,13 +604,19 @@ function App() {
       fetch('words.json?' + Date.now()).then(r => r.json()),
       fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => []),
       fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-      fetch('exam3-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
+      fetch('exam3-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('exam2-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData, examDictData]) => {
+      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
         setExternalDictionary(dictionaryData || {});
-        setExamDict(Array.isArray(examDictData) ? examDictData : []);
+        // merge exam dicts — exam3 wins on overlap (later additions override)
+        const merged = [
+          ...(Array.isArray(exam2Data) ? exam2Data : []),
+          ...(Array.isArray(exam3Data) ? exam3Data : []),
+        ];
+        setExamDict(merged);
         setLoading(false);
       })
       .catch(() => setLoading(false));
