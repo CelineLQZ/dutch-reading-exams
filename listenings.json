@@ -1,0 +1,868 @@
+[
+  {
+    "id": "listen1-1",
+    "les": 101,
+    "exam": "listen1",
+    "examIndex": 1,
+    "label": "L1.1",
+    "title": "L1.1 Steven komt Jari tegen op straat",
+    "rawTitle": "Steven komt Jari tegen op straat",
+    "sentences": [
+      {
+        "nl": "Steven komt Jari tegen op straat.",
+        "en": "Steven runs into Jari on the street."
+      },
+      {
+        "nl": "Ze praten met elkaar.",
+        "en": "They talk with each other."
+      },
+      {
+        "nl": "Lees eerst de vraag.",
+        "en": "First read the question."
+      },
+      {
+        "nl": "Kijk daarna naar de video.",
+        "en": "Then watch the video."
+      },
+      {
+        "nl": "Steven: Hé Jari.",
+        "en": "Steven: Hey Jari."
+      },
+      {
+        "nl": "Jari: Hé Steven.",
+        "en": "Jari: Hey Steven."
+      },
+      {
+        "nl": "Hoe gaat het?",
+        "en": "How are you?"
+      },
+      {
+        "nl": "Steven: Heel goed.",
+        "en": "Steven: Very well."
+      },
+      {
+        "nl": "Jari: Vertel, iets te vieren?",
+        "en": "Jari: Tell me, is there something to celebrate?"
+      },
+      {
+        "nl": "Steven: Daniella is zwanger.",
+        "en": "Steven: Daniella is pregnant."
+      },
+      {
+        "nl": "We krijgen een kindje.",
+        "en": "We are going to have a baby."
+      },
+      {
+        "nl": "Jari: Wat leuk!",
+        "en": "Jari: How nice!"
+      },
+      {
+        "nl": "Gefeliciteerd, joh.",
+        "en": "Congratulations, man."
+      },
+      {
+        "nl": "Hoe lang is Daniella al zwanger?",
+        "en": "How long has Daniella been pregnant already?"
+      },
+      {
+        "nl": "Steven: Drie maanden.",
+        "en": "Steven: Three months."
+      },
+      {
+        "nl": "Jari: Leuk!",
+        "en": "Jari: Nice!"
+      },
+      {
+        "nl": "Jullie eerste kindje?",
+        "en": "Your first child?"
+      },
+      {
+        "nl": "Dat moeten we vieren.",
+        "en": "We must celebrate that."
+      },
+      {
+        "nl": "Steven: Ja, daarom wilde ik je uitnodigen om komende zaterdag bij ons te komen eten.",
+        "en": "Steven: Yes, that is why I wanted to invite you to come and eat at our place this coming Saturday."
+      },
+      {
+        "nl": "Een paar vriendinnen van Daniella komen ook.",
+        "en": "A few of Daniella’s female friends are coming too."
+      },
+      {
+        "nl": "En ik nodig Paulo ook uit.",
+        "en": "And I am inviting Paulo too."
+      },
+      {
+        "nl": "Jari: Ja… Leuk en hartstikke gezellig.",
+        "en": "Jari: Yes… Nice and really pleasant."
+      },
+      {
+        "nl": "Steven: Zeg… Kan jij helpen klussen de aankomende tijd?",
+        "en": "Steven: Listen… Can you help with DIY work in the coming period?"
+      },
+      {
+        "nl": "We moeten een aantal muren schilderen.",
+        "en": "We have to paint a number of walls."
+      },
+      {
+        "nl": "En er moet ook een nieuwe vloer komen.",
+        "en": "And there also has to be a new floor."
+      },
+      {
+        "nl": "Jari: Tuurlijk, geen probleem.",
+        "en": "Jari: Of course, no problem."
+      },
+      {
+        "nl": "Steven: Top, dan zie ik je zaterdag.",
+        "en": "Steven: Great, then I’ll see you on Saturday."
+      },
+      {
+        "nl": "Jari: Tot dan!",
+        "en": "Jari: See you then!"
+      }
+    ]
+  },
+  {
+    "id": "listen1-2",
+    "les": 102,
+    "exam": "listen1",
+    "examIndex": 2,
+    "label": "L1.2",
+    "title": "L1.2 Hasan kijkt naar een filmpje van een bedrijf",
+    "rawTitle": "Hasan kijkt naar een filmpje van een bedrijf",
+    "sentences": [
+      {
+        "nl": "Hasan kijkt naar filmpjes op internet.",
+        "en": "Hasan watches videos on the internet."
+      },
+      {
+        "nl": "Hij ziet een filmpje van een bedrijf.",
+        "en": "He sees a video from a company."
+      },
+      {
+        "nl": "Lees eerst de vraag.",
+        "en": "First read the question."
+      },
+      {
+        "nl": "Kijk daarna naar de video.",
+        "en": "Then watch the video."
+      },
+      {
+        "nl": "Hasan: Zoek jij werk?",
+        "en": "Hasan: Are you looking for work?"
+      },
+      {
+        "nl": "Wil je met leuke collega’s werken?",
+        "en": "Do you want to work with nice colleagues?"
+      },
+      {
+        "nl": "Vind je lekkere en gezonde snacks ook belangrijk?",
+        "en": "Do you also find tasty and healthy snacks important?"
+      },
+      {
+        "nl": "Dan pas jij precies bij ons bedrijf.",
+        "en": "Then you fit exactly with our company."
+      },
+      {
+        "nl": "Wij verkopen allerlei soorten noten.",
+        "en": "We sell all kinds of nuts."
+      },
+      {
+        "nl": "Die noten komen uit veel verschillende landen over de hele wereld.",
+        "en": "Those nuts come from many different countries all over the world."
+      },
+      {
+        "nl": "Zuid-Amerika, Azië, Afrika.",
+        "en": "South America, Asia, Africa."
+      },
+      {
+        "nl": "Het zijn echte wereldnootjes.",
+        "en": "They are real world nuts."
+      },
+      {
+        "nl": "In Nederland verwerken en verpakken we de nootjes in de fabriek.",
+        "en": "In the Netherlands, we process and package the nuts in the factory."
+      },
+      {
+        "nl": "Daarna gaan ze naar verschillende supermarkten.",
+        "en": "After that, they go to different supermarkets."
+      },
+      {
+        "nl": "We zoeken twee mensen voor in het magazijn.",
+        "en": "We are looking for two people for the warehouse."
+      },
+      {
+        "nl": "Drie chauffeurs en vijf mensen die in de fabriek willen werken.",
+        "en": "Three drivers and five people who want to work in the factory."
+      },
+      {
+        "nl": "Wil jij bij ons komen werken?",
+        "en": "Do you want to come and work with us?"
+      },
+      {
+        "nl": "Bel dan naar kantoor.",
+        "en": "Then call the office."
+      },
+      {
+        "nl": "Bel 0183-654481.",
+        "en": "Call 0183-654481."
+      }
+    ]
+  },
+  {
+    "id": "listen1-3",
+    "les": 103,
+    "exam": "listen1",
+    "examIndex": 3,
+    "label": "L1.3",
+    "title": "L1.3 Julio volgt een cursus Nederlands",
+    "rawTitle": "Julio volgt een cursus Nederlands",
+    "sentences": [
+      {
+        "nl": "Julio volgt een cursus Nederlands.",
+        "en": "Julio is taking a Dutch course."
+      },
+      {
+        "nl": "Hij hoort een omroepbericht.",
+        "en": "He hears a public announcement."
+      },
+      {
+        "nl": "Volgende week starten de nieuwe cursussen.",
+        "en": "Next week the new courses start."
+      },
+      {
+        "nl": "De cursus Nederlands 3 zit bijna vol.",
+        "en": "The Dutch 3 course is almost full."
+      },
+      {
+        "nl": "Er zijn nog twee plaatsen.",
+        "en": "There are still two places left."
+      },
+      {
+        "nl": "Komt u om 1 uur naar lokaal 15.",
+        "en": "Please come to room 15 at one o’clock."
+      },
+      {
+        "nl": "Als u deze cursus wilt volgen voor Nederlands 2, maken we een nieuwe groep.",
+        "en": "If you want to take this course for Dutch 2, we will make a new group."
+      },
+      {
+        "nl": "Daar zijn nog voldoende plaatsen.",
+        "en": "There are still enough places there."
+      },
+      {
+        "nl": "U kunt zich hiervoor inschrijven om 1:30 in lokaal 5.",
+        "en": "You can register for this at 1:30 in room 5."
+      },
+      {
+        "nl": "Einde bericht.",
+        "en": "End of message."
+      }
+    ]
+  },
+  {
+    "id": "listen1-4",
+    "les": 104,
+    "exam": "listen1",
+    "examIndex": 4,
+    "label": "L1.4",
+    "title": "L1.4 Amina is in het buurthuis",
+    "rawTitle": "Amina is in het buurthuis",
+    "sentences": [
+      {
+        "nl": "Amina is in het buurthuis.",
+        "en": "Amina is in the community centre."
+      },
+      {
+        "nl": "De buren van Amina praten met elkaar.",
+        "en": "Amina’s neighbours talk with each other."
+      },
+      {
+        "nl": "Buurman: Maar ja, het is wel onhandig, hè, dat onze straat is afgesloten.",
+        "en": "Neighbour: Well yes, it is quite inconvenient, isn’t it, that our street is closed off."
+      },
+      {
+        "nl": "Amina: Ja, dat wel.",
+        "en": "Amina: Yes, that is true."
+      },
+      {
+        "nl": "Maar ja, het is wel goed dat ze de weg weer helemaal mooi maken.",
+        "en": "But yes, it is good that they are making the road completely nice again."
+      },
+      {
+        "nl": "Er zaten zoveel gaten in.",
+        "en": "There were so many holes in it."
+      },
+      {
+        "nl": "Buurman: Maar er komt nog steeds geen nieuwe verlichting.",
+        "en": "Neighbour: But there still will not be new lighting."
+      },
+      {
+        "nl": "En ook maken ze niet eens nieuwe parkeerplaatsen.",
+        "en": "And they are not even making new parking spaces either."
+      },
+      {
+        "nl": "Nou ja, ik vind het maar niks, want al dat gedoe…",
+        "en": "Well, I do not like it at all, because of all that hassle…"
+      },
+      {
+        "nl": "Amina: Gelukkig is het maar tijdelijk.",
+        "en": "Amina: Fortunately, it is only temporary."
+      },
+      {
+        "nl": "Volgende week gaat de straat weer open.",
+        "en": "Next week the street will open again."
+      },
+      {
+        "nl": "Buurman: Nee joh, die straat blijft dicht tot eind volgende maand.",
+        "en": "Neighbour: No, that street stays closed until the end of next month."
+      },
+      {
+        "nl": "Amina: Hé, maar… dat duurt nog zes weken.",
+        "en": "Amina: Hey, but… that still takes six weeks."
+      },
+      {
+        "nl": "Dat is wel mijn zeg.",
+        "en": "That is really something, I must say."
+      }
+    ]
+  },
+  {
+    "id": "listen1-5",
+    "les": 105,
+    "exam": "listen1",
+    "examIndex": 5,
+    "label": "L1.5",
+    "title": "L1.5 Farah kijkt naar het nieuws",
+    "rawTitle": "Farah kijkt naar het nieuws",
+    "sentences": [
+      {
+        "nl": "Farah kijkt naar het nieuws.",
+        "en": "Farah watches the news."
+      },
+      {
+        "nl": "In het ziekenhuis in Amsterdam-Zuid is een waterleiding kapot gegaan.",
+        "en": "In the hospital in Amsterdam South, a water pipe has broken."
+      },
+      {
+        "nl": "Het ziekenhuis heeft daar veel last van.",
+        "en": "The hospital is having a lot of trouble because of that."
+      },
+      {
+        "nl": "De begane grond van het ziekenhuis is helemaal overstroomd.",
+        "en": "The ground floor of the hospital is completely flooded."
+      },
+      {
+        "nl": "Alles staat onder water.",
+        "en": "Everything is under water."
+      },
+      {
+        "nl": "Gelukkig waren er geen patiënten.",
+        "en": "Fortunately, there were no patients there."
+      },
+      {
+        "nl": "Alle patiënten op de eerste verdieping zijn wel naar een andere plek gebracht.",
+        "en": "All patients on the first floor have, however, been brought to another place."
+      },
+      {
+        "nl": "Zij slapen nu op de tweede verdieping.",
+        "en": "They are now sleeping on the second floor."
+      },
+      {
+        "nl": "Volgens het ziekenhuis zijn de patiënten niet in gevaar geweest.",
+        "en": "According to the hospital, the patients have not been in danger."
+      },
+      {
+        "nl": "De waterleiding is waarschijnlijk pas donderdag gemaakt.",
+        "en": "The water pipe will probably only be repaired on Thursday."
+      },
+      {
+        "nl": "Dat is later dan de gemeente vanmorgen zei.",
+        "en": "That is later than the municipality said this morning."
+      },
+      {
+        "nl": "De gemeente zei dat het maar tot dinsdag zou duren.",
+        "en": "The municipality said that it would only last until Tuesday."
+      },
+      {
+        "nl": "Vanaf vrijdag is het hele ziekenhuis weer open.",
+        "en": "From Friday, the whole hospital will be open again."
+      },
+      {
+        "nl": "Ook het verkeer heeft last van het water.",
+        "en": "The traffic is also affected by the water."
+      },
+      {
+        "nl": "Er rijden voorlopig geen bussen naar het ziekenhuis.",
+        "en": "For the time being, no buses are running to the hospital."
+      },
+      {
+        "nl": "Dat komt doordat ook de weg onder water staat.",
+        "en": "That is because the road is also under water."
+      },
+      {
+        "nl": "Kom dus ook niet met de tram.",
+        "en": "So do not come by tram either."
+      },
+      {
+        "nl": "Je kunt het beste vanaf het treinstation Zuid naar het ziekenhuis lopen.",
+        "en": "It is best to walk from Zuid train station to the hospital."
+      }
+    ]
+  },
+  {
+    "id": "listen1-6",
+    "les": 106,
+    "exam": "listen1",
+    "examIndex": 6,
+    "label": "L1.6",
+    "title": "L1.6 Hamza werkt bij een groothandel",
+    "rawTitle": "Hamza werkt bij een groothandel",
+    "sentences": [
+      {
+        "nl": "Hamza werkt bij een groothandel.",
+        "en": "Hamza works at a wholesaler."
+      },
+      {
+        "nl": "Een klant heeft een bestelling ingesproken op de voicemail.",
+        "en": "A customer has spoken an order into the voicemail."
+      },
+      {
+        "nl": "Klant: Eh ja, Gerritse, van snackbar De Hoek.",
+        "en": "Customer: Uh yes, Gerritse, from snack bar De Hoek."
+      },
+      {
+        "nl": "Ik wil even wat bestellen.",
+        "en": "I would like to order something."
+      },
+      {
+        "nl": "Ik wil graag zes dozen patat.",
+        "en": "I would like six boxes of fries."
+      },
+      {
+        "nl": "Niet van die dikke die ik zelf dan nog moet snijden, maar van die Franse friet.",
+        "en": "Not those thick ones that I then still have to cut myself, but the French fries."
+      },
+      {
+        "nl": "En honderd frikandellen en tweehonderd kroketten.",
+        "en": "And one hundred frikandels and two hundred croquettes."
+      },
+      {
+        "nl": "En even kijken, ook dertig flessen mayonaise en twintig ketchup.",
+        "en": "And let me see, also thirty bottles of mayonnaise and twenty bottles of ketchup."
+      },
+      {
+        "nl": "En graag tien dozen colablikjes.",
+        "en": "And I would like ten boxes of cola cans."
+      },
+      {
+        "nl": "Maar dan niet van die zwarte, maar die grijze Cola light.",
+        "en": "But not those black ones, but the grey Cola Light."
+      },
+      {
+        "nl": "En ja, bestelling gewoon naar de snackbar sturen.",
+        "en": "And yes, just send the order to the snack bar."
+      },
+      {
+        "nl": "Maar de rekening wel naar mijn postadres sturen.",
+        "en": "But send the bill to my postal address."
+      },
+      {
+        "nl": "Graag niet zoals de vorige keer naar mijn huisadres, want dat is veranderd.",
+        "en": "Preferably not like last time to my home address, because that has changed."
+      },
+      {
+        "nl": "Dat was het.",
+        "en": "That was it."
+      },
+      {
+        "nl": "Bedankt!",
+        "en": "Thank you!"
+      }
+    ]
+  },
+  {
+    "id": "listen1-7",
+    "les": 107,
+    "exam": "listen1",
+    "examIndex": 7,
+    "label": "L1.7",
+    "title": "L1.7 Melvin doet een cursus Engels",
+    "rawTitle": "Melvin doet een cursus Engels",
+    "sentences": [
+      {
+        "nl": "Melvin doet een cursus Engels.",
+        "en": "Melvin is taking an English course."
+      },
+      {
+        "nl": "Zijn medecursist Enrico praat met de docent.",
+        "en": "His fellow student Enrico talks with the teacher."
+      },
+      {
+        "nl": "Docent: Hier Enrico… Je schrijfopdracht.",
+        "en": "Teacher: Here, Enrico… Your writing assignment."
+      },
+      {
+        "nl": "Enrico: Oké, dankjewel.",
+        "en": "Enrico: Okay, thank you."
+      },
+      {
+        "nl": "Docent: Ja, je hebt bijna geen fout gemaakt met de volgorde van de woorden, heel goed.",
+        "en": "Teacher: Yes, you made almost no mistakes with the order of the words, very good."
+      },
+      {
+        "nl": "Soms maak je nog een foutje met de werkwoorden.",
+        "en": "Sometimes you still make a small mistake with the verbs."
+      },
+      {
+        "nl": "Maar die hoef je ook nog niet allemaal te kunnen.",
+        "en": "But you do not have to know all of those yet."
+      },
+      {
+        "nl": "Alleen ja, niet alle woorden zijn goed geschreven.",
+        "en": "Only, yes, not all words are written correctly."
+      },
+      {
+        "nl": "Kijk, er zitten nog best veel spelfouten.",
+        "en": "Look, there are still quite a lot of spelling mistakes."
+      },
+      {
+        "nl": "Enrico: En ja, ik kon ook niet alle woorden vinden in mijn woordenboek.",
+        "en": "Enrico: And yes, I also could not find all the words in my dictionary."
+      },
+      {
+        "nl": "Docent: Oké, misschien kan iemand die brief nog eens doorlezen als hij af is.",
+        "en": "Teacher: Okay, maybe someone can read that letter through again when it is finished."
+      },
+      {
+        "nl": "Heb je dat aan iemand gevraagd?",
+        "en": "Have you asked someone that?"
+      },
+      {
+        "nl": "Enrico: Nee.",
+        "en": "Enrico: No."
+      },
+      {
+        "nl": "Docent: Oké, nou je kunt de volgende keer je brief aan een medecursist geven, aan Melvin bijvoorbeeld, of iemand anders.",
+        "en": "Teacher: Okay, well next time you can give your letter to a fellow student, to Melvin for example, or to someone else."
+      },
+      {
+        "nl": "Die kan er dan nog fouten uithalen.",
+        "en": "That person can then still take mistakes out of it."
+      },
+      {
+        "nl": "Enrico: Oké.",
+        "en": "Enrico: Okay."
+      },
+      {
+        "nl": "Docent: Ja, en voor Melvin is dat ook een goede extra oefening.",
+        "en": "Teacher: Yes, and for Melvin that is also good extra practice."
+      },
+      {
+        "nl": "Melvin: Ja, dat is een goed idee.",
+        "en": "Melvin: Yes, that is a good idea."
+      },
+      {
+        "nl": "Docent: Goed, oké, dan zie ik jullie de volgende week.",
+        "en": "Teacher: Good, okay, then I’ll see you next week."
+      },
+      {
+        "nl": "Enrico: Oké, tot donderdag.",
+        "en": "Enrico: Okay, see you Thursday."
+      },
+      {
+        "nl": "Docent: Tot donderdag.",
+        "en": "Teacher: See you Thursday."
+      },
+      {
+        "nl": "Melvin: Tot ziens.",
+        "en": "Melvin: Goodbye."
+      }
+    ]
+  },
+  {
+    "id": "listen1-8",
+    "les": 108,
+    "exam": "listen1",
+    "examIndex": 8,
+    "label": "L1.8",
+    "title": "L1.8 Sonja luistert naar een voicemailbericht",
+    "rawTitle": "Sonja luistert naar een voicemailbericht",
+    "sentences": [
+      {
+        "nl": "Sonja luistert naar een voicemailbericht van haar vriendin Zineb.",
+        "en": "Sonja listens to a voicemail message from her friend Zineb."
+      },
+      {
+        "nl": "Welkom bij voicemail van Taylor Works.",
+        "en": "Welcome to the voicemail of Taylor Works."
+      },
+      {
+        "nl": "U heeft een nieuw bericht.",
+        "en": "You have a new message."
+      },
+      {
+        "nl": "Zineb: Hoi, met Zineb.",
+        "en": "Zineb: Hi, it’s Zineb."
+      },
+      {
+        "nl": "Ik bel even over vanavond.",
+        "en": "I’m calling about tonight."
+      },
+      {
+        "nl": "We hadden afgesproken om naar die pizzeria te gaan.",
+        "en": "We had agreed to go to that pizzeria."
+      },
+      {
+        "nl": "Maar hij is gesloten.",
+        "en": "But it is closed."
+      },
+      {
+        "nl": "Het is een bedrijfsfeest.",
+        "en": "There is a company party."
+      },
+      {
+        "nl": "Morgenavond is het restaurant wel open.",
+        "en": "Tomorrow evening the restaurant is open."
+      },
+      {
+        "nl": "Kun jij dan toevallig ook om 7 uur?",
+        "en": "Could you also manage at 7 o’clock then, by any chance?"
+      },
+      {
+        "nl": "Ik zal wel reserveren.",
+        "en": "I will make a reservation."
+      },
+      {
+        "nl": "Oh ja, ik ga morgenavond ook nog met mijn broer Murat naar de film.",
+        "en": "Oh yes, tomorrow evening I am also going to the movies with my brother Murat."
+      },
+      {
+        "nl": "Vind je het leuk om na het eten met ons mee te gaan naar de film?",
+        "en": "Would you like to come with us to the movie after dinner?"
+      },
+      {
+        "nl": "Maar ik zal je thuis komen ophalen.",
+        "en": "But I will come and pick you up at home."
+      },
+      {
+        "nl": "Dan zien we mijn broer later bij de bioscoop.",
+        "en": "Then we will see my brother later at the cinema."
+      },
+      {
+        "nl": "Dus wil je mij even terugbellen?",
+        "en": "So could you call me back?"
+      },
+      {
+        "nl": "Dank je.",
+        "en": "Thank you."
+      },
+      {
+        "nl": "Dag!",
+        "en": "Bye!"
+      }
+    ]
+  },
+  {
+    "id": "listen1-9",
+    "les": 109,
+    "exam": "listen1",
+    "examIndex": 9,
+    "label": "L1.9",
+    "title": "L1.9 Paula zit op een cursus Verhalen schrijven",
+    "rawTitle": "Paula zit op een cursus Verhalen schrijven",
+    "sentences": [
+      {
+        "nl": "Paula zit op een cursus Verhalen schrijven.",
+        "en": "Paula is in a Story Writing course."
+      },
+      {
+        "nl": "Ze luistert naar haar docent.",
+        "en": "She listens to her teacher."
+      },
+      {
+        "nl": "Docent: Hallo allemaal.",
+        "en": "Teacher: Hello everyone."
+      },
+      {
+        "nl": "Vandaag bespreek ik de laatste opdracht met jullie.",
+        "en": "Today I will discuss the last assignment with you."
+      },
+      {
+        "nl": "Het korte verhaal dat jullie als huiswerkopdracht hadden gemaakt.",
+        "en": "The short story that you had made as a homework assignment."
+      },
+      {
+        "nl": "We gaan straks samen jullie verhalen lezen.",
+        "en": "We are going to read your stories together in a moment."
+      },
+      {
+        "nl": "Maar eerst bespreek ik het natuurproject waar we morgen mee gaan starten.",
+        "en": "But first I will discuss the nature project that we are going to start tomorrow."
+      },
+      {
+        "nl": "Voor dit project gaan jullie een aantal verhalen schrijven over de natuur.",
+        "en": "For this project, you are going to write a number of stories about nature."
+      },
+      {
+        "nl": "We gaan morgen dan ook echt de natuur in.",
+        "en": "So tomorrow we are really going into nature."
+      },
+      {
+        "nl": "Aan het einde van de les spreken we af wie morgen wat meeneemt.",
+        "en": "At the end of the lesson, we will agree who will bring what tomorrow."
+      },
+      {
+        "nl": "Ik bedoel een woordenboek of zo.",
+        "en": "I mean a dictionary or something like that."
+      },
+      {
+        "nl": "Maar iedereen moet zijn eigen schrijfbak meenemen.",
+        "en": "But everyone must bring their own writing box."
+      },
+      {
+        "nl": "Let op.",
+        "en": "Pay attention."
+      },
+      {
+        "nl": "We spreken morgen om 10 uur in het park af, dus niet op school.",
+        "en": "We will meet tomorrow at 10 o’clock in the park, so not at school."
+      },
+      {
+        "nl": "Via het park lopen we dan naar de stadspolder.",
+        "en": "Through the park, we will then walk to the city polder."
+      },
+      {
+        "nl": "Dit project is een goede oefening voor het examen.",
+        "en": "This project is good practice for the exam."
+      },
+      {
+        "nl": "Maar daarover later.",
+        "en": "But more about that later."
+      },
+      {
+        "nl": "Goed.",
+        "en": "Good."
+      },
+      {
+        "nl": "Dan ga ik nu over naar het lezen van jullie korte verhaal.",
+        "en": "Then I will now move on to reading your short stories."
+      }
+    ]
+  },
+  {
+    "id": "listen1-10",
+    "les": 110,
+    "exam": "listen1",
+    "examIndex": 10,
+    "label": "L1.10",
+    "title": "L1.10 Mila en Carla praten met de leraar",
+    "rawTitle": "Mila en Carla praten met de leraar",
+    "sentences": [
+      {
+        "nl": "De kinderen van Mila en Carla zitten op de basisschool.",
+        "en": "Mila and Carla’s children are in primary school."
+      },
+      {
+        "nl": "Mila en Carla praten met de leraar van hun kinderen.",
+        "en": "Mila and Carla talk with their children’s teacher."
+      },
+      {
+        "nl": "Leraar: Hallo!",
+        "en": "Teacher: Hello!"
+      },
+      {
+        "nl": "Mila en Carla: Hallo.",
+        "en": "Mila and Carla: Hello."
+      },
+      {
+        "nl": "Leraar: Welkom.",
+        "en": "Teacher: Welcome."
+      },
+      {
+        "nl": "Ja, jullie gaan helpen bij het Koningsdagontbijt op vrijdag 27 april.",
+        "en": "Yes, you are going to help with the King’s Day breakfast on Friday, April 27."
+      },
+      {
+        "nl": "Het begint om 8:30.",
+        "en": "It starts at 8:30."
+      },
+      {
+        "nl": "Dan ontbijten we dus met de hele klas op school.",
+        "en": "Then we will have breakfast with the whole class at school."
+      },
+      {
+        "nl": "Daarna om 9:30 gaan we naar buiten, naar het sportveld.",
+        "en": "After that, at 9:30, we will go outside to the sports field."
+      },
+      {
+        "nl": "Daarbij helpen al andere ouders.",
+        "en": "Other parents are already helping with that."
+      },
+      {
+        "nl": "Mila en Carla: Oké, dus de kinderen komen om 8:30.",
+        "en": "Mila and Carla: Okay, so the children come at 8:30."
+      },
+      {
+        "nl": "Hoe laat moeten we alles klaarzetten?",
+        "en": "What time must we set everything up?"
+      },
+      {
+        "nl": "Leraar: Nou, dat duurt wel een half uur, denk ik.",
+        "en": "Teacher: Well, that will take about half an hour, I think."
+      },
+      {
+        "nl": "Mila en Carla: Ja, dan zijn wij er om 8 uur.",
+        "en": "Mila and Carla: Yes, then we will be there at 8 o’clock."
+      },
+      {
+        "nl": "Leraar: Goed!",
+        "en": "Teacher: Good!"
+      },
+      {
+        "nl": "Mila en Carla: Trouwens… moeten wij ook boodschappen doen voor het ontbijt?",
+        "en": "Mila and Carla: By the way… do we also have to do the shopping for the breakfast?"
+      },
+      {
+        "nl": "Leraar: Even kijken.",
+        "en": "Teacher: Let me see."
+      },
+      {
+        "nl": "Nee, nee hoor, dat doet de moeder van Giovanni.",
+        "en": "No, no, Giovanni’s mother will do that."
+      },
+      {
+        "nl": "Die heeft een grote auto.",
+        "en": "She has a big car."
+      },
+      {
+        "nl": "Mila en Carla: En na het ontbijt, wat gaan de kinderen dan doen?",
+        "en": "Mila and Carla: And after breakfast, what will the children do then?"
+      },
+      {
+        "nl": "Leraar: Eerst gaan we dansen op een heel leuk lied.",
+        "en": "Teacher: First we will dance to a very nice song."
+      },
+      {
+        "nl": "En daarna doen we allerlei spellen.",
+        "en": "And after that we will play all kinds of games."
+      },
+      {
+        "nl": "En aan het eind van de dag is er een wedstrijd.",
+        "en": "And at the end of the day there is a competition."
+      },
+      {
+        "nl": "Dan gaan de kinderen een fiets versieren.",
+        "en": "Then the children will decorate a bicycle."
+      },
+      {
+        "nl": "En de mooiste fiets wint de prijs.",
+        "en": "And the most beautiful bicycle wins the prize."
+      },
+      {
+        "nl": "Mila en Carla: Vast een leuke dag.",
+        "en": "Mila and Carla: It will surely be a nice day."
+      }
+    ]
+  }
+]

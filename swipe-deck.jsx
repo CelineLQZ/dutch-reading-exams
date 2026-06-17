@@ -23,11 +23,18 @@ const SwipeDeck = forwardRef(function SwipeDeck({ items, renderCard, onSwipe, sw
     }, 260);
   }, [items, idx, onSwipe]);
 
+  const goTo = useCallback((nextIdx) => {
+    // Jump without firing onSwipe — used by manual prev/next controls.
+    setDrag({ x: 0, y: 0, dragging: false, releasing: false });
+    setIdx(Math.max(0, Math.min(items.length, nextIdx)));
+  }, [items]);
+
   useImperativeHandle(ref, () => ({
     swipe: commitSwipe,
     reset: () => { setIdx(0); },
-    currentIndex: () => idx
-  }), [commitSwipe, idx]);
+    currentIndex: () => idx,
+    goTo
+  }), [commitSwipe, idx, goTo]);
 
   const onPointerDown = (e) => {
     if (drag.releasing) return;

@@ -530,11 +530,22 @@ function StudyListIcon() {
   );
 }
 
-function HomeScreen({ user, stats, commonStats, sentenceStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+function HeadphoneIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+      <path d="M21 19a2 2 0 0 1-2 2h-1v-7h3z"/>
+      <path d="M3 19a2 2 0 0 0 2 2h1v-7H3z"/>
+    </svg>
+  );
+}
+
+function HomeScreen({ user, stats, commonStats, sentenceStats, listeningStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   const primary = { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0 };
   const libraryRows = [
     { label: '1000 Dutch Words', total: primary.total, learned: primary.learned, review: primary.review, tone: 'keep', icon: <BookIcon />, action: 'common' },
     { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
+    { label: 'Listening', total: listeningStats?.total || 0, learned: listeningStats?.learned || 0, review: listeningStats?.forgotten || 0, tone: 'forgot', icon: <HeadphoneIcon />, action: 'listening' },
     { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
   const continueDeck = continueSession?.words?.[0]?.type === 'sentence'
@@ -798,7 +809,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   );
 }
 
-function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession, onBack, onStartArticle, onContinueArticle }) {
+function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession, onBack, onStartArticle, onContinueArticle, modeLabel = 'Sentences' }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
@@ -844,7 +855,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
     <div className="app-screen" {...swipeBack}>
       <div className="topbar">
         <button className="iconbtn" onClick={onBack}><CloseIcon /></button>
-        <div className="mode-pill"><span className="dot"></span>Sentences</div>
+        <div className="mode-pill"><span className="dot"></span>{modeLabel}</div>
         <div style={{ width: 38 }}></div>
       </div>
       <div className="home pick-screen">
@@ -984,8 +995,32 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
       </div>
       {!done && (
         <div className="deck-actions">
+          {sentenceMode && mode === 'reading' && (
+            <button
+              className="act-btn nav"
+              disabled={cursor === 0}
+              onClick={() => {
+                const next = Math.max(0, cursor - 1);
+                setCursor(next);
+                deckRef.current?.goTo?.(next);
+              }}
+              aria-label="Previous sentence"
+            >‹</button>
+          )}
           <button className="act-btn forgot" onClick={() => swipe('left')}  aria-label="Don't know"><XIcon /></button>
           <button className="act-btn keep"   onClick={() => swipe('right')} aria-label="Got it"><CheckIcon /></button>
+          {sentenceMode && mode === 'reading' && (
+            <button
+              className="act-btn nav"
+              disabled={cursor >= words.length - 1}
+              onClick={() => {
+                const next = Math.min(words.length, cursor + 1);
+                setCursor(next);
+                deckRef.current?.goTo?.(next);
+              }}
+              aria-label="Next sentence"
+            >›</button>
+          )}
         </div>
       )}
     </div>

@@ -1872,6 +1872,13 @@ button { font-family: inherit; }
 .act-btn:active { transform: scale(0.92); }
 .act-btn.forgot { border-color: var(--forgot); color: var(--forgot); }
 .act-btn.keep   { border-color: var(--keep);   color: var(--keep); }
+.act-btn.nav {
+  width: 44px; height: 44px;
+  border-color: var(--line); color: var(--ink-soft);
+  font-size: 26px; font-weight: 600; line-height: 1;
+  border-width: 1.5px;
+}
+.act-btn.nav:disabled { opacity: 0.3; cursor: not-allowed; transform: none; }
 
 /* Test options */
 .test-options { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }

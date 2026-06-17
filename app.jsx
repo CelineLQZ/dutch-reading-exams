@@ -597,6 +597,7 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
 
   const [examDict, setExamDict] = useState([]);
+  const [listenings, setListenings] = useState([]);
 
   // Load words.json
   useEffect(() => {
@@ -605,16 +606,19 @@ function App() {
       fetch('readings.json?' + Date.now()).then(r => r.json()).catch(() => []),
       fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch('exam3-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
-      fetch('exam2-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
+      fetch('exam2-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('listenings.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('listening-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data]) => {
+      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, listeningData, listeningDictData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
+        setListenings(Array.isArray(listeningData) ? listeningData : []);
         setExternalDictionary(dictionaryData || {});
-        // merge exam dicts — exam3 wins on overlap (later additions override)
         const merged = [
           ...(Array.isArray(exam2Data) ? exam2Data : []),
           ...(Array.isArray(exam3Data) ? exam3Data : []),
+          ...(Array.isArray(listeningDictData) ? listeningDictData : []),
         ];
         setExamDict(merged);
         setLoading(false);
@@ -692,6 +696,12 @@ function App() {
   }, [userData]);
   const activeWordDeck = prefs.wordDeck || 'common';
   const activeWords = useMemo(() => allWords.filter(w => (w.deck || 'ar') === activeWordDeck), [allWords, activeWordDeck]);
+  // Stable merged pool for studylist-test; spreading inline would create a new array each render
+  // and cause TestScreen's quiz useMemo to reshuffle on every parent re-render.
+  const studyListTestPool = useMemo(
+    () => (retryWords ? allWords.concat(retryWords) : allWords),
+    [allWords, retryWords]
+  );
 
   const orderedWords = useMemo(() => {
     let list = activeWords;
@@ -719,6 +729,15 @@ function App() {
     if (prefs.les !== 'all') list = list.filter(s => s.les === prefs.les);
     return list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
   }, [allSentences, prefs.les]);
+
+  const allListeningSentences = useMemo(() => flattenReadings(listenings), [listenings]);
+  const orderedListeningSentences = useMemo(() => {
+    let list = allListeningSentences;
+    if (prefs.listeningLes !== undefined && prefs.listeningLes !== 'all') {
+      list = list.filter(s => s.les === prefs.listeningLes);
+    }
+    return list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
+  }, [allListeningSentences, prefs.listeningLes]);
 
   const lessons = useMemo(() => {
     const m = {};
@@ -833,6 +852,29 @@ function App() {
     learned: allSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
     forgotten: allSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
   }), [allSentences, sentenceStatus]);
+  const allListeningStats = useMemo(() => ({
+    total: allListeningSentences.length,
+    learned: allListeningSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
+    forgotten: allListeningSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
+  }), [allListeningSentences, sentenceStatus]);
+  const listeningArticleStats = useMemo(() => {
+    const out = {};
+    listenings.forEach(article => {
+      const total = article.sentences?.length || 0;
+      let learned = 0, forgotten = 0;
+      (article.sentences || []).forEach((s, i) => {
+        const key = `sentence|${article.id}|${i + 1}|${s.nl}`;
+        if (sentenceStatus[key] === 'learned') learned += 1;
+        if (sentenceStatus[key] === 'forgotten') forgotten += 1;
+      });
+      out[article.id] = { total, learned, forgotten };
+    });
+    return out;
+  }, [listenings, sentenceStatus]);
+  const listeningReviewQueue = useMemo(
+    () => orderedListeningSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten'),
+    [orderedListeningSentences, sentenceStatus]
+  );
 
   const updatePrefs  = patch => setUserData(d => {
     const next = { ...patch };
@@ -941,6 +983,7 @@ function App() {
         stats={allWordStats}
         commonStats={commonWordStats}
         sentenceStats={allSentenceStats}
+        listeningStats={allListeningStats}
         studyListCount={studyList.length}
         todayStats={todayStats}
         prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
@@ -951,6 +994,9 @@ function App() {
           if (type === 'sentences') {
             updatePrefs({ contentType: 'sentences', filterMode: 'article' });
             setRoute('sentences-pick');
+          } else if (type === 'listening') {
+            updatePrefs({ contentType: 'listening' });
+            setRoute('listenings-pick');
           } else if (type === 'studylist') {
             setRoute('studylist');
           } else if (type === 'common') {
@@ -1020,6 +1066,62 @@ function App() {
           setSessionBackRoute('sentences-pick');
           updatePrefs({ contentType: 'sentences', filterMode: 'article', les: article.les, order });
           setRoute('reading');
+        }}
+      />
+    );
+  } else if (route === 'listenings-pick') {
+    screen = (
+      <SentencesPickScreen
+        readings={listenings}
+        statsByArticle={listeningArticleStats}
+        prefs={{ ...prefs, les: prefs.listeningLes ?? prefs.les, order: prefs.listeningOrder ?? prefs.order }}
+        continueSession={null}
+        modeLabel="Listening"
+        onBack={() => setRoute('home')}
+        onStartArticle={(action, les, order) => {
+          setResuming(false);
+          clearSession();
+          setSentenceResumeOffset(0);
+          setSessionBackRoute('listenings-pick');
+          updatePrefs({ contentType: 'listening', listeningLes: les, listeningOrder: order });
+          setRoute(action === 'study' ? 'listening' : action === 'review' ? 'listening-review' : 'listening-test');
+        }}
+      />
+    );
+  } else if (route === 'listening' || route === 'listening-review') {
+    const fullSentences = route === 'listening' ? orderedListeningSentences : listeningReviewQueue;
+    const offset = route === 'listening' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
+    const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
+    const sortedArticles = listenings.slice().sort((a, b) => (a.les || 0) - (b.les || 0));
+    const curIdx = sortedArticles.findIndex(r => r.les === prefs.listeningLes);
+    const nextArticle = curIdx >= 0 && curIdx + 1 < sortedArticles.length ? sortedArticles[curIdx + 1] : null;
+    const handleNextArticle = nextArticle ? () => {
+      setResuming(false);
+      clearSession();
+      setSentenceResumeOffset(0);
+      updatePrefs({ listeningLes: nextArticle.les });
+    } : null;
+    screen = (
+      <DeckScreen key={`${route}-${prefs.listeningLes}`} mode={route === 'listening' ? 'reading' : 'sentence-review'} words={sentences} progressOffset={offset}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        exampleMode={prefs.exampleMode}
+        nextSessionLabel={nextArticle ? nextArticle.title : null}
+        onNextSession={handleNextArticle}
+        onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
+        onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
+      />
+    );
+  } else if (route === 'listening-test') {
+    screen = (
+      <TestScreen key={`listening-test-${prefs.listeningLes}`} words={orderedListeningSentences} allWords={allListeningSentences} autoplay={settings.autoplay}
+        maxQuestions={null}
+        onWrongWord={sentence => recordSentenceSwipe(sentence, 'left')}
+        onExit={() => { setRoute(sessionBackRoute || 'home'); }}
+        onComplete={wrongs => {
+          setRetryWords(wrongs.length ? wrongs : null);
+          if (!wrongs.length) setRoute(sessionBackRoute || 'home');
+          else setRoute('sentence-retry');
         }}
       />
     );
@@ -1141,7 +1243,7 @@ function App() {
     );
   } else if (route === 'studylist-test' && retryWords) {
     screen = (
-      <TestScreen key={`studylist-test-${retryWords.length}`} words={retryWords} allWords={[...allWords, ...retryWords]} autoplay={settings.autoplay}
+      <TestScreen key={`studylist-test-${retryWords.length}`} words={retryWords} allWords={studyListTestPool} autoplay={settings.autoplay}
         maxQuestions={null}
         onWrongWord={word => recordSwipe(word, 'left')}
         onExit={() => { setRetryWords(null); setRoute(sessionBackRoute || 'home'); }}
