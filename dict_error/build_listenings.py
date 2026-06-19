@@ -246,27 +246,86 @@ for line in all_dict_lines:
                 entry["verb"] = {"inf": inf, "hij": hij, "past": past, "perfect": perf}
         entries[ks] = entry
 
-# Also add individual word entries for tokens inside phrases that we know are verbs
-phrase_tokens_added = set()
-for line in all_dict_lines:
-    cells = [c.strip() for c in line.strip("|").split("|")]
-    if len(cells) != 2:
+# Hand-curated English meanings per verb infinitive — used so we can include
+# every conjugated form (with full inf/hij/past/perfect grid in the popover)
+# without relying on placeholder texts.
+VERB_EN = {
+    "zijn": "to be", "hebben": "to have", "worden": "to become / be (passive)",
+    "kunnen": "can / be able to", "moeten": "must / have to", "willen": "to want",
+    "mogen": "may / be allowed to", "hoeven": "need to / have to",
+    "zullen": "shall / will", "laten": "to let / to have done",
+    "gaan": "to go", "doen": "to do", "komen": "to come", "zien": "to see",
+    "weten": "to know", "geven": "to give", "nemen": "to take",
+    "blijven": "to stay / remain", "vinden": "to find / think",
+    "kiezen": "to choose", "lezen": "to read", "eten": "to eat",
+    "schrijven": "to write", "spreken": "to speak", "krijgen": "to get / receive",
+    "brengen": "to bring", "denken": "to think", "houden": "to hold / love",
+    "rijden": "to drive / ride", "vergeten": "to forget", "breken": "to break",
+    "leggen": "to lay / put", "bellen": "to call (phone)", "zitten": "to sit",
+    "afspreken": "to agree / make an appointment",
+    "volgen": "to follow / take (a course)", "werken": "to work",
+    "wonen": "to live (somewhere)", "stoppen": "to stop", "betalen": "to pay",
+    "maken": "to make", "zoeken": "to search / look for", "helpen": "to help",
+    "zorgen": "to take care of / ensure", "passen": "to fit / suit",
+    "vragen": "to ask", "mailen": "to email", "vertellen": "to tell",
+    "oefenen": "to practise", "hopen": "to hope", "kosten": "to cost",
+    "duren": "to last / take (time)", "sturen": "to send",
+    "kennen": "to know (be familiar with)", "halen": "to fetch / pass (exam)",
+    "leren": "to learn / teach", "horen": "to hear", "wachten": "to wait",
+    "kijken": "to look / watch", "luisteren": "to listen", "melden": "to report",
+    "bedanken": "to thank", "gebruiken": "to use", "praten": "to talk",
+    "openen": "to open", "sluiten": "to close", "bereiken": "to reach",
+    "draaien": "to turn / run (shift)", "schilderen": "to paint",
+    "klussen": "to do DIY work", "vieren": "to celebrate", "uitnodigen": "to invite",
+    "verkopen": "to sell", "verwerken": "to process",
+    "verpakken": "to package", "starten": "to start", "aanmelden": "to sign up",
+    "inschrijven": "to register / enrol", "repareren": "to repair",
+    "bestellen": "to order", "snijden": "to cut", "veranderen": "to change",
+    "reserveren": "to reserve / book", "ophalen": "to pick up",
+    "terugbellen": "to call back", "doorlezen": "to read through",
+    "controleren": "to check", "bespreken": "to discuss",
+    "meenemen": "to bring along", "lopen": "to walk", "ontbijten": "to have breakfast",
+    "klaarzetten": "to set up / prepare", "dansen": "to dance",
+    "winnen": "to win", "versieren": "to decorate", "eindigen": "to end",
+    "tegenkomen": "to run into / meet by chance",
+}
+
+# Re-emit each known verb form with a sensible English meaning so they get
+# the conjugation grid in the popover. Phrase entries (e.g. "kijkt naar") keep
+# their existing translation; we only add single-word entries.
+for form, inf in list(FORM_TO_INF.items()):
+    if form in entries:
+        # If an existing entry came from the md word list, keep it but attach
+        # verb conjugations so the popover shows the full grid.
+        if inf in VERBS and not entries[form].get("verb"):
+            hij, past, perf = VERBS[inf]
+            entries[form]["pos"] = "verb"
+            entries[form]["verb"] = {"inf": inf, "hij": hij, "past": past, "perfect": perf}
         continue
-    nl, _ = cells
-    for tok in re.findall(r"[A-Za-zÀ-ÿ]+", nl.lower()):
-        if tok in entries or tok in phrase_tokens_added:
-            continue
-        if tok in FORM_TO_INF:
-            inf = FORM_TO_INF[tok]
-            if inf in VERBS:
-                hij, past, perf = VERBS[inf]
-                entries[tok] = {
-                    "nl": tok,
-                    "en": f"({inf}) — see dictionary entry",
-                    "pos": "verb",
-                    "verb": {"inf": inf, "hij": hij, "past": past, "perfect": perf},
-                }
-                phrase_tokens_added.add(tok)
+    if inf in VERBS:
+        hij, past, perf = VERBS[inf]
+        entries[form] = {
+            "nl": form,
+            "en": VERB_EN.get(inf, f"to {inf}"),
+            "pos": "verb",
+            "verb": {"inf": inf, "hij": hij, "past": past, "perfect": perf},
+        }
+
+# Manual overrides for adjective/participle forms that are common in these texts
+# and whose external-dictionary entries only contain grammar metadata.
+MANUAL = {
+    "komende": ("coming, upcoming", "adjective"),
+    "aankomende": ("upcoming, coming", "adjective"),
+    "afgesloten": ("closed off", "adjective"),
+    "afgesproken": ("agreed, arranged", "adjective"),
+    "gesloten": ("closed", "adjective"),
+    "geopend": ("open, opened", "adjective"),
+    "geweldige": ("wonderful, great", "adjective"),
+    "fantastische": ("fantastic", "adjective"),
+    "vriendelijke": ("kind, friendly", "adjective"),
+}
+for nl, (en, pos) in MANUAL.items():
+    entries[nl] = {"nl": nl, "en": en, "pos": pos}
 
 result = sorted(entries.values(), key=lambda e: e["nl"])
 OUT_DICT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")

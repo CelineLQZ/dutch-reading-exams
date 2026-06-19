@@ -607,10 +607,11 @@ function App() {
       fetch('dictionary.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch('exam3-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('exam2-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('exam4-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('listenings.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('listening-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, listeningData, listeningDictData]) => {
+      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, exam4Data, listeningData, listeningDictData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
         setListenings(Array.isArray(listeningData) ? listeningData : []);
@@ -618,6 +619,7 @@ function App() {
         const merged = [
           ...(Array.isArray(exam2Data) ? exam2Data : []),
           ...(Array.isArray(exam3Data) ? exam3Data : []),
+          ...(Array.isArray(exam4Data) ? exam4Data : []),
           ...(Array.isArray(listeningDictData) ? listeningDictData : []),
         ];
         setExamDict(merged);
@@ -925,15 +927,18 @@ function App() {
     const s = userData.session;
     const byKey = new Map([
       ...allWords.map((w, i) => [wordKey(w, i), w]),
-      ...allSentences.map((w, i) => [wordKey(w, i), w])
+      ...allSentences.map((w, i) => [wordKey(w, i), w]),
+      ...allListeningSentences.map((w, i) => [wordKey(w, i), w])
     ]);
-    const source = s.mode === 'reading' || s.mode === 'sentence-review' || s.mode === 'sentence-test' ? allSentences : allWords;
+    const isListening = s.mode === 'listening' || s.mode === 'listening-review';
+    const isSentence = s.mode === 'reading' || s.mode === 'sentence-review' || s.mode === 'sentence-test';
+    const source = isListening ? allListeningSentences : isSentence ? allSentences : allWords;
     const words = s.words.map(k => byKey.get(k) || source.find(w=>w.nl===k)).filter(Boolean);
     if (!words.length) return null;
     if (words[0]?.deck === 'ar') return null;
     if ((s.cursor || 0) >= words.length) return null;
     return { ...s, words };
-  }, [userData?.session, allWords, allSentences]);
+  }, [userData?.session, allWords, allSentences, allListeningSentences]);
 
   // Loading splash
   if (loading) {
@@ -1070,12 +1075,15 @@ function App() {
       />
     );
   } else if (route === 'listenings-pick') {
+    const listeningContinue = continueSession?.mode === 'listening' ? continueSession : null;
     screen = (
       <SentencesPickScreen
         readings={listenings}
         statsByArticle={listeningArticleStats}
         prefs={{ ...prefs, les: prefs.listeningLes ?? prefs.les, order: prefs.listeningOrder ?? prefs.order }}
-        continueSession={null}
+        continueSession={listeningContinue
+          ? { ...listeningContinue, mode: 'reading' /* picker treats this as a sentence resume */ }
+          : null}
         modeLabel="Listening"
         onBack={() => setRoute('home')}
         onStartArticle={(action, les, order) => {
@@ -1086,11 +1094,36 @@ function App() {
           updatePrefs({ contentType: 'listening', listeningLes: les, listeningOrder: order });
           setRoute(action === 'study' ? 'listening' : action === 'review' ? 'listening-review' : 'listening-test');
         }}
+        onContinueArticle={(article, order) => {
+          // Resume the saved listening session if it matches this article.
+          if (listeningContinue && listeningContinue.words?.[0]?.les === article.les) {
+            setResuming(true);
+            setSentenceResumeOffset(0);
+            setSessionBackRoute('listenings-pick');
+            updatePrefs({ contentType: 'listening', listeningLes: article.les, listeningOrder: order });
+            setRoute('listening');
+            return;
+          }
+          // Fallback: open the article and skip past already-learned sentences.
+          const stats = article.stats || {};
+          const offset = Math.max(0, Math.min(stats.learned || 0, Math.max((stats.total || 1) - 1, 0)));
+          setResuming(false);
+          clearSession();
+          setSentenceResumeOffset(offset);
+          setSessionBackRoute('listenings-pick');
+          updatePrefs({ contentType: 'listening', listeningLes: article.les, listeningOrder: order });
+          setRoute('listening');
+        }}
       />
     );
   } else if (route === 'listening' || route === 'listening-review') {
-    const fullSentences = route === 'listening' ? orderedListeningSentences : listeningReviewQueue;
-    const offset = route === 'listening' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
+    const useSaved = resuming && continueSession?.mode === 'listening' && route === 'listening';
+    const fullSentences = route === 'listening'
+      ? (useSaved ? continueSession.words : orderedListeningSentences)
+      : listeningReviewQueue;
+    const offset = useSaved
+      ? Math.min(continueSession.cursor || 0, fullSentences.length)
+      : route === 'listening' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
     const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
     const sortedArticles = listenings.slice().sort((a, b) => (a.les || 0) - (b.les || 0));
     const curIdx = sortedArticles.findIndex(r => r.les === prefs.listeningLes);
@@ -1109,7 +1142,10 @@ function App() {
         nextSessionLabel={nextArticle ? nextArticle.title : null}
         onNextSession={handleNextArticle}
         onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
-        onSwipe={(sentence, dir) => recordSentenceSwipe(sentence, dir)}
+        onSwipe={(sentence, dir, cursor) => {
+          recordSentenceSwipe(sentence, dir);
+          if (route === 'listening') saveSession('listening', fullSentences, offset + cursor);
+        }}
       />
     );
   } else if (route === 'listening-test') {

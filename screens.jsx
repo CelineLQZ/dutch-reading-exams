@@ -544,12 +544,16 @@ function HomeScreen({ user, stats, commonStats, sentenceStats, listeningStats, s
   const primary = { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0 };
   const libraryRows = [
     { label: '1000 Dutch Words', total: primary.total, learned: primary.learned, review: primary.review, tone: 'keep', icon: <BookIcon />, action: 'common' },
-    { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
+    { label: 'Reading', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
     { label: 'Listening', total: listeningStats?.total || 0, learned: listeningStats?.learned || 0, review: listeningStats?.forgotten || 0, tone: 'forgot', icon: <HeadphoneIcon />, action: 'listening' },
     { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
-  const continueDeck = continueSession?.words?.[0]?.type === 'sentence'
-    ? { label: 'Sentences', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0 }
+  const continueIsListening = continueSession?.mode === 'listening' || continueSession?.mode === 'listening-review'
+    || (continueSession?.words?.[0]?._key || '').startsWith('sentence|listen');
+  const continueDeck = continueIsListening
+    ? { label: 'Listening', total: listeningStats?.total || 0, learned: listeningStats?.learned || 0, review: listeningStats?.forgotten || 0 }
+    : continueSession?.words?.[0]?.type === 'sentence'
+    ? { label: 'Reading', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0 }
     : primary;
   const continueProgress = continueSession?.words?.length
     ? Math.round((continueSession.cursor / continueSession.words.length) * 100)
@@ -809,7 +813,7 @@ function WordsPickScreen({ wordCategories, statsByCategory, articles, lessons, w
   );
 }
 
-function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession, onBack, onStartArticle, onContinueArticle, modeLabel = 'Sentences' }) {
+function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession, onBack, onStartArticle, onContinueArticle, modeLabel = 'Reading' }) {
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
