@@ -2,9 +2,12 @@
   "_meta": {
     "source": "FreeDictionaryAPI entries for Dutch, sourced from English Wiktionary",
     "license": "CC BY-SA 4.0",
-    "generatedAt": "2026-05-27T20:41:26.479Z",
+    "generatedAt": "2026-06-19T14:32:34.690Z",
     "tokenCount": 4665,
-    "entryCount": 4019
+    "entryCount": 4019,
+    "manualCommonVerbOverrideCount": 154,
+    "manualLemmaMeaningOverrideCount": 84,
+    "manualInferredVerbMeaningOverrideCount": 114
   },
   "entries": {
     "aai": {
@@ -44,10 +47,10 @@
     },
     "aangeboden": {
       "nl": "aangeboden",
-      "headword": "aangeboden",
-      "en": "past participle of aanbieden",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "aanbieden",
+      "en": "to offer",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "aangedaan": {
       "nl": "aangedaan",
@@ -65,10 +68,10 @@
     },
     "aangekomen": {
       "nl": "aangekomen",
-      "headword": "aangekomen",
-      "en": "past participle of aankomen",
+      "headword": "aankomen",
+      "en": "to arrive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "aangekondigd": {
       "nl": "aangekondigd",
@@ -100,10 +103,10 @@
     },
     "aangevallen": {
       "nl": "aangevallen",
-      "headword": "aangevallen",
-      "en": "past participle of aanvallen",
+      "headword": "aanvallen",
+      "en": "to attack",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "aangeven": {
       "nl": "aangeven",
@@ -149,10 +152,10 @@
     },
     "aankomt": {
       "nl": "aankomt",
-      "headword": "aankomt",
-      "en": "second/third-person singular dependent-clause present indicative of aankomen",
+      "headword": "aankomen",
+      "en": "to arrive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "aankondiging": {
       "nl": "aankondiging",
@@ -170,10 +173,10 @@
     },
     "aankwam": {
       "nl": "aankwam",
-      "headword": "aankwam",
-      "en": "singular dependent-clause past indicative of aankomen",
+      "headword": "aankomen",
+      "en": "to arrive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "aanmelden": {
       "nl": "aanmelden",
@@ -184,10 +187,10 @@
     },
     "aanmeldt": {
       "nl": "aanmeldt",
-      "headword": "aanmeldt",
-      "en": "second/third-person singular dependent-clause present indicative of aanmelden",
+      "headword": "aanmelden",
+      "en": "to register / sign up",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "aannem": {
       "nl": "aannem",
@@ -247,10 +250,10 @@
     },
     "aanvaard": {
       "nl": "aanvaard",
-      "headword": "aanvaard",
-      "en": "first-person singular present indicative",
+      "headword": "aanvaarden",
+      "en": "to accept",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "aanvaarden": {
       "nl": "aanvaarden",
@@ -625,10 +628,10 @@
     },
     "afgesproken": {
       "nl": "afgesproken",
-      "headword": "afgesproken",
-      "en": "past participle of afspreken",
+      "headword": "afspreken",
+      "en": "to agree, to make an agreement",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "afgestoken": {
       "nl": "afgestoken",
@@ -1479,10 +1482,10 @@
     },
     "barstte": {
       "nl": "barstte",
-      "headword": "barstte",
-      "en": "singular past indicative",
+      "headword": "barsten",
+      "en": "to burst, split completely",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "basis": {
       "nl": "basis",
@@ -1549,10 +1552,10 @@
     },
     "bedenk": {
       "nl": "bedenk",
-      "headword": "bedenk",
-      "en": "first-person singular present indicative",
+      "headword": "bedenken",
+      "en": "to reconsider, to change one's mind",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "bedenken": {
       "nl": "bedenken",
@@ -1570,17 +1573,17 @@
     },
     "bedoel": {
       "nl": "bedoel",
-      "headword": "bedoel",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "bedoelen",
+      "en": "to mean",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "bedoelde": {
       "nl": "bedoelde",
-      "headword": "bedoelde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "bedoelen",
+      "en": "to mean",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "bedoelen": {
       "nl": "bedoelen",
@@ -1605,10 +1608,10 @@
     },
     "bedriegt": {
       "nl": "bedriegt",
-      "headword": "bedriegt",
-      "en": "second/third-person singular present indicative",
+      "headword": "bedriegen",
+      "en": "to deceive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "bedrijf": {
       "nl": "bedrijf",
@@ -1654,10 +1657,10 @@
     },
     "beeldt": {
       "nl": "beeldt",
-      "headword": "beeldt",
-      "en": "second/third-person singular present indicative",
+      "headword": "beelden",
+      "en": "to give an impression of something",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "been": {
       "nl": "been",
@@ -1724,10 +1727,10 @@
     },
     "begon": {
       "nl": "begon",
-      "headword": "begon",
-      "en": "singular past indicative of beginnen",
+      "headword": "beginnen",
+      "en": "to begin",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "begonnen": {
       "nl": "begonnen",
@@ -1745,10 +1748,10 @@
     },
     "begrijp": {
       "nl": "begrijp",
-      "headword": "begrijp",
-      "en": "first-person singular present indicative",
+      "headword": "begrijpen",
+      "en": "to understand",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "begrijpen": {
       "nl": "begrijpen",
@@ -1871,10 +1874,10 @@
     },
     "bekijk": {
       "nl": "bekijk",
-      "headword": "bekijk",
-      "en": "first-person singular present indicative",
+      "headword": "bekijken",
+      "en": "to look at, to view",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "bekijken": {
       "nl": "bekijken",
@@ -1885,10 +1888,10 @@
     },
     "bekijkt": {
       "nl": "bekijkt",
-      "headword": "bekijkt",
-      "en": "second/third-person singular present indicative",
+      "headword": "bekijken",
+      "en": "to look at, to view",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "beklede": {
       "nl": "beklede",
@@ -1916,7 +1919,7 @@
       "headword": "bellen",
       "en": "to call",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "belandt": {
       "nl": "belandt",
@@ -1965,7 +1968,7 @@
       "headword": "bellen",
       "en": "to call",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "beleefd": {
       "nl": "beleefd",
@@ -1993,7 +1996,7 @@
       "headword": "bellen",
       "en": "to call",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "beloofd": {
       "nl": "beloofd",
@@ -2014,7 +2017,7 @@
       "headword": "bellen",
       "en": "to call",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "bemoei": {
       "nl": "bemoei",
@@ -2028,7 +2031,7 @@
       "headword": "zijn",
       "en": "to be",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "benadeelt": {
       "nl": "benadeelt",
@@ -2049,7 +2052,7 @@
       "headword": "zijn",
       "en": "to be",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "benzine": {
       "nl": "benzine",
@@ -2102,10 +2105,10 @@
     },
     "bereikt": {
       "nl": "bereikt",
-      "headword": "bereikt",
-      "en": "second/third-person singular present indicative",
+      "headword": "bereiken",
+      "en": "to reach",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "berekenen": {
       "nl": "berekenen",
@@ -2235,10 +2238,10 @@
     },
     "beschikt": {
       "nl": "beschikt",
-      "headword": "beschikt",
-      "en": "second/third-person singular present indicative",
+      "headword": "beschikken",
+      "en": "to direct, have influence over, decide",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "beschouwd": {
       "nl": "beschouwd",
@@ -2452,17 +2455,17 @@
     },
     "betaalde": {
       "nl": "betaalde",
-      "headword": "betaalde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "betalen",
+      "en": "to pay",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "betaalt": {
       "nl": "betaalt",
-      "headword": "betaalt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "betalen",
+      "en": "to pay",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "betalen": {
       "nl": "betalen",
@@ -2515,10 +2518,10 @@
     },
     "betrokken": {
       "nl": "betrokken",
-      "headword": "betrokken",
-      "en": "past participle of betrekken",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "betrokkene",
+      "en": "person involved",
+      "pos": "noun",
+      "source": "manual inferred verb meaning override"
     },
     "betrokkenen": {
       "nl": "betrokkenen",
@@ -2669,10 +2672,10 @@
     },
     "bezocht": {
       "nl": "bezocht",
-      "headword": "bezocht",
-      "en": "singular past indicative of bezoeken",
+      "headword": "bezoeken",
+      "en": "to visit",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "bezoek": {
       "nl": "bezoek",
@@ -2984,10 +2987,10 @@
     },
     "bleef": {
       "nl": "bleef",
-      "headword": "bleef",
-      "en": "singular past indicative of blijven",
+      "headword": "blijven",
+      "en": "to stay / remain",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "bleek": {
       "nl": "bleek",
@@ -3005,17 +3008,17 @@
     },
     "blijf": {
       "nl": "blijf",
-      "headword": "blijf",
-      "en": "first-person singular present indicative",
+      "headword": "blijven",
+      "en": "to stay / remain",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "blijft": {
       "nl": "blijft",
-      "headword": "blijft",
-      "en": "second/third-person singular present indicative",
+      "headword": "blijven",
+      "en": "to stay / remain",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "blijk": {
       "nl": "blijk",
@@ -3027,9 +3030,9 @@
     "blijven": {
       "nl": "blijven",
       "headword": "blijven",
-      "en": "to stay",
-      "pos": "other",
-      "source": "word deck headword"
+      "en": "to stay / remain",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "blijvende": {
       "nl": "blijvende",
@@ -3449,7 +3452,7 @@
       "headword": "brengen",
       "en": "to bring",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "brak": {
       "nl": "brak",
@@ -3530,10 +3533,10 @@
     },
     "breekt": {
       "nl": "breekt",
-      "headword": "breekt",
-      "en": "second/third-person singular present indicative",
+      "headword": "breken",
+      "en": "to break",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "breken": {
       "nl": "breken",
@@ -3547,21 +3550,21 @@
       "headword": "brengen",
       "en": "to bring",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "brengen": {
       "nl": "brengen",
       "headword": "brengen",
       "en": "to bring",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "brengt": {
       "nl": "brengt",
       "headword": "brengen",
       "en": "to bring",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "brief": {
       "nl": "brief",
@@ -4286,10 +4289,10 @@
     },
     "daalde": {
       "nl": "daalde",
-      "headword": "daalde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "den",
+      "en": "masculine singular of de",
+      "pos": "article",
+      "source": "manual inferred verb meaning override"
     },
     "daar": {
       "nl": "daar",
@@ -4569,14 +4572,14 @@
       "headword": "doen",
       "en": "to do",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "deed": {
       "nl": "deed",
       "headword": "doen",
       "en": "to do",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "deeg": {
       "nl": "deeg",
@@ -4615,10 +4618,10 @@
     },
     "deelt": {
       "nl": "deelt",
-      "headword": "deelt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "den",
+      "en": "masculine singular of de",
+      "pos": "article",
+      "source": "manual inferred verb meaning override"
     },
     "deeltijdbaan": {
       "nl": "deeltijdbaan",
@@ -4909,10 +4912,10 @@
     },
     "dien": {
       "nl": "dien",
-      "headword": "dien",
-      "en": "first-person singular present indicative",
+      "headword": "dienen",
+      "en": "to serve",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "dienaar": {
       "nl": "dienaar",
@@ -5136,7 +5139,7 @@
       "headword": "doen",
       "en": "to do",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "doei": {
       "nl": "doei",
@@ -5178,14 +5181,14 @@
       "headword": "doen",
       "en": "to do",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "doet": {
       "nl": "doet",
-      "headword": "doet",
-      "en": "second/third-person singular present indicative",
+      "headword": "doen",
+      "en": "to do",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "dokter": {
       "nl": "dokter",
@@ -5399,10 +5402,10 @@
     },
     "draagt": {
       "nl": "draagt",
-      "headword": "draagt",
-      "en": "second/third-person singular present indicative",
+      "headword": "dragen",
+      "en": "to carry",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "draai": {
       "nl": "draai",
@@ -5413,10 +5416,10 @@
     },
     "draaide": {
       "nl": "draaide",
-      "headword": "draaide",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "draaien",
+      "en": "to turn",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "draaien": {
       "nl": "draaien",
@@ -5427,10 +5430,10 @@
     },
     "draait": {
       "nl": "draait",
-      "headword": "draait",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "draaien",
+      "en": "to turn",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "dragen": {
       "nl": "dragen",
@@ -5504,10 +5507,10 @@
     },
     "droeg": {
       "nl": "droeg",
-      "headword": "droeg",
-      "en": "singular past indicative of dragen",
+      "headword": "dragen",
+      "en": "to carry",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "droge": {
       "nl": "droge",
@@ -5707,10 +5710,10 @@
     },
     "duurde": {
       "nl": "duurde",
-      "headword": "duurde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "den",
+      "en": "masculine singular of de",
+      "pos": "article",
+      "source": "manual inferred verb meaning override"
     },
     "duurder": {
       "nl": "duurder",
@@ -5721,10 +5724,10 @@
     },
     "duurt": {
       "nl": "duurt",
-      "headword": "duurt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "den",
+      "en": "masculine singular of de",
+      "pos": "article",
+      "source": "manual inferred verb meaning override"
     },
     "dweilen": {
       "nl": "dweilen",
@@ -6872,28 +6875,28 @@
       "headword": "gaan",
       "en": "to go",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gaan": {
       "nl": "gaan",
       "headword": "gaan",
       "en": "to go",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "gaat": {
       "nl": "gaat",
-      "headword": "gaat",
-      "en": "second/third-person singular present indicative",
+      "headword": "gaan",
+      "en": "to go",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gaf": {
       "nl": "gaf",
-      "headword": "gaf",
-      "en": "singular past indicative of geven",
+      "headword": "geven",
+      "en": "to give",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gans": {
       "nl": "gans",
@@ -6953,10 +6956,10 @@
     },
     "gaven": {
       "nl": "gaven",
-      "headword": "gaven",
-      "en": "plural past indicative",
+      "headword": "geven",
+      "en": "to give",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "ge": {
       "nl": "ge",
@@ -6981,10 +6984,10 @@
     },
     "gebakken": {
       "nl": "gebakken",
-      "headword": "gebakken",
-      "en": "past participle of bakken",
+      "headword": "bakken",
+      "en": "to bake",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gebeente": {
       "nl": "gebeente",
@@ -6995,24 +6998,24 @@
     },
     "gebeld": {
       "nl": "gebeld",
-      "headword": "gebeld",
-      "en": "past participle of bellen",
+      "headword": "bellen",
+      "en": "to call",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gebeten": {
       "nl": "gebeten",
-      "headword": "gebeten",
-      "en": "past participle of bijten",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "bijten",
+      "en": "to bite",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "gebeurd": {
       "nl": "gebeurd",
-      "headword": "gebeurd",
-      "en": "past participle of gebeuren",
+      "headword": "gebeuren",
+      "en": "to happen",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gebeurde": {
       "nl": "gebeurde",
@@ -7058,10 +7061,10 @@
     },
     "gebleven": {
       "nl": "gebleven",
-      "headword": "gebleven",
-      "en": "past participle of blijven",
+      "headword": "blijven",
+      "en": "to stay / remain",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "geboorte": {
       "nl": "geboorte",
@@ -7100,24 +7103,24 @@
     },
     "gebouwd": {
       "nl": "gebouwd",
-      "headword": "gebouwd",
-      "en": "past participle of bouwen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "bouwen",
+      "en": "to build",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "gebracht": {
       "nl": "gebracht",
       "headword": "brengen",
       "en": "to bring",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gebroken": {
       "nl": "gebroken",
-      "headword": "gebroken",
-      "en": "past participle of breken",
+      "headword": "breken",
+      "en": "to break",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gebruik": {
       "nl": "gebruik",
@@ -7149,17 +7152,17 @@
     },
     "gebruikt": {
       "nl": "gebruikt",
-      "headword": "gebruikt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "gebruiken",
+      "en": "to use",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "gebruikte": {
       "nl": "gebruikte",
-      "headword": "gebruikte",
-      "en": "singular past indicative of gebruiken",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "gebruiken",
+      "en": "to use",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "geconfronteerd": {
       "nl": "geconfronteerd",
@@ -7173,7 +7176,7 @@
       "headword": "doen",
       "en": "to do",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gedacht": {
       "nl": "gedacht",
@@ -7226,10 +7229,10 @@
     },
     "gedood": {
       "nl": "gedood",
-      "headword": "gedood",
-      "en": "past participle of doden",
+      "headword": "doden",
+      "en": "to kill",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gedoucht": {
       "nl": "gedoucht",
@@ -7240,10 +7243,10 @@
     },
     "gedraagt": {
       "nl": "gedraagt",
-      "headword": "gedraagt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "gedragen",
+      "en": "to behave",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "gedrag": {
       "nl": "gedrag",
@@ -7268,10 +7271,10 @@
     },
     "gedroomd": {
       "nl": "gedroomd",
-      "headword": "gedroomd",
-      "en": "past participle of dromen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "dromen",
+      "en": "to dream",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "gedrukt": {
       "nl": "gedrukt",
@@ -7303,17 +7306,17 @@
     },
     "geef": {
       "nl": "geef",
-      "headword": "geef",
-      "en": "gift",
-      "pos": "noun",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "geven",
+      "en": "to give",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "geeft": {
       "nl": "geeft",
-      "headword": "geeft",
-      "en": "second/third-person singular present indicative",
+      "headword": "geven",
+      "en": "to give",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "geel": {
       "nl": "geel",
@@ -7352,17 +7355,17 @@
     },
     "gefietst": {
       "nl": "gefietst",
-      "headword": "gefietst",
-      "en": "past participle of fietsen",
+      "headword": "fietsen",
+      "en": "to ride or cycle a bicycle, to bike",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gegaan": {
       "nl": "gegaan",
-      "headword": "gegaan",
-      "en": "past participle of gaan",
+      "headword": "gaan",
+      "en": "to go",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gegeten": {
       "nl": "gegeten",
@@ -7373,10 +7376,10 @@
     },
     "gegeven": {
       "nl": "gegeven",
-      "headword": "gegeven",
-      "en": "past participle of geven",
+      "headword": "geven",
+      "en": "to give",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gegevens": {
       "nl": "gegevens",
@@ -7390,7 +7393,7 @@
       "headword": "hebben",
       "en": "to have",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gehangen": {
       "nl": "gehangen",
@@ -7425,7 +7428,7 @@
       "headword": "helpen",
       "en": "to help",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gehoor": {
       "nl": "gehoor",
@@ -7471,10 +7474,10 @@
     },
     "gekleurd": {
       "nl": "gekleurd",
-      "headword": "gekleurd",
-      "en": "past participle of kleuren",
+      "headword": "kleuren",
+      "en": "to blush, turn red",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gekocht": {
       "nl": "gekocht",
@@ -7485,31 +7488,31 @@
     },
     "gekomen": {
       "nl": "gekomen",
-      "headword": "gekomen",
-      "en": "past participle of komen",
+      "headword": "komen",
+      "en": "to come",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gekookt": {
       "nl": "gekookt",
-      "headword": "gekookt",
-      "en": "past participle of koken",
+      "headword": "koken",
+      "en": "to cook",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gekozen": {
       "nl": "gekozen",
-      "headword": "gekozen",
-      "en": "past participle of kiezen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "kiezen",
+      "en": "to choose",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "gekregen": {
       "nl": "gekregen",
-      "headword": "gekregen",
-      "en": "past participle of krijgen",
+      "headword": "krijgen",
+      "en": "to get / receive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gekropen": {
       "nl": "gekropen",
@@ -7586,7 +7589,7 @@
       "headword": "lezen",
       "en": "to read",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "geliefd": {
       "nl": "geliefd",
@@ -7661,9 +7664,9 @@
     "gelopen": {
       "nl": "gelopen",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "geloven": {
       "nl": "geloven",
@@ -7709,17 +7712,17 @@
     },
     "gemaaid": {
       "nl": "gemaaid",
-      "headword": "gemaaid",
-      "en": "past participle of maaien",
+      "headword": "maaien",
+      "en": "to mow",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gemaakt": {
       "nl": "gemaakt",
-      "headword": "gemaakt",
-      "en": "artificial, unnatural",
-      "pos": "adjective",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "maken",
+      "en": "to make / do",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "gemakkelijk": {
       "nl": "gemakkelijk",
@@ -7765,10 +7768,10 @@
     },
     "gemist": {
       "nl": "gemist",
-      "headword": "gemist",
-      "en": "past participle of missen",
+      "headword": "missen",
+      "en": "to miss",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gemorst": {
       "nl": "gemorst",
@@ -7849,17 +7852,17 @@
     },
     "genomen": {
       "nl": "genomen",
-      "headword": "genomen",
-      "en": "past participle of nemen",
+      "headword": "nemen",
+      "en": "to take",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "genoteerd": {
       "nl": "genoteerd",
-      "headword": "genoteerd",
-      "en": "past participle of noteren",
+      "headword": "noteren",
+      "en": "to write down, note",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "genoten": {
       "nl": "genoten",
@@ -7877,10 +7880,10 @@
     },
     "geopend": {
       "nl": "geopend",
-      "headword": "geopend",
-      "en": "past participle of openen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "openen",
+      "en": "to open",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "gepaard": {
       "nl": "gepaard",
@@ -7891,10 +7894,10 @@
     },
     "gepland": {
       "nl": "gepland",
-      "headword": "gepland",
-      "en": "past participle of plannen",
+      "headword": "plannen",
+      "en": "to plan",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geplant": {
       "nl": "geplant",
@@ -7912,17 +7915,17 @@
     },
     "gepraat": {
       "nl": "gepraat",
-      "headword": "gepraat",
-      "en": "past participle of praten",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "praten",
+      "en": "to talk",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "geraakt": {
       "nl": "geraakt",
-      "headword": "geraakt",
-      "en": "second/third-person singular present indicative",
+      "headword": "geraken",
+      "en": "to reach, to attain",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "geraken": {
       "nl": "geraken",
@@ -7940,10 +7943,10 @@
     },
     "gered": {
       "nl": "gered",
-      "headword": "gered",
-      "en": "past participle of redden",
+      "headword": "redden",
+      "en": "to save",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gereden": {
       "nl": "gereden",
@@ -7961,10 +7964,10 @@
     },
     "geregend": {
       "nl": "geregend",
-      "headword": "geregend",
-      "en": "past participle of regenen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "regenen",
+      "en": "to rain",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "geregistreerde": {
       "nl": "geregistreerde",
@@ -7982,10 +7985,10 @@
     },
     "gescheiden": {
       "nl": "gescheiden",
-      "headword": "gescheiden",
-      "en": "past participle of scheiden",
+      "headword": "scheiden",
+      "en": "to divorce",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geschenk": {
       "nl": "geschenk",
@@ -8024,24 +8027,24 @@
     },
     "geschilderd": {
       "nl": "geschilderd",
-      "headword": "geschilderd",
-      "en": "past participle of schilderen",
+      "headword": "schilderen",
+      "en": "to paint",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geschopt": {
       "nl": "geschopt",
-      "headword": "geschopt",
-      "en": "past participle of schoppen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "schoppen",
+      "en": "to kick",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "geschoten": {
       "nl": "geschoten",
-      "headword": "geschoten",
-      "en": "past participle of schieten",
+      "headword": "schieten",
+      "en": "to shoot, fire",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geschreeuw": {
       "nl": "geschreeuw",
@@ -8055,7 +8058,7 @@
       "headword": "schrijven",
       "en": "to write",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "geserveerd": {
       "nl": "geserveerd",
@@ -8094,24 +8097,24 @@
     },
     "gesloten": {
       "nl": "gesloten",
-      "headword": "gesloten",
-      "en": "past participle of sluiten",
+      "headword": "sluiten",
+      "en": "to close",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gesneden": {
       "nl": "gesneden",
-      "headword": "gesneden",
-      "en": "past participle of snijden",
+      "headword": "snijden",
+      "en": "to cut",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gespeeld": {
       "nl": "gespeeld",
-      "headword": "gespeeld",
-      "en": "past participle of spelen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "spelen",
+      "en": "to play",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "gesprek": {
       "nl": "gesprek",
@@ -8129,10 +8132,10 @@
     },
     "gestoken": {
       "nl": "gestoken",
-      "headword": "gestoken",
-      "en": "past participle of steken",
+      "headword": "steken",
+      "en": "to insert, put in",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gestolen": {
       "nl": "gestolen",
@@ -8143,17 +8146,17 @@
     },
     "gestopt": {
       "nl": "gestopt",
-      "headword": "gestopt",
-      "en": "past participle of stoppen",
+      "headword": "stoppen",
+      "en": "to stop, to halt",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gestorven": {
       "nl": "gestorven",
-      "headword": "gestorven",
-      "en": "past participle of sterven",
+      "headword": "sterven",
+      "en": "to die",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gestoten": {
       "nl": "gestoten",
@@ -8171,17 +8174,17 @@
     },
     "gestreken": {
       "nl": "gestreken",
-      "headword": "gestreken",
-      "en": "past participle of strijken",
+      "headword": "strijken",
+      "en": "to iron, press",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gestuurd": {
       "nl": "gestuurd",
-      "headword": "gestuurd",
-      "en": "past participle of sturen",
+      "headword": "sturen",
+      "en": "to send",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "getalenteerde": {
       "nl": "getalenteerde",
@@ -8199,10 +8202,10 @@
     },
     "getrokken": {
       "nl": "getrokken",
-      "headword": "getrokken",
-      "en": "past participle of trekken",
+      "headword": "trekken",
+      "en": "to pull, to draw",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "getroost": {
       "nl": "getroost",
@@ -8276,17 +8279,17 @@
     },
     "gevangen": {
       "nl": "gevangen",
-      "headword": "gevangen",
-      "en": "past participle of vangen",
+      "headword": "vangen",
+      "en": "to catch",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geven": {
       "nl": "geven",
       "headword": "geven",
       "en": "to give",
-      "pos": "other",
-      "source": "word deck headword"
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "geverfd": {
       "nl": "geverfd",
@@ -8332,17 +8335,17 @@
     },
     "gevonden": {
       "nl": "gevonden",
-      "headword": "gevonden",
-      "en": "past participle of vinden",
+      "headword": "vinden",
+      "en": "to find / think",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gevraagd": {
       "nl": "gevraagd",
-      "headword": "gevraagd",
-      "en": "past participle of vragen",
+      "headword": "vragen",
+      "en": "to ask",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "gewaardeerd": {
       "nl": "gewaardeerd",
@@ -8374,17 +8377,17 @@
     },
     "geweest": {
       "nl": "geweest",
-      "headword": "geweest",
-      "en": "past participle of zijn",
+      "headword": "zijn",
+      "en": "to be",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "geweigerd": {
       "nl": "geweigerd",
-      "headword": "geweigerd",
-      "en": "past participle of weigeren",
+      "headword": "weigeren",
+      "en": "to refuse, to deny",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "geweldig": {
       "nl": "geweldig",
@@ -8472,10 +8475,10 @@
     },
     "gewoond": {
       "nl": "gewoond",
-      "headword": "gewoond",
-      "en": "past participle of wonen",
+      "headword": "wonen",
+      "en": "to live",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gewoonlijk": {
       "nl": "gewoonlijk",
@@ -8493,17 +8496,17 @@
     },
     "gezaaid": {
       "nl": "gezaaid",
-      "headword": "gezaaid",
-      "en": "past participle of zaaien",
+      "headword": "zaaien",
+      "en": "to sow, plant seed",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "gezegd": {
       "nl": "gezegd",
       "headword": "zeggen",
       "en": "to say",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gezellige": {
       "nl": "gezellige",
@@ -8538,7 +8541,7 @@
       "headword": "zien",
       "en": "to see",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gezond": {
       "nl": "gezond",
@@ -8587,14 +8590,14 @@
       "headword": "gaan",
       "en": "to go",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "gingen": {
       "nl": "gingen",
       "headword": "gaan",
       "en": "to go",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "giraffe": {
       "nl": "giraffe",
@@ -8920,10 +8923,10 @@
     },
     "groeit": {
       "nl": "groeit",
-      "headword": "groeit",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "groeien",
+      "en": "to grow",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "groen": {
       "nl": "groen",
@@ -9102,17 +9105,17 @@
     },
     "haalde": {
       "nl": "haalde",
-      "headword": "haalde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "hen",
+      "en": "them",
+      "pos": "pronoun",
+      "source": "manual inferred verb meaning override"
     },
     "haalt": {
       "nl": "haalt",
-      "headword": "haalt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "hen",
+      "en": "them",
+      "pos": "pronoun",
+      "source": "manual inferred verb meaning override"
     },
     "haan": {
       "nl": "haan",
@@ -9137,10 +9140,10 @@
     },
     "haast": {
       "nl": "haast",
-      "headword": "haast",
-      "en": "first/second/third-person singular present indicative",
+      "headword": "haasten",
+      "en": "to hasten, to hurry, make haste",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "haasten": {
       "nl": "haasten",
@@ -9165,24 +9168,24 @@
     },
     "had": {
       "nl": "had",
-      "headword": "had",
-      "en": "singular past indicative of hebben",
+      "headword": "hebben",
+      "en": "to have",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "hadden": {
       "nl": "hadden",
       "headword": "hebben",
       "en": "to have",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "hadt": {
       "nl": "hadt",
-      "headword": "hadt",
-      "en": "second-person singular past indicative of hebben",
+      "headword": "hebben",
+      "en": "to have",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "hagel": {
       "nl": "hagel",
@@ -9462,21 +9465,21 @@
       "headword": "hebben",
       "en": "to have",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "hebben": {
       "nl": "hebben",
       "headword": "hebben",
       "en": "to have",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "hebt": {
       "nl": "hebt",
-      "headword": "hebt",
-      "en": "third-person singular present indicative of hebben",
+      "headword": "hebben",
+      "en": "to have",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "hebzucht": {
       "nl": "hebzucht",
@@ -9494,10 +9497,10 @@
     },
     "heeft": {
       "nl": "heeft",
-      "headword": "heeft",
-      "en": "third-person singular present indicative of hebben",
+      "headword": "hebben",
+      "en": "to have",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "heel": {
       "nl": "heel",
@@ -9644,21 +9647,21 @@
       "headword": "helpen",
       "en": "to help",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "helpen": {
       "nl": "helpen",
       "headword": "helpen",
       "en": "to help",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "helpt": {
       "nl": "helpt",
       "headword": "helpen",
       "en": "to help",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "hem": {
       "nl": "hem",
@@ -9725,17 +9728,17 @@
     },
     "herinner": {
       "nl": "herinner",
-      "headword": "herinner",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "herinneren",
+      "en": "to remember",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "herinnerde": {
       "nl": "herinnerde",
-      "headword": "herinnerde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "herinneren",
+      "en": "to remember",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "herinneren": {
       "nl": "herinneren",
@@ -9746,10 +9749,10 @@
     },
     "herinnert": {
       "nl": "herinnert",
-      "headword": "herinnert",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "herinneren",
+      "en": "to remember",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "herkansing": {
       "nl": "herkansing",
@@ -9854,7 +9857,7 @@
       "headword": "helpen",
       "en": "to help",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "hier": {
       "nl": "hier",
@@ -9956,10 +9959,10 @@
     },
     "hoefde": {
       "nl": "hoefde",
-      "headword": "hoefde",
-      "en": "singular past indicative",
+      "headword": "hoeven",
+      "en": "to need to, to have to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "hoefijzer": {
       "nl": "hoefijzer",
@@ -9977,10 +9980,10 @@
     },
     "hoeft": {
       "nl": "hoeft",
-      "headword": "hoeft",
-      "en": "second/third-person singular present indicative",
+      "headword": "hoeven",
+      "en": "to need to, to have to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "hoek": {
       "nl": "hoek",
@@ -10201,10 +10204,10 @@
     },
     "hoopte": {
       "nl": "hoopte",
-      "headword": "hoopte",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "hen",
+      "en": "them",
+      "pos": "pronoun",
+      "source": "manual inferred verb meaning override"
     },
     "hoor": {
       "nl": "hoor",
@@ -10796,10 +10799,10 @@
     },
     "inschreef": {
       "nl": "inschreef",
-      "headword": "inschreef",
-      "en": "singular dependent-clause past indicative of inschrijven",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "inschrijven",
+      "en": "to subscribe",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "inschrijven": {
       "nl": "inschrijven",
@@ -10922,10 +10925,10 @@
     },
     "is": {
       "nl": "is",
-      "headword": "is",
-      "en": "third-person singular present indicative of zijn",
+      "headword": "zijn",
+      "en": "to be",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "islam": {
       "nl": "islam",
@@ -11272,10 +11275,10 @@
     },
     "kan": {
       "nl": "kan",
-      "headword": "kan",
-      "en": "can",
-      "pos": "noun",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "kunnen",
+      "en": "can / be able to",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "kanaal": {
       "nl": "kanaal",
@@ -11426,10 +11429,10 @@
     },
     "keerden": {
       "nl": "keerden",
-      "headword": "keerden",
-      "en": "plural past indicative",
+      "headword": "kennen",
+      "en": "to know",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "keken": {
       "nl": "keken",
@@ -11629,10 +11632,10 @@
     },
     "kiest": {
       "nl": "kiest",
-      "headword": "kiest",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "kiezen",
+      "en": "to choose",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "kiezen": {
       "nl": "kiezen",
@@ -11741,10 +11744,10 @@
     },
     "klaargemaakt": {
       "nl": "klaargemaakt",
-      "headword": "klaargemaakt",
-      "en": "past participle of klaarmaken",
+      "headword": "klaarmaken",
+      "en": "to prepare, to make ready",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "klaarmaken": {
       "nl": "klaarmaken",
@@ -11797,10 +11800,10 @@
     },
     "klapte": {
       "nl": "klapte",
-      "headword": "klapte",
-      "en": "singular past indicative",
+      "headword": "klappen",
+      "en": "to clap",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "klare": {
       "nl": "klare",
@@ -11979,10 +11982,10 @@
     },
     "klinkt": {
       "nl": "klinkt",
-      "headword": "klinkt",
-      "en": "second/third-person singular present indicative",
+      "headword": "klinken",
+      "en": "to sound",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "klok": {
       "nl": "klok",
@@ -12000,10 +12003,10 @@
     },
     "klonk": {
       "nl": "klonk",
-      "headword": "klonk",
-      "en": "singular past indicative of klinken",
+      "headword": "klinken",
+      "en": "to sound",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "klooster": {
       "nl": "klooster",
@@ -12224,17 +12227,17 @@
     },
     "kom": {
       "nl": "kom",
-      "headword": "kom",
-      "en": "bowl",
-      "pos": "noun",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "komen",
+      "en": "to come",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "komen": {
       "nl": "komen",
       "headword": "komen",
       "en": "to come",
-      "pos": "other",
-      "source": "word deck headword"
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "komende": {
       "nl": "komende",
@@ -12266,24 +12269,24 @@
     },
     "komt": {
       "nl": "komt",
-      "headword": "komt",
-      "en": "second/third-person singular present indicative",
+      "headword": "komen",
+      "en": "to come",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "kon": {
       "nl": "kon",
       "headword": "kunnen",
-      "en": "to can",
+      "en": "can / be able to",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "konden": {
       "nl": "konden",
       "headword": "kunnen",
-      "en": "to can",
+      "en": "can / be able to",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "konijn": {
       "nl": "konijn",
@@ -12378,10 +12381,10 @@
     },
     "koos": {
       "nl": "koos",
-      "headword": "koos",
-      "en": "singular past indicative of kiezen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "kiezen",
+      "en": "to choose",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "kop": {
       "nl": "kop",
@@ -12490,10 +12493,10 @@
     },
     "kostte": {
       "nl": "kostte",
-      "headword": "kostte",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "kosten",
+      "en": "to cost",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "koud": {
       "nl": "koud",
@@ -12560,10 +12563,10 @@
     },
     "kreeg": {
       "nl": "kreeg",
-      "headword": "kreeg",
-      "en": "singular past indicative of krijgen",
+      "headword": "krijgen",
+      "en": "to get / receive",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "krent": {
       "nl": "krent",
@@ -12589,23 +12592,23 @@
     "krijg": {
       "nl": "krijg",
       "headword": "krijgen",
-      "en": "to get",
+      "en": "to get / receive",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "krijgen": {
       "nl": "krijgen",
       "headword": "krijgen",
-      "en": "to get",
+      "en": "to get / receive",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "krijgt": {
       "nl": "krijgt",
       "headword": "krijgen",
-      "en": "to get",
+      "en": "to get / receive",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "kristal": {
       "nl": "kristal",
@@ -12672,17 +12675,17 @@
     },
     "kun": {
       "nl": "kun",
-      "headword": "kun",
-      "en": "second-person singular present indicative of kunnen",
+      "headword": "kunnen",
+      "en": "can / be able to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "kunnen": {
       "nl": "kunnen",
       "headword": "kunnen",
-      "en": "can / to be able to",
+      "en": "can / be able to",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "kunst": {
       "nl": "kunst",
@@ -12707,10 +12710,10 @@
     },
     "kunt": {
       "nl": "kunt",
-      "headword": "kunt",
-      "en": "second-person singular present indicative",
+      "headword": "kunnen",
+      "en": "can / be able to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "kust": {
       "nl": "kust",
@@ -12770,17 +12773,17 @@
     },
     "kwam": {
       "nl": "kwam",
-      "headword": "kwam",
-      "en": "singular past indicative of komen",
+      "headword": "komen",
+      "en": "to come",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "kwamen": {
       "nl": "kwamen",
-      "headword": "kwamen",
-      "en": "plural past indicative",
+      "headword": "komen",
+      "en": "to come",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "kwart": {
       "nl": "kwart",
@@ -12861,10 +12864,10 @@
     },
     "lachte": {
       "nl": "lachte",
-      "headword": "lachte",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "lachen",
+      "en": "to laugh",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ladder": {
       "nl": "ladder",
@@ -12875,10 +12878,10 @@
     },
     "lag": {
       "nl": "lag",
-      "headword": "lag",
-      "en": "singular past indicative of liggen",
+      "headword": "liggen",
+      "en": "to lie",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "lagedrukgebied": {
       "nl": "lagedrukgebied",
@@ -13004,7 +13007,7 @@
       "headword": "lezen",
       "en": "to read",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "last": {
       "nl": "last",
@@ -13120,24 +13123,24 @@
     },
     "leende": {
       "nl": "leende",
-      "headword": "leende",
-      "en": "singular past indicative",
+      "headword": "lenen",
+      "en": "to borrow",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "leenden": {
       "nl": "leenden",
-      "headword": "leenden",
-      "en": "plural past indicative",
+      "headword": "lenen",
+      "en": "to borrow",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "leent": {
       "nl": "leent",
-      "headword": "leent",
-      "en": "second/third-person singular present indicative",
+      "headword": "lenen",
+      "en": "to borrow",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "leer": {
       "nl": "leer",
@@ -13186,14 +13189,14 @@
       "headword": "lezen",
       "en": "to read",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "leest": {
       "nl": "leest",
       "headword": "lezen",
       "en": "to read",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "leeuw": {
       "nl": "leeuw",
@@ -13211,10 +13214,10 @@
     },
     "legde": {
       "nl": "legde",
-      "headword": "legde",
-      "en": "singular past indicative",
+      "headword": "leggen",
+      "en": "to lay",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "lege": {
       "nl": "lege",
@@ -13260,10 +13263,10 @@
     },
     "legt": {
       "nl": "legt",
-      "headword": "legt",
-      "en": "second/third-person singular present indicative",
+      "headword": "leggen",
+      "en": "to lay",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "lei": {
       "nl": "lei",
@@ -13274,10 +13277,10 @@
     },
     "leid": {
       "nl": "leid",
-      "headword": "leid",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "leiden",
+      "en": "to lead",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "leiden": {
       "nl": "leiden",
@@ -13400,10 +13403,10 @@
     },
     "lette": {
       "nl": "lette",
-      "headword": "lette",
-      "en": "singular past indicative",
+      "headword": "letten",
+      "en": "to pay attention, to mind [with op ‘to’]",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "letten": {
       "nl": "letten",
@@ -13515,7 +13518,7 @@
       "headword": "lezen",
       "en": "to read",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "lezers": {
       "nl": "lezers",
@@ -13597,16 +13600,16 @@
     "liep": {
       "nl": "liep",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "liepen": {
       "nl": "liepen",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "liet": {
       "nl": "liet",
@@ -13652,10 +13655,10 @@
     },
     "ligt": {
       "nl": "ligt",
-      "headword": "ligt",
-      "en": "second/third-person singular present indicative",
+      "headword": "liggen",
+      "en": "to lie",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "lijf": {
       "nl": "lijf",
@@ -13673,10 +13676,10 @@
     },
     "lijkt": {
       "nl": "lijkt",
-      "headword": "lijkt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "lijken",
+      "en": "to seem",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "lijnzaad": {
       "nl": "lijnzaad",
@@ -13779,23 +13782,23 @@
     "loop": {
       "nl": "loop",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "loopt": {
       "nl": "loopt",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "lopen": {
       "nl": "lopen",
       "headword": "lopen",
-      "en": "to walk",
+      "en": "to walk / run",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "lopend": {
       "nl": "lopend",
@@ -13974,31 +13977,31 @@
     },
     "maak": {
       "nl": "maak",
-      "headword": "maak",
-      "en": "first-person singular present indicative",
+      "headword": "maken",
+      "en": "to make / do",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "maakt": {
       "nl": "maakt",
-      "headword": "maakt",
-      "en": "second/third-person singular present indicative",
+      "headword": "maken",
+      "en": "to make / do",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "maakte": {
       "nl": "maakte",
-      "headword": "maakte",
-      "en": "singular past indicative",
+      "headword": "maken",
+      "en": "to make / do",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "maakten": {
       "nl": "maakten",
-      "headword": "maakten",
-      "en": "plural past indicative",
+      "headword": "maken",
+      "en": "to make / do",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "maaltijd": {
       "nl": "maaltijd",
@@ -14100,10 +14103,10 @@
     },
     "mag": {
       "nl": "mag",
-      "headword": "mag",
-      "en": "first/second/third-person singular present indicative",
+      "headword": "mogen",
+      "en": "may / be allowed to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "mager": {
       "nl": "mager",
@@ -14129,9 +14132,9 @@
     "maken": {
       "nl": "maken",
       "headword": "maken",
-      "en": "to make",
+      "en": "to make / do",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "makkelijk": {
       "nl": "makkelijk",
@@ -14303,10 +14306,10 @@
     },
     "meedoet": {
       "nl": "meedoet",
-      "headword": "meedoet",
-      "en": "second/third-person singular dependent-clause present indicative of meedoen",
+      "headword": "meedoen",
+      "en": "to take part",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "meegaan": {
       "nl": "meegaan",
@@ -14408,10 +14411,10 @@
     },
     "meld": {
       "nl": "meld",
-      "headword": "meld",
-      "en": "first-person singular present indicative",
+      "headword": "melden",
+      "en": "to report",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "melden": {
       "nl": "melden",
@@ -14422,10 +14425,10 @@
     },
     "meldt": {
       "nl": "meldt",
-      "headword": "meldt",
-      "en": "second/third-person singular present indicative",
+      "headword": "melden",
+      "en": "to report",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "melk": {
       "nl": "melk",
@@ -14842,10 +14845,10 @@
     },
     "mocht": {
       "nl": "mocht",
-      "headword": "mocht",
-      "en": "singular past indicative of mogen",
+      "headword": "mogen",
+      "en": "may / be allowed to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "moderne": {
       "nl": "moderne",
@@ -14912,31 +14915,31 @@
     },
     "moest": {
       "nl": "moest",
-      "headword": "moest",
-      "en": "singular past indicative of moeten",
+      "headword": "moeten",
+      "en": "must / have to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "moesten": {
       "nl": "moesten",
       "headword": "moeten",
-      "en": "must / to have to",
+      "en": "must / have to",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "moet": {
       "nl": "moet",
-      "headword": "moet",
-      "en": "first/second/third-person singular present indicative",
+      "headword": "moeten",
+      "en": "must / have to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "moeten": {
       "nl": "moeten",
       "headword": "moeten",
-      "en": "must / to have to",
+      "en": "must / have to",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "mogelijk": {
       "nl": "mogelijk",
@@ -14969,9 +14972,9 @@
     "mogen": {
       "nl": "mogen",
       "headword": "mogen",
-      "en": "may, can, be allowed to",
+      "en": "may / be allowed to",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "mol": {
       "nl": "mol",
@@ -15297,10 +15300,10 @@
     },
     "nadenkt": {
       "nl": "nadenkt",
-      "headword": "nadenkt",
-      "en": "second/third-person singular dependent-clause present indicative of nadenken",
+      "headword": "nadenken",
+      "en": "to think about",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "nagels": {
       "nl": "nagels",
@@ -15325,10 +15328,10 @@
     },
     "nam": {
       "nl": "nam",
-      "headword": "nam",
-      "en": "singular past indicative of nemen",
+      "headword": "nemen",
+      "en": "to take",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "namelijk": {
       "nl": "namelijk",
@@ -15430,17 +15433,17 @@
     },
     "neem": {
       "nl": "neem",
-      "headword": "neem",
-      "en": "first-person singular present indicative",
+      "headword": "nemen",
+      "en": "to take",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "neemt": {
       "nl": "neemt",
-      "headword": "neemt",
-      "en": "second/third-person singular present indicative",
+      "headword": "nemen",
+      "en": "to take",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "neer": {
       "nl": "neer",
@@ -15481,8 +15484,8 @@
       "nl": "nemen",
       "headword": "nemen",
       "en": "to take",
-      "pos": "other",
-      "source": "word deck headword"
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "nergens": {
       "nl": "nergens",
@@ -15654,10 +15657,10 @@
     },
     "noem": {
       "nl": "noem",
-      "headword": "noem",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "noemen",
+      "en": "to call",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "noemen": {
       "nl": "noemen",
@@ -15871,10 +15874,10 @@
     },
     "oefent": {
       "nl": "oefent",
-      "headword": "oefent",
-      "en": "second/third-person singular present indicative",
+      "headword": "oefenen",
+      "en": "to practice, train",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "oerknal": {
       "nl": "oerknal",
@@ -16424,10 +16427,10 @@
     },
     "onthoudt": {
       "nl": "onthoudt",
-      "headword": "onthoudt",
-      "en": "second/third-person singular present indicative",
+      "headword": "onthouden",
+      "en": "to remember",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "ontleden": {
       "nl": "ontleden",
@@ -16438,10 +16441,10 @@
     },
     "ontmoet": {
       "nl": "ontmoet",
-      "headword": "ontmoet",
-      "en": "first/second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontmoeten",
+      "en": "to meet",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontmoeten": {
       "nl": "ontmoeten",
@@ -16459,17 +16462,17 @@
     },
     "ontmoette": {
       "nl": "ontmoette",
-      "headword": "ontmoette",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontmoeten",
+      "en": "to meet",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontmoetten": {
       "nl": "ontmoetten",
-      "headword": "ontmoetten",
-      "en": "plural past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontmoeten",
+      "en": "to meet",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontruimd": {
       "nl": "ontruimd",
@@ -16529,10 +16532,10 @@
     },
     "ontvangt": {
       "nl": "ontvangt",
-      "headword": "ontvangt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontvangen",
+      "en": "to receive",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontwerp": {
       "nl": "ontwerp",
@@ -16550,17 +16553,17 @@
     },
     "ontwerpt": {
       "nl": "ontwerpt",
-      "headword": "ontwerpt",
-      "en": "second/third-person singular present indicative",
+      "headword": "ontwerpen",
+      "en": "to design",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "ontwikkel": {
       "nl": "ontwikkel",
-      "headword": "ontwikkel",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontwikkelen",
+      "en": "to develop",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontwikkelen": {
       "nl": "ontwikkelen",
@@ -16578,17 +16581,17 @@
     },
     "ontwikkelt": {
       "nl": "ontwikkelt",
-      "headword": "ontwikkelt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "ontwikkelen",
+      "en": "to develop",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "ontworpen": {
       "nl": "ontworpen",
-      "headword": "ontworpen",
-      "en": "past participle of ontwerpen",
+      "headword": "ontwerpen",
+      "en": "to design",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "onvoldoende": {
       "nl": "onvoldoende",
@@ -16739,17 +16742,17 @@
     },
     "open": {
       "nl": "open",
-      "headword": "open",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "openen",
+      "en": "to open",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "opende": {
       "nl": "opende",
-      "headword": "opende",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "openen",
+      "en": "to open",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "openen": {
       "nl": "openen",
@@ -16795,10 +16798,10 @@
     },
     "opgericht": {
       "nl": "opgericht",
-      "headword": "opgericht",
-      "en": "past participle of oprichten",
+      "headword": "oprichten",
+      "en": "to set up / establish",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "opgevallen": {
       "nl": "opgevallen",
@@ -16823,10 +16826,10 @@
     },
     "opgezet": {
       "nl": "opgezet",
-      "headword": "opgezet",
-      "en": "past participle of opzetten",
+      "headword": "opzetten",
+      "en": "to put on",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "ophalen": {
       "nl": "ophalen",
@@ -16935,10 +16938,10 @@
     },
     "opslaat": {
       "nl": "opslaat",
-      "headword": "opslaat",
-      "en": "second/third-person singular dependent-clause present indicative of opslaan",
+      "headword": "opslaan",
+      "en": "to save, to store",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "opsta": {
       "nl": "opsta",
@@ -17236,10 +17239,10 @@
     },
     "overtuigd": {
       "nl": "overtuigd",
-      "headword": "overtuigd",
-      "en": "past participle of overtuigen",
+      "headword": "overtuigen",
+      "en": "to convince, persuade",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "overtuigen": {
       "nl": "overtuigen",
@@ -17544,17 +17547,17 @@
     },
     "past": {
       "nl": "past",
-      "headword": "past",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "pasen",
+      "en": "Easter",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "paste": {
       "nl": "paste",
-      "headword": "paste",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "pasen",
+      "en": "Easter",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "patiënt": {
       "nl": "patiënt",
@@ -17845,10 +17848,10 @@
     },
     "plaatsvindt": {
       "nl": "plaatsvindt",
-      "headword": "plaatsvindt",
-      "en": "second/third-person singular dependent-clause present indicative of plaatsvinden",
+      "headword": "plaatsvinden",
+      "en": "to take place, occur",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "plan": {
       "nl": "plan",
@@ -17992,10 +17995,10 @@
     },
     "plukte": {
       "nl": "plukte",
-      "headword": "plukte",
-      "en": "singular past indicative",
+      "headword": "plukken",
+      "en": "to pluck",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "poes": {
       "nl": "poes",
@@ -18167,10 +18170,10 @@
     },
     "praatte": {
       "nl": "praatte",
-      "headword": "praatte",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "praten",
+      "en": "to talk",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "prachtige": {
       "nl": "prachtige",
@@ -18321,17 +18324,17 @@
     },
     "probeerde": {
       "nl": "probeerde",
-      "headword": "probeerde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "proberen",
+      "en": "to try",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "probeert": {
       "nl": "probeert",
-      "headword": "probeert",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "proberen",
+      "en": "to try",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "proberen": {
       "nl": "proberen",
@@ -18370,10 +18373,10 @@
     },
     "proefde": {
       "nl": "proefde",
-      "headword": "proefde",
-      "en": "singular past indicative",
+      "headword": "proeven",
+      "en": "to taste , to test or detect by tasting",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "proeven": {
       "nl": "proeven",
@@ -18489,10 +18492,10 @@
     },
     "raadde": {
       "nl": "raadde",
-      "headword": "raadde",
-      "en": "singular past indicative",
+      "headword": "raden",
+      "en": "to guess",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "raaf": {
       "nl": "raaf",
@@ -18510,10 +18513,10 @@
     },
     "raakte": {
       "nl": "raakte",
-      "headword": "raakte",
-      "en": "singular past indicative",
+      "headword": "raken",
+      "en": "to touch",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "raam": {
       "nl": "raam",
@@ -18818,10 +18821,10 @@
     },
     "regende": {
       "nl": "regende",
-      "headword": "regende",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "regenen",
+      "en": "to rain",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "regenen": {
       "nl": "regenen",
@@ -18867,10 +18870,10 @@
     },
     "reist": {
       "nl": "reist",
-      "headword": "reist",
-      "en": "second/third-person singular present indicative",
+      "headword": "reizen",
+      "en": "to travel",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "reizen": {
       "nl": "reizen",
@@ -19147,10 +19150,10 @@
     },
     "roerde": {
       "nl": "roerde",
-      "headword": "roerde",
-      "en": "singular past indicative",
+      "headword": "roeren",
+      "en": "to stir, scramble",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "roeren": {
       "nl": "roeren",
@@ -19731,7 +19734,7 @@
       "headword": "schrijven",
       "en": "to write",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "schreeuwen": {
       "nl": "schreeuwen",
@@ -19759,14 +19762,14 @@
       "headword": "schrijven",
       "en": "to write",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "schrijft": {
       "nl": "schrijft",
       "headword": "schrijven",
       "en": "to write",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "schrijftafel": {
       "nl": "schrijftafel",
@@ -19780,7 +19783,7 @@
       "headword": "schrijven",
       "en": "to write",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "schrik": {
       "nl": "schrik",
@@ -20127,10 +20130,10 @@
     },
     "slikte": {
       "nl": "slikte",
-      "headword": "slikte",
-      "en": "singular past indicative",
+      "headword": "slikken",
+      "en": "to swallow",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "slim": {
       "nl": "slim",
@@ -20162,10 +20165,10 @@
     },
     "sloeg": {
       "nl": "sloeg",
-      "headword": "sloeg",
-      "en": "singular past indicative of slaan",
+      "headword": "slaan",
+      "en": "to hit, to slap",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "sloot": {
       "nl": "sloot",
@@ -20281,10 +20284,10 @@
     },
     "sneed": {
       "nl": "sneed",
-      "headword": "sneed",
-      "en": "singular past indicative of snijden",
+      "headword": "snijden",
+      "en": "to cut",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "sneeuw": {
       "nl": "sneeuw",
@@ -20302,10 +20305,10 @@
     },
     "sneeuwde": {
       "nl": "sneeuwde",
-      "headword": "sneeuwde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "sneeuwen",
+      "en": "to snow",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "sneeuwen": {
       "nl": "sneeuwen",
@@ -20323,10 +20326,10 @@
     },
     "sneeuwt": {
       "nl": "sneeuwt",
-      "headword": "sneeuwt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "sneeuwen",
+      "en": "to snow",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "snel": {
       "nl": "snel",
@@ -20575,10 +20578,10 @@
     },
     "speelt": {
       "nl": "speelt",
-      "headword": "speelt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "spelen",
+      "en": "to play",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "speeltuin": {
       "nl": "speeltuin",
@@ -20995,10 +20998,10 @@
     },
     "stelde": {
       "nl": "stelde",
-      "headword": "stelde",
-      "en": "singular past indicative",
+      "headword": "stellen",
+      "en": "to position",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "stellen": {
       "nl": "stellen",
@@ -21086,10 +21089,10 @@
     },
     "stierf": {
       "nl": "stierf",
-      "headword": "stierf",
-      "en": "singular past indicative of sterven",
+      "headword": "sterven",
+      "en": "to die",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "stierven": {
       "nl": "stierven",
@@ -21240,17 +21243,17 @@
     },
     "stopt": {
       "nl": "stopt",
-      "headword": "stopt",
-      "en": "second/third-person singular present indicative",
+      "headword": "stoppen",
+      "en": "to stop, to halt",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "stopte": {
       "nl": "stopte",
-      "headword": "stopte",
-      "en": "singular past indicative",
+      "headword": "stoppen",
+      "en": "to stop, to halt",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "storm": {
       "nl": "storm",
@@ -21345,10 +21348,10 @@
     },
     "strijk": {
       "nl": "strijk",
-      "headword": "strijk",
-      "en": "first-person singular present indicative",
+      "headword": "strijken",
+      "en": "to iron, press",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "strijken": {
       "nl": "strijken",
@@ -21457,17 +21460,17 @@
     },
     "stuurden": {
       "nl": "stuurden",
-      "headword": "stuurden",
-      "en": "plural past indicative",
+      "headword": "sturen",
+      "en": "to send",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "stuurt": {
       "nl": "stuurt",
-      "headword": "stuurt",
-      "en": "second/third-person singular present indicative",
+      "headword": "sturen",
+      "en": "to send",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "succes": {
       "nl": "succes",
@@ -21793,17 +21796,17 @@
     },
     "teken": {
       "nl": "teken",
-      "headword": "teken",
-      "en": "first-person singular present indicative",
+      "headword": "tekenen",
+      "en": "to draw",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "tekende": {
       "nl": "tekende",
-      "headword": "tekende",
-      "en": "singular past indicative",
+      "headword": "tekenen",
+      "en": "to draw",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "tekenen": {
       "nl": "tekenen",
@@ -22346,10 +22349,10 @@
     },
     "trachtte": {
       "nl": "trachtte",
-      "headword": "trachtte",
-      "en": "singular past indicative",
+      "headword": "trachten",
+      "en": "to try, attempt",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "tractor": {
       "nl": "tractor",
@@ -22479,10 +22482,10 @@
     },
     "tuinier": {
       "nl": "tuinier",
-      "headword": "tuinier",
-      "en": "first-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "tuinieren",
+      "en": "gardening",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "tuinieren": {
       "nl": "tuinieren",
@@ -22689,10 +22692,10 @@
     },
     "uitgeeft": {
       "nl": "uitgeeft",
-      "headword": "uitgeeft",
-      "en": "second/third-person singular dependent-clause present indicative of uitgeven",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "uitgeven",
+      "en": "to spend",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "uitgekozen": {
       "nl": "uitgekozen",
@@ -22759,10 +22762,10 @@
     },
     "uitgevonden": {
       "nl": "uitgevonden",
-      "headword": "uitgevonden",
-      "en": "past participle of uitvinden",
+      "headword": "uitvinden",
+      "en": "to invent",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "uithaalde": {
       "nl": "uithaalde",
@@ -22787,10 +22790,10 @@
     },
     "uitkomt": {
       "nl": "uitkomt",
-      "headword": "uitkomt",
-      "en": "second/third-person singular dependent-clause present indicative of uitkomen",
+      "headword": "uitkomen",
+      "en": "to come true",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "uitlachen": {
       "nl": "uitlachen",
@@ -22885,10 +22888,10 @@
     },
     "uitzag": {
       "nl": "uitzag",
-      "headword": "uitzag",
-      "en": "singular dependent-clause past indicative of uitzien",
+      "headword": "uitzien",
+      "en": "to look forward to [with naar]",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "uitzien": {
       "nl": "uitzien",
@@ -22899,10 +22902,10 @@
     },
     "uitziet": {
       "nl": "uitziet",
-      "headword": "uitziet",
-      "en": "second/third-person singular dependent-clause present indicative of uitzien",
+      "headword": "uitzien",
+      "en": "to look forward to [with naar]",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "uitzoeken": {
       "nl": "uitzoeken",
@@ -23319,10 +23322,10 @@
     },
     "veranderd": {
       "nl": "veranderd",
-      "headword": "veranderd",
-      "en": "past participle of veranderen",
+      "headword": "veranderen",
+      "en": "to change",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "veranderen": {
       "nl": "veranderen",
@@ -23431,17 +23434,17 @@
     },
     "verbrak": {
       "nl": "verbrak",
-      "headword": "verbrak",
-      "en": "singular past indicative of verbreken",
+      "headword": "verbreken",
+      "en": "to break, break up physically",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "verbrand": {
       "nl": "verbrand",
-      "headword": "verbrand",
-      "en": "first-person singular present indicative",
+      "headword": "verbranden",
+      "en": "to burn, consume/kill in fire",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "verbranden": {
       "nl": "verbranden",
@@ -23501,10 +23504,10 @@
     },
     "verdient": {
       "nl": "verdient",
-      "headword": "verdient",
-      "en": "second/third-person singular present indicative",
+      "headword": "verdienen",
+      "en": "to earn",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "verdieping": {
       "nl": "verdieping",
@@ -23760,10 +23763,10 @@
     },
     "verkocht": {
       "nl": "verkocht",
-      "headword": "verkocht",
-      "en": "singular past indicative of verkopen",
+      "headword": "verkopen",
+      "en": "to sell",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "verkoop": {
       "nl": "verkoop",
@@ -23893,10 +23896,10 @@
     },
     "verloor": {
       "nl": "verloor",
-      "headword": "verloor",
-      "en": "singular past indicative of verliezen",
+      "headword": "verliezen",
+      "en": "to lose",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "verloren": {
       "nl": "verloren",
@@ -23921,10 +23924,10 @@
     },
     "vermoed": {
       "nl": "vermoed",
-      "headword": "vermoed",
-      "en": "first-person singular present indicative",
+      "headword": "vermoeden",
+      "en": "to suspect",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "vermoeden": {
       "nl": "vermoeden",
@@ -24194,10 +24197,10 @@
     },
     "vertaald": {
       "nl": "vertaald",
-      "headword": "vertaald",
-      "en": "past participle of vertalen",
+      "headword": "vertalen",
+      "en": "to translate",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "vertalen": {
       "nl": "vertalen",
@@ -24236,24 +24239,24 @@
     },
     "verteld": {
       "nl": "verteld",
-      "headword": "verteld",
-      "en": "past participle of vertellen",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertellen",
+      "en": "to tell",
+      "pos": "other",
+      "source": "manual lemma meaning override"
     },
     "vertelde": {
       "nl": "vertelde",
-      "headword": "vertelde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertellen",
+      "en": "to tell",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "vertelden": {
       "nl": "vertelden",
-      "headword": "vertelden",
-      "en": "plural past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertellen",
+      "en": "to tell",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "vertellen": {
       "nl": "vertellen",
@@ -24264,10 +24267,10 @@
     },
     "vertelt": {
       "nl": "vertelt",
-      "headword": "vertelt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertellen",
+      "en": "to tell",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "vertrekken": {
       "nl": "vertrekken",
@@ -24278,17 +24281,17 @@
     },
     "vertrekt": {
       "nl": "vertrekt",
-      "headword": "vertrekt",
-      "en": "second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertrekken",
+      "en": "to leave",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "vertrok": {
       "nl": "vertrok",
-      "headword": "vertrok",
-      "en": "singular past indicative of vertrekken",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vertrekken",
+      "en": "to leave",
+      "pos": "word",
+      "source": "manual lemma meaning override"
     },
     "vertrokken": {
       "nl": "vertrokken",
@@ -24320,10 +24323,10 @@
     },
     "verveelde": {
       "nl": "verveelde",
-      "headword": "verveelde",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vervelen",
+      "en": "to annoy",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "vervelen": {
       "nl": "vervelen",
@@ -24348,10 +24351,10 @@
     },
     "vervoerd": {
       "nl": "vervoerd",
-      "headword": "vervoerd",
-      "en": "past participle of vervoeren",
+      "headword": "vervoeren",
+      "en": "to transport, to move",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "vervoeren": {
       "nl": "vervoeren",
@@ -24376,10 +24379,10 @@
     },
     "verwacht": {
       "nl": "verwacht",
-      "headword": "verwacht",
-      "en": "first/second/third-person singular present indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "verwachten",
+      "en": "to expect",
+      "pos": "word",
+      "source": "manual inferred verb meaning override"
     },
     "verwachten": {
       "nl": "verwachten",
@@ -24439,17 +24442,17 @@
     },
     "verzamel": {
       "nl": "verzamel",
-      "headword": "verzamel",
-      "en": "first-person singular present indicative",
+      "headword": "verzamelen",
+      "en": "to collect, to gather",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "verzameld": {
       "nl": "verzameld",
-      "headword": "verzameld",
-      "en": "past participle of verzamelen",
+      "headword": "verzamelen",
+      "en": "to collect, to gather",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "verzamelen": {
       "nl": "verzamelen",
@@ -24593,31 +24596,31 @@
     },
     "vind": {
       "nl": "vind",
-      "headword": "leuk vinden",
-      "en": "to like",
+      "headword": "vinden",
+      "en": "to find / think",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "vinden": {
       "nl": "vinden",
       "headword": "vinden",
-      "en": "to find, to think (have an opinion)",
-      "pos": "other",
-      "source": "word deck headword"
+      "en": "to find / think",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "vindt": {
       "nl": "vindt",
-      "headword": "leuk vinden",
-      "en": "to like",
+      "headword": "vinden",
+      "en": "to find / think",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "ving": {
       "nl": "ving",
-      "headword": "ving",
-      "en": "singular past indicative of vangen",
+      "headword": "vangen",
+      "en": "to catch",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "vinger": {
       "nl": "vinger",
@@ -24782,10 +24785,10 @@
     },
     "vloog": {
       "nl": "vloog",
-      "headword": "vloog",
-      "en": "singular past indicative of vliegen",
+      "headword": "vliegen",
+      "en": "to fly",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "vlotte": {
       "nl": "vlotte",
@@ -24866,10 +24869,10 @@
     },
     "voelt": {
       "nl": "voelt",
-      "headword": "voelt",
-      "en": "second/third-person singular present indicative",
+      "headword": "voelen",
+      "en": "to feel, to touch",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "voer": {
       "nl": "voer",
@@ -25083,17 +25086,17 @@
     },
     "vond": {
       "nl": "vond",
-      "headword": "vond",
-      "en": "singular past indicative of vinden",
+      "headword": "vinden",
+      "en": "to find / think",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "vonden": {
       "nl": "vonden",
-      "headword": "vonden",
-      "en": "plural past indicative",
+      "headword": "vinden",
+      "en": "to find / think",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "voor": {
       "nl": "voor",
@@ -25384,10 +25387,10 @@
     },
     "vraag": {
       "nl": "vraag",
-      "headword": "vraag",
-      "en": "question, query",
-      "pos": "noun",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "vragen",
+      "en": "to ask",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "vracht": {
       "nl": "vracht",
@@ -25408,7 +25411,7 @@
       "headword": "vragen",
       "en": "to ask",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "vrede": {
       "nl": "vrede",
@@ -25601,17 +25604,17 @@
     },
     "vroeg": {
       "nl": "vroeg",
-      "headword": "vroeg",
-      "en": "early",
-      "pos": "word",
-      "source": "word deck headword"
+      "headword": "vragen",
+      "en": "to ask",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "vroegen": {
       "nl": "vroegen",
       "headword": "vragen",
       "en": "to ask",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "vroeger": {
       "nl": "vroeger",
@@ -25926,7 +25929,7 @@
       "headword": "zijn",
       "en": "to be",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "warm": {
       "nl": "warm",
@@ -25958,10 +25961,10 @@
     },
     "was": {
       "nl": "was",
-      "headword": "was",
-      "en": "laundry",
-      "pos": "noun",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "zijn",
+      "en": "to be",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "wassen": {
       "nl": "wassen",
@@ -26063,10 +26066,10 @@
     },
     "weegt": {
       "nl": "weegt",
-      "headword": "weegt",
-      "en": "second/third-person singular present indicative",
+      "headword": "wegen",
+      "en": "to weigh",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "week": {
       "nl": "week",
@@ -26143,7 +26146,7 @@
       "headword": "weten",
       "en": "to know",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "weg": {
       "nl": "weg",
@@ -26175,10 +26178,10 @@
     },
     "weggegaan": {
       "nl": "weggegaan",
-      "headword": "weggegaan",
-      "en": "past participle of weggaan",
+      "headword": "weggaan",
+      "en": "to go away, to leave",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "weggeweest": {
       "nl": "weggeweest",
@@ -26444,7 +26447,7 @@
       "headword": "weten",
       "en": "to know",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "wetenschapper": {
       "nl": "wetenschapper",
@@ -26556,7 +26559,7 @@
       "headword": "willen",
       "en": "to want / would like",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "wild": {
       "nl": "wild",
@@ -26567,17 +26570,17 @@
     },
     "wilde": {
       "nl": "wilde",
-      "headword": "wilde",
-      "en": "masculine/feminine singular attributive",
-      "pos": "adjective",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "willen",
+      "en": "to want / would like",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "wilden": {
       "nl": "wilden",
-      "headword": "wilden",
-      "en": "plural past indicative",
+      "headword": "willen",
+      "en": "to want / would like",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "wilgen": {
       "nl": "wilgen",
@@ -26598,14 +26601,14 @@
       "headword": "willen",
       "en": "to want / would like",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "wilt": {
       "nl": "wilt",
-      "headword": "wilt",
-      "en": "second-person singular present indicative",
+      "headword": "willen",
+      "en": "to want / would like",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "wind": {
       "nl": "wind",
@@ -26686,10 +26689,10 @@
     },
     "wisselde": {
       "nl": "wisselde",
-      "headword": "wisselde",
-      "en": "singular past indicative",
+      "headword": "wisselen",
+      "en": "to swap, to exchange",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "wisselen": {
       "nl": "wisselen",
@@ -26710,14 +26713,14 @@
       "headword": "weten",
       "en": "to know",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "wisten": {
       "nl": "wisten",
       "headword": "weten",
       "en": "to know",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "wit": {
       "nl": "wit",
@@ -26847,10 +26850,10 @@
     },
     "woonde": {
       "nl": "woonde",
-      "headword": "woonde",
-      "en": "singular past indicative",
+      "headword": "wonen",
+      "en": "to live",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "woonkamer": {
       "nl": "woonkamer",
@@ -26861,10 +26864,10 @@
     },
     "woont": {
       "nl": "woont",
-      "headword": "woont",
-      "en": "second/third-person singular present indicative",
+      "headword": "wonen",
+      "en": "to live",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "woord": {
       "nl": "woord",
@@ -26924,10 +26927,10 @@
     },
     "wordt": {
       "nl": "wordt",
-      "headword": "wordt",
-      "en": "second/third-person singular present indicative",
+      "headword": "worden",
+      "en": "to become",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "worst": {
       "nl": "worst",
@@ -27008,10 +27011,10 @@
     },
     "zaait": {
       "nl": "zaait",
-      "headword": "zaait",
-      "en": "second/third-person singular present indicative",
+      "headword": "zaaien",
+      "en": "to sow, plant seed",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "zaak": {
       "nl": "zaak",
@@ -27060,14 +27063,14 @@
       "headword": "zien",
       "en": "to see",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "zagen": {
       "nl": "zagen",
       "headword": "zien",
       "en": "to see",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "zak": {
       "nl": "zak",
@@ -27099,10 +27102,10 @@
     },
     "zal": {
       "nl": "zal",
-      "headword": "zal",
-      "en": "first/second/third-person singular present indicative of zullen",
+      "headword": "zullen",
+      "en": "will / shall",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zalig": {
       "nl": "zalig",
@@ -27214,35 +27217,35 @@
       "headword": "zeggen",
       "en": "to say",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "zeggen": {
       "nl": "zeggen",
       "headword": "zeggen",
       "en": "to say",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "zegt": {
       "nl": "zegt",
-      "headword": "zegt",
-      "en": "second/third-person singular present indicative",
+      "headword": "zeggen",
+      "en": "to say",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zei": {
       "nl": "zei",
       "headword": "zeggen",
       "en": "to say",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "zeiden": {
       "nl": "zeiden",
       "headword": "zeggen",
       "en": "to say",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "zeker": {
       "nl": "zeker",
@@ -27344,10 +27347,10 @@
     },
     "zette": {
       "nl": "zette",
-      "headword": "zette",
-      "en": "singular past indicative",
-      "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "headword": "zetten",
+      "en": "to put",
+      "pos": "other",
+      "source": "manual inferred verb meaning override"
     },
     "zetten": {
       "nl": "zetten",
@@ -27410,7 +27413,7 @@
       "headword": "zien",
       "en": "to see",
       "pos": "verb",
-      "source": "word deck grammar form"
+      "source": "manual common verb form override"
     },
     "ziek": {
       "nl": "ziek",
@@ -27473,7 +27476,7 @@
       "headword": "zien",
       "en": "to see",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "ziens": {
       "nl": "ziens",
@@ -27484,10 +27487,10 @@
     },
     "ziet": {
       "nl": "ziet",
-      "headword": "ziet",
-      "en": "second/third-person singular present indicative",
+      "headword": "zien",
+      "en": "to see",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zij": {
       "nl": "zij",
@@ -27515,7 +27518,7 @@
       "headword": "zijn",
       "en": "to be",
       "pos": "verb",
-      "source": "word deck headword"
+      "source": "manual common verb form override"
     },
     "zijt": {
       "nl": "zijt",
@@ -27764,10 +27767,10 @@
     },
     "zong": {
       "nl": "zong",
-      "headword": "zong",
-      "en": "singular past indicative of zingen",
+      "headword": "zingen",
+      "en": "to sing",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "zonk": {
       "nl": "zonk",
@@ -27841,17 +27844,17 @@
     },
     "zorgde": {
       "nl": "zorgde",
-      "headword": "zorgde",
-      "en": "singular past indicative",
+      "headword": "zorgen",
+      "en": "to make sure, to ensure",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "zorgden": {
       "nl": "zorgden",
-      "headword": "zorgden",
-      "en": "plural past indicative",
+      "headword": "zorgen",
+      "en": "to make sure, to ensure",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "zorgen": {
       "nl": "zorgen",
@@ -27862,10 +27865,10 @@
     },
     "zorgt": {
       "nl": "zorgt",
-      "headword": "zorgt",
-      "en": "second/third-person singular present indicative",
+      "headword": "zorgen",
+      "en": "to make sure, to ensure",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "zorgvuldig": {
       "nl": "zorgvuldig",
@@ -27876,17 +27879,17 @@
     },
     "zou": {
       "nl": "zou",
-      "headword": "zou",
-      "en": "singular past indicative of zullen",
+      "headword": "zullen",
+      "en": "will / shall",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zouden": {
       "nl": "zouden",
-      "headword": "zouden",
-      "en": "plural past indicative",
+      "headword": "zullen",
+      "en": "will / shall",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zout": {
       "nl": "zout",
@@ -27932,10 +27935,10 @@
     },
     "zul": {
       "nl": "zul",
-      "headword": "zul",
-      "en": "second-person singular present indicative of zullen",
+      "headword": "zullen",
+      "en": "will / shall",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual lemma meaning override"
     },
     "zulke": {
       "nl": "zulke",
@@ -27947,16 +27950,16 @@
     "zullen": {
       "nl": "zullen",
       "headword": "zullen",
-      "en": "will",
-      "pos": "other",
-      "source": "word deck headword"
+      "en": "will / shall",
+      "pos": "verb",
+      "source": "manual common verb form override"
     },
     "zult": {
       "nl": "zult",
-      "headword": "zult",
-      "en": "second-person singular present indicative of zullen",
+      "headword": "zullen",
+      "en": "will / shall",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual common verb form override"
     },
     "zus": {
       "nl": "zus",
@@ -27988,10 +27991,10 @@
     },
     "zwaaide": {
       "nl": "zwaaide",
-      "headword": "zwaaide",
-      "en": "singular past indicative",
+      "headword": "zwaaien",
+      "en": "to sway, to wave",
       "pos": "verb",
-      "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+      "source": "manual inferred verb meaning override"
     },
     "zwaaien": {
       "nl": "zwaaien",
@@ -28139,6 +28142,111 @@
       "en": "one",
       "pos": "noun",
       "source": "FreeDictionaryAPI / Wiktionary, context-selected"
+    },
+    "gekund": {
+      "nl": "gekund",
+      "headword": "kunnen",
+      "en": "can / be able to",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "gemoeten": {
+      "nl": "gemoeten",
+      "headword": "moeten",
+      "en": "must / have to",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "gewild": {
+      "nl": "gewild",
+      "headword": "willen",
+      "en": "to want / would like",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "mochten": {
+      "nl": "mochten",
+      "headword": "mogen",
+      "en": "may / be allowed to",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "gemogen": {
+      "nl": "gemogen",
+      "headword": "mogen",
+      "en": "may / be allowed to",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "kregen": {
+      "nl": "kregen",
+      "headword": "krijgen",
+      "en": "to get / receive",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "lazen": {
+      "nl": "lazen",
+      "headword": "lezen",
+      "en": "to read",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "namen": {
+      "nl": "namen",
+      "headword": "nemen",
+      "en": "to take",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "belden": {
+      "nl": "belden",
+      "headword": "bellen",
+      "en": "to call",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "bleven": {
+      "nl": "bleven",
+      "headword": "blijven",
+      "en": "to stay / remain",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "brachten": {
+      "nl": "brachten",
+      "headword": "brengen",
+      "en": "to bring",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "vraagt": {
+      "nl": "vraagt",
+      "headword": "vragen",
+      "en": "to ask",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "geweten": {
+      "nl": "geweten",
+      "headword": "weten",
+      "en": "to know",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "schreven": {
+      "nl": "schreven",
+      "headword": "schrijven",
+      "en": "to write",
+      "pos": "verb",
+      "source": "manual common verb form override"
+    },
+    "hielpen": {
+      "nl": "hielpen",
+      "headword": "helpen",
+      "en": "to help",
+      "pos": "verb",
+      "source": "manual common verb form override"
     }
   }
 }
