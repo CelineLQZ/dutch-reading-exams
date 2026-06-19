@@ -864,5 +864,792 @@
         "en": "Mila and Carla: It will surely be a nice day."
       }
     ]
+  },
+  {
+    "id": "listen2-1",
+    "les": 201,
+    "exam": "listen2",
+    "examIndex": 1,
+    "label": "L2.1",
+    "title": "L2.1 Mark bij de gemeente",
+    "rawTitle": "Mark bij de gemeente",
+    "sentences": [
+      {
+        "nl": "Eren is met zijn vriend Mark bij de gemeente.",
+        "en": "Eren is with his friend Mark at the municipal office."
+      },
+      {
+        "nl": "Gemeentewerknemer: Kan ik u helpen?",
+        "en": "Municipal employee: Can I help you?"
+      },
+      {
+        "nl": "Mark: Ik heb een zoon gekregen. Gisteren.",
+        "en": "Mark: I had a son. Yesterday."
+      },
+      {
+        "nl": "Gemeentewerknemer: Gefeliciteerd.",
+        "en": "Municipal employee: Congratulations."
+      },
+      {
+        "nl": "U wilt dus aangifte doen van de geboorte.",
+        "en": "So you want to register the birth."
+      },
+      {
+        "nl": "Mag ik uw legitimatiebewijs?",
+        "en": "May I see your identity document?"
+      },
+      {
+        "nl": "Mark: Nee, vergeten.",
+        "en": "Mark: No, I forgot it."
+      },
+      {
+        "nl": "Gemeentewerknemer: Ach... kan gebeuren.",
+        "en": "Municipal employee: Oh well... that can happen."
+      },
+      {
+        "nl": "U kunt tot 2 dagen na de geboorte aangifte doen.",
+        "en": "You can register the birth up to 2 days after the birth."
+      },
+      {
+        "nl": "Dus het mag morgen ook nog.",
+        "en": "So it is still allowed tomorrow as well."
+      },
+      {
+        "nl": "Want vanmiddag zijn we gesloten.",
+        "en": "Because this afternoon we are closed."
+      },
+      {
+        "nl": "Bent u getrouwd?",
+        "en": "Are you married?"
+      },
+      {
+        "nl": "Mark: Ja.",
+        "en": "Mark: Yes."
+      },
+      {
+        "nl": "Gemeentewerknemer: Dan moet u ook een trouwboekje meenemen.",
+        "en": "Municipal employee: Then you also need to bring a marriage booklet."
+      },
+      {
+        "nl": "Morgen zijn we tot 12 uur open.",
+        "en": "Tomorrow we are open until 12 o’clock."
+      },
+      {
+        "nl": "U kunt op internet een afspraak maken, dan hoeft u niet zo lang te wachten.",
+        "en": "You can make an appointment online; then you do not have to wait so long."
+      },
+      {
+        "nl": "Dat kan niet meteen hier aan de balie.",
+        "en": "That cannot be done directly here at the counter."
+      },
+      {
+        "nl": "Helaas alleen online.",
+        "en": "Unfortunately, only online."
+      },
+      {
+        "nl": "Mark: Oké, bedankt!",
+        "en": "Mark: Okay, thanks!"
+      },
+      {
+        "nl": "Waarom is Mark bij de gemeente?",
+        "en": "Why is Mark at the municipal office?"
+      },
+      {
+        "nl": "Wanneer kan Mark terugkomen bij de gemeente?",
+        "en": "When can Mark come back to the municipal office?"
+      },
+      {
+        "nl": "Mark wil de volgende keer niet zo lang wachten.",
+        "en": "Mark does not want to wait so long next time."
+      },
+      {
+        "nl": "Wat kan hij dan het beste doen?",
+        "en": "What is the best thing for him to do then?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-2",
+    "les": 202,
+    "exam": "listen2",
+    "examIndex": 2,
+    "label": "L2.2",
+    "title": "L2.2 Uitzendbureau Kracht",
+    "rawTitle": "Uitzendbureau Kracht",
+    "sentences": [
+      {
+        "nl": "Yassir wil werken via uitzendbureau Kracht.",
+        "en": "Yassir wants to work through employment agency Kracht."
+      },
+      {
+        "nl": "Hij heeft zich al ingeschreven.",
+        "en": "He has already registered."
+      },
+      {
+        "nl": "Hij bekijkt een filmpje op internet van het uitzendbureau.",
+        "en": "He watches a short video from the employment agency on the internet."
+      },
+      {
+        "nl": "Welkom bij Uitzendbureau Kracht.",
+        "en": "Welcome to employment agency Kracht."
+      },
+      {
+        "nl": "U heeft zich bij ons ingeschreven via internet.",
+        "en": "You have registered with us via the internet."
+      },
+      {
+        "nl": "En u heeft binnenkort een kennismakingsgesprek.",
+        "en": "And you will soon have an introductory interview."
+      },
+      {
+        "nl": "U krijgt daarvoor een uitnodiging per e-mail met de datum en de tijd.",
+        "en": "You will receive an invitation for that by email with the date and the time."
+      },
+      {
+        "nl": "Mensen kunnen bij ons werken in de schoonmaak, de beveiliging en in de productie.",
+        "en": "People can work with us in cleaning, security, and production."
+      },
+      {
+        "nl": "Voor de schoonmaak en productie moet u Nederlands spreken op A2-niveau.",
+        "en": "For cleaning and production, you must speak Dutch at A2 level."
+      },
+      {
+        "nl": "Voor de beveiliging op B1-niveau.",
+        "en": "For security, at B1 level."
+      },
+      {
+        "nl": "Ook is het fijn als u ervaring heeft met het werk, maar dat hoeft niet.",
+        "en": "It is also nice if you have experience with the work, but that is not necessary."
+      },
+      {
+        "nl": "U kunt bij ons ook een avondopleiding volgen tot leidinggevende.",
+        "en": "You can also follow an evening course with us to become a supervisor."
+      },
+      {
+        "nl": "Deze opleiding duurt vier maanden.",
+        "en": "This course lasts four months."
+      },
+      {
+        "nl": "U leert bijvoorbeeld een werkplanning maken of werkroosters bijhouden.",
+        "en": "For example, you learn to make a work plan or keep work schedules."
+      },
+      {
+        "nl": "Tijdens uw opleiding loopt u ook stage.",
+        "en": "During your course, you also do an internship."
+      },
+      {
+        "nl": "U oefent dan wat u heeft geleerd.",
+        "en": "You then practise what you have learned."
+      },
+      {
+        "nl": "Deze stage duurt twee maanden.",
+        "en": "This internship lasts two months."
+      },
+      {
+        "nl": "Dus de opleiding duurt in totaal vier maanden.",
+        "en": "So the course lasts four months in total."
+      },
+      {
+        "nl": "Na de opleiding kunt u aan het werk als leidinggevende.",
+        "en": "After the course, you can start working as a supervisor."
+      },
+      {
+        "nl": "Heeft u interesse in deze opleiding, geeft u dat dan aan bij uw kennismakingsgesprek.",
+        "en": "If you are interested in this course, mention that during your introductory interview."
+      },
+      {
+        "nl": "Tot ziens bij het gesprek.",
+        "en": "See you at the interview."
+      },
+      {
+        "nl": "Hoe krijgt Yassir de uitnodiging met de datum en tijd voor het gesprek?",
+        "en": "How does Yassir receive the invitation with the date and time for the interview?"
+      },
+      {
+        "nl": "Wat is nodig om schoonmaakwerk te kunnen doen?",
+        "en": "What is needed to be able to do cleaning work?"
+      },
+      {
+        "nl": "Hoelang duurt de opleiding tot leidinggevende?",
+        "en": "How long does the supervisor course last?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-3",
+    "les": 203,
+    "exam": "listen2",
+    "examIndex": 3,
+    "label": "L2.3",
+    "title": "L2.3 De weg naar het gemeentehuis",
+    "rawTitle": "De weg naar het gemeentehuis",
+    "sentences": [
+      {
+        "nl": "Roman heeft een bericht op zijn voicemail van Eric.",
+        "en": "Roman has a message on his voicemail from Eric."
+      },
+      {
+        "nl": "Hey Roman, ja, ik had een bericht gestuurd waar het gemeentehuis precies was.",
+        "en": "Hey Roman, yes, I had sent a message saying exactly where the municipal office was."
+      },
+      {
+        "nl": "Nou, je bent er niet, dus ja, ik spreek het wel even in.",
+        "en": "Well, you are not there, so yes, I will just record it."
+      },
+      {
+        "nl": "Oké, vanaf jouw huis moet je eerst linksaf.",
+        "en": "Okay, from your house you first have to turn left."
+      },
+      {
+        "nl": "En dan bij de groene brug ga je naar rechts.",
+        "en": "And then at the green bridge you go to the right."
+      },
+      {
+        "nl": "Dan een stukje rechtdoor en bij de supermarkt ga je rechtsaf.",
+        "en": "Then a little bit straight ahead and at the supermarket you turn right."
+      },
+      {
+        "nl": "Je weet wel hè.",
+        "en": "You know the one, right?"
+      },
+      {
+        "nl": "Dan zie je aan de rechterkant een groot gebouw.",
+        "en": "Then you will see a large building on the right-hand side."
+      },
+      {
+        "nl": "Dat is het nog niet.",
+        "en": "That is not it yet."
+      },
+      {
+        "nl": "En daarachter staat een blauw gebouw.",
+        "en": "And behind it there is a blue building."
+      },
+      {
+        "nl": "Dat is ’m wel.",
+        "en": "That is the one."
+      },
+      {
+        "nl": "En daar is links een parkeerplaats voor bezoekers, maar je kunt ook rechts de parkeergarage inrijden.",
+        "en": "And there on the left is a visitors’ parking lot, but you can also drive into the parking garage on the right."
+      },
+      {
+        "nl": "Of aan de overkant van de weg parkeren, maar die parkeerplaats voor bezoekers is wel het handigste, denk ik.",
+        "en": "Or park on the other side of the road, but that visitors’ parking lot is probably the most convenient, I think."
+      },
+      {
+        "nl": "Roman is onderweg naar het gemeentehuis.",
+        "en": "Roman is on his way to the municipal office."
+      },
+      {
+        "nl": "Wat moet hij doen bij de groene brug?",
+        "en": "What should he do at the green bridge?"
+      },
+      {
+        "nl": "Wat moet hij doen bij de supermarkt?",
+        "en": "What should he do at the supermarket?"
+      },
+      {
+        "nl": "Waar kan hij het beste parkeren?",
+        "en": "Where is the best place for him to park?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-4",
+    "les": 204,
+    "exam": "listen2",
+    "examIndex": 4,
+    "label": "L2.4",
+    "title": "L2.4 Nieuwe baan: materiaal bestellen",
+    "rawTitle": "Nieuwe baan: materiaal bestellen",
+    "sentences": [
+      {
+        "nl": "Nabil heeft een nieuwe baan.",
+        "en": "Nabil has a new job."
+      },
+      {
+        "nl": "Zijn baas vertelt iets.",
+        "en": "His boss explains something."
+      },
+      {
+        "nl": "Baas: Oké, wat handige informatie voor als je materiaal nodig hebt, zoals pennen.",
+        "en": "Boss: Okay, some useful information for when you need materials, such as pens."
+      },
+      {
+        "nl": "Dat moet je altijd bij inkoop bestellen.",
+        "en": "You must always order that from purchasing."
+      },
+      {
+        "nl": "Inkoop zit op de tweede verdieping, kamer 2.3.",
+        "en": "Purchasing is on the second floor, room 2.3."
+      },
+      {
+        "nl": "En verkoop zit in 2.2.",
+        "en": "And sales is in 2.2."
+      },
+      {
+        "nl": "Je kijkt zo naar binnen vanuit de kantine.",
+        "en": "You can look right inside from the canteen."
+      },
+      {
+        "nl": "Als je iets wilt bestellen, vul je dit formulier in.",
+        "en": "If you want to order something, you fill in this form."
+      },
+      {
+        "nl": "Dat lever je dan in bij inkoop.",
+        "en": "Then you hand that in to purchasing."
+      },
+      {
+        "nl": "Als de bestelling binnen is, hoor je dat meestal wel even, of ze sturen je een mailtje.",
+        "en": "When the order has arrived, you usually hear about it, or they send you a little email."
+      },
+      {
+        "nl": "En als het een klein pakket is, ligt het vaak bij de receptie.",
+        "en": "And if it is a small package, it is often at reception."
+      },
+      {
+        "nl": "Waar zit de afdeling inkoop?",
+        "en": "Where is the purchasing department?"
+      },
+      {
+        "nl": "Nabil wil iets bestellen.",
+        "en": "Nabil wants to order something."
+      },
+      {
+        "nl": "Wat moet hij doen?",
+        "en": "What should he do?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-5",
+    "les": 205,
+    "exam": "listen2",
+    "examIndex": 5,
+    "label": "L2.5",
+    "title": "L2.5 Examens en leertips",
+    "rawTitle": "Examens en leertips",
+    "sentences": [
+      {
+        "nl": "Giulia doet een koksopleiding.",
+        "en": "Giulia is doing a cooking course."
+      },
+      {
+        "nl": "Haar medecursisten Mira en Chris praten over de examens.",
+        "en": "Her fellow students Mira and Chris talk about the exams."
+      },
+      {
+        "nl": "Chris: Wat een drukke tijd, hè.",
+        "en": "Chris: What a busy time, right?"
+      },
+      {
+        "nl": "Al die examens... vijf in totaal.",
+        "en": "All those exams... five in total."
+      },
+      {
+        "nl": "Mira: Hm.",
+        "en": "Mira: Hmm."
+      },
+      {
+        "nl": "Giulia: Ja... Volgende week hebben we alleen al drie examens en de week daarna twee.",
+        "en": "Giulia: Yes... Next week alone we already have three exams, and the week after that two."
+      },
+      {
+        "nl": "Ik weet echt niet hoe ik dat allemaal moet leren.",
+        "en": "I really do not know how I should study all of that."
+      },
+      {
+        "nl": "Chris: Nou... Zorg dat je eerst een goede plek vindt.",
+        "en": "Chris: Well... Make sure you first find a good place."
+      },
+      {
+        "nl": "Dat helpt voor mij altijd heel goed.",
+        "en": "That always helps me a lot."
+      },
+      {
+        "nl": "Giulia: Ja... Dat is misschien wel handig.",
+        "en": "Giulia: Yes... That might be useful."
+      },
+      {
+        "nl": "Ja.",
+        "en": "Yes."
+      },
+      {
+        "nl": "Chris: En als ik je dan nog een tip mag geven, dan ga ik gewoon leren in de bus en de trein.",
+        "en": "Chris: And if I may give you one more tip, I simply study on the bus and the train."
+      },
+      {
+        "nl": "Dan ben je toch aan het wachten.",
+        "en": "Then you are waiting anyway."
+      },
+      {
+        "nl": "Dan kan je heel veel extra doen.",
+        "en": "Then you can do a lot extra."
+      },
+      {
+        "nl": "Zeker als je vaak vertraging hebt.",
+        "en": "Especially if you often have delays."
+      },
+      {
+        "nl": "Giulia: Dat is een goede zeg, dat ga ik doen.",
+        "en": "Giulia: That is a good one, I will do that."
+      },
+      {
+        "nl": "Hoeveel examens heeft Giulia volgende week?",
+        "en": "How many exams does Giulia have next week?"
+      },
+      {
+        "nl": "Giulia luistert naar het gesprek.",
+        "en": "Giulia listens to the conversation."
+      },
+      {
+        "nl": "Welke tip geeft Chris als eerste aan Mira?",
+        "en": "Which tip does Chris give Mira first?"
+      },
+      {
+        "nl": "Wat zegt Chris over vertraging?",
+        "en": "What does Chris say about delays?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-6",
+    "les": 206,
+    "exam": "listen2",
+    "examIndex": 6,
+    "label": "L2.6",
+    "title": "L2.6 Verkeersinformatie en treinen",
+    "rawTitle": "Verkeersinformatie en treinen",
+    "sentences": [
+      {
+        "nl": "Mario luistert naar de radio.",
+        "en": "Mario listens to the radio."
+      },
+      {
+        "nl": "Hij hoort een bericht over files.",
+        "en": "He hears a report about traffic jams."
+      },
+      {
+        "nl": "En dan nu de files.",
+        "en": "And now the traffic jams."
+      },
+      {
+        "nl": "Op de snelweg A2 tussen Amsterdam en Utrecht staat vijf kilometer file.",
+        "en": "On the A2 motorway between Amsterdam and Utrecht there is a five-kilometre traffic jam."
+      },
+      {
+        "nl": "De oorzaak is een ongeluk met drie auto's.",
+        "en": "The cause is an accident involving three cars."
+      },
+      {
+        "nl": "Bij Rotterdam, op de snelweg A4 naar Delft, staat een kapotte vrachtwagen.",
+        "en": "Near Rotterdam, on the A4 motorway to Delft, there is a broken-down lorry."
+      },
+      {
+        "nl": "Daarom staat er nu een file van vier kilometer.",
+        "en": "That is why there is now a four-kilometre traffic jam."
+      },
+      {
+        "nl": "Over een half uur zal het verkeer weer kunnen doorrijden.",
+        "en": "In half an hour, traffic will be able to continue again."
+      },
+      {
+        "nl": "De laatste file staat op de A50 bij Apeldoorn.",
+        "en": "The last traffic jam is on the A50 near Apeldoorn."
+      },
+      {
+        "nl": "Daar is een vrachtwagen met eieren omgevallen.",
+        "en": "There, a lorry carrying eggs has overturned."
+      },
+      {
+        "nl": "De vrachtwagen en de eieren liggen op de weg.",
+        "en": "The lorry and the eggs are lying on the road."
+      },
+      {
+        "nl": "De weg wordt nu schoongemaakt.",
+        "en": "The road is now being cleaned."
+      },
+      {
+        "nl": "Er staat een file van tien kilometer.",
+        "en": "There is a ten-kilometre traffic jam."
+      },
+      {
+        "nl": "Ten slotte nog een bericht voor mensen die met de trein reizen.",
+        "en": "Finally, one more message for people who travel by train."
+      },
+      {
+        "nl": "Tussen de stations Arnhem en Utrecht rijden geen treinen.",
+        "en": "No trains are running between the stations Arnhem and Utrecht."
+      },
+      {
+        "nl": "U kunt met de NS-bussen reizen.",
+        "en": "You can travel by the NS buses."
+      },
+      {
+        "nl": "Tot zover de files.",
+        "en": "That is all for the traffic jams."
+      },
+      {
+        "nl": "Hoe lang is de file op de snelweg A2 tussen Amsterdam en Utrecht?",
+        "en": "How long is the traffic jam on the A2 motorway between Amsterdam and Utrecht?"
+      },
+      {
+        "nl": "Waarom staat er een file op de snelweg A4 bij Rotterdam?",
+        "en": "Why is there a traffic jam on the A4 motorway near Rotterdam?"
+      },
+      {
+        "nl": "Mario wil met de trein van Arnhem naar Utrecht.",
+        "en": "Mario wants to go by train from Arnhem to Utrecht."
+      },
+      {
+        "nl": "Wat kan hij het beste doen?",
+        "en": "What is the best thing for him to do?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-7",
+    "les": 207,
+    "exam": "listen2",
+    "examIndex": 7,
+    "label": "L2.7",
+    "title": "L2.7 Eerste werkdag: telefoon opnemen",
+    "rawTitle": "Eerste werkdag: telefoon opnemen",
+    "sentences": [
+      {
+        "nl": "Sophia heeft een nieuwe baan.",
+        "en": "Sophia has a new job."
+      },
+      {
+        "nl": "Nou, je eerste dag.",
+        "en": "Well, your first day."
+      },
+      {
+        "nl": "Een belangrijke regel is dat de telefoon altijd voorgaat.",
+        "en": "An important rule is that the telephone always comes first."
+      },
+      {
+        "nl": "Dus ook al ben je nog zo druk.",
+        "en": "So even if you are very busy."
+      },
+      {
+        "nl": "Maakt niet uit.",
+        "en": "It does not matter."
+      },
+      {
+        "nl": "Je neemt ’m altijd op.",
+        "en": "You always answer it."
+      },
+      {
+        "nl": "Als iemand de directeur wil spreken, dan verbind je niet meteen door.",
+        "en": "If someone wants to speak to the director, then you do not put them through immediately."
+      },
+      {
+        "nl": "Je kijkt dan eerst in zijn agenda.",
+        "en": "You first look in his calendar."
+      },
+      {
+        "nl": "Ook vraag je waar het over gaat.",
+        "en": "You also ask what it is about."
+      },
+      {
+        "nl": "Als hij dan tijd heeft, dan toets je 1.",
+        "en": "If he then has time, you press 1."
+      },
+      {
+        "nl": "Als er iemand belt voor de afdeling inkoop, die kun je dan meteen doorverbinden.",
+        "en": "If someone calls for the purchasing department, you can put them through immediately."
+      },
+      {
+        "nl": "Je toetst dan de 4.",
+        "en": "You then press 4."
+      },
+      {
+        "nl": "Als Evelien pauze heeft, dan moet je ook voor haar de telefoon doen, eh opnemen en zo.",
+        "en": "If Evelien is on a break, then you also have to handle her phone, um, answer it and so on."
+      },
+      {
+        "nl": "Dan schrijf je de naam op van de beller en dan zeg je dat Evelien terugbelt.",
+        "en": "Then you write down the caller’s name and say that Evelien will call back."
+      },
+      {
+        "nl": "Vergeet ook niet het telefoonnummer.",
+        "en": "Also do not forget the phone number."
+      },
+      {
+        "nl": "Iemand belt voor de directeur.",
+        "en": "Someone calls for the director."
+      },
+      {
+        "nl": "Wat moet Sophia als eerste doen?",
+        "en": "What should Sophia do first?"
+      },
+      {
+        "nl": "Iemand belt voor de afdeling inkoop.",
+        "en": "Someone calls for the purchasing department."
+      },
+      {
+        "nl": "Wat moet Sophia doen?",
+        "en": "What should Sophia do?"
+      },
+      {
+        "nl": "Evelien heeft pauze en Sophia neemt haar telefoon op.",
+        "en": "Evelien is on a break and Sophia answers her phone."
+      },
+      {
+        "nl": "Wat moet ze doen?",
+        "en": "What should she do?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-8",
+    "les": 208,
+    "exam": "listen2",
+    "examIndex": 8,
+    "label": "L2.8",
+    "title": "L2.8 Groepsopdracht",
+    "rawTitle": "Groepsopdracht",
+    "sentences": [
+      {
+        "nl": "Nika volgt een cursus Nederlands.",
+        "en": "Nika is taking a Dutch course."
+      },
+      {
+        "nl": "Een medecursist heeft een bericht ingesproken op haar voicemail.",
+        "en": "A fellow student has left a message on her voicemail."
+      },
+      {
+        "nl": "Nika luistert naar het bericht.",
+        "en": "Nika listens to the message."
+      },
+      {
+        "nl": "Hi Nika, met Marcus!",
+        "en": "Hi Nika, it’s Marcus!"
+      },
+      {
+        "nl": "Ik bel even over onze groepsopdracht.",
+        "en": "I am calling briefly about our group assignment."
+      },
+      {
+        "nl": "Die moeten we dus volgende week maandag inleveren.",
+        "en": "We have to submit it next Monday."
+      },
+      {
+        "nl": "Ik heb vraag één dinsdag al gemaakt.",
+        "en": "I already did question one on Tuesday."
+      },
+      {
+        "nl": "En jij zou dan de derde vraag nog thuis doen.",
+        "en": "And you were going to do the third question at home."
+      },
+      {
+        "nl": "Oh, en de vierde toch?",
+        "en": "Oh, and the fourth one too, right?"
+      },
+      {
+        "nl": "Dan vraag twee, die zouden we samen doen.",
+        "en": "Then question two, we would do that together."
+      },
+      {
+        "nl": "Zullen we vrijdag of zaterdag afspreken?",
+        "en": "Shall we meet on Friday or Saturday?"
+      },
+      {
+        "nl": "Ja, het liefst zaterdag.",
+        "en": "Yes, preferably Saturday."
+      },
+      {
+        "nl": "De school is dan dicht, maar het kan ook wel bij mij thuis.",
+        "en": "The school is closed then, but it is also possible at my home."
+      },
+      {
+        "nl": "Dan kunnen we daarna nog even naar de stad.",
+        "en": "Then afterwards we can go into town for a bit."
+      },
+      {
+        "nl": "Oké, ik eh ja, ik hoor het wel.",
+        "en": "Okay, I, um, yes, I will hear from you."
+      },
+      {
+        "nl": "Bel je even terug.",
+        "en": "Call me back, okay?"
+      },
+      {
+        "nl": "Welke vraag moeten Nika en Marcus samen maken?",
+        "en": "Which question do Nika and Marcus have to do together?"
+      },
+      {
+        "nl": "Op welke dag wil Marcus afspreken?",
+        "en": "On which day does Marcus want to meet?"
+      }
+    ]
+  },
+  {
+    "id": "listen2-9",
+    "les": 209,
+    "exam": "listen2",
+    "examIndex": 9,
+    "label": "L2.9",
+    "title": "L2.9 Drukste dag op Schiphol",
+    "rawTitle": "Drukste dag op Schiphol",
+    "sentences": [
+      {
+        "nl": "Zaïra kijkt naar het journaal op televisie.",
+        "en": "Zaïra watches the news on television."
+      },
+      {
+        "nl": "Gisteren was het de drukste dag van het jaar op Schiphol Airport.",
+        "en": "Yesterday was the busiest day of the year at Schiphol Airport."
+      },
+      {
+        "nl": "Er waren 1300 vluchten.",
+        "en": "There were 1,300 flights."
+      },
+      {
+        "nl": "Er waren ruim 170.000 passagiers op Schiphol, tegenover 180.000 op de drukste dag vorig seizoen.",
+        "en": "There were over 170,000 passengers at Schiphol, compared with 180,000 on the busiest day last season."
+      },
+      {
+        "nl": "Schiphol heeft extra personeel ingezet.",
+        "en": "Schiphol deployed extra staff."
+      },
+      {
+        "nl": "Daarom waren de rijen voor het inchecken niet langer dan normaal.",
+        "en": "Therefore, the queues for check-in were not longer than normal."
+      },
+      {
+        "nl": "Ook de rij bij de paspoortcontrole was niet langer.",
+        "en": "The queue at passport control was not longer either."
+      },
+      {
+        "nl": "Alleen op de parkeerplaats was het lastig om een plek te vinden.",
+        "en": "Only in the parking area was it difficult to find a place."
+      },
+      {
+        "nl": "Alle reizigers kregen gisteren wel gratis ijs.",
+        "en": "All travellers did get free ice cream yesterday."
+      },
+      {
+        "nl": "IJsfabrikant Ola bestond 20 jaar en trakteerde.",
+        "en": "Ice-cream manufacturer Ola had existed for 20 years and treated everyone."
+      },
+      {
+        "nl": "Een hele fijne traktatie op zo'n warme dag.",
+        "en": "A very nice treat on such a warm day."
+      },
+      {
+        "nl": "Wat was er bijzonder aan deze dag op Schiphol?",
+        "en": "What was special about this day at Schiphol?"
+      },
+      {
+        "nl": "Waar hadden reizigers het meeste last van de drukte?",
+        "en": "Where were travellers most bothered by the crowds?"
+      },
+      {
+        "nl": "Waarom kregen de reizigers op Schiphol gratis ijs?",
+        "en": "Why did the travellers at Schiphol get free ice cream?"
+      }
+    ]
   }
 ]

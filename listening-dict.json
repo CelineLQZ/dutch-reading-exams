@@ -1,5 +1,80 @@
 [
   {
+    "nl": "1",
+    "en": "1",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "12",
+    "en": "12",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "1300",
+    "en": "1,300",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "170.000",
+    "en": "170,000",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "180.000",
+    "en": "180,000",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "2",
+    "en": "2",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "2.2",
+    "en": "2.2",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "2.3",
+    "en": "2.3",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "20",
+    "en": "20",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "4",
+    "en": "4",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "a2",
+    "en": "A2",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "a2-niveau",
+    "en": "A2 level",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "a4",
+    "en": "A4",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "a50",
+    "en": "A50",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "aan",
+    "en": "to / at / on",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "aan het eind van de dag",
     "en": "at the end of the day"
   },
@@ -17,6 +92,11 @@
       "past": "meldde aan",
       "perfect": "aangemeld"
     }
+  },
+  {
+    "nl": "aangifte",
+    "en": "registration / declaration",
+    "source": "listening exam 2"
   },
   {
     "nl": "aankomende",
@@ -43,8 +123,18 @@
     "en": "number of"
   },
   {
+    "nl": "ach",
+    "en": "oh well",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "advies",
     "en": "advice"
+  },
+  {
+    "nl": "afdeling",
+    "en": "department",
+    "source": "listening exam 2"
   },
   {
     "nl": "afdelingen",
@@ -65,23 +155,51 @@
     "en": "Africa"
   },
   {
+    "nl": "afspraak",
+    "en": "appointment",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "afspreken",
-    "en": "meet, arrange",
+    "en": "to arrange / meet",
     "pos": "verb",
     "verb": {
       "inf": "afspreken",
       "hij": "spreekt af",
       "past": "sprak af",
       "perfect": "afgesproken"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "agenda",
+    "en": "calendar",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "airport",
+    "en": "airport",
+    "source": "listening exam 2"
   },
   {
     "nl": "al",
-    "en": "already"
+    "en": "already",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "alle",
+    "en": "all",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "alleen",
+    "en": "only",
+    "source": "listening exam 2"
   },
   {
     "nl": "allemaal",
-    "en": "all"
+    "en": "all / all of that",
+    "source": "listening exam 2"
   },
   {
     "nl": "allerlei soorten",
@@ -97,7 +215,8 @@
   },
   {
     "nl": "als",
-    "en": "if"
+    "en": "if / when",
+    "source": "listening exam 2"
   },
   {
     "nl": "als hij af is",
@@ -108,12 +227,32 @@
     "en": "as a homework assignment"
   },
   {
+    "nl": "altijd",
+    "en": "always",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "amsterdam",
+    "en": "Amsterdam",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "andere ouders",
     "en": "other parents"
   },
   {
     "nl": "andere plek",
     "en": "another place"
+  },
+  {
+    "nl": "apeldoorn",
+    "en": "Apeldoorn",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "arnhem",
+    "en": "Arnhem",
+    "source": "listening exam 2"
   },
   {
     "nl": "at",
@@ -127,8 +266,38 @@
     }
   },
   {
+    "nl": "auto's",
+    "en": "cars",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "avondopleiding",
+    "en": "evening course",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "azië",
     "en": "Asia"
+  },
+  {
+    "nl": "b1-niveau",
+    "en": "B1 level",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "baan",
+    "en": "job",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "baas",
+    "en": "boss",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "balie",
+    "en": "counter",
+    "source": "listening exam 2"
   },
   {
     "nl": "basisschool",
@@ -158,14 +327,8 @@
   },
   {
     "nl": "bedankt",
-    "en": "thank you",
-    "pos": "verb",
-    "verb": {
-      "inf": "bedanken",
-      "hij": "bedankt",
-      "past": "bedankte",
-      "perfect": "bedankt"
-    }
+    "en": "thanks",
+    "source": "listening exam 2"
   },
   {
     "nl": "bedankte",
@@ -199,19 +362,24 @@
     "en": "starts"
   },
   {
+    "nl": "bekijkt",
+    "en": "watches / looks at",
+    "pos": "verb",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "bel",
     "en": "call",
-    "pos": "verb",
-    "verb": {
-      "inf": "bellen",
-      "hij": "belt",
-      "past": "belde",
-      "perfect": "gebeld"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "belangrijk",
     "en": "important"
+  },
+  {
+    "nl": "belangrijke",
+    "en": "important",
+    "pos": "adjective"
   },
   {
     "nl": "belde",
@@ -236,15 +404,21 @@
     }
   },
   {
+    "nl": "beller",
+    "en": "caller",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "belt",
-    "en": "to call (phone)",
+    "en": "to call back",
     "pos": "verb",
     "verb": {
-      "inf": "bellen",
-      "hij": "belt",
-      "past": "belde",
-      "perfect": "gebeld"
-    }
+      "inf": "terugbellen",
+      "hij": "belt terug",
+      "past": "belde terug",
+      "perfect": "teruggebeld"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "ben",
@@ -255,7 +429,8 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "bent",
@@ -266,7 +441,8 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "bereik",
@@ -311,6 +487,11 @@
       "past": "bereikte",
       "perfect": "bereikt"
     }
+  },
+  {
+    "nl": "bericht",
+    "en": "message / report",
+    "source": "listening exam 2"
   },
   {
     "nl": "besprak",
@@ -368,6 +549,11 @@
     }
   },
   {
+    "nl": "beste",
+    "en": "best",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "bestel",
     "en": "to order",
     "pos": "verb",
@@ -409,11 +595,13 @@
       "hij": "bestelt",
       "past": "bestelde",
       "perfect": "besteld"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "bestelling",
-    "en": "order"
+    "en": "order",
+    "source": "listening exam 2"
   },
   {
     "nl": "bestelt",
@@ -425,6 +613,11 @@
       "past": "bestelde",
       "perfect": "besteld"
     }
+  },
+  {
+    "nl": "bestond",
+    "en": "existed",
+    "source": "listening exam 2"
   },
   {
     "nl": "betaal",
@@ -482,8 +675,35 @@
     }
   },
   {
+    "nl": "beveiliging",
+    "en": "security",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "bezoekers",
+    "en": "visitors",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "bij",
+    "en": "at / with / near",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "bij ons",
     "en": "at our place"
+  },
+  {
+    "nl": "bijhouden",
+    "en": "to keep / maintain",
+    "pos": "verb",
+    "verb": {
+      "inf": "bijhouden",
+      "hij": "houdt bij",
+      "past": "hield bij",
+      "perfect": "bijgehouden"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "bijna geen",
@@ -491,11 +711,32 @@
   },
   {
     "nl": "bijvoorbeeld",
-    "en": "for example"
+    "en": "for example",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "bijzonder",
+    "en": "special",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "binnen",
+    "en": "inside / arrived",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "binnenkort",
+    "en": "soon",
+    "source": "listening exam 2"
   },
   {
     "nl": "bioscoop",
     "en": "cinema"
+  },
+  {
+    "nl": "blauw",
+    "en": "blue",
+    "source": "listening exam 2"
   },
   {
     "nl": "bleef",
@@ -654,8 +895,18 @@
     "en": "brother"
   },
   {
+    "nl": "brug",
+    "en": "bridge",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "buren",
     "en": "neighbours"
+  },
+  {
+    "nl": "bus",
+    "en": "bus",
+    "source": "listening exam 2"
   },
   {
     "nl": "buurman",
@@ -672,6 +923,11 @@
   {
     "nl": "chauffeurs",
     "en": "drivers"
+  },
+  {
+    "nl": "chris",
+    "en": "Chris",
+    "source": "listening exam 2"
   },
   {
     "nl": "cola light",
@@ -738,6 +994,11 @@
     "en": "course participants"
   },
   {
+    "nl": "cursus",
+    "en": "course",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "cursus engels",
     "en": "English course"
   },
@@ -747,7 +1008,13 @@
   },
   {
     "nl": "daar",
-    "en": "there"
+    "en": "there",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "daarachter",
+    "en": "behind that",
+    "source": "listening exam 2"
   },
   {
     "nl": "daarbij",
@@ -755,15 +1022,22 @@
   },
   {
     "nl": "daarna",
-    "en": "after that, then"
+    "en": "after that / afterwards",
+    "source": "listening exam 2"
   },
   {
     "nl": "daarom",
-    "en": "therefore, that is why"
+    "en": "therefore / that is why",
+    "source": "listening exam 2"
   },
   {
     "nl": "daarover later",
     "en": "more about that later"
+  },
+  {
+    "nl": "daarvoor",
+    "en": "for that",
+    "source": "listening exam 2"
   },
   {
     "nl": "dacht",
@@ -778,11 +1052,18 @@
   },
   {
     "nl": "dag",
-    "en": "bye"
+    "en": "day",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "dagen",
+    "en": "days",
+    "source": "listening exam 2"
   },
   {
     "nl": "dan",
-    "en": "then"
+    "en": "then",
+    "source": "listening exam 2"
   },
   {
     "nl": "dan zijn wij er",
@@ -830,12 +1111,27 @@
     }
   },
   {
+    "nl": "dat",
+    "en": "that / it",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "dat was het",
     "en": "that was it"
   },
   {
     "nl": "dat wel",
     "en": "that is true"
+  },
+  {
+    "nl": "datum",
+    "en": "date",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "de",
+    "en": "the",
+    "source": "listening exam 2"
   },
   {
     "nl": "de natuur in",
@@ -853,15 +1149,14 @@
     }
   },
   {
+    "nl": "delft",
+    "en": "Delft",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "denk",
-    "en": "to think",
-    "pos": "verb",
-    "verb": {
-      "inf": "denken",
-      "hij": "denkt",
-      "past": "dacht",
-      "perfect": "gedacht"
-    }
+    "en": "think",
+    "source": "listening exam 2"
   },
   {
     "nl": "denk ik",
@@ -890,16 +1185,51 @@
     }
   },
   {
+    "nl": "derde",
+    "en": "third",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "dertig",
     "en": "thirty"
+  },
+  {
+    "nl": "deze",
+    "en": "this",
+    "source": "listening exam 2"
   },
   {
     "nl": "deze cursus",
     "en": "this course"
   },
   {
+    "nl": "dicht",
+    "en": "closed",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "die",
+    "en": "that / those / it",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "dikke",
     "en": "thick ones"
+  },
+  {
+    "nl": "dinsdag",
+    "en": "Tuesday",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "directeur",
+    "en": "director",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "dit",
+    "en": "this",
+    "source": "listening exam 2"
   },
   {
     "nl": "docent",
@@ -925,7 +1255,8 @@
       "hij": "doet",
       "past": "deed",
       "perfect": "gedaan"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "doet",
@@ -936,11 +1267,17 @@
       "hij": "doet",
       "past": "deed",
       "perfect": "gedaan"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "doet een cursus",
     "en": "is taking a course"
+  },
+  {
+    "nl": "door",
+    "en": "through / by",
+    "source": "listening exam 2"
   },
   {
     "nl": "doordat",
@@ -967,6 +1304,23 @@
       "past": "las door",
       "perfect": "doorgelezen"
     }
+  },
+  {
+    "nl": "doorrijden",
+    "en": "continue driving",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "doorverbinden",
+    "en": "to put through / connect",
+    "pos": "verb",
+    "verb": {
+      "inf": "doorverbinden",
+      "hij": "verbindt door",
+      "past": "verbond door",
+      "perfect": "doorverbonden"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "draai",
@@ -1013,8 +1367,33 @@
     }
   },
   {
+    "nl": "drie",
+    "en": "three",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "drie maanden",
     "en": "three months"
+  },
+  {
+    "nl": "druk",
+    "en": "busy",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "drukke",
+    "en": "busy",
+    "pos": "adjective"
+  },
+  {
+    "nl": "drukste",
+    "en": "busiest",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "drukte",
+    "en": "crowds / busyness",
+    "source": "listening exam 2"
   },
   {
     "nl": "duren",
@@ -1026,6 +1405,11 @@
       "past": "duurde",
       "perfect": "geduurd"
     }
+  },
+  {
+    "nl": "dus",
+    "en": "so",
+    "source": "listening exam 2"
   },
   {
     "nl": "dus niet",
@@ -1055,18 +1439,18 @@
   },
   {
     "nl": "duurt",
-    "en": "takes, lasts",
-    "pos": "verb",
-    "verb": {
-      "inf": "duren",
-      "hij": "duurt",
-      "past": "duurde",
-      "perfect": "geduurd"
-    }
+    "en": "lasts",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "e-mail",
+    "en": "email",
+    "source": "listening exam 2"
   },
   {
     "nl": "echt",
-    "en": "really"
+    "en": "really",
+    "source": "listening exam 2"
   },
   {
     "nl": "echte",
@@ -1084,16 +1468,28 @@
     }
   },
   {
+    "nl": "een",
+    "en": "a / an / one",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "één",
+    "en": "one",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "een paar",
     "en": "a few"
   },
   {
     "nl": "eerst",
-    "en": "first"
+    "en": "first",
+    "source": "listening exam 2"
   },
   {
     "nl": "eerste",
-    "en": "first"
+    "en": "first",
+    "source": "listening exam 2"
   },
   {
     "nl": "eerste verdieping",
@@ -1109,6 +1505,16 @@
       "past": "at",
       "perfect": "gegeten"
     }
+  },
+  {
+    "nl": "eh",
+    "en": "um",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "eieren",
+    "en": "eggs",
+    "source": "listening exam 2"
   },
   {
     "nl": "eigen",
@@ -1163,6 +1569,16 @@
     }
   },
   {
+    "nl": "en",
+    "en": "and",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "er",
+    "en": "there",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "er moet komen",
     "en": "there has to come / there needs to be"
   },
@@ -1173,6 +1589,21 @@
   {
     "nl": "er zijn nog",
     "en": "there are still"
+  },
+  {
+    "nl": "eren",
+    "en": "Eren",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "eric",
+    "en": "Eric",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ervaring",
+    "en": "experience",
+    "source": "listening exam 2"
   },
   {
     "nl": "eten",
@@ -1186,6 +1617,16 @@
     }
   },
   {
+    "nl": "evelien",
+    "en": "Evelien",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "even",
+    "en": "briefly / just",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "even kijken",
     "en": "let me see"
   },
@@ -1196,6 +1637,16 @@
   {
     "nl": "examen",
     "en": "exam"
+  },
+  {
+    "nl": "examens",
+    "en": "exams",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "extra",
+    "en": "extra",
+    "source": "listening exam 2"
   },
   {
     "nl": "extra oefening",
@@ -1215,12 +1666,42 @@
     "en": "bicycle"
   },
   {
+    "nl": "fijn",
+    "en": "nice",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "fijne",
+    "en": "nice",
+    "pos": "adjective"
+  },
+  {
+    "nl": "file",
+    "en": "traffic jam",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "files",
+    "en": "traffic jams",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "filmpje",
+    "en": "short video",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "filmpjes",
     "en": "short videos"
   },
   {
     "nl": "flessen",
     "en": "bottles"
+  },
+  {
+    "nl": "formulier",
+    "en": "form",
+    "source": "listening exam 2"
   },
   {
     "nl": "fout",
@@ -1241,6 +1722,18 @@
   {
     "nl": "frikandellen",
     "en": "Dutch minced-meat snacks"
+  },
+  {
+    "nl": "ga",
+    "en": "to go",
+    "pos": "verb",
+    "verb": {
+      "inf": "gaan",
+      "hij": "gaat",
+      "past": "ging",
+      "perfect": "gegaan"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "ga over naar",
@@ -1277,7 +1770,8 @@
       "hij": "gaat",
       "past": "ging",
       "perfect": "gegaan"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "gaat open",
@@ -1310,6 +1804,18 @@
     }
   },
   {
+    "nl": "gebeuren",
+    "en": "to happen",
+    "pos": "verb",
+    "verb": {
+      "inf": "gebeuren",
+      "hij": "gebeurt",
+      "past": "gebeurde",
+      "perfect": "gebeurd"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "gebleven",
     "en": "to stay / remain",
     "pos": "verb",
@@ -1319,6 +1825,16 @@
       "past": "bleef",
       "perfect": "gebleven"
     }
+  },
+  {
+    "nl": "geboorte",
+    "en": "birth",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "gebouw",
+    "en": "building",
+    "source": "listening exam 2"
   },
   {
     "nl": "gebracht",
@@ -1476,7 +1992,24 @@
       "hij": "geeft",
       "past": "gaf",
       "perfect": "gegeven"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "geëindigd",
+    "en": "to end",
+    "pos": "verb",
+    "verb": {
+      "inf": "eindigen",
+      "hij": "eindigt",
+      "past": "eindigde",
+      "perfect": "geëindigd"
     }
+  },
+  {
+    "nl": "geen",
+    "en": "no",
+    "source": "listening exam 2"
   },
   {
     "nl": "geen bussen",
@@ -1488,7 +2021,8 @@
   },
   {
     "nl": "gefeliciteerd",
-    "en": "congratulations"
+    "en": "congratulations",
+    "source": "listening exam 2"
   },
   {
     "nl": "gegaan",
@@ -1675,7 +2209,8 @@
       "hij": "krijgt",
       "past": "kreeg",
       "perfect": "gekregen"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "gekund",
@@ -1701,14 +2236,15 @@
   },
   {
     "nl": "geleerd",
-    "en": "to learn / teach",
+    "en": "to learn / study",
     "pos": "verb",
     "verb": {
       "inf": "leren",
       "hij": "leert",
       "past": "leerde",
       "perfect": "geleerd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "gelegd",
@@ -1760,14 +2296,15 @@
   },
   {
     "nl": "gemaakt",
-    "en": "repaired, made",
+    "en": "to make / do",
     "pos": "verb",
     "verb": {
       "inf": "maken",
       "hij": "maakt",
       "past": "maakte",
       "perfect": "gemaakt"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "gemaild",
@@ -1782,7 +2319,18 @@
   },
   {
     "nl": "gemeente",
-    "en": "municipality"
+    "en": "municipality / municipal office",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "gemeentehuis",
+    "en": "municipal office / town hall",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "gemeentewerknemer",
+    "en": "municipal employee",
+    "source": "listening exam 2"
   },
   {
     "nl": "gemeld",
@@ -1938,6 +2486,11 @@
     }
   },
   {
+    "nl": "gesprek",
+    "en": "conversation / interview",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "gesproken",
     "en": "to speak",
     "pos": "verb",
@@ -1979,7 +2532,13 @@
       "hij": "stuurt",
       "past": "stuurde",
       "perfect": "gestuurd"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "getrouwd",
+    "en": "married",
+    "pos": "adjective"
   },
   {
     "nl": "gevaar",
@@ -1994,7 +2553,8 @@
       "hij": "geeft",
       "past": "gaf",
       "perfect": "gegeven"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "geven aan",
@@ -2117,7 +2677,8 @@
   },
   {
     "nl": "gewoon",
-    "en": "just, simply"
+    "en": "simply",
+    "source": "listening exam 2"
   },
   {
     "nl": "gewoond",
@@ -2194,17 +2755,6 @@
     }
   },
   {
-    "nl": "geëindigd",
-    "en": "to end",
-    "pos": "verb",
-    "verb": {
-      "inf": "eindigen",
-      "hij": "eindigt",
-      "past": "eindigde",
-      "perfect": "geëindigd"
-    }
-  },
-  {
     "nl": "ging",
     "en": "to go",
     "pos": "verb",
@@ -2216,8 +2766,19 @@
     }
   },
   {
+    "nl": "gisteren",
+    "en": "yesterday",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "giulia",
+    "en": "Giulia",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "goed",
-    "en": "good"
+    "en": "good",
+    "source": "listening exam 2"
   },
   {
     "nl": "goed geschreven",
@@ -2228,6 +2789,11 @@
     "en": "good idea"
   },
   {
+    "nl": "goede",
+    "en": "good",
+    "pos": "adjective"
+  },
+  {
     "nl": "goede oefening",
     "en": "good practice"
   },
@@ -2236,8 +2802,28 @@
     "en": "would like, please"
   },
   {
+    "nl": "gratis",
+    "en": "free",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "grijze",
     "en": "grey ones"
+  },
+  {
+    "nl": "groene",
+    "en": "green",
+    "pos": "adjective"
+  },
+  {
+    "nl": "groepsopdracht",
+    "en": "group assignment",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "groot",
+    "en": "large",
+    "source": "listening exam 2"
   },
   {
     "nl": "groothandel",
@@ -2281,6 +2867,11 @@
     }
   },
   {
+    "nl": "haar",
+    "en": "her",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "had",
     "en": "to have",
     "pos": "verb",
@@ -2289,7 +2880,8 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "hadden",
@@ -2300,7 +2892,8 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "hadden afgesproken",
@@ -2322,6 +2915,11 @@
     }
   },
   {
+    "nl": "half",
+    "en": "half",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "half negen",
     "en": "half past eight"
   },
@@ -2334,8 +2932,32 @@
     "en": "half an hour"
   },
   {
+    "nl": "handig",
+    "en": "useful",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "handige",
+    "en": "useful",
+    "pos": "adjective"
+  },
+  {
+    "nl": "handigste",
+    "en": "most convenient",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "hartstikke",
     "en": "very, really"
+  },
+  {
+    "nl": "hé",
+    "en": "hey"
+  },
+  {
+    "nl": "hè",
+    "en": "right?",
+    "source": "listening exam 2"
   },
   {
     "nl": "heb",
@@ -2346,7 +2968,8 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "hebben",
@@ -2357,7 +2980,8 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "hebt",
@@ -2368,7 +2992,8 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "heef",
@@ -2390,11 +3015,27 @@
       "hij": "heeft",
       "past": "had",
       "perfect": "gehad"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "heel",
+    "en": "very / a lot",
+    "source": "listening exam 2"
   },
   {
     "nl": "heel goed",
     "en": "very well"
+  },
+  {
+    "nl": "helaas",
+    "en": "unfortunately",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "hele",
+    "en": "very / whole",
+    "pos": "adjective"
   },
   {
     "nl": "hele klas",
@@ -2421,14 +3062,15 @@
   },
   {
     "nl": "helpen",
-    "en": "help",
+    "en": "to help",
     "pos": "verb",
     "verb": {
       "inf": "helpen",
       "hij": "helpt",
       "past": "hielp",
       "perfect": "geholpen"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "helpen bij",
@@ -2447,11 +3089,27 @@
       "hij": "helpt",
       "past": "hielp",
       "perfect": "geholpen"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "het",
+    "en": "the / it",
+    "source": "listening exam 2"
   },
   {
     "nl": "het beste",
     "en": "the best"
+  },
+  {
+    "nl": "hey",
+    "en": "hey",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "hi",
+    "en": "hi",
+    "source": "listening exam 2"
   },
   {
     "nl": "hield",
@@ -2476,8 +3134,28 @@
     }
   },
   {
+    "nl": "hier",
+    "en": "here",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "hiervoor",
     "en": "for this"
+  },
+  {
+    "nl": "hij",
+    "en": "he",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "hm",
+    "en": "hmm",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "hoe",
+    "en": "how",
+    "source": "listening exam 2"
   },
   {
     "nl": "hoe gaat het",
@@ -2534,11 +3212,18 @@
       "hij": "hoeft",
       "past": "hoefde",
       "perfect": "gehoeven"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "hoelang",
+    "en": "how long",
+    "source": "listening exam 2"
   },
   {
     "nl": "hoeveel",
-    "en": "how many"
+    "en": "how many",
+    "source": "listening exam 2"
   },
   {
     "nl": "hoeveel plaatsen zijn er nog?",
@@ -2598,14 +3283,9 @@
   },
   {
     "nl": "hoor",
-    "en": "to hear",
+    "en": "hear",
     "pos": "verb",
-    "verb": {
-      "inf": "horen",
-      "hij": "hoort",
-      "past": "hoorde",
-      "perfect": "gehoord"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "hoorde",
@@ -2621,13 +3301,7 @@
   {
     "nl": "hoort",
     "en": "hears",
-    "pos": "verb",
-    "verb": {
-      "inf": "horen",
-      "hij": "hoort",
-      "past": "hoorde",
-      "perfect": "gehoord"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "hopen",
@@ -2685,6 +3359,11 @@
     }
   },
   {
+    "nl": "huis",
+    "en": "house",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "huisadres",
     "en": "home address"
   },
@@ -2693,51 +3372,117 @@
     "en": "homework assignment"
   },
   {
-    "nl": "hè",
-    "en": "right, isn’t it"
-  },
-  {
-    "nl": "hé",
-    "en": "hey"
-  },
-  {
     "nl": "iedereen",
     "en": "everyone"
   },
   {
     "nl": "iemand",
-    "en": "someone"
+    "en": "someone",
+    "source": "listening exam 2"
   },
   {
     "nl": "iemand anders",
     "en": "someone else"
   },
   {
+    "nl": "iets",
+    "en": "something",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "iets te vieren",
     "en": "something to celebrate"
+  },
+  {
+    "nl": "ijs",
+    "en": "ice cream",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ijsfabrikant",
+    "en": "ice-cream manufacturer",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ik",
+    "en": "I",
+    "source": "listening exam 2"
   },
   {
     "nl": "ik bel even",
     "en": "I am calling quickly"
   },
   {
+    "nl": "in",
+    "en": "in",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "in gevaar",
     "en": "in danger"
   },
   {
+    "nl": "inchecken",
+    "en": "checking in",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "informatie",
+    "en": "information",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "ingeschreven",
-    "en": "to register / enrol",
+    "en": "registered",
     "pos": "verb",
-    "verb": {
-      "inf": "inschrijven",
-      "hij": "schrijft in",
-      "past": "schreef in",
-      "perfect": "ingeschreven"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "ingesproken",
-    "en": "spoken in, recorded"
+    "en": "recorded / left",
+    "pos": "verb",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ingezet",
+    "en": "to deploy / use",
+    "pos": "verb",
+    "verb": {
+      "inf": "inzetten",
+      "hij": "zet in",
+      "past": "zette in",
+      "perfect": "ingezet"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "inkoop",
+    "en": "purchasing",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "inleveren",
+    "en": "to hand in / submit",
+    "pos": "verb",
+    "verb": {
+      "inf": "inleveren",
+      "hij": "levert in",
+      "past": "leverde in",
+      "perfect": "ingeleverd"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "inrijden",
+    "en": "to drive into",
+    "pos": "verb",
+    "verb": {
+      "inf": "inrijden",
+      "hij": "rijdt in",
+      "past": "reed in",
+      "perfect": "ingereden"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "inschrijven",
@@ -2751,8 +3496,14 @@
     }
   },
   {
+    "nl": "interesse",
+    "en": "interest",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "internet",
-    "en": "internet"
+    "en": "internet",
+    "source": "listening exam 2"
   },
   {
     "nl": "is",
@@ -2763,15 +3514,51 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ja",
+    "en": "yes",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "jaar",
+    "en": "year",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "je",
+    "en": "you",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "jij",
+    "en": "you",
+    "source": "listening exam 2"
   },
   {
     "nl": "joh",
     "en": "man, mate, informal emphasis"
   },
   {
+    "nl": "journaal",
+    "en": "news",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "jouw",
+    "en": "your",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "jullie gaan helpen",
     "en": "you are going to help"
+  },
+  {
+    "nl": "kamer",
+    "en": "room",
+    "source": "listening exam 2"
   },
   {
     "nl": "kan",
@@ -2785,12 +3572,22 @@
     }
   },
   {
+    "nl": "kantine",
+    "en": "canteen",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "kantoor",
     "en": "office"
   },
   {
     "nl": "kapot gegaan",
     "en": "has broken"
+  },
+  {
+    "nl": "kapotte",
+    "en": "broken-down",
+    "pos": "adjective"
   },
   {
     "nl": "keek",
@@ -2802,6 +3599,11 @@
       "past": "keek",
       "perfect": "gekeken"
     }
+  },
+  {
+    "nl": "keer",
+    "en": "time",
+    "source": "listening exam 2"
   },
   {
     "nl": "ken",
@@ -2835,6 +3637,11 @@
       "past": "kende",
       "perfect": "gekend"
     }
+  },
+  {
+    "nl": "kennismakingsgesprek",
+    "en": "introductory interview",
+    "source": "listening exam 2"
   },
   {
     "nl": "kent",
@@ -2904,11 +3711,17 @@
       "hij": "kijkt",
       "past": "keek",
       "perfect": "gekeken"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "kijkt naar",
     "en": "watches, looks at"
+  },
+  {
+    "nl": "kilometer",
+    "en": "kilometre",
+    "source": "listening exam 2"
   },
   {
     "nl": "kinderen",
@@ -2945,6 +3758,11 @@
     "en": "customer"
   },
   {
+    "nl": "klein",
+    "en": "small",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "klussen",
     "en": "do DIY work",
     "pos": "verb",
@@ -2976,6 +3794,11 @@
       "past": "kluste",
       "perfect": "geklust"
     }
+  },
+  {
+    "nl": "koksopleiding",
+    "en": "cooking course",
+    "source": "listening exam 2"
   },
   {
     "nl": "kom",
@@ -3118,6 +3941,11 @@
     }
   },
   {
+    "nl": "kracht",
+    "en": "Kracht",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "kreeg",
     "en": "to get / receive",
     "pos": "verb",
@@ -3127,6 +3955,18 @@
       "past": "kreeg",
       "perfect": "gekregen"
     }
+  },
+  {
+    "nl": "kregen",
+    "en": "to get / receive",
+    "pos": "verb",
+    "verb": {
+      "inf": "krijgen",
+      "hij": "krijgt",
+      "past": "kreeg",
+      "perfect": "gekregen"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "krijg",
@@ -3159,7 +3999,8 @@
       "hij": "krijgt",
       "past": "kreeg",
       "perfect": "gekregen"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "kroketten",
@@ -3174,7 +4015,8 @@
       "hij": "kan",
       "past": "kon",
       "perfect": "gekund"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "kunnen",
@@ -3247,8 +4089,23 @@
     }
   },
   {
+    "nl": "laatste",
+    "en": "last",
+    "pos": "adjective"
+  },
+  {
     "nl": "laatste opdracht",
     "en": "last assignment"
+  },
+  {
+    "nl": "lang",
+    "en": "long",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "langer",
+    "en": "longer",
+    "source": "listening exam 2"
   },
   {
     "nl": "las",
@@ -3260,6 +4117,16 @@
       "past": "las",
       "perfect": "gelezen"
     }
+  },
+  {
+    "nl": "last",
+    "en": "bother / trouble",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "lastig",
+    "en": "difficult",
+    "source": "listening exam 2"
   },
   {
     "nl": "laten",
@@ -3304,14 +4171,15 @@
   },
   {
     "nl": "leert",
-    "en": "to learn / teach",
+    "en": "to learn / study",
     "pos": "verb",
     "verb": {
       "inf": "leren",
       "hij": "leert",
       "past": "leerde",
       "perfect": "geleerd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "lees",
@@ -3369,6 +4237,11 @@
     }
   },
   {
+    "nl": "legitimatiebewijs",
+    "en": "identity document",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "legt",
     "en": "to lay / put",
     "pos": "verb",
@@ -3380,6 +4253,11 @@
     }
   },
   {
+    "nl": "leidinggevende",
+    "en": "supervisor / manager",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "lekkere",
     "en": "tasty"
   },
@@ -3389,14 +4267,15 @@
   },
   {
     "nl": "leren",
-    "en": "to learn / teach",
+    "en": "to learn / study",
     "pos": "verb",
     "verb": {
       "inf": "leren",
       "hij": "leert",
       "past": "leerde",
       "perfect": "geleerd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "les",
@@ -3415,6 +4294,18 @@
     "en": "nice day"
   },
   {
+    "nl": "lever",
+    "en": "to hand in / submit",
+    "pos": "verb",
+    "verb": {
+      "inf": "inleveren",
+      "hij": "levert in",
+      "past": "leverde in",
+      "perfect": "ingeleverd"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "lezen",
     "en": "to read",
     "pos": "verb",
@@ -3428,6 +4319,11 @@
   {
     "nl": "lied",
     "en": "song"
+  },
+  {
+    "nl": "liefst",
+    "en": "preferably",
+    "source": "listening exam 2"
   },
   {
     "nl": "liep",
@@ -3452,6 +4348,40 @@
     }
   },
   {
+    "nl": "liggen",
+    "en": "to lie / be located",
+    "pos": "verb",
+    "verb": {
+      "inf": "liggen",
+      "hij": "ligt",
+      "past": "lag",
+      "perfect": "gelegen"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ligt",
+    "en": "to lie / be located",
+    "pos": "verb",
+    "verb": {
+      "inf": "liggen",
+      "hij": "ligt",
+      "past": "lag",
+      "perfect": "gelegen"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "links",
+    "en": "left",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "linksaf",
+    "en": "left / turn left",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "lokaal",
     "en": "classroom, room"
   },
@@ -3468,14 +4398,9 @@
   },
   {
     "nl": "loopt",
-    "en": "to walk",
+    "en": "walks / does",
     "pos": "verb",
-    "verb": {
-      "inf": "lopen",
-      "hij": "loopt",
-      "past": "liep",
-      "perfect": "gelopen"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "lopen",
@@ -3534,11 +4459,17 @@
       "hij": "luistert",
       "past": "luisterde",
       "perfect": "geluisterd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "luistert naar",
     "en": "listens to"
+  },
+  {
+    "nl": "m",
+    "en": "it / him",
+    "source": "listening exam 2"
   },
   {
     "nl": "maak",
@@ -3553,14 +4484,15 @@
   },
   {
     "nl": "maakt",
-    "en": "to make",
+    "en": "to make / do",
     "pos": "verb",
     "verb": {
       "inf": "maken",
       "hij": "maakt",
       "past": "maakte",
       "perfect": "gemaakt"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "maakte",
@@ -3572,6 +4504,21 @@
       "past": "maakte",
       "perfect": "gemaakt"
     }
+  },
+  {
+    "nl": "maandag",
+    "en": "Monday",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "maanden",
+    "en": "months",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "maar",
+    "en": "but",
+    "source": "listening exam 2"
   },
   {
     "nl": "maar ja",
@@ -3590,7 +4537,8 @@
       "hij": "mag",
       "past": "mocht",
       "perfect": "gemogen"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "magazijn",
@@ -3641,19 +4589,45 @@
     }
   },
   {
+    "nl": "mailtje",
+    "en": "little email",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "maken",
-    "en": "to make",
+    "en": "to make / do",
     "pos": "verb",
     "verb": {
       "inf": "maken",
       "hij": "maakt",
       "past": "maakte",
       "perfect": "gemaakt"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "maken we",
     "en": "we make"
+  },
+  {
+    "nl": "marcus",
+    "en": "Marcus",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "mario",
+    "en": "Mario",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "mark",
+    "en": "Mark",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "materiaal",
+    "en": "materials",
+    "source": "listening exam 2"
   },
   {
     "nl": "mayonaise",
@@ -3661,7 +4635,13 @@
   },
   {
     "nl": "medecursist",
-    "en": "fellow student"
+    "en": "fellow student",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "medecursisten",
+    "en": "fellow students",
+    "source": "listening exam 2"
   },
   {
     "nl": "meegenomen",
@@ -3680,14 +4660,25 @@
   },
   {
     "nl": "meenemen",
-    "en": "bring",
+    "en": "to bring along",
     "pos": "verb",
     "verb": {
       "inf": "meenemen",
       "hij": "neemt mee",
       "past": "nam mee",
       "perfect": "meegenomen"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "meestal",
+    "en": "usually",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "meeste",
+    "en": "most",
+    "source": "listening exam 2"
   },
   {
     "nl": "meeste fouten",
@@ -3743,7 +4734,13 @@
   },
   {
     "nl": "mensen",
-    "en": "people"
+    "en": "people",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "met",
+    "en": "with",
+    "source": "listening exam 2"
   },
   {
     "nl": "met ons mee",
@@ -3754,8 +4751,24 @@
     "en": "it’s Zineb"
   },
   {
+    "nl": "meteen",
+    "en": "immediately",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "mij",
+    "en": "me",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "mira",
+    "en": "Mira",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "misschien",
-    "en": "maybe"
+    "en": "maybe",
+    "source": "listening exam 2"
   },
   {
     "nl": "mocht",
@@ -3803,18 +4816,20 @@
       "hij": "moet",
       "past": "moest",
       "perfect": "gemoeten"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "moeten",
-    "en": "must, have to",
+    "en": "must / have to",
     "pos": "verb",
     "verb": {
       "inf": "moeten",
       "hij": "moet",
       "past": "moest",
       "perfect": "gemoeten"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "mogen",
@@ -3837,7 +4852,8 @@
   },
   {
     "nl": "morgen",
-    "en": "tomorrow"
+    "en": "tomorrow",
+    "source": "listening exam 2"
   },
   {
     "nl": "morgenavond",
@@ -3848,12 +4864,27 @@
     "en": "walls"
   },
   {
+    "nl": "na",
+    "en": "after",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "na het eten",
     "en": "after dinner"
   },
   {
     "nl": "na het ontbijt",
     "en": "after breakfast"
+  },
+  {
+    "nl": "naam",
+    "en": "name",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "naar",
+    "en": "to",
+    "source": "listening exam 2"
   },
   {
     "nl": "naar buiten",
@@ -3866,6 +4897,11 @@
   {
     "nl": "naartoe",
     "en": "to, towards"
+  },
+  {
+    "nl": "nabil",
+    "en": "Nabil",
+    "source": "listening exam 2"
   },
   {
     "nl": "nam",
@@ -3881,6 +4917,16 @@
   {
     "nl": "natuurproject",
     "en": "nature project"
+  },
+  {
+    "nl": "nederlands",
+    "en": "Dutch",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "nee",
+    "en": "no",
+    "source": "listening exam 2"
   },
   {
     "nl": "nee hoor",
@@ -3906,7 +4952,8 @@
       "hij": "neemt",
       "past": "nam",
       "perfect": "genomen"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "nemen",
@@ -3920,12 +4967,22 @@
     }
   },
   {
+    "nl": "niet",
+    "en": "not",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "niet eens",
     "en": "not even"
   },
   {
     "nl": "nieuw bericht",
     "en": "new message"
+  },
+  {
+    "nl": "nieuwe",
+    "en": "new",
+    "pos": "adjective"
   },
   {
     "nl": "nieuwe cursussen",
@@ -3942,6 +4999,16 @@
   {
     "nl": "nieuws",
     "en": "news"
+  },
+  {
+    "nl": "nika",
+    "en": "Nika",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "nodig",
+    "en": "needed / necessary",
+    "pos": "adjective"
   },
   {
     "nl": "nodig uit",
@@ -3981,6 +5048,11 @@
     }
   },
   {
+    "nl": "nog",
+    "en": "still / more / yet",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "nog eens",
     "en": "once more, again"
   },
@@ -3997,8 +5069,28 @@
     "en": "still no"
   },
   {
+    "nl": "normaal",
+    "en": "normal",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "noten",
     "en": "nuts"
+  },
+  {
+    "nl": "nou",
+    "en": "well",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ns-bussen",
+    "en": "NS buses",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "nu",
+    "en": "now",
+    "source": "listening exam 2"
   },
   {
     "nl": "oefen",
@@ -4042,11 +5134,37 @@
       "hij": "oefent",
       "past": "oefende",
       "perfect": "geoefend"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "of",
+    "en": "or",
+    "source": "listening exam 2"
   },
   {
     "nl": "of zo",
     "en": "or something like that"
+  },
+  {
+    "nl": "oh",
+    "en": "oh",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "oké",
+    "en": "okay",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ola",
+    "en": "Ola",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "om",
+    "en": "to / in order to",
+    "source": "listening exam 2"
   },
   {
     "nl": "om 1 uur",
@@ -4065,6 +5183,12 @@
     "en": "at 8 o’clock"
   },
   {
+    "nl": "omgevallen",
+    "en": "overturned",
+    "pos": "verb",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "omroepbericht",
     "en": "public announcement"
   },
@@ -4073,8 +5197,28 @@
     "en": "be under water"
   },
   {
+    "nl": "onderweg",
+    "en": "on the way",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ongeluk",
+    "en": "accident",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "onhandig",
     "en": "inconvenient"
+  },
+  {
+    "nl": "online",
+    "en": "online",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ons",
+    "en": "us / our",
+    "source": "listening exam 2"
   },
   {
     "nl": "ontbeet",
@@ -4132,8 +5276,24 @@
     }
   },
   {
+    "nl": "onze",
+    "en": "our",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "ook",
-    "en": "also, too"
+    "en": "also / too",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "oorzaak",
+    "en": "cause",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "op",
+    "en": "on / at",
+    "source": "listening exam 2"
   },
   {
     "nl": "op school",
@@ -4149,14 +5309,8 @@
   },
   {
     "nl": "open",
-    "en": "to open",
-    "pos": "verb",
-    "verb": {
-      "inf": "openen",
-      "hij": "opent",
-      "past": "opende",
-      "perfect": "geopend"
-    }
+    "en": "open",
+    "source": "listening exam 2"
   },
   {
     "nl": "opende",
@@ -4214,6 +5368,28 @@
     }
   },
   {
+    "nl": "opleiding",
+    "en": "course / training",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "opnemen",
+    "en": "to answer / record",
+    "pos": "verb",
+    "verb": {
+      "inf": "opnemen",
+      "hij": "neemt op",
+      "past": "nam op",
+      "perfect": "opgenomen"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "over",
+    "en": "about / in / across",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "over de hele wereld",
     "en": "all over the world"
   },
@@ -4230,20 +5406,62 @@
     "en": "about tonight"
   },
   {
+    "nl": "overkant",
+    "en": "other side",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "overstroomd",
     "en": "flooded"
+  },
+  {
+    "nl": "pakket",
+    "en": "package",
+    "source": "listening exam 2"
   },
   {
     "nl": "park",
     "en": "park"
   },
   {
+    "nl": "parkeergarage",
+    "en": "parking garage",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "parkeerplaats",
+    "en": "parking lot",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "parkeerplaatsen",
     "en": "parking spaces"
   },
   {
+    "nl": "parkeren",
+    "en": "to park",
+    "pos": "verb",
+    "verb": {
+      "inf": "parkeren",
+      "hij": "parkeert",
+      "past": "parkeerde",
+      "perfect": "geparkeerd"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "pas donderdag",
     "en": "only on Thursday"
+  },
+  {
+    "nl": "paspoortcontrole",
+    "en": "passport control",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "passagiers",
+    "en": "passengers",
+    "source": "listening exam 2"
   },
   {
     "nl": "passen",
@@ -4291,12 +5509,37 @@
     "en": "patients"
   },
   {
+    "nl": "pauze",
+    "en": "break",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "pennen",
+    "en": "pens",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "per",
+    "en": "by / per",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "personeel",
+    "en": "staff",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "pizzeria",
     "en": "pizzeria"
   },
   {
     "nl": "plaatsen",
     "en": "places"
+  },
+  {
+    "nl": "plek",
+    "en": "place",
+    "source": "listening exam 2"
   },
   {
     "nl": "postadres",
@@ -4341,14 +5584,8 @@
   },
   {
     "nl": "praten",
-    "en": "to talk",
-    "pos": "verb",
-    "verb": {
-      "inf": "praten",
-      "hij": "praat",
-      "past": "praatte",
-      "perfect": "gepraat"
-    }
+    "en": "talk",
+    "source": "listening exam 2"
   },
   {
     "nl": "praten met",
@@ -4360,15 +5597,51 @@
   },
   {
     "nl": "precies",
-    "en": "exactly"
+    "en": "exactly",
+    "source": "listening exam 2"
   },
   {
     "nl": "prijs",
     "en": "prize"
   },
   {
+    "nl": "productie",
+    "en": "production",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "project",
     "en": "project"
+  },
+  {
+    "nl": "radio",
+    "en": "radio",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "receptie",
+    "en": "reception",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "rechtdoor",
+    "en": "straight ahead",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "rechterkant",
+    "en": "right-hand side",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "rechts",
+    "en": "right",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "rechtsaf",
+    "en": "turn right",
+    "source": "listening exam 2"
   },
   {
     "nl": "reed",
@@ -4380,6 +5653,28 @@
       "past": "reed",
       "perfect": "gereden"
     }
+  },
+  {
+    "nl": "regel",
+    "en": "rule",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "reizen",
+    "en": "to travel",
+    "pos": "verb",
+    "verb": {
+      "inf": "reizen",
+      "hij": "reist",
+      "past": "reisde",
+      "perfect": "gereisd"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "reizigers",
+    "en": "travellers",
+    "source": "listening exam 2"
   },
   {
     "nl": "rekening",
@@ -4478,6 +5773,11 @@
     "en": "restaurant"
   },
   {
+    "nl": "rij",
+    "en": "queue",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "rijd",
     "en": "to drive / ride",
     "pos": "verb",
@@ -4490,14 +5790,15 @@
   },
   {
     "nl": "rijden",
-    "en": "to drive / ride",
+    "en": "to drive / run",
     "pos": "verb",
     "verb": {
       "inf": "rijden",
       "hij": "rijdt",
       "past": "reed",
       "perfect": "gereden"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "rijdt",
@@ -4511,8 +5812,29 @@
     }
   },
   {
+    "nl": "rijen",
+    "en": "queues",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "roman",
+    "en": "Roman",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "rotterdam",
+    "en": "Rotterdam",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ruim",
+    "en": "over / more than",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "samen",
-    "en": "together"
+    "en": "together",
+    "source": "listening exam 2"
   },
   {
     "nl": "schilder",
@@ -4559,6 +5881,38 @@
     }
   },
   {
+    "nl": "schiphol",
+    "en": "Schiphol",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "school",
+    "en": "school",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "schoongemaakt",
+    "en": "to clean",
+    "pos": "verb",
+    "verb": {
+      "inf": "schoonmaken",
+      "hij": "maakt schoon",
+      "past": "maakte schoon",
+      "perfect": "schoongemaakt"
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "schoonmaak",
+    "en": "cleaning",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "schoonmaakwerk",
+    "en": "cleaning work",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "schreef",
     "en": "to write",
     "pos": "verb",
@@ -4571,14 +5925,8 @@
   },
   {
     "nl": "schrijf",
-    "en": "to write",
-    "pos": "verb",
-    "verb": {
-      "inf": "schrijven",
-      "hij": "schrijft",
-      "past": "schreef",
-      "perfect": "geschreven"
-    }
+    "en": "write",
+    "source": "listening exam 2"
   },
   {
     "nl": "schrijfbak",
@@ -4611,6 +5959,11 @@
     }
   },
   {
+    "nl": "seizoen",
+    "en": "season",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "slapen",
     "en": "sleep"
   },
@@ -4624,6 +5977,11 @@
       "past": "sloot",
       "perfect": "gesloten"
     }
+  },
+  {
+    "nl": "slotte",
+    "en": "end",
+    "source": "listening exam 2"
   },
   {
     "nl": "slui",
@@ -4678,6 +6036,11 @@
     }
   },
   {
+    "nl": "snelweg",
+    "en": "motorway",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "snijd",
     "en": "to cut",
     "pos": "verb",
@@ -4715,6 +6078,11 @@
     "en": "sometimes"
   },
   {
+    "nl": "sophia",
+    "en": "Sophia",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "spelfouten",
     "en": "spelling mistakes"
   },
@@ -4743,14 +6111,8 @@
   },
   {
     "nl": "spreek",
-    "en": "to speak",
-    "pos": "verb",
-    "verb": {
-      "inf": "spreken",
-      "hij": "spreekt",
-      "past": "sprak",
-      "perfect": "gesproken"
-    }
+    "en": "speak / record",
+    "source": "listening exam 2"
   },
   {
     "nl": "spreekt",
@@ -4772,15 +6134,31 @@
       "hij": "spreekt",
       "past": "sprak",
       "perfect": "gesproken"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "spreken we af",
     "en": "we agree, we arrange"
   },
   {
+    "nl": "staat",
+    "en": "stands / is located / there is",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "stad",
+    "en": "town / city",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "stadspolder",
     "en": "city polder"
+  },
+  {
+    "nl": "stage",
+    "en": "internship",
+    "source": "listening exam 2"
   },
   {
     "nl": "star",
@@ -4825,6 +6203,11 @@
       "past": "startte",
       "perfect": "gestart"
     }
+  },
+  {
+    "nl": "stations",
+    "en": "stations",
+    "source": "listening exam 2"
   },
   {
     "nl": "stop",
@@ -4879,15 +6262,21 @@
     "en": "soon, in a moment"
   },
   {
+    "nl": "stukje",
+    "en": "little bit",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "sturen",
-    "en": "send",
+    "en": "to send",
     "pos": "verb",
     "verb": {
       "inf": "sturen",
       "hij": "stuurt",
       "past": "stuurde",
       "perfect": "gestuurd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "stuur",
@@ -4923,8 +6312,18 @@
     }
   },
   {
+    "nl": "supermarkt",
+    "en": "supermarket",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "supermarkten",
     "en": "supermarkets"
+  },
+  {
+    "nl": "te",
+    "en": "to / too",
+    "source": "listening exam 2"
   },
   {
     "nl": "tegengekomen",
@@ -4949,6 +6348,36 @@
     }
   },
   {
+    "nl": "tegenover",
+    "en": "compared with / opposite",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "telefoon",
+    "en": "telephone / phone",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "telefoonnummer",
+    "en": "phone number",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "televisie",
+    "en": "television",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ten",
+    "en": "at / to",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "terug",
+    "en": "back",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "terugbellen",
     "en": "call back",
     "pos": "verb",
@@ -4958,6 +6387,18 @@
       "past": "belde terug",
       "perfect": "teruggebeld"
     }
+  },
+  {
+    "nl": "terugbelt",
+    "en": "to call back",
+    "pos": "verb",
+    "verb": {
+      "inf": "terugbellen",
+      "hij": "belt terug",
+      "past": "belde terug",
+      "perfect": "teruggebeld"
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "teruggebeld",
@@ -4971,12 +6412,35 @@
     }
   },
   {
+    "nl": "terugkomen",
+    "en": "to come back",
+    "pos": "verb",
+    "verb": {
+      "inf": "terugkomen",
+      "hij": "komt terug",
+      "past": "kwam terug",
+      "perfect": "teruggekomen"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "thuis",
-    "en": "at home"
+    "en": "at home",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "tien",
+    "en": "ten",
+    "source": "listening exam 2"
   },
   {
     "nl": "tien dozen",
     "en": "ten boxes"
+  },
+  {
+    "nl": "tijd",
+    "en": "time",
+    "source": "listening exam 2"
   },
   {
     "nl": "tijdelijk",
@@ -4984,7 +6448,28 @@
   },
   {
     "nl": "tijdens",
-    "en": "during"
+    "en": "during",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "tip",
+    "en": "tip",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "toch",
+    "en": "anyway / right",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "toets",
+    "en": "press",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "toetst",
+    "en": "presses",
+    "source": "listening exam 2"
   },
   {
     "nl": "toevallig",
@@ -4993,6 +6478,11 @@
   {
     "nl": "top",
     "en": "great"
+  },
+  {
+    "nl": "tot",
+    "en": "until / up to",
+    "source": "listening exam 2"
   },
   {
     "nl": "tot dan",
@@ -5011,24 +6501,76 @@
     "en": "goodbye"
   },
   {
+    "nl": "totaal",
+    "en": "total",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "traktatie",
+    "en": "treat",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "trakteerde",
+    "en": "to treat",
+    "pos": "verb",
+    "verb": {
+      "inf": "trakteren",
+      "hij": "trakteert",
+      "past": "trakteerde",
+      "perfect": "getrakteerd"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "tram",
     "en": "tram"
+  },
+  {
+    "nl": "trein",
+    "en": "train",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "treinen",
+    "en": "trains",
+    "source": "listening exam 2"
   },
   {
     "nl": "treinstation",
     "en": "train station"
   },
   {
+    "nl": "trouwboekje",
+    "en": "marriage booklet",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "trouwens",
     "en": "by the way"
+  },
+  {
+    "nl": "tussen",
+    "en": "between",
+    "source": "listening exam 2"
   },
   {
     "nl": "tuurlijk",
     "en": "of course"
   },
   {
+    "nl": "twee",
+    "en": "two",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "twee plaatsen",
     "en": "two places"
+  },
+  {
+    "nl": "tweede",
+    "en": "second",
+    "source": "listening exam 2"
   },
   {
     "nl": "tweede verdieping",
@@ -5041,6 +6583,16 @@
   {
     "nl": "twintig",
     "en": "twenty"
+  },
+  {
+    "nl": "u",
+    "en": "you",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "uit",
+    "en": "out / matter",
+    "source": "listening exam 2"
   },
   {
     "nl": "uitgenodigd",
@@ -5065,6 +6617,46 @@
     }
   },
   {
+    "nl": "uitnodiging",
+    "en": "invitation",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "uitzendbureau",
+    "en": "employment agency",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "utrecht",
+    "en": "Utrecht",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "uur",
+    "en": "hour / o’clock",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "uw",
+    "en": "your",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "vaak",
+    "en": "often",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "van",
+    "en": "of / from",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "vanaf",
+    "en": "from",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "vanaf vrijdag",
     "en": "from Friday"
   },
@@ -5077,12 +6669,27 @@
     "en": "today"
   },
   {
+    "nl": "vanmiddag",
+    "en": "this afternoon",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "vanmorgen",
     "en": "this morning"
   },
   {
+    "nl": "vanuit",
+    "en": "from",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "vast",
     "en": "surely, probably"
+  },
+  {
+    "nl": "veel",
+    "en": "much / a lot",
+    "source": "listening exam 2"
   },
   {
     "nl": "veel last van hebben",
@@ -5144,8 +6751,14 @@
     }
   },
   {
+    "nl": "verbind",
+    "en": "connect / put through",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "verdieping",
-    "en": "floor"
+    "en": "floor",
+    "source": "listening exam 2"
   },
   {
     "nl": "vergat",
@@ -5171,25 +6784,13 @@
   },
   {
     "nl": "vergeet",
-    "en": "to forget",
-    "pos": "verb",
-    "verb": {
-      "inf": "vergeten",
-      "hij": "vergeet",
-      "past": "vergat",
-      "perfect": "vergeten"
-    }
+    "en": "forget",
+    "source": "listening exam 2"
   },
   {
     "nl": "vergeten",
-    "en": "to forget",
-    "pos": "verb",
-    "verb": {
-      "inf": "vergeten",
-      "hij": "vergeet",
-      "past": "vergat",
-      "perfect": "vergeten"
-    }
+    "en": "forgotten / forgot",
+    "source": "listening exam 2"
   },
   {
     "nl": "verhalen lezen",
@@ -5201,7 +6802,8 @@
   },
   {
     "nl": "verkeer",
-    "en": "traffic"
+    "en": "traffic",
+    "source": "listening exam 2"
   },
   {
     "nl": "verkocht",
@@ -5216,14 +6818,8 @@
   },
   {
     "nl": "verkoop",
-    "en": "to sell",
-    "pos": "verb",
-    "verb": {
-      "inf": "verkopen",
-      "hij": "verkoopt",
-      "past": "verkocht",
-      "perfect": "verkocht"
-    }
+    "en": "sales",
+    "source": "listening exam 2"
   },
   {
     "nl": "verkoopt",
@@ -5400,14 +6996,20 @@
   },
   {
     "nl": "vertelt",
-    "en": "to tell",
+    "en": "to tell / explain",
     "pos": "verb",
     "verb": {
       "inf": "vertellen",
       "hij": "vertelt",
       "past": "vertelde",
       "perfect": "verteld"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "vertraging",
+    "en": "delay",
+    "source": "listening exam 2"
   },
   {
     "nl": "verwerk",
@@ -5455,7 +7057,8 @@
   },
   {
     "nl": "via",
-    "en": "via, through"
+    "en": "via / through",
+    "source": "listening exam 2"
   },
   {
     "nl": "video",
@@ -5463,25 +7066,13 @@
   },
   {
     "nl": "vier",
-    "en": "to celebrate",
-    "pos": "verb",
-    "verb": {
-      "inf": "vieren",
-      "hij": "viert",
-      "past": "vierde",
-      "perfect": "gevierd"
-    }
+    "en": "four",
+    "source": "listening exam 2"
   },
   {
     "nl": "vierde",
-    "en": "to celebrate",
-    "pos": "verb",
-    "verb": {
-      "inf": "vieren",
-      "hij": "viert",
-      "past": "vierde",
-      "perfect": "gevierd"
-    }
+    "en": "fourth",
+    "source": "listening exam 2"
   },
   {
     "nl": "vieren",
@@ -5506,6 +7097,11 @@
     }
   },
   {
+    "nl": "vijf",
+    "en": "five",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "vind",
     "en": "to find / think",
     "pos": "verb",
@@ -5526,33 +7122,41 @@
   },
   {
     "nl": "vinden",
-    "en": "to find / think",
+    "en": "to find",
     "pos": "verb",
     "verb": {
       "inf": "vinden",
       "hij": "vindt",
       "past": "vond",
       "perfect": "gevonden"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "vindt",
-    "en": "to find / think",
+    "en": "to find",
     "pos": "verb",
     "verb": {
       "inf": "vinden",
       "hij": "vindt",
       "past": "vond",
       "perfect": "gevonden"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "vloer",
     "en": "floor"
   },
   {
+    "nl": "vluchten",
+    "en": "flights",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "voicemail",
-    "en": "voicemail"
+    "en": "voicemail",
+    "source": "listening exam 2"
   },
   {
     "nl": "voicemailbericht",
@@ -5586,14 +7190,20 @@
   },
   {
     "nl": "volgen",
-    "en": "to follow / take (a course)",
+    "en": "to follow / take",
     "pos": "verb",
     "verb": {
       "inf": "volgen",
       "hij": "volgt",
       "past": "volgde",
       "perfect": "gevolgd"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "volgende",
+    "en": "next",
+    "pos": "adjective"
   },
   {
     "nl": "volgende keer",
@@ -5613,14 +7223,15 @@
   },
   {
     "nl": "volgt",
-    "en": "follows, takes",
+    "en": "to follow / take",
     "pos": "verb",
     "verb": {
       "inf": "volgen",
       "hij": "volgt",
       "past": "volgde",
       "perfect": "gevolgd"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "vond",
@@ -5645,8 +7256,23 @@
     }
   },
   {
+    "nl": "voor",
+    "en": "for / before",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "voorgaat",
+    "en": "comes first",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "voorlopig",
     "en": "for the time being"
+  },
+  {
+    "nl": "vorig",
+    "en": "last / previous",
+    "source": "listening exam 2"
   },
   {
     "nl": "vorige keer",
@@ -5654,14 +7280,8 @@
   },
   {
     "nl": "vraag",
-    "en": "question",
-    "pos": "verb",
-    "verb": {
-      "inf": "vragen",
-      "hij": "vraagt",
-      "past": "vroeg",
-      "perfect": "gevraagd"
-    }
+    "en": "ask / question",
+    "source": "listening exam 2"
   },
   {
     "nl": "vraagt",
@@ -5675,6 +7295,11 @@
     }
   },
   {
+    "nl": "vrachtwagen",
+    "en": "lorry / truck",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "vragen",
     "en": "to ask",
     "pos": "verb",
@@ -5684,6 +7309,11 @@
       "past": "vroeg",
       "perfect": "gevraagd"
     }
+  },
+  {
+    "nl": "vriend",
+    "en": "friend",
+    "source": "listening exam 2"
   },
   {
     "nl": "vriendelijke",
@@ -5697,6 +7327,11 @@
   {
     "nl": "vriendinnen",
     "en": "female friends"
+  },
+  {
+    "nl": "vrijdag",
+    "en": "Friday",
+    "source": "listening exam 2"
   },
   {
     "nl": "vrijdag 27 april",
@@ -5714,8 +7349,21 @@
     }
   },
   {
+    "nl": "vul",
+    "en": "to fill in",
+    "pos": "verb",
+    "verb": {
+      "inf": "invullen",
+      "hij": "vult in",
+      "past": "vulde in",
+      "perfect": "ingevuld"
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "waar",
-    "en": "where"
+    "en": "where",
+    "source": "listening exam 2"
   },
   {
     "nl": "waar kan hij zich aanmelden?",
@@ -5747,7 +7395,8 @@
   },
   {
     "nl": "waarom",
-    "en": "why"
+    "en": "why",
+    "source": "listening exam 2"
   },
   {
     "nl": "waarom is de straat afgesloten?",
@@ -5781,14 +7430,8 @@
   },
   {
     "nl": "wachten",
-    "en": "to wait",
-    "pos": "verb",
-    "verb": {
-      "inf": "wachten",
-      "hij": "wacht",
-      "past": "wachtte",
-      "perfect": "gewacht"
-    }
+    "en": "wait",
+    "source": "listening exam 2"
   },
   {
     "nl": "wachtte",
@@ -5802,6 +7445,11 @@
     }
   },
   {
+    "nl": "wanneer",
+    "en": "when",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "wanneer gaan alle afdelingen weer open?",
     "en": "When will all departments open again?"
   },
@@ -5811,7 +7459,8 @@
   },
   {
     "nl": "want",
-    "en": "because"
+    "en": "because",
+    "source": "listening exam 2"
   },
   {
     "nl": "waren",
@@ -5822,7 +7471,13 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "warme",
+    "en": "warm",
+    "pos": "adjective"
   },
   {
     "nl": "was",
@@ -5833,11 +7488,13 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "wat",
-    "en": "what"
+    "en": "what / some",
+    "source": "listening exam 2"
   },
   {
     "nl": "wat moet hij doen?",
@@ -5850,6 +7507,11 @@
   {
     "nl": "waterleiding",
     "en": "water pipe"
+  },
+  {
+    "nl": "we",
+    "en": "we",
+    "source": "listening exam 2"
   },
   {
     "nl": "wedstrijd",
@@ -5867,8 +7529,14 @@
     }
   },
   {
+    "nl": "week",
+    "en": "week",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "weer",
-    "en": "again"
+    "en": "again",
+    "source": "listening exam 2"
   },
   {
     "nl": "weer open",
@@ -5883,15 +7551,18 @@
       "hij": "weet",
       "past": "wist",
       "perfect": "geweten"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "weg",
-    "en": "road"
+    "en": "road",
+    "source": "listening exam 2"
   },
   {
     "nl": "wel",
-    "en": "indeed, quite"
+    "en": "indeed / actually",
+    "source": "listening exam 2"
   },
   {
     "nl": "wel open",
@@ -5903,7 +7574,8 @@
   },
   {
     "nl": "welke",
-    "en": "which"
+    "en": "which",
+    "source": "listening exam 2"
   },
   {
     "nl": "welke cola bestelt hij?",
@@ -5915,7 +7587,8 @@
   },
   {
     "nl": "welkom",
-    "en": "welcome"
+    "en": "welcome",
+    "source": "listening exam 2"
   },
   {
     "nl": "welkom bij",
@@ -5950,13 +7623,7 @@
   {
     "nl": "werk",
     "en": "work",
-    "pos": "verb",
-    "verb": {
-      "inf": "werken",
-      "hij": "werkt",
-      "past": "werkte",
-      "perfect": "gewerkt"
-    }
+    "source": "listening exam 2"
   },
   {
     "nl": "werk zoeken",
@@ -5971,7 +7638,18 @@
       "hij": "werkt",
       "past": "werkte",
       "perfect": "gewerkt"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "werkplanning",
+    "en": "work plan",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "werkroosters",
+    "en": "work schedules",
+    "source": "listening exam 2"
   },
   {
     "nl": "werkt",
@@ -6031,7 +7709,8 @@
       "hij": "wil",
       "past": "wilde",
       "perfect": "gewild"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "wil je",
@@ -6083,7 +7762,8 @@
       "hij": "wil",
       "past": "wilde",
       "perfect": "gewild"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "wilt volgen",
@@ -6220,14 +7900,20 @@
   },
   {
     "nl": "wordt",
-    "en": "to become / be (passive)",
+    "en": "to become / be",
     "pos": "verb",
     "verb": {
       "inf": "worden",
       "hij": "wordt",
       "past": "werd",
       "perfect": "geworden"
-    }
+    },
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "yassir",
+    "en": "Yassir",
+    "source": "listening exam 2"
   },
   {
     "nl": "zag",
@@ -6241,15 +7927,21 @@
     }
   },
   {
+    "nl": "zaïra",
+    "en": "Zaïra",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "zal",
-    "en": "shall / will",
+    "en": "will / shall",
     "pos": "verb",
     "verb": {
       "inf": "zullen",
       "hij": "zal",
       "past": "zou",
-      "perfect": "—"
-    }
+      "perfect": ""
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "zat",
@@ -6263,12 +7955,33 @@
     }
   },
   {
+    "nl": "zaterdag",
+    "en": "Saturday",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "ze",
+    "en": "she / they",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "zeg",
-    "en": "listen, say"
+    "en": "you know / I say",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "zegt",
+    "en": "says",
+    "source": "listening exam 2"
   },
   {
     "nl": "zei",
     "en": "said"
+  },
+  {
+    "nl": "zeker",
+    "en": "especially / certainly",
+    "source": "listening exam 2"
   },
   {
     "nl": "zelf",
@@ -6313,15 +8026,14 @@
     "en": "seven o’clock"
   },
   {
+    "nl": "zich",
+    "en": "himself / herself / oneself",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "zie",
-    "en": "to see",
-    "pos": "verb",
-    "verb": {
-      "inf": "zien",
-      "hij": "ziet",
-      "past": "zag",
-      "perfect": "gezien"
-    }
+    "en": "see",
+    "source": "listening exam 2"
   },
   {
     "nl": "zie ik je",
@@ -6343,6 +8055,11 @@
     }
   },
   {
+    "nl": "ziens",
+    "en": "seeing",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "ziet",
     "en": "sees",
     "pos": "verb",
@@ -6362,18 +8079,13 @@
       "hij": "is",
       "past": "was",
       "perfect": "geweest"
-    }
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "zit",
-    "en": "to sit",
-    "pos": "verb",
-    "verb": {
-      "inf": "zitten",
-      "hij": "zit",
-      "past": "zat",
-      "perfect": "gezeten"
-    }
+    "en": "is located / sits",
+    "source": "listening exam 2"
   },
   {
     "nl": "zit bijna vol",
@@ -6393,6 +8105,21 @@
       "past": "zat",
       "perfect": "gezeten"
     }
+  },
+  {
+    "nl": "zo",
+    "en": "so / like this",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "zo'n",
+    "en": "such a",
+    "source": "listening exam 2"
+  },
+  {
+    "nl": "zoals",
+    "en": "such as",
+    "source": "listening exam 2"
   },
   {
     "nl": "zocht",
@@ -6443,15 +8170,14 @@
     }
   },
   {
+    "nl": "zoon",
+    "en": "son",
+    "source": "listening exam 2"
+  },
+  {
     "nl": "zorg",
-    "en": "to take care of / ensure",
-    "pos": "verb",
-    "verb": {
-      "inf": "zorgen",
-      "hij": "zorgt",
-      "past": "zorgde",
-      "perfect": "gezorgd"
-    }
+    "en": "make sure",
+    "source": "listening exam 2"
   },
   {
     "nl": "zorgde",
@@ -6488,22 +8214,40 @@
   },
   {
     "nl": "zou",
-    "en": "shall / will",
+    "en": "will / shall",
     "pos": "verb",
     "verb": {
       "inf": "zullen",
       "hij": "zal",
       "past": "zou",
-      "perfect": "—"
-    }
+      "perfect": ""
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "zou duren",
     "en": "would last"
   },
   {
+    "nl": "zouden",
+    "en": "will / shall",
+    "pos": "verb",
+    "verb": {
+      "inf": "zullen",
+      "hij": "zal",
+      "past": "zou",
+      "perfect": ""
+    },
+    "source": "listening exam 2"
+  },
+  {
     "nl": "zoveel",
     "en": "so many"
+  },
+  {
+    "nl": "zover",
+    "en": "so far / that is all",
+    "source": "listening exam 2"
   },
   {
     "nl": "zuid-amerika",
@@ -6511,14 +8255,15 @@
   },
   {
     "nl": "zullen",
-    "en": "shall / will",
+    "en": "will / shall",
     "pos": "verb",
     "verb": {
       "inf": "zullen",
       "hij": "zal",
       "past": "zou",
-      "perfect": "—"
-    }
+      "perfect": ""
+    },
+    "source": "listening exam 2"
   },
   {
     "nl": "zwanger",
