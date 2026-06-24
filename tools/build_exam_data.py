@@ -7,9 +7,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_MD = ROOT / "data" / "mock-exam1.md"
 EXTRA_SOURCE_MD = ROOT / "data" / "mock-exams-2-4.md"
-UPDATED_SOURCE_MD = Path("/Users/liceline/Desktop/荷兰融入考试阅读/荷兰融入考试阅读 mock exams/荷兰融入考试阅读 mock exams.md")
+UPDATED_SOURCE_MD = ROOT / "tools" / "sources" / "荷兰融入考试阅读 mock exams" / "荷兰融入考试阅读 mock exams.md"
 SOURCE_FILES = [p for p in [UPDATED_SOURCE_MD, SOURCE_MD, EXTRA_SOURCE_MD] if p.exists()]
-OLD_WORDS = Path("/Users/liceline/Desktop/荷兰语单词/dutch-app/words.json")
+# OLD_WORDS used to live at ~/Desktop/荷兰语单词/dutch-app/words.json (a different,
+# now-archived project). Leaving the constant in place but pointing at the current
+# in-project words.json keeps the script from blowing up if it's ever re-run; the
+# old-words merge step will simply find the same file as OUT_WORDS and no-op.
+OLD_WORDS = ROOT / "words.json"
 OUT_WORDS = ROOT / "words.json"
 OUT_READINGS = ROOT / "readings.json"
 

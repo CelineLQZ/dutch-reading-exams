@@ -1,0 +1,2577 @@
+[
+  {
+    "id": "knm-1",
+    "les": 201,
+    "exam": "knm",
+    "examIndex": 1,
+    "label": "KNM.1",
+    "title": "KNM.1 Nederland leren kennen, geography and population",
+    "rawTitle": "Nederland leren kennen, geography and population",
+    "sentences": [
+      {
+        "nl": "Nederland ligt in Europa, aan de Noordzee.",
+        "en": "The Netherlands is in Europe, on the North Sea.",
+        "quiz": {
+          "blank": "Europa",
+          "category": "proper",
+          "before": "Nederland ligt in ",
+          "after": ", aan de Noordzee.",
+          "distractors": [
+            "Randstad",
+            "België",
+            "Christenen"
+          ]
+        }
+      },
+      {
+        "nl": "Duitsland ligt ten oosten van Nederland en België ligt ten zuiden van Nederland.",
+        "en": "Germany is east of the Netherlands and Belgium is south of the Netherlands.",
+        "quiz": {
+          "blank": "België",
+          "category": "proper",
+          "before": "Duitsland ligt ten oosten van Nederland en ",
+          "after": " ligt ten zuiden van Nederland.",
+          "distractors": [
+            "Europa",
+            "Vroeger",
+            "Den Haag"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland is ongeveer 40.000 vierkante kilometer groot en is dus een klein land.",
+        "en": "The Netherlands is about 40,000 square kilometres in size and is therefore a small country.",
+        "quiz": {
+          "blank": "40.000",
+          "category": "number",
+          "before": "Nederland is ongeveer ",
+          "after": " vierkante kilometer groot en is dus een klein land.",
+          "distractors": [
+            "17",
+            "300",
+            "27"
+          ]
+        }
+      },
+      {
+        "nl": "Van het noorden naar het zuiden is Nederland ongeveer 300 kilometer lang.",
+        "en": "From north to south, the Netherlands is about 300 kilometres long.",
+        "quiz": {
+          "blank": "300",
+          "category": "number",
+          "before": "Van het noorden naar het zuiden is Nederland ongeveer ",
+          "after": " kilometer lang.",
+          "distractors": [
+            "2",
+            "323",
+            "180"
+          ]
+        }
+      },
+      {
+        "nl": "Van het oosten naar het westen is Nederland ongeveer 180 kilometer breed.",
+        "en": "From east to west, the Netherlands is about 180 kilometres wide.",
+        "quiz": {
+          "blank": "180",
+          "category": "number",
+          "before": "Van het oosten naar het westen is Nederland ongeveer ",
+          "after": " kilometer breed.",
+          "distractors": [
+            "25",
+            "2",
+            "14"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland heeft twaalf provincies. Een provincie is een deel van het land.",
+        "en": "The Netherlands has twelve provinces. A province is a part of the country.",
+        "quiz": {
+          "blank": "twaalf",
+          "category": "number-word",
+          "before": "Nederland heeft ",
+          "after": " provincies. Een provincie is een deel van het land.",
+          "distractors": [
+            "tien",
+            "vijf",
+            "drie"
+          ]
+        }
+      },
+      {
+        "nl": "Iedere provincie heeft een eigen hoofdstad. De hoofdstad van Noord-Brabant is Den Bosch.",
+        "en": "Every province has its own capital. The capital of North Brabant is Den Bosch.",
+        "quiz": {
+          "blank": "Noord-Brabant",
+          "category": "proper",
+          "before": "Iedere provincie heeft een eigen hoofdstad. De hoofdstad van ",
+          "after": " is Den Bosch.",
+          "distractors": [
+            "Kinderen",
+            "Bijbel",
+            "Ze"
+          ]
+        }
+      },
+      {
+        "nl": "In het westen van Nederland liggen de vier grootste steden. Dit gebied heet de Randstad.",
+        "en": "The four largest cities are in the west of the Netherlands. This area is called the Randstad.",
+        "quiz": {
+          "blank": "vier",
+          "category": "number-word",
+          "before": "In het westen van Nederland liggen de ",
+          "after": " grootste steden. Dit gebied heet de Randstad.",
+          "distractors": [
+            "drie",
+            "vijf",
+            "tien"
+          ]
+        }
+      },
+      {
+        "nl": "De Randstad is druk, omdat er veel mensen wonen.",
+        "en": "The Randstad is busy because many people live there.",
+        "quiz": {
+          "blank": "Randstad",
+          "category": "proper",
+          "before": "De ",
+          "after": " is druk, omdat er veel mensen wonen.",
+          "distractors": [
+            "Europa",
+            "Prinsjesdag",
+            "Provinciale Staten"
+          ]
+        }
+      },
+      {
+        "nl": "Amsterdam is de hoofdstad van Nederland. Er wonen minder dan één miljoen mensen.",
+        "en": "Amsterdam is the capital of the Netherlands. Fewer than one million people live there."
+      },
+      {
+        "nl": "Schiphol is het grootste vliegveld van Nederland.",
+        "en": "Schiphol is the largest airport in the Netherlands."
+      },
+      {
+        "nl": "Rotterdam heeft de grootste haven van Europa. De Europoort is een ingang van Europa.",
+        "en": "Rotterdam has the largest port in Europe. The Europoort is an entrance to Europe.",
+        "quiz": {
+          "blank": "Europa",
+          "category": "proper",
+          "before": "Rotterdam heeft de grootste haven van ",
+          "after": ". De Europoort is een ingang van Europa.",
+          "distractors": [
+            "Waddeneilanden",
+            "Den Haag",
+            "Turken"
+          ]
+        }
+      },
+      {
+        "nl": "In Den Haag zit de regering van Nederland.",
+        "en": "The government of the Netherlands is in The Hague.",
+        "quiz": {
+          "blank": "Den Haag",
+          "category": "proper",
+          "before": "In ",
+          "after": " zit de regering van Nederland.",
+          "distractors": [
+            "Rechtse",
+            "Suriname",
+            "Prinsjesdag"
+          ]
+        }
+      },
+      {
+        "nl": "Utrecht heeft de Domtoren. De Domtoren is meer dan 700 jaar oud en 112 meter hoog.",
+        "en": "Utrecht has the Dom Tower. The Dom Tower is more than 700 years old and 112 metres high.",
+        "quiz": {
+          "blank": "700",
+          "category": "number",
+          "before": "Utrecht heeft de Domtoren. De Domtoren is meer dan ",
+          "after": " jaar oud en 112 meter hoog.",
+          "distractors": [
+            "18",
+            "112",
+            "8"
+          ]
+        }
+      },
+      {
+        "nl": "In de Randstad is vaak makkelijk werk te vinden.",
+        "en": "In the Randstad, work is often easy to find.",
+        "quiz": {
+          "blank": "Randstad",
+          "category": "proper",
+          "before": "In de ",
+          "after": " is vaak makkelijk werk te vinden.",
+          "distractors": [
+            "Kerstmis",
+            "Tweede Kamer",
+            "Sociale Raadslieden"
+          ]
+        }
+      },
+      {
+        "nl": "In de Randstad zijn winkels, scholen en ziekenhuizen meestal in de buurt.",
+        "en": "In the Randstad, shops, schools and hospitals are usually nearby.",
+        "quiz": {
+          "blank": "Randstad",
+          "category": "proper",
+          "before": "In de ",
+          "after": " zijn winkels, scholen en ziekenhuizen meestal in de buurt.",
+          "distractors": [
+            "Middeleeuwen",
+            "Den Haag",
+            "Ouders"
+          ]
+        }
+      },
+      {
+        "nl": "In de Randstad kun je makkelijk reizen met de bus en de trein.",
+        "en": "In the Randstad, you can travel easily by bus and train.",
+        "quiz": {
+          "blank": "Randstad",
+          "category": "proper",
+          "before": "In de ",
+          "after": " kun je makkelijk reizen met de bus en de trein.",
+          "distractors": [
+            "Den Haag",
+            "Tweede Wereldoorlog",
+            "Conservatieve"
+          ]
+        }
+      },
+      {
+        "nl": "In Nederland zijn veel snelwegen, flats en auto’s. Daarom staan mensen vaak in de file.",
+        "en": "In the Netherlands there are many motorways, apartment blocks and cars. Therefore people are often in traffic jams."
+      },
+      {
+        "nl": "Veel mensen gaan op de fiets naar hun werk.",
+        "en": "Many people go to work by bicycle."
+      },
+      {
+        "nl": "Ongeveer twintig procent van Nederland is water. Daarom leren veel mensen jong zwemmen.",
+        "en": "About twenty percent of the Netherlands is water. Therefore many people learn to swim when they are young.",
+        "quiz": {
+          "blank": "twintig",
+          "category": "number-word",
+          "before": "Ongeveer ",
+          "after": " procent van Nederland is water. Daarom leren veel mensen jong zwemmen.",
+          "distractors": [
+            "vijf",
+            "twee",
+            "drie"
+          ]
+        }
+      },
+      {
+        "nl": "De Rijn is een rivier die uit Zwitserland komt.",
+        "en": "The Rhine is a river that comes from Switzerland.",
+        "quiz": {
+          "blank": "Rijn",
+          "category": "proper",
+          "before": "De ",
+          "after": " is een rivier die uit Zwitserland komt.",
+          "distractors": [
+            "België",
+            "Gouden Eeuw",
+            "Europa"
+          ]
+        }
+      },
+      {
+        "nl": "De Maas is een rivier die uit Frankrijk komt.",
+        "en": "The Meuse is a river that comes from France.",
+        "quiz": {
+          "blank": "Maas",
+          "category": "proper",
+          "before": "De ",
+          "after": " is een rivier die uit Frankrijk komt.",
+          "distractors": [
+            "Anders",
+            "Kerstmis",
+            "Fulltime"
+          ]
+        }
+      },
+      {
+        "nl": "Het IJsselmeer is het grootste meer van Nederland. Vroeger was het een zee.",
+        "en": "The IJsselmeer is the largest lake in the Netherlands. In the past it was a sea.",
+        "quiz": {
+          "blank": "Vroeger",
+          "category": "proper",
+          "before": "Het IJsselmeer is het grootste meer van Nederland. ",
+          "after": " was het een zee.",
+          "distractors": [
+            "Tweede Wereldoorlog",
+            "Flevoland",
+            "Noord-Brabant"
+          ]
+        }
+      },
+      {
+        "nl": "De Afsluitdijk heeft het water afgesloten en zo is het IJsselmeer ontstaan.",
+        "en": "The Afsluitdijk closed off the water and this is how the IJsselmeer was created.",
+        "quiz": {
+          "blank": "Afsluitdijk",
+          "category": "proper",
+          "before": "De ",
+          "after": " heeft het water afgesloten en zo is het IJsselmeer ontstaan.",
+          "distractors": [
+            "Provinciale Staten",
+            "Kerstmis",
+            "Waddenzee"
+          ]
+        }
+      },
+      {
+        "nl": "De Waddenzee heeft eilanden. Deze eilanden heten de Waddeneilanden.",
+        "en": "The Wadden Sea has islands. These islands are called the Wadden Islands.",
+        "quiz": {
+          "blank": "Waddenzee",
+          "category": "proper",
+          "before": "De ",
+          "after": " heeft eilanden. Deze eilanden heten de Waddeneilanden.",
+          "distractors": [
+            "Noord-Brabant",
+            "Turken",
+            "Tweede Kamer"
+          ]
+        }
+      },
+      {
+        "nl": "De Waddeneilanden zijn Texel, Vlieland, Terschelling, Ameland en Schiermonnikoog.",
+        "en": "The Wadden Islands are Texel, Vlieland, Terschelling, Ameland and Schiermonnikoog.",
+        "quiz": {
+          "blank": "Waddeneilanden",
+          "category": "proper",
+          "before": "De ",
+          "after": " zijn Texel, Vlieland, Terschelling, Ameland en Schiermonnikoog.",
+          "distractors": [
+            "Afsluitdijk",
+            "Kerstmis",
+            "Rijn"
+          ]
+        }
+      },
+      {
+        "nl": "Een polder is land dat vroeger water was. Flevoland is een voorbeeld van een polder.",
+        "en": "A polder is land that used to be water. Flevoland is an example of a polder.",
+        "quiz": {
+          "blank": "Flevoland",
+          "category": "proper",
+          "before": "Een polder is land dat vroeger water was. ",
+          "after": " is een voorbeeld van een polder.",
+          "distractors": [
+            "Nederlands",
+            "Rechtse",
+            "Beatrix"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland is een laag land. Het heeft geen hoge bergen.",
+        "en": "The Netherlands is a low country. It has no high mountains."
+      },
+      {
+        "nl": "Het hoogste punt van Nederland is 323 meter hoog en ligt in Limburg.",
+        "en": "The highest point in the Netherlands is 323 metres high and is in Limburg.",
+        "quiz": {
+          "blank": "323",
+          "category": "number",
+          "before": "Het hoogste punt van Nederland is ",
+          "after": " meter hoog en ligt in Limburg.",
+          "distractors": [
+            "17",
+            "27",
+            "500"
+          ]
+        }
+      },
+      {
+        "nl": "Duinen en dijken beschermen Nederland tegen het water.",
+        "en": "Dunes and dikes protect the Netherlands against water."
+      }
+    ]
+  },
+  {
+    "id": "knm-2",
+    "les": 202,
+    "exam": "knm",
+    "examIndex": 2,
+    "label": "KNM.2",
+    "title": "KNM.2 Weather, society, languages, monarchy, religion and European Union",
+    "rawTitle": "Weather, society, languages, monarchy, religion and European Union",
+    "sentences": [
+      {
+        "nl": "Het weer in Nederland is wisselvallig. Dat betekent dat het weer vaak verandert.",
+        "en": "The weather in the Netherlands is changeable. That means the weather often changes."
+      },
+      {
+        "nl": "Nederland heeft vier seizoenen: lente, zomer, herfst en winter.",
+        "en": "The Netherlands has four seasons: spring, summer, autumn and winter.",
+        "quiz": {
+          "blank": "vier",
+          "category": "number-word",
+          "before": "Nederland heeft ",
+          "after": " seizoenen: lente, zomer, herfst en winter.",
+          "distractors": [
+            "drie",
+            "twaalf",
+            "twee"
+          ]
+        }
+      },
+      {
+        "nl": "De lente is van maart tot juni. In de lente krijgen bomen nieuwe bladeren en zijn er veel bloemen.",
+        "en": "Spring is from March to June. In spring, trees get new leaves and there are many flowers."
+      },
+      {
+        "nl": "De zomer is van juni tot september. In de zomer is het vaak warm en blijft het ’s avonds lang licht.",
+        "en": "Summer is from June to September. In summer it is often warm and it stays light for a long time in the evening."
+      },
+      {
+        "nl": "De herfst is van september tot december. In de herfst vallen de bladeren van de bomen en regent het vaak.",
+        "en": "Autumn is from September to December. In autumn, the leaves fall from the trees and it often rains."
+      },
+      {
+        "nl": "De winter is van december tot maart. In de winter kan het vriezen en soms kun je schaatsen.",
+        "en": "Winter is from December to March. In winter it can freeze and sometimes you can skate."
+      },
+      {
+        "nl": "Nederland is dichtbevolkt. Er wonen veel mensen op een kleine oppervlakte.",
+        "en": "The Netherlands is densely populated. Many people live in a small area."
+      },
+      {
+        "nl": "Veel mensen in Nederland zijn niet in Nederland geboren.",
+        "en": "Many people in the Netherlands were not born in the Netherlands."
+      },
+      {
+        "nl": "Veel buitenlanders wonen in grote steden.",
+        "en": "Many foreigners live in large cities."
+      },
+      {
+        "nl": "Sommige buitenlanders uit Europa komen naar Nederland voor werk of voor een relatie.",
+        "en": "Some foreigners from Europe come to the Netherlands for work or for a relationship.",
+        "quiz": {
+          "blank": "Europa",
+          "category": "proper",
+          "before": "Sommige buitenlanders uit ",
+          "after": " komen naar Nederland voor werk of voor een relatie.",
+          "distractors": [
+            "Netto",
+            "Rijn",
+            "Belastingdienst"
+          ]
+        }
+      },
+      {
+        "nl": "Surinamers wonen in Nederland omdat Suriname vroeger bij Nederland hoorde.",
+        "en": "Surinamese people live in the Netherlands because Suriname used to belong to the Netherlands.",
+        "quiz": {
+          "blank": "Suriname",
+          "category": "proper",
+          "before": "Surinamers wonen in Nederland omdat ",
+          "after": " vroeger bij Nederland hoorde.",
+          "distractors": [
+            "Maas",
+            "Kerstmis",
+            "Europese Unie"
+          ]
+        }
+      },
+      {
+        "nl": "Veel Turken en Marokkanen kwamen vroeger als gastarbeiders naar Nederland.",
+        "en": "Many Turkish and Moroccan people came to the Netherlands in the past as guest workers.",
+        "quiz": {
+          "blank": "Turken",
+          "category": "proper",
+          "before": "Veel ",
+          "after": " en Marokkanen kwamen vroeger als gastarbeiders naar Nederland.",
+          "distractors": [
+            "Onregelmatige",
+            "Maas",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "Vluchtelingen komen naar Nederland door oorlog of problemen in hun eigen land.",
+        "en": "Refugees come to the Netherlands because of war or problems in their own country."
+      },
+      {
+        "nl": "Niet alle buitenlanders hebben een verblijfsvergunning.",
+        "en": "Not all foreigners have a residence permit."
+      },
+      {
+        "nl": "De officiële taal van Nederland is Nederlands. Er zijn ook verschillende dialecten.",
+        "en": "The official language of the Netherlands is Dutch. There are also different dialects.",
+        "quiz": {
+          "blank": "Nederlands",
+          "category": "proper",
+          "before": "De officiële taal van Nederland is ",
+          "after": ". Er zijn ook verschillende dialecten.",
+          "distractors": [
+            "Noord-Brabant",
+            "Waddeneilanden",
+            "Provinciale Staten"
+          ]
+        }
+      },
+      {
+        "nl": "Fries is de tweede taal van Nederland. Kinderen in Friesland leren Fries op school.",
+        "en": "Frisian is the second language of the Netherlands. Children in Friesland learn Frisian at school.",
+        "quiz": {
+          "blank": "Kinderen",
+          "category": "proper",
+          "before": "Fries is de tweede taal van Nederland. ",
+          "after": " in Friesland leren Fries op school.",
+          "distractors": [
+            "Onregelmatige",
+            "Tweede Wereldoorlog",
+            "Sociale Raadslieden"
+          ]
+        }
+      },
+      {
+        "nl": "Buitenlanders moeten van de regering Nederlands leren.",
+        "en": "Foreigners must learn Dutch because the government requires it.",
+        "quiz": {
+          "blank": "Nederlands",
+          "category": "proper",
+          "before": "Buitenlanders moeten van de regering ",
+          "after": " leren.",
+          "distractors": [
+            "Vast",
+            "Ouders",
+            "Kerstmis"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland heeft geen president, maar een koning. De koning heet Willem-Alexander.",
+        "en": "The Netherlands does not have a president, but a king. The king is called Willem-Alexander.",
+        "quiz": {
+          "blank": "Willem-Alexander",
+          "category": "proper",
+          "before": "Nederland heeft geen president, maar een koning. De koning heet ",
+          "after": ".",
+          "distractors": [
+            "Suriname",
+            "Vast",
+            "Maas"
+          ]
+        }
+      },
+      {
+        "nl": "Prinses Beatrix is de moeder van koning Willem-Alexander. Máxima is zijn vrouw en is koningin.",
+        "en": "Princess Beatrix is the mother of King Willem-Alexander. Máxima is his wife and is queen.",
+        "quiz": {
+          "blank": "Beatrix",
+          "category": "proper",
+          "before": "Prinses ",
+          "after": " is de moeder van koning Willem-Alexander. Máxima is zijn vrouw en is koningin.",
+          "distractors": [
+            "Middeleeuwen",
+            "Fulltime",
+            "Onregelmatige"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland is een democratie. Mensen mogen het parlement kiezen.",
+        "en": "The Netherlands is a democracy. People are allowed to choose the parliament."
+      },
+      {
+        "nl": "Nederlanders mogen één keer in de vier jaar stemmen voor het parlement.",
+        "en": "Dutch citizens may vote for parliament once every four years.",
+        "quiz": {
+          "blank": "vier",
+          "category": "number-word",
+          "before": "Nederlanders mogen één keer in de ",
+          "after": " jaar stemmen voor het parlement.",
+          "distractors": [
+            "tien",
+            "twaalf",
+            "vijf"
+          ]
+        }
+      },
+      {
+        "nl": "Het parlement praat over de plannen van de regering.",
+        "en": "Parliament discusses the plans of the government."
+      },
+      {
+        "nl": "De regering bestaat uit de koning en de ministers.",
+        "en": "The government consists of the king and the ministers."
+      },
+      {
+        "nl": "De regering en het parlement zitten in Den Haag.",
+        "en": "The government and parliament are in The Hague.",
+        "quiz": {
+          "blank": "Den Haag",
+          "category": "proper",
+          "before": "De regering en het parlement zitten in ",
+          "after": ".",
+          "distractors": [
+            "Randstad",
+            "Turken",
+            "Ze"
+          ]
+        }
+      },
+      {
+        "nl": "Ongeveer de helft van de Nederlanders heeft een geloof.",
+        "en": "About half of Dutch people have a religion."
+      },
+      {
+        "nl": "Veel gelovige Nederlanders zijn christen en gebruiken de Bijbel.",
+        "en": "Many religious Dutch people are Christian and use the Bible.",
+        "quiz": {
+          "blank": "Bijbel",
+          "category": "proper",
+          "before": "Veel gelovige Nederlanders zijn christen en gebruiken de ",
+          "after": ".",
+          "distractors": [
+            "Middeleeuwen",
+            "Waddenzee",
+            "Kerstmis"
+          ]
+        }
+      },
+      {
+        "nl": "Voor sommige christenen is zondag een speciale dag en gaan zij ’s ochtends naar de kerk.",
+        "en": "For some Christians, Sunday is a special day and they go to church in the morning."
+      },
+      {
+        "nl": "Soms zijn winkels op zondag dicht en soms zijn ze open. Een open zondag heet koopzondag.",
+        "en": "Sometimes shops are closed on Sunday and sometimes they are open. An open Sunday is called a shopping Sunday."
+      },
+      {
+        "nl": "In Nederland wonen ook veel moslims.",
+        "en": "Many Muslims also live in the Netherlands."
+      },
+      {
+        "nl": "De Europese Unie bestaat uit landen in Europa die samenwerken. Mensen betalen met de euro.",
+        "en": "The European Union consists of countries in Europe that work together. People pay with the euro.",
+        "quiz": {
+          "blank": "Europese Unie",
+          "category": "proper",
+          "before": "De ",
+          "after": " bestaat uit landen in Europa die samenwerken. Mensen betalen met de euro.",
+          "distractors": [
+            "Sociale Raadslieden",
+            "Rechtse",
+            "Turken"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-3",
+    "les": 203,
+    "exam": "knm",
+    "examIndex": 3,
+    "label": "KNM.3",
+    "title": "KNM.3 Feestdagen and life events in the Netherlands",
+    "rawTitle": "Feestdagen and life events in the Netherlands",
+    "sentences": [
+      {
+        "nl": "Valentijn is op 14 februari. Het gaat over liefde. Mensen sturen een kaart of geven een cadeau.",
+        "en": "Valentine’s Day is on 14 February. It is about love. People send a card or give a present.",
+        "quiz": {
+          "blank": "14",
+          "category": "number",
+          "before": "Valentijn is op ",
+          "after": " februari. Het gaat over liefde. Mensen sturen een kaart of geven een cadeau.",
+          "distractors": [
+            "4",
+            "500",
+            "17"
+          ]
+        }
+      },
+      {
+        "nl": "Carnaval duurt vier dagen, van zaterdag tot dinsdag. Mensen dragen gekke kleren en dansen, vooral in het zuiden.",
+        "en": "Carnival lasts four days, from Saturday to Tuesday. People wear funny clothes and dance, especially in the south.",
+        "quiz": {
+          "blank": "vier",
+          "category": "number-word",
+          "before": "Carnaval duurt ",
+          "after": " dagen, van zaterdag tot dinsdag. Mensen dragen gekke kleren en dansen, vooral in het zuiden.",
+          "distractors": [
+            "drie",
+            "twaalf",
+            "tien"
+          ]
+        }
+      },
+      {
+        "nl": "Pasen is op zondag en maandag in maart of april. Christenen herdenken dat Jezus is opgestaan. Mensen eten eieren.",
+        "en": "Easter is on a Sunday and Monday in March or April. Christians remember that Jesus rose from the dead. People eat eggs.",
+        "quiz": {
+          "blank": "Christenen",
+          "category": "proper",
+          "before": "Pasen is op zondag en maandag in maart of april. ",
+          "after": " herdenken dat Jezus is opgestaan. Mensen eten eieren.",
+          "distractors": [
+            "Conservatieve",
+            "Den Haag",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "Koningsdag is op 27 april. Dan is de koning jarig. Mensen verkopen spullen op straat en dragen vaak oranje.",
+        "en": "King’s Day is on 27 April. Then it is the king’s birthday. People sell things on the street and often wear orange.",
+        "quiz": {
+          "blank": "27",
+          "category": "number",
+          "before": "Koningsdag is op ",
+          "after": " april. Dan is de koning jarig. Mensen verkopen spullen op straat en dragen vaak oranje.",
+          "distractors": [
+            "5",
+            "31",
+            "4"
+          ]
+        }
+      },
+      {
+        "nl": "Dodenherdenking is op 4 mei. Om 20.00 uur zijn mensen twee minuten stil om de doden van de oorlog te herdenken.",
+        "en": "Remembrance Day is on 4 May. At 8:00 p.m. people are silent for two minutes to remember the dead of the war.",
+        "quiz": {
+          "blank": "4",
+          "category": "number",
+          "before": "Dodenherdenking is op ",
+          "after": " mei. Om 20.00 uur zijn mensen twee minuten stil om de doden van de oorlog te herdenken.",
+          "distractors": [
+            "2",
+            "5",
+            "31"
+          ]
+        }
+      },
+      {
+        "nl": "Bevrijdingsdag is op 5 mei. Dan vieren mensen het einde van de Tweede Wereldoorlog in Nederland.",
+        "en": "Liberation Day is on 5 May. Then people celebrate the end of the Second World War in the Netherlands.",
+        "quiz": {
+          "blank": "5",
+          "category": "number",
+          "before": "Bevrijdingsdag is op ",
+          "after": " mei. Dan vieren mensen het einde van de Tweede Wereldoorlog in Nederland.",
+          "distractors": [
+            "40.000",
+            "112",
+            "0"
+          ]
+        }
+      },
+      {
+        "nl": "Moederdag is op de tweede zondag in mei. Kinderen geven hun moeder vaak een cadeau.",
+        "en": "Mother’s Day is on the second Sunday in May. Children often give their mother a present.",
+        "quiz": {
+          "blank": "Kinderen",
+          "category": "proper",
+          "before": "Moederdag is op de tweede zondag in mei. ",
+          "after": " geven hun moeder vaak een cadeau.",
+          "distractors": [
+            "Anders",
+            "Groot",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "Hemelvaart is een christelijke dag op een donderdag in mei. Christenen herdenken dat Jezus naar de hemel ging.",
+        "en": "Ascension Day is a Christian day on a Thursday in May. Christians remember that Jesus went to heaven.",
+        "quiz": {
+          "blank": "Christenen",
+          "category": "proper",
+          "before": "Hemelvaart is een christelijke dag op een donderdag in mei. ",
+          "after": " herdenken dat Jezus naar de hemel ging.",
+          "distractors": [
+            "Willem-Alexander",
+            "Sociale Raadslieden",
+            "Noord-Brabant"
+          ]
+        }
+      },
+      {
+        "nl": "Pinksteren is tien dagen na Hemelvaart. Het is een christelijke feestdag.",
+        "en": "Pentecost is ten days after Ascension Day. It is a Christian holiday.",
+        "quiz": {
+          "blank": "tien",
+          "category": "number-word",
+          "before": "Pinksteren is ",
+          "after": " dagen na Hemelvaart. Het is een christelijke feestdag.",
+          "distractors": [
+            "twee",
+            "vijf",
+            "twaalf"
+          ]
+        }
+      },
+      {
+        "nl": "Vaderdag is op de derde zondag in juni. Kinderen geven hun vader vaak een cadeau.",
+        "en": "Father’s Day is on the third Sunday in June. Children often give their father a present.",
+        "quiz": {
+          "blank": "Kinderen",
+          "category": "proper",
+          "before": "Vaderdag is op de derde zondag in juni. ",
+          "after": " geven hun vader vaak een cadeau.",
+          "distractors": [
+            "Europese Unie",
+            "Provinciale Staten",
+            "Noord-Brabant"
+          ]
+        }
+      },
+      {
+        "nl": "Sinterklaas is op 5 december. Kinderen krijgen snoep of cadeaus.",
+        "en": "Sinterklaas is on 5 December. Children receive sweets or presents.",
+        "quiz": {
+          "blank": "5",
+          "category": "number",
+          "before": "Sinterklaas is op ",
+          "after": " december. Kinderen krijgen snoep of cadeaus.",
+          "distractors": [
+            "14",
+            "40.000",
+            "24"
+          ]
+        }
+      },
+      {
+        "nl": "Sinterklaas komt volgens de traditie uit Spanje naar Nederland. Pieten helpen Sinterklaas.",
+        "en": "According to tradition, Sinterklaas comes from Spain to the Netherlands. The Pieten help Sinterklaas.",
+        "quiz": {
+          "blank": "Spanje",
+          "category": "proper",
+          "before": "Sinterklaas komt volgens de traditie uit ",
+          "after": " naar Nederland. Pieten helpen Sinterklaas.",
+          "distractors": [
+            "Europese Unie",
+            "Ze",
+            "Middeleeuwen"
+          ]
+        }
+      },
+      {
+        "nl": "Kerstmis is op 25 en 26 december. Christenen vieren dat Jezus is geboren.",
+        "en": "Christmas is on 25 and 26 December. Christians celebrate that Jesus was born.",
+        "quiz": {
+          "blank": "25",
+          "category": "number",
+          "before": "Kerstmis is op ",
+          "after": " en 26 december. Christenen vieren dat Jezus is geboren.",
+          "distractors": [
+            "17",
+            "6",
+            "15"
+          ]
+        }
+      },
+      {
+        "nl": "Met Kerstmis zetten veel mensen een kerstboom in huis en eten zij met familie.",
+        "en": "At Christmas, many people put a Christmas tree in the house and eat with family.",
+        "quiz": {
+          "blank": "Kerstmis",
+          "category": "proper",
+          "before": "Met ",
+          "after": " zetten veel mensen een kerstboom in huis en eten zij met familie.",
+          "distractors": [
+            "Afsluitdijk",
+            "Randstad",
+            "Willem-Alexander"
+          ]
+        }
+      },
+      {
+        "nl": "Oud en Nieuw is op 31 december en 1 januari. Mensen steken vuurwerk af en veel winkels zijn dicht.",
+        "en": "New Year’s Eve and New Year’s Day are on 31 December and 1 January. People set off fireworks and many shops are closed.",
+        "quiz": {
+          "blank": "31",
+          "category": "number",
+          "before": "Oud en Nieuw is op ",
+          "after": " december en 1 januari. Mensen steken vuurwerk af en veel winkels zijn dicht.",
+          "distractors": [
+            "5",
+            "4",
+            "40.000"
+          ]
+        }
+      },
+      {
+        "nl": "Niet iedereen viert alle feesten. Voor mensen zonder geloof zijn christelijke feesten soms minder belangrijk.",
+        "en": "Not everyone celebrates all holidays. For people without religion, Christian holidays are sometimes less important."
+      },
+      {
+        "nl": "Op veel christelijke feestdagen zijn mensen vrij en zijn winkels soms gesloten.",
+        "en": "On many Christian holidays people are off work and shops are sometimes closed."
+      },
+      {
+        "nl": "Als iemand jarig is, krijgt die persoon vaak taart met kaarsjes en zingen mensen een verjaardagslied.",
+        "en": "When someone has a birthday, that person often gets cake with candles and people sing a birthday song."
+      },
+      {
+        "nl": "Kinderen trakteren soms op school als ze jarig zijn.",
+        "en": "Children sometimes treat their classmates at school when it is their birthday."
+      },
+      {
+        "nl": "Bij een bruiloft sturen mensen een uitnodiging naar familie en vrienden.",
+        "en": "At a wedding, people send an invitation to family and friends."
+      },
+      {
+        "nl": "Mensen kunnen trouwen op het gemeentehuis en soms ook in de kerk.",
+        "en": "People can get married at the town hall and sometimes also in church."
+      },
+      {
+        "nl": "In Nederland kunnen twee mannen of twee vrouwen ook trouwen.",
+        "en": "In the Netherlands, two men or two women can also get married.",
+        "quiz": {
+          "blank": "twee",
+          "category": "number-word",
+          "before": "In Nederland kunnen ",
+          "after": " mannen of twee vrouwen ook trouwen.",
+          "distractors": [
+            "tien",
+            "twaalf",
+            "vier"
+          ]
+        }
+      },
+      {
+        "nl": "Als een baby is geboren, sturen ouders vaak kaartjes naar familie en vrienden.",
+        "en": "When a baby is born, parents often send cards to family and friends."
+      },
+      {
+        "nl": "Als je op bezoek gaat bij een pasgeboren baby, maak je meestal eerst een afspraak.",
+        "en": "When you visit a newborn baby, you usually make an appointment first."
+      },
+      {
+        "nl": "Bij kraambezoek krijgen mensen vaak beschuit met muisjes.",
+        "en": "During a baby visit, people often receive rusk with sugared anise seeds."
+      },
+      {
+        "nl": "Als iemand geslaagd is voor een examen, hangt soms de vlag buiten met een tas.",
+        "en": "When someone has passed an exam, sometimes the flag is hung outside with a school bag."
+      },
+      {
+        "nl": "Als iemand overlijdt, stuurt de familie vaak een kaart met informatie over de begrafenis of crematie.",
+        "en": "When someone dies, the family often sends a card with information about the funeral or cremation."
+      },
+      {
+        "nl": "Bij een begrafenis of crematie dragen mensen vaak donkere kleren.",
+        "en": "At a funeral or cremation, people often wear dark clothes."
+      },
+      {
+        "nl": "Als iemand dood is, zeg je tegen de familie: gecondoleerd.",
+        "en": "When someone has died, you say to the family: sorry for your loss."
+      },
+      {
+        "nl": "Als iemand ziek is, kun je een kaart sturen met beterschap.",
+        "en": "When someone is ill, you can send a card saying get well soon."
+      }
+    ]
+  },
+  {
+    "id": "knm-4",
+    "les": 204,
+    "exam": "knm",
+    "examIndex": 4,
+    "label": "KNM.4",
+    "title": "KNM.4 Social contact, visits, public behaviour and healthcare",
+    "rawTitle": "Social contact, visits, public behaviour and healthcare",
+    "sentences": [
+      {
+        "nl": "In Nederland zijn vrienden vaak net zo belangrijk als familie.",
+        "en": "In the Netherlands, friends are often just as important as family."
+      },
+      {
+        "nl": "Nederlanders hebben vaak contact met hun buren en helpen elkaar met kleine dingen.",
+        "en": "Dutch people often have contact with their neighbours and help each other with small things."
+      },
+      {
+        "nl": "Als je nieuwe buren krijgt, ga je vaak kennismaken.",
+        "en": "When you get new neighbours, you often go and introduce yourself."
+      },
+      {
+        "nl": "Bij een officiële afspraak, zoals in het ziekenhuis of bij een sollicitatie, moet je op tijd komen.",
+        "en": "At an official appointment, such as at the hospital or for a job interview, you must arrive on time."
+      },
+      {
+        "nl": "Als je niet kunt komen of te laat bent, moet je bellen.",
+        "en": "If you cannot come or you are late, you must call."
+      },
+      {
+        "nl": "Bij bezoek maken Nederlanders vaak eerst een afspraak.",
+        "en": "When visiting, Dutch people often make an appointment first."
+      },
+      {
+        "nl": "Als je op bezoek gaat, krijg je vaak koffie of thee met taart of een koekje.",
+        "en": "When you visit someone, you often get coffee or tea with cake or a biscuit."
+      },
+      {
+        "nl": "Als je op bezoek gaat, kun je bloemen of een klein cadeau meenemen.",
+        "en": "When you visit someone, you can bring flowers or a small present."
+      },
+      {
+        "nl": "Bij formeel contact met een dokter of arts geef je geen geld en geen cadeau.",
+        "en": "In formal contact with a doctor or physician, you do not give money or a present."
+      },
+      {
+        "nl": "Bij formeel contact zeg je meestal u, meneer of mevrouw.",
+        "en": "In formal contact, you usually say u, sir or madam."
+      },
+      {
+        "nl": "Bij informeel contact zeg je meestal je, jij of de voornaam.",
+        "en": "In informal contact, you usually say je, jij or the first name."
+      },
+      {
+        "nl": "Mensen die elkaar niet goed kennen, geven elkaar vaak een hand.",
+        "en": "People who do not know each other well often shake hands."
+      },
+      {
+        "nl": "Mensen die elkaar goed kennen, geven elkaar soms drie zoenen.",
+        "en": "People who know each other well sometimes give each other three kisses.",
+        "quiz": {
+          "blank": "drie",
+          "category": "number-word",
+          "before": "Mensen die elkaar goed kennen, geven elkaar soms ",
+          "after": " zoenen.",
+          "distractors": [
+            "twee",
+            "twintig",
+            "vijf"
+          ]
+        }
+      },
+      {
+        "nl": "Nederlanders kijken elkaar vaak in de ogen als ze praten.",
+        "en": "Dutch people often look each other in the eyes when they talk."
+      },
+      {
+        "nl": "Nederlanders zijn vaak direct. Ze zeggen rustig en vriendelijk als ze ergens last van hebben.",
+        "en": "Dutch people are often direct. They calmly and politely say when something bothers them.",
+        "quiz": {
+          "blank": "Ze",
+          "category": "proper",
+          "before": "Nederlanders zijn vaak direct. ",
+          "after": " zeggen rustig en vriendelijk als ze ergens last van hebben.",
+          "distractors": [
+            "Europese Unie",
+            "Frank",
+            "Europa"
+          ]
+        }
+      },
+      {
+        "nl": "Als je een feest geeft, is het goed om dit tegen je buren te vertellen.",
+        "en": "If you have a party, it is good to tell your neighbours."
+      },
+      {
+        "nl": "In een wachtkamer wacht je tot de dokter je roept.",
+        "en": "In a waiting room, you wait until the doctor calls you."
+      },
+      {
+        "nl": "In een winkel, apotheek of gemeentehuis moet je soms een nummertje trekken.",
+        "en": "In a shop, pharmacy or town hall, you sometimes have to take a number."
+      },
+      {
+        "nl": "In het openbaar vervoer moet je een geldig vervoersbewijs hebben.",
+        "en": "On public transport you must have a valid travel ticket."
+      },
+      {
+        "nl": "Met een OV-chipkaart moet je inchecken en uitchecken.",
+        "en": "With an OV-chip card, you must check in and check out."
+      },
+      {
+        "nl": "Zonder vervoersbewijs reizen heet zwart reizen en je kunt een boete krijgen.",
+        "en": "Travelling without a valid ticket is called fare dodging and you can get a fine."
+      },
+      {
+        "nl": "Vanaf 14 jaar moet je altijd een identiteitsbewijs bij je hebben.",
+        "en": "From the age of 14, you must always carry identification with you.",
+        "quiz": {
+          "blank": "14",
+          "category": "number",
+          "before": "Vanaf ",
+          "after": " jaar moet je altijd een identiteitsbewijs bij je hebben.",
+          "distractors": [
+            "15",
+            "4",
+            "180"
+          ]
+        }
+      },
+      {
+        "nl": "In de stiltecoupé mag je niet praten of bellen.",
+        "en": "In the quiet carriage you may not talk or make phone calls."
+      },
+      {
+        "nl": "In het openbaar vervoer laat je mensen eerst uitstappen en daarna stap je zelf in.",
+        "en": "On public transport, you let people get out first and then you get in yourself."
+      },
+      {
+        "nl": "Gezondheidszorg betekent alle hulp die met gezondheid te maken heeft.",
+        "en": "Healthcare means all help related to health."
+      },
+      {
+        "nl": "Voor zorg moet je meestal eerst een afspraak maken.",
+        "en": "For healthcare, you usually have to make an appointment first."
+      },
+      {
+        "nl": "Bij het maken van een afspraak moet je je naam, geboortedatum, datum, tijd en plaats goed opschrijven.",
+        "en": "When making an appointment, you must write down your name, date of birth, date, time and place carefully."
+      },
+      {
+        "nl": "Als je niet goed Nederlands spreekt, kun je iemand meenemen of een tolk vragen.",
+        "en": "If you do not speak Dutch well, you can bring someone or ask for an interpreter.",
+        "quiz": {
+          "blank": "Nederlands",
+          "category": "proper",
+          "before": "Als je niet goed ",
+          "after": " spreekt, kun je iemand meenemen of een tolk vragen.",
+          "distractors": [
+            "Suriname",
+            "Rijn",
+            "Tweede Kamer"
+          ]
+        }
+      },
+      {
+        "nl": "Met gezondheidsklachten ga je eerst naar de huisarts.",
+        "en": "With health complaints, you first go to the GP."
+      },
+      {
+        "nl": "De huisarts kan je doorverwijzen naar een specialist met een verwijsbrief.",
+        "en": "The GP can refer you to a specialist with a referral letter."
+      }
+    ]
+  },
+  {
+    "id": "knm-5",
+    "les": 205,
+    "exam": "knm",
+    "examIndex": 5,
+    "label": "KNM.5",
+    "title": "KNM.5 Healthcare, insurance, healthy living and free time",
+    "rawTitle": "Healthcare, insurance, healthy living and free time",
+    "sentences": [
+      {
+        "nl": "Als je echt niet naar de huisarts kunt gaan, kan de huisarts soms op huisbezoek komen.",
+        "en": "If you really cannot go to the GP, the GP can sometimes make a home visit."
+      },
+      {
+        "nl": "De huisarts heeft soms een telefonisch spreekuur voor korte vragen.",
+        "en": "The GP sometimes has telephone consultation hours for short questions."
+      },
+      {
+        "nl": "De huisarts schrijft een recept als je medicijnen nodig hebt. Met dit recept ga je naar de apotheek.",
+        "en": "The GP writes a prescription if you need medicine. With this prescription you go to the pharmacy.",
+        "quiz": {
+          "blank": "Met",
+          "category": "proper",
+          "before": "De huisarts schrijft een recept als je medicijnen nodig hebt. ",
+          "after": " dit recept ga je naar de apotheek.",
+          "distractors": [
+            "Rijn",
+            "Noord-Brabant",
+            "Prinsjesdag"
+          ]
+        }
+      },
+      {
+        "nl": "Op het etiket staat hoe vaak je het medicijn moet gebruiken.",
+        "en": "The label says how often you must use the medicine."
+      },
+      {
+        "nl": "Sommige medicijnen kun je zonder recept kopen, bijvoorbeeld paracetamol.",
+        "en": "Some medicines can be bought without a prescription, for example paracetamol."
+      },
+      {
+        "nl": "Oude medicijnen moet je terugbrengen naar de apotheek.",
+        "en": "Old medicines must be returned to the pharmacy."
+      },
+      {
+        "nl": "In Nederland krijg je niet snel medicijnen, omdat het lichaam soms zelf beter moet worden.",
+        "en": "In the Netherlands, you do not receive medicine quickly, because the body sometimes has to recover by itself."
+      },
+      {
+        "nl": "De huisarts kan je naar een specialist in het ziekenhuis sturen.",
+        "en": "The GP can send you to a specialist in the hospital."
+      },
+      {
+        "nl": "Voor een afspraak in het ziekenhuis neem je je verzekeringsbewijs, identiteitskaart en verwijsbrief mee.",
+        "en": "For an appointment at the hospital, you bring your insurance document, identity card and referral letter."
+      },
+      {
+        "nl": "Bij de fysiotherapeut krijg je hulp bij problemen met bewegen, zoals lopen of pijn in arm, nek of rug.",
+        "en": "At the physiotherapist, you get help with movement problems, such as walking or pain in the arm, neck or back."
+      },
+      {
+        "nl": "Bij kiespijn of tandpijn bel je de tandarts.",
+        "en": "With toothache, you call the dentist."
+      },
+      {
+        "nl": "In nood bel je 112 voor politie, brandweer of ambulance.",
+        "en": "In an emergency, you call 112 for the police, fire brigade or ambulance.",
+        "quiz": {
+          "blank": "112",
+          "category": "number",
+          "before": "In nood bel je ",
+          "after": " voor politie, brandweer of ambulance.",
+          "distractors": [
+            "8",
+            "17",
+            "300"
+          ]
+        }
+      },
+      {
+        "nl": "In de avond, nacht of het weekend bel je eerst je eigen huisarts of tandarts.",
+        "en": "In the evening, at night or on the weekend, you first call your own GP or dentist."
+      },
+      {
+        "nl": "Bij spoed kun je naar de spoedeisende hulp, de SEH.",
+        "en": "In urgent cases, you can go to the emergency department, the SEH."
+      },
+      {
+        "nl": "Iedereen in Nederland moet een zorgverzekering hebben.",
+        "en": "Everyone in the Netherlands must have health insurance."
+      },
+      {
+        "nl": "De basisverzekering is verplicht. Een aanvullende verzekering is niet verplicht.",
+        "en": "Basic insurance is compulsory. Additional insurance is not compulsory."
+      },
+      {
+        "nl": "Kinderen tot 18 jaar zijn gratis verzekerd voor zorg en tandarts.",
+        "en": "Children under 18 are insured for healthcare and dental care free of charge.",
+        "quiz": {
+          "blank": "18",
+          "category": "number",
+          "before": "Kinderen tot ",
+          "after": " jaar zijn gratis verzekerd voor zorg en tandarts.",
+          "distractors": [
+            "14",
+            "2",
+            "4"
+          ]
+        }
+      },
+      {
+        "nl": "Iedereen heeft een verplicht eigen risico. Dat betekent dat je een deel van de kosten zelf betaalt.",
+        "en": "Everyone has a compulsory deductible. That means you pay part of the costs yourself."
+      },
+      {
+        "nl": "Zorgtoeslag is geld van de Belastingdienst voor mensen met een laag inkomen.",
+        "en": "Healthcare allowance is money from the Tax Administration for people with a low income.",
+        "quiz": {
+          "blank": "Belastingdienst",
+          "category": "proper",
+          "before": "Zorgtoeslag is geld van de ",
+          "after": " voor mensen met een laag inkomen.",
+          "distractors": [
+            "Spanje",
+            "Bijbel",
+            "Gouden Eeuw"
+          ]
+        }
+      },
+      {
+        "nl": "Gezond leven betekent gezond eten, niet roken, sporten, weinig alcohol drinken en veilige seks hebben.",
+        "en": "Living healthily means eating healthily, not smoking, exercising, drinking little alcohol and having safe sex."
+      },
+      {
+        "nl": "Gezond eten betekent drie keer per dag eten, genoeg drinken en niet te veel vet, suiker of zout eten.",
+        "en": "Eating healthily means eating three times a day, drinking enough and not eating too much fat, sugar or salt.",
+        "quiz": {
+          "blank": "drie",
+          "category": "number-word",
+          "before": "Gezond eten betekent ",
+          "after": " keer per dag eten, genoeg drinken en niet te veel vet, suiker of zout eten.",
+          "distractors": [
+            "vier",
+            "twaalf",
+            "twee"
+          ]
+        }
+      },
+      {
+        "nl": "Roken is slecht voor hart en longen en kan verslaving en longkanker veroorzaken.",
+        "en": "Smoking is bad for the heart and lungs and can cause addiction and lung cancer."
+      },
+      {
+        "nl": "De pil en condooms helpen om niet zwanger te worden en condooms beschermen ook tegen soa’s.",
+        "en": "The pill and condoms help prevent pregnancy, and condoms also protect against sexually transmitted infections."
+      },
+      {
+        "nl": "Elke dag een half uur bewegen is goed voor je gezondheid.",
+        "en": "Moving for half an hour every day is good for your health."
+      },
+      {
+        "nl": "Een vereniging is een club waar mensen samen sporten, leren of elkaar ontmoeten.",
+        "en": "An association is a club where people exercise, learn or meet each other together."
+      },
+      {
+        "nl": "In de bibliotheek kun je boeken en films lenen, de krant lezen en op de computer werken.",
+        "en": "In the library you can borrow books and films, read the newspaper and work on the computer."
+      },
+      {
+        "nl": "Kinderen kunnen vaak gratis lid worden van de bibliotheek.",
+        "en": "Children can often become members of the library for free."
+      },
+      {
+        "nl": "Volwassenen moeten meestal betalen voor een bibliotheekabonnement.",
+        "en": "Adults usually have to pay for a library subscription."
+      },
+      {
+        "nl": "Als je lid wordt van een club, kom je meestal op een vaste tijd in de week bij elkaar.",
+        "en": "If you become a member of a club, you usually meet at a fixed time during the week."
+      },
+      {
+        "nl": "Voor een club of cursus moet je je vaak inschrijven en betalen.",
+        "en": "For a club or course, you often have to register and pay."
+      }
+    ]
+  },
+  {
+    "id": "knm-6",
+    "les": 206,
+    "exam": "knm",
+    "examIndex": 6,
+    "label": "KNM.6",
+    "title": "KNM.6 Housing, rent, utilities, waste and insurance",
+    "rawTitle": "Housing, rent, utilities, waste and insurance",
+    "sentences": [
+      {
+        "nl": "In Nederland leven mensen veel binnen, omdat het vaak koud is en regent.",
+        "en": "In the Netherlands, people spend a lot of time indoors because it is often cold and rainy."
+      },
+      {
+        "nl": "Een flat is een groot gebouw met veel woningen of appartementen.",
+        "en": "A flat is a large building with many homes or apartments."
+      },
+      {
+        "nl": "Een eengezinswoning is een woning voor één gezin.",
+        "en": "A single-family home is a home for one family."
+      },
+      {
+        "nl": "Een vrijstaand huis staat los van andere huizen en is vaak duur.",
+        "en": "A detached house stands separate from other houses and is often expensive."
+      },
+      {
+        "nl": "In een verzorgingstehuis wonen oudere mensen die niet meer zelfstandig thuis kunnen wonen.",
+        "en": "In a care home live older people who can no longer live independently at home."
+      },
+      {
+        "nl": "Als je een huis koopt, leen je vaak geld bij de bank. Dit heet een hypotheek.",
+        "en": "When you buy a house, you often borrow money from the bank. This is called a mortgage."
+      },
+      {
+        "nl": "Hoeveel hypotheek je kunt krijgen, hangt af van je inkomen en je vaste baan.",
+        "en": "How much mortgage you can get depends on your income and your permanent job."
+      },
+      {
+        "nl": "Bij een hypotheek betaal je rente. Een deel van de rente kun je soms terugkrijgen van de belasting.",
+        "en": "With a mortgage, you pay interest. Sometimes you can get part of the interest back from tax."
+      },
+      {
+        "nl": "Een makelaar helpt mensen met het kopen of verkopen van een huis.",
+        "en": "An estate agent helps people buy or sell a house."
+      },
+      {
+        "nl": "Bij het kopen van een huis maak je afspraken over de prijs en teken je later een contract bij de notaris.",
+        "en": "When buying a house, you make agreements about the price and later sign a contract at the notary."
+      },
+      {
+        "nl": "Als je een koophuis hebt, betaal je reparaties en onderhoud zelf.",
+        "en": "If you own a house, you pay for repairs and maintenance yourself."
+      },
+      {
+        "nl": "Een sociale huurwoning is voor mensen met een laag inkomen. De huur is niet hoog.",
+        "en": "Social rental housing is for people with a low income. The rent is not high."
+      },
+      {
+        "nl": "In de vrije sector is de huur vaak hoog en kunnen mensen een huis, appartement of kamer huren.",
+        "en": "In the private rental sector, the rent is often high and people can rent a house, apartment or room."
+      },
+      {
+        "nl": "Voor een sociale huurwoning moet je je inschrijven en soms lang wachten.",
+        "en": "For social rental housing, you have to register and sometimes wait a long time."
+      },
+      {
+        "nl": "Wie het langst staat ingeschreven, krijgt vaak als eerste de woning.",
+        "en": "The person who has been registered the longest often gets the home first."
+      },
+      {
+        "nl": "Als je snel een woning nodig hebt, kun je soms een urgentieverklaring aanvragen bij de gemeente.",
+        "en": "If you need a home quickly, you can sometimes apply for an urgency statement from the municipality."
+      },
+      {
+        "nl": "In een huurcontract staan de huur, servicekosten, reparaties en de opzegtermijn.",
+        "en": "A rental contract states the rent, service charges, repairs and notice period."
+      },
+      {
+        "nl": "Als je wilt verhuizen, moet je dit vaak twee maanden van tevoren laten weten.",
+        "en": "If you want to move, you often have to report this two months in advance.",
+        "quiz": {
+          "blank": "twee",
+          "category": "number-word",
+          "before": "Als je wilt verhuizen, moet je dit vaak ",
+          "after": " maanden van tevoren laten weten.",
+          "distractors": [
+            "tien",
+            "twintig",
+            "vier"
+          ]
+        }
+      },
+      {
+        "nl": "Huurtoeslag is geld van de Belastingdienst voor mensen met een lage huurkracht en een laag inkomen.",
+        "en": "Rent allowance is money from the Tax Administration for people with low income and high rent pressure.",
+        "quiz": {
+          "blank": "Belastingdienst",
+          "category": "proper",
+          "before": "Huurtoeslag is geld van de ",
+          "after": " voor mensen met een lage huurkracht en een laag inkomen.",
+          "distractors": [
+            "Geweld",
+            "Fulltime",
+            "Europa"
+          ]
+        }
+      },
+      {
+        "nl": "De verhuurder of huisbaas zorgt meestal voor grote reparaties en groot onderhoud.",
+        "en": "The landlord usually takes care of major repairs and major maintenance."
+      },
+      {
+        "nl": "Kleine reparaties in een huurhuis doe je meestal zelf.",
+        "en": "Small repairs in a rental home are usually done by yourself."
+      },
+      {
+        "nl": "Bij problemen met de huisbaas kun je contact zoeken met de huurcommissie.",
+        "en": "If you have problems with the landlord, you can contact the Rent Tribunal."
+      },
+      {
+        "nl": "Iedereen die huurt of koopt, betaalt gemeentelijke belastingen zoals afvalstoffenheffing en rioolheffing.",
+        "en": "Everyone who rents or buys pays municipal taxes such as waste tax and sewer tax."
+      },
+      {
+        "nl": "Mensen met een laag inkomen kunnen soms kwijtschelding aanvragen voor gemeentelijke belastingen.",
+        "en": "People with a low income can sometimes apply for remission of municipal taxes."
+      },
+      {
+        "nl": "Een vergunning is een officieel papier van de gemeente waarop staat dat je iets mag doen.",
+        "en": "A permit is an official paper from the municipality that says you are allowed to do something."
+      },
+      {
+        "nl": "Afval scheiden betekent dat je afval in de juiste container doet.",
+        "en": "Separating waste means putting waste in the correct container."
+      },
+      {
+        "nl": "Glas breng je naar de glasbak. Groot afval of chemisch afval breng je naar een speciale plaats.",
+        "en": "You bring glass to the glass container. Bulky waste or chemical waste is brought to a special place.",
+        "quiz": {
+          "blank": "Groot",
+          "category": "proper",
+          "before": "Glas breng je naar de glasbak. ",
+          "after": " afval of chemisch afval breng je naar een speciale plaats.",
+          "distractors": [
+            "Vroeger",
+            "Rechtse",
+            "Provinciale Staten"
+          ]
+        }
+      },
+      {
+        "nl": "Afval wordt op vaste dagen opgehaald. Als je afval op een verkeerde dag buiten zet, kun je een boete krijgen.",
+        "en": "Waste is collected on fixed days. If you put waste outside on the wrong day, you can get a fine."
+      },
+      {
+        "nl": "Voor gas en elektriciteit moet je elk jaar de meterstand doorgeven.",
+        "en": "For gas and electricity, you must report the meter reading every year."
+      },
+      {
+        "nl": "Met een aansprakelijkheidsverzekering ben je verzekerd als je iets van iemand anders per ongeluk kapot maakt.",
+        "en": "With liability insurance you are insured if you accidentally break something belonging to someone else."
+      }
+    ]
+  },
+  {
+    "id": "knm-7",
+    "les": 207,
+    "exam": "knm",
+    "examIndex": 7,
+    "label": "KNM.7",
+    "title": "KNM.7 Services, police, municipality, taxes, bank, IND and legal help",
+    "rawTitle": "Services, police, municipality, taxes, bank, IND and legal help",
+    "sentences": [
+      {
+        "nl": "Dienstverlening betekent instanties die mensen helpen, zoals gemeente, politie, Belastingdienst, bank, advocaat en thuiszorg.",
+        "en": "Services means organisations that help people, such as the municipality, police, Tax Administration, bank, lawyer and home care.",
+        "quiz": {
+          "blank": "Belastingdienst",
+          "category": "proper",
+          "before": "Dienstverlening betekent instanties die mensen helpen, zoals gemeente, politie, ",
+          "after": ", bank, advocaat en thuiszorg.",
+          "distractors": [
+            "Fulltime",
+            "Vast",
+            "Netto"
+          ]
+        }
+      },
+      {
+        "nl": "Vanaf 14 jaar moet je altijd een identiteitsbewijs bij je hebben.",
+        "en": "From the age of 14, you must always carry an identity document.",
+        "quiz": {
+          "blank": "14",
+          "category": "number",
+          "before": "Vanaf ",
+          "after": " jaar moet je altijd een identiteitsbewijs bij je hebben.",
+          "distractors": [
+            "18",
+            "24",
+            "4"
+          ]
+        }
+      },
+      {
+        "nl": "Een identiteitsbewijs kan een paspoort, rijbewijs, identiteitskaart of verblijfsvergunning zijn.",
+        "en": "An identity document can be a passport, driving licence, identity card or residence permit."
+      },
+      {
+        "nl": "Aangifte doen betekent dat je iets officieel aan de politie vertelt.",
+        "en": "Filing a report means officially telling the police about something."
+      },
+      {
+        "nl": "Je kunt aangifte doen als iets gestolen is, als je iets kwijt bent of als iemand geweld tegen je gebruikt.",
+        "en": "You can file a report if something has been stolen, if you have lost something or if someone uses violence against you."
+      },
+      {
+        "nl": "Bij spoed, gevaar of geweld bel je 112. Voor minder dringende politiezaken bel je 0900-8844.",
+        "en": "In an emergency, danger or violence, you call 112. For less urgent police matters, you call 0900-8844.",
+        "quiz": {
+          "blank": "112",
+          "category": "number",
+          "before": "Bij spoed, gevaar of geweld bel je ",
+          "after": ". Voor minder dringende politiezaken bel je 0900-8844.",
+          "distractors": [
+            "700",
+            "15",
+            "5"
+          ]
+        }
+      },
+      {
+        "nl": "Je moet doen wat de politie zegt. Anders kun je een bekeuring of boete krijgen.",
+        "en": "You must do what the police say. Otherwise you can get a ticket or fine.",
+        "quiz": {
+          "blank": "Anders",
+          "category": "proper",
+          "before": "Je moet doen wat de politie zegt. ",
+          "after": " kun je een bekeuring of boete krijgen.",
+          "distractors": [
+            "Met",
+            "Maas",
+            "Fulltime"
+          ]
+        }
+      },
+      {
+        "nl": "Iedereen moet ingeschreven staan bij de gemeente.",
+        "en": "Everyone must be registered with the municipality."
+      },
+      {
+        "nl": "Je moet snel aan de gemeente laten weten als je een kind krijgt, trouwt, gaat scheiden, verhuist of als iemand overlijdt.",
+        "en": "You must quickly inform the municipality if you have a child, get married, get divorced, move house or if someone dies."
+      },
+      {
+        "nl": "Bij de gemeente kun je documenten aanvragen zoals een rijbewijs, paspoort, identiteitskaart, uittreksel of vergunning.",
+        "en": "At the municipality you can apply for documents such as a driving licence, passport, identity card, extract or permit."
+      },
+      {
+        "nl": "Voor documenten bij de gemeente moet je vaak een geldig ID, pasfoto’s en geld meenemen.",
+        "en": "For documents at the municipality, you often need to bring a valid ID, passport photos and money."
+      },
+      {
+        "nl": "Iedereen in Nederland heeft een BSN-nummer. Dit nummer staat op officiële documenten.",
+        "en": "Everyone in the Netherlands has a citizen service number. This number is on official documents."
+      },
+      {
+        "nl": "Iedereen betaalt belasting. Met belasting betaalt de overheid wegen, scholen, ziekenhuizen en uitkeringen.",
+        "en": "Everyone pays tax. With tax money, the government pays for roads, schools, hospitals and benefits.",
+        "quiz": {
+          "blank": "Met",
+          "category": "proper",
+          "before": "Iedereen betaalt belasting. ",
+          "after": " belasting betaalt de overheid wegen, scholen, ziekenhuizen en uitkeringen.",
+          "distractors": [
+            "Provinciale Staten",
+            "Nederlands",
+            "Bureau Jeugdzorg"
+          ]
+        }
+      },
+      {
+        "nl": "Belastingaangifte doe je één keer per jaar. Dan geef je door hoeveel je vorig jaar hebt verdiend.",
+        "en": "You file a tax return once a year. Then you report how much you earned last year."
+      },
+      {
+        "nl": "Als je denkt dat je te veel belasting moet betalen, kun je bezwaar maken.",
+        "en": "If you think you have to pay too much tax, you can object."
+      },
+      {
+        "nl": "Toeslagen zijn bedragen van de Belastingdienst voor mensen met een laag inkomen.",
+        "en": "Allowances are amounts of money from the Tax Administration for people with a low income.",
+        "quiz": {
+          "blank": "Belastingdienst",
+          "category": "proper",
+          "before": "Toeslagen zijn bedragen van de ",
+          "after": " voor mensen met een laag inkomen.",
+          "distractors": [
+            "Deltawerken",
+            "Spanje",
+            "Europa"
+          ]
+        }
+      },
+      {
+        "nl": "Huurtoeslag, zorgtoeslag, kinderopvangtoeslag en kindgebonden budget zijn voorbeelden van toeslagen.",
+        "en": "Rent allowance, healthcare allowance, childcare allowance and child-related budget are examples of allowances."
+      },
+      {
+        "nl": "DigiD is een persoonlijke digitale code die je gebruikt bij veel officiële instanties.",
+        "en": "DigiD is a personal digital code that you use with many official organisations."
+      },
+      {
+        "nl": "Kinderbijslag is geld dat ouders krijgen voor kinderen tot en met 17 jaar.",
+        "en": "Child benefit is money that parents receive for children up to and including age 17.",
+        "quiz": {
+          "blank": "17",
+          "category": "number",
+          "before": "Kinderbijslag is geld dat ouders krijgen voor kinderen tot en met ",
+          "after": " jaar.",
+          "distractors": [
+            "2",
+            "0",
+            "27"
+          ]
+        }
+      },
+      {
+        "nl": "Bijna iedereen heeft een bankrekening en een pinpas.",
+        "en": "Almost everyone has a bank account and a debit card."
+      },
+      {
+        "nl": "Rood staan betekent dat je minder dan nul euro op je bankrekening hebt.",
+        "en": "Being in the red means having less than zero euros in your bank account."
+      },
+      {
+        "nl": "Automatisch betalen betekent dat een bedrijf automatisch geld van je rekening afhaalt.",
+        "en": "Automatic payment means that a company automatically takes money from your account."
+      },
+      {
+        "nl": "Als je pinpas gestolen is, moet je je bankrekening laten blokkeren en aangifte doen bij de politie.",
+        "en": "If your debit card is stolen, you must have your bank account blocked and file a police report."
+      },
+      {
+        "nl": "De IND beslist over verblijfsvergunningen voor buitenlanders.",
+        "en": "The IND decides about residence permits for foreigners."
+      },
+      {
+        "nl": "Een MVV is een visum waarmee je Nederland kunt binnenkomen.",
+        "en": "An MVV is a visa with which you can enter the Netherlands."
+      },
+      {
+        "nl": "Een verblijfsvergunning voor bepaalde tijd moet je steeds verlengen.",
+        "en": "A temporary residence permit must be renewed each time."
+      },
+      {
+        "nl": "Een verblijfsvergunning voor onbepaalde tijd kun je meestal na vijf jaar aanvragen.",
+        "en": "A permanent residence permit can usually be applied for after five years.",
+        "quiz": {
+          "blank": "vijf",
+          "category": "number-word",
+          "before": "Een verblijfsvergunning voor onbepaalde tijd kun je meestal na ",
+          "after": " jaar aanvragen.",
+          "distractors": [
+            "twaalf",
+            "twintig",
+            "drie"
+          ]
+        }
+      },
+      {
+        "nl": "Naturalisatie betekent dat je de Nederlandse nationaliteit krijgt.",
+        "en": "Naturalisation means that you receive Dutch nationality."
+      },
+      {
+        "nl": "Veel buitenlanders moeten inburgeren en binnen drie jaar slagen voor het inburgeringsexamen.",
+        "en": "Many foreigners must integrate and pass the civic integration exam within three years.",
+        "quiz": {
+          "blank": "drie",
+          "category": "number-word",
+          "before": "Veel buitenlanders moeten inburgeren en binnen ",
+          "after": " jaar slagen voor het inburgeringsexamen.",
+          "distractors": [
+            "twintig",
+            "tien",
+            "twaalf"
+          ]
+        }
+      },
+      {
+        "nl": "Voor juridische hulp kun je naar een advocaat, Sociale Raadslieden of het Juridisch Loket gaan.",
+        "en": "For legal help, you can go to a lawyer, social legal advisers or the Legal Help Desk.",
+        "quiz": {
+          "blank": "Sociale Raadslieden",
+          "category": "proper",
+          "before": "Voor juridische hulp kun je naar een advocaat, ",
+          "after": " of het Juridisch Loket gaan.",
+          "distractors": [
+            "Vast",
+            "Afsluitdijk",
+            "Kerstmis"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-8",
+    "les": 208,
+    "exam": "knm",
+    "examIndex": 8,
+    "label": "KNM.8",
+    "title": "KNM.8 Children, childcare, education and school",
+    "rawTitle": "Children, childcare, education and school",
+    "sentences": [
+      {
+        "nl": "In Nederland is een kind met 18 jaar volwassen.",
+        "en": "In the Netherlands, a child is an adult at the age of 18.",
+        "quiz": {
+          "blank": "18",
+          "category": "number",
+          "before": "In Nederland is een kind met ",
+          "after": " jaar volwassen.",
+          "distractors": [
+            "500",
+            "24",
+            "323"
+          ]
+        }
+      },
+      {
+        "nl": "Een baby is 0 tot 1 jaar, een peuter is 1 tot 4 jaar en een kleuter is 4 tot 6 jaar.",
+        "en": "A baby is 0 to 1 year old, a toddler is 1 to 4 years old and a preschool child is 4 to 6 years old.",
+        "quiz": {
+          "blank": "0",
+          "category": "number",
+          "before": "Een baby is ",
+          "after": " tot 1 jaar, een peuter is 1 tot 4 jaar en een kleuter is 4 tot 6 jaar.",
+          "distractors": [
+            "180",
+            "700",
+            "24"
+          ]
+        }
+      },
+      {
+        "nl": "Een schoolkind is 6 tot 12 jaar en een puber is 12 tot 18 jaar.",
+        "en": "A school child is 6 to 12 years old and a teenager is 12 to 18 years old.",
+        "quiz": {
+          "blank": "6",
+          "category": "number",
+          "before": "Een schoolkind is ",
+          "after": " tot 12 jaar en een puber is 12 tot 18 jaar.",
+          "distractors": [
+            "25",
+            "0",
+            "27"
+          ]
+        }
+      },
+      {
+        "nl": "Een zwangere vrouw krijgt hulp van een verloskundige.",
+        "en": "A pregnant woman receives help from a midwife."
+      },
+      {
+        "nl": "Een verloskundige doet controles, geeft advies en helpt bij de bevalling.",
+        "en": "A midwife does check-ups, gives advice and helps with childbirth."
+      },
+      {
+        "nl": "Als er problemen zijn met de zwangerschap of bevalling, gaat een vrouw naar de gynaecoloog in het ziekenhuis.",
+        "en": "If there are problems with the pregnancy or childbirth, a woman goes to the gynaecologist in the hospital."
+      },
+      {
+        "nl": "Kraamhulp is hulp thuis in de eerste week na de geboorte van een baby.",
+        "en": "Maternity care is help at home during the first week after a baby is born."
+      },
+      {
+        "nl": "Een vrouw krijgt rond de geboorte meestal zwangerschapsverlof.",
+        "en": "Around the birth, a woman usually receives maternity leave."
+      },
+      {
+        "nl": "Het consultatiebureau is er voor kinderen van 0 tot 4 jaar.",
+        "en": "The child health clinic is for children from 0 to 4 years old.",
+        "quiz": {
+          "blank": "0",
+          "category": "number",
+          "before": "Het consultatiebureau is er voor kinderen van ",
+          "after": " tot 4 jaar.",
+          "distractors": [
+            "700",
+            "31",
+            "6"
+          ]
+        }
+      },
+      {
+        "nl": "Het consultatiebureau controleert gezondheid, groei, ontwikkeling en vaccinaties van jonge kinderen.",
+        "en": "The child health clinic checks the health, growth, development and vaccinations of young children."
+      },
+      {
+        "nl": "Kinderopvang is nodig als ouders werken en iemand op het kind moet passen.",
+        "en": "Childcare is needed when parents work and someone must look after the child."
+      },
+      {
+        "nl": "Een oppas past op een kind thuis of bij de oppas.",
+        "en": "A babysitter looks after a child at home or at the babysitter’s place."
+      },
+      {
+        "nl": "Een kinderdagverblijf is opvang voor jonge kinderen overdag.",
+        "en": "A daycare centre provides care for young children during the day."
+      },
+      {
+        "nl": "Buitenschoolse opvang is opvang voor kinderen van 4 tot 12 jaar buiten schooltijd.",
+        "en": "Out-of-school care is care for children from 4 to 12 years old outside school hours.",
+        "quiz": {
+          "blank": "4",
+          "category": "number",
+          "before": "Buitenschoolse opvang is opvang voor kinderen van ",
+          "after": " tot 12 jaar buiten schooltijd.",
+          "distractors": [
+            "8",
+            "6",
+            "24"
+          ]
+        }
+      },
+      {
+        "nl": "Ouders kunnen kinderopvangtoeslag aanvragen als zij kinderopvang moeten betalen.",
+        "en": "Parents can apply for childcare allowance if they have to pay for childcare."
+      },
+      {
+        "nl": "Kinderbijslag is geld dat ouders elke drie maanden krijgen voor hun kinderen.",
+        "en": "Child benefit is money that parents receive every three months for their children.",
+        "quiz": {
+          "blank": "drie",
+          "category": "number-word",
+          "before": "Kinderbijslag is geld dat ouders elke ",
+          "after": " maanden krijgen voor hun kinderen.",
+          "distractors": [
+            "twaalf",
+            "twintig",
+            "twee"
+          ]
+        }
+      },
+      {
+        "nl": "Opvoeding betekent dat ouders kinderen leren wat wel en niet mag.",
+        "en": "Upbringing means that parents teach children what is and is not allowed."
+      },
+      {
+        "nl": "Ouders mogen kinderen in Nederland niet slaan.",
+        "en": "Parents are not allowed to hit children in the Netherlands."
+      },
+      {
+        "nl": "Als opvoedproblemen groot worden, kunnen ouders hulp krijgen van Bureau Jeugdzorg.",
+        "en": "If parenting problems become serious, parents can get help from the Youth Care Agency.",
+        "quiz": {
+          "blank": "Bureau Jeugdzorg",
+          "category": "proper",
+          "before": "Als opvoedproblemen groot worden, kunnen ouders hulp krijgen van ",
+          "after": ".",
+          "distractors": [
+            "Prinsjesdag",
+            "Tweede Wereldoorlog",
+            "Noord-Brabant"
+          ]
+        }
+      },
+      {
+        "nl": "Kinderen moeten genoeg spelen, bewegen, contact hebben met andere kinderen en gezond eten.",
+        "en": "Children must play enough, move, have contact with other children and eat healthily."
+      },
+      {
+        "nl": "Ouders zijn verantwoordelijk als een kind onder de 16 jaar iets kapot maakt.",
+        "en": "Parents are responsible if a child under 16 breaks something.",
+        "quiz": {
+          "blank": "16",
+          "category": "number",
+          "before": "Ouders zijn verantwoordelijk als een kind onder de ",
+          "after": " jaar iets kapot maakt.",
+          "distractors": [
+            "5",
+            "112",
+            "15"
+          ]
+        }
+      },
+      {
+        "nl": "In Nederland is er vrijheid van onderwijs. Ouders mogen zelf een school kiezen.",
+        "en": "In the Netherlands there is freedom of education. Parents may choose a school themselves.",
+        "quiz": {
+          "blank": "Ouders",
+          "category": "proper",
+          "before": "In Nederland is er vrijheid van onderwijs. ",
+          "after": " mogen zelf een school kiezen.",
+          "distractors": [
+            "België",
+            "Willem-Alexander",
+            "Sociale Raadslieden"
+          ]
+        }
+      },
+      {
+        "nl": "Er zijn christelijke, islamitische, openbare en andere soorten scholen.",
+        "en": "There are Christian, Islamic, public and other types of schools."
+      },
+      {
+        "nl": "Leerplicht betekent dat kinderen van 5 tot 16 jaar naar school moeten.",
+        "en": "Compulsory education means that children from 5 to 16 must go to school.",
+        "quiz": {
+          "blank": "5",
+          "category": "number",
+          "before": "Leerplicht betekent dat kinderen van ",
+          "after": " tot 16 jaar naar school moeten.",
+          "distractors": [
+            "40.000",
+            "16",
+            "17"
+          ]
+        }
+      },
+      {
+        "nl": "Kinderen van 16 en 17 moeten naar school als ze nog geen diploma hebben.",
+        "en": "Children aged 16 and 17 must go to school if they do not yet have a diploma.",
+        "quiz": {
+          "blank": "16",
+          "category": "number",
+          "before": "Kinderen van ",
+          "after": " en 17 moeten naar school als ze nog geen diploma hebben.",
+          "distractors": [
+            "500",
+            "17",
+            "27"
+          ]
+        }
+      },
+      {
+        "nl": "Een ziek kind kan thuisblijven, maar ouders moeten de school in de ochtend bellen.",
+        "en": "A sick child can stay home, but parents must call the school in the morning."
+      },
+      {
+        "nl": "De peuterspeelzaal is voor kinderen van 2 tot 4 jaar en is niet verplicht.",
+        "en": "The preschool playgroup is for children from 2 to 4 years old and is not compulsory.",
+        "quiz": {
+          "blank": "2",
+          "category": "number",
+          "before": "De peuterspeelzaal is voor kinderen van ",
+          "after": " tot 4 jaar en is niet verplicht.",
+          "distractors": [
+            "15",
+            "112",
+            "300"
+          ]
+        }
+      },
+      {
+        "nl": "De voorschool is voor jonge kinderen die extra hulp nodig hebben met taal of ontwikkeling.",
+        "en": "Preschool is for young children who need extra help with language or development."
+      },
+      {
+        "nl": "De basisschool begint meestal vanaf 4 jaar. Soms is er een wachtlijst.",
+        "en": "Primary school usually starts from age 4. Sometimes there is a waiting list.",
+        "quiz": {
+          "blank": "4",
+          "category": "number",
+          "before": "De basisschool begint meestal vanaf ",
+          "after": " jaar. Soms is er een wachtlijst.",
+          "distractors": [
+            "16",
+            "24",
+            "27"
+          ]
+        }
+      },
+      {
+        "nl": "In groep 8 krijgen kinderen advies voor de middelbare school en doen zij een toets.",
+        "en": "In group 8, children receive advice for secondary school and take a test.",
+        "quiz": {
+          "blank": "8",
+          "category": "number",
+          "before": "In groep ",
+          "after": " krijgen kinderen advies voor de middelbare school en doen zij een toets.",
+          "distractors": [
+            "18",
+            "15",
+            "24"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-9",
+    "les": 209,
+    "exam": "knm",
+    "examIndex": 9,
+    "label": "KNM.9",
+    "title": "KNM.9 Work, job search, contracts, salary and workplace behaviour",
+    "rawTitle": "Work, job search, contracts, salary and workplace behaviour",
+    "sentences": [
+      {
+        "nl": "Veel mensen tussen 15 en 65 jaar hebben een baan. Werken geeft geld, contact, ervaring en taalontwikkeling.",
+        "en": "Many people between 15 and 65 have a job. Working gives money, contact, experience and language development.",
+        "quiz": {
+          "blank": "15",
+          "category": "number",
+          "before": "Veel mensen tussen ",
+          "after": " en 65 jaar hebben een baan. Werken geeft geld, contact, ervaring en taalontwikkeling.",
+          "distractors": [
+            "8",
+            "6",
+            "16"
+          ]
+        }
+      },
+      {
+        "nl": "Vrijwilligerswerk is werk zonder salaris, maar het geeft ervaring.",
+        "en": "Volunteer work is work without salary, but it gives experience."
+      },
+      {
+        "nl": "Tijdelijk werk is werk voor een korte tijd. Vast werk is werk voor langere tijd.",
+        "en": "Temporary work is work for a short period. Permanent work is work for a longer period.",
+        "quiz": {
+          "blank": "Vast",
+          "category": "proper",
+          "before": "Tijdelijk werk is werk voor een korte tijd. ",
+          "after": " werk is werk voor langere tijd.",
+          "distractors": [
+            "Kinderen",
+            "Noord-Brabant",
+            "Europa"
+          ]
+        }
+      },
+      {
+        "nl": "Parttime werken betekent dat je niet de hele week werkt. Fulltime werken betekent dat je de hele week werkt.",
+        "en": "Working part-time means that you do not work the whole week. Working full-time means that you work the whole week.",
+        "quiz": {
+          "blank": "Fulltime",
+          "category": "proper",
+          "before": "Parttime werken betekent dat je niet de hele week werkt. ",
+          "after": " werken betekent dat je de hele week werkt.",
+          "distractors": [
+            "Maas",
+            "Ze",
+            "Waddenzee"
+          ]
+        }
+      },
+      {
+        "nl": "Regelmatige werktijden zijn vaste werktijden. Onregelmatige werktijden veranderen vaak.",
+        "en": "Regular working hours are fixed working hours. Irregular working hours often change.",
+        "quiz": {
+          "blank": "Onregelmatige",
+          "category": "proper",
+          "before": "Regelmatige werktijden zijn vaste werktijden. ",
+          "after": " werktijden veranderen vaak.",
+          "distractors": [
+            "Waddeneilanden",
+            "Suriname",
+            "Europese Unie"
+          ]
+        }
+      },
+      {
+        "nl": "De werkgever is de baas die salaris betaalt. De werknemer werkt voor de werkgever.",
+        "en": "The employer is the boss who pays salary. The employee works for the employer."
+      },
+      {
+        "nl": "Solliciteren betekent proberen een baan te krijgen.",
+        "en": "Applying for a job means trying to get a job."
+      },
+      {
+        "nl": "Bij het kiezen van werk kijk je naar je diploma’s, ervaring, uren, salaris en interesse.",
+        "en": "When choosing work, you look at your diplomas, experience, hours, salary and interest."
+      },
+      {
+        "nl": "In de dienstensector werk je voor of met andere mensen, bijvoorbeeld in zorg, horeca, vervoer of administratie.",
+        "en": "In the service sector you work for or with other people, for example in care, hospitality, transport or administration."
+      },
+      {
+        "nl": "Een buitenlands diploma kun je laten waarderen om te weten wat het in Nederland waard is.",
+        "en": "You can have a foreign diploma evaluated to know what it is worth in the Netherlands."
+      },
+      {
+        "nl": "Ongeschoold werk is werk waarvoor je geen diploma nodig hebt.",
+        "en": "Unskilled work is work for which you do not need a diploma."
+      },
+      {
+        "nl": "Bijscholing is een cursus om iets nieuws te leren. Nascholing is herhaling van wat je eerder hebt geleerd.",
+        "en": "Additional training is a course to learn something new. Refresher training is repetition of what you learned earlier.",
+        "quiz": {
+          "blank": "Nascholing",
+          "category": "proper",
+          "before": "Bijscholing is een cursus om iets nieuws te leren. ",
+          "after": " is herhaling van wat je eerder hebt geleerd.",
+          "distractors": [
+            "Met",
+            "Ouders",
+            "Conservatieve"
+          ]
+        }
+      },
+      {
+        "nl": "Kwaliteiten zijn dingen die je goed kunt, zoals betrouwbaar, flexibel of creatief zijn.",
+        "en": "Qualities are things you are good at, such as being reliable, flexible or creative."
+      },
+      {
+        "nl": "Motivatie betekent waarom je een baan wilt hebben.",
+        "en": "Motivation means why you want to have a job."
+      },
+      {
+        "nl": "Als je werkloos bent, moet je je binnen twee dagen inschrijven bij het UWV.",
+        "en": "If you are unemployed, you must register with the UWV within two days.",
+        "quiz": {
+          "blank": "twee",
+          "category": "number-word",
+          "before": "Als je werkloos bent, moet je je binnen ",
+          "after": " dagen inschrijven bij het UWV.",
+          "distractors": [
+            "tien",
+            "twaalf",
+            "vier"
+          ]
+        }
+      },
+      {
+        "nl": "Het UWV kan een uitkering geven en een werkcoach aanbieden.",
+        "en": "The UWV can give a benefit and offer a job coach."
+      },
+      {
+        "nl": "Een WW-uitkering is voor mensen die werkloos zijn en lang genoeg gewerkt hebben.",
+        "en": "An unemployment benefit is for people who are unemployed and have worked long enough."
+      },
+      {
+        "nl": "Een WIA-uitkering is voor mensen die door gezondheidsproblemen niet kunnen werken.",
+        "en": "A WIA benefit is for people who cannot work because of health problems."
+      },
+      {
+        "nl": "Bijstand is voor mensen die geen andere uitkering kunnen krijgen en niet genoeg geld hebben om te leven.",
+        "en": "Social assistance is for people who cannot receive another benefit and do not have enough money to live."
+      },
+      {
+        "nl": "Een uitzendbureau zoekt vaak tijdelijk werk voor mensen.",
+        "en": "A temporary employment agency often looks for temporary work for people."
+      },
+      {
+        "nl": "In een vacature staan de functie, taken, eisen, werktijden, uren, adres en soms salaris.",
+        "en": "A job vacancy states the position, tasks, requirements, working hours, hours, address and sometimes salary."
+      },
+      {
+        "nl": "Een cv is een document met informatie over jezelf, zoals naam, adres, diploma’s en werkervaring.",
+        "en": "A CV is a document with information about yourself, such as name, address, diplomas and work experience."
+      },
+      {
+        "nl": "Een sollicitatiebrief is een brief waarin je schrijft waarom je de baan graag wilt hebben.",
+        "en": "An application letter is a letter in which you write why you would like to have the job."
+      },
+      {
+        "nl": "Voor een sollicitatiegesprek moet je je goed voorbereiden, op tijd komen en nette kleren dragen.",
+        "en": "For a job interview, you must prepare well, arrive on time and wear neat clothes."
+      },
+      {
+        "nl": "Als je werk krijgt, teken je een contract met arbeidsvoorwaarden.",
+        "en": "If you get a job, you sign a contract with employment conditions."
+      },
+      {
+        "nl": "De proeftijd is een periode waarin werkgever en werknemer het werk kunnen proberen.",
+        "en": "The probation period is a period in which employer and employee can try out the work."
+      },
+      {
+        "nl": "In een cao staan afspraken voor werkgevers en werknemers in één sector.",
+        "en": "A collective labour agreement contains agreements for employers and employees in one sector."
+      },
+      {
+        "nl": "Bruto salaris is het salaris vóór belasting. Netto salaris is het bedrag dat je op je bankrekening krijgt.",
+        "en": "Gross salary is salary before tax. Net salary is the amount you receive in your bank account.",
+        "quiz": {
+          "blank": "Netto",
+          "category": "proper",
+          "before": "Bruto salaris is het salaris vóór belasting. ",
+          "after": " salaris is het bedrag dat je op je bankrekening krijgt.",
+          "distractors": [
+            "Bijbel",
+            "Maas",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "De vakbond helpt werknemers met cao, salaris, ruzies en informatie over werk.",
+        "en": "The trade union helps employees with the collective agreement, salary, disputes and information about work."
+      },
+      {
+        "nl": "Discriminatie op het werk is verboden. Als praten niet helpt, kun je naar je chef, directeur of de politie gaan.",
+        "en": "Discrimination at work is forbidden. If talking does not help, you can go to your supervisor, director or the police."
+      }
+    ]
+  },
+  {
+    "id": "knm-10",
+    "les": 210,
+    "exam": "knm",
+    "examIndex": 10,
+    "label": "KNM.10",
+    "title": "KNM.10 Living together, history and politics in the Netherlands",
+    "rawTitle": "Living together, history and politics in the Netherlands",
+    "sentences": [
+      {
+        "nl": "In Nederland wonen sommige mensen alleen, sommige mensen samen en veel mensen in een gezin.",
+        "en": "In the Netherlands, some people live alone, some people live together and many people live in a family."
+      },
+      {
+        "nl": "Mensen kiezen in Nederland meestal zelf hun partner.",
+        "en": "In the Netherlands, people usually choose their partner themselves."
+      },
+      {
+        "nl": "Kinderen krijgen op school seksuele voorlichting.",
+        "en": "Children receive sex education at school."
+      },
+      {
+        "nl": "Homoseksualiteit wordt in Nederland meestal geaccepteerd, maar niet door iedereen.",
+        "en": "Homosexuality is usually accepted in the Netherlands, but not by everyone."
+      },
+      {
+        "nl": "Mannen en vrouwen hebben in Nederland dezelfde rechten.",
+        "en": "Men and women have the same rights in the Netherlands."
+      },
+      {
+        "nl": "Discriminatie is verboden. Je kunt een klacht indienen of aangifte doen bij de politie.",
+        "en": "Discrimination is forbidden. You can file a complaint or report it to the police."
+      },
+      {
+        "nl": "Ouders mogen hun kinderen niet slaan. Geweld en mishandeling zijn verboden.",
+        "en": "Parents may not hit their children. Violence and abuse are forbidden.",
+        "quiz": {
+          "blank": "Geweld",
+          "category": "proper",
+          "before": "Ouders mogen hun kinderen niet slaan. ",
+          "after": " en mishandeling zijn verboden.",
+          "distractors": [
+            "Flevoland",
+            "Vroeger",
+            "Willem-Alexander"
+          ]
+        }
+      },
+      {
+        "nl": "Abortus is in Nederland toegestaan tot 24 weken zwangerschap.",
+        "en": "Abortion is allowed in the Netherlands up to 24 weeks of pregnancy.",
+        "quiz": {
+          "blank": "24",
+          "category": "number",
+          "before": "Abortus is in Nederland toegestaan tot ",
+          "after": " weken zwangerschap.",
+          "distractors": [
+            "27",
+            "1953",
+            "18"
+          ]
+        }
+      },
+      {
+        "nl": "Euthanasie is hulp bij doodgaan en mag alleen onder strenge voorwaarden.",
+        "en": "Euthanasia is help with dying and is only allowed under strict conditions."
+      },
+      {
+        "nl": "Rond het jaar 0 kwamen de Romeinen naar het gebied dat nu Nederland is.",
+        "en": "Around the year 0, the Romans came to the area that is now the Netherlands.",
+        "quiz": {
+          "blank": "0",
+          "category": "number",
+          "before": "Rond het jaar ",
+          "after": " kwamen de Romeinen naar het gebied dat nu Nederland is.",
+          "distractors": [
+            "300",
+            "31",
+            "14"
+          ]
+        }
+      },
+      {
+        "nl": "De periode van 500 tot 1500 heet de Middeleeuwen.",
+        "en": "The period from 500 to 1500 is called the Middle Ages.",
+        "quiz": {
+          "blank": "500",
+          "category": "number",
+          "before": "De periode van ",
+          "after": " tot 1500 heet de Middeleeuwen.",
+          "distractors": [
+            "180",
+            "1953",
+            "17"
+          ]
+        }
+      },
+      {
+        "nl": "In de Middeleeuwen waren de meeste mensen boer en waren veel mensen arm.",
+        "en": "In the Middle Ages, most people were farmers and many people were poor.",
+        "quiz": {
+          "blank": "Middeleeuwen",
+          "category": "proper",
+          "before": "In de ",
+          "after": " waren de meeste mensen boer en waren veel mensen arm.",
+          "distractors": [
+            "Christenen",
+            "Tweede Wereldoorlog",
+            "Nascholing"
+          ]
+        }
+      },
+      {
+        "nl": "In de Gouden Eeuw werd Nederland rijk door handel over de hele wereld.",
+        "en": "In the Golden Age, the Netherlands became rich through trade around the world.",
+        "quiz": {
+          "blank": "Gouden Eeuw",
+          "category": "proper",
+          "before": "In de ",
+          "after": " werd Nederland rijk door handel over de hele wereld.",
+          "distractors": [
+            "Spanje",
+            "Rechtse",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "In de Tweede Wereldoorlog werd Nederland bezet door Duitsland.",
+        "en": "In the Second World War, the Netherlands was occupied by Germany.",
+        "quiz": {
+          "blank": "Tweede Wereldoorlog",
+          "category": "proper",
+          "before": "In de ",
+          "after": " werd Nederland bezet door Duitsland.",
+          "distractors": [
+            "Vroeger",
+            "Bijbel",
+            "Conservatieve"
+          ]
+        }
+      },
+      {
+        "nl": "Anne Frank zat ondergedoken in Amsterdam en schreef een dagboek.",
+        "en": "Anne Frank was in hiding in Amsterdam and wrote a diary.",
+        "quiz": {
+          "blank": "Frank",
+          "category": "proper",
+          "before": "Anne ",
+          "after": " zat ondergedoken in Amsterdam en schreef een dagboek.",
+          "distractors": [
+            "Prinsjesdag",
+            "Met",
+            "Vast"
+          ]
+        }
+      },
+      {
+        "nl": "Op 5 mei 1945 werd Nederland bevrijd.",
+        "en": "On 5 May 1945, the Netherlands was liberated.",
+        "quiz": {
+          "blank": "5",
+          "category": "number",
+          "before": "Op ",
+          "after": " mei 1945 werd Nederland bevrijd.",
+          "distractors": [
+            "6",
+            "300",
+            "500"
+          ]
+        }
+      },
+      {
+        "nl": "Na de oorlog werd Nederland opnieuw opgebouwd en kwam er meer welvaart.",
+        "en": "After the war, the Netherlands was rebuilt and there was more prosperity."
+      },
+      {
+        "nl": "In 1953 was er een grote watersnoodramp in Zeeland en Zuid-Holland.",
+        "en": "In 1953 there was a major flood disaster in Zeeland and South Holland.",
+        "quiz": {
+          "blank": "1953",
+          "category": "number",
+          "before": "In ",
+          "after": " was er een grote watersnoodramp in Zeeland en Zuid-Holland.",
+          "distractors": [
+            "15",
+            "14",
+            "24"
+          ]
+        }
+      },
+      {
+        "nl": "Na de watersnoodramp zijn de Deltawerken gebouwd om Nederland beter tegen water te beschermen.",
+        "en": "After the flood disaster, the Delta Works were built to better protect the Netherlands against water.",
+        "quiz": {
+          "blank": "Deltawerken",
+          "category": "proper",
+          "before": "Na de watersnoodramp zijn de ",
+          "after": " gebouwd om Nederland beter tegen water te beschermen.",
+          "distractors": [
+            "Tweede Kamer",
+            "Onregelmatige",
+            "Sociale Raadslieden"
+          ]
+        }
+      },
+      {
+        "nl": "Nederland is een parlementaire democratie met een koning.",
+        "en": "The Netherlands is a parliamentary democracy with a king."
+      },
+      {
+        "nl": "Op Prinsjesdag leest de koning de troonrede voor met de plannen van de regering.",
+        "en": "On Prince’s Day, the king reads the Speech from the Throne with the government’s plans.",
+        "quiz": {
+          "blank": "Prinsjesdag",
+          "category": "proper",
+          "before": "Op ",
+          "after": " leest de koning de troonrede voor met de plannen van de regering.",
+          "distractors": [
+            "Noord-Brabant",
+            "Geweld",
+            "Christenen"
+          ]
+        }
+      },
+      {
+        "nl": "Het parlement bestaat uit de Tweede Kamer en de Eerste Kamer.",
+        "en": "Parliament consists of the House of Representatives and the Senate.",
+        "quiz": {
+          "blank": "Tweede Kamer",
+          "category": "proper",
+          "before": "Het parlement bestaat uit de ",
+          "after": " en de Eerste Kamer.",
+          "distractors": [
+            "Ze",
+            "Christenen",
+            "Nascholing"
+          ]
+        }
+      },
+      {
+        "nl": "Nederlanders stemmen elke vier jaar voor de Tweede Kamer.",
+        "en": "Dutch citizens vote for the House of Representatives every four years.",
+        "quiz": {
+          "blank": "vier",
+          "category": "number-word",
+          "before": "Nederlanders stemmen elke ",
+          "after": " jaar voor de Tweede Kamer.",
+          "distractors": [
+            "tien",
+            "twee",
+            "drie"
+          ]
+        }
+      },
+      {
+        "nl": "Een nieuwe wet begint vaak met een voorstel van ministers. Daarna stemmen de Tweede Kamer en Eerste Kamer erover.",
+        "en": "A new law often starts with a proposal from ministers. Then the House of Representatives and Senate vote on it.",
+        "quiz": {
+          "blank": "Tweede Kamer",
+          "category": "proper",
+          "before": "Een nieuwe wet begint vaak met een voorstel van ministers. Daarna stemmen de ",
+          "after": " en Eerste Kamer erover.",
+          "distractors": [
+            "Kinderen",
+            "Europa",
+            "Netto"
+          ]
+        }
+      },
+      {
+        "nl": "Provincies hebben Provinciale Staten en een commissaris van de Koning.",
+        "en": "Provinces have Provincial Councils and a King’s Commissioner.",
+        "quiz": {
+          "blank": "Provinciale Staten",
+          "category": "proper",
+          "before": "Provincies hebben ",
+          "after": " en een commissaris van de Koning.",
+          "distractors": [
+            "Vroeger",
+            "Netto",
+            "Flevoland"
+          ]
+        }
+      },
+      {
+        "nl": "Gemeenten hebben een gemeenteraad en een burgemeester.",
+        "en": "Municipalities have a municipal council and a mayor."
+      },
+      {
+        "nl": "Voor de Europese Unie stemmen inwoners met een EU-nationaliteit elke vijf jaar.",
+        "en": "For the European Union, residents with EU nationality vote every five years.",
+        "quiz": {
+          "blank": "vijf",
+          "category": "number-word",
+          "before": "Voor de Europese Unie stemmen inwoners met een EU-nationaliteit elke ",
+          "after": " jaar.",
+          "distractors": [
+            "vier",
+            "twaalf",
+            "twee"
+          ]
+        }
+      },
+      {
+        "nl": "Linkse partijen willen vaak kleinere verschillen tussen arm en rijk. Rechtse partijen vinden dat mensen meer voor zichzelf moeten zorgen.",
+        "en": "Left-wing parties often want smaller differences between poor and rich. Right-wing parties think people should take more care of themselves.",
+        "quiz": {
+          "blank": "Rechtse",
+          "category": "proper",
+          "before": "Linkse partijen willen vaak kleinere verschillen tussen arm en rijk. ",
+          "after": " partijen vinden dat mensen meer voor zichzelf moeten zorgen.",
+          "distractors": [
+            "Den Haag",
+            "Conservatieve",
+            "Europese Unie"
+          ]
+        }
+      },
+      {
+        "nl": "Progressieve partijen vinden verandering goed. Conservatieve partijen willen minder veranderen.",
+        "en": "Progressive parties think change is good. Conservative parties want less change.",
+        "quiz": {
+          "blank": "Conservatieve",
+          "category": "proper",
+          "before": "Progressieve partijen vinden verandering goed. ",
+          "after": " partijen willen minder veranderen.",
+          "distractors": [
+            "Kerstmis",
+            "Vroeger",
+            "Christenen"
+          ]
+        }
+      },
+      {
+        "nl": "De grondwet beschermt belangrijke rechten, zoals vrijheid van godsdienst, vrijheid van meningsuiting en gelijke behandeling.",
+        "en": "The constitution protects important rights, such as freedom of religion, freedom of expression and equal treatment."
+      }
+    ]
+  }
+]

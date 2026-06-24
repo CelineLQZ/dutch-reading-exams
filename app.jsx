@@ -598,6 +598,7 @@ function App() {
 
   const [examDict, setExamDict] = useState([]);
   const [listenings, setListenings] = useState([]);
+  const [knm, setKnm] = useState([]);
 
   // Load words.json
   useEffect(() => {
@@ -609,18 +610,22 @@ function App() {
       fetch('exam2-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('exam4-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('listenings.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
-      fetch('listening-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
+      fetch('listening-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('knm.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('knm-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, exam4Data, listeningData, listeningDictData]) => {
+      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, exam4Data, listeningData, listeningDictData, knmData, knmDictData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
         setListenings(Array.isArray(listeningData) ? listeningData : []);
+        setKnm(Array.isArray(knmData) ? knmData : []);
         setExternalDictionary(dictionaryData || {});
         const merged = [
           ...(Array.isArray(exam2Data) ? exam2Data : []),
           ...(Array.isArray(exam3Data) ? exam3Data : []),
           ...(Array.isArray(exam4Data) ? exam4Data : []),
           ...(Array.isArray(listeningDictData) ? listeningDictData : []),
+          ...(Array.isArray(knmDictData) ? knmDictData : []),
         ];
         setExamDict(merged);
         setLoading(false);
@@ -740,6 +745,36 @@ function App() {
     }
     return list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
   }, [allListeningSentences, prefs.listeningLes]);
+
+  // KNM: flatten lessons → sentences, preserving the per-sentence `quiz` payload
+  // (which `flattenReadings` would drop).
+  const allKnmSentences = useMemo(() => {
+    return (knm || []).flatMap(lesson => (lesson.sentences || []).map((s, i) => ({
+      nl: s.nl,
+      en: s.en,
+      ipa: '',
+      pos: 'sentence',
+      type: 'sentence',
+      les: lesson.les,
+      articleTitle: lesson.rawTitle || String(lesson.title || '').replace(/^KNM\.\d+\s+/, ''),
+      unitLabel: 'Section',
+      unitValue: lesson.examIndex || String(lesson.label || '').replace(/^KNM\./, '') || lesson.les,
+      itemLabel: 'knowledge point',
+      deckLabel: 'KNM Study',
+      sentenceNumber: i + 1,
+      examples: {},
+      grammar: null,
+      quiz: s.quiz || null,
+      _key: `sentence|${lesson.id}|${i + 1}|${s.nl}`
+    })));
+  }, [knm]);
+  const orderedKnmSentences = useMemo(() => {
+    let list = allKnmSentences;
+    if (prefs.knmLes !== undefined && prefs.knmLes !== 'all') {
+      list = list.filter(s => s.les === prefs.knmLes);
+    }
+    return list.slice().sort((a,b) => (a.les||0)-(b.les||0) || (a.sentenceNumber||0)-(b.sentenceNumber||0));
+  }, [allKnmSentences, prefs.knmLes]);
 
   const lessons = useMemo(() => {
     const m = {};
@@ -877,6 +912,33 @@ function App() {
     () => orderedListeningSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten'),
     [orderedListeningSentences, sentenceStatus]
   );
+  const allKnmStats = useMemo(() => ({
+    total: allKnmSentences.length,
+    learned: allKnmSentences.filter(s => sentenceStatus[wordKey(s)] === 'learned').length,
+    forgotten: allKnmSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten').length
+  }), [allKnmSentences, sentenceStatus]);
+  const knmArticleStats = useMemo(() => {
+    const out = {};
+    knm.forEach(lesson => {
+      const total = lesson.sentences?.length || 0;
+      let learned = 0, forgotten = 0;
+      (lesson.sentences || []).forEach((s, i) => {
+        const key = `sentence|${lesson.id}|${i + 1}|${s.nl}`;
+        if (sentenceStatus[key] === 'learned') learned += 1;
+        if (sentenceStatus[key] === 'forgotten') forgotten += 1;
+      });
+      out[lesson.id] = { total, learned, forgotten };
+    });
+    return out;
+  }, [knm, sentenceStatus]);
+  const knmReviewQueue = useMemo(
+    () => orderedKnmSentences.filter(s => sentenceStatus[wordKey(s)] === 'forgotten'),
+    [orderedKnmSentences, sentenceStatus]
+  );
+  const knmTestPool = useMemo(
+    () => orderedKnmSentences.filter(s => s.quiz),
+    [orderedKnmSentences]
+  );
 
   const updatePrefs  = patch => setUserData(d => {
     const next = { ...patch };
@@ -928,17 +990,19 @@ function App() {
     const byKey = new Map([
       ...allWords.map((w, i) => [wordKey(w, i), w]),
       ...allSentences.map((w, i) => [wordKey(w, i), w]),
-      ...allListeningSentences.map((w, i) => [wordKey(w, i), w])
+      ...allListeningSentences.map((w, i) => [wordKey(w, i), w]),
+      ...allKnmSentences.map((w, i) => [wordKey(w, i), w])
     ]);
     const isListening = s.mode === 'listening' || s.mode === 'listening-review';
+    const isKnm = s.mode === 'knm' || s.mode === 'knm-review';
     const isSentence = s.mode === 'reading' || s.mode === 'sentence-review' || s.mode === 'sentence-test';
-    const source = isListening ? allListeningSentences : isSentence ? allSentences : allWords;
+    const source = isKnm ? allKnmSentences : isListening ? allListeningSentences : isSentence ? allSentences : allWords;
     const words = s.words.map(k => byKey.get(k) || source.find(w=>w.nl===k)).filter(Boolean);
     if (!words.length) return null;
     if (words[0]?.deck === 'ar') return null;
     if ((s.cursor || 0) >= words.length) return null;
     return { ...s, words };
-  }, [userData?.session, allWords, allSentences, allListeningSentences]);
+  }, [userData?.session, allWords, allSentences, allListeningSentences, allKnmSentences]);
 
   // Loading splash
   if (loading) {
@@ -989,6 +1053,7 @@ function App() {
         commonStats={commonWordStats}
         sentenceStats={allSentenceStats}
         listeningStats={allListeningStats}
+        knmStats={allKnmStats}
         studyListCount={studyList.length}
         todayStats={todayStats}
         prefs={prefs} lessons={lessons} articles={articles} wordCategories={wordCategories}
@@ -1002,6 +1067,9 @@ function App() {
           } else if (type === 'listening') {
             updatePrefs({ contentType: 'listening' });
             setRoute('listenings-pick');
+          } else if (type === 'knm') {
+            updatePrefs({ contentType: 'knm' });
+            setRoute('knm-pick');
           } else if (type === 'studylist') {
             setRoute('studylist');
           } else if (type === 'common') {
@@ -1159,6 +1227,85 @@ function App() {
           if (!wrongs.length) setRoute(sessionBackRoute || 'home');
           else setRoute('sentence-retry');
         }}
+      />
+    );
+  } else if (route === 'knm-pick') {
+    const knmContinue = continueSession?.mode === 'knm' ? continueSession : null;
+    screen = (
+      <SentencesPickScreen
+        readings={knm}
+        statsByArticle={knmArticleStats}
+        prefs={{ ...prefs, les: prefs.knmLes ?? prefs.les, order: prefs.knmOrder ?? prefs.order }}
+        continueSession={knmContinue ? { ...knmContinue, mode: 'reading' } : null}
+        modeLabel="KNM"
+        onBack={() => setRoute('home')}
+        onStartArticle={(action, les, order) => {
+          setResuming(false);
+          clearSession();
+          setSentenceResumeOffset(0);
+          setSessionBackRoute('knm-pick');
+          updatePrefs({ contentType: 'knm', knmLes: les, knmOrder: order });
+          setRoute(action === 'study' ? 'knm' : action === 'review' ? 'knm-review' : 'knm-test');
+        }}
+        onContinueArticle={(article, order) => {
+          if (knmContinue && knmContinue.words?.[0]?.les === article.les) {
+            setResuming(true);
+            setSentenceResumeOffset(0);
+            setSessionBackRoute('knm-pick');
+            updatePrefs({ contentType: 'knm', knmLes: article.les, knmOrder: order });
+            setRoute('knm');
+            return;
+          }
+          const stats = article.stats || {};
+          const offset = Math.max(0, Math.min(stats.learned || 0, Math.max((stats.total || 1) - 1, 0)));
+          setResuming(false);
+          clearSession();
+          setSentenceResumeOffset(offset);
+          setSessionBackRoute('knm-pick');
+          updatePrefs({ contentType: 'knm', knmLes: article.les, knmOrder: order });
+          setRoute('knm');
+        }}
+      />
+    );
+  } else if (route === 'knm' || route === 'knm-review') {
+    const useSaved = resuming && continueSession?.mode === 'knm' && route === 'knm';
+    const fullSentences = route === 'knm'
+      ? (useSaved ? continueSession.words : orderedKnmSentences)
+      : knmReviewQueue;
+    const offset = useSaved
+      ? Math.min(continueSession.cursor || 0, fullSentences.length)
+      : route === 'knm' ? Math.min(sentenceResumeOffset, fullSentences.length) : 0;
+    const sentences = offset > 0 ? fullSentences.slice(offset) : fullSentences;
+    const sortedLessons = knm.slice().sort((a, b) => (a.les || 0) - (b.les || 0));
+    const curIdx = sortedLessons.findIndex(r => r.les === prefs.knmLes);
+    const nextLesson = curIdx >= 0 && curIdx + 1 < sortedLessons.length ? sortedLessons[curIdx + 1] : null;
+    const handleNext = nextLesson ? () => {
+      setResuming(false);
+      clearSession();
+      setSentenceResumeOffset(0);
+      setSessionBackRoute('knm-pick');
+      updatePrefs({ knmLes: nextLesson.les });
+      setRoute('knm');
+    } : null;
+    screen = (
+      <DeckScreen key={`${route}-${prefs.knmLes}`} mode={route === 'knm' ? 'reading' : 'sentence-review'} words={sentences} progressOffset={offset}
+        level={prefs.level} onLevelChange={lv => updatePrefs({ level: lv })}
+        autoplay={settings.autoplay}
+        exampleMode={prefs.exampleMode}
+        nextSessionLabel={nextLesson ? (nextLesson.rawTitle || String(nextLesson.title || '').replace(/^KNM\.\d+\s+/, '')) : null}
+        onNextSession={handleNext}
+        onExit={() => { setResuming(false); setSentenceResumeOffset(0); setRoute(sessionBackRoute || 'home'); }}
+        onSwipe={(sentence, dir, cursor) => {
+          recordSentenceSwipe(sentence, dir);
+          if (route === 'knm') saveSession('knm', fullSentences, offset + cursor);
+        }}
+      />
+    );
+  } else if (route === 'knm-test') {
+    screen = (
+      <KnmTestScreen key={`knm-test-${prefs.knmLes}`} sentences={knmTestPool}
+        onWrongSentence={sentence => recordSentenceSwipe(sentence, 'left')}
+        onExit={() => setRoute(sessionBackRoute || 'home')}
       />
     );
   } else if (route === 'reading' || route === 'sentence-review') {

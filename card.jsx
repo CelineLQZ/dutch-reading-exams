@@ -384,6 +384,12 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
   const grammarForms = grammarEntry?.forms || word.grammar?.forms || [];
   const collocations = word.grammar?.collocations || [];
   const grammarMode = word.pos === 'grammar';
+  const unitTag = grammarMode
+    ? 'Grammar'
+    : word.unitLabel && word.unitValue
+      ? `${word.unitLabel} ${word.unitValue}`
+      : `Article ${word.les}`;
+  const itemTag = grammarMode ? 'rule' : (word.itemLabel || 'sentence');
 
   return (
     <React.Fragment>
@@ -396,12 +402,12 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
 
       <div className="card-top-row sentence-card-header">
         <div className="sentence-card-meta">
-          <span className="les-tag">{grammarMode ? 'Grammar' : `Article ${word.les}`}</span>
+          <span className="les-tag">{unitTag}</span>
           <div className="sentence-number">{word.articleTitle || 'Reading'}</div>
         </div>
         <div className="sentence-card-tools">
           {!grammarMode && <GrammarReferencePopover lang={grammarLang} onLangChange={setGrammarLang} />}
-          <span className="pos-tag">{grammarMode ? 'rule' : 'sentence'}</span>
+          <span className="pos-tag">{itemTag}</span>
         </div>
       </div>
 
@@ -419,7 +425,7 @@ function SentenceCard({ word, mode, autoplay, isTop, dragState }) {
         {mode !== 'test' && <div className="sentence-en large">{word.en}</div>}
       </div>
 
-      {mode !== 'test' && (grammarForms.length > 0 || collocations.length > 0) && (
+      {grammarMode && mode !== 'test' && (grammarForms.length > 0 || collocations.length > 0) && (
         <div className="grammar-panel sentence-grammar-panel" onPointerDown={e => e.stopPropagation()}>
           {collocations.length > 0 && (
             <div className={grammarForms.length > 0 ? 'sentence-collocation-block first' : ''}>

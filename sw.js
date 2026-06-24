@@ -1,5 +1,5 @@
 // Reading app service worker — cache-first shell, network-first data.
-const CACHE = 'inburgering-lezen-v68';
+const CACHE = 'inburgering-lezen-v73';
 const BASE = new URL('./', self.registration.scope).pathname;
 const SHELL = [
   './',

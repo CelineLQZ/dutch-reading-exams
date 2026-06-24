@@ -485,7 +485,7 @@ function SessionModeList({ selected, order, onOrder, onStart, reviewCount = 0, u
             <div className="study-small-icon">✓</div>
             <div>
               <div className="study-small-title">Test</div>
-              <div className="study-small-desc">{testLabel || `${testCount} questions`}</div>
+              {testLabel !== false && <div className="study-small-desc">{testLabel || `${testCount} questions`}</div>}
             </div>
           </div>
         </div>
@@ -540,18 +540,33 @@ function HeadphoneIcon() {
   );
 }
 
-function HomeScreen({ user, stats, commonStats, sentenceStats, listeningStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
+function KnmIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+      <path d="M2 17l10 5 10-5"/>
+      <path d="M2 12l10 5 10-5"/>
+    </svg>
+  );
+}
+
+function HomeScreen({ user, stats, commonStats, sentenceStats, listeningStats, knmStats, studyListCount = 0, onPickContent, onSwitchUser, onShowSettings, continueSession, onContinue }) {
   const primary = { label: '1000 Dutch Words', total: commonStats?.total || 0, learned: commonStats?.learned || 0, review: commonStats?.forgotten || 0 };
   const libraryRows = [
     { label: '1000 Dutch Words', total: primary.total, learned: primary.learned, review: primary.review, tone: 'keep', icon: <BookIcon />, action: 'common' },
     { label: 'Reading', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0, tone: 'accent', icon: <ListIcon />, action: 'sentences' },
     { label: 'Listening', total: listeningStats?.total || 0, learned: listeningStats?.learned || 0, review: listeningStats?.forgotten || 0, tone: 'forgot', icon: <HeadphoneIcon />, action: 'listening' },
+    { label: 'KNM', total: knmStats?.total || 0, learned: knmStats?.learned || 0, review: knmStats?.forgotten || 0, tone: 'brand', icon: <KnmIcon />, action: 'knm' },
     { label: 'My Study List', total: studyListCount, learned: 0, review: 0, tone: 'brand', icon: <StudyListIcon />, action: 'studylist', saved: true },
   ];
   const continueIsListening = continueSession?.mode === 'listening' || continueSession?.mode === 'listening-review'
     || (continueSession?.words?.[0]?._key || '').startsWith('sentence|listen');
+  const continueIsKnm = continueSession?.mode === 'knm' || continueSession?.mode === 'knm-review'
+    || (continueSession?.words?.[0]?._key || '').startsWith('sentence|knm');
   const continueDeck = continueIsListening
     ? { label: 'Listening', total: listeningStats?.total || 0, learned: listeningStats?.learned || 0, review: listeningStats?.forgotten || 0 }
+    : continueIsKnm
+    ? { label: 'KNM', total: knmStats?.total || 0, learned: knmStats?.learned || 0, review: knmStats?.forgotten || 0 }
     : continueSession?.words?.[0]?.type === 'sentence'
     ? { label: 'Reading', total: sentenceStats?.total || 0, learned: sentenceStats?.learned || 0, review: sentenceStats?.forgotten || 0 }
     : primary;
@@ -817,7 +832,11 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
   const swipeBack = useSwipeBack(onBack);
   const [selected, setSelected] = useStateS(null);
   const [order, setOrder] = useStateS(prefs.order || 'course');
-  const [articleOrder, setArticleOrder] = useStateS('asc');
+  const isKnm = modeLabel === 'KNM';
+  const groupName = isKnm ? 'session' : 'article';
+  const groupTitle = isKnm ? 'Session' : 'Article';
+  const itemName = isKnm ? 'Knowledge point' : 'Sentence';
+  const itemPlural = isKnm ? 'knowledge points' : 'sentences';
   const defaultArticleLes = prefs.les && prefs.les !== 'all' ? String(prefs.les) : String(readings[0]?.les || '');
   const [articleLes, setArticleLes] = useStateS(defaultArticleLes);
   const articleListRef = useRefS(null);
@@ -835,18 +854,41 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
     const s = statsByArticle[r.id] || { total: r.sentences?.length || 0, learned: 0, forgotten: 0 };
     return { ...r, stats: s, pct: s.total ? Math.round((s.learned / s.total) * 100) : 0 };
   });
-  const articleOptions = rows.slice().sort((a, b) => articleOrder === 'asc' ? a.les - b.les : b.les - a.les);
+  const displayTitle = r => isKnm ? (r.rawTitle || String(r.title || '').replace(/^KNM\.\d+\s+/, '')) : r.title;
+  const displayIndex = r => isKnm ? (r.examIndex || String(r.label || '').replace(/^KNM\./, '') || r.les) : r.les;
+  const articleOptions = rows.slice().sort((a, b) => a.les - b.les);
   const resumeArticle = continueSession?.mode === 'reading'
     ? rows.find(r => r.les === continueSession.words?.[0]?.les)
     : null;
   const resume = resumeArticle || rows.find(r => r.stats.learned > 0 && r.stats.learned < r.stats.total) || rows[0];
+  const resumeTotal = resume?.stats?.total || 0;
+  const resumeCursor = resumeArticle && continueSession?.cursor !== undefined
+    ? Math.min((continueSession.cursor || 0) + 1, resumeTotal || 1)
+    : Math.min((resume?.stats?.learned || 0) + 1, resumeTotal || 1);
+  const resumePct = resumeArticle && continueSession?.cursor !== undefined
+    ? (resumeTotal ? Math.round((Math.min(continueSession.cursor || 0, resumeTotal) / resumeTotal) * 100) : 0)
+    : (resume?.pct || 0);
   const effectiveArticle = (selected && rows.find(r => r.les === selected.les)) || rows.find(r => String(r.les) === String(articleLes)) || articleOptions[0];
   const effectiveSelected = effectiveArticle
-    ? { id: effectiveArticle.id, label: effectiveArticle.title, reviewCount: effectiveArticle.stats.forgotten, total: effectiveArticle.stats.total, les: effectiveArticle.les }
+    ? {
+        id: effectiveArticle.id,
+        label: displayTitle(effectiveArticle),
+        reviewCount: effectiveArticle.stats.forgotten,
+        total: effectiveArticle.stats.total,
+        les: effectiveArticle.les,
+        scopeLabel: isKnm ? `${groupTitle} ${displayIndex(effectiveArticle)}`.trim() : effectiveArticle.title,
+      }
     : null;
   const pick = r => {
     setArticleLes(String(r.les));
-    setSelected({ id: r.id, label: r.title, reviewCount: r.stats.forgotten, total: r.stats.total, les: r.les });
+    setSelected({
+      id: r.id,
+      label: displayTitle(r),
+      reviewCount: r.stats.forgotten,
+      total: r.stats.total,
+      les: r.les,
+      scopeLabel: isKnm ? `${groupTitle} ${displayIndex(r)}`.trim() : r.title,
+    });
   };
   const start = action => effectiveSelected && onStartArticle(action, effectiveSelected.les, order);
   const pickArticleValue = value => {
@@ -867,19 +909,16 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
           <div className="continue-banner pick-continue" onClick={() => onContinueArticle ? onContinueArticle(resume, order) : pick(resume)}>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="label">Continue</div>
-              <div className="title">{resume.title}</div>
-              <div className="desc-light">Sentence {Math.min(resume.stats.learned + 1, resume.stats.total)}/{resume.stats.total}</div>
-              <div className="progress"><span style={{ width: `${resume.pct}%` }}></span></div>
+              <div className="title">{displayTitle(resume)}</div>
+              <div className="desc-light">{itemName} {resumeCursor}/{resumeTotal}</div>
+              <div className="progress"><span style={{ width: `${resumePct}%` }}></span></div>
             </div>
             <div className="play"><PlayIcon /></div>
           </div>
         )}
 
         <div className="section-h pick-heading-row compact-pick-heading">
-          <h3>Pick article</h3>
-          <button type="button" className="list-sort-btn" onClick={() => setArticleOrder(o => o === 'asc' ? 'desc' : 'asc')}>
-            {articleOrder === 'asc' ? 'A → Z' : 'Z → A'}⌄
-          </button>
+          <h3>Pick {groupName}</h3>
         </div>
         {effectiveArticle && (
           <div className="content-list-card sentence-article-picker">
@@ -888,10 +927,10 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
                 const selectedRow = String(r.les) === String(effectiveArticle.les);
                 return (
                   <div key={r.id} className={'content-list-row' + (selectedRow ? ' selected' : '')} onClick={() => pick(r)}>
-                    <div className="content-list-index">{r.les}</div>
+                    <div className="content-list-index">{displayIndex(r)}</div>
                     <div className="content-list-main">
-                      <div className="content-list-title">{r.title}</div>
-                      <div className="content-list-meta">{r.stats.learned} / {r.stats.total} learned</div>
+                      <div className="content-list-title">{displayTitle(r)}</div>
+                      <div className="content-list-meta">{isKnm ? `${r.stats.learned} / ${r.stats.total} ${itemPlural}` : `${r.stats.learned} / ${r.stats.total} learned`}</div>
                     </div>
                     <div className="content-list-progress"><span style={{ width: `${r.pct}%` }}></span></div>
                     <div className="content-list-chev">›</div>
@@ -903,8 +942,8 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
         )}
 
         <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
-          reviewCount={effectiveSelected?.reviewCount || 0} unit="sentences"
-          testLabel={`${effectiveSelected?.total || 0} questions`} onStart={start} />
+          reviewCount={effectiveSelected?.reviewCount || 0} unit={itemPlural}
+          testLabel={isKnm ? false : `${effectiveSelected?.total || 0} questions`} onStart={start} />
 
       </div>
     </div>
@@ -932,7 +971,7 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
           <div className="big">🎉</div>
           <div className="title">Nothing here</div>
           <div className="desc">{mode === 'review' ? 'No words to review yet. Try Learn mode first.' : 'All caught up!'}</div>
-          <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back home</button>
+          <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back to directory</button>
         </div>
       </div>
     );
@@ -944,7 +983,7 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
   const grammarMode = words[0]?.pos === 'grammar' || mode.startsWith('grammar');
   const sentenceMode = words[0]?.type === 'sentence' || mode.startsWith('sentence') || mode === 'reading' || grammarMode;
   const modeLabel = sentenceMode
-    ? (grammarMode ? 'Grammar' : mode.includes('review') ? 'Sentence Review' : 'Sentences Study')
+    ? (grammarMode ? 'Grammar' : words[0]?.deckLabel ? (mode.includes('review') ? `${words[0].deckLabel.replace(/ Study$/, '')} Review` : words[0].deckLabel) : mode.includes('review') ? 'Sentence Review' : 'Sentences Study')
     : (mode === 'review' ? 'Review' : 'Learn');
   const handleSwipe = (i, dir, item) => {
     setCursor(i + 1);
@@ -990,10 +1029,10 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
             )}
             {onNextSession && (
               <button className="primary-btn" style={{ maxWidth: 240 }} onClick={onNextSession}>
-                Next session{nextSessionLabel ? ` · ${nextSessionLabel}` : ''} →
+                Next section{nextSessionLabel ? ` · ${nextSessionLabel}` : ''} →
               </button>
             )}
-            <button className={onNextSession ? "ghost-btn" : "primary-btn"} style={{ maxWidth: 240 }} onClick={onExit}>Back home</button>
+            <button className={onNextSession ? "ghost-btn" : "primary-btn"} style={{ maxWidth: 240 }} onClick={onExit}>Back to session list</button>
           </div>
         )}
       </div>
@@ -1398,6 +1437,141 @@ function StudyListScreen({ items, onBack, onRemove, onStartSession }) {
   );
 }
 
+function KnmTestCard({ sentence, choices, isTop, dragState, onAnswered }) {
+  const [picked, setPicked] = useStateS(null);
+  useEffectS(() => { setPicked(null); }, [sentence.nl]);
+  const handlePick = (e, choice) => {
+    e.stopPropagation();
+    if (picked) return;
+    const correct = choice === sentence.quiz.blank;
+    setPicked({ choice, correct });
+    setTimeout(() => onAnswered?.(correct), 800);
+  };
+  return (
+    <React.Fragment>
+      {isTop && (
+        <React.Fragment>
+          <div className="stamp keep"   style={{ opacity: dragState.keepOpacity }}>RIGHT</div>
+          <div className="stamp forgot" style={{ opacity: dragState.forgotOpacity }}>WRONG</div>
+        </React.Fragment>
+      )}
+      <div className="card-top-row">
+        <span className="les-tag">{sentence.articleTitle || 'KNM'}</span>
+        <span className="pos-tag">{sentence.quiz.category}</span>
+      </div>
+      <div className="sentence-study-card">
+        <div className="sentence-nl large">
+          <span>{sentence.quiz.before}</span>
+          <span className="knm-blank">_____</span>
+          <span>{sentence.quiz.after}</span>
+        </div>
+        <div className="divider"></div>
+        <div className="sentence-en" style={{ opacity: 0.8, fontSize: 14 }}>{sentence.en}</div>
+      </div>
+      <div style={{ fontSize: 11, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginTop: 12, textAlign: 'center' }}>
+        Pick the missing word
+      </div>
+      <div className="test-options" onPointerDown={e => e.stopPropagation()}>
+        {choices.map((c, i) => {
+          let cls = 'test-opt';
+          if (picked) {
+            cls += ' disabled';
+            if (c === sentence.quiz.blank)        cls += ' right';
+            else if (picked.choice === c)         cls += ' wrong';
+          }
+          return (
+            <button key={c} className={cls} onClick={e => handlePick(e, c)}>
+              <span className="letter">{String.fromCharCode(65 + i)}</span>
+              <span>{c}</span>
+            </button>
+          );
+        })}
+      </div>
+    </React.Fragment>
+  );
+}
+
+function KnmTestScreen({ sentences, onWrongSentence, onExit }) {
+  const deckRef = useRefS(null);
+  const [cursor, setCursor] = useStateS(0);
+  const [score, setScore] = useStateS({ right: 0, wrong: 0 });
+  const [wrongs, setWrongs] = useStateS([]);
+  const quizKey = useMemoS(() => sentences.map(s => s.nl).join('~'), [sentences]);
+
+  const quiz = useMemoS(() => {
+    return shuffleArr(sentences).map(s => ({
+      sentence: s,
+      choices: shuffleArr([s.quiz.blank, ...s.quiz.distractors]),
+    }));
+  }, [sentences]);
+
+  useEffectS(() => {
+    setCursor(0);
+    setScore({ right: 0, wrong: 0 });
+    setWrongs([]);
+    deckRef.current?.reset?.();
+  }, [quizKey]);
+
+  if (!quiz.length) {
+    return (
+      <div className="app-screen">
+        <div className="topbar">
+          <div className="iconbtn" onClick={onExit}><CloseIcon /></div>
+          <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>KNM Test</div>
+          <div style={{ width: 38 }}></div>
+        </div>
+        <div className="empty-state">
+          <div className="big">📭</div>
+          <div className="title">No quizzable knowledge points yet</div>
+          <div className="desc">This section has no auto-generated fact-blank questions. Try Study mode or another section.</div>
+          <button className="primary-btn" style={{ maxWidth: 220 }} onClick={onExit}>Back</button>
+        </div>
+      </div>
+    );
+  }
+
+  const done = cursor >= quiz.length;
+  const total = quiz.length;
+  const pct = total ? Math.round((cursor / total) * 100) : 0;
+
+  if (done) {
+    return <DoneScreen right={score.right} wrong={score.wrong} wrongWords={wrongs} onExit={onExit} onRetry={null} />;
+  }
+
+  return (
+    <div className="app-screen">
+      <div className="topbar">
+        <div className="iconbtn" onClick={onExit}><CloseIcon /></div>
+        <div className="mode-pill"><span className="dot" style={{ background: 'var(--keep)' }}></span>KNM Test</div>
+        <div className="counter">{cursor + 1}/{total}</div>
+      </div>
+      <div className="progressbar"><span style={{ width: pct + '%' }}></span></div>
+      <div className="deck-stage">
+        <SwipeDeck ref={deckRef} items={quiz}
+          onSwipe={(i) => setCursor(i + 1)}
+          renderCard={(q, i, isTop, dragState) => (
+            <KnmTestCard sentence={q.sentence} choices={q.choices} isTop={isTop} dragState={dragState}
+              onAnswered={correct => {
+                setScore(s => ({ right: s.right + (correct ? 1 : 0), wrong: s.wrong + (correct ? 0 : 1) }));
+                if (!correct) {
+                  setWrongs(ws => [...ws, q.sentence]);
+                  onWrongSentence?.(q.sentence);
+                }
+                deckRef.current?.swipe(correct ? 'right' : 'left');
+              }}
+            />
+          )}
+        />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 14, padding: '0 6px', fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+          <span style={{ color: 'var(--forgot)' }}>✗ {score.wrong}</span>
+          <span style={{ color: 'var(--ink-faint)' }}>Tap an answer</span>
+          <span style={{ color: 'var(--keep)' }}>{score.right} ✓</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 window.RegisterScreen = RegisterScreen;
 window.UserSwitcher   = UserSwitcher;
 window.HomeScreen     = HomeScreen;
@@ -1408,3 +1582,4 @@ window.ReadingScreen  = ReadingScreen;
 window.TestScreen     = TestScreen;
 window.DoneScreen     = DoneScreen;
 window.StudyListScreen = StudyListScreen;
+window.KnmTestScreen  = KnmTestScreen;

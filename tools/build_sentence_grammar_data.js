@@ -3,8 +3,8 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SOURCES = {
-  zh: '/Users/liceline/Desktop/荷兰融入考试阅读/grammar_chinese.md',
-  en: '/Users/liceline/Desktop/荷兰融入考试阅读/grammar_english.md'
+  zh: path.join(__dirname, 'sources', 'grammar_chinese.md'),
+  en: path.join(__dirname, 'sources', 'grammar_english.md')
 };
 const OUT = path.join(ROOT, 'sentence-grammar-data.js');
 
