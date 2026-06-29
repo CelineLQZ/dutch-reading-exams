@@ -1891,6 +1891,65 @@ button { font-family: inherit; }
   font-weight: 700;
   letter-spacing: 2px;
 }
+.knm-options-study {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  font-family: var(--font-ui);
+}
+.knm-opt-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--ink);
+}
+.knm-opt-row.correct {
+  background: color-mix(in srgb, var(--keep) 14%, transparent);
+  border-color: var(--keep);
+  color: var(--ink);
+  font-weight: 600;
+}
+.knm-opt-row .letter {
+  display: inline-grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  border-radius: 6px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--ink-soft);
+  flex-shrink: 0;
+}
+.knm-opt-row.correct .letter {
+  background: var(--keep);
+  color: white;
+  border-color: var(--keep);
+}
+.knm-opt-row .opt-nl { flex: 1; min-width: 0; }
+.knm-opt-row .check { color: var(--keep); font-weight: 800; }
+.knm-options-en {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.knm-opt-row-en {
+  display: flex;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.35;
+}
+.knm-opt-row-en.correct { color: var(--keep); font-weight: 600; font-style: normal; }
+.knm-opt-row-en .letter { font-weight: 800; color: var(--ink-faint); width: 14px; flex-shrink: 0; }
 
 /* Test options */
 .test-options { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
@@ -1911,6 +1970,18 @@ button { font-family: inherit; }
 .test-opt.wrong       { background: color-mix(in srgb, var(--forgot) 14%, transparent); border-color: var(--forgot); }
 .test-opt.wrong .letter  { background: var(--forgot); color: white; border-color: var(--forgot); }
 .test-opt.disabled    { pointer-events: none; }
+/* Study-mode "answer" highlight: same bar shape as tests, just bolded text + letter chip */
+.test-opt.answer {
+  font-weight: 800;
+  border-color: var(--keep);
+  background: color-mix(in srgb, var(--keep) 8%, var(--paper-2));
+}
+.test-opt.answer .letter {
+  background: var(--keep);
+  color: white;
+  border-color: var(--keep);
+  font-weight: 800;
+}
 
 /* Empty / done states */
 .empty-state {

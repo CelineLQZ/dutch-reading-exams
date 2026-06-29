@@ -612,13 +612,21 @@ function App() {
       fetch('listenings.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('listening-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('knm.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
-      fetch('knm-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
+      fetch('knm-dict.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('knm-questions.json?' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
     ])
-      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, exam4Data, listeningData, listeningDictData, knmData, knmDictData]) => {
+      .then(([wordData, readingData, dictionaryData, exam3Data, exam2Data, exam4Data, listeningData, listeningDictData, knmData, knmDictData, knmQuestionsData]) => {
         setAllWords(wordData.map((w, i) => ({ ...w, _key: wordKey(w, i) })));
         setReadings(readingData);
         setListenings(Array.isArray(listeningData) ? listeningData : []);
-        setKnm(Array.isArray(knmData) ? knmData : []);
+        // Question lessons come FIRST (les 301..310), knowledge points after (les 201..210).
+        // We rely on the les-based sort everywhere else to keep them grouped naturally;
+        // adjust display order in the picker by giving questions a lower les range.
+        const knmQuestionLessons = (Array.isArray(knmQuestionsData) ? knmQuestionsData : [])
+          .map(l => ({ ...l, les: 200 + l.examIndex - 100 }));  // 101..110, sorts before knm lessons (201+)
+        // Re-base question lessons under les 101..110 so they appear at the TOP of the picker.
+        // Then re-base knowledge-point lessons to les 201..210 (they already are).
+        setKnm([...knmQuestionLessons, ...(Array.isArray(knmData) ? knmData : [])]);
         setExternalDictionary(dictionaryData || {});
         const merged = [
           ...(Array.isArray(exam2Data) ? exam2Data : []),
@@ -765,6 +773,7 @@ function App() {
       examples: {},
       grammar: null,
       quiz: s.quiz || null,
+      question: s.question || null,
       _key: `sentence|${lesson.id}|${i + 1}|${s.nl}`
     })));
   }, [knm]);
@@ -936,7 +945,7 @@ function App() {
     [orderedKnmSentences, sentenceStatus]
   );
   const knmTestPool = useMemo(
-    () => orderedKnmSentences.filter(s => s.quiz),
+    () => orderedKnmSentences.filter(s => s.question || s.quiz),
     [orderedKnmSentences]
   );
 

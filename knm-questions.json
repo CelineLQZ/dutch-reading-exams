@@ -1,0 +1,2752 @@
+[
+  {
+    "id": "knm-q-1",
+    "les": 301,
+    "exam": "knm-questions",
+    "examIndex": 1,
+    "label": "KNM-Q.1",
+    "title": "KNM Q1 — Kennismaken met Nederland",
+    "rawTitle": "Eerste deel — Kennismaken met Nederland",
+    "sentences": [
+      {
+        "nl": "Fatima zit in de inburgeringsles. De docent zegt: Nederland betekent ‘laag land’. Veel land ligt onder de zeespiegel. Wat betekent ‘Nederland’?",
+        "en": "Fatima is in the civic integration class. The teacher says: Nederland means ‘low land’. Much land lies below sea level. What does ‘Nederland’ mean?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "klein land",
+              "en": "small country"
+            },
+            {
+              "letter": "B",
+              "nl": "laag land",
+              "en": "low land"
+            },
+            {
+              "letter": "C",
+              "nl": "koud land",
+              "en": "cold country"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Ahmed reist met de trein in de Randstad. Hij bezoekt vier grote steden. Zijn vriend zegt: deze steden horen bij de Randstad. Welke stad hoort bij de Randstad?",
+        "en": "Ahmed travels by train in the Randstad. He visits four big cities. His friend says: these cities belong to the Randstad. Which city belongs to the Randstad?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Eindhoven",
+              "en": "Eindhoven"
+            },
+            {
+              "letter": "B",
+              "nl": "Groningen",
+              "en": "Groningen"
+            },
+            {
+              "letter": "C",
+              "nl": "Utrecht",
+              "en": "Utrecht"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Maria woont in Nederland. Ze leert dat Nederland 12 provincies heeft. Elke provincie heeft een hoofdstad. Wat is de hoofdstad van Noord-Brabant?",
+        "en": "Maria lives in the Netherlands. She learns that the Netherlands has 12 provinces. Each province has a capital city. What is the capital of North Brabant?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Eindhoven",
+              "en": "Eindhoven"
+            },
+            {
+              "letter": "B",
+              "nl": "Tilburg",
+              "en": "Tilburg"
+            },
+            {
+              "letter": "C",
+              "nl": "’s-Hertogenbosch",
+              "en": "’s-Hertogenbosch"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Li leest over de geschiedenis van Nederland. Vroeger was de Zuiderzee een grote zee. Na een grote dijk werd het water een meer. Hoe heet dit meer nu?",
+        "en": "Li reads about the history of the Netherlands. In the past, the Zuiderzee was a large sea. After a large dike was built, the water became a lake. What is this lake called now?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Noordzee",
+              "en": "North Sea"
+            },
+            {
+              "letter": "B",
+              "nl": "Waddenzee",
+              "en": "Wadden Sea"
+            },
+            {
+              "letter": "C",
+              "nl": "IJsselmeer",
+              "en": "IJsselmeer"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Carlos leest over een ramp in 1953. Er was een zware storm en dijken braken. Veel mensen stierven in Zeeland en Zuid-Holland. Hoe heet deze ramp?",
+        "en": "Carlos reads about a disaster in 1953. There was a severe storm and dikes broke. Many people died in Zeeland and South Holland. What is this disaster called?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Zuiderzeeramp",
+              "en": "Zuiderzee disaster"
+            },
+            {
+              "letter": "B",
+              "nl": "Watersnoodramp",
+              "en": "flood disaster"
+            },
+            {
+              "letter": "C",
+              "nl": "Stormramp",
+              "en": "storm disaster"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Anna leert over de Zuiderzee. In 1932 bouwde Nederland een lange dijk. Daardoor werd de zee afgesloten. Hoe heet deze dijk?",
+        "en": "Anna learns about the Zuiderzee. In 1932 the Netherlands built a long dike. Because of this, the sea was closed off. What is this dike called?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Afsluitdijk",
+              "en": "Afsluitdijk"
+            },
+            {
+              "letter": "B",
+              "nl": "Houtribdijk",
+              "en": "Houtribdijk"
+            },
+            {
+              "letter": "C",
+              "nl": "Oosterscheldedijk",
+              "en": "Oosterscheldedijk"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-2",
+    "les": 302,
+    "exam": "knm-questions",
+    "examIndex": 2,
+    "label": "KNM-Q.2",
+    "title": "KNM Q2 — Geschiedenis van Nederland",
+    "rawTitle": "Tweede deel — Geschiedenis van Nederland",
+    "sentences": [
+      {
+        "nl": "Lars woont in Delft. Hij ziet een standbeeld van Willem van Oranje. Hoe noemen Nederlanders deze man ook wel?",
+        "en": "Lars lives in Delft. He sees a statue of Willem van Oranje. What do Dutch people also call this man?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De eerste koning",
+              "en": "The first king"
+            },
+            {
+              "letter": "B",
+              "nl": "Vader des Vaderlands",
+              "en": "Father of the Fatherland"
+            },
+            {
+              "letter": "C",
+              "nl": "De rijke koopman",
+              "en": "The rich merchant"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Het is het jaar 1600. Een schip van de VOC komt terug in Nederland. Wat zit er vooral in het schip?",
+        "en": "It is the year 1600. A ship of the Dutch East India Company returns to the Netherlands. What is mainly in the ship?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Veel goud en zilver",
+              "en": "A lot of gold and silver"
+            },
+            {
+              "letter": "B",
+              "nl": "Kruiden en koffie",
+              "en": "Spices and coffee"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen nieuwe kleren",
+              "en": "Only new clothes"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Thomas leest over de Tachtigjarige Oorlog. Tegen welk land vocht Nederland in die tijd?",
+        "en": "Thomas reads about the Eighty Years’ War. Against which country did the Netherlands fight at that time?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Duitsland",
+              "en": "Germany"
+            },
+            {
+              "letter": "B",
+              "nl": "Frankrijk",
+              "en": "France"
+            },
+            {
+              "letter": "C",
+              "nl": "Spanje",
+              "en": "Spain"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Sanne kijkt naar een schilderij in het Rijksmuseum. Het heet ‘De Nachtwacht’. Wie heeft dit gemaakt?",
+        "en": "Sanne looks at a painting in the Rijksmuseum. It is called ‘The Night Watch’. Who made this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Rembrandt van Rijn",
+              "en": "Rembrandt van Rijn"
+            },
+            {
+              "letter": "B",
+              "nl": "Willem I",
+              "en": "Willem I"
+            },
+            {
+              "letter": "C",
+              "nl": "Vincent van Gogh",
+              "en": "Vincent van Gogh"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In 1863 verandert er iets belangrijks in de kolonies. Wat stopt er in dat jaar?",
+        "en": "In 1863 something important changed in the colonies. What ended in that year?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De handel in koffie",
+              "en": "The trade in coffee"
+            },
+            {
+              "letter": "B",
+              "nl": "De slavernij",
+              "en": "Slavery"
+            },
+            {
+              "letter": "C",
+              "nl": "De oorlog met Spanje",
+              "en": "The war with Spain"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Nederland had vroeger veel kolonies. Welk land werd in 1949 onafhankelijk van Nederland?",
+        "en": "The Netherlands used to have many colonies. Which country became independent from the Netherlands in 1949?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Suriname",
+              "en": "Suriname"
+            },
+            {
+              "letter": "B",
+              "nl": "Indonesië",
+              "en": "Indonesia"
+            },
+            {
+              "letter": "C",
+              "nl": "Aruba",
+              "en": "Aruba"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Tijdens de Tweede Wereldoorlog was de Holocaust. Wat gebeurde er toen met veel Joodse mensen?",
+        "en": "During the Second World War there was the Holocaust. What happened then to many Jewish people?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Zij kregen extra geld",
+              "en": "They received extra money"
+            },
+            {
+              "letter": "B",
+              "nl": "Zij moesten naar Spanje",
+              "en": "They had to go to Spain"
+            },
+            {
+              "letter": "C",
+              "nl": "Zij werden vermoord in kampen",
+              "en": "They were murdered in camps"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Na 1945 was Nederland kapot. Mensen werkten hard aan de ‘wederopbouw’. Wat is dat?",
+        "en": "After 1945 the Netherlands was destroyed. People worked hard on the ‘reconstruction’. What is that?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het land weer opbouwen",
+              "en": "Rebuilding the country"
+            },
+            {
+              "letter": "B",
+              "nl": "Een nieuwe koning kiezen",
+              "en": "Choosing a new king"
+            },
+            {
+              "letter": "C",
+              "nl": "Stoppen met alle handel",
+              "en": "Stopping all trade"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In 1992 tekent Nederland een verdrag in Maastricht. Waar is dit verdrag voor?",
+        "en": "In 1992 the Netherlands signed a treaty in Maastricht. What is this treaty for?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Voor de nieuwe grondwet",
+              "en": "For the new constitution"
+            },
+            {
+              "letter": "B",
+              "nl": "Voor de oprichting van EU",
+              "en": "For the founding of the EU"
+            },
+            {
+              "letter": "C",
+              "nl": "Om de oorlog te stoppen",
+              "en": "To stop the war"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Eva is bij een voetbalwedstrijd. Iedereen zingt het ‘Wilhelmus’. Wat is dit?",
+        "en": "Eva is at a football match. Everyone sings the ‘Wilhelmus’. What is this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een lied over de VOC",
+              "en": "A song about the Dutch East India Company"
+            },
+            {
+              "letter": "B",
+              "nl": "Het officiële volkslied",
+              "en": "The official national anthem"
+            },
+            {
+              "letter": "C",
+              "nl": "Een wet over vrijheid",
+              "en": "A law about freedom"
+            }
+          ],
+          "answer": "B"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-3",
+    "les": 303,
+    "exam": "knm-questions",
+    "examIndex": 3,
+    "label": "KNM-Q.3",
+    "title": "KNM Q3 — Democratie en de rechtsstaat",
+    "rawTitle": "Derde deel — Democratie en de rechtsstaat",
+    "sentences": [
+      {
+        "nl": "Eva is 19 jaar. Zij gaat naar het stembureau om te stemmen voor de Tweede Kamer. Hoe noem je het recht om te mogen stemmen?",
+        "en": "Eva is 19 years old. She goes to the polling station to vote for the House of Representatives. What do you call the right to be allowed to vote?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Actief kiesrecht",
+              "en": "Active voting right"
+            },
+            {
+              "letter": "B",
+              "nl": "Passief kiesrecht",
+              "en": "Passive voting right"
+            },
+            {
+              "letter": "C",
+              "nl": "Rechterlijke macht",
+              "en": "Judicial power"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Pieter wil zelf in de politiek gaan. Hij wil gekozen worden voor de Gemeenteraad. Hoe noem je het recht om gekozen te worden?",
+        "en": "Pieter wants to go into politics himself. He wants to be elected to the municipal council. What do you call the right to be elected?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Vrijheid van godsdienst",
+              "en": "Freedom of religion"
+            },
+            {
+              "letter": "B",
+              "nl": "Actief kiesrecht",
+              "en": "Active voting right"
+            },
+            {
+              "letter": "C",
+              "nl": "Passief kiesrecht",
+              "en": "Passive voting right"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "In Nederland zijn er drie machten. De rechters horen bij één van deze machten. Wat doen rechters?",
+        "en": "In the Netherlands there are three powers. Judges belong to one of these powers. What do judges do?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Zij maken nieuwe wetten",
+              "en": "They make new laws"
+            },
+            {
+              "letter": "B",
+              "nl": "Zij beslissen over de wet",
+              "en": "They make decisions about the law"
+            },
+            {
+              "letter": "C",
+              "nl": "Zij leiden de regering",
+              "en": "They lead the government"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "De Tweede Kamer en de Eerste Kamer horen bij het parlement. Wat is een belangrijke taak van het parlement?",
+        "en": "The House of Representatives and the Senate belong to parliament. What is an important task of parliament?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Wetten maken en controleren",
+              "en": "Making laws and checking/monitoring"
+            },
+            {
+              "letter": "B",
+              "nl": "De politie aansturen",
+              "en": "Directing the police"
+            },
+            {
+              "letter": "C",
+              "nl": "Werken bij de bank",
+              "en": "Working at the bank"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Nederland heeft geen president, maar een leider van het kabinet. Hoe noem je deze persoon?",
+        "en": "The Netherlands does not have a president, but it has a leader of the cabinet. What do you call this person?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Koning",
+              "en": "The King"
+            },
+            {
+              "letter": "B",
+              "nl": "De Minister-president",
+              "en": "The Prime Minister"
+            },
+            {
+              "letter": "C",
+              "nl": "De Staatssecretaris",
+              "en": "The State Secretary"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Twee politieke partijen willen samen het land besturen. Zij gaan samenwerken in de regering. Hoe noem je deze samenwerking?",
+        "en": "Two political parties want to govern the country together. They are going to work together in the government. What do you call this cooperation?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een coalitie",
+              "en": "A coalition"
+            },
+            {
+              "letter": "B",
+              "nl": "Een revolutie",
+              "en": "A revolution"
+            },
+            {
+              "letter": "C",
+              "nl": "Een vakbond",
+              "en": "A trade union"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In de Grondwet staat dat iedereen zijn mening mag geven. Hoe noem je dit recht?",
+        "en": "The Constitution says that everyone may give their opinion. What do you call this right?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Vrijheid van meningsuiting",
+              "en": "Freedom of expression"
+            },
+            {
+              "letter": "B",
+              "nl": "Recht op gratis vakantie",
+              "en": "The right to free holiday"
+            },
+            {
+              "letter": "C",
+              "nl": "Plicht om te werken",
+              "en": "The duty to work"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Soms beslissen landen in de wereld om samen te werken voor veiligheid. Nederland is lid van de NAVO. Wat is de NAVO?",
+        "en": "Sometimes countries in the world decide to work together for security. The Netherlands is a member of NATO. What is NATO?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een groep voor sport",
+              "en": "A group for sports"
+            },
+            {
+              "letter": "B",
+              "nl": "Een militaire organisatie",
+              "en": "A military organization"
+            },
+            {
+              "letter": "C",
+              "nl": "Een school voor kinderen",
+              "en": "A school for children"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een vrouw in Nederland wil zelf kiezen met wie ze trouwt. Haar familie mag haar niet dwingen. Hoe noem je dit recht?",
+        "en": "A woman in the Netherlands wants to choose herself whom she marries. Her family may not force her. What do you call this right?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Recht op discriminatie",
+              "en": "Right to discrimination"
+            },
+            {
+              "letter": "B",
+              "nl": "Zelfbeschikkingsrecht",
+              "en": "Right to self-determination"
+            },
+            {
+              "letter": "C",
+              "nl": "Recht op belasting",
+              "en": "Right to tax"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "De overheid en alle burgers moeten zich aan de wet houden. Hoe noemen we een land waar dit zo is?",
+        "en": "The government and all citizens must obey the law. What do we call a country where this is the case?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een rechtsstaat",
+              "en": "A state governed by the rule of law"
+            },
+            {
+              "letter": "B",
+              "nl": "Een dictatuur",
+              "en": "A dictatorship"
+            },
+            {
+              "letter": "C",
+              "nl": "Een koninkrijk zonder wet",
+              "en": "A kingdom without law"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-4",
+    "les": 304,
+    "exam": "knm-questions",
+    "examIndex": 4,
+    "label": "KNM-Q.4",
+    "title": "KNM Q4 — De overheid",
+    "rawTitle": "Vierde deel — De overheid",
+    "sentences": [
+      {
+        "nl": "Mark gaat verhuizen naar een andere straat in zijn stad. Waar moet hij zijn nieuwe adres doorgeven?",
+        "en": "Mark is moving to another street in his city. Where must he report his new address?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de politie",
+              "en": "At the police"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de gemeente",
+              "en": "At the municipality"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de bank",
+              "en": "At the bank"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Sinds februari 2026 heeft Nederland een nieuwe minister-president. Wie is de huidige premier?",
+        "en": "Since February 2026 the Netherlands has had a new prime minister. Who is the current prime minister?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Mark Rutte",
+              "en": "Mark Rutte"
+            },
+            {
+              "letter": "B",
+              "nl": "Rob Jetten",
+              "en": "Rob Jetten"
+            },
+            {
+              "letter": "C",
+              "nl": "Willem-Alexander",
+              "en": "Willem-Alexander"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Iedereen die in Nederland woont, heeft een eigen nummer nodig voor belasting en zorg. Hoe noem je dit nummer?",
+        "en": "Everyone who lives in the Netherlands needs their own number for tax and healthcare. What do you call this number?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het BRP-nummer",
+              "en": "The BRP number"
+            },
+            {
+              "letter": "B",
+              "nl": "Het DigiD-nummer",
+              "en": "The DigiD number"
+            },
+            {
+              "letter": "C",
+              "nl": "Het BSN",
+              "en": "The BSN"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Sara is haar baan verloren. Zij heeft nu geen salaris meer. Welke instantie helpt haar aan een WW-uitkering?",
+        "en": "Sara has lost her job. She now has no salary anymore. Which organization helps her with unemployment benefit?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het UWV",
+              "en": "The UWV"
+            },
+            {
+              "letter": "B",
+              "nl": "De Belastingdienst",
+              "en": "The Tax Administration"
+            },
+            {
+              "letter": "C",
+              "nl": "Het Juridisch Loket",
+              "en": "The Legal Help Desk"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Een inwoner heeft heel weinig geld en kan de huur niet betalen. De overheid geeft extra geld voor de huur. Hoe noem je dat?",
+        "en": "A resident has very little money and cannot pay the rent. The government gives extra money for the rent. What do you call that?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Huurtoeslag",
+              "en": "Rent allowance"
+            },
+            {
+              "letter": "B",
+              "nl": "Zorgtoeslag",
+              "en": "Healthcare allowance"
+            },
+            {
+              "letter": "C",
+              "nl": "Bijstand",
+              "en": "Social assistance"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je wilt op internet je belastingzaken regelen of een subsidie aanvragen. Wat heb je nodig om veilig in te loggen?",
+        "en": "You want to arrange your tax matters online or apply for a subsidy. What do you need to log in safely?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een brief van de koning",
+              "en": "A letter from the king"
+            },
+            {
+              "letter": "B",
+              "nl": "Een DigiD",
+              "en": "A DigiD"
+            },
+            {
+              "letter": "C",
+              "nl": "Een nieuw paspoort",
+              "en": "A new passport"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Tom is 15 jaar oud. Hij loopt op straat. Moet hij een identiteitsbewijs (ID-kaart) bij zich hebben?",
+        "en": "Tom is 15 years old. He is walking on the street. Must he have an identity document with him?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Nee, dat moet pas vanaf 18 jaar",
+              "en": "No, that is only required from age 18"
+            },
+            {
+              "letter": "B",
+              "nl": "Ja, dat moet vanaf 14 jaar",
+              "en": "Yes, that is required from age 14"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen als hij gaat werken",
+              "en": "Only if he goes to work"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Anwar verdient heel weinig geld. Hij moet belasting betalen aan de gemeente, maar dat kan hij niet. Wat kan hij aanvragen?",
+        "en": "Anwar earns very little money. He has to pay tax to the municipality, but he cannot. What can he apply for?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Kwijtschelding",
+              "en": "Waiver / remission"
+            },
+            {
+              "letter": "B",
+              "nl": "Een nieuwe vergunning",
+              "en": "A new permit"
+            },
+            {
+              "letter": "C",
+              "nl": "Een boete",
+              "en": "A fine"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "De gemeente heeft een besluit genomen over een verbouwing. Mevrouw Bakker is het er niet mee eens. Wat kan zij doen?",
+        "en": "The municipality has made a decision about a renovation. Mrs Bakker does not agree with it. What can she do?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De politie bellen",
+              "en": "Call the police"
+            },
+            {
+              "letter": "B",
+              "nl": "Bezwaar maken",
+              "en": "File an objection"
+            },
+            {
+              "letter": "C",
+              "nl": "Niets, de gemeente beslist altijd",
+              "en": "Nothing, the municipality always decides"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Iemand is slachtoffer van geweld in zijn familie. Welke organisatie kan deze persoon helpen?",
+        "en": "Someone is a victim of violence in his family. Which organization can help this person?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Voedselbank",
+              "en": "The Food Bank"
+            },
+            {
+              "letter": "B",
+              "nl": "Veilig Thuis",
+              "en": "Safe Home"
+            },
+            {
+              "letter": "C",
+              "nl": "De Nationale Ombudsman",
+              "en": "The National Ombudsman"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Wie is in een gemeente verantwoordelijk voor de orde en de veiligheid?",
+        "en": "Who is responsible for order and safety in a municipality?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Minister-president",
+              "en": "The Prime Minister"
+            },
+            {
+              "letter": "B",
+              "nl": "De Burgemeester",
+              "en": "The Mayor"
+            },
+            {
+              "letter": "C",
+              "nl": "De Koning",
+              "en": "The King"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt een probleem met de Belastingdienst of de politie. Je vindt dat zij niet netjes met je omgaan. Wie kan je klacht onderzoeken?",
+        "en": "You have a problem with the Tax Administration or the police. You feel that they do not treat you properly. Who can investigate your complaint?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Nationale Ombudsman",
+              "en": "The National Ombudsman"
+            },
+            {
+              "letter": "B",
+              "nl": "Het Juridisch Loket",
+              "en": "The Legal Help Desk"
+            },
+            {
+              "letter": "C",
+              "nl": "De Voedselbank",
+              "en": "The Food Bank"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In de tuin van meneer Jansen staat een hele grote, oude boom. Hij wil de boom weghalen. Wat moet hij aanvragen bij de gemeente?",
+        "en": "In Mr Jansen’s garden there is a very large old tree. He wants to remove the tree. What must he apply for at the municipality?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een parkeervergunning",
+              "en": "A parking permit"
+            },
+            {
+              "letter": "B",
+              "nl": "Een kapvergunning",
+              "en": "A tree-felling permit"
+            },
+            {
+              "letter": "C",
+              "nl": "Een uitkering",
+              "en": "A benefit"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Twee mannen of twee vrouwen willen met elkaar trouwen in Nederland. Mag dat?",
+        "en": "Two men or two women want to marry each other in the Netherlands. Is that allowed?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Nee, dat is verboden",
+              "en": "No, that is forbidden"
+            },
+            {
+              "letter": "B",
+              "nl": "Ja, dat is wettelijk toegestaan",
+              "en": "Yes, that is legally permitted"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen met toestemming van de kerk",
+              "en": "Only with permission from the church"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een gezin heeft geen geld voor eten. Zij krijgen een pakket met boodschappen van een vrijwilligersorganisatie. Hoe noem je dit?",
+        "en": "A family has no money for food. They receive a package with groceries from a volunteer organization. What do you call this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Belastingdienst",
+              "en": "The Tax Administration"
+            },
+            {
+              "letter": "B",
+              "nl": "De Voedselbank",
+              "en": "The Food Bank"
+            },
+            {
+              "letter": "C",
+              "nl": "Het Ministerie",
+              "en": "The Ministry"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt juridisch advies nodig, maar je hebt geen geld voor een dure advocaat. Waar kun je terecht voor gratis advies?",
+        "en": "You need legal advice, but you have no money for an expensive lawyer. Where can you go for free advice?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het Juridisch Loket",
+              "en": "The Legal Help Desk"
+            },
+            {
+              "letter": "B",
+              "nl": "De Gemeente",
+              "en": "The Municipality"
+            },
+            {
+              "letter": "C",
+              "nl": "De Politie",
+              "en": "The Police"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Iemand woont al 5 jaar in Nederland en heeft alle diploma's. Nu wil hij de Nederlandse nationaliteit krijgen. Hoe noem je dit proces?",
+        "en": "Someone has lived in the Netherlands for 5 years and has all the diplomas/certificates. Now he wants to get Dutch nationality. What do you call this process?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Naturalisatie",
+              "en": "Naturalization"
+            },
+            {
+              "letter": "B",
+              "nl": "Integratie",
+              "en": "Integration"
+            },
+            {
+              "letter": "C",
+              "nl": "Discriminatie",
+              "en": "Discrimination"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-5",
+    "les": 305,
+    "exam": "knm-questions",
+    "examIndex": 5,
+    "label": "KNM-Q.5",
+    "title": "KNM Q5 — Wonen",
+    "rawTitle": "Vijfde deel — Wonen",
+    "sentences": [
+      {
+        "nl": "Meneer Jansen woont in een huis dat vastzit aan andere huizen in een lange rij. Hoe noem je dit type woning?",
+        "en": "Mr Jansen lives in a house that is attached to other houses in a long row. What do you call this type of home?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een eengezinswoning",
+              "en": "A single-family home"
+            },
+            {
+              "letter": "B",
+              "nl": "Een rijtjeshuis",
+              "en": "A terraced house"
+            },
+            {
+              "letter": "C",
+              "nl": "Een appartement",
+              "en": "An apartment"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Sanne verdient niet veel geld. Zij wil een goedkope woning huren via een woningcorporatie. Hoe noem je zo'n huis?",
+        "en": "Sanne does not earn much money. She wants to rent a cheap home through a housing corporation. What do you call such a house?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een koopwoning",
+              "en": "An owner-occupied home"
+            },
+            {
+              "letter": "B",
+              "nl": "Een sociale huurwoning",
+              "en": "A social rental home"
+            },
+            {
+              "letter": "C",
+              "nl": "Een kantoorpand",
+              "en": "An office building"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je koopt een huis in Nederland. Je leent daarvoor geld bij de bank. Hoe noem je deze lening?",
+        "en": "You buy a house in the Netherlands. You borrow money from the bank for that. What do you call this loan?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een premie",
+              "en": "A premium"
+            },
+            {
+              "letter": "B",
+              "nl": "Een hypotheek",
+              "en": "A mortgage"
+            },
+            {
+              "letter": "C",
+              "nl": "Een huurprijs",
+              "en": "A rental price"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Lars gaat een huis kopen. Hij moet een officieel contract tekenen bij een speciale deskundige. Wie is dat?",
+        "en": "Lars is going to buy a house. He must sign an official contract with a special expert. Who is that?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De makelaar",
+              "en": "The real estate agent"
+            },
+            {
+              "letter": "B",
+              "nl": "De notaris",
+              "en": "The civil-law notary"
+            },
+            {
+              "letter": "C",
+              "nl": "De burgemeester",
+              "en": "The mayor"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Mevrouw Alami ruikt gas in haar keuken. Wat moet zij als eerste doen?",
+        "en": "Mrs Alami smells gas in her kitchen. What must she do first?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het licht aandoen",
+              "en": "Turn on the light"
+            },
+            {
+              "letter": "B",
+              "nl": "De gaskraan dichtdraaien",
+              "en": "Turn off the gas tap"
+            },
+            {
+              "letter": "C",
+              "nl": "De buren bellen",
+              "en": "Call the neighbours"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt een leeg melkpak en een oude krant. Waar hoort de krant bij het afval?",
+        "en": "You have an empty milk carton and an old newspaper. Which waste category does the newspaper belong to?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij het oud papier",
+              "en": "With old paper"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij het GFT",
+              "en": "With organic waste"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij het restafval",
+              "en": "With residual waste"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je hebt oude batterijen en restjes verf. Waar moet je dit naartoe brengen?",
+        "en": "You have old batteries and leftover paint. Where must you bring this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Naar de glasbak",
+              "en": "To the glass container"
+            },
+            {
+              "letter": "B",
+              "nl": "Naar het chemisch afvalpunt",
+              "en": "To the chemical waste collection point"
+            },
+            {
+              "letter": "C",
+              "nl": "In de grijze vuilnisbak",
+              "en": "In the grey rubbish bin"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Het is 27 april. Iedereen draagt oranje kleren en er is overal feest. Welke feestdag is dit?",
+        "en": "It is April 27. Everyone wears orange clothes and there are celebrations everywhere. Which holiday is this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bevrijdingsdag",
+              "en": "Liberation Day"
+            },
+            {
+              "letter": "B",
+              "nl": "Kerstmis",
+              "en": "Christmas"
+            },
+            {
+              "letter": "C",
+              "nl": "Koningsdag",
+              "en": "King’s Day"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Op 4 mei om 20:00 uur is iedereen in Nederland twee minuten stil. Waarom doen mensen dat?",
+        "en": "On May 4 at 8:00 p.m., everyone in the Netherlands is silent for two minutes. Why do people do that?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Om Sinterklaas te vieren",
+              "en": "To celebrate Sinterklaas"
+            },
+            {
+              "letter": "B",
+              "nl": "Om de oorlogsslachtoffers te herdenken",
+              "en": "To commemorate the war victims"
+            },
+            {
+              "letter": "C",
+              "nl": "Voor de verjaardag van de koning",
+              "en": "For the king’s birthday"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je bent uitgenodigd op een verjaardag bij een Nederlander thuis. Wat is een goede gewoonte?",
+        "en": "You are invited to a birthday at a Dutch person’s home. What is a good custom?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Je neemt bloemen of een cadeautje mee",
+              "en": "You bring flowers or a small gift"
+            },
+            {
+              "letter": "B",
+              "nl": "Je komt twee uur te laat",
+              "en": "You arrive two hours late"
+            },
+            {
+              "letter": "C",
+              "nl": "Je gaat meteen naar de keuken om te koken",
+              "en": "You go straight to the kitchen to cook"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Bij een Nederlandse collega is een baby geboren. Je gaat op bezoek en krijgt een speciale traktatie. Wat eet je dan?",
+        "en": "A baby has been born to a Dutch colleague. You go to visit and receive a special treat. What do you eat then?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Oliebollen",
+              "en": "Oliebollen"
+            },
+            {
+              "letter": "B",
+              "nl": "Beschuit met muisjes",
+              "en": "Rusk with sugared anise seeds"
+            },
+            {
+              "letter": "C",
+              "nl": "Appeltaart",
+              "en": "Apple pie"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt een nieuwe woning gevonden en je gaat verhuizen. Waar moet je dit binnen 5 dagen melden?",
+        "en": "You have found a new home and you are moving. Where must you report this within 5 days?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de politie",
+              "en": "At the police"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de gemeente (BRP)",
+              "en": "At the municipality (BRP)"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de brandweer",
+              "en": "At the fire brigade"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "De buren maken elke nacht heel veel lawaai. Wat kun je het beste als eerste doen?",
+        "en": "The neighbours make a lot of noise every night. What is the best thing you can do first?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Meteen de politie bellen",
+              "en": "Call the police immediately"
+            },
+            {
+              "letter": "B",
+              "nl": "Eerst met de buren praten (overleggen)",
+              "en": "First talk with the neighbours / discuss it"
+            },
+            {
+              "letter": "C",
+              "nl": "Een nieuwe woning kopen",
+              "en": "Buy a new home"
+            }
+          ],
+          "answer": "B"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-6",
+    "les": 306,
+    "exam": "knm-questions",
+    "examIndex": 6,
+    "label": "KNM-Q.6",
+    "title": "KNM Q6 — Werk en inkomen",
+    "rawTitle": "Zesde deel — Werk en inkomen",
+    "sentences": [
+      {
+        "nl": "Lisa heeft een baan bij een supermarkt. In haar contract staat geen einddatum. Wat voor soort contract heeft Lisa?",
+        "en": "Lisa has a job at a supermarket. Her contract has no end date. What kind of contract does Lisa have?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een vast contract",
+              "en": "A permanent contract"
+            },
+            {
+              "letter": "B",
+              "nl": "Een tijdelijk contract",
+              "en": "A temporary contract"
+            },
+            {
+              "letter": "C",
+              "nl": "Een nulurencontract",
+              "en": "A zero-hours contract"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Mevrouw Bakari is ontslagen door haar werkgever. Zij heeft niet zelf ontslag genomen. Welke uitkering kan zij aanvragen bij het UWV?",
+        "en": "Mrs Bakari has been dismissed by her employer. She did not resign herself. Which benefit can she apply for at the UWV?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een AOW-uitkering",
+              "en": "An AOW pension benefit"
+            },
+            {
+              "letter": "B",
+              "nl": "Een WW-uitkering",
+              "en": "An unemployment benefit"
+            },
+            {
+              "letter": "C",
+              "nl": "Een bijstandsuitkering",
+              "en": "A social assistance benefit"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je wilt een eigen bedrijf starten in Nederland. Waar moet je jouw bedrijf als eerste inschrijven?",
+        "en": "You want to start your own business in the Netherlands. Where must you register your company first?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de bank",
+              "en": "At the bank"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de politie",
+              "en": "At the police"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de Kamer van Koophandel (KvK)",
+              "en": "At the Chamber of Commerce"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Op je loonstrook staan twee bedragen: bruto en netto. Welk bedrag krijg je echt op je bankrekening?",
+        "en": "On your payslip there are two amounts: gross and net. Which amount do you really receive in your bank account?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het nettoloon",
+              "en": "The net salary"
+            },
+            {
+              "letter": "B",
+              "nl": "Het brutoloon",
+              "en": "The gross salary"
+            },
+            {
+              "letter": "C",
+              "nl": "De vakbondspremie",
+              "en": "The union contribution"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In een bepaalde sector maken werkgevers en vakbonden afspraken over loon en vakantie. Hoe noem je deze afspraken?",
+        "en": "In a particular sector, employers and trade unions make agreements about wages and holidays. What do you call these agreements?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De CAO",
+              "en": "The collective labour agreement"
+            },
+            {
+              "letter": "B",
+              "nl": "Het ondernemingsplan",
+              "en": "The business plan"
+            },
+            {
+              "letter": "C",
+              "nl": "De BSN",
+              "en": "The BSN"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Mevrouw Jansen is ziek. Zij kan niet werken. Haar baas zegt dat zij naar een speciale dokter moet. Hoe noem je deze dokter?",
+        "en": "Mrs Jansen is ill. She cannot work. Her boss says that she must go to a special doctor. What do you call this doctor?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De huisarts",
+              "en": "The general practitioner"
+            },
+            {
+              "letter": "B",
+              "nl": "De bedrijfsarts",
+              "en": "The company doctor / occupational physician"
+            },
+            {
+              "letter": "C",
+              "nl": "De tandarts",
+              "en": "The dentist"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je bent ziek en kunt niet werken. Moet je de afspraak met de bedrijfsarts accepteren?",
+        "en": "You are ill and cannot work. Must you accept the appointment with the company doctor?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Alleen als je dat zelf wilt",
+              "en": "Only if you want that yourself"
+            },
+            {
+              "letter": "B",
+              "nl": "Nee, dat mag je weigeren",
+              "en": "No, you may refuse that"
+            },
+            {
+              "letter": "C",
+              "nl": "Ja, dat is wettelijk verplicht",
+              "en": "Yes, that is legally required"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "In veel Nederlandse bedrijven is er een groep medewerkers die praat met de baas over belangrijke besluiten. Hoe noem je deze groep?",
+        "en": "In many Dutch companies there is a group of employees who talk with the boss about important decisions. What do you call this group?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De Ondernemingsraad (OR)",
+              "en": "The works council"
+            },
+            {
+              "letter": "B",
+              "nl": "De Belastingdienst",
+              "en": "The Tax Administration"
+            },
+            {
+              "letter": "C",
+              "nl": "Het UWV",
+              "en": "The UWV"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Ahmed wil een lening bij de bank voor zijn nieuwe winkel. De bank wil weten hoe hij geld gaat verdienen. Wat moet Ahmed schrijven?",
+        "en": "Ahmed wants a loan from the bank for his new store. The bank wants to know how he is going to earn money. What must Ahmed write?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een sollicitatiebrief",
+              "en": "A job application letter"
+            },
+            {
+              "letter": "B",
+              "nl": "Een jaaropgaaf",
+              "en": "An annual income statement"
+            },
+            {
+              "letter": "C",
+              "nl": "Een ondernemingsplan",
+              "en": "A business plan"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Sommige mensen werken zonder baas. Zij hebben hun eigen bedrijf en werken alleen. Hoe noem je deze mensen?",
+        "en": "Some people work without a boss. They have their own business and work alone. What do you call these people?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "ZZP'ers",
+              "en": "Self-employed workers"
+            },
+            {
+              "letter": "B",
+              "nl": "Werknemers",
+              "en": "Employees"
+            },
+            {
+              "letter": "C",
+              "nl": "Vrijwilligers",
+              "en": "Volunteers"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Iedereen die in Nederland woont of werkt, krijgt later een basispensioen van de overheid. Welke organisatie betaalt dit uit?",
+        "en": "Everyone who lives or works in the Netherlands receives a basic pension from the government later. Which organization pays this out?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het UWV",
+              "en": "The UWV"
+            },
+            {
+              "letter": "B",
+              "nl": "De SVB",
+              "en": "The SVB"
+            },
+            {
+              "letter": "C",
+              "nl": "De KvK",
+              "en": "The Chamber of Commerce"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je wilt ontslag nemen bij je werk. In je contract staat dat je dit één maand van tevoren moet zeggen. Hoe noem je die periode?",
+        "en": "You want to resign from your job. Your contract says that you must say this one month in advance. What do you call that period?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De opzegtermijn",
+              "en": "The notice period"
+            },
+            {
+              "letter": "B",
+              "nl": "De proeftijd",
+              "en": "The probationary period"
+            },
+            {
+              "letter": "C",
+              "nl": "De vakantie",
+              "en": "The holiday"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Een werknemer vindt dat zijn baas te weinig loon betaalt. Welke organisatie kan de werknemer helpen en beschermen?",
+        "en": "An employee thinks that his boss pays too little salary. Which organization can help and protect the employee?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De personeelsvereniging",
+              "en": "The staff association"
+            },
+            {
+              "letter": "B",
+              "nl": "De notaris",
+              "en": "The civil-law notary"
+            },
+            {
+              "letter": "C",
+              "nl": "De vakbond",
+              "en": "The trade union"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Tijdens je werk is er een wekelijks moment waarop je met je collega's en je baas praat over het werk. Hoe noem je dit?",
+        "en": "During your work there is a weekly moment when you talk with your colleagues and your boss about the work. What do you call this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Sollicitatie",
+              "en": "Job application"
+            },
+            {
+              "letter": "B",
+              "nl": "Werkoverleg",
+              "en": "Work meeting"
+            },
+            {
+              "letter": "C",
+              "nl": "Staken",
+              "en": "Strike / going on strike"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een man heeft geen werk en geen geld voor eten en huur. Hij krijgt de allerlaagste uitkering van de gemeente. Hoe heet dit?",
+        "en": "A man has no work and no money for food and rent. He receives the very lowest benefit from the municipality. What is this called?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bijstand",
+              "en": "Social assistance"
+            },
+            {
+              "letter": "B",
+              "nl": "Kinderbijslag",
+              "en": "Child benefit"
+            },
+            {
+              "letter": "C",
+              "nl": "AOW",
+              "en": "State pension"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-7",
+    "les": 307,
+    "exam": "knm-questions",
+    "examIndex": 7,
+    "label": "KNM-Q.7",
+    "title": "KNM Q7 — Onderwijs",
+    "rawTitle": "Zevende deel — Onderwijs",
+    "sentences": [
+      {
+        "nl": "In Nederland moeten kinderen vanaf een bepaalde leeftijd verplicht naar school. Vanaf welke leeftijd is dat?",
+        "en": "In the Netherlands children must go to school from a certain age. From what age is that?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Vanaf 4 jaar",
+              "en": "From age 4"
+            },
+            {
+              "letter": "B",
+              "nl": "Vanaf 5 jaar",
+              "en": "From age 5"
+            },
+            {
+              "letter": "C",
+              "nl": "Vanaf 6 jaar",
+              "en": "From age 6"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Kinderen gaan na de basisschool naar het voortgezet onderwijs. Welke school duurt meestal 5 jaar en bereidt voor op het HBO?",
+        "en": "After primary school, children go to secondary education. Which school usually lasts 5 years and prepares students for HBO?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De HAVO",
+              "en": "HAVO"
+            },
+            {
+              "letter": "B",
+              "nl": "Het VMBO",
+              "en": "VMBO"
+            },
+            {
+              "letter": "C",
+              "nl": "Het VWO",
+              "en": "VWO"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Ouders willen hun kind op een basisschool inschrijven. Hoeveel jaar duurt de basisschool in Nederland?",
+        "en": "Parents want to register their child at a primary school. How many years does primary school last in the Netherlands?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "6 jaar",
+              "en": "6 years"
+            },
+            {
+              "letter": "B",
+              "nl": "5 jaar",
+              "en": "5 years"
+            },
+            {
+              "letter": "C",
+              "nl": "8 jaar",
+              "en": "8 years"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Een leerling is 17 jaar. Hij heeft nog geen diploma van het MBO-2, HAVO of VWO. Mag hij stoppen met school?",
+        "en": "A pupil is 17 years old. He does not yet have a diploma from MBO-2, HAVO, or VWO. Is he allowed to stop school?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Nee, hij heeft kwalificatieplicht",
+              "en": "No, he has a qualification obligation"
+            },
+            {
+              "letter": "B",
+              "nl": "Ja, hij is bijna 18 jaar",
+              "en": "Yes, he is almost 18"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen als hij een baan heeft",
+              "en": "Only if he has a job"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "De school van Sofia vraagt een kleine bijdrage voor extra uitjes en feesten. Is deze ouderbijdrage verplicht?",
+        "en": "Sofia’s school asks for a small contribution for extra outings and celebrations. Is this parental contribution mandatory?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Ja, iedereen moet betalen",
+              "en": "Yes, everyone must pay"
+            },
+            {
+              "letter": "B",
+              "nl": "Nee, het is vrijwillig",
+              "en": "No, it is voluntary"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen voor rijke ouders",
+              "en": "Only for rich parents"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Ouders krijgen elk kwartaal een bedrag van de overheid voor de kosten van hun kinderen. Waar vraag je dit aan?",
+        "en": "Parents receive an amount from the government every quarter for the costs of their children. Where do you apply for this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de Gemeente",
+              "en": "At the municipality"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de Belastingdienst",
+              "en": "At the Tax Administration"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de SVB",
+              "en": "At the SVB"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Mark is 20 jaar en studeert aan de universiteit. Hij heeft geld nodig voor zijn studie en boeken. Waar vraagt hij studiefinanciering aan?",
+        "en": "Mark is 20 years old and studies at the university. He needs money for his studies and books. Where does he apply for student finance?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de DUO",
+              "en": "At DUO"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de bank",
+              "en": "At the bank"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de GGD",
+              "en": "At the GGD"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Een gezin wil een week eerder op vakantie gaan, dus voordat de schoolvakantie begint. Mag dat?",
+        "en": "A family wants to go on holiday one week earlier, so before the school holiday starts. Is that allowed?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Ja, als de ouders dat willen",
+              "en": "Yes, if the parents want that"
+            },
+            {
+              "letter": "B",
+              "nl": "Nee, dat is verboden",
+              "en": "No, that is forbidden"
+            },
+            {
+              "letter": "C",
+              "nl": "Alleen als het kind goede cijfers heeft",
+              "en": "Only if the child has good grades"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "De meester van groep 5 nodigt de ouders uit voor een gesprek over de resultaten van hun kind. Wat moeten de ouders doen?",
+        "en": "The teacher of group 5 invites the parents for a conversation about their child’s results. What must the parents do?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Niet gaan, het is niet belangrijk",
+              "en": "Not go; it is not important"
+            },
+            {
+              "letter": "B",
+              "nl": "De afspraak afzeggen",
+              "en": "Cancel the appointment"
+            },
+            {
+              "letter": "C",
+              "nl": "Naar het gesprek op school gaan",
+              "en": "Go to the meeting at school"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Laila wil later leraar worden op een basisschool. Welke opleiding moet zij hiervoor volgen?",
+        "en": "Laila wants to become a teacher at a primary school later. Which education programme must she follow for this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het MBO",
+              "en": "MBO"
+            },
+            {
+              "letter": "B",
+              "nl": "Het HBO",
+              "en": "HBO"
+            },
+            {
+              "letter": "C",
+              "nl": "De Universiteit",
+              "en": "University"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Na de basisschool krijgt een kind een advies voor het niveau van het voortgezet onderwijs. Wie geeft dit advies?",
+        "en": "After primary school, a child receives advice for the level of secondary education. Who gives this advice?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De basisschool",
+              "en": "The primary school"
+            },
+            {
+              "letter": "B",
+              "nl": "De ouders",
+              "en": "The parents"
+            },
+            {
+              "letter": "C",
+              "nl": "De regering",
+              "en": "The government"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Op de basisschool krijgt een kind een paar keer per jaar een boekje met cijfers voor het werk op school. Hoe noem je dit?",
+        "en": "At primary school, a child receives a booklet with grades for schoolwork a few times a year. What do you call this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een diploma",
+              "en": "A diploma"
+            },
+            {
+              "letter": "B",
+              "nl": "Een rapport",
+              "en": "A report card"
+            },
+            {
+              "letter": "C",
+              "nl": "Een contract",
+              "en": "A contract"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een kind van 2 jaar oud gaat een paar ochtenden per week naar een plek om te spelen met andere kinderen. Hoe noem je dit?",
+        "en": "A 2-year-old child goes a few mornings per week to a place to play with other children. What do you call this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De voorschool",
+              "en": "The preschool programme"
+            },
+            {
+              "letter": "B",
+              "nl": "De buitenschoolse opvang (BSO)",
+              "en": "After-school care"
+            },
+            {
+              "letter": "C",
+              "nl": "De peuterspeelzaal",
+              "en": "The toddler playgroup"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Wie is in Nederland juridisch verantwoordelijk voor de opvoeding en het gedrag van een kind van 10 jaar?",
+        "en": "Who is legally responsible in the Netherlands for the upbringing and behaviour of a 10-year-old child?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De leraar op school",
+              "en": "The teacher at school"
+            },
+            {
+              "letter": "B",
+              "nl": "De ouders",
+              "en": "The parents"
+            },
+            {
+              "letter": "C",
+              "nl": "De burgemeester",
+              "en": "The mayor"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een student is eindelijk klaar met zijn middelbare school. Hij hangt zijn rugzak en de Nederlandse vlag buiten. Wat betekent dit?",
+        "en": "A student has finally finished secondary school. He hangs his backpack and the Dutch flag outside. What does this mean?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Hij is geslaagd",
+              "en": "He has passed / graduated"
+            },
+            {
+              "letter": "B",
+              "nl": "Hij gaat verhuizen",
+              "en": "He is moving"
+            },
+            {
+              "letter": "C",
+              "nl": "Het is Koningsdag",
+              "en": "It is King’s Day"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-8",
+    "les": 308,
+    "exam": "knm-questions",
+    "examIndex": 8,
+    "label": "KNM-Q.8",
+    "title": "KNM Q8 — Gezondheid en zorg",
+    "rawTitle": "Achtste deel — Gezondheid en zorg",
+    "sentences": [
+      {
+        "nl": "Je voelt je niet lekker en hebt al een paar dagen hoofdpijn. Wie bel je als eerste voor een afspraak?",
+        "en": "You do not feel well and have had a headache for a few days already. Whom do you call first for an appointment?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De specialist in het ziekenhuis",
+              "en": "The specialist in the hospital"
+            },
+            {
+              "letter": "B",
+              "nl": "De huisarts",
+              "en": "The general practitioner"
+            },
+            {
+              "letter": "C",
+              "nl": "De apotheek",
+              "en": "The pharmacy"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Het is zaterdagavond en je kind heeft plotseling heel hoge koorts. De eigen huisarts is vrij. Wie bel je nu?",
+        "en": "It is Saturday evening and your child suddenly has a very high fever. Your own general practitioner is off. Whom do you call now?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De huisartsenpost",
+              "en": "The out-of-hours GP service"
+            },
+            {
+              "letter": "B",
+              "nl": "De tandarts",
+              "en": "The dentist"
+            },
+            {
+              "letter": "C",
+              "nl": "De GGD",
+              "en": "The municipal health service"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "De huisarts vindt dat je naar het ziekenhuis moet voor een onderzoek aan je hart. Wat heb je nodig om daarheen te gaan?",
+        "en": "The general practitioner thinks that you must go to the hospital for an examination of your heart. What do you need to go there?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een recept",
+              "en": "A prescription"
+            },
+            {
+              "letter": "B",
+              "nl": "Een zorgpas",
+              "en": "A health insurance card"
+            },
+            {
+              "letter": "C",
+              "nl": "Een verwijsbrief",
+              "en": "A referral letter"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Je hebt medicijnen nodig die de dokter heeft voorgeschreven. Waar ga je deze ophalen?",
+        "en": "You need medicines that the doctor has prescribed. Where do you go to pick them up?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Bij de apotheek",
+              "en": "At the pharmacy"
+            },
+            {
+              "letter": "B",
+              "nl": "Bij de drogist",
+              "en": "At the drugstore"
+            },
+            {
+              "letter": "C",
+              "nl": "Bij de supermarkt",
+              "en": "At the supermarket"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Iedereen van 18 jaar en ouder in Nederland moet een basisverzekering hebben. Wat is het bedrag dat je elk jaar eerst zelf moet betalen voor zorg uit het basispakket?",
+        "en": "Everyone aged 18 and older in the Netherlands must have basic health insurance. What is the amount that you must first pay yourself every year for care from the basic package?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het eigen risico",
+              "en": "The deductible / excess"
+            },
+            {
+              "letter": "B",
+              "nl": "De zorgtoeslag",
+              "en": "The healthcare allowance"
+            },
+            {
+              "letter": "C",
+              "nl": "De premie",
+              "en": "The premium"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je hebt een laag inkomen en je moet elke maand veel geld betalen voor je zorgverzekering. Van wie kun je extra geld krijgen om dit te betalen?",
+        "en": "You have a low income and you must pay a lot of money every month for your health insurance. From whom can you get extra money to pay this?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Van het UWV",
+              "en": "From the UWV"
+            },
+            {
+              "letter": "B",
+              "nl": "Van de Belastingdienst (zorgtoeslag)",
+              "en": "From the Tax Administration (healthcare allowance)"
+            },
+            {
+              "letter": "C",
+              "nl": "Van de SVB",
+              "en": "From the SVB"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Er is een ernstig ongeluk gebeurd op straat en er is direct hulp nodig van een ambulance. Welk nummer bel je?",
+        "en": "A serious accident has happened on the street and immediate help from an ambulance is needed. Which number do you call?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "0900-8844",
+              "en": "0900-8844"
+            },
+            {
+              "letter": "B",
+              "nl": "112",
+              "en": "112"
+            },
+            {
+              "letter": "C",
+              "nl": "144",
+              "en": "144"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Een vrouw is zwanger en alles gaat goed. Wie controleert haar tijdens de zwangerschap en helpt bij de bevalling?",
+        "en": "A woman is pregnant and everything is going well. Who checks her during pregnancy and helps with the birth?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De verloskundige",
+              "en": "The midwife"
+            },
+            {
+              "letter": "B",
+              "nl": "De gynaecoloog",
+              "en": "The gynaecologist"
+            },
+            {
+              "letter": "C",
+              "nl": "De kraamverzorgende",
+              "en": "The maternity nurse"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je hebt een baby van 3 maanden oud. Waar ga je naartoe voor de vaccinaties (prikjes) en om te kijken of de baby goed groeit?",
+        "en": "You have a baby who is 3 months old. Where do you go for vaccinations and to check whether the baby is growing well?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het ziekenhuis",
+              "en": "The hospital"
+            },
+            {
+              "letter": "B",
+              "nl": "De huisarts",
+              "en": "The general practitioner"
+            },
+            {
+              "letter": "C",
+              "nl": "Het consultatiebureau",
+              "en": "The child health clinic"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Een oude man kan niet meer goed voor zichzelf koken en zichzelf wassen. Er komt elke dag iemand bij hem thuis om te helpen. Hoe noem je deze zorg?",
+        "en": "An old man can no longer cook well for himself or wash himself. Every day someone comes to his home to help. What do you call this care?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Mantelzorg",
+              "en": "Informal care"
+            },
+            {
+              "letter": "B",
+              "nl": "Thuiszorg",
+              "en": "Home care"
+            },
+            {
+              "letter": "C",
+              "nl": "Vrijwilligerswerk",
+              "en": "Volunteer work"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Wat zit er in elk doosje met medicijnen en moet je altijd goed lezen voordat je het medicijn gebruikt?",
+        "en": "What is in every box of medicine and must you always read carefully before you use the medicine?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De bijsluiter",
+              "en": "The patient information leaflet"
+            },
+            {
+              "letter": "B",
+              "nl": "Het donorregister",
+              "en": "The donor register"
+            },
+            {
+              "letter": "C",
+              "nl": "De rekening",
+              "en": "The bill"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "In Nederland word je automatisch geregistreerd als donor, tenzij je invult dat je dat niet wilt. Wat betekent het als je ‘geen bezwaar’ hebt tegen orgaandonatie?",
+        "en": "In the Netherlands you are automatically registered as a donor unless you fill in that you do not want that. What does it mean if you have ‘no objection’ to organ donation?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Dat je jouw organen na je dood aan een patiënt geeft",
+              "en": "That you give your organs to a patient after your death"
+            },
+            {
+              "letter": "B",
+              "nl": "Dat je alleen bloed wilt geven",
+              "en": "That you only want to give blood"
+            },
+            {
+              "letter": "C",
+              "nl": "Dat je geen zorgverzekering hebt",
+              "en": "That you have no health insurance"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je buurvrouw is ziek en jij helpt haar elke dag met boodschappen doen en het huishouden. Je krijgt hier geen geld voor. Hoe noem je deze zorg door familie of vrienden?",
+        "en": "Your female neighbour is ill and you help her every day with grocery shopping and housework. You do not receive money for this. What do you call this care by family or friends?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Thuiszorg",
+              "en": "Home care"
+            },
+            {
+              "letter": "B",
+              "nl": "Mantelzorg",
+              "en": "Informal care"
+            },
+            {
+              "letter": "C",
+              "nl": "Jeugdzorg",
+              "en": "Youth care"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt last van je rug en de dokter zegt dat je oefeningen moet doen om weer beter te kunnen bewegen. Naar welke behandelaar ga je?",
+        "en": "You have trouble with your back and the doctor says that you must do exercises to be able to move better again. Which practitioner do you go to?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De psycholoog",
+              "en": "The psychologist"
+            },
+            {
+              "letter": "B",
+              "nl": "De fysiotherapeut",
+              "en": "The physiotherapist"
+            },
+            {
+              "letter": "C",
+              "nl": "De mondhygiënist",
+              "en": "The dental hygienist"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je wilt extra verzekerd zijn voor de tandarts of voor een bril, omdat dit niet in het basispakket zit. Hoe noem je die extra verzekering?",
+        "en": "You want to be additionally insured for the dentist or for glasses, because this is not included in the basic package. What do you call that extra insurance?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een aanvullende verzekering",
+              "en": "Supplementary insurance"
+            },
+            {
+              "letter": "B",
+              "nl": "Een WA-verzekering",
+              "en": "Third-party liability insurance"
+            },
+            {
+              "letter": "C",
+              "nl": "Een inboedelverzekering",
+              "en": "Home contents insurance"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-9",
+    "les": 309,
+    "exam": "knm-questions",
+    "examIndex": 9,
+    "label": "KNM-Q.9",
+    "title": "KNM Q9 — Verzekeringen",
+    "rawTitle": "Negende deel — Verzekeringen",
+    "sentences": [
+      {
+        "nl": "Iedereen die in Nederland woont of werkt, is wettelijk verplicht om een bepaalde verzekering af te sluiten voor zorg. Hoe noem je deze verzekering?",
+        "en": "Everyone who lives or works in the Netherlands is legally required to take out a certain insurance for healthcare. What do you call this insurance?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De inboedelverzekering",
+              "en": "Home contents insurance"
+            },
+            {
+              "letter": "B",
+              "nl": "De basisverzekering",
+              "en": "Basic health insurance"
+            },
+            {
+              "letter": "C",
+              "nl": "De aanvullende verzekering",
+              "en": "Supplementary insurance"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je hebt een auto gekocht. Welke verzekering moet je volgens de wet minimaal hebben voor je auto?",
+        "en": "You have bought a car. Which insurance must you have at minimum for your car according to the law?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een WA-verzekering",
+              "en": "Third-party liability insurance"
+            },
+            {
+              "letter": "B",
+              "nl": "Een allriskverzekering",
+              "en": "All-risk insurance"
+            },
+            {
+              "letter": "C",
+              "nl": "Een opstalverzekering",
+              "en": "Building insurance"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je hebt een verzekering afgesloten. Hoe noem je het officiële document (het contract) dat je van de verzekeringsmaatschappij krijgt?",
+        "en": "You have taken out an insurance policy. What do you call the official document, the contract, that you receive from the insurance company?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De premie",
+              "en": "The premium"
+            },
+            {
+              "letter": "B",
+              "nl": "De schade",
+              "en": "The damage"
+            },
+            {
+              "letter": "C",
+              "nl": "De polis",
+              "en": "The policy"
+            }
+          ],
+          "answer": "C"
+        }
+      }
+    ]
+  },
+  {
+    "id": "knm-q-10",
+    "les": 310,
+    "exam": "knm-questions",
+    "examIndex": 10,
+    "label": "KNM-Q.10",
+    "title": "KNM Q10 — Verkeer en aanvulling: belangrijke levensgebeurtenissen, wet en beleid",
+    "rawTitle": "Tiende deel — Verkeer en aanvulling: belangrijke levensgebeurtenissen, wet en beleid",
+    "sentences": [
+      {
+        "nl": "Je wilt met de bus of de trein reizen in Nederland. Welke kaart heb je meestal nodig om te betalen voor het openbaar vervoer?",
+        "en": "You want to travel by bus or train in the Netherlands. Which card do you usually need to pay for public transport?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een zorgpas",
+              "en": "A health insurance card"
+            },
+            {
+              "letter": "B",
+              "nl": "Een OV-chipkaart",
+              "en": "An OV-chipkaart"
+            },
+            {
+              "letter": "C",
+              "nl": "Een identiteitskaart",
+              "en": "An identity card"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Het is ochtend tussen 07:00 en 09:00 uur. Het is erg druk op de weg en in de trein. Hoe noem je deze drukke periode?",
+        "en": "It is morning between 7:00 and 9:00. It is very busy on the road and in the train. What do you call this busy period?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "De spitsuren",
+              "en": "Rush hours"
+            },
+            {
+              "letter": "B",
+              "nl": "De schoolvakantie",
+              "en": "The school holiday"
+            },
+            {
+              "letter": "C",
+              "nl": "De opzegtermijn",
+              "en": "The notice period"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Je rijdt met de auto en je ziet dat je te hard hebt gereden. Een paar weken later krijg je een brief van het CJIB. Wat zit er in de brief?",
+        "en": "You are driving a car and you see that you drove too fast. A few weeks later you receive a letter from the CJIB. What is in the letter?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een uitnodiging voor een feest",
+              "en": "An invitation to a party"
+            },
+            {
+              "letter": "B",
+              "nl": "Een nieuw rijbewijs",
+              "en": "A new driving licence"
+            },
+            {
+              "letter": "C",
+              "nl": "Een boete",
+              "en": "A fine"
+            }
+          ],
+          "answer": "C"
+        }
+      },
+      {
+        "nl": "Er is een baby geboren in je gezin. Wat is de wettelijke plicht van de ouders binnen 3 dagen na de geboorte?",
+        "en": "A baby has been born in your family. What is the legal duty of the parents within 3 days after the birth?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Het kind aangeven bij de gemeente",
+              "en": "Register the child’s birth at the municipality"
+            },
+            {
+              "letter": "B",
+              "nl": "Het kind laten dopen in de kerk",
+              "en": "Have the child baptized in the church"
+            },
+            {
+              "letter": "C",
+              "nl": "Een school kiezen voor het kind",
+              "en": "Choose a school for the child"
+            }
+          ],
+          "answer": "A"
+        }
+      },
+      {
+        "nl": "Twee mensen gaan samenwonen, maar ze willen niet trouwen. Ze willen wel afspraken maken over hun bezittingen en geld. Wat kunnen zij tekenen?",
+        "en": "Two people are going to live together, but they do not want to marry. They do want to make agreements about their possessions and money. What can they sign?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Een arbeidsovereenkomst",
+              "en": "An employment agreement"
+            },
+            {
+              "letter": "B",
+              "nl": "Een samenlevingscontract",
+              "en": "A cohabitation agreement"
+            },
+            {
+              "letter": "C",
+              "nl": "Een huurcontract",
+              "en": "A rental contract"
+            }
+          ],
+          "answer": "B"
+        }
+      },
+      {
+        "nl": "Je gaat verhuizen naar een andere stad in Nederland. Wat moet je doen zodat de overheid weet waar je woont?",
+        "en": "You are moving to another city in the Netherlands. What must you do so that the government knows where you live?",
+        "question": {
+          "options": [
+            {
+              "letter": "A",
+              "nl": "Je moet je adreswijziging doorgeven aan de gemeente",
+              "en": "You must report your change of address to the municipality"
+            },
+            {
+              "letter": "B",
+              "nl": "Je moet je melden bij de politie van de nieuwe stad",
+              "en": "You must report to the police of the new city"
+            },
+            {
+              "letter": "C",
+              "nl": "Je hoeft niets te doen, dat gaat automatisch",
+              "en": "You do not have to do anything; that happens automatically"
+            }
+          ],
+          "answer": "A"
+        }
+      }
+    ]
+  }
+]

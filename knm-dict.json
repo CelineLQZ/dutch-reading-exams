@@ -1,5 +1,17 @@
 [
   {
+    "nl": "18 jaar en ouder",
+    "en": "18 years and older"
+  },
+  {
+    "nl": "2 jaar oud",
+    "en": "2 years old"
+  },
+  {
+    "nl": "3 maanden oud",
+    "en": "3 months old"
+  },
+  {
     "nl": "aan",
     "en": "on / by"
   },
@@ -10,6 +22,10 @@
   {
     "nl": "aansprakelijkheidsverzekering",
     "en": "liability insurance"
+  },
+  {
+    "nl": "aansturen",
+    "en": "direct / manage"
   },
   {
     "nl": "aanvragen",
@@ -28,6 +44,18 @@
     "en": "abortion"
   },
   {
+    "nl": "accepteren",
+    "en": "accept"
+  },
+  {
+    "nl": "actief kiesrecht",
+    "en": "right to vote"
+  },
+  {
+    "nl": "adreswijziging",
+    "en": "change of address"
+  },
+  {
     "nl": "advies",
     "en": "advice"
   },
@@ -44,12 +72,32 @@
     "en": "closing dike"
   },
   {
+    "nl": "afsluiten",
+    "en": "take out"
+  },
+  {
     "nl": "afspraak",
     "en": "appointment"
   },
   {
+    "nl": "afspraak afzeggen",
+    "en": "cancel the appointment"
+  },
+  {
     "nl": "afspraak maken",
     "en": "make an appointment"
+  },
+  {
+    "nl": "afspraken",
+    "en": "agreements"
+  },
+  {
+    "nl": "afspraken maken",
+    "en": "make agreements"
+  },
+  {
+    "nl": "afval",
+    "en": "waste"
   },
   {
     "nl": "afval scheiden",
@@ -60,20 +108,76 @@
     "en": "waste tax"
   },
   {
+    "nl": "al een paar dagen",
+    "en": "for a few days already"
+  },
+  {
+    "nl": "alleen",
+    "en": "only"
+  },
+  {
+    "nl": "alleen als",
+    "en": "only if"
+  },
+  {
     "nl": "alleen wonen",
     "en": "live alone"
+  },
+  {
+    "nl": "allerlaagste",
+    "en": "very lowest"
+  },
+  {
+    "nl": "alles gaat goed",
+    "en": "everything is going well"
+  },
+  {
+    "nl": "allriskverzekering",
+    "en": "all-risk insurance"
+  },
+  {
+    "nl": "als eerste",
+    "en": "first"
+  },
+  {
+    "nl": "altijd",
+    "en": "always"
   },
   {
     "nl": "ambulance",
     "en": "ambulance"
   },
   {
+    "nl": "andere huizen",
+    "en": "other houses"
+  },
+  {
+    "nl": "andere stad",
+    "en": "another city"
+  },
+  {
+    "nl": "andere straat",
+    "en": "another street"
+  },
+  {
+    "nl": "aow",
+    "en": "state pension"
+  },
+  {
     "nl": "apotheek",
     "en": "pharmacy"
   },
   {
+    "nl": "appeltaart",
+    "en": "apple pie"
+  },
+  {
     "nl": "arbeidsongeschikt",
     "en": "unable to work"
+  },
+  {
+    "nl": "arbeidsovereenkomst",
+    "en": "employment agreement"
   },
   {
     "nl": "arbeidsvoorwaarden",
@@ -88,6 +192,14 @@
     "en": "physician"
   },
   {
+    "nl": "auto gekocht",
+    "en": "bought a car"
+  },
+  {
+    "nl": "automatisch",
+    "en": "automatically"
+  },
+  {
     "nl": "automatisch betalen",
     "en": "automatic payment"
   },
@@ -100,12 +212,36 @@
     "en": "job"
   },
   {
+    "nl": "baan verloren",
+    "en": "lost a job"
+  },
+  {
+    "nl": "baas",
+    "en": "boss"
+  },
+  {
     "nl": "baby",
     "en": "baby"
   },
   {
+    "nl": "baby geboren",
+    "en": "baby born"
+  },
+  {
+    "nl": "bank",
+    "en": "bank"
+  },
+  {
     "nl": "bankrekening",
     "en": "bank account"
+  },
+  {
+    "nl": "basispakket",
+    "en": "basic package"
+  },
+  {
+    "nl": "basispensioen",
+    "en": "basic pension"
   },
   {
     "nl": "basisschool",
@@ -120,20 +256,60 @@
     "en": "amount"
   },
   {
+    "nl": "bedragen",
+    "en": "amounts"
+  },
+  {
+    "nl": "bedrijfsarts",
+    "en": "company doctor / occupational physician"
+  },
+  {
+    "nl": "bedrijven",
+    "en": "companies"
+  },
+  {
+    "nl": "begint",
+    "en": "starts"
+  },
+  {
     "nl": "begrafenis",
     "en": "funeral"
+  },
+  {
+    "nl": "behandelaar",
+    "en": "practitioner / therapist"
   },
   {
     "nl": "bekeuring",
     "en": "ticket"
   },
   {
+    "nl": "bel",
+    "en": "call"
+  },
+  {
+    "nl": "bel je",
+    "en": "do you call"
+  },
+  {
     "nl": "belangrijk",
     "en": "important"
   },
   {
+    "nl": "belangrijke besluiten",
+    "en": "important decisions"
+  },
+  {
+    "nl": "belangrijke taak",
+    "en": "important task"
+  },
+  {
     "nl": "belasting",
     "en": "tax"
+  },
+  {
+    "nl": "belasting betalen",
+    "en": "pay tax"
   },
   {
     "nl": "belastingaangifte",
@@ -144,6 +320,10 @@
     "en": "Tax Administration"
   },
   {
+    "nl": "belastingzaken",
+    "en": "tax matters"
+  },
+  {
     "nl": "belgië",
     "en": "Belgium"
   },
@@ -152,8 +332,24 @@
     "en": "call"
   },
   {
+    "nl": "bepaalde leeftijd",
+    "en": "certain age"
+  },
+  {
+    "nl": "bepaalde sector",
+    "en": "particular sector"
+  },
+  {
     "nl": "bepaalde tijd",
     "en": "fixed period"
+  },
+  {
+    "nl": "bepaalde verzekering",
+    "en": "certain insurance"
+  },
+  {
+    "nl": "bereidt voor op",
+    "en": "prepares for"
   },
   {
     "nl": "bergen",
@@ -168,12 +364,32 @@
     "en": "rusk with sugared anise seeds"
   },
   {
+    "nl": "beslissen",
+    "en": "decide"
+  },
+  {
     "nl": "beslist",
     "en": "decides"
   },
   {
+    "nl": "besluit genomen",
+    "en": "made a decision"
+  },
+  {
     "nl": "bestaat uit",
     "en": "consists of"
+  },
+  {
+    "nl": "besturen",
+    "en": "govern"
+  },
+  {
+    "nl": "betaalt",
+    "en": "pays"
+  },
+  {
+    "nl": "betaalt uit",
+    "en": "pays out"
   },
   {
     "nl": "betalen",
@@ -216,8 +432,16 @@
     "en": "occupied"
   },
   {
+    "nl": "bezittingen",
+    "en": "possessions"
+  },
+  {
     "nl": "bezoek",
     "en": "visit"
+  },
+  {
+    "nl": "bezoekt",
+    "en": "visits"
   },
   {
     "nl": "bezwaar maken",
@@ -232,24 +456,52 @@
     "en": "meet together"
   },
   {
+    "nl": "bij hem thuis",
+    "en": "at his home"
+  },
+  {
     "nl": "bij je hebben",
     "en": "carry with you"
+  },
+  {
+    "nl": "bij zich hebben",
+    "en": "have with him"
   },
   {
     "nl": "bijbel",
     "en": "Bible"
   },
   {
+    "nl": "bijna",
+    "en": "almost"
+  },
+  {
     "nl": "bijscholing",
     "en": "additional training"
+  },
+  {
+    "nl": "bijsluiter",
+    "en": "patient information leaflet"
   },
   {
     "nl": "bijstand",
     "en": "social assistance"
   },
   {
+    "nl": "bijstandsuitkering",
+    "en": "social assistance benefit"
+  },
+  {
     "nl": "binnen",
     "en": "indoors"
+  },
+  {
+    "nl": "binnen 3 dagen",
+    "en": "within 3 days"
+  },
+  {
+    "nl": "binnen 5 dagen",
+    "en": "within 5 days"
   },
   {
     "nl": "binnenkomen",
@@ -268,6 +520,14 @@
     "en": "block"
   },
   {
+    "nl": "boeken",
+    "en": "books"
+  },
+  {
+    "nl": "boekje",
+    "en": "booklet"
+  },
+  {
     "nl": "boer",
     "en": "farmer"
   },
@@ -280,12 +540,40 @@
     "en": "trees"
   },
   {
+    "nl": "boodschappen",
+    "en": "groceries"
+  },
+  {
+    "nl": "boodschappen doen",
+    "en": "do grocery shopping"
+  },
+  {
+    "nl": "bouwde",
+    "en": "built"
+  },
+  {
+    "nl": "braken",
+    "en": "broke"
+  },
+  {
     "nl": "brandweer",
     "en": "fire brigade"
   },
   {
     "nl": "breed",
     "en": "wide"
+  },
+  {
+    "nl": "brief",
+    "en": "letter"
+  },
+  {
+    "nl": "bril",
+    "en": "glasses"
+  },
+  {
+    "nl": "brp",
+    "en": "Personal Records Database"
   },
   {
     "nl": "bruiloft",
@@ -296,8 +584,16 @@
     "en": "gross"
   },
   {
+    "nl": "brutoloon",
+    "en": "gross salary"
+  },
+  {
     "nl": "bsn",
     "en": "citizen service number"
+  },
+  {
+    "nl": "buiten",
+    "en": "outside"
   },
   {
     "nl": "buitenlanders",
@@ -324,8 +620,16 @@
     "en": "mayor"
   },
   {
+    "nl": "burgers",
+    "en": "citizens"
+  },
+  {
     "nl": "bus",
     "en": "bus"
+  },
+  {
+    "nl": "buurvrouw",
+    "en": "female neighbour"
   },
   {
     "nl": "cadeau",
@@ -334,6 +638,10 @@
   {
     "nl": "cadeaus",
     "en": "presents"
+  },
+  {
+    "nl": "cadeautje",
+    "en": "small gift"
   },
   {
     "nl": "cao",
@@ -352,12 +660,36 @@
     "en": "chemical waste"
   },
   {
+    "nl": "chemisch afvalpunt",
+    "en": "chemical waste collection point"
+  },
+  {
     "nl": "christelijke dag",
     "en": "Christian day"
   },
   {
     "nl": "christen",
     "en": "Christian"
+  },
+  {
+    "nl": "cijfers",
+    "en": "grades"
+  },
+  {
+    "nl": "cjib",
+    "en": "Central Judicial Collection Agency"
+  },
+  {
+    "nl": "coalitie",
+    "en": "coalition"
+  },
+  {
+    "nl": "collega",
+    "en": "colleague"
+  },
+  {
+    "nl": "collega's",
+    "en": "colleagues"
   },
   {
     "nl": "commissaris van de koning",
@@ -384,6 +716,14 @@
     "en": "contract"
   },
   {
+    "nl": "controleert",
+    "en": "checks"
+  },
+  {
+    "nl": "controleren",
+    "en": "check / monitor"
+  },
+  {
     "nl": "controles",
     "en": "check-ups"
   },
@@ -394,6 +734,18 @@
   {
     "nl": "cv",
     "en": "curriculum vitae"
+  },
+  {
+    "nl": "daardoor",
+    "en": "because of this"
+  },
+  {
+    "nl": "daarheen",
+    "en": "there"
+  },
+  {
+    "nl": "daarvoor",
+    "en": "for that"
   },
   {
     "nl": "dagboek",
@@ -420,6 +772,10 @@
     "en": "third Sunday"
   },
   {
+    "nl": "deskundige",
+    "en": "expert"
+  },
+  {
     "nl": "dezelfde rechten",
     "en": "same rights"
   },
@@ -436,6 +792,14 @@
     "en": "densely populated"
   },
   {
+    "nl": "dichtdraaien",
+    "en": "turn off / close"
+  },
+  {
+    "nl": "dictatuur",
+    "en": "dictatorship"
+  },
+  {
     "nl": "dienstensector",
     "en": "service sector"
   },
@@ -448,6 +812,10 @@
     "en": "digital code"
   },
   {
+    "nl": "dijk",
+    "en": "dike"
+  },
+  {
     "nl": "dijken",
     "en": "dikes"
   },
@@ -456,12 +824,24 @@
     "en": "diploma"
   },
   {
+    "nl": "diploma's",
+    "en": "diplomas / certificates"
+  },
+  {
     "nl": "direct",
     "en": "direct"
   },
   {
+    "nl": "direct hulp",
+    "en": "immediate help"
+  },
+  {
     "nl": "discriminatie",
     "en": "discrimination"
+  },
+  {
+    "nl": "docent",
+    "en": "teacher"
   },
   {
     "nl": "doden",
@@ -472,12 +852,20 @@
     "en": "Remembrance Day"
   },
   {
+    "nl": "dokter",
+    "en": "doctor"
+  },
+  {
     "nl": "domtoren",
     "en": "Dom Tower"
   },
   {
     "nl": "donkere kleren",
     "en": "dark clothes"
+  },
+  {
+    "nl": "donor",
+    "en": "donor"
   },
   {
     "nl": "doorgeven",
@@ -488,16 +876,32 @@
     "en": "refer"
   },
   {
+    "nl": "draagt",
+    "en": "wears"
+  },
+  {
     "nl": "dragen",
     "en": "wear"
+  },
+  {
+    "nl": "drie machten",
+    "en": "three powers"
   },
   {
     "nl": "dringend",
     "en": "urgent"
   },
   {
+    "nl": "drogist",
+    "en": "drugstore"
+  },
+  {
     "nl": "druk",
     "en": "busy"
+  },
+  {
+    "nl": "drukke periode",
+    "en": "busy period"
   },
   {
     "nl": "duinen",
@@ -506,6 +910,14 @@
   {
     "nl": "duitsland",
     "en": "Germany"
+  },
+  {
+    "nl": "duo",
+    "en": "Education Executive Agency"
+  },
+  {
+    "nl": "dure advocaat",
+    "en": "expensive lawyer"
   },
   {
     "nl": "dus",
@@ -524,8 +936,20 @@
     "en": "really"
   },
   {
+    "nl": "een paar keer per jaar",
+    "en": "a few times a year"
+  },
+  {
+    "nl": "een paar weken later",
+    "en": "a few weeks later"
+  },
+  {
     "nl": "eengezinswoning",
     "en": "single-family home"
+  },
+  {
+    "nl": "eerst zelf betalen",
+    "en": "pay yourself first"
   },
   {
     "nl": "eerste kamer",
@@ -540,8 +964,20 @@
     "en": "own"
   },
   {
+    "nl": "eigen bedrijf",
+    "en": "own business"
+  },
+  {
+    "nl": "eigen huisarts",
+    "en": "own general practitioner"
+  },
+  {
     "nl": "eigen land",
     "en": "own country"
+  },
+  {
+    "nl": "eigen nummer",
+    "en": "own number"
   },
   {
     "nl": "eigen risico",
@@ -552,12 +988,44 @@
     "en": "islands"
   },
   {
+    "nl": "eindelijk",
+    "en": "finally"
+  },
+  {
+    "nl": "elk doosje",
+    "en": "every box"
+  },
+  {
+    "nl": "elk jaar",
+    "en": "every year"
+  },
+  {
+    "nl": "elk kwartaal",
+    "en": "every quarter"
+  },
+  {
     "nl": "elkaar",
     "en": "each other"
   },
   {
+    "nl": "elke",
+    "en": "each"
+  },
+  {
+    "nl": "elke dag",
+    "en": "every day"
+  },
+  {
     "nl": "elke drie maanden",
     "en": "every three months"
+  },
+  {
+    "nl": "elke maand",
+    "en": "every month"
+  },
+  {
+    "nl": "elke nacht",
+    "en": "every night"
   },
   {
     "nl": "elke vier jaar",
@@ -572,8 +1040,20 @@
     "en": "and"
   },
   {
+    "nl": "erg druk",
+    "en": "very busy"
+  },
+  {
+    "nl": "ernstig ongeluk",
+    "en": "serious accident"
+  },
+  {
     "nl": "ervaring",
     "en": "experience"
+  },
+  {
+    "nl": "eten",
+    "en": "food"
   },
   {
     "nl": "etiket",
@@ -604,12 +1084,36 @@
     "en": "exam"
   },
   {
+    "nl": "extra geld",
+    "en": "extra money"
+  },
+  {
+    "nl": "extra uitjes",
+    "en": "extra outings"
+  },
+  {
+    "nl": "extra verzekerd",
+    "en": "additionally insured"
+  },
+  {
+    "nl": "extra verzekering",
+    "en": "extra insurance"
+  },
+  {
     "nl": "familie",
     "en": "family"
   },
   {
     "nl": "feest",
     "en": "party"
+  },
+  {
+    "nl": "feestdag",
+    "en": "holiday"
+  },
+  {
+    "nl": "feesten",
+    "en": "parties / celebrations"
   },
   {
     "nl": "fiets",
@@ -660,12 +1164,32 @@
     "en": "physiotherapist"
   },
   {
+    "nl": "gaat verhuizen",
+    "en": "is moving"
+  },
+  {
+    "nl": "gas",
+    "en": "gas"
+  },
+  {
+    "nl": "gaskraan",
+    "en": "gas tap"
+  },
+  {
     "nl": "gastarbeiders",
     "en": "guest workers"
   },
   {
     "nl": "geaccepteerd",
     "en": "accepted"
+  },
+  {
+    "nl": "gebeurd",
+    "en": "happened"
+  },
+  {
+    "nl": "gebeurde",
+    "en": "happened"
   },
   {
     "nl": "gebied",
@@ -688,16 +1212,64 @@
     "en": "use"
   },
   {
+    "nl": "gebruikt",
+    "en": "use"
+  },
+  {
     "nl": "gecondoleerd",
     "en": "condolences / sorry for your loss"
+  },
+  {
+    "nl": "gedrag",
+    "en": "behaviour"
+  },
+  {
+    "nl": "geeft",
+    "en": "gives"
+  },
+  {
+    "nl": "geen bezwaar",
+    "en": "no objection"
+  },
+  {
+    "nl": "geen einddatum",
+    "en": "no end date"
+  },
+  {
+    "nl": "geen geld",
+    "en": "no money"
+  },
+  {
+    "nl": "geen president",
+    "en": "no president"
+  },
+  {
+    "nl": "geen salaris meer",
+    "en": "no salary anymore"
+  },
+  {
+    "nl": "geen werk",
+    "en": "no work"
   },
   {
     "nl": "gekke kleren",
     "en": "funny clothes"
   },
   {
+    "nl": "gekozen worden",
+    "en": "be elected"
+  },
+  {
     "nl": "geld",
     "en": "money"
+  },
+  {
+    "nl": "geld nodig",
+    "en": "needs money"
+  },
+  {
+    "nl": "geld verdienen",
+    "en": "earn money"
   },
   {
     "nl": "geldig",
@@ -718,6 +1290,10 @@
   {
     "nl": "gelovige",
     "en": "religious"
+  },
+  {
+    "nl": "gemaakt",
+    "en": "made"
   },
   {
     "nl": "gemeente",
@@ -744,6 +1320,14 @@
     "en": "enough money"
   },
   {
+    "nl": "geregistreerd",
+    "en": "registered"
+  },
+  {
+    "nl": "geschiedenis",
+    "en": "history"
+  },
+  {
     "nl": "geslaagd",
     "en": "passed"
   },
@@ -752,12 +1336,20 @@
     "en": "closed"
   },
   {
+    "nl": "gesprek",
+    "en": "conversation / meeting"
+  },
+  {
     "nl": "gestolen",
     "en": "stolen"
   },
   {
     "nl": "gevaar",
     "en": "danger"
+  },
+  {
+    "nl": "gevonden",
+    "en": "found"
   },
   {
     "nl": "geweld",
@@ -784,12 +1376,44 @@
     "en": "healthcare"
   },
   {
+    "nl": "gft",
+    "en": "organic waste"
+  },
+  {
+    "nl": "ggd",
+    "en": "municipal health service"
+  },
+  {
     "nl": "glasbak",
     "en": "glass container"
   },
   {
     "nl": "godsdienst",
     "en": "religion"
+  },
+  {
+    "nl": "goed groeit",
+    "en": "is growing well"
+  },
+  {
+    "nl": "goed lezen",
+    "en": "read carefully"
+  },
+  {
+    "nl": "goede cijfers",
+    "en": "good grades"
+  },
+  {
+    "nl": "goede gewoonte",
+    "en": "good custom"
+  },
+  {
+    "nl": "goedkope woning",
+    "en": "cheap home"
+  },
+  {
+    "nl": "goud",
+    "en": "gold"
   },
   {
     "nl": "gouden eeuw",
@@ -800,12 +1424,28 @@
     "en": "free"
   },
   {
+    "nl": "gratis advies",
+    "en": "free advice"
+  },
+  {
     "nl": "gratis verzekerd",
     "en": "insured free of charge"
   },
   {
+    "nl": "grijze vuilnisbak",
+    "en": "grey rubbish bin"
+  },
+  {
     "nl": "groei",
     "en": "growth"
+  },
+  {
+    "nl": "groep 5",
+    "en": "group 5"
+  },
+  {
+    "nl": "groep medewerkers",
+    "en": "group of employees"
   },
   {
     "nl": "grof afval",
@@ -836,8 +1476,16 @@
     "en": "large cities"
   },
   {
+    "nl": "grote zee",
+    "en": "large sea"
+  },
+  {
     "nl": "gynaecoloog",
     "en": "gynaecologist"
+  },
+  {
+    "nl": "had vroeger",
+    "en": "used to have"
   },
   {
     "nl": "half uur",
@@ -852,6 +1500,10 @@
     "en": "trade"
   },
   {
+    "nl": "hangt",
+    "en": "hangs"
+  },
+  {
     "nl": "hangt af van",
     "en": "depends on"
   },
@@ -864,8 +1516,20 @@
     "en": "port"
   },
   {
+    "nl": "hbo",
+    "en": "university of applied sciences"
+  },
+  {
+    "nl": "heel weinig geld",
+    "en": "very little money"
+  },
+  {
     "nl": "heet",
     "en": "is called"
+  },
+  {
+    "nl": "hele grote",
+    "en": "very large"
   },
   {
     "nl": "helft",
@@ -874,6 +1538,14 @@
   {
     "nl": "helpen",
     "en": "help"
+  },
+  {
+    "nl": "helpt",
+    "en": "helps"
+  },
+  {
+    "nl": "helpt bij",
+    "en": "helps with"
   },
   {
     "nl": "hemel",
@@ -896,20 +1568,44 @@
     "en": "repetition"
   },
   {
+    "nl": "het beste",
+    "en": "the best"
+  },
+  {
     "nl": "heten",
     "en": "are called"
+  },
+  {
+    "nl": "hiervoor",
+    "en": "for this"
+  },
+  {
+    "nl": "hoe heet",
+    "en": "what is called"
   },
   {
     "nl": "hoe vaak",
     "en": "how often"
   },
   {
+    "nl": "hoeveel jaar",
+    "en": "how many years"
+  },
+  {
     "nl": "hoge",
     "en": "high"
   },
   {
+    "nl": "hoge koorts",
+    "en": "high fever"
+  },
+  {
     "nl": "homoseksualiteit",
     "en": "homosexuality"
+  },
+  {
+    "nl": "hoofdpijn",
+    "en": "headache"
   },
   {
     "nl": "hoofdstad",
@@ -928,8 +1624,24 @@
     "en": "belonged to"
   },
   {
+    "nl": "hoort bij",
+    "en": "belongs to"
+  },
+  {
     "nl": "horeca",
     "en": "hospitality"
+  },
+  {
+    "nl": "horen bij",
+    "en": "belong to"
+  },
+  {
+    "nl": "huidige",
+    "en": "current"
+  },
+  {
+    "nl": "huis",
+    "en": "house"
   },
   {
     "nl": "huis kopen",
@@ -940,12 +1652,24 @@
     "en": "general practitioner / GP"
   },
   {
+    "nl": "huisartsenpost",
+    "en": "out-of-hours GP service"
+  },
+  {
     "nl": "huisbaas",
     "en": "landlord"
   },
   {
     "nl": "huisbezoek",
     "en": "home visit"
+  },
+  {
+    "nl": "huishouden",
+    "en": "housework"
+  },
+  {
+    "nl": "huren",
+    "en": "rent"
   },
   {
     "nl": "huur",
@@ -960,12 +1684,20 @@
     "en": "rental contract"
   },
   {
+    "nl": "huurprijs",
+    "en": "rental price"
+  },
+  {
     "nl": "huurtoeslag",
     "en": "rent allowance"
   },
   {
     "nl": "hypotheek",
     "en": "mortgage"
+  },
+  {
+    "nl": "id-kaart",
+    "en": "ID card"
   },
   {
     "nl": "identiteitsbewijs",
@@ -984,6 +1716,14 @@
     "en": "everyone"
   },
   {
+    "nl": "iemand",
+    "en": "someone"
+  },
+  {
+    "nl": "iets belangrijks",
+    "en": "something important"
+  },
+  {
     "nl": "in de buurt",
     "en": "nearby"
   },
@@ -992,12 +1732,24 @@
     "en": "in the morning"
   },
   {
+    "nl": "in die tijd",
+    "en": "at that time"
+  },
+  {
+    "nl": "inboedelverzekering",
+    "en": "home contents insurance"
+  },
+  {
     "nl": "inburgeren",
     "en": "integrate"
   },
   {
     "nl": "inburgeringsexamen",
     "en": "civic integration exam"
+  },
+  {
+    "nl": "inburgeringsles",
+    "en": "civic integration class"
   },
   {
     "nl": "inchecken",
@@ -1024,6 +1776,10 @@
     "en": "income"
   },
   {
+    "nl": "inloggen",
+    "en": "log in"
+  },
+  {
     "nl": "inschrijven",
     "en": "register"
   },
@@ -1036,16 +1792,56 @@
     "en": "get in"
   },
   {
+    "nl": "integratie",
+    "en": "integration"
+  },
+  {
     "nl": "interesse",
     "en": "interest"
+  },
+  {
+    "nl": "invult",
+    "en": "fill in"
+  },
+  {
+    "nl": "inwoner",
+    "en": "resident"
+  },
+  {
+    "nl": "is het er niet mee eens",
+    "en": "does not agree with it"
+  },
+  {
+    "nl": "jaar oud",
+    "en": "years old"
+  },
+  {
+    "nl": "jaaropgaaf",
+    "en": "annual income statement"
   },
   {
     "nl": "jarig",
     "en": "birthday"
   },
   {
+    "nl": "je melden bij",
+    "en": "report to"
+  },
+  {
+    "nl": "jeugdzorg",
+    "en": "youth care"
+  },
+  {
     "nl": "jong",
     "en": "young"
+  },
+  {
+    "nl": "joodse mensen",
+    "en": "Jewish people"
+  },
+  {
+    "nl": "jouw bedrijf",
+    "en": "your company"
   },
   {
     "nl": "juiste container",
@@ -1054,6 +1850,14 @@
   {
     "nl": "juni",
     "en": "June"
+  },
+  {
+    "nl": "juridisch",
+    "en": "legally"
+  },
+  {
+    "nl": "juridisch advies",
+    "en": "legal advice"
   },
   {
     "nl": "juridisch loket",
@@ -1076,12 +1880,36 @@
     "en": "cards"
   },
   {
+    "nl": "kabinet",
+    "en": "cabinet"
+  },
+  {
     "nl": "kamer",
     "en": "room"
   },
   {
+    "nl": "kamer van koophandel",
+    "en": "Chamber of Commerce"
+  },
+  {
+    "nl": "kampen",
+    "en": "camps"
+  },
+  {
+    "nl": "kantoorpand",
+    "en": "office building"
+  },
+  {
+    "nl": "kapot",
+    "en": "broken / destroyed"
+  },
+  {
     "nl": "kapot maken",
     "en": "break. ---"
+  },
+  {
+    "nl": "kapvergunning",
+    "en": "tree-felling permit"
   },
   {
     "nl": "kennismaken",
@@ -1100,6 +1928,10 @@
     "en": "Christmas"
   },
   {
+    "nl": "keuken",
+    "en": "kitchen"
+  },
+  {
     "nl": "kiespijn",
     "en": "molar/tooth pain"
   },
@@ -1112,6 +1944,14 @@
     "en": "look"
   },
   {
+    "nl": "kijken of",
+    "en": "check whether"
+  },
+  {
+    "nl": "kijkt naar",
+    "en": "looks at"
+  },
+  {
     "nl": "kilometer",
     "en": "kilometre"
   },
@@ -1120,12 +1960,20 @@
     "en": "child"
   },
   {
+    "nl": "kind aangeven",
+    "en": "register the child’s birth"
+  },
+  {
     "nl": "kinderbijslag",
     "en": "child benefit"
   },
   {
     "nl": "kinderdagverblijf",
     "en": "daycare centre"
+  },
+  {
+    "nl": "kinderen",
+    "en": "children"
   },
   {
     "nl": "kinderopvang",
@@ -1140,6 +1988,10 @@
     "en": "child-related budget"
   },
   {
+    "nl": "klaar met",
+    "en": "finished with"
+  },
+  {
     "nl": "klacht",
     "en": "complaint"
   },
@@ -1152,12 +2004,20 @@
     "en": "small country"
   },
   {
+    "nl": "kleine bijdrage",
+    "en": "small contribution"
+  },
+  {
     "nl": "kleine dingen",
     "en": "small things"
   },
   {
     "nl": "kleine reparaties",
     "en": "small repairs"
+  },
+  {
+    "nl": "kleren",
+    "en": "clothes"
   },
   {
     "nl": "kleuter",
@@ -1170,6 +2030,18 @@
   {
     "nl": "koffie",
     "en": "coffee"
+  },
+  {
+    "nl": "koken",
+    "en": "cook"
+  },
+  {
+    "nl": "kolonies",
+    "en": "colonies"
+  },
+  {
+    "nl": "komt terug",
+    "en": "comes back / returns"
   },
   {
     "nl": "komt uit",
@@ -1188,8 +2060,24 @@
     "en": "King’s Day"
   },
   {
+    "nl": "koninkrijk",
+    "en": "kingdom"
+  },
+  {
     "nl": "koophuis",
     "en": "owner-occupied house"
+  },
+  {
+    "nl": "koopman",
+    "en": "merchant"
+  },
+  {
+    "nl": "koopt",
+    "en": "buy"
+  },
+  {
+    "nl": "koopwoning",
+    "en": "owner-occupied home"
   },
   {
     "nl": "koopzondag",
@@ -1220,8 +2108,32 @@
     "en": "maternity care"
   },
   {
+    "nl": "kraamverzorgende",
+    "en": "maternity nurse"
+  },
+  {
     "nl": "krant",
     "en": "newspaper"
+  },
+  {
+    "nl": "krijgen",
+    "en": "receive"
+  },
+  {
+    "nl": "krijgt",
+    "en": "receive"
+  },
+  {
+    "nl": "kruiden",
+    "en": "spices"
+  },
+  {
+    "nl": "kvk",
+    "en": "Chamber of Commerce abbreviation"
+  },
+  {
+    "nl": "kwalificatieplicht",
+    "en": "qualification obligation"
   },
   {
     "nl": "kwaliteiten",
@@ -1244,12 +2156,28 @@
     "en": "low income"
   },
   {
+    "nl": "laag land",
+    "en": "low land"
+  },
+  {
     "nl": "land",
     "en": "country / land"
   },
   {
+    "nl": "landen",
+    "en": "countries"
+  },
+  {
     "nl": "lang",
     "en": "long"
+  },
+  {
+    "nl": "lange dijk",
+    "en": "long dike"
+  },
+  {
+    "nl": "lange rij",
+    "en": "long row"
   },
   {
     "nl": "langst",
@@ -1260,6 +2188,14 @@
     "en": "be bothered by"
   },
   {
+    "nl": "last van je rug",
+    "en": "trouble / pain in your back"
+  },
+  {
+    "nl": "laten dopen",
+    "en": "have baptized"
+  },
+  {
     "nl": "laten waarderen",
     "en": "have evaluated"
   },
@@ -1268,16 +2204,64 @@
     "en": "let know"
   },
   {
+    "nl": "later",
+    "en": "later"
+  },
+  {
+    "nl": "lawaai",
+    "en": "noise"
+  },
+  {
+    "nl": "leeg",
+    "en": "empty"
+  },
+  {
+    "nl": "leent",
+    "en": "borrow"
+  },
+  {
+    "nl": "leerling",
+    "en": "pupil / student"
+  },
+  {
     "nl": "leerplicht",
     "en": "compulsory education"
+  },
+  {
+    "nl": "leert",
+    "en": "learns"
+  },
+  {
+    "nl": "leest over",
+    "en": "reads about"
+  },
+  {
+    "nl": "leiden",
+    "en": "lead"
+  },
+  {
+    "nl": "leider",
+    "en": "leader"
   },
   {
     "nl": "lenen",
     "en": "borrow"
   },
   {
+    "nl": "lening",
+    "en": "loan"
+  },
+  {
     "nl": "lente",
     "en": "spring"
+  },
+  {
+    "nl": "leraar",
+    "en": "teacher"
+  },
+  {
+    "nl": "leraar worden",
+    "en": "become a teacher"
   },
   {
     "nl": "leren",
@@ -1292,8 +2276,20 @@
     "en": "light"
   },
   {
+    "nl": "licht aandoen",
+    "en": "turn on the light"
+  },
+  {
+    "nl": "lid van",
+    "en": "member of"
+  },
+  {
     "nl": "lid worden",
     "en": "become a member"
+  },
+  {
+    "nl": "lied",
+    "en": "song"
   },
   {
     "nl": "liefde",
@@ -1302,6 +2298,10 @@
   {
     "nl": "ligt",
     "en": "is located"
+  },
+  {
+    "nl": "ligt onder",
+    "en": "lies below"
   },
   {
     "nl": "links",
@@ -1316,6 +2316,18 @@
     "en": "lung cancer"
   },
   {
+    "nl": "loon",
+    "en": "wages / salary"
+  },
+  {
+    "nl": "loonstrook",
+    "en": "payslip"
+  },
+  {
+    "nl": "loopt op straat",
+    "en": "walks on the street"
+  },
+  {
     "nl": "maart",
     "en": "March"
   },
@@ -1324,8 +2336,28 @@
     "en": "Meuse"
   },
   {
+    "nl": "mag dat",
+    "en": "is that allowed"
+  },
+  {
+    "nl": "mag geven",
+    "en": "may give"
+  },
+  {
+    "nl": "mag niet dwingen",
+    "en": "may not force"
+  },
+  {
+    "nl": "mag stoppen",
+    "en": "may stop"
+  },
+  {
     "nl": "makelaar",
     "en": "estate agent"
+  },
+  {
+    "nl": "maken wetten",
+    "en": "make laws"
   },
   {
     "nl": "makkelijk",
@@ -1334,6 +2366,10 @@
   {
     "nl": "mannen",
     "en": "men"
+  },
+  {
+    "nl": "mantelzorg",
+    "en": "informal care by family/friends"
   },
   {
     "nl": "marokkanen",
@@ -1360,12 +2396,44 @@
     "en": "usually"
   },
   {
+    "nl": "meester",
+    "en": "male teacher"
+  },
+  {
+    "nl": "melden",
+    "en": "report"
+  },
+  {
+    "nl": "melkpak",
+    "en": "milk carton"
+  },
+  {
     "nl": "meneer",
     "en": "sir / Mr"
   },
   {
+    "nl": "mening",
+    "en": "opinion"
+  },
+  {
     "nl": "meningsuiting",
     "en": "expression"
+  },
+  {
+    "nl": "met elkaar trouwen",
+    "en": "marry each other"
+  },
+  {
+    "nl": "met je omgaan",
+    "en": "treat you / deal with you"
+  },
+  {
+    "nl": "met wie",
+    "en": "with whom"
+  },
+  {
+    "nl": "meteen",
+    "en": "straight away"
   },
   {
     "nl": "meterstand",
@@ -1384,12 +2452,24 @@
     "en": "Middle Ages"
   },
   {
+    "nl": "militaire organisatie",
+    "en": "military organization"
+  },
+  {
     "nl": "miljoen",
     "en": "million"
   },
   {
     "nl": "minder dan",
     "en": "fewer than"
+  },
+  {
+    "nl": "minimaal",
+    "en": "at minimum"
+  },
+  {
+    "nl": "minister-president",
+    "en": "Prime Minister"
   },
   {
     "nl": "ministers",
@@ -1416,6 +2496,14 @@
     "en": "may / are allowed to"
   },
   {
+    "nl": "moment",
+    "en": "moment"
+  },
+  {
+    "nl": "mondhygiënist",
+    "en": "dental hygienist"
+  },
+  {
     "nl": "moslims",
     "en": "Muslims"
   },
@@ -1424,8 +2512,28 @@
     "en": "motivation"
   },
   {
+    "nl": "na",
+    "en": "after"
+  },
+  {
+    "nl": "na je dood",
+    "en": "after your death"
+  },
+  {
+    "nl": "naar school",
+    "en": "to school"
+  },
+  {
     "nl": "naar werk gaan",
     "en": "go to work"
+  },
+  {
+    "nl": "naartoe",
+    "en": "to"
+  },
+  {
+    "nl": "naartoe brengen",
+    "en": "bring to"
   },
   {
     "nl": "nacht",
@@ -1444,12 +2552,32 @@
     "en": "naturalisation"
   },
   {
+    "nl": "navo",
+    "en": "NATO"
+  },
+  {
     "nl": "nederland",
     "en": "the Netherlands"
   },
   {
+    "nl": "nederlander",
+    "en": "Dutch person"
+  },
+  {
     "nl": "nederlands",
     "en": "Dutch"
+  },
+  {
+    "nl": "nederlandse nationaliteit",
+    "en": "Dutch nationality"
+  },
+  {
+    "nl": "nederlandse vlag",
+    "en": "Dutch flag"
+  },
+  {
+    "nl": "neemt mee",
+    "en": "bring along"
   },
   {
     "nl": "nek",
@@ -1468,20 +2596,68 @@
     "en": "net"
   },
   {
+    "nl": "nettoloon",
+    "en": "net salary"
+  },
+  {
     "nl": "niet kunt komen",
     "en": "cannot come"
+  },
+  {
+    "nl": "niet meer",
+    "en": "no longer"
+  },
+  {
+    "nl": "niet netjes",
+    "en": "not properly / not respectfully"
   },
   {
     "nl": "niet verplicht",
     "en": "not compulsory"
   },
   {
+    "nl": "niets",
+    "en": "nothing"
+  },
+  {
+    "nl": "nieuwe adres",
+    "en": "new address"
+  },
+  {
+    "nl": "nieuwe winkel",
+    "en": "new store"
+  },
+  {
+    "nl": "nieuwe woning",
+    "en": "new home"
+  },
+  {
+    "nl": "niveau",
+    "en": "level"
+  },
+  {
+    "nl": "nodig",
+    "en": "needed"
+  },
+  {
     "nl": "nodig hebben",
     "en": "need"
   },
   {
+    "nl": "nodigt uit",
+    "en": "invites"
+  },
+  {
+    "nl": "noemen",
+    "en": "call"
+  },
+  {
     "nl": "nog geen",
     "en": "not yet"
+  },
+  {
+    "nl": "nog geen diploma",
+    "en": "not yet a diploma"
   },
   {
     "nl": "nood",
@@ -1508,20 +2684,48 @@
     "en": "zero"
   },
   {
+    "nl": "nulurencontract",
+    "en": "zero-hours contract"
+  },
+  {
     "nl": "nummertje trekken",
     "en": "take a number"
+  },
+  {
+    "nl": "ochtend",
+    "en": "morning"
+  },
+  {
+    "nl": "ochtenden",
+    "en": "mornings"
+  },
+  {
+    "nl": "oefeningen",
+    "en": "exercises"
   },
   {
     "nl": "officieel",
     "en": "official"
   },
   {
+    "nl": "officieel contract",
+    "en": "official contract"
+  },
+  {
     "nl": "officieel papier",
     "en": "official document"
   },
   {
+    "nl": "officiële",
+    "en": "official"
+  },
+  {
     "nl": "officiële afspraak",
     "en": "official appointment"
+  },
+  {
+    "nl": "officiële document",
+    "en": "official document"
   },
   {
     "nl": "officiële documenten",
@@ -1536,8 +2740,16 @@
     "en": "eyes"
   },
   {
+    "nl": "om te stoppen",
+    "en": "in order to stop"
+  },
+  {
     "nl": "omdat",
     "en": "because"
+  },
+  {
+    "nl": "onafhankelijk",
+    "en": "independent"
   },
   {
     "nl": "onbepaalde tijd",
@@ -1556,6 +2768,22 @@
     "en": "maintenance"
   },
   {
+    "nl": "ondernemingsplan",
+    "en": "business plan"
+  },
+  {
+    "nl": "ondernemingsraad",
+    "en": "works council"
+  },
+  {
+    "nl": "onderzoek",
+    "en": "examination"
+  },
+  {
+    "nl": "onderzoeken",
+    "en": "investigate"
+  },
+  {
     "nl": "ongeschoold werk",
     "en": "unskilled work"
   },
@@ -1572,6 +2800,14 @@
     "en": "meet"
   },
   {
+    "nl": "ontslag nemen",
+    "en": "resign"
+  },
+  {
+    "nl": "ontslagen",
+    "en": "dismissed / fired"
+  },
+  {
     "nl": "ontstaan",
     "en": "came into being / was created"
   },
@@ -1580,8 +2816,16 @@
     "en": "development"
   },
   {
+    "nl": "ook wel",
+    "en": "also / sometimes"
+  },
+  {
     "nl": "oorlog",
     "en": "war"
+  },
+  {
+    "nl": "oorlogsslachtoffers",
+    "en": "war victims"
   },
   {
     "nl": "oosten",
@@ -1592,8 +2836,24 @@
     "en": "visit"
   },
   {
+    "nl": "op internet",
+    "en": "online / on the internet"
+  },
+  {
+    "nl": "op school",
+    "en": "at school"
+  },
+  {
+    "nl": "op straat",
+    "en": "on the street"
+  },
+  {
     "nl": "op tijd",
     "en": "on time"
+  },
+  {
+    "nl": "op vakantie gaan",
+    "en": "go on holiday"
   },
   {
     "nl": "open",
@@ -1616,6 +2876,10 @@
     "en": "risen"
   },
   {
+    "nl": "ophalen",
+    "en": "pick up"
+  },
+  {
     "nl": "opnieuw opgebouwd",
     "en": "rebuilt"
   },
@@ -1632,8 +2896,16 @@
     "en": "area / surface"
   },
   {
+    "nl": "oprichting",
+    "en": "founding / establishment"
+  },
+  {
     "nl": "opschrijven",
     "en": "write down"
+  },
+  {
+    "nl": "opstalverzekering",
+    "en": "building insurance"
   },
   {
     "nl": "opvoeding",
@@ -1648,8 +2920,32 @@
     "en": "notice period"
   },
   {
+    "nl": "or",
+    "en": "works council abbreviation"
+  },
+  {
     "nl": "oranje",
     "en": "orange"
+  },
+  {
+    "nl": "oranje kleren",
+    "en": "orange clothes"
+  },
+  {
+    "nl": "orde",
+    "en": "order"
+  },
+  {
+    "nl": "orgaandonatie",
+    "en": "organ donation"
+  },
+  {
+    "nl": "organen",
+    "en": "organs"
+  },
+  {
+    "nl": "organisatie",
+    "en": "organization"
   },
   {
     "nl": "oud",
@@ -1660,8 +2956,32 @@
     "en": "New Year’s Eve and New Year’s Day"
   },
   {
+    "nl": "oud papier",
+    "en": "old paper"
+  },
+  {
     "nl": "oude",
     "en": "old"
+  },
+  {
+    "nl": "oude batterijen",
+    "en": "old batteries"
+  },
+  {
+    "nl": "oude boom",
+    "en": "old tree"
+  },
+  {
+    "nl": "oude krant",
+    "en": "old newspaper"
+  },
+  {
+    "nl": "oude man",
+    "en": "old man"
+  },
+  {
+    "nl": "ouderbijdrage",
+    "en": "parental contribution"
   },
   {
     "nl": "ouders",
@@ -1672,12 +2992,20 @@
     "en": "public transport chip card"
   },
   {
+    "nl": "overal",
+    "en": "everywhere"
+  },
+  {
     "nl": "overdag",
     "en": "during the day"
   },
   {
     "nl": "overheid",
     "en": "government"
+  },
+  {
+    "nl": "overleggen",
+    "en": "discuss / consult"
   },
   {
     "nl": "overlijden",
@@ -1690,6 +3018,10 @@
   {
     "nl": "overstroming",
     "en": "flood"
+  },
+  {
+    "nl": "pakket",
+    "en": "package"
   },
   {
     "nl": "parlement",
@@ -1724,12 +3056,28 @@
     "en": "passport"
   },
   {
+    "nl": "passief kiesrecht",
+    "en": "right to be elected"
+  },
+  {
+    "nl": "patiënt",
+    "en": "patient"
+  },
+  {
     "nl": "per ongeluk",
     "en": "accidentally"
   },
   {
+    "nl": "per week",
+    "en": "per week"
+  },
+  {
     "nl": "periode",
     "en": "period"
+  },
+  {
+    "nl": "persoon",
+    "en": "person"
   },
   {
     "nl": "persoonlijke",
@@ -1764,8 +3112,36 @@
     "en": "plans"
   },
   {
+    "nl": "plek",
+    "en": "place"
+  },
+  {
+    "nl": "plicht",
+    "en": "duty"
+  },
+  {
+    "nl": "plotseling",
+    "en": "suddenly"
+  },
+  {
     "nl": "polder",
     "en": "reclaimed land"
+  },
+  {
+    "nl": "polis",
+    "en": "insurance policy"
+  },
+  {
+    "nl": "politiek",
+    "en": "politics"
+  },
+  {
+    "nl": "politieke partijen",
+    "en": "political parties"
+  },
+  {
+    "nl": "praat met",
+    "en": "talks with"
   },
   {
     "nl": "praat over",
@@ -1776,12 +3152,24 @@
     "en": "talk"
   },
   {
+    "nl": "premie",
+    "en": "premium"
+  },
+  {
+    "nl": "premier",
+    "en": "prime minister"
+  },
+  {
     "nl": "president",
     "en": "president"
   },
   {
     "nl": "prijs",
     "en": "price"
+  },
+  {
+    "nl": "prikjes",
+    "en": "shots / injections"
   },
   {
     "nl": "prinses",
@@ -1792,8 +3180,16 @@
     "en": "Prince’s Day"
   },
   {
+    "nl": "probleem met",
+    "en": "problem with"
+  },
+  {
     "nl": "procent",
     "en": "percent"
+  },
+  {
+    "nl": "proces",
+    "en": "process"
   },
   {
     "nl": "proeftijd",
@@ -1812,16 +3208,56 @@
     "en": "province"
   },
   {
+    "nl": "provincies",
+    "en": "provinces"
+  },
+  {
+    "nl": "psycholoog",
+    "en": "psychologist"
+  },
+  {
     "nl": "puber",
     "en": "teenager"
+  },
+  {
+    "nl": "ramp",
+    "en": "disaster"
+  },
+  {
+    "nl": "randstad",
+    "en": "Randstad urban region"
+  },
+  {
+    "nl": "rapport",
+    "en": "report card"
   },
   {
     "nl": "recept",
     "en": "prescription"
   },
   {
+    "nl": "recht",
+    "en": "right"
+  },
+  {
+    "nl": "rechterlijke macht",
+    "en": "judicial power"
+  },
+  {
+    "nl": "rechters",
+    "en": "judges"
+  },
+  {
     "nl": "rechts",
     "en": "right-wing"
+  },
+  {
+    "nl": "rechtsstaat",
+    "en": "rule-of-law state"
+  },
+  {
+    "nl": "regelen",
+    "en": "arrange"
   },
   {
     "nl": "regelmatige werktijden",
@@ -1834,6 +3270,10 @@
   {
     "nl": "regering",
     "en": "government"
+  },
+  {
+    "nl": "reist met de trein",
+    "en": "travels by train"
   },
   {
     "nl": "reizen",
@@ -1856,16 +3296,44 @@
     "en": "repairs"
   },
   {
+    "nl": "restafval",
+    "en": "residual waste"
+  },
+  {
+    "nl": "restjes verf",
+    "en": "leftover paint"
+  },
+  {
+    "nl": "resultaten",
+    "en": "results"
+  },
+  {
     "nl": "rijbewijs",
     "en": "driving licence"
+  },
+  {
+    "nl": "rijdt",
+    "en": "drive"
   },
   {
     "nl": "rijk",
     "en": "rich"
   },
   {
+    "nl": "rijke ouders",
+    "en": "rich parents"
+  },
+  {
+    "nl": "rijksmuseum",
+    "en": "Rijksmuseum"
+  },
+  {
     "nl": "rijn",
     "en": "Rhine"
+  },
+  {
+    "nl": "rijtjeshuis",
+    "en": "terraced house"
   },
   {
     "nl": "rioolheffing",
@@ -1896,6 +3364,14 @@
     "en": "back"
   },
   {
+    "nl": "rugzak",
+    "en": "backpack"
+  },
+  {
+    "nl": "ruikt",
+    "en": "smells"
+  },
+  {
     "nl": "rustig",
     "en": "calm"
   },
@@ -1908,8 +3384,20 @@
     "en": "salary"
   },
   {
+    "nl": "samen",
+    "en": "together"
+  },
+  {
+    "nl": "samenlevingscontract",
+    "en": "cohabitation agreement"
+  },
+  {
     "nl": "samenwerken",
     "en": "work together"
+  },
+  {
+    "nl": "samenwerking",
+    "en": "cooperation"
   },
   {
     "nl": "samenwonen",
@@ -1920,8 +3408,20 @@
     "en": "skate"
   },
   {
+    "nl": "schade",
+    "en": "damage"
+  },
+  {
     "nl": "scheiden",
     "en": "divorce"
+  },
+  {
+    "nl": "schilderij",
+    "en": "painting"
+  },
+  {
+    "nl": "schip",
+    "en": "ship"
   },
   {
     "nl": "scholen",
@@ -1944,6 +3444,14 @@
     "en": "school hours"
   },
   {
+    "nl": "schoolvakantie",
+    "en": "school holiday"
+  },
+  {
+    "nl": "schrijven",
+    "en": "write"
+  },
+  {
     "nl": "sector",
     "en": "sector"
   },
@@ -1964,6 +3472,10 @@
     "en": "service charges"
   },
   {
+    "nl": "sinds",
+    "en": "since"
+  },
+  {
     "nl": "sinterklaas",
     "en": "Sinterklaas"
   },
@@ -1972,8 +3484,16 @@
     "en": "hit"
   },
   {
+    "nl": "slachtoffer",
+    "en": "victim"
+  },
+  {
     "nl": "slagen",
     "en": "pass"
+  },
+  {
+    "nl": "slavernij",
+    "en": "slavery"
   },
   {
     "nl": "snelwegen",
@@ -2012,6 +3532,14 @@
     "en": "some"
   },
   {
+    "nl": "sommige mensen",
+    "en": "some people"
+  },
+  {
+    "nl": "soort",
+    "en": "kind / type"
+  },
+  {
     "nl": "soorten",
     "en": "types"
   },
@@ -2020,12 +3548,24 @@
     "en": "Spain"
   },
   {
+    "nl": "speciale dokter",
+    "en": "special doctor"
+  },
+  {
+    "nl": "speciale traktatie",
+    "en": "special treat"
+  },
+  {
     "nl": "specialist",
     "en": "specialist"
   },
   {
     "nl": "spelen",
     "en": "play"
+  },
+  {
+    "nl": "spitsuren",
+    "en": "rush hours"
   },
   {
     "nl": "spoed",
@@ -2044,12 +3584,48 @@
     "en": "things"
   },
   {
+    "nl": "staat",
+    "en": "stands / there is"
+  },
+  {
+    "nl": "staat dat",
+    "en": "states that / says that"
+  },
+  {
+    "nl": "staatssecretaris",
+    "en": "State Secretary"
+  },
+  {
+    "nl": "stad",
+    "en": "city"
+  },
+  {
+    "nl": "staken",
+    "en": "strike / go on strike"
+  },
+  {
+    "nl": "standbeeld",
+    "en": "statue"
+  },
+  {
+    "nl": "starten",
+    "en": "start"
+  },
+  {
+    "nl": "stembureau",
+    "en": "polling station"
+  },
+  {
     "nl": "stemmen",
     "en": "vote"
   },
   {
     "nl": "stemmen over",
     "en": "vote on"
+  },
+  {
+    "nl": "stierven",
+    "en": "died"
   },
   {
     "nl": "stil",
@@ -2060,16 +3636,44 @@
     "en": "quiet carriage"
   },
   {
+    "nl": "stopt",
+    "en": "stops / ends"
+  },
+  {
+    "nl": "studeert",
+    "en": "studies"
+  },
+  {
+    "nl": "studie",
+    "en": "studies"
+  },
+  {
+    "nl": "studiefinanciering",
+    "en": "student finance"
+  },
+  {
     "nl": "sturen",
     "en": "send"
+  },
+  {
+    "nl": "subsidie aanvragen",
+    "en": "apply for a subsidy"
   },
   {
     "nl": "suiker",
     "en": "sugar"
   },
   {
+    "nl": "supermarkt",
+    "en": "supermarket"
+  },
+  {
     "nl": "surinamers",
     "en": "Surinamese people"
+  },
+  {
+    "nl": "svb",
+    "en": "Social Insurance Bank"
   },
   {
     "nl": "taal",
@@ -2084,6 +3688,10 @@
     "en": "cake"
   },
   {
+    "nl": "tachtigjarige oorlog",
+    "en": "Eighty Years’ War"
+  },
+  {
     "nl": "tandarts",
     "en": "dentist"
   },
@@ -2096,8 +3704,16 @@
     "en": "bag"
   },
   {
+    "nl": "te hard gereden",
+    "en": "drove too fast / sped"
+  },
+  {
     "nl": "te laat",
     "en": "late"
+  },
+  {
+    "nl": "te weinig loon",
+    "en": "too little salary"
   },
   {
     "nl": "tegen",
@@ -2106,6 +3722,10 @@
   {
     "nl": "tekenen",
     "en": "sign"
+  },
+  {
+    "nl": "tekent",
+    "en": "signs"
   },
   {
     "nl": "telefonisch spreekuur",
@@ -2120,6 +3740,10 @@
     "en": "south of"
   },
   {
+    "nl": "tenzij",
+    "en": "unless"
+  },
+  {
     "nl": "terugbrengen",
     "en": "return"
   },
@@ -2130,6 +3754,10 @@
   {
     "nl": "thee",
     "en": "tea"
+  },
+  {
+    "nl": "thuis",
+    "en": "at home"
   },
   {
     "nl": "thuisblijven",
@@ -2148,8 +3776,20 @@
     "en": "temporary"
   },
   {
+    "nl": "tijdelijk contract",
+    "en": "temporary contract"
+  },
+  {
+    "nl": "tijdens",
+    "en": "during"
+  },
+  {
     "nl": "toegestaan",
     "en": "allowed"
+  },
+  {
+    "nl": "toen",
+    "en": "then"
   },
   {
     "nl": "toeslagen",
@@ -2192,12 +3832,28 @@
     "en": "marry"
   },
   {
+    "nl": "trouwt",
+    "en": "marries"
+  },
+  {
+    "nl": "tuin",
+    "en": "garden"
+  },
+  {
     "nl": "turken",
     "en": "Turkish people"
   },
   {
+    "nl": "tussen",
+    "en": "between"
+  },
+  {
     "nl": "twaalf",
     "en": "twelve"
+  },
+  {
+    "nl": "twee minuten stil",
+    "en": "silent for two minutes"
   },
   {
     "nl": "tweede kamer",
@@ -2216,12 +3872,20 @@
     "en": "second Sunday"
   },
   {
+    "nl": "type woning",
+    "en": "type of home"
+  },
+  {
     "nl": "u",
     "en": "formal you"
   },
   {
     "nl": "uitchecken",
     "en": "check out"
+  },
+  {
+    "nl": "uitgenodigd",
+    "en": "invited"
   },
   {
     "nl": "uitkering",
@@ -2248,6 +3912,10 @@
     "en": "temporary employment agency"
   },
   {
+    "nl": "universiteit",
+    "en": "university"
+  },
+  {
     "nl": "urgentieverklaring",
     "en": "urgency statement"
   },
@@ -2272,12 +3940,28 @@
     "en": "father"
   },
   {
+    "nl": "vader des vaderlands",
+    "en": "Father of the Fatherland"
+  },
+  {
     "nl": "vaderdag",
     "en": "Father’s Day"
   },
   {
+    "nl": "vakantie",
+    "en": "holiday"
+  },
+  {
     "nl": "vakbond",
     "en": "trade union"
+  },
+  {
+    "nl": "vakbonden",
+    "en": "trade unions"
+  },
+  {
+    "nl": "vakbondspremie",
+    "en": "union contribution"
   },
   {
     "nl": "valentijn",
@@ -2292,8 +3976,16 @@
     "en": "in advance"
   },
   {
+    "nl": "vanaf",
+    "en": "from / starting at"
+  },
+  {
     "nl": "vast",
     "en": "permanent"
+  },
+  {
+    "nl": "vast contract",
+    "en": "permanent contract"
   },
   {
     "nl": "vaste baan",
@@ -2308,12 +4000,36 @@
     "en": "fixed time"
   },
   {
+    "nl": "vastzit aan",
+    "en": "is attached to"
+  },
+  {
+    "nl": "veel geld",
+    "en": "a lot of money"
+  },
+  {
+    "nl": "veel kolonies",
+    "en": "many colonies"
+  },
+  {
     "nl": "veel mensen",
     "en": "many people"
   },
   {
+    "nl": "veilig",
+    "en": "safely"
+  },
+  {
+    "nl": "veilig thuis",
+    "en": "Safe Home"
+  },
+  {
     "nl": "veilige seks",
     "en": "safe sex"
+  },
+  {
+    "nl": "veiligheid",
+    "en": "security / safety"
   },
   {
     "nl": "veranderen",
@@ -2328,6 +4044,10 @@
     "en": "responsible"
   },
   {
+    "nl": "verantwoordelijk voor",
+    "en": "responsible for"
+  },
+  {
     "nl": "verblijfsvergunning",
     "en": "residence permit"
   },
@@ -2336,8 +4056,20 @@
     "en": "forbidden"
   },
   {
+    "nl": "verbouwing",
+    "en": "renovation"
+  },
+  {
     "nl": "verdiend",
     "en": "earned"
+  },
+  {
+    "nl": "verdient",
+    "en": "earns"
+  },
+  {
+    "nl": "verdrag",
+    "en": "treaty"
   },
   {
     "nl": "vereniging",
@@ -2354,6 +4086,10 @@
   {
     "nl": "verhuurder",
     "en": "landlord"
+  },
+  {
+    "nl": "verjaardag",
+    "en": "birthday"
   },
   {
     "nl": "verkopen",
@@ -2396,8 +4132,16 @@
     "en": "referral letter. ---"
   },
   {
+    "nl": "verzekering afgesloten",
+    "en": "taken out insurance"
+  },
+  {
     "nl": "verzekeringsbewijs",
     "en": "proof of insurance"
+  },
+  {
+    "nl": "verzekeringsmaatschappij",
+    "en": "insurance company"
   },
   {
     "nl": "verzorgingstehuis",
@@ -2428,6 +4172,10 @@
     "en": "find"
   },
   {
+    "nl": "vindt dat",
+    "en": "think / feel that"
+  },
+  {
     "nl": "visum",
     "en": "visa"
   },
@@ -2444,8 +4192,40 @@
     "en": "refugees"
   },
   {
+    "nl": "voc",
+    "en": "Dutch East India Company"
+  },
+  {
+    "nl": "vocht",
+    "en": "fought"
+  },
+  {
+    "nl": "voedselbank",
+    "en": "Food Bank"
+  },
+  {
+    "nl": "voelt je niet lekker",
+    "en": "do not feel well"
+  },
+  {
+    "nl": "voetbalwedstrijd",
+    "en": "football match"
+  },
+  {
+    "nl": "volgen",
+    "en": "take / follow"
+  },
+  {
     "nl": "volgens",
     "en": "according to"
+  },
+  {
+    "nl": "volgens de wet",
+    "en": "according to the law"
+  },
+  {
+    "nl": "volkslied",
+    "en": "national anthem"
   },
   {
     "nl": "volwassen",
@@ -2454,6 +4234,10 @@
   {
     "nl": "volwassenen",
     "en": "adults"
+  },
+  {
+    "nl": "voor zichzelf",
+    "en": "for himself"
   },
   {
     "nl": "vooral",
@@ -2468,6 +4252,14 @@
     "en": "prepare"
   },
   {
+    "nl": "voordat",
+    "en": "before"
+  },
+  {
+    "nl": "voorgeschreven",
+    "en": "prescribed"
+  },
+  {
     "nl": "voornaam",
     "en": "first name"
   },
@@ -2480,8 +4272,20 @@
     "en": "proposal"
   },
   {
+    "nl": "voortgezet onderwijs",
+    "en": "secondary education"
+  },
+  {
     "nl": "voorwaarden",
     "en": "conditions"
+  },
+  {
+    "nl": "vraag je aan",
+    "en": "do you apply for"
+  },
+  {
+    "nl": "vraagt",
+    "en": "asks for"
   },
   {
     "nl": "vriendelijk",
@@ -2504,12 +4308,36 @@
     "en": "private rental sector"
   },
   {
+    "nl": "vrijheid",
+    "en": "freedom"
+  },
+  {
+    "nl": "vrijheid van godsdienst",
+    "en": "freedom of religion"
+  },
+  {
+    "nl": "vrijheid van meningsuiting",
+    "en": "freedom of expression"
+  },
+  {
     "nl": "vrijheid van onderwijs",
     "en": "freedom of education"
   },
   {
     "nl": "vrijstaand huis",
     "en": "detached house"
+  },
+  {
+    "nl": "vrijwillig",
+    "en": "voluntary"
+  },
+  {
+    "nl": "vrijwilligers",
+    "en": "volunteers"
+  },
+  {
+    "nl": "vrijwilligersorganisatie",
+    "en": "volunteer organization"
   },
   {
     "nl": "vrijwilligerswerk",
@@ -2530,6 +4358,22 @@
   {
     "nl": "vuurwerk",
     "en": "fireworks"
+  },
+  {
+    "nl": "wa-verzekering",
+    "en": "third-party liability insurance"
+  },
+  {
+    "nl": "waar dit zo is",
+    "en": "where this is the case"
+  },
+  {
+    "nl": "waar je woont",
+    "en": "where you live"
+  },
+  {
+    "nl": "waar kun je terecht",
+    "en": "where can you go"
   },
   {
     "nl": "waarom",
@@ -2560,6 +4404,10 @@
     "en": "warm"
   },
   {
+    "nl": "wassen",
+    "en": "wash"
+  },
+  {
     "nl": "wat mag",
     "en": "what is allowed"
   },
@@ -2572,6 +4420,14 @@
     "en": "flood disaster"
   },
   {
+    "nl": "wederopbouw",
+    "en": "reconstruction"
+  },
+  {
+    "nl": "week eerder",
+    "en": "one week earlier"
+  },
+  {
     "nl": "weekend",
     "en": "weekend"
   },
@@ -2580,16 +4436,96 @@
     "en": "weather"
   },
   {
+    "nl": "weer beter",
+    "en": "better again"
+  },
+  {
+    "nl": "weer opbouwen",
+    "en": "rebuild"
+  },
+  {
+    "nl": "weet",
+    "en": "knows"
+  },
+  {
+    "nl": "weg",
+    "en": "road"
+  },
+  {
+    "nl": "weghalen",
+    "en": "remove"
+  },
+  {
+    "nl": "weigeren",
+    "en": "refuse"
+  },
+  {
+    "nl": "weinig geld",
+    "en": "little money"
+  },
+  {
+    "nl": "wekelijks",
+    "en": "weekly"
+  },
+  {
+    "nl": "wel",
+    "en": "do / indeed"
+  },
+  {
+    "nl": "welk land",
+    "en": "which country"
+  },
+  {
+    "nl": "welk nummer",
+    "en": "which number"
+  },
+  {
+    "nl": "welke instantie",
+    "en": "which organization"
+  },
+  {
+    "nl": "welke leeftijd",
+    "en": "which age"
+  },
+  {
+    "nl": "welke opleiding",
+    "en": "which education programme"
+  },
+  {
+    "nl": "welke stad",
+    "en": "which city"
+  },
+  {
     "nl": "welvaart",
     "en": "prosperity"
+  },
+  {
+    "nl": "werd",
+    "en": "became"
+  },
+  {
+    "nl": "werden vermoord",
+    "en": "were murdered"
+  },
+  {
+    "nl": "wereld",
+    "en": "world"
   },
   {
     "nl": "werk",
     "en": "work"
   },
   {
+    "nl": "werk op school",
+    "en": "schoolwork"
+  },
+  {
     "nl": "werkcoach",
     "en": "job coach"
+  },
+  {
+    "nl": "werken",
+    "en": "work"
   },
   {
     "nl": "werkervaring",
@@ -2600,12 +4536,28 @@
     "en": "employer"
   },
   {
+    "nl": "werkgevers",
+    "en": "employers"
+  },
+  {
     "nl": "werkloos",
     "en": "unemployed"
   },
   {
     "nl": "werknemer",
     "en": "employee"
+  },
+  {
+    "nl": "werknemers",
+    "en": "employees"
+  },
+  {
+    "nl": "werkoverleg",
+    "en": "work meeting"
+  },
+  {
+    "nl": "werkten hard aan",
+    "en": "worked hard on"
   },
   {
     "nl": "westen",
@@ -2616,8 +4568,32 @@
     "en": "law"
   },
   {
+    "nl": "wettelijk toegestaan",
+    "en": "legally permitted"
+  },
+  {
+    "nl": "wettelijk verplicht",
+    "en": "legally required"
+  },
+  {
+    "nl": "wettelijke plicht",
+    "en": "legal duty"
+  },
+  {
+    "nl": "wetten maken",
+    "en": "make laws"
+  },
+  {
     "nl": "wia-uitkering",
     "en": "disability benefit"
+  },
+  {
+    "nl": "wie",
+    "en": "who"
+  },
+  {
+    "nl": "wil weten",
+    "en": "wants to know"
   },
   {
     "nl": "winkels",
@@ -2640,16 +4616,44 @@
     "en": "home"
   },
   {
+    "nl": "woningcorporatie",
+    "en": "housing corporation"
+  },
+  {
     "nl": "woningen",
     "en": "homes"
+  },
+  {
+    "nl": "woont",
+    "en": "lives"
+  },
+  {
+    "nl": "woont al",
+    "en": "has lived already / has been living"
+  },
+  {
+    "nl": "woont of werkt",
+    "en": "lives or works"
   },
   {
     "nl": "ww-uitkering",
     "en": "unemployment benefit"
   },
   {
+    "nl": "zaterdagavond",
+    "en": "Saturday evening"
+  },
+  {
     "nl": "zee",
     "en": "sea"
+  },
+  {
+    "nl": "zeespiegel",
+    "en": "sea level"
+  },
+  {
+    "nl": "zeggen",
+    "en": "say / notify"
   },
   {
     "nl": "zelf",
@@ -2664,8 +4668,24 @@
     "en": "choose yourself"
   },
   {
+    "nl": "zelf ontslag genomen",
+    "en": "resigned herself"
+  },
+  {
+    "nl": "zelf wilt",
+    "en": "want yourself"
+  },
+  {
+    "nl": "zelfbeschikkingsrecht",
+    "en": "right to self-determination"
+  },
+  {
     "nl": "zelfstandig",
     "en": "independently"
+  },
+  {
+    "nl": "zich aan de wet houden",
+    "en": "obey the law"
   },
   {
     "nl": "ziek",
@@ -2680,16 +4700,44 @@
     "en": "hospitals"
   },
   {
+    "nl": "ziet",
+    "en": "sees"
+  },
+  {
+    "nl": "zilver",
+    "en": "silver"
+  },
+  {
     "nl": "zingen",
     "en": "sing"
+  },
+  {
+    "nl": "zingt",
+    "en": "sings"
   },
   {
     "nl": "zit",
     "en": "is located / sits"
   },
   {
+    "nl": "zit er in",
+    "en": "is in"
+  },
+  {
+    "nl": "zit in",
+    "en": "is in / sits in"
+  },
+  {
     "nl": "zitten",
     "en": "are located"
+  },
+  {
+    "nl": "zo'n",
+    "en": "such a"
+  },
+  {
+    "nl": "zodat",
+    "en": "so that"
   },
   {
     "nl": "zoenen",
@@ -2708,6 +4756,10 @@
     "en": "without"
   },
   {
+    "nl": "zonder baas",
+    "en": "without a boss"
+  },
+  {
     "nl": "zonder geloof",
     "en": "without religion"
   },
@@ -2718,6 +4770,10 @@
   {
     "nl": "zorg",
     "en": "care"
+  },
+  {
+    "nl": "zorgpas",
+    "en": "health insurance card"
   },
   {
     "nl": "zorgtoeslag",
@@ -2748,6 +4804,10 @@
     "en": "maternity leave"
   },
   {
+    "nl": "zware storm",
+    "en": "severe storm"
+  },
+  {
     "nl": "zwart reizen",
     "en": "fare dodging"
   },
@@ -2760,8 +4820,16 @@
     "en": "Switzerland"
   },
   {
+    "nl": "zzp'ers",
+    "en": "self-employed workers"
+  },
+  {
     "nl": "één keer",
     "en": "once"
+  },
+  {
+    "nl": "één maand van tevoren",
+    "en": "one month in advance"
   },
   {
     "nl": "’s ochtends",

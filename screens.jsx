@@ -835,8 +835,21 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
   const isKnm = modeLabel === 'KNM';
   const groupName = isKnm ? 'session' : 'article';
   const groupTitle = isKnm ? 'Session' : 'Article';
-  const itemName = isKnm ? 'Knowledge point' : 'Sentence';
-  const itemPlural = isKnm ? 'knowledge points' : 'sentences';
+  const itemName = r => {
+    if (!isKnm) return 'Sentence';
+    return (r && r.les < 200) ? 'Question' : 'Knowledge point';
+  };
+  // For each KNM row decide the unit (question lessons live at les < 200, knowledge points at les >= 200).
+  const itemPluralFor = r => {
+    if (!isKnm) return 'sentences';
+    return r.les < 200 ? 'questions' : 'knowledge points';
+  };
+  // KNM has two tabs: Question bank (les < 200) and Knowledge points (les >= 200).
+  const initialTab = isKnm
+    ? (prefs.les && prefs.les !== 'all' && Number(prefs.les) >= 200 ? 'knowledge' : 'questions')
+    : 'all';
+  const [knmTab, setKnmTab] = useStateS(initialTab);
+  const isQuestionTab = knmTab === 'questions';
   const defaultArticleLes = prefs.les && prefs.les !== 'all' ? String(prefs.les) : String(readings[0]?.les || '');
   const [articleLes, setArticleLes] = useStateS(defaultArticleLes);
   const articleListRef = useRefS(null);
@@ -856,7 +869,21 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
   });
   const displayTitle = r => isKnm ? (r.rawTitle || String(r.title || '').replace(/^KNM\.\d+\s+/, '')) : r.title;
   const displayIndex = r => isKnm ? (r.examIndex || String(r.label || '').replace(/^KNM\./, '') || r.les) : r.les;
-  const articleOptions = rows.slice().sort((a, b) => a.les - b.les);
+  const tabFilter = r => {
+    if (!isKnm) return true;
+    return isQuestionTab ? r.les < 200 : r.les >= 200;
+  };
+  const articleOptions = rows.slice().filter(tabFilter).sort((a, b) => a.les - b.les);
+  // When KNM tab changes, if the saved articleLes doesn't belong to the new tab, snap to
+  // that tab's first lesson so the picker isn't pointing at an invisible row.
+  useEffectS(() => {
+    if (!isKnm) return;
+    const inTab = articleOptions.some(r => String(r.les) === String(articleLes));
+    if (!inTab && articleOptions[0]) {
+      setArticleLes(String(articleOptions[0].les));
+      setSelected(null);
+    }
+  }, [knmTab]);
   const resumeArticle = continueSession?.mode === 'reading'
     ? rows.find(r => r.les === continueSession.words?.[0]?.les)
     : null;
@@ -910,15 +937,21 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
             <div style={{ flex: 1, minWidth: 0 }}>
               <div className="label">Continue</div>
               <div className="title">{displayTitle(resume)}</div>
-              <div className="desc-light">{itemName} {resumeCursor}/{resumeTotal}</div>
+              <div className="desc-light">{itemName(resume)} {resumeCursor}/{resumeTotal}</div>
               <div className="progress"><span style={{ width: `${resumePct}%` }}></span></div>
             </div>
             <div className="play"><PlayIcon /></div>
           </div>
         )}
 
+        {isKnm && (
+          <div className="seg" style={{ marginBottom: 12 }}>
+            <div className={'opt' + (isQuestionTab ? ' active' : '')} onClick={() => setKnmTab('questions')}>Question bank</div>
+            <div className={'opt' + (!isQuestionTab ? ' active' : '')} onClick={() => setKnmTab('knowledge')}>Knowledge points</div>
+          </div>
+        )}
         <div className="section-h pick-heading-row compact-pick-heading">
-          <h3>Pick {groupName}</h3>
+          <h3>Pick {isKnm ? (isQuestionTab ? 'question set' : 'knowledge section') : groupName}</h3>
         </div>
         {effectiveArticle && (
           <div className="content-list-card sentence-article-picker">
@@ -930,7 +963,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
                     <div className="content-list-index">{displayIndex(r)}</div>
                     <div className="content-list-main">
                       <div className="content-list-title">{displayTitle(r)}</div>
-                      <div className="content-list-meta">{isKnm ? `${r.stats.learned} / ${r.stats.total} ${itemPlural}` : `${r.stats.learned} / ${r.stats.total} learned`}</div>
+                      <div className="content-list-meta">{isKnm ? `${r.stats.learned} / ${r.stats.total} ${itemPluralFor(r)}` : `${r.stats.learned} / ${r.stats.total} learned`}</div>
                     </div>
                     <div className="content-list-progress"><span style={{ width: `${r.pct}%` }}></span></div>
                     <div className="content-list-chev">›</div>
@@ -942,7 +975,7 @@ function SentencesPickScreen({ readings, statsByArticle, prefs, continueSession,
         )}
 
         <SessionModeList selected={effectiveSelected} order={order} onOrder={setOrder}
-          reviewCount={effectiveSelected?.reviewCount || 0} unit={itemPlural}
+          reviewCount={effectiveSelected?.reviewCount || 0} unit={effectiveArticle ? itemPluralFor(effectiveArticle) : 'items'}
           testLabel={isKnm ? false : `${effectiveSelected?.total || 0} questions`} onStart={start} />
 
       </div>
@@ -1009,7 +1042,9 @@ function DeckScreen({ mode, words, level, onLevelChange, autoplay, onExit, onSwi
           <SwipeDeck ref={deckRef} items={words}
             onSwipe={handleSwipe}
             renderCard={(w, i, isTop, dragState) => (
-              sentenceMode ? (
+              w.question ? (
+                <KnmQuestionStudyCard word={w} isTop={isTop} dragState={dragState} />
+              ) : sentenceMode ? (
                 <SentenceCard word={w} mode={mode} autoplay={autoplay} isTop={isTop} dragState={dragState} />
               ) : (
                 <WordCard word={w} mode={mode} level={internalLevel}
@@ -1437,6 +1472,104 @@ function StudyListScreen({ items, onBack, onRemove, onStartSession }) {
   );
 }
 
+// Study card for KNM exam questions: shows NL question + options with correct answer
+// highlighted, plus the English translation below the divider. Dictionary popover still
+// works because we render the Dutch text through ClickableDutchText.
+function KnmQuestionStudyCard({ word, isTop, dragState }) {
+  const q = word.question;
+  const correctLetter = q?.answer;
+  return (
+    <React.Fragment>
+      {isTop && (
+        <React.Fragment>
+          <div className="stamp keep"   style={{ opacity: dragState.keepOpacity }}>GOT IT</div>
+          <div className="stamp forgot" style={{ opacity: dragState.forgotOpacity }}>AGAIN</div>
+        </React.Fragment>
+      )}
+      <div className="card-top-row">
+        <span className="les-tag">{word.articleTitle || 'KNM'}</span>
+        <span className="pos-tag">question</span>
+      </div>
+      <div className="sentence-study-card">
+        <div className="sentence-nl" style={{ fontSize: 18, lineHeight: 1.4 }}>
+          <ClickableDutchText text={word.nl} />
+        </div>
+        <div className="test-options" onPointerDown={e => e.stopPropagation()}>
+          {(q?.options || []).map(opt => {
+            const isAns = opt.letter === correctLetter;
+            return (
+              <div key={opt.letter} className={'test-opt' + (isAns ? ' answer' : '')}>
+                <span className="letter">{opt.letter}</span>
+                <span><ClickableDutchText text={opt.nl} /></span>
+              </div>
+            );
+          })}
+        </div>
+        <div className="divider"></div>
+        <div className="sentence-en" style={{ fontSize: 14, color: 'var(--ink-soft)' }}>{word.en}</div>
+        {q?.options?.length > 0 && (
+          <div className="knm-options-en">
+            {q.options.map(opt => (
+              <div key={opt.letter} className={'knm-opt-row-en' + (opt.letter === correctLetter ? ' correct' : '')}>
+                <span className="letter">{opt.letter}</span>
+                <span>{opt.en}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </React.Fragment>
+  );
+}
+
+// Test card for KNM questions: shows NL question + options ONLY (no English, no answer).
+// User picks a letter; we validate against q.answer.
+function KnmQuestionTestCard({ sentence, isTop, dragState, onAnswered }) {
+  const [picked, setPicked] = useStateS(null);
+  useEffectS(() => { setPicked(null); }, [sentence.nl]);
+  const q = sentence.question;
+  const handlePick = (e, letter) => {
+    e.stopPropagation();
+    if (picked) return;
+    const correct = letter === q.answer;
+    setPicked({ letter, correct });
+    setTimeout(() => onAnswered?.(correct), 800);
+  };
+  return (
+    <React.Fragment>
+      {isTop && (
+        <React.Fragment>
+          <div className="stamp keep"   style={{ opacity: dragState.keepOpacity }}>RIGHT</div>
+          <div className="stamp forgot" style={{ opacity: dragState.forgotOpacity }}>WRONG</div>
+        </React.Fragment>
+      )}
+      <div className="card-top-row">
+        <span className="les-tag">{sentence.articleTitle || 'KNM'}</span>
+        <span className="pos-tag">question</span>
+      </div>
+      <div className="sentence-study-card">
+        <div className="sentence-nl" style={{ fontSize: 18, lineHeight: 1.4 }}>{sentence.nl}</div>
+      </div>
+      <div className="test-options" onPointerDown={e => e.stopPropagation()}>
+        {q.options.map(opt => {
+          let cls = 'test-opt';
+          if (picked) {
+            cls += ' disabled';
+            if (opt.letter === q.answer)            cls += ' right';
+            else if (picked.letter === opt.letter)  cls += ' wrong';
+          }
+          return (
+            <button key={opt.letter} className={cls} onClick={e => handlePick(e, opt.letter)}>
+              <span className="letter">{opt.letter}</span>
+              <span>{opt.nl}</span>
+            </button>
+          );
+        })}
+      </div>
+    </React.Fragment>
+  );
+}
+
 function KnmTestCard({ sentence, choices, isTop, dragState, onAnswered }) {
   const [picked, setPicked] = useStateS(null);
   useEffectS(() => { setPicked(null); }, [sentence.nl]);
@@ -1501,7 +1634,8 @@ function KnmTestScreen({ sentences, onWrongSentence, onExit }) {
   const quiz = useMemoS(() => {
     return shuffleArr(sentences).map(s => ({
       sentence: s,
-      choices: shuffleArr([s.quiz.blank, ...s.quiz.distractors]),
+      // For fact-blank items only — multiple-choice items consume options from s.question.
+      choices: s.quiz ? shuffleArr([s.quiz.blank, ...s.quiz.distractors]) : null,
     }));
   }, [sentences]);
 
@@ -1549,18 +1683,19 @@ function KnmTestScreen({ sentences, onWrongSentence, onExit }) {
       <div className="deck-stage">
         <SwipeDeck ref={deckRef} items={quiz}
           onSwipe={(i) => setCursor(i + 1)}
-          renderCard={(q, i, isTop, dragState) => (
-            <KnmTestCard sentence={q.sentence} choices={q.choices} isTop={isTop} dragState={dragState}
-              onAnswered={correct => {
-                setScore(s => ({ right: s.right + (correct ? 1 : 0), wrong: s.wrong + (correct ? 0 : 1) }));
-                if (!correct) {
-                  setWrongs(ws => [...ws, q.sentence]);
-                  onWrongSentence?.(q.sentence);
-                }
-                deckRef.current?.swipe(correct ? 'right' : 'left');
-              }}
-            />
-          )}
+          renderCard={(q, i, isTop, dragState) => {
+            const onAns = correct => {
+              setScore(s => ({ right: s.right + (correct ? 1 : 0), wrong: s.wrong + (correct ? 0 : 1) }));
+              if (!correct) {
+                setWrongs(ws => [...ws, q.sentence]);
+                onWrongSentence?.(q.sentence);
+              }
+              deckRef.current?.swipe(correct ? 'right' : 'left');
+            };
+            return q.sentence.question
+              ? <KnmQuestionTestCard sentence={q.sentence} isTop={isTop} dragState={dragState} onAnswered={onAns} />
+              : <KnmTestCard sentence={q.sentence} choices={q.choices} isTop={isTop} dragState={dragState} onAnswered={onAns} />;
+          }}
         />
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 14, padding: '0 6px', fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           <span style={{ color: 'var(--forgot)' }}>✗ {score.wrong}</span>
